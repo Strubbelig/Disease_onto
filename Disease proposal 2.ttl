@@ -331,6 +331,34 @@
              rdfs:label "Developed material disease entity"@en .
 
 
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120004
+:WOND_120004 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120022 ;
+             <http://purl.org/dc/elements/1.1/description> "This is not a predisposition: the pathological material is already present, it just has no observed phenotype yet (e.g. an early subclinical plaque). Silent disorders have no associated phenotype."@en ;
+             rdfs:label "silent disorder"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005
+:WOND_120005 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ;
+             rdfs:comment "A tendency is distinguished from a disposition not by its bearer or by requiring a material basis — both inhere in a material entity and supervene on its physical makeup — but by its mode of realization: a disposition, once its trigger conditions obtain, is realized; a tendency only probabilistically and partially inclines toward realization and can be opposed by competing tendencies. It is therefore modelled as a sibling of disposition, function, and role under realizable entity, not as a subtype of disposition."@en ;
+             rdfs:label "tendency"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120006
+:WOND_120006 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             rdfs:label "disorder removal process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120007
+:WOND_120007 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120020 ;
+             rdfs:comment "Material substrate asserted but not yet characterized; defined operationally at the classification layer."@en ;
+             rdfs:label "Unknown-substrate diseases"@en .
+
+
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
 :WOND_120020 rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
@@ -338,6 +366,7 @@
                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
                                owl:someValuesFrom :WOND_120022
                              ] ;
+             owl:disjointWith :WOND_120023 ;
              <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
              rdfs:label "material disease entity"@en .
 
@@ -355,13 +384,13 @@
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                               owl:someValuesFrom :WOND_120020
+                               owl:someValuesFrom :WOND_120022
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :WOND_120085 ;
                                owl:someValuesFrom :WOND_120031
                              ] ;
-             rdfs:label "disease development process"@en .
+             rdfs:label "disorder development process"@en .
 
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022
@@ -375,6 +404,7 @@
                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000127> ;
                                owl:someValuesFrom :WOND_120023
                              ] ;
+             owl:disjointWith :WOND_120023 ;
              <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en ;
              rdfs:isDefinedBy "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en ;
              rdfs:label "pathological disorder"@en .
@@ -382,18 +412,79 @@
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023
 :WOND_120023 rdf:type owl:Class ;
-             rdfs:subClassOf [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000016>
+             rdfs:subClassOf [ owl:intersectionOf ( :WOND_120005
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                      owl:someValuesFrom :WOND_120021
+                                                      owl:someValuesFrom [ owl:intersectionOf ( :WOND_120021
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                                  owl:someValuesFrom :WOND_120022
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
                                                     ]
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
+                             ] ,
+                             [ owl:intersectionOf ( :WOND_120005
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                      owl:someValuesFrom [ owl:intersectionOf ( :WOND_120021
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                                  owl:someValuesFrom :WOND_120022
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/DOID_630>
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ owl:intersectionOf ( :WOND_120005
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                      owl:someValuesFrom [ owl:intersectionOf ( :WOND_120021
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                                  owl:someValuesFrom :WOND_120022
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                      owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                  owl:someValuesFrom :WOND_120022
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
                              ] ;
+             <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
              <http://purl.org/dc/elements/1.1/description> "A disease disposition inheres in some individual that is the potential bearer of a disorder."@en ;
              rdfs:label "disease predisposition"@en .
 
@@ -402,12 +493,12 @@
 :WOND_120024 rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                               owl:someValuesFrom :WOND_120047
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               owl:someValuesFrom :WOND_120022
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                               owl:allValuesFrom :WOND_120020
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                               owl:someValuesFrom :WOND_120047
                              ] ;
              <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
              rdfs:label "disease diagnostic result"@en .
@@ -647,7 +738,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
              owl:equivalentClass [ owl:intersectionOf ( :WOND_120022
                                                         [ rdf:type owl:Restriction ;
                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                          owl:allValuesFrom :WOND_120022
+                                                          owl:someValuesFrom :WOND_120022
                                                         ]
                                                       ) ;
                                    rdf:type owl:Class
