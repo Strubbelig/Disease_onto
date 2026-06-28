@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <!-- BFO — Basic Formal Ontology -->
+    <uri name="http://purl.obolibrary.org/obo/bfo.owl"         uri="bfo_module.owl"/>
+    <!-- IAO — Information Artifact Ontology -->
+    <uri name="http://purl.obolibrary.org/obo/iao.owl"         uri="iao_module.owl"/>
+    <!-- OBI — Ontology for Biomedical Investigations -->
+    <uri name="http://purl.obolibrary.org/obo/obi.owl"         uri="obi_module.owl"/>
+    <!-- RO — Relations Ontology -->
+    <uri name="http://purl.obolibrary.org/obo/ro.owl"          uri="ro_module.owl"/>
+    <!-- COB — Core Ontology for Biology and Biomedicine -->
+    <uri name="http://purl.obolibrary.org/obo/cob.owl"         uri="cob_module.owl"/>
+    <!-- HP — Human Phenotype Ontology -->
+    <uri name="http://purl.obolibrary.org/obo/hp.obo.owl"      uri="hp_module.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/hp.owl"          uri="hp_module.owl"/>
+    <!-- OGMS — Ontology for General Medical Science -->
+    <uri name="http://purl.obolibrary.org/obo/ogms.owl"        uri="ogms_module.owl"/>
+    <!-- NCBITaxon — NCBI Taxonomy (stub: Homo sapiens only) -->
+    <uri name="http://purl.obolibrary.org/obo/ncbitaxon.owl"   uri="ncbitaxon_module.owl"/>
+    <!-- UO — Units of Measurement Ontology (stub: unit only) -->
+    <uri name="http://purl.obolibrary.org/obo/uo.owl"          uri="uo_module.owl"/>
+    <!-- uPheno — Unified Phenotype Ontology (stub: phenotype only) -->
+    <uri name="http://purl.obolibrary.org/obo/upheno.owl"      uri="upheno_module.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

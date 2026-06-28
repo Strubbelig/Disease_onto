@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/wond/modules/envo_stub.owl#"
+     xml:base="http://purl.obolibrary.org/obo/wond/modules/envo_stub.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/envo_stub.owl"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/envo#has_increased_levels_of">
+        <rdfs:label xml:lang="en">has increased levels of</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>

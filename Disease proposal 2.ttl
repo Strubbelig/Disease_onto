@@ -1,0 +1,842 @@
+@prefix : <http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/> .
+
+<http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal> rdf:type owl:Ontology ;
+                                                                        owl:imports <http://purl.obolibrary.org/obo/wond/ground_truth.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/obi_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ogms_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/pato_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/go_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/hp_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/dron_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/uo_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+<http://purl.obolibrary.org/obo/BFO_0000050> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000054
+<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000056
+<http://purl.obolibrary.org/obo/BFO_0000056> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000127
+<http://purl.obolibrary.org/obo/BFO_0000127> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000197
+<http://purl.obolibrary.org/obo/BFO_0000197> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000199
+<http://purl.obolibrary.org/obo/BFO_0000199> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf :WOND_120081 ;
+                                             rdf:type owl:FunctionalProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000218
+<http://purl.obolibrary.org/obo/BFO_0000218> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000221
+<http://purl.obolibrary.org/obo/BFO_0000221> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000222
+<http://purl.obolibrary.org/obo/BFO_0000222> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000223
+<http://purl.obolibrary.org/obo/BFO_0000223> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000224
+<http://purl.obolibrary.org/obo/BFO_0000224> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000039
+<http://purl.obolibrary.org/obo/IAO_0000039> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+<http://purl.obolibrary.org/obo/OBI_0000293> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+<http://purl.obolibrary.org/obo/OBI_0000299> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000312
+<http://purl.obolibrary.org/obo/OBI_0000312> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000057
+<http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000059
+<http://purl.obolibrary.org/obo/RO_0000059> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000086
+<http://purl.obolibrary.org/obo/RO_0000086> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+<http://purl.obolibrary.org/obo/RO_0000087> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002233
+<http://purl.obolibrary.org/obo/RO_0002233> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+<http://purl.obolibrary.org/obo/RO_0002234> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002353
+<http://purl.obolibrary.org/obo/RO_0002353> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002405
+<http://purl.obolibrary.org/obo/RO_0002405> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120081
+:WOND_120081 rdf:type owl:ObjectProperty ;
+             rdfs:label "occupied by process boundary or process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120082
+:WOND_120082 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+             owl:inverseOf :WOND_120085 ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
+             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                      <http://purl.obolibrary.org/obo/BFO_0000223>
+                                      :WOND_120081
+                                    ) ;
+             rdfs:label "is process boundary at end of"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120083
+:WOND_120083 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+             owl:inverseOf :WOND_120084 ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
+             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                      <http://purl.obolibrary.org/obo/BFO_0000221>
+                                      :WOND_120081
+                                    ) ;
+             rdfs:label "is process boundary at start of"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120084
+:WOND_120084 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
+             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                      <http://purl.obolibrary.org/obo/BFO_0000222>
+                                      :WOND_120081
+                                    ) ;
+             rdfs:label "has as process boundary at start"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120085
+:WOND_120085 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
+             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                      <http://purl.obolibrary.org/obo/BFO_0000224>
+                                      :WOND_120081
+                                    ) ;
+             rdfs:label "has as process boundary at end"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/OBI_0001937
+<http://purl.obolibrary.org/obo/OBI_0001937> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000035
+<http://purl.obolibrary.org/obo/BFO_0000035> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000203
+<http://purl.obolibrary.org/obo/BFO_0000203> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000082
+<http://purl.obolibrary.org/obo/COB_0000082> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/HP_0000118
+<http://purl.obolibrary.org/obo/HP_0000118> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000033
+<http://purl.obolibrary.org/obo/IAO_0000033> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000104
+<http://purl.obolibrary.org/obo/IAO_0000104> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000109
+<http://purl.obolibrary.org/obo/IAO_0000109> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000415
+<http://purl.obolibrary.org/obo/IAO_0000415> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_9606
+<http://purl.obolibrary.org/obo/NCBITaxon_9606> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000260
+<http://purl.obolibrary.org/obo/OBI_0000260> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001909
+<http://purl.obolibrary.org/obo/OBI_0001909> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001931
+<http://purl.obolibrary.org/obo/OBI_0001931> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OGMS_0000045
+<http://purl.obolibrary.org/obo/OGMS_0000045> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000000
+<http://purl.obolibrary.org/obo/UO_0000000> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/UPHENO_0001001
+<http://purl.obolibrary.org/obo/UPHENO_0001001> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/WOND_0000090
+<http://purl.obolibrary.org/obo/WOND_0000090> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/WOND_0000380
+<http://purl.obolibrary.org/obo/WOND_0000380> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_120016
+<http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_120016> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/WOND_0000380>
+                                                                                   ] .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120000
+:WOND_120000 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001930> ;
+             rdfs:label "disease classification stage"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
+:WOND_120020 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                               owl:someValuesFrom :WOND_120028
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                               owl:someValuesFrom :WOND_120021
+                             ] ;
+             <http://purl.org/dc/elements/1.1/description> "The set of patholgical disorders in one individual."@en ;
+             rdfs:label "material disease entity"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021
+:WOND_120021 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                               owl:someValuesFrom :WOND_120023
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
+                               owl:someValuesFrom :WOND_120022
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                               owl:someValuesFrom :WOND_120020
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :WOND_120085 ;
+                               owl:someValuesFrom :WOND_120031
+                             ] ;
+             rdfs:label "disease development process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022
+:WOND_120022 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/OGMS_0000045> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                               owl:someValuesFrom :WOND_120020
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000127> ;
+                               owl:someValuesFrom :WOND_120023
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                               owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
+                             ] ;
+             rdfs:label "pathological disorder"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023
+:WOND_120023 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                               owl:someValuesFrom :WOND_120021
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                               owl:someValuesFrom :WOND_120022
+                             ] ;
+             <http://purl.org/dc/elements/1.1/description> "A disease disposition inheres in some individual that is tha bearer of a disorder"@en ;
+             rdfs:label "disease disposition"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120024
+:WOND_120024 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                               owl:someValuesFrom :WOND_120047
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               owl:allValuesFrom :WOND_120020
+                             ] ;
+             <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
+             rdfs:label "disease diagnostic result"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120025
+:WOND_120025 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120047 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000109>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                               owl:someValuesFrom :WOND_120029
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                               owl:someValuesFrom :WOND_120027
+                             ] ;
+             rdfs:label "disease diagnosis process by measurement"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120026
+:WOND_120026 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120024 ;
+             <http://purl.obolibrary.org/obo/IAO_0000112> """Trigger finger disease diagnostic result is specified output of some Disease diagnostic process
+rdfs:subclass of Confirmed disease diagnostic result by not completely objective criteria"""@en ;
+             <http://purl.org/dc/terms/description> "a disease conclusion arrived at solely after clinical test can be valid and confirmed but is still inherently subjective because of the subjectivity of clinical tests."@en ;
+             rdfs:label "confirmed disease diagnostic result by not completely objective criteria"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120027
+:WOND_120027 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001909> ,
+                             :WOND_120024 ;
+             rdfs:label "confirmed diseases diagnostic result by objective criteria"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120028
+:WOND_120028 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                               owl:someValuesFrom :WOND_120020
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002405> ;
+                               owl:someValuesFrom :WOND_120021
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :WOND_120084 ;
+                               owl:someValuesFrom :WOND_120031
+                             ] ;
+             rdfs:label "course of the disease process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120029
+:WOND_120029 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                               owl:someValuesFrom :WOND_120030
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                               owl:someValuesFrom :WOND_120036
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
+                             ] ;
+             rdfs:label "disease threshold specification"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120030
+:WOND_120030 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001931> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000039> ;
+                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UO_0000000>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0001937> ;
+                               owl:someValuesFrom xsd:decimal
+                             ] ;
+             rdfs:label "threshold value"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120031
+:WOND_120031 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000109>
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000199> ;
+                               owl:allValuesFrom <http://purl.obolibrary.org/obo/BFO_0000203>
+                             ] ;
+             rdfs:label "threshold crossing event"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120032
+:WOND_120032 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120024 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                               owl:someValuesFrom :WOND_120033
+                             ] ;
+             rdfs:label "differential diagnosis result"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120033
+:WOND_120033 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000415> ,
+                             :WOND_120024 ;
+             <http://purl.obolibrary.org/obo/IAO_0000118> "suspected diagnosis"@en ;
+             rdfs:label "candidate diagnosis"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120034
+:WOND_120034 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+             rdfs:label "perpetuation disposition"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120035
+:WOND_120035 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                               owl:someValuesFrom :WOND_120028
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                               owl:someValuesFrom :WOND_120034
+                             ] ;
+             rdfs:label "disease perpetuation process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120036
+:WOND_120036 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
+             rdfs:label "comparison_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120037
+:WOND_120037 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120036 ;
+             rdfs:label "binary_comparison_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120038
+:WOND_120038 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120037 ;
+             rdfs:label "equality_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120039
+:WOND_120039 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120037 ;
+             rdfs:label "inequality_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120040
+:WOND_120040 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120037 ;
+             rdfs:label "ordering_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120041
+:WOND_120041 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120040 ;
+             rdfs:label "greater_than_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120042
+:WOND_120042 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120040 ;
+             rdfs:label "greater_than_or_equal_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120043
+:WOND_120043 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120040 ;
+             rdfs:label "less_than_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120044
+:WOND_120044 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120040 ;
+             rdfs:label "less_than_or_equal_operator"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120045
+:WOND_120045 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120047 ;
+             rdfs:label "Disease diagnosis process by exclusion"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120046
+:WOND_120046 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120047 ;
+             rdfs:label "disease diagnosis process by conceptualization"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120047
+:WOND_120047 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                               owl:someValuesFrom :WOND_120024
+                             ] ;
+             rdfs:label "Disease diagnostic process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120048
+:WOND_120048 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120047 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                               owl:someValuesFrom :WOND_120033
+                             ] ;
+             rdfs:label "Suspected disease diagnosis process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120049
+:WOND_120049 rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :WOND_120022
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                          owl:allValuesFrom :WOND_120022
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:label "compound pathological disorder"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120050
+:WOND_120050 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120024 ;
+             rdfs:label "disease complication diagnostic result"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120051
+:WOND_120051 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120020 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                                                           owl:someValuesFrom :WOND_120028
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             rdfs:label "material complication disease entity"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120053
+:WOND_120053 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120021 ,
+                             :WOND_120028 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                           owl:someValuesFrom :WOND_120020
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             <http://purl.org/dc/elements/1.1/description> "This entity models a process in disease A's course that produces a disorder which becomes part of disease B — the complication. The disorder as output is not the disorder of the producing disease but a newly instantiated structural abnormality that grounds a secondary disease."@en ;
+             rdfs:label "disease course process putting out disorders as part of a complication"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120054
+:WOND_120054 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                               owl:someValuesFrom :WOND_120055
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               owl:allValuesFrom :WOND_120020
+                             ] ;
+             rdfs:label "disease stage classification result"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120055
+:WOND_120055 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                               owl:someValuesFrom :WOND_120054
+                             ] ;
+             rdfs:label "disease classification process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120086
+:WOND_120086 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                               owl:someValuesFrom :WOND_120090
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                           owl:someValuesFrom :WOND_120020
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             rdfs:label "Disease disorder treatment process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120087
+:WOND_120087 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120086 ;
+             owl:disjointWith :WOND_120088 ,
+                              :WOND_120091 ;
+             rdfs:label "disorder elimination process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120088
+:WOND_120088 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120086 ;
+             owl:disjointWith :WOND_120091 ;
+             rdfs:label "disorder modification process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120089
+:WOND_120089 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                               owl:someValuesFrom :WOND_120090
+                             ] ;
+             rdfs:label "treatment plan specification"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120090
+:WOND_120090 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000260> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/WOND_0000090>
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                               owl:someValuesFrom :WOND_120089
+                             ] ;
+             rdfs:label "treatment plan"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120091
+:WOND_120091 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+             rdfs:label "disorder addition process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120092
+:WOND_120092 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120028 ;
+             <http://purl.org/dc/elements/1.1/description> "A disease process that has as participant a disease that has as part a disorder which is the ouput of another disease course process."@en ;
+             rdfs:label "complication disease process"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120056
+:WOND_120056 rdf:type owl:NamedIndividual ;
+             rdfs:label "Gustilo and Anderson wound classification grade IIIC"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120057
+:WOND_120057 rdf:type owl:NamedIndividual ;
+             rdfs:label "Gustilo and Anderson wound classification grade IIIB"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120058
+:WOND_120058 rdf:type owl:NamedIndividual ;
+             rdfs:label "Gustilo and Anderson wound classification grade IIIA"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120059
+:WOND_120059 rdf:type owl:NamedIndividual ;
+             rdfs:label "Gustilo and Anderson wound classification grade II"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120060
+:WOND_120060 rdf:type owl:NamedIndividual ;
+             rdfs:label "Gustilo and Anderson wound classification grade I"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :WOND_120038
+                :WOND_120039
+                :WOND_120040
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :WOND_120041
+                :WOND_120042
+                :WOND_120043
+                :WOND_120044
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
