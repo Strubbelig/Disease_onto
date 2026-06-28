@@ -8,16 +8,16 @@
 
 <http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal> rdf:type owl:Ontology ;
                                                                         owl:imports <http://purl.obolibrary.org/obo/wond/ground_truth.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/dron_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/go_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/hp_module.owl> ,
+                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_module.owl> ,
                                                                                     <http://purl.obolibrary.org/obo/wond/modules/obi_module.owl> ,
                                                                                     <http://purl.obolibrary.org/obo/wond/modules/ogms_module.owl> ,
                                                                                     <http://purl.obolibrary.org/obo/wond/modules/pato_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/go_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/hp_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/dron_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_module.owl> ,
                                                                                     <http://purl.obolibrary.org/obo/wond/modules/uo_module.owl> ,
                                                                                     <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> .
 
@@ -316,9 +316,9 @@
              rdfs:label "disease classification stage"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
-:WOND_120020 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120001
+:WOND_120001 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120020 ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
                                owl:someValuesFrom :WOND_120028
@@ -327,7 +327,18 @@
                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
                                owl:someValuesFrom :WOND_120021
                              ] ;
-             <http://purl.org/dc/elements/1.1/description> "The set of patholgical disorders in one individual."@en ;
+             <http://purl.org/dc/elements/1.1/description> "A disease whose disorders had to develop."@en ;
+             rdfs:label "Developed material disease entity"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
+:WOND_120020 rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                               owl:someValuesFrom :WOND_120022
+                             ] ;
+             <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
              rdfs:label "material disease entity"@en .
 
 
@@ -363,27 +374,28 @@
                              [ rdf:type owl:Restriction ;
                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000127> ;
                                owl:someValuesFrom :WOND_120023
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
                              ] ;
+             <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en ;
+             rdfs:isDefinedBy "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en ;
              rdfs:label "pathological disorder"@en .
 
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023
 :WOND_120023 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                               owl:someValuesFrom :WOND_120021
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                               owl:someValuesFrom :WOND_120022
+             rdfs:subClassOf [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000016>
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                      owl:someValuesFrom :WOND_120021
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
                              ] ;
-             <http://purl.org/dc/elements/1.1/description> "A disease disposition inheres in some individual that is tha bearer of a disorder"@en ;
-             rdfs:label "disease disposition"@en .
+             <http://purl.org/dc/elements/1.1/description> "A disease disposition inheres in some individual that is the potential bearer of a disorder."@en ;
+             rdfs:label "disease predisposition"@en .
 
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120024
