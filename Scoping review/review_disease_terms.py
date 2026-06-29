@@ -31,6 +31,7 @@ import re
 import sys
 import time
 import urllib.parse
+import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -45,7 +46,9 @@ ENV_FILE = Path(
 
 BIOPORTAL_BASE_URL = "https://data.bioontology.org"
 OLS_BASE_URL = "https://www.ebi.ac.uk/ols4"
-OBO_REGISTRY_URL = "https://obofoundry.org/registry/ontologies.json"
+OBO_REGISTRY_URL = "https://obofoundry.org/registry/ontologies.yml"
+SCOPING_REVIEW_DIR = Path("Scoping review")
+DEFAULT_OUT = SCOPING_REVIEW_DIR / "disease_terms_review.csv"
 
 CACHE_DIR = Path("/tmp/disease_terms_review_cache")
 
@@ -64,6 +67,18 @@ DEFAULT_TERMS = [
 
 BFO_PREFIX = "http://purl.obolibrary.org/obo/BFO_"
 DELAY = 0.12
+
+DEFINITION_KEYS = {
+    "definition",
+    "description",
+    "iao_0000115",
+    "http://purl.obolibrary.org/obo/iao_0000115",
+}
+COMMENT_KEYS = {
+    "comment",
+    "rdfs:comment",
+    "http://www.w3.org/2000/01/rdf-schema#comment",
+}
 
 
 # -- Generic helpers -----------------------------------------------------------
@@ -189,6 +204,34 @@ def obo_curie_to_iri(curie: str) -> str:
     return f"http://purl.obolibrary.org/obo/{curie.replace(':', '_')}"
 
 
+def annotation_key_matches(key: str, wanted_keys: set[str]) -> bool:
+    lowered = key.strip().lower()
+    local = lowered.rsplit("#", 1)[-1].rsplit("/", 1)[-1]
+    return lowered in wanted_keys or local in wanted_keys
+
+
+def extract_annotation_values(data: Any, wanted_keys: set[str]) -> list[str]:
+    values: list[str] = []
+    if not isinstance(data, dict):
+        return values
+
+    for key, value in data.items():
+        if annotation_key_matches(str(key), wanted_keys):
+            values.extend(clean_list(value))
+
+    for container_key in ["properties", "annotation", "annotations"]:
+        container = data.get(container_key)
+        if isinstance(container, dict):
+            for key, value in container.items():
+                if annotation_key_matches(str(key), wanted_keys):
+                    values.extend(clean_list(value))
+        elif isinstance(container, list):
+            for item in container:
+                values.extend(extract_annotation_values(item, wanted_keys))
+
+    return values
+
+
 def make_row(
     *,
     term: str,
@@ -198,6 +241,7 @@ def make_row(
     preferred_label: str = "",
     class_iri: str = "",
     definition: str = "",
+    comments: str = "",
     synonyms: str = "",
     parent_labels: str = "",
     parent_iris: str = "",
@@ -213,6 +257,7 @@ def make_row(
         "preferred_label": preferred_label,
         "class_iri": class_iri,
         "definition": definition,
+        "comments": comments,
         "synonyms": synonyms,
         "parent_labels": parent_labels,
         "parent_iris": parent_iris,
@@ -258,7 +303,6 @@ def merge_row(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
         "ontology",
         "preferred_label",
         "class_iri",
-        "definition",
         "synonyms",
         "parent_labels",
         "parent_iris",
@@ -268,6 +312,10 @@ def merge_row(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
     for field in fill_if_blank:
         if not existing.get(field) and incoming.get(field) not in (None, ""):
             existing[field] = incoming[field]
+
+    for field in ["definition", "comments"]:
+        for part in clean_list(str(incoming.get(field, "")).split(";")):
+            existing[field] = append_unique(str(existing.get(field, "")), part)
 
     for field in [
         "source_databases",
@@ -329,7 +377,7 @@ def search_bioportal_exact(term: str, apikey: str) -> list[dict[str, Any]]:
             {
                 "q": term,
                 "require_exact_match": "true",
-                "include": "prefLabel,definition,synonym,notation",
+                "include": "prefLabel,definition,synonym,notation,properties",
                 "pagesize": 100,
                 "page": page,
             },
@@ -386,6 +434,7 @@ def bioportal_rows(
     *,
     fetch_parents: bool,
     fetch_mappings: bool,
+    exact_label_only: bool,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     version_cache: dict[str, str] = {}
@@ -393,14 +442,22 @@ def bioportal_rows(
     for term in terms:
         print(f"\n-- BioPortal: searching '{term}' --", file=sys.stderr)
         hits = search_bioportal_exact(term, apikey)
-        print(f"   {len(hits)} hits", file=sys.stderr)
+        raw_count = len(hits)
+        if exact_label_only:
+            term_lower = term.casefold()
+            hits = [hit for hit in hits if str(hit.get("prefLabel", "")).casefold() == term_lower]
+        if exact_label_only:
+            print(f"   {len(hits)} exact-label hits ({raw_count} raw BioPortal hits)", file=sys.stderr)
+        else:
+            print(f"   {len(hits)} hits", file=sys.stderr)
 
         for hit in hits:
             retrieved_at = now_iso()
             iri = hit.get("@id", "")
             ontology = hit.get("links", {}).get("ontology", "").rstrip("/").split("/")[-1]
             label = hit.get("prefLabel", "").strip()
-            definition = first_clean(hit.get("definition"))
+            definition = join_values(clean_list(hit.get("definition")) + extract_annotation_values(hit, DEFINITION_KEYS))
+            comments = join_values(extract_annotation_values(hit, COMMENT_KEYS))
             synonyms = join_values(hit.get("synonym"))
 
             parent_labels = parent_iris = anchor = ""
@@ -426,6 +483,7 @@ def bioportal_rows(
                     preferred_label=label,
                     class_iri=iri,
                     definition=definition,
+                    comments=comments,
                     synonyms=synonyms,
                     parent_labels=parent_labels,
                     parent_iris=parent_iris,
@@ -475,6 +533,8 @@ def search_ols_exact(term: str, base_url: str) -> list[dict[str, Any]]:
                 "q": term,
                 "exact": "true",
                 "type": "class",
+                "queryFields": "label",
+                "fieldList": "iri,label,ontology_name,ontology_prefix,description,comment,annotation,synonym,exact_synonyms,obo_id,type",
                 "rows": rows,
                 "start": start,
             },
@@ -535,6 +595,14 @@ def fetch_ols_parents(ontology: str, iri: str, base_url: str) -> list[dict[str, 
     return []
 
 
+def fetch_ols_term_details(ontology: str, iri: str, base_url: str) -> dict[str, Any]:
+    for encoded in ols_iri_variants(iri):
+        data = ols_get(base_url, f"/api/ontologies/{ontology}/terms/{encoded}")
+        if isinstance(data, dict) and data:
+            return data
+    return {}
+
+
 def ols_rows(
     terms: list[str],
     *,
@@ -554,8 +622,20 @@ def ols_rows(
             iri = hit.get("iri", "")
             ontology = (hit.get("ontology_name") or hit.get("ontology_prefix") or "").lower()
             label = str(hit.get("label", "")).strip()
-            definition = first_clean(hit.get("description"))
-            synonyms = join_values(hit.get("synonym"))
+            detail = fetch_ols_term_details(ontology, iri, base_url) if ontology and iri else {}
+            definition = join_values(
+                clean_list(hit.get("description"))
+                + clean_list(detail.get("description"))
+                + extract_annotation_values(hit, DEFINITION_KEYS)
+                + extract_annotation_values(detail, DEFINITION_KEYS)
+            )
+            comments = join_values(
+                clean_list(hit.get("comment"))
+                + clean_list(detail.get("comment"))
+                + extract_annotation_values(hit, COMMENT_KEYS)
+                + extract_annotation_values(detail, COMMENT_KEYS)
+            )
+            synonyms = join_values(clean_list(hit.get("synonym")) + clean_list(hit.get("exact_synonyms")))
 
             if ontology and ontology not in version_cache:
                 version_cache[ontology] = fetch_ols_ontology_version(ontology, base_url)
@@ -576,6 +656,7 @@ def ols_rows(
                     preferred_label=label,
                     class_iri=iri,
                     definition=definition,
+                    comments=comments,
                     synonyms=synonyms,
                     parent_labels=parent_labels,
                     parent_iris=parent_iris,
@@ -590,25 +671,77 @@ def ols_rows(
 
 # -- OBO Foundry direct scan ---------------------------------------------------
 
-def find_obo_product_url(record: dict[str, Any]) -> str:
+def find_ontology_product_urls(record: dict[str, Any]) -> list[str]:
+    urls: list[str] = []
+
+    def add_url(url: str) -> None:
+        if url and url not in urls:
+            urls.append(url)
+
     for product in record.get("products", []) or []:
         url = product.get("ontology_purl") or product.get("url") or product.get("id") or ""
         if str(url).endswith(".obo"):
-            return str(url)
+            add_url(str(url))
+    for product in record.get("products", []) or []:
+        url = product.get("ontology_purl") or product.get("url") or product.get("id") or ""
+        if str(url).endswith(".owl"):
+            add_url(str(url))
     url = record.get("ontology_purl") or ""
-    if str(url).endswith(".obo"):
-        return str(url)
-    ontology_id = record.get("id", "")
-    return f"https://purl.obolibrary.org/obo/{ontology_id}.obo" if ontology_id else ""
+    if str(url).endswith((".obo", ".owl")):
+        add_url(str(url))
+    return urls
 
 
 def fetch_obo_registry() -> list[dict[str, Any]]:
-    data = get_json(OBO_REGISTRY_URL, namespace="obo-registry")
-    if isinstance(data, dict):
-        return data.get("ontologies", []) or []
-    if isinstance(data, list):
-        return data
-    return []
+    text = get_text(OBO_REGISTRY_URL, namespace="obo-registry")
+    if not text:
+        return []
+    return parse_obo_registry_yaml(text)
+
+
+def parse_simple_yaml_value(value: str) -> str:
+    value = value.strip()
+    if value in {"", "|", ">"}:
+        return ""
+    return value.strip("\"'")
+
+
+def parse_obo_registry_yaml(text: str) -> list[dict[str, Any]]:
+    """Extract the small subset of OBO registry YAML needed for direct scans."""
+    records: list[dict[str, Any]] = []
+    chunks = re.split(r"\n(?=- activity_status:)", text)
+    for chunk in chunks:
+        chunk = chunk.strip("\n")
+        if not chunk.startswith("- activity_status:"):
+            continue
+
+        record: dict[str, Any] = {"products": []}
+        lines = chunk.splitlines()
+        for line in lines:
+            if line.startswith("- activity_status:"):
+                record["activity_status"] = parse_simple_yaml_value(line.split(":", 1)[1])
+            elif match := re.match(r"^  (id|ontology_purl|title|preferredPrefix):\s*(.*)$", line):
+                record[match.group(1)] = parse_simple_yaml_value(match.group(2))
+
+        products_block = re.search(r"(?ms)^  products:\n(.*?)(?=^  [A-Za-z0-9_-]+:|\Z)", chunk)
+        if products_block:
+            current_product: dict[str, str] | None = None
+            for line in products_block.group(1).splitlines():
+                if line.startswith("  - "):
+                    if current_product:
+                        record["products"].append(current_product)
+                    current_product = {}
+                    rest = line[4:]
+                    if ":" in rest:
+                        key, value = rest.split(":", 1)
+                        current_product[key.strip()] = parse_simple_yaml_value(value)
+                elif current_product is not None and (match := re.match(r"^    (id|ontology_purl|title):\s*(.*)$", line)):
+                    current_product[match.group(1)] = parse_simple_yaml_value(match.group(2))
+            if current_product:
+                record["products"].append(current_product)
+
+        records.append(record)
+    return records
 
 
 def parse_obo_header(text: str) -> dict[str, str]:
@@ -640,6 +773,7 @@ def parse_obo_stanza(stanza: dict[str, list[str]], terms_lower: set[str]) -> dic
     if stanza.get("def"):
         match = re.search(r'"(.*?)"', stanza["def"][0])
         definition = match.group(1) if match else stanza["def"][0]
+    comments = join_values(stanza.get("comment"))
 
     synonyms = []
     for synonym_line in stanza.get("synonym", []):
@@ -658,6 +792,7 @@ def parse_obo_stanza(stanza: dict[str, list[str]], terms_lower: set[str]) -> dic
         "preferred_label": name,
         "class_iri": obo_curie_to_iri(curie) if curie else "",
         "definition": definition,
+        "comments": comments,
         "synonyms": join_values(synonyms),
         "parent_labels": join_values(p.get("prefLabel") for p in parents),
         "parent_iris": join_values(p.get("@id") for p in parents),
@@ -697,6 +832,93 @@ def scan_obo_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, Any]
     return version, rows
 
 
+def local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1] if "}" in tag else tag
+
+
+def child_texts(element: ET.Element, names: set[str]) -> list[str]:
+    values = []
+    for child in element:
+        if local_name(child.tag) in names and child.text and child.text.strip():
+            values.append(child.text.strip())
+    return values
+
+
+def scan_owl_xml_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, Any]]]:
+    try:
+        root = ET.fromstring(text.encode("utf-8"))
+    except ET.ParseError as exc:
+        print(f"  [warn] OWL/XML parse failed: {exc}", file=sys.stderr)
+        return "", []
+
+    rdf_about = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
+    rdf_resource = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
+    owl_version_iri = "{http://www.w3.org/2002/07/owl#}versionIRI"
+    owl_version_info = "{http://www.w3.org/2002/07/owl#}versionInfo"
+    terms_lower = {term.casefold() for term in terms}
+
+    version = ""
+    for ontology in root.iter("{http://www.w3.org/2002/07/owl#}Ontology"):
+        for child in ontology:
+            if child.tag == owl_version_iri and child.attrib.get(rdf_resource):
+                version = child.attrib[rdf_resource]
+                break
+            if child.tag == owl_version_info and child.text:
+                version = child.text.strip()
+                break
+        if version:
+            break
+
+    rows: list[dict[str, Any]] = []
+    class_elements = list(root.iter("{http://www.w3.org/2002/07/owl#}Class"))
+    for element in class_elements:
+        iri = element.attrib.get(rdf_about, "")
+        if not iri:
+            continue
+        label = first_clean(child_texts(element, {"label"}))
+        if not label or label.casefold() not in terms_lower:
+            continue
+
+        definitions = child_texts(element, {"IAO_0000115", "definition"})
+        comments = child_texts(element, {"comment"})
+        synonyms = []
+        for child in element:
+            name = local_name(child.tag)
+            if "Synonym" in name and child.text and child.text.strip():
+                synonyms.append(child.text.strip())
+
+        parent_iris = []
+        for child in element:
+            if local_name(child.tag) == "subClassOf" and child.attrib.get(rdf_resource):
+                parent_iris.append(child.attrib[rdf_resource])
+        parents = [{"@id": parent_iri, "prefLabel": ""} for parent_iri in parent_iris]
+
+        rows.append(
+            {
+                "term": label,
+                "preferred_label": label,
+                "class_iri": iri,
+                "definition": first_clean(definitions),
+                "comments": join_values(comments),
+                "synonyms": join_values(synonyms),
+                "parent_labels": "",
+                "parent_iris": join_values(parent_iris),
+                "bfo_anchor": bfo_anchor(parents),
+            }
+        )
+    return version, rows
+
+
+def scan_ontology_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, Any]]]:
+    stripped = text.lstrip()
+    if stripped.startswith("format-version:") or "\n[Term]" in stripped[:5000]:
+        return scan_obo_text(text, terms)
+    if stripped.startswith("<?xml") or stripped.startswith("<rdf:RDF") or stripped.startswith("<Ontology"):
+        return scan_owl_xml_text(text, terms)
+    print("  [warn] ontology format not supported for direct OBO Foundry scan", file=sys.stderr)
+    return "", []
+
+
 def obo_rows(
     terms: list[str],
     *,
@@ -715,14 +937,20 @@ def obo_rows(
     rows: list[dict[str, Any]] = []
     for record in active_records:
         ontology = str(record.get("id", "")).lower()
-        url = find_obo_product_url(record)
-        if not ontology or not url:
+        urls = find_ontology_product_urls(record)
+        if not ontology or not urls:
             continue
-        print(f"   OBO {ontology}: {url}", file=sys.stderr)
-        text = get_text(url, namespace="obo-files")
+        text = None
+        url = ""
+        for candidate_url in urls:
+            print(f"   OBO {ontology}: {candidate_url}", file=sys.stderr)
+            text = get_text(candidate_url, namespace="obo-files")
+            if text:
+                url = candidate_url
+                break
         if not text:
             continue
-        version, parsed_rows = scan_obo_text(text, terms)
+        version, parsed_rows = scan_ontology_text(text, terms)
         retrieved_at = now_iso()
         for parsed in parsed_rows:
             rows.append(
@@ -734,6 +962,7 @@ def obo_rows(
                     preferred_label=parsed["preferred_label"],
                     class_iri=parsed["class_iri"],
                     definition=parsed["definition"],
+                    comments=parsed["comments"],
                     synonyms=parsed["synonyms"],
                     parent_labels=parsed["parent_labels"],
                     parent_iris=parsed["parent_iris"],
@@ -753,6 +982,7 @@ FIELDNAMES = [
     "preferred_label",
     "class_iri",
     "definition",
+    "comments",
     "synonyms",
     "parent_labels",
     "parent_iris",
@@ -792,7 +1022,7 @@ def parse_sources(raw_sources: str) -> list[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--out", default="disease_terms_review.csv")
+    parser.add_argument("--out", default=str(DEFAULT_OUT))
     parser.add_argument(
         "--sources",
         default="bioportal,ols,obo",
@@ -811,6 +1041,11 @@ def main() -> None:
     )
     parser.add_argument("--no-parents", action="store_true", help="Skip parent fetches")
     parser.add_argument("--no-mappings", action="store_true", help="Skip BioPortal mapping count fetch")
+    parser.add_argument(
+        "--include-nonlabel-matches",
+        action="store_true",
+        help="Keep broader BioPortal exact-search hits whose preferred label is not exactly the searched term.",
+    )
     parser.add_argument("--terms", default="", help="Override term list (comma-separated)")
     parser.add_argument("--resume", action="store_true", help="Merge into existing output file if present")
     args = parser.parse_args()
@@ -833,6 +1068,7 @@ def main() -> None:
                     apikey,
                     fetch_parents=not args.no_parents,
                     fetch_mappings=not args.no_mappings,
+                    exact_label_only=not args.include_nonlabel_matches,
                 ),
             )
         elif source == "ols":
@@ -841,6 +1077,7 @@ def main() -> None:
         elif source == "obo":
             merge_rows(rows_by_key, obo_rows(terms, max_ontologies=args.obo_max_ontologies))
 
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDNAMES, extrasaction="ignore")
         writer.writeheader()

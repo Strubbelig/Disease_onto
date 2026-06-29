@@ -280112,10 +280112,10 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
-    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020 -->
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120001 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
@@ -280128,7 +280128,159 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">The set of patholgical disorders in one individual.</dc:description>
+        <dc:description xml:lang="en">A disease whose disorders had to develop.</dc:description>
+        <rdfs:label xml:lang="en">Developed material disease entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
+        <dc:description xml:lang="en">This is not a predisposition: the pathological material is already present, it just has no observed phenotype yet (e.g. an early subclinical plaque). Silent disorders have no associated phenotype.</dc:description>
+        <rdfs:label xml:lang="en">silent disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A tendency is distinguished from a disposition not by its bearer or by requiring a material basis — both inhere in a material entity and supervene on its physical makeup — but by its mode of realization: a disposition, once its trigger conditions obtain, is realized; a tendency only probabilistically and partially inclines toward realization and can be opposed by competing tendencies. It is therefore modelled as a sibling of disposition, function, and role under realizable entity, not as a subtype of disposition.</rdfs:comment>
+        <rdfs:label xml:lang="en">tendency</rdfs:label>
+        <skos:definition xml:lang="en">A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120006">
+        <rdfs:label xml:lang="en">disorder removal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120007">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020"/>
+        <rdfs:comment xml:lang="en">Disorder asserted but not yet characterized; defined operationally at the classification layer.</rdfs:comment>
+        <rdfs:label xml:lang="en">unknown-disorder disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120008">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">genetic predisposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120009 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">genetic variant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120010 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120010">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">predisposition from an existing disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120011">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120086"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120087"/>
+        <rdfs:label xml:lang="en">intended disorder elimination process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120012">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">predisposition realizing disorder development process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+        <dc:description xml:lang="en">A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement).</dc:description>
         <rdfs:label xml:lang="en">material disease entity</rdfs:label>
     </owl:Class>
     
@@ -280140,20 +280292,8 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -280162,7 +280302,8 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">disease development process</rdfs:label>
+        <rdfs:comment xml:lang="en">Deliberately no input mandatory. A pre-existing disorder as input would be false for de novo disease (the first disorder has no disorder input).</rdfs:comment>
+        <rdfs:label xml:lang="en">disorder development process</rdfs:label>
     </owl:Class>
     
 
@@ -280174,22 +280315,19 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000127"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023"/>
+        <dc:description xml:lang="en">Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al.</dc:description>
         <rdfs:label xml:lang="en">pathological disorder</rdfs:label>
+        <skos:definition xml:lang="en">a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent.</skos:definition>
     </owl:Class>
     
 
@@ -280197,21 +280335,33 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">A disease disposition inheres in some individual that is tha bearer of a disorder</dc:description>
-        <rdfs:label xml:lang="en">disease disposition</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">Predisposition / risk proper</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">disease predisposition</rdfs:label>
     </owl:Class>
     
 
@@ -280222,14 +280372,14 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120047"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">diagnosis</obo:IAO_0000118>
@@ -280368,6 +280518,12 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -280380,12 +280536,6 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">threshold crossing event</rdfs:label>
@@ -280422,8 +280572,8 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
     <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120034 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:label xml:lang="en">perpetuation disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005"/>
+        <rdfs:label xml:lang="en">perpetuation tendency</rdfs:label>
     </owl:Class>
     
 
@@ -280587,7 +280737,8 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                     <rdf:Description rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -280728,7 +280879,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
     <!-- http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120087 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120087">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120086"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120088"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120091"/>
         <rdfs:label xml:lang="en">disorder elimination process</rdfs:label>
@@ -280805,7 +280956,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
     <owl:Class rdf:about="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120092">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120028"/>
-        <dc:description xml:lang="en">A disease process that has as participant a disease that has as part a disorder which is the ouput of another disease course process.</dc:description>
+        <dc:description xml:lang="en">A disease process that has as participant a disease that has as part a disorder which is the output of another disease course process.</dc:description>
         <rdfs:label xml:lang="en">complication disease process</rdfs:label>
     </owl:Class>
     
@@ -290144,14 +290295,14 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf rdf:nodeID="genid36998"/>
+                <rdfs:subClassOf rdf:nodeID="genid37018"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid36998"/>
+        <owl:annotatedTarget rdf:nodeID="genid37018"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/cell-ontology/issues/757"/>
     </owl:Axiom>
-    <owl:Restriction rdf:nodeID="genid36998">
+    <owl:Restriction rdf:nodeID="genid37018">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000031"/>
     </owl:Restriction>
