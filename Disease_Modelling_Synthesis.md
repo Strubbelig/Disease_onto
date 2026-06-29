@@ -1,6 +1,6 @@
 # Modelling Disease: A Synthesis to Inform Your Ontology
 
-*Synthesised from the 41 full texts in "Disease onto papers". Goal: the findings and reasoning that bear on **how to model disease** between top-level and domain, with every critique of a current modelling approach flagged ⚠.*
+*Synthesised from the full texts in "Disease onto papers" plus the additional non-duplicate sources in "More disease onto papers" (Amundson 2000; Boorse 1982; Cooper 2002; Ereshefsky 2009; Grenon & Smith 2004; Haendel et al. 2018; Jansen in Munn & Smith 2008; Reznek 1987/2022; Smith & Ceusters 2010; Wakefield 1992). Goal: the findings and reasoning that bear on **how to model disease** between top-level and domain, with every critique of a current modelling approach flagged ⚠. Note: the two Wakefield PDFs are image-only in the local extraction pass, so Wakefield is represented here through the formulation cited and discussed in the text-extractable Cooper and Ereshefsky papers.*
 
 ---
 
@@ -8,9 +8,10 @@
 
 Every paper, formal or philosophical, is forced into a position on three coupled questions. Your ontology needs an explicit answer to each.
 
-1. **Ontological category.** Is a disease a *continuant* (a state/disposition that the organism bears) or an *occurrent* (a process/causal chain that unfolds)? — Grenon & Smith's SNAP/SPAN split makes this a forced choice in BFO; Mizoguchi denies the choice is clean.
+1. **Ontological category.** Is a disease a *continuant* (a state/disposition/material entity that persists through change) or an *occurrent* (a process/causal chain that unfolds)? — Grenon & Smith's SNAP/SPAN split makes this a forced choice in BFO, while Mizoguchi denies that the choice is clean.
 2. **Grounding of "abnormal/pathological".** What makes the bearer pathological — statistical sub-normal function (Boorse), evolutionary dysfunction (Wakefield/Schwartz), harm/disvalue (normativists), or a primitive medical "pathologicity" (Hucklenbroich)? Every formal ontology *imports* this from philosophy of medicine and almost none of them say which.
 3. **Crisp vs graded.** Are disease classes crisp universals with necessary-and-sufficient conditions, or inherently vague/prototype-based (Sadegh-Zadeh)?
+4. **Classification vs reality.** Is "disease" being used for the underlying biological state, for the practical illness role, for a nosological category, or for a precision-medicine stratification? Boorse's disease/illness distinction, Ereshefsky's state-description/normative-claim split, and Haendel et al.'s precision-medicine framing all show that these uses come apart.
 
 The literature does not converge. What it gives you is a map of the trade-offs and a long list of failure modes to avoid.
 
@@ -65,6 +66,16 @@ DOID and Mondo are **classification/integration** resources, not metaphysical th
 ### 2d. Substrate: bodily systems and function
 **(Smith, Munn & Papakin 2004)** — disorders are predicated of **bodily systems** individuated *functionally and spatially*, not just anatomically. Whatever you choose, you need a principled account of the *bearer* (system/structure) before you can say it is disordered.
 
+### 2e. Top-level realism and SNAP/SPAN — *why your category choice matters*
+**(Grenon & Smith 2004; Jansen in Munn & Smith 2008; Smith & Ceusters 2010)**
+
+BFO-style realism is not just a vocabulary choice. Grenon & Smith's SNAP/SPAN distinction separates inventories of enduring continuants at time-indexed snapshots from inventories of processes and histories over intervals. Jansen's top-level analysis reinforces the same basic axes: dependent vs independent entities, continuants vs occurrents, and universals vs particulars. Smith & Ceusters then turn this into a methodology for scientific ontologies: reference ontology terms should be treated, heuristically and revisably, as aiming at repeatable types in reality, not merely at local database classes or words.
+
+> ⚠ **Consequence for your proposal**
+> - If disease is asserted as a BFO material continuant, the ontology owes an identity/persistence story; it cannot quietly borrow process identity from disease course.
+> - If disease classification is treated as epistemic, then disease categories may be useful and revisable without each category being a clean realist universal.
+> - "Material disease entity" should therefore be defended as a biological continuant whose boundedness is classification-relative, while `pathological disorder`, `disorder development process`, and `disease diagnostic result` do different jobs in different top-level categories.
+
 ---
 
 ## 3. What philosophy of medicine tells you about "pathological" (and why no off-the-shelf answer is safe)
@@ -72,16 +83,24 @@ DOID and Mondo are **classification/integration** resources, not metaphysical th
 Your formal model has to bottom out in one of these, so know their failure modes.
 
 ### 3a. Naturalism — Boorse's Biostatistical Theory (BST)
-**(Boorse 1977, 1997, 2014)** Disease = an internal state reducing one or more **functional abilities below the statistically typical level** for the organism's **reference class** (age × sex × species). Value-free, the default "scientific" definition and the implicit grounding of OGMS "clinically abnormal".
+**(Boorse 1977, 1982, 1997, 2014)** Disease = an internal state reducing one or more **functional abilities below the statistically typical level** for the organism's **reference class** (age × sex × species). Value-free, the default "scientific" definition and the implicit grounding of OGMS "clinically abnormal". Boorse also separates **disease** (the theoretical biological notion) from **illness** (a socially and normatively loaded practical status involving undesirability, entitlement to special treatment, and excuse from ordinary responsibility).
 
 > ⚠ **Critiques**
+> - **Amundson (2000):** the idea of a biologically privileged "normal function" is itself unstable. Species contain functional diversity, and the move from difference to abnormality often smuggles in social preference about acceptable modes of functioning. This deepens the worry that "normal function" is not a neutral biological primitive.
+> - **Ereshefsky (2009):** biological taxonomy and genetics do not supply a unique "species design" or natural phenotype against which health can be measured. Naturalism therefore fails at its own stated goal: it imports a choice of which biological activity matters.
 > - **Kingma (2010):** functions must be **indexed to a situation** (the heart's "normal" output differs at rest vs exercise). But once you index to situations, the BST **can no longer distinguish health from disease** — pathological responses occur in *their* characteristic situations too (poison, polio). The **reference-class choice is doing illicit normative work**.
+> - **Cooper (2002):** selected-effect/evolutionary accounts of dysfunction are neither necessary nor sufficient for disease; some diseases may be evolutionarily advantageous in some contexts, and some selected-for traits can still be pathological for the bearer.
 > - **Schwartz (2007):** "dysfunction" needs a *line* between normal and abnormal that neither pure statistics nor selected-effect function can draw non-arbitrarily.
 > - **Hausman (2012):** rescue naturalism only by abandoning the sharp line for **graded functional efficiency** — which concedes the crisp-universal model.
 
 ### 3b. Normativism / hybrids
-**Engelhardt (1975):** disease judgements are ineliminably **value-laden**. **Wakefield's** Harmful Dysfunction (factual dysfunction + harm) is the dominant hybrid. **Cooper** (via Smart 2016): disease = a condition that is *(i) bad to have, (ii) treatable, (iii) one we'd be unlucky to have*.
-> ⚠ Normativism imports values you may not want in a reference ontology; hybrids inherit *both* the dysfunction problem (§3a) *and* the indeterminacy of "harm".
+**Engelhardt (1975):** disease judgements are ineliminably **value-laden**. **Wakefield's** Harmful Dysfunction (factual dysfunction + harm) is the dominant hybrid. **Cooper (2002):** disease = a condition that is *(i) bad to have, (ii) potentially medically treatable, and (iii) one the bearer is unlucky to have*. **Reznek (1987/2022):** disease is centrally tied to harm — making the bearer worse off — while disease identity and disease-entity boundaries also depend on explanatory natures and taxonomic decisions.
+
+> ⚠ **Critiques / lessons**
+> - Normativism imports values you may not want in a reference ontology; hybrids inherit *both* the dysfunction problem (§3a) *and* the indeterminacy of "harm".
+> - Cooper's treatability condition is useful for clinical discourse but dangerous as an ontology criterion: whether something is treatable changes with technology and social practice.
+> - Reznek is especially useful for your classification-relative stance: some order of disease identity may be discovered through shared explanatory nature, but what counts as a disease entity rather than a disease genus/form is partly a nosological decision.
+> - This supports separating **material disorder/explanatory substrate** from **diagnostic category/disease boundary**, instead of trying to force all disease individuation into intrinsic material unity.
 
 ### 3c. The "disease entity" tradition — Hucklenbroich
 **(Hucklenbroich 1984, 2014)** Treats **disease entity** as the *primitive* theoretical concept of medicine (like "mass" in physics), grounded in **pathologicity** criteria (e.g. threats to life, pain/suffering, loss of ability/fertility) rather than statistics or values. Diseases are clinical **natural kinds** (a nosology).
@@ -95,7 +114,7 @@ Your formal model has to bottom out in one of these, so know their failure modes
 > ⚠ A pure OWL/DL ontology with necessary-and-sufficient class definitions **structurally cannot represent** graded disease membership. Decide early whether you accept this limitation, push gradedness into data/annotations, or adopt fuzzy/values-based machinery.
 
 ### 3f. Deflationists / eliminativists — do you even need the class?
-**Hesslow (1993):** clinical decisions turn on **specific facts** (prognosis, treatability, consequences), not on whether the health/disease line is crossed; the concept of disease is "superfluous" for decision-making. **Worrall & Worrall (2001):** the definitional project is "much ado about nothing". **Lemoine (2013):** conceptual analysis *cannot* decide naturalism vs normativism (stipulation + counterexamples let everyone "win"); the concept should be **naturalised empirically** instead.
+**Hesslow (1993):** clinical decisions turn on **specific facts** (prognosis, treatability, consequences), not on whether the health/disease line is crossed; the concept of disease is "superfluous" for decision-making. **Ereshefsky (2009):** instead of asking for the correct definition of disease, distinguish **state descriptions** (physiological/psychological descriptions) from **normative claims** (what is valued/disvalued). **Worrall & Worrall (2001):** the definitional project is "much ado about nothing". **Lemoine (2013):** conceptual analysis *cannot* decide naturalism vs normativism (stipulation + counterexamples let everyone "win"); the concept should be **naturalised empirically** instead.
 > Takeaway for you: don't try to win the definition by analysis. **Pick a stipulated, fit-for-purpose definition, state the purpose, and justify by utility** — exactly what OGMS *says* it does but doesn't follow through on.
 
 ---
@@ -108,6 +127,8 @@ These are the ones most likely to bite your implementation, independent of which
 - ⚠ **Primitives are unavoidable (Scheuermann et al. 2009).** Some terms must stay undefined to avoid regress; "abnormal/pathological" is the load-bearing primitive in every model. Be explicit about *which* terms you leave primitive and *why*, rather than hiding the choice.
 - ⚠ **Realism is a contested commitment (Schulz et al. 2009; Mizoguchi & Borgo 2022).** BFO-style "ontological realism" is not neutral; a competing top-level (YAMATO/DOLCE) changes what disease *can* be. Your between-top-and-domain layer inherits whatever you put above it — choose the top-level deliberately.
 - ⚠ **Universals vs defaults vs reference classes interact.** Boorse's reference-class relativity (§3a) means even "abnormal" is *class-indexed*; an ontology that asserts disease universals without reference-class parameters smuggles in a hidden population.
+- ⚠ **Classification can be useful without being metaphysically clean (Haendel et al. 2018).** Precision medicine needs computable classifications that integrate phenotypes, genotypes, environment, mechanisms, and clinical observations. These groupings may be excellent for stratification and decision support even when they do not correspond one-to-one to intrinsic disease universals.
+- ⚠ **Do not encode evaluative disagreement as biological structure (Ereshefsky 2009; Amundson 2000).** For controversial cases, model the state description separately from the normative or classificatory judgement. This is a strong argument for your separation between material disorder and diagnostic/classification layers.
 
 ---
 
@@ -119,8 +140,9 @@ A defensible synthesis, given the above:
 2. **Treat the disease as a persisting (continuant) entity *individuated by* its causal-process structure** — the RFM "river" reading. This keeps pre-clinical existence (OGMS's main motivation) *and* the causal explanatory content (RFM's), without committing you to "disease = a single disposition" (which Röhl & Jansen show breaks on malfunction).
 3. **Adopt a richer realizable layer than BFO's** if you stay disposition-adjacent: keep **Function and Disposition disjoint** (Röhl & Jansen) and add **Tendency** as a graded realizable (Jansen 2007) so risk/predisposition and partial manifestation are representable.
 4. **Make "pathologicity" a named, criteria-defined primitive** (Hucklenbroich) rather than silently importing Boorse. State the criteria; don't pretend it's value-free statistics if it isn't.
-5. **Decide your stance on vagueness up front** (Sadegh-Zadeh). Recommended for an OWL ontology: keep crisp *classes*, push graded membership and thresholds into **annotation/quantitative data** (Yamagata's attribute–value layer is the mechanism), and document that the crispness is a representational convenience, not a metaphysical claim.
-6. **Keep the ontology (all-instances, necessary) strictly separate from clinical default knowledge** (Schulz). Diseases' "typical features" belong in a defaults/association layer, not in class equivalence axioms.
-7. **Justify by purpose, not by analysis** (Lemoine, Hesslow). State the use cases your disease model must serve and evaluate competing definitions by fit — the conceptual-analysis war is unwinnable.
+5. **Separate state description from classification and valuation** (Ereshefsky). The ontology can assert material states/processes; diagnostic thresholds, disease labels, and judgements of seriousness/treatability belong in the epistemic or specification layer.
+6. **Decide your stance on vagueness up front** (Sadegh-Zadeh; Haendel et al.). Recommended for an OWL ontology: keep crisp *classes*, push graded membership, similarity, and thresholds into **annotation/quantitative data** (Yamagata's attribute–value layer and HPO-style similarity scoring are mechanisms), and document that the crispness is a representational convenience, not a metaphysical claim.
+7. **Keep the ontology (all-instances, necessary) strictly separate from clinical default knowledge** (Schulz). Diseases' "typical features" belong in a defaults/association layer, not in class equivalence axioms.
+8. **Justify by purpose, not by analysis** (Lemoine, Hesslow, Ereshefsky). State the use cases your disease model must serve and evaluate competing definitions by fit — the conceptual-analysis war is unwinnable.
 
-**The gap you can claim:** no existing resource reconciles a *causal-structural* individuation of disease (RFM/Smart/Tsou) with a *clean realizable ontology* (Röhl & Jansen) and an *honest, criteria-based pathologicity primitive* (Hucklenbroich), kept *separate from default clinical knowledge* (Schulz). That combination is your contribution.
+**The gap you can claim:** no existing resource reconciles a *causal-structural* individuation of disease (RFM/Smart/Tsou/Reznek) with a *clean realizable ontology* (Röhl & Jansen), an *honest, criteria-based pathologicity primitive* (Hucklenbroich), and a strict separation between **material state**, **diagnostic classification**, **clinical default knowledge**, and **normative valuation** (Schulz/Ereshefsky/Haendel). That combination is your contribution.

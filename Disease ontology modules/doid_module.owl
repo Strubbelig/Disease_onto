@@ -308,7 +308,6 @@
     <!-- http://purl.obolibrary.org/obo/DOID_3132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_3132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_630"/>
         <obo:IAO_0000115 xml:lang="en">An acute porphyria characterized by painful, blistering skin lesions that develop on sun-exposed skin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>GARD:7433</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD10CM:E80.1</oboInOwl:hasDbXref>
@@ -351,31 +350,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
         <rdfs:label xml:lang="en">lymphocele</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_630 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_630">
-        <obo:IAO_0000115 xml:lang="en">A disease that has_material_basis_in genetic variations in the human genome.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>MESH:D030342</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C3101</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2025_09_01:32895009</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0019247</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>DOID:630</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_RAD_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
-        <rdfs:label xml:lang="en">genetic disease</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_630"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A disease that has_material_basis_in genetic variations in the human genome.</owl:annotatedTarget>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007637"/>
-        <oboInOwl:hasDbXref>url:http://ghr.nlm.nih.gov/</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -544,7 +518,6 @@
     <!-- http://purl.obolibrary.org/obo/DOID_9351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_630"/>
         <obo:IAO_0000115 xml:lang="en">A glucose metabolism disease that is characterized by chronic hyperglycaemia with disturbances of carbohydrate, fat and protein metabolism resulting from defects in insulin secretion, insulin action, or both.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:0081062</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>ICD10CM:E08-E13</oboInOwl:hasDbXref>

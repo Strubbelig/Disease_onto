@@ -15,6 +15,8 @@ A realist, BFO/OGMS-based proposal for modelling disease as a **material entity*
 ### Accompanying research
 - `Disease_Modelling_Synthesis.md` — synthesis of the philosophy-of-medicine and formal-ontology literature on defining disease, with critiques.
 - `TODO_ontology_revisions.md` — actionable Protégé revision checklist (Manchester axioms) aligning the ontology with the modelling stance.
+- `TODO_2_predisposition_and_strictening.md` — follow-up checklist for the predisposition refactor and stricter core axioms.
+- `TODO_3_publication_and_mentor_readiness.md` — final readiness checklist before mentor review or publication work.
 - `Scoping_Review_Protocol_Disease_Modelling.md` — PRISMA-ScR protocol for a review of disease modelling in ontologies.
 - `Modelling_Considerations.docx` — the modelling-considerations section for the paper.
 - `Disease_Ontology_Literature_DOIs.xlsx` (+ `_Additions`) — verified DOI bibliography.
