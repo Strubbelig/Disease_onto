@@ -11,7 +11,7 @@
 
 ## A. Rebuild the predisposition cluster (replaces 120023's three intersections)
 
-- [ ] **A1 — Delete all three anonymous-intersection `subClassOf` axioms on `disease predisposition` (120023)** and replace with one clean set of necessary conditions:
+- [x] **A1 — Delete all three anonymous-intersection `subClassOf` axioms on `disease predisposition` (120023)** and replace with one clean set of necessary conditions:
   ```
   'disease predisposition'  ⊑
       'tendency'
@@ -29,18 +29,18 @@
   ```
   > `pathogenic genetic variant` must be a **material entity** (⊑ BFO_0000040 — a portion of DNA / allele; e.g. a GENO/SO-aligned class or your own). If you don't have one yet, create it ⊑ material entity. Do not substitute DOID_630.
 
-- [ ] **A3 — Add subclass `predisposition from an existing disorder`** (the A→B case; was T11e — corrected to `has part`, not `bearer of`):
+- [x] **A3 — Add subclass `predisposition from an existing disorder`** (the A→B case; was T11e — corrected to `has part`, not `bearer of`):
   ```
   'predisposition from an existing disorder'  ⊑
       'disease predisposition'
       and ('inheres in' some ('Homo sapiens' and ('has part' some 'pathological disorder')))
   ```
 
-- [ ] **A4 — On `pathological disorder` (120022): delete** the restriction `('material basis of' some 'disease predisposition')` (BFO_0000127 → 120023). It falsely asserts *every* disorder grounds a predisposition. The basis is declared from the predisposition side (A1/A2), so nothing is lost.
+- [x] **A4 — On `pathological disorder` (120022): delete** the restriction `('material basis of' some 'disease predisposition')` (BFO_0000127 → 120023). It falsely asserts *every* disorder grounds a predisposition. The basis is declared from the predisposition side (A1/A2), so nothing is lost.
 
-- [ ] **A5 — On `pathological disorder` (120022): move the definition off `rdfs:isDefinedBy`.** `rdfs:isDefinedBy` expects an ontology IRI, not prose. Put the text *"a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent"* into `IAO_0000115` (definition) or `skos:definition`.
+- [x] **A5 — On `pathological disorder` (120022): move the definition off `rdfs:isDefinedBy`.** `rdfs:isDefinedBy` expects an ontology IRI, not prose. Put the text *"a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent"* into `IAO_0000115` (definition) or `skos:definition`.
 
-- [ ] **A6 — On `disorder development process` (120021): reconsider `('has input' some 'pathological disorder')` (RO_0002233 → 120022).** This forces a *pre-existing* disorder as input, which is false for de novo disease (the first disorder has no disorder input). Choose one:
+- [x] **A6 — On `disorder development process` (120021): reconsider `('has input' some 'pathological disorder')` (RO_0002233 → 120022).** This forces a *pre-existing* disorder as input, which is false for de novo disease (the first disorder has no disorder input). Choose one:
   - delete `has input`; **or**
   - retype the input to the risk-conferring **material entity** (`'has input' some 'material entity'`); **or**
   - keep the disorder-input only on the complication subclass `120053`, where a prior disorder genuinely exists.
@@ -51,20 +51,20 @@
 
 ## B. Stricter axioms (safe tightenings)
 
-- [ ] **B1 — `material disease entity` (120020):** add `('part of' some 'Homo sapiens')`. A disease is always located in a patient.
-- [ ] **B2 — `pathological disorder` (120022):** add `('part of' some 'Homo sapiens')`. Disorders are in a body.
-- [ ] **B3 — `tendency` (120005):** add `('inheres in' some 'material entity')` so the textual definition is partly enforced (the class currently has no logical content).
-- [ ] **B4 — `threshold crossing event` (120031):** the axiom `occupies temporal region only 'temporal instant'` is `allValuesFrom` (vacuously true if it occupies nothing). Add the matching existential: `('occupies temporal region' some 'temporal instant')`.
-- [ ] **B5 — `compound pathological disorder` (120049):** if "compound" means *more than one*, change `('has part' some 'pathological disorder')` → `('has part' min 2 'pathological disorder')`.
+- [x] **B1 — `material disease entity` (120020):** add `('part of' some 'Homo sapiens')`. A disease is always located in a patient.
+- [x] **B2 — `pathological disorder` (120022):** add `('part of' some 'Homo sapiens')`. Disorders are in a body.
+- [x] **B3 — `tendency` (120005):** add `('inheres in' some 'material entity')` so the textual definition is partly enforced (the class currently has no logical content).
+- [x] **B4 — `threshold crossing event` (120031):** the axiom `occupies temporal region only 'temporal instant'` is `allValuesFrom` (vacuously true if it occupies nothing). Add the matching existential: `('occupies temporal region' some 'temporal instant')`.
+- [x] **B5 — `compound pathological disorder` (120049):** if "compound" means *more than one*, change `('has part' some 'pathological disorder')` → `('has part' min 2 'pathological disorder')`.
 
 ---
 
 ## C. Minor nits
 
 - [ ] **C1 — Reflexivity check.** If your BFO import declares `has part` (BFO_0000051) reflexive, then `material disease entity ⊑ has part some pathological disorder` (and the compound def) make **every** pathological disorder also a material disease entity (it has itself as part). If you don't want single disorders auto-classified as diseases, confirm `has part` is non-reflexive in the merge, or use `has proper continuant part`.
-- [ ] **C2 — `perpetuation disposition` (120034):** perpetuation is graded/counteractable — consider re-parenting it under `tendency` (120005) instead of `disposition` for consistency with the risk modelling.
+- [x] **C2 — `perpetuation disposition` (120034):** perpetuation is graded/counteractable — consider re-parenting it under `tendency` (120005) instead of `disposition` for consistency with the risk modelling.
 - [ ] **C3 — Dedupe:** `disorder removal process` (120006) vs `disorder elimination process` (120087) look like the same concept; keep one.
-- [ ] **C4 — `Unknown-substrate diseases` (120007):** rename to singular `unknown-substrate disease`.
+- [ ] **C4 — `Unknown-substrate diseases` (120007):** rename to singular `unknown-disorder disease`.
 
 ---
 

@@ -331,13 +331,6 @@
              rdfs:label "Developed material disease entity"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120004
-:WOND_120004 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120022 ;
-             <http://purl.org/dc/elements/1.1/description> "This is not a predisposition: the pathological material is already present, it just has no observed phenotype yet (e.g. an early subclinical plaque). Silent disorders have no associated phenotype."@en ;
-             rdfs:label "silent disorder"@en .
-
-
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005
 :WOND_120005 rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ,
@@ -350,11 +343,6 @@
              <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120006
-:WOND_120006 rdf:type owl:Class ;
-             rdfs:label "disorder removal process"@en .
-
-
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120007
 :WOND_120007 rdf:type owl:Class ;
              rdfs:subClassOf :WOND_120020 ;
@@ -364,11 +352,10 @@
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120008
 :WOND_120008 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120023 ,
-                             [ owl:intersectionOf ( :WOND_120023
+             rdfs:subClassOf [ owl:intersectionOf ( :WOND_120023
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                                                      owl:someValuesFrom :WOND_120009
+                                                      owl:someValuesFrom :WOND_120013
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
@@ -418,6 +405,23 @@
                                owl:someValuesFrom :WOND_120023
                              ] ;
              rdfs:label "predisposition realizing disorder development process"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120013
+:WOND_120013 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120009 ,
+                             :WOND_120022 ;
+             rdfs:label "pathogenic genetic variant"@en .
+
+
+###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120014
+:WOND_120014 rdf:type owl:Class ;
+             rdfs:subClassOf :WOND_120023 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                               owl:someValuesFrom :WOND_120021
+                             ] ;
+             rdfs:label "realized disease predisposition"@en .
 
 
 ###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
@@ -472,10 +476,6 @@
 :WOND_120023 rdf:type owl:Class ;
              rdfs:subClassOf [ owl:intersectionOf ( :WOND_120005
                                                     [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                      owl:someValuesFrom :WOND_120021
-                                                    ]
-                                                    [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
                                                     ]
@@ -491,6 +491,7 @@
                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
                              ] ;
              <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
+             <http://purl.org/dc/elements/1.1/description> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en ;
              rdfs:label "disease predisposition"@en .
 
 

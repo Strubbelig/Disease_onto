@@ -193,9 +193,9 @@ def get_text(
 
 def bfo_anchor(parents: list[dict[str, str]]) -> str:
     for parent in parents:
-        iri = parent.get("@id", "")
+        iri = parent.get("@id", "") or ""
         if iri.startswith(BFO_PREFIX):
-            label = parent.get("prefLabel", "").strip()
+            label = (parent.get("prefLabel") or "").strip()
             return f"{label} ({iri.split('BFO_')[1]})" if label else iri
     return ""
 
@@ -919,10 +919,25 @@ def scan_ontology_text(text: str, terms: list[str]) -> tuple[str, list[dict[str,
     return "", []
 
 
+def fetch_bioportal_ontology_ids(apikey: str) -> set[str]:
+    """Return lowercased acronyms of all ontologies indexed in BioPortal."""
+    data = get_json(
+        f"{BIOPORTAL_BASE_URL}/ontologies",
+        {"apikey": apikey, "display_links": "false", "display_context": "false"},
+        namespace="bioportal",
+    )
+    if not isinstance(data, list):
+        return set()
+    ids = {str(o.get("acronym", "")).lower() for o in data if o.get("acronym")}
+    print(f"   BioPortal indexes {len(ids)} ontologies — OBO scan will skip these", file=sys.stderr)
+    return ids
+
+
 def obo_rows(
     terms: list[str],
     *,
     max_ontologies: int | None,
+    skip_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     print("\n-- OBO Foundry: loading registry --", file=sys.stderr)
     registry = fetch_obo_registry()
@@ -930,9 +945,13 @@ def obo_rows(
         record for record in registry
         if str(record.get("activity_status", "active")).lower() not in {"inactive", "obsolete"}
     ]
+    if skip_ids:
+        before = len(active_records)
+        active_records = [r for r in active_records if str(r.get("id", "")).lower() not in skip_ids]
+        print(f"   skipped {before - len(active_records)} ontologies already indexed in BioPortal", file=sys.stderr)
     if max_ontologies is not None:
         active_records = active_records[:max_ontologies]
-    print(f"   scanning {len(active_records)} OBO ontologies", file=sys.stderr)
+    print(f"   scanning {len(active_records)} OBO ontologies not in BioPortal", file=sys.stderr)
 
     rows: list[dict[str, Any]] = []
     for record in active_records:
@@ -1075,7 +1094,8 @@ def main() -> None:
             ols_base_url = normalise_ols_base_url(args.ols_base_url)
             merge_rows(rows_by_key, ols_rows(terms, base_url=ols_base_url, fetch_parents=not args.no_parents))
         elif source == "obo":
-            merge_rows(rows_by_key, obo_rows(terms, max_ontologies=args.obo_max_ontologies))
+            bp_ids = fetch_bioportal_ontology_ids(load_bioportal_api_key()) if "bioportal" in sources else set()
+            merge_rows(rows_by_key, obo_rows(terms, max_ontologies=args.obo_max_ontologies, skip_ids=bp_ids))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as handle:

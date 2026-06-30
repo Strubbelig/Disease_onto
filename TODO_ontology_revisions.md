@@ -11,34 +11,34 @@ Work items to align `Disease proposal 2.ttl` with the modelling stance (realist 
 
 ## A. `material disease entity` (WOND_120020)
 
-- [ ] **T1** Delete the annotation *"The set of pathological disorders in one individual"* (forces co-occurring diseases to merge). Replace gloss with:
+- [x] **T1** Delete the annotation *"The set of pathological disorders in one individual"* (forces co-occurring diseases to merge). Replace gloss with:
   > A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion.
-- [ ] **T2** Set the necessary condition to just:
+- [x] **T2** Set the necessary condition to just:
   ```
   material entity
    and ('has part' some 'pathological disorder')
   ```
   Do **not** assert any maximal/unity axiom. (Individuation handled in F.)
-- [ ] **T3** Remove `('output of' some 'disease development process')` from WOND_120020. If you want the acquired case, create subclass `acquired material disease entity`:
+- [x] **T3** Remove `('output of' some 'disease development process')` from WOND_120020. If you want the acquired case, create subclass `acquired material disease entity`:
   ```
   'material disease entity'
    and ('output of' some 'disease development process')
   ```
-- [ ] **T4** Decide on `('participates in' some 'course of the disease process')`: keep as-is (defensible) **or** move to a subclass. Don't leave it unexamined.
-- [ ] **T5** Add a `definition`/`comment` annotation recording the identity criterion:
+- [x] **T4** Decide on `('participates in' some 'course of the disease process')`: keep as-is (defensible) **or** move to a subclass. Don't leave it unexamined.
+- [x] **T5** Add a `definition`/`comment` annotation recording the identity criterion:
   > Identity is grounded in the historical-causal continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement).
 
 ## B. `pathological disorder` (WOND_120022) — make pathologicity primitive
 
-- [ ] **T7** Choose the parent:
+- [x] **T7** Choose the parent:
   - *Option 1 (independent):* create a new `disorder` root (new WOND id) `⊑ material entity`; put `pathological disorder` under it; link to OGMS via `oboInOwl:hasDbXref`/`skos:closeMatch` **instead of** `subClassOf`.
   - *Option 2 (anchored):* keep `pathological disorder ⊑ OGMS:disorder`.
-- [ ] **T8** Keep it **primitive** (asserted superclasses only; no `equivalentClass`). Retain:
+- [x] **T8** Keep it **primitive** (asserted superclasses only; no `equivalentClass`). Retain:
   ```
   'part of' some 'material disease entity'
   ```
   **Delete** the restriction `('has quality' some 'phenotypic abnormality')` (HPO terms aren't BFO qualities; the filler is vacuously generic anyway).
-- [ ] **T8b** Add annotation property `pathologicity criteria` (or use `definition`) documenting the Hucklenbroich primitive (e.g. threat to life, pain/suffering, loss of ability/fertility) — pathologicity is asserted, not inferred.
+- [x] **T8b** Add annotation property `pathologicity criteria` (or use `definition`) documenting the Hucklenbroich primitive (e.g. threat to life, pain/suffering, loss of ability/fertility) — pathologicity is asserted, not inferred.
 - [ ] **T8c** *(optional)* If a biology-side phenotype link is wanted, attach to the **organism**, not the disorder:
   ```
   'Homo sapiens' and ('has phenotype' some <specific HP term>)
@@ -46,7 +46,7 @@ Work items to align `Disease proposal 2.ttl` with the modelling stance (realist 
 
 ## C. Absence / privation disorders (e.g. monosomy X)
 
-- [ ] **T9** Do **not** attach an `absent` quality. `'has quality' some 'absent'` predicates absence of the bearer ("the genome is absent" / "the pathology is absent"), which is meaningless — the thing absent is a *normal* component (the X chromosome), while the pathology is the resulting genome, which is fully present. A realist BFO ontology admits no negative entity or quality. Model the disorder as the **abnormally-constituted material bearer itself** — the karyotype / genome / cell that is abnormal because a normally-present part is missing. Pathologicity is asserted (primitive). Nothing else is required:
+- [x] **T9** Do **not** attach an `absent` quality. `'has quality' some 'absent'` predicates absence of the bearer ("the genome is absent" / "the pathology is absent"), which is meaningless — the thing absent is a *normal* component (the X chromosome), while the pathology is the resulting genome, which is fully present. A realist BFO ontology admits no negative entity or quality. Model the disorder as the **abnormally-constituted material bearer itself** — the karyotype / genome / cell that is abnormal because a normally-present part is missing. Pathologicity is asserted (primitive). Nothing else is required:
   ```
   'pathological disorder'          # the instance just IS e.g. the monosomic karyotype
   ```
@@ -57,8 +57,8 @@ Work items to align `Disease proposal 2.ttl` with the modelling stance (realist 
    and ('has quality' some ('has fewer parts of type' that 'towards' some 'X chromosome'))
   ```
   (substitute the exact PATO term/IRI), or a cardinality on the bearer read under a normality/closure assumption, e.g. `('has part' exactly 1 'sex chromosome')`. If the claim depends on a norm, keep it in the knowledge layer.
-- [ ] **T9b** Do **not** use OWL negation for absence (`not ('has part' some 'X chromosome')` / `complementOf`) inside class expressions — wrong semantics under the open-world assumption, and it wrecks the reasoner.
-- [ ] **T10** Update the `disorder` definition text so absence folds into abnormal organisation: *a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent.* (No "absence quality"; the disorder-bearer is still a present, material entity.)
+- [x] **T9b** Do **not** use OWL negation for absence (`not ('has part' some 'X chromosome')` / `complementOf`) inside class expressions — wrong semantics under the open-world assumption, and it wrecks the reasoner.
+- [x] **T10** Update the `disorder` definition text so absence folds into abnormal organisation: *a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent.* (No "absence quality"; the disorder-bearer is still a present, material entity.)
 
 ## D. Predisposition / risk (WOND_120023) — disentangle TWO senses
 
@@ -68,7 +68,7 @@ Clinical "predisposition" conflates two ontologically distinct things. Model the
 
 - [ ] **T11 — Silent / subclinical disorder ("disorder without a phenotype").** This is **not** a predisposition: the pathological material is already present, it just has no observed phenotype yet (e.g. an early subclinical plaque). Because you removed phenotype from the disorder definition (T8), this is already just a `pathological disorder` instance with no observed phenotype — **no new class needed**. If you want to flag it, do so in the epistemic/observation layer (status "no phenotype observed yet"), not as a material kind. (This is a good argument *for* T8.)
 
-- [ ] **T11a — Predisposition / risk proper ("potential with no disorder yet").** The obese patient with mint coronaries: there is *no disorder in the target organ at all*. Model as a **tendency** (Jansen 2007), not a plain disposition — risk is graded, counteractable (statins, weight loss) and only probabilistically realised, which is exactly the tendency profile. Bearer = the organism; it is realised in a *future* development process that produces the **target** disorder:
+- [x] **T11a — Predisposition / risk proper ("potential with no disorder yet").** The obese patient with mint coronaries: there is *no disorder in the target organ at all*. Model as a **tendency** (Jansen 2007), not a plain disposition — risk is graded, counteractable (statins, weight loss) and only probabilistically realised, which is exactly the tendency profile. Bearer = the organism; it is realised in a *future* development process that produces the **target** disorder:
   ```
   'tendency'
    and ('inheres in' some 'Homo sapiens')
@@ -79,11 +79,11 @@ Clinical "predisposition" conflates two ontologically distinct things. Model the
   ```
   Ground it in the risk-conferring **present** material state via `('has material basis' some 'material entity')` (adiposity, genotype, or a variant — see T11d). The base **may** even be a pathological disorder (a pathogenic variant; or AIDS predisposing to opportunistic infection) — the only constraint is that the base is **distinct from** the *target* disorder it predisposes to (the `has output` filler). What does not yet exist is a disorder in the **target** organ (the mint coronaries).
 
-- [ ] **T11b** Make the predisposition **disjoint** from both `pathological disorder` and `material disease entity` — it is neither a disorder nor a disease (OGMS: "a predisposition is a disposition to acquire a further disposition; not all predispositions are diseases"). Fix the description typo "tha bearer" → "the bearer".
+- [x] **T11b** Make the predisposition **disjoint** from both `pathological disorder` and `material disease entity` — it is neither a disorder nor a disease (OGMS: "a predisposition is a disposition to acquire a further disposition; not all predispositions are diseases"). Fix the description typo "tha bearer" → "the bearer".
 
-- [ ] **T11c — Realizable hygiene (Röhl & Jansen 2014).** Keep `tendency`, `disposition`, `function` as distinct realizables; do not subsume `tendency` under `disposition`. If your BFO import lacks `tendency`, add it as your own subclass of `realizable entity` (annotate: graded, counteractable, partially-manifesting) rather than overloading `disposition`.
+- [x] **T11c — Realizable hygiene (Röhl & Jansen 2014).** Keep `tendency`, `disposition`, `function` as distinct realizables; do not subsume `tendency` under `disposition`. If your BFO import lacks `tendency`, add it as your own subclass of `realizable entity` (annotate: graded, counteractable, partially-manifesting) rather than overloading `disposition`.
 
-- [ ] **T11d — Risk borne by a present material entity (genetic variants).** Often the risk-bearer is a concrete present material entity — a pathogenic variant (BRCA1, Factor V Leiden), a portion of mutated DNA. Model the variant as a `material entity`; if you judge it pathological under your primitive criterion it is *also* a `pathological disorder` (an abnormal organisation of genetic material, typically phenotype-silent — T8/T11 cover that). The risk is a tendency it bears/grounds toward a future, distinct disorder:
+- [x] **T11d — Risk borne by a present material entity (genetic variants).** Often the risk-bearer is a concrete present material entity — a pathogenic variant (BRCA1, Factor V Leiden), a portion of mutated DNA. Model the variant as a `material entity`; if you judge it pathological under your primitive criterion it is *also* a `pathological disorder` (an abnormal organisation of genetic material, typically phenotype-silent — T8/T11 cover that). The risk is a tendency it bears/grounds toward a future, distinct disorder:
   ```
   'tendency'
    and ('inheres in' some 'Homo sapiens')               # organism bears the risk (convention above)
@@ -106,21 +106,21 @@ Clinical "predisposition" conflates two ontologically distinct things. Model the
 
 ## E. Realist core vs epistemic categories
 
-- [ ] **T12** Ensure **no** DOID class / named disease (Stevens-Johnson, Gustilo grades, etc.) is `subClassOf 'material disease entity'`. They attach only through the classification path.
-- [ ] **T13** Break the individuation circularity (so diagnosis can group disorders). On `disease diagnostic result` (WOND_120024) change:
+- [x] **T12** Ensure **no** DOID class / named disease (Stevens-Johnson, Gustilo grades, etc.) is `subClassOf 'material disease entity'`. They attach only through the classification path.
+- [x] **T13** Break the individuation circularity (so diagnosis can group disorders). On `disease diagnostic result` (WOND_120024) change:
   - from `'is about' only 'material disease entity'`
   - to `'is about' some 'pathological disorder'`
   The disease is then the aggregate of exactly the disorders a given diagnostic result groups. No causal axiom needed.
 
 ## F. Unknown-substrate diseases (depression / migraine / epilepsy)
 
-- [ ] **T14** Create the disease class, assert `⊑ 'material disease entity'` (commits existence), and put its *definition* (phenotype thresholds/criteria) in the epistemic layer via `disease threshold specification`. Annotate:
+- [x] **T14** Create the disease class, assert `⊑ 'material disease entity'` (commits existence), and put its *definition* (phenotype thresholds/criteria) in the epistemic layer via `disease threshold specification`. Annotate:
   > Material substrate asserted but not yet characterized; defined operationally at the classification layer.
 
 ## G. Technical fixes
 
-- [ ] **T15** Typos: "patholgical" (120020), "ouput" (120092), "tha bearer" (120023).
-- [ ] **T16** `compound pathological disorder` (WOND_120049): change `has part **only** 'pathological disorder'` → `has part **some** 'pathological disorder'` (the `only` form is vacuously true for partless individuals). Full intended definition:
+- [x] **T15** Typos: "patholgical" (120020), "ouput" (120092), "tha bearer" (120023).
+- [x] **T16** `compound pathological disorder` (WOND_120049): change `has part **only** 'pathological disorder'` → `has part **some** 'pathological disorder'` (the `only` form is vacuously true for partless individuals). Full intended definition:
   ```
   'pathological disorder'
    and ('has part' some 'pathological disorder')
@@ -129,8 +129,8 @@ Clinical "predisposition" conflates two ontologically distinct things. Model the
 
 ## H. Prose tensions to state in the paper (not axioms)
 
-- [ ] **T18** Individuation is epistemic: only the **disorders** are fully mind-independent; the *bounded* disease is classification-relative. Soften "disease instances are mind-independent material entities" accordingly (see rewrite below).
-- [ ] **T19** State that disorders are not uniformly positive material entities (absence case, T10).
+- [x] **T18** Individuation is epistemic: only the **disorders** are fully mind-independent; the *bounded* disease is classification-relative. Soften "disease instances are mind-independent material entities" accordingly (see rewrite below).
+- [x] **T19** State that disorders are not uniformly positive material entities (absence case, T10).
 
 ---
 
