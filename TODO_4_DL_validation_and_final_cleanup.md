@@ -21,7 +21,7 @@
   ```
   Result on 2026-06-29: `OWL 2 DL Profile Report: [Ontology and imports closure in profile]`.
 
-- [ ] **A3 — Then run reasoning and record the result.** After DL validation passes, run ELK and a full DL reasoner/HermiT on the merged file. Record the command, date, and result in `README.md` or `VALIDATION.md`. Do this only when ready; reasoning can be slow on the full import closure.
+- [x] **A3 — Then run reasoning and record the result.** After DL validation passes, run ELK and a full DL reasoner/HermiT on the merged file. Record the command, date, and result in `README.md` or `VALIDATION.md`. Recorded in `VALIDATION.md`: HermiT/Colab reported the merged ontology consistent with 0 unsatisfiable classes.
 
 ---
 

@@ -7,6 +7,7 @@ A realist, BFO/OGMS-based proposal for modelling disease as a **material entity*
 ### Ontology
 - `Disease proposal 2.ttl` — current working ontology (own classes/axioms; imports the modules below).
 - `Disease proposal 2 merged.owl` — generated merged OWL with all imports resolved; rebuild with `build_disease_proposal.sh`.
+- `Disease_proposal_2_inferred-3.owl` — inferred OWL produced from the HermiT/Colab coherence run.
 - `Disease proposal 2 merged.ttl` — older merged TTL artefact; currently stale until regenerated.
 - `Disease proposal.ttl` — earlier version.
 - `Disease ontology modules/` — imported module extracts (BFO, OGMS, OBI, PATO, HPO, CHEBI, DOID, uPheno, …).
@@ -15,6 +16,7 @@ A realist, BFO/OGMS-based proposal for modelling disease as a **material entity*
 
 ### Accompanying research
 - `Disease_Modelling_Synthesis.md` — synthesis of the philosophy-of-medicine and formal-ontology literature on defining disease, with critiques.
+- `VALIDATION.md` — recorded OWL 2 DL profile and HermiT coherence results.
 - `Worked_Examples_and_Competency_Questions.md` — first-draft examples, competency questions, expected entailments/non-entailments, and a small diagram.
 - `TODO_ontology_revisions.md` — actionable Protégé revision checklist (Manchester axioms) aligning the ontology with the modelling stance.
 - `TODO_2_predisposition_and_strictening.md` — follow-up checklist for the predisposition refactor and stricter core axioms.
@@ -29,4 +31,4 @@ Full-text PDFs of cited papers are intentionally excluded (copyright); see `.git
 
 ## Status
 
-Current status: **concept draft**, not yet a reasoner-checked draft. `Disease proposal 2 merged.owl` reflects the updated source and now passes OWL 2 DL profile validation. Full reasoner/coherence checks are still pending; see `TODO_4_DL_validation_and_final_cleanup.md`.
+Current status: **reasoner-checked draft**. `Disease proposal 2 merged.owl` reflects the updated source, passes OWL 2 DL profile validation, and was reported coherent by a HermiT/Colab run with 0 unsatisfiable classes; see `VALIDATION.md`. The generated TTL remains stale until regenerated.

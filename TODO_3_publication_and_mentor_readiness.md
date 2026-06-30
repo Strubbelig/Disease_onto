@@ -18,9 +18,9 @@
 
 - [x] **A3 — Fix the import catalog so ROBOT can load local modules.** Current validation fails because the catalog resolves paths with escaped spaces such as `Disease%20ontology%20modules/...` as literal filesystem paths. Regenerate or edit `catalog-v001.xml` so ROBOT can resolve every imported module locally.
 
-- [ ] **A4 — Run the reasoners on the rebuilt merge.** Run ELK first, then HermiT/full DL. Record the exact command, date, and result in `README.md` or a short `VALIDATION.md`.
+- [x] **A4 — Run the reasoners on the rebuilt merge.** Run ELK first, then HermiT/full DL. Record the exact command, date, and result in `README.md` or a short `VALIDATION.md`. Recorded in `VALIDATION.md`: HermiT/Colab reported the merged ontology consistent with 0 unsatisfiable classes.
 
-- [ ] **A5 — Record expected satisfiability checks.** Confirm that `material disease entity`, `pathological disorder`, `disease predisposition`, `material complication disease entity`, and `disease course process putting out disorders as part of a complication` remain satisfiable.
+- [x] **A5 — Record expected satisfiability checks.** Confirm that `material disease entity`, `pathological disorder`, `disease predisposition`, `material complication disease entity`, and `disease course process putting out disorders as part of a complication` remain satisfiable.
 
 ---
 

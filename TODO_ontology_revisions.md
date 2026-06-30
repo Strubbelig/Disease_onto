@@ -125,7 +125,7 @@ Clinical "predisposition" conflates two ontologically distinct things. Model the
   'pathological disorder'
    and ('has part' some 'pathological disorder')
   ```
-- [ ] **T17** Run **ELK** (then **HermiT** for full DL) over the *merged* file with all imports. Confirm: ontology coherent; nothing unintended subsumes `material disease entity`; `material complication disease entity` and `disease course process putting out disorders…` remain satisfiable.
+- [x] **T17** Run **ELK** (then **HermiT** for full DL) over the *merged* file with all imports. Confirm: ontology coherent; nothing unintended subsumes `material disease entity`; `material complication disease entity` and `disease course process putting out disorders…` remain satisfiable. Recorded in `VALIDATION.md`: HermiT/Colab reported the merged ontology consistent with 0 unsatisfiable classes.
 
 ## H. Prose tensions to state in the paper (not axioms)
 
