@@ -51,7 +51,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 IMP="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Import ontologies"
 IMP_WOND="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Wound ontology/src/ontology/imports"
 MODULE_DIR="$SCRIPT_DIR/Disease ontology modules"
-GT_OWL="http://purl.obolibrary.org/obo/wond/ground_truth.owl"
+GT_OWL="https://bioportal.bioontology.org/ontologies/WONT"
 INPUT="$SCRIPT_DIR/Disease proposal 2.ttl"
 OUTPUT="$SCRIPT_DIR/Disease proposal 2 merged.owl"
 TMP=$(mktemp -d)
@@ -91,7 +91,7 @@ python3 - "$INPUT" "$TMP/base.ttl" << 'PYEOF'
 import sys, re
 with open(sys.argv[1]) as f:
     content = f.read()
-new_imports = 'owl:imports <http://purl.obolibrary.org/obo/wond/ground_truth.owl> .'
+new_imports = 'owl:imports <https://bioportal.bioontology.org/ontologies/WONT> .'
 content = re.sub(
     r'owl:imports\s+<[^>]+>(?:\s*,\s*<[^>]+>)*\s*\.',
     new_imports, content, flags=re.DOTALL,
@@ -104,7 +104,7 @@ PYEOF
 cat > "$TMP/catalog-v001.xml" << 'CATEOF'
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/wond/ground_truth.owl"
+    <uri id="Imports Wizard Entry" name="https://bioportal.bioontology.org/ontologies/WONT"
          uri="file:/Users/Strubbelig/Library/Mobile%20Documents/com~apple~CloudDocs/Forschung/Ontology/Wound%20ontology/data/ground%20truth/ground_truth_final.owl"/>
 </catalog>
 CATEOF
@@ -122,7 +122,8 @@ SELECT DISTINCT ?term WHERE {
   { ?term ?p ?o } UNION { ?s ?term ?o } UNION { ?s ?p ?term }
   FILTER(isIRI(?term))
   FILTER(!STRSTARTS(STR(?term), "http://www.w3.org/"))
-  FILTER(!STRSTARTS(STR(?term), "http://www.semanticweb.org/strubbelig"))
+  FILTER(!STRSTARTS(STR(?term), "https://bioportal.bioontology.org/ontologies/MILD"))
+  FILTER(!STRSTARTS(STR(?term), "https://bioportal.bioontology.org/ontologies/WONT"))
   FILTER(!STRSTARTS(STR(?term), "http://purl.obolibrary.org/obo/wond"))
 }
 EOF

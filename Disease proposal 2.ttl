@@ -6,20 +6,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/> .
 
-<http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal> rdf:type owl:Ontology ;
-                                                                        owl:imports <http://purl.obolibrary.org/obo/wond/ground_truth.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/dron_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/go_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/hp_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/obi_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/ogms_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/pato_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/uo_module.owl> ,
-                                                                                    <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> .
+<https://bioportal.bioontology.org/ontologies/MILD> rdf:type owl:Ontology ;
+                                                     owl:imports <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/dron_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/go_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/hp_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/obi_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/ogms_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/pato_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/uo_module.owl> ,
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> ,
+                                                                 <https://bioportal.bioontology.org/ontologies/WONT> .
 
 #################################################################
 #    Annotation properties
@@ -75,7 +75,7 @@
 
 ###  http://purl.obolibrary.org/obo/BFO_0000199
 <http://purl.obolibrary.org/obo/BFO_0000199> rdf:type owl:ObjectProperty ;
-                                             owl:inverseOf :WOND_120081 ;
+                                             owl:inverseOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081> ;
                                              rdf:type owl:FunctionalProperty .
 
 
@@ -151,59 +151,59 @@
 <http://purl.obolibrary.org/obo/RO_0002405> rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120081
-:WOND_120081 rdf:type owl:ObjectProperty ;
-             rdfs:label "occupied by process boundary or process"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120081
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120081> rdf:type owl:ObjectProperty ;
+                                                                rdfs:label "occupied by process boundary or process"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120082
-:WOND_120082 rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
-             owl:inverseOf :WOND_120085 ;
-             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
-             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
-                                      <http://purl.obolibrary.org/obo/BFO_0000223>
-                                      :WOND_120081
-                                    ) ;
-             rdfs:label "is process boundary at end of"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120082
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120082> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                owl:inverseOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120085> ;
+                                                                rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                                rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000223>
+                                                                                         <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081>
+                                                                                       ) ;
+                                                                rdfs:label "is process boundary at end of"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120083
-:WOND_120083 rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
-             owl:inverseOf :WOND_120084 ;
-             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
-             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
-                                      <http://purl.obolibrary.org/obo/BFO_0000221>
-                                      :WOND_120081
-                                    ) ;
-             rdfs:label "is process boundary at start of"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120083
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120083> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                owl:inverseOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120084> ;
+                                                                rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                                rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000221>
+                                                                                         <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081>
+                                                                                       ) ;
+                                                                rdfs:label "is process boundary at start of"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120084
-:WOND_120084 rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
-             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
-             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
-                                      <http://purl.obolibrary.org/obo/BFO_0000222>
-                                      :WOND_120081
-                                    ) ;
-             rdfs:label "has as process boundary at start"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120084
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120084> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                                owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000222>
+                                                                                         <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081>
+                                                                                       ) ;
+                                                                rdfs:label "has as process boundary at start"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120085
-:WOND_120085 rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
-             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
-             owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
-                                      <http://purl.obolibrary.org/obo/BFO_0000224>
-                                      :WOND_120081
-                                    ) ;
-             rdfs:label "has as process boundary at end"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120085
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120085> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                rdfs:range <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                                owl:propertyChainAxiom ( <http://purl.obolibrary.org/obo/BFO_0000199>
+                                                                                         <http://purl.obolibrary.org/obo/BFO_0000224>
+                                                                                         <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081>
+                                                                                       ) ;
+                                                                rdfs:label "has as process boundary at end"@en .
 
 
 #################################################################
@@ -294,638 +294,592 @@
 <http://purl.obolibrary.org/obo/UPHENO_0001001> rdf:type owl:Class .
 
 
-###  http://purl.obolibrary.org/obo/WOND_0000090
-<http://purl.obolibrary.org/obo/WOND_0000090> rdf:type owl:Class .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120000
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120000> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001930> ;
+                                                                rdfs:label "disease classification stage"@en .
 
 
-###  http://purl.obolibrary.org/obo/WOND_0000380
-<http://purl.obolibrary.org/obo/WOND_0000380> rdf:type owl:Class .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120001
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120001> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021>
+                                                                                ] ;
+                                                                <http://purl.org/dc/elements/1.1/description> "A disease whose disorders had to develop."@en ;
+                                                                rdfs:label "Developed material disease entity"@en .
 
 
-###  http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_120016
-<http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_120016> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                                                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/WOND_0000380>
-                                                                                   ] .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120005
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120005> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                ] ;
+                                                                rdfs:comment "A tendency is distinguished from a disposition not by its bearer or by requiring a material basis — both inhere in a material entity and supervene on its physical makeup — but by its mode of realization: a disposition, once its trigger conditions obtain, is realized; a tendency only probabilistically and partially inclines toward realization and can be opposed by competing tendencies. It is therefore modelled as a sibling of disposition, function, and role under realizable entity, not as a subtype of disposition."@en ;
+                                                                rdfs:label "tendency"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120000
-:WOND_120000 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001930> ;
-             rdfs:label "disease classification stage"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120007
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120007> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020> ;
+                                                                rdfs:comment "Disorder asserted but not yet characterized; defined operationally at the classification layer."@en ;
+                                                                rdfs:label "unknown-disorder disease"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120001
-:WOND_120001 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120020 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
-                               owl:someValuesFrom :WOND_120028
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
-                               owl:someValuesFrom :WOND_120021
-                             ] ;
-             <http://purl.org/dc/elements/1.1/description> "A disease whose disorders had to develop."@en ;
-             rdfs:label "Developed material disease entity"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120008
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120008> rdf:type owl:Class ;
+                                                                rdfs:subClassOf [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023>
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                                                         owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120013>
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ] ;
+                                                                rdfs:label "genetic predisposition"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120005
-:WOND_120005 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
-                             ] ;
-             rdfs:comment "A tendency is distinguished from a disposition not by its bearer or by requiring a material basis — both inhere in a material entity and supervene on its physical makeup — but by its mode of realization: a disposition, once its trigger conditions obtain, is realized; a tendency only probabilistically and partially inclines toward realization and can be opposed by competing tendencies. It is therefore modelled as a sibling of disposition, function, and role under realizable entity, not as a subtype of disposition."@en ;
-             rdfs:label "tendency"@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120009
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120009> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                                rdfs:label "genetic variant"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120007
-:WOND_120007 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120020 ;
-             rdfs:comment "Disorder asserted but not yet characterized; defined operationally at the classification layer."@en ;
-             rdfs:label "unknown-disorder disease"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120010
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120010> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ,
+                                                                                [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023>
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                                                                                     owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                                                                   ]
+                                                                                                                                                 ) ;
+                                                                                                                              rdf:type owl:Class
+                                                                                                                            ]
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ] ;
+                                                                rdfs:label "predisposition from an existing disorder"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120008
-:WOND_120008 rdf:type owl:Class ;
-             rdfs:subClassOf [ owl:intersectionOf ( :WOND_120023
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                                                      owl:someValuesFrom :WOND_120013
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ;
-             rdfs:label "genetic predisposition"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120011
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120011> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120086> ,
+                                                                                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120087> ;
+                                                                rdfs:label "intended disorder elimination process"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120009
-:WOND_120009 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
-             rdfs:label "genetic variant"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120012
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120012> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023>
+                                                                                ] ;
+                                                                rdfs:label "predisposition realizing disorder development process"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120010
-:WOND_120010 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120023 ,
-                             [ owl:intersectionOf ( :WOND_120023
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                                                      owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                                                                                                [ rdf:type owl:Restriction ;
-                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                                                                  owl:someValuesFrom :WOND_120022
-                                                                                                ]
-                                                                                              ) ;
-                                                                           rdf:type owl:Class
-                                                                         ]
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ;
-             rdfs:label "predisposition from an existing disorder"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120013
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120013> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120009> ,
+                                                                                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022> ;
+                                                                rdfs:label "pathogenic genetic variant"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120011
-:WOND_120011 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120086 ,
-                             :WOND_120087 ;
-             rdfs:label "intended disorder elimination process"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120014
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120014> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021>
+                                                                                ] ;
+                                                                rdfs:label "realized disease predisposition"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120012
-:WOND_120012 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120021 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
-                               owl:someValuesFrom :WOND_120023
-                             ] ;
-             rdfs:label "predisposition realizing disorder development process"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120020
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120020> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                ] ;
+                                                                owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ;
+                                                                <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
+                                                                rdfs:label "material disease entity"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120013
-:WOND_120013 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120009 ,
-                             :WOND_120022 ;
-             rdfs:label "pathogenic genetic variant"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120021
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120021> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://bioportal.bioontology.org/ontologies/MILD/MILD_120085> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120031>
+                                                                                ] ;
+                                                                rdfs:comment "Deliberately no input mandatory. A pre-existing disorder as input would be false for de novo disease (the first disorder has no disorder input)."@en ;
+                                                                rdfs:label "disorder development process"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120014
-:WOND_120014 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120023 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                               owl:someValuesFrom :WOND_120021
-                             ] ;
-             rdfs:label "realized disease predisposition"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120022
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120022> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OGMS_0000045> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                                                                                ] ;
+                                                                owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ;
+                                                                <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en ;
+                                                                rdfs:label "pathological disorder"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120020
-:WOND_120020 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                               owl:someValuesFrom :WOND_120022
-                             ] ;
-             owl:disjointWith :WOND_120023 ;
-             <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
-             rdfs:label "material disease entity"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120023
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> rdf:type owl:Class ;
+                                                                rdfs:subClassOf [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120005>
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                                       ]
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                ] ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
+                                                                <http://purl.org/dc/elements/1.1/description> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en ;
+                                                                rdfs:label "disease predisposition"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120021
-:WOND_120021 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                               owl:someValuesFrom :WOND_120022
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :WOND_120085 ;
-                               owl:someValuesFrom :WOND_120031
-                             ] ;
-             rdfs:comment "Deliberately no input mandatory. A pre-existing disorder as input would be false for de novo disease (the first disorder has no disorder input)."@en ;
-             rdfs:label "disorder development process"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120024
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047>
+                                                                                ] ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
+                                                                rdfs:label "disease diagnostic result"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120022
-:WOND_120022 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/OGMS_0000045> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                               owl:someValuesFrom :WOND_120020
-                             ] ;
-             owl:disjointWith :WOND_120023 ;
-             <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en ;
-             rdfs:label "pathological disorder"@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120025
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120025> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000109>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120029>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120027>
+                                                                                ] ;
+                                                                rdfs:label "disease diagnosis process by measurement"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120023
-:WOND_120023 rdf:type owl:Class ;
-             rdfs:subClassOf [ owl:intersectionOf ( :WOND_120005
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                                                    ]
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
-                             ] ;
-             <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
-             <http://purl.org/dc/elements/1.1/description> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en ;
-             rdfs:label "disease predisposition"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120024
-:WOND_120024 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                               owl:someValuesFrom :WOND_120022
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                               owl:someValuesFrom :WOND_120047
-                             ] ;
-             <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
-             rdfs:label "disease diagnostic result"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120025
-:WOND_120025 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120047 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000109>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
-                               owl:someValuesFrom :WOND_120029
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
-                               owl:someValuesFrom :WOND_120027
-                             ] ;
-             rdfs:label "disease diagnosis process by measurement"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120026
-:WOND_120026 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120024 ;
-             <http://purl.obolibrary.org/obo/IAO_0000112> """Trigger finger disease diagnostic result is specified output of some Disease diagnostic process
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120026
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120026> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000112> """Trigger finger disease diagnostic result is specified output of some Disease diagnostic process
 rdfs:subclass of Confirmed disease diagnostic result by not completely objective criteria"""@en ;
-             <http://purl.org/dc/terms/description> "a disease conclusion arrived at solely after clinical test can be valid and confirmed but is still inherently subjective because of the subjectivity of clinical tests."@en ;
-             rdfs:label "confirmed disease diagnostic result by not completely objective criteria"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120027
-:WOND_120027 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001909> ,
-                             :WOND_120024 ;
-             rdfs:label "confirmed diseases diagnostic result by objective criteria"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120028
-:WOND_120028 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
-                               owl:someValuesFrom :WOND_120020
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002405> ;
-                               owl:someValuesFrom :WOND_120021
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :WOND_120084 ;
-                               owl:someValuesFrom :WOND_120031
-                             ] ;
-             rdfs:label "course of the disease process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120029
-:WOND_120029 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                               owl:someValuesFrom :WOND_120030
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                               owl:someValuesFrom :WOND_120036
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
-                             ] ;
-             rdfs:label "disease threshold specification"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120030
-:WOND_120030 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001931> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000039> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/UO_0000000>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0001937> ;
-                               owl:someValuesFrom xsd:decimal
-                             ] ;
-             rdfs:label "threshold value"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120031
-:WOND_120031 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000199> ;
-                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000203>
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
-                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000109>
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                             ] ;
-             rdfs:label "threshold crossing event"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120032
-:WOND_120032 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120024 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                               owl:someValuesFrom :WOND_120033
-                             ] ;
-             rdfs:label "differential diagnosis result"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120033
-:WOND_120033 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000415> ,
-                             :WOND_120024 ;
-             <http://purl.obolibrary.org/obo/IAO_0000118> "suspected diagnosis"@en ;
-             rdfs:label "candidate diagnosis"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120034
-:WOND_120034 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120005 ;
-             rdfs:label "perpetuation tendency"@en .
+                                                                <http://purl.org/dc/terms/description> "a disease conclusion arrived at solely after clinical test can be valid and confirmed but is still inherently subjective because of the subjectivity of clinical tests."@en ;
+                                                                rdfs:label "confirmed disease diagnostic result by not completely objective criteria"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120027
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120027> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001909> ,
+                                                                                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ;
+                                                                rdfs:label "confirmed diseases diagnostic result by objective criteria"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120028
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120028> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002405> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://bioportal.bioontology.org/ontologies/MILD/MILD_120084> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120031>
+                                                                                ] ;
+                                                                rdfs:label "course of the disease process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120029
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120029> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120030>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120036>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
+                                                                                ] ;
+                                                                rdfs:label "disease threshold specification"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120030
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120030> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001931> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000039> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/UO_0000000>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0001937> ;
+                                                                                  owl:someValuesFrom xsd:decimal
+                                                                                ] ;
+                                                                rdfs:label "threshold value"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120031
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120031> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000199> ;
+                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000203>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000109>
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/HP_0000118>
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] ;
+                                                                rdfs:label "threshold crossing event"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120032
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120032> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120033>
+                                                                                ] ;
+                                                                rdfs:label "differential diagnosis result"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120033
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120033> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000415> ,
+                                                                                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000118> "suspected diagnosis"@en ;
+                                                                rdfs:label "candidate diagnosis"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120034
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120034> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120005> ;
+                                                                rdfs:label "perpetuation tendency"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120035
-:WOND_120035 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                               owl:someValuesFrom :WOND_120028
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
-                               owl:someValuesFrom :WOND_120034
-                             ] ;
-             rdfs:label "disease perpetuation process"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120035
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120035> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120034>
+                                                                                ] ;
+                                                                rdfs:label "disease perpetuation process"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120036
-:WOND_120036 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
-             rdfs:label "comparison_operator"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120036
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120036> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
+                                                                rdfs:label "comparison_operator"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120037
-:WOND_120037 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120036 ;
-             rdfs:label "binary_comparison_operator"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120037
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120037> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120036> ;
+                                                                rdfs:label "binary_comparison_operator"@en .
 
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120038
-:WOND_120038 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120037 ;
-             rdfs:label "equality_operator"@en .
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120038
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120038> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120037> ;
+                                                                rdfs:label "equality_operator"@en .
 
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120039
-:WOND_120039 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120037 ;
-             rdfs:label "inequality_operator"@en .
-
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120039
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120039> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120037> ;
+                                                                rdfs:label "inequality_operator"@en .
 
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120040
-:WOND_120040 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120037 ;
-             rdfs:label "ordering_operator"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120041
-:WOND_120041 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120040 ;
-             rdfs:label "greater_than_operator"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120042
-:WOND_120042 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120040 ;
-             rdfs:label "greater_than_or_equal_operator"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120043
-:WOND_120043 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120040 ;
-             rdfs:label "less_than_operator"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120044
-:WOND_120044 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120040 ;
-             rdfs:label "less_than_or_equal_operator"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120045
-:WOND_120045 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120047 ;
-             rdfs:label "Disease diagnosis process by exclusion"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120046
-:WOND_120046 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120047 ;
-             rdfs:label "disease diagnosis process by conceptualization"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120047
-:WOND_120047 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                               owl:someValuesFrom :WOND_120024
-                             ] ;
-             rdfs:label "Disease diagnostic process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120048
-:WOND_120048 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120047 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
-                               owl:someValuesFrom :WOND_120033
-                             ] ;
-             rdfs:label "Suspected disease diagnosis process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120049
-:WOND_120049 rdf:type owl:Class ;
-             owl:equivalentClass [ owl:intersectionOf ( :WOND_120022
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                          owl:onClass :WOND_120022
-                                                        ]
-                                                      ) ;
-                                   rdf:type owl:Class
-                                 ] ;
-             rdfs:label "compound pathological disorder"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120050
-:WOND_120050 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120024 ;
-             rdfs:label "disease complication diagnostic result"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120051
-:WOND_120051 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120020 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
-                                                                           owl:someValuesFrom :WOND_120028
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                             ] ;
-             rdfs:label "material complication disease entity"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120053
-:WOND_120053 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120021 ,
-                             :WOND_120028 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                                           owl:someValuesFrom :WOND_120020
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                             ] ;
-             <http://purl.org/dc/elements/1.1/description> "This entity models a process in disease A's course that produces a disorder which becomes part of disease B — the complication. The disorder as output is not the disorder of the producing disease but a newly instantiated structural abnormality that grounds a secondary disease."@en ;
-             rdfs:label "disease course process putting out disorders as part of a complication"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120054
-:WOND_120054 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
-                               owl:someValuesFrom :WOND_120055
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                               owl:allValuesFrom :WOND_120020
-                             ] ;
-             rdfs:label "disease stage classification result"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120055
-:WOND_120055 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
-                               owl:someValuesFrom :WOND_120054
-                             ] ;
-             rdfs:label "disease classification process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120086
-:WOND_120086 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
-                               owl:someValuesFrom :WOND_120090
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                               owl:someValuesFrom [ owl:intersectionOf ( :WOND_120022
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-                                                                           owl:someValuesFrom :WOND_120020
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                             ] ;
-             rdfs:label "Disease disorder treatment process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120087
-:WOND_120087 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             owl:disjointWith :WOND_120088 ,
-                              :WOND_120091 ;
-             rdfs:label "disorder elimination process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120088
-:WOND_120088 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120086 ;
-             owl:disjointWith :WOND_120091 ;
-             rdfs:label "disorder modification process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120089
-:WOND_120089 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
-                               owl:someValuesFrom :WOND_120090
-                             ] ;
-             rdfs:label "treatment plan specification"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120090
-:WOND_120090 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000260> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/WOND_0000090>
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ]
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
-                               owl:someValuesFrom :WOND_120089
-                             ] ;
-             rdfs:label "treatment plan"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120091
-:WOND_120091 rdf:type owl:Class ;
-             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
-             rdfs:label "disorder addition process"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120092
-:WOND_120092 rdf:type owl:Class ;
-             rdfs:subClassOf :WOND_120028 ;
-             <http://purl.org/dc/elements/1.1/description> "A disease process that has as participant a disease that has as part a disorder which is the output of another disease course process."@en ;
-             rdfs:label "complication disease process"@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120056
-:WOND_120056 rdf:type owl:NamedIndividual ;
-             rdfs:label "Gustilo and Anderson wound classification grade IIIC"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120057
-:WOND_120057 rdf:type owl:NamedIndividual ;
-             rdfs:label "Gustilo and Anderson wound classification grade IIIB"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120058
-:WOND_120058 rdf:type owl:NamedIndividual ;
-             rdfs:label "Gustilo and Anderson wound classification grade IIIA"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120059
-:WOND_120059 rdf:type owl:NamedIndividual ;
-             rdfs:label "Gustilo and Anderson wound classification grade II"@en .
-
-
-###  http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/WOND_120060
-:WOND_120060 rdf:type owl:NamedIndividual ;
-             rdfs:label "Gustilo and Anderson wound classification grade I"@en .
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120040
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120040> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120037> ;
+                                                                rdfs:label "ordering_operator"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120041
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120041> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120040> ;
+                                                                rdfs:label "greater_than_operator"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120042
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120042> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120040> ;
+                                                                rdfs:label "greater_than_or_equal_operator"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120043
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120043> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120040> ;
+                                                                rdfs:label "less_than_operator"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120044
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120044> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120040> ;
+                                                                rdfs:label "less_than_or_equal_operator"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120045
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120045> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ;
+                                                                rdfs:label "Disease diagnosis process by exclusion"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120046
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120046> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ;
+                                                                rdfs:label "disease diagnosis process by conceptualization"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120047
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024>
+                                                                                ] ;
+                                                                rdfs:label "Disease diagnostic process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120048
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120048> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120033>
+                                                                                ] ;
+                                                                rdfs:label "Suspected disease diagnosis process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120049
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120049> rdf:type owl:Class ;
+                                                                owl:equivalentClass [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                                             owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                           ]
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ] ;
+                                                                rdfs:label "compound pathological disorder"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120050
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120050> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ;
+                                                                rdfs:label "disease complication diagnostic result"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120051
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120051> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028>
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] ;
+                                                                rdfs:label "material complication disease entity"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120053
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120053> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021> ,
+                                                                                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] ;
+                                                                <http://purl.org/dc/elements/1.1/description> "This entity models a process in disease A's course that produces a disorder which becomes part of disease B — the complication. The disorder as output is not the disorder of the producing disease but a newly instantiated structural abnormality that grounds a secondary disease."@en ;
+                                                                rdfs:label "disease course process putting out disorders as part of a complication"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120054
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120054> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120055>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                  owl:allValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                                                                                ] ;
+                                                                rdfs:label "disease stage classification result"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120055
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120055> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120054>
+                                                                                ] ;
+                                                                rdfs:label "disease classification process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120086
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120086> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120090>
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
+                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] ;
+                                                                rdfs:label "Disease disorder treatment process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120087
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120087> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120088> ,
+                                                                                 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120091> ;
+                                                                rdfs:label "disorder elimination process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120088
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120088> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120086> ;
+                                                                owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120091> ;
+                                                                rdfs:label "disorder modification process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120089
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120089> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120090>
+                                                                                ] ;
+                                                                rdfs:label "treatment plan specification"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120090
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120090> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000260> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/WONT/WONT_0000090>
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                                                                  owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120089>
+                                                                                ] ;
+                                                                rdfs:label "treatment plan"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120091
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120091> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                rdfs:label "disorder addition process"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120092
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120092> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028> ;
+                                                                <http://purl.org/dc/elements/1.1/description> "A disease process that has as participant a disease that has as part a disorder which is the output of another disease course process."@en ;
+                                                                rdfs:label "complication disease process"@en .
 
 
 #################################################################
@@ -933,18 +887,18 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :WOND_120038
-                :WOND_120039
-                :WOND_120040
+  owl:members ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120038>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120039>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120040>
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :WOND_120041
-                :WOND_120042
-                :WOND_120043
-                :WOND_120044
+  owl:members ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120041>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120042>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120043>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120044>
               )
 ] .
 

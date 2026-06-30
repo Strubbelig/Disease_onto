@@ -47,7 +47,16 @@ ENV_FILE = Path(
 BIOPORTAL_BASE_URL = "https://data.bioontology.org"
 OLS_BASE_URL = "https://www.ebi.ac.uk/ols4"
 OBO_REGISTRY_URL = "https://obofoundry.org/registry/ontologies.yml"
-SCOPING_REVIEW_DIR = Path("Scoping review")
+
+
+def default_scoping_review_dir() -> Path:
+    if "__file__" in globals():
+        return Path(__file__).resolve().parent
+    cwd = Path.cwd()
+    return cwd if cwd.name == "Scoping review" else cwd / "Scoping review"
+
+
+SCOPING_REVIEW_DIR = default_scoping_review_dir()
 DEFAULT_OUT = SCOPING_REVIEW_DIR / "disease_terms_review.csv"
 
 CACHE_DIR = Path("/tmp/disease_terms_review_cache")
@@ -70,15 +79,31 @@ DELAY = 0.12
 
 DEFINITION_KEYS = {
     "definition",
+    "definitions",
     "description",
+    "dc:description",
+    "dcterms:description",
     "iao_0000115",
+    "obo:iao_0000115",
+    "skos:definition",
     "http://purl.obolibrary.org/obo/iao_0000115",
+    "http://www.w3.org/2004/02/skos/core#definition",
 }
 COMMENT_KEYS = {
     "comment",
+    "comments",
     "rdfs:comment",
+    "skos:note",
+    "skos:scopeNote",
+    "scopeNote",
+    "editor note",
+    "iao_0000116",
     "http://www.w3.org/2000/01/rdf-schema#comment",
+    "http://www.w3.org/2004/02/skos/core#note",
+    "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "http://purl.obolibrary.org/obo/iao_0000116",
 }
+VALUE_KEYS = {"value", "values", "text", "literal", "label"}
 
 
 # -- Generic helpers -----------------------------------------------------------
@@ -148,6 +173,9 @@ def get_json(
                 print(f"  [rate limit] waiting {wait}s", file=sys.stderr)
                 time.sleep(wait)
                 continue
+            if response.status_code in {400, 404}:
+                print(f"  [warn] GET {url} returned {response.status_code}; skipping", file=sys.stderr)
+                return None
             response.raise_for_status()
             data = response.json()
             if cache:
@@ -210,6 +238,15 @@ def annotation_key_matches(key: str, wanted_keys: set[str]) -> bool:
     return lowered in wanted_keys or local in wanted_keys
 
 
+def clean_annotation_value(value: Any) -> list[str]:
+    if isinstance(value, dict):
+        for key in VALUE_KEYS:
+            if key in value:
+                return clean_list(value[key])
+        return []
+    return clean_list(value)
+
+
 def extract_annotation_values(data: Any, wanted_keys: set[str]) -> list[str]:
     values: list[str] = []
     if not isinstance(data, dict):
@@ -217,16 +254,28 @@ def extract_annotation_values(data: Any, wanted_keys: set[str]) -> list[str]:
 
     for key, value in data.items():
         if annotation_key_matches(str(key), wanted_keys):
-            values.extend(clean_list(value))
+            values.extend(clean_annotation_value(value))
 
     for container_key in ["properties", "annotation", "annotations"]:
         container = data.get(container_key)
         if isinstance(container, dict):
             for key, value in container.items():
                 if annotation_key_matches(str(key), wanted_keys):
-                    values.extend(clean_list(value))
+                    values.extend(clean_annotation_value(value))
         elif isinstance(container, list):
             for item in container:
+                if not isinstance(item, dict):
+                    continue
+                item_keys = clean_list(
+                    item.get("property")
+                    or item.get("predicate")
+                    or item.get("annotationProperty")
+                    or item.get("iri")
+                    or item.get("@id")
+                )
+                if any(annotation_key_matches(key, wanted_keys) for key in item_keys):
+                    for value_key in VALUE_KEYS:
+                        values.extend(clean_annotation_value(item.get(value_key)))
                 values.extend(extract_annotation_values(item, wanted_keys))
 
     return values
@@ -416,6 +465,16 @@ def fetch_bioportal_mapping_count(ontology: str, class_iri: str, apikey: str) ->
     return 0
 
 
+def fetch_bioportal_class_details(ontology: str, class_iri: str, apikey: str) -> dict[str, Any]:
+    encoded = urllib.parse.quote(class_iri, safe="")
+    data = bioportal_get(
+        f"{BIOPORTAL_BASE_URL}/ontologies/{ontology}/classes/{encoded}",
+        {"include": "prefLabel,definition,synonym,notation,properties,cui,semanticType"},
+        apikey,
+    )
+    return data if isinstance(data, dict) else {}
+
+
 def fetch_bioportal_ontology_version(ontology: str, apikey: str) -> str:
     data = bioportal_get(f"{BIOPORTAL_BASE_URL}/ontologies/{ontology}/latest_submission", {}, apikey)
     if not isinstance(data, dict):
@@ -456,9 +515,15 @@ def bioportal_rows(
             iri = hit.get("@id", "")
             ontology = hit.get("links", {}).get("ontology", "").rstrip("/").split("/")[-1]
             label = hit.get("prefLabel", "").strip()
-            definition = join_values(clean_list(hit.get("definition")) + extract_annotation_values(hit, DEFINITION_KEYS))
-            comments = join_values(extract_annotation_values(hit, COMMENT_KEYS))
-            synonyms = join_values(hit.get("synonym"))
+            detail = fetch_bioportal_class_details(ontology, iri, apikey) if ontology and iri else {}
+            definition = join_values(
+                clean_list(hit.get("definition"))
+                + clean_list(detail.get("definition"))
+                + extract_annotation_values(hit, DEFINITION_KEYS)
+                + extract_annotation_values(detail, DEFINITION_KEYS)
+            )
+            comments = join_values(extract_annotation_values(hit, COMMENT_KEYS) + extract_annotation_values(detail, COMMENT_KEYS))
+            synonyms = join_values(clean_list(hit.get("synonym")) + clean_list(detail.get("synonym")))
 
             parent_labels = parent_iris = anchor = ""
             mapping_count: str | int = ""
@@ -717,11 +782,21 @@ def parse_obo_registry_yaml(text: str) -> list[dict[str, Any]]:
 
         record: dict[str, Any] = {"products": []}
         lines = chunk.splitlines()
+        in_license = False
         for line in lines:
             if line.startswith("- activity_status:"):
                 record["activity_status"] = parse_simple_yaml_value(line.split(":", 1)[1])
-            elif match := re.match(r"^  (id|ontology_purl|title|preferredPrefix):\s*(.*)$", line):
+                in_license = False
+            elif match := re.match(r"^  (id|ontology_purl|title|preferredPrefix|domain|homepage|repository|description):\s*(.*)$", line):
                 record[match.group(1)] = parse_simple_yaml_value(match.group(2))
+                in_license = False
+            elif line.startswith("  license:"):
+                record["license"] = {}
+                in_license = True
+            elif in_license and (match := re.match(r"^    (label|url):\s*(.*)$", line)):
+                record["license"][match.group(1)] = parse_simple_yaml_value(match.group(2))
+            elif line.startswith("  ") and not line.startswith("    "):
+                in_license = False
 
         products_block = re.search(r"(?ms)^  products:\n(.*?)(?=^  [A-Za-z0-9_-]+:|\Z)", chunk)
         if products_block:
@@ -993,6 +1068,314 @@ def obo_rows(
     return rows
 
 
+# -- Review enrichment ---------------------------------------------------------
+
+ENRICHMENT_FIELDNAMES = [
+    "ontology_title",
+    "ontology_description",
+    "ontology_domain",
+    "ontology_homepage",
+    "ontology_repository",
+    "ontology_license",
+    "ontology_status",
+    "ontology_metadata_source",
+    "ontology_metadata_retrieved_at",
+    "ontology_scope_category",
+    "ontology_exclusion_status",
+    "ontology_exclusion_rule",
+    "ontology_exclusion_reason",
+    "native_ontology_guess",
+    "native_term_status",
+    "manual_screening_hint",
+]
+
+
+def source_records(row: dict[str, Any]) -> list[dict[str, Any]]:
+    try:
+        records = json.loads(row.get("source_records", "") or "[]")
+    except json.JSONDecodeError:
+        records = []
+    return records if isinstance(records, list) else []
+
+
+def row_source_ontology_ids(row: dict[str, Any]) -> set[str]:
+    ids = {str(row.get("ontology", "")).lower()} if row.get("ontology") else set()
+    for record in source_records(row):
+        ontology = record.get("ontology")
+        if ontology:
+            ids.add(str(ontology).lower())
+    return {ontology for ontology in ids if ontology}
+
+
+def normalise_bioportal_ontology_metadata(data: dict[str, Any], *, retrieved_at: str | None = None) -> dict[str, str]:
+    retrieved_at = retrieved_at or now_iso()
+    title = first_clean([data.get("name"), data.get("acronym")])
+    description = join_values(clean_list(data.get("summary")) + clean_list(data.get("description")))
+    homepage = first_clean(data.get("homepage"))
+    license_value = first_clean(data.get("license"))
+    status = first_clean([data.get("status"), data.get("viewingRestriction")])
+    domain = join_values(
+        clean_list(data.get("group"))
+        + clean_list(data.get("groups"))
+        + clean_list(data.get("category"))
+        + clean_list(data.get("categories"))
+    )
+    return {
+        "ontology_title": title,
+        "ontology_description": description,
+        "ontology_domain": domain,
+        "ontology_homepage": homepage,
+        "ontology_repository": "",
+        "ontology_license": license_value,
+        "ontology_status": status,
+        "ontology_metadata_source": "BioPortal ontology metadata",
+        "ontology_metadata_retrieved_at": retrieved_at,
+    }
+
+
+def fetch_bioportal_ontology_metadata_index(apikey: str) -> dict[str, dict[str, str]]:
+    data = bioportal_get(
+        f"{BIOPORTAL_BASE_URL}/ontologies",
+        {"display_links": "false", "display_context": "false"},
+        apikey,
+    )
+    if not isinstance(data, list):
+        return {}
+    retrieved_at = now_iso()
+    index = {}
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        acronym = item.get("acronym")
+        if acronym:
+            index[str(acronym).lower()] = normalise_bioportal_ontology_metadata(item, retrieved_at=retrieved_at)
+    return index
+
+
+def obo_registry_metadata_by_id() -> dict[str, dict[str, str]]:
+    records = fetch_obo_registry()
+    metadata: dict[str, dict[str, str]] = {}
+    for record in records:
+        ontology_id = str(record.get("id", "")).lower()
+        if not ontology_id:
+            continue
+        license_value = ""
+        license_data = record.get("license")
+        if isinstance(license_data, dict):
+            license_value = first_clean([license_data.get("label"), license_data.get("url")])
+        elif license_data:
+            license_value = str(license_data)
+        metadata[ontology_id] = {
+            "ontology_title": first_clean([record.get("title"), record.get("preferredPrefix"), ontology_id]),
+            "ontology_description": first_clean(record.get("description")),
+            "ontology_domain": first_clean(record.get("domain")),
+            "ontology_homepage": first_clean(record.get("homepage")),
+            "ontology_repository": first_clean(record.get("repository")),
+            "ontology_license": license_value,
+            "ontology_status": first_clean(record.get("activity_status")),
+            "ontology_metadata_source": "OBO Foundry registry",
+            "ontology_metadata_retrieved_at": now_iso(),
+        }
+    return metadata
+
+
+def ontology_text(row: dict[str, Any]) -> str:
+    parts = [
+        row.get("ontology", ""),
+        row.get("ontology_title", ""),
+        row.get("ontology_description", ""),
+        row.get("ontology_homepage", ""),
+        row.get("ontology_repository", ""),
+        row.get("source_ontology_ids", ""),
+    ]
+    return " ".join(str(part) for part in parts if part).lower()
+
+
+def infer_ontology_scope_category(row: dict[str, Any]) -> str:
+    text = ontology_text(row)
+    ontology = row.get("ontology", "").lower()
+    if re.search(r"\b(demo|tutorial|training|example|sample|student|thesis)\b", text):
+        return "demo_or_training_resource"
+    if "generated-ontology" in text or "generated ontology" in text:
+        return "generated_or_local_ontology"
+    if "value set" in text or ontology in {"valuesets"}:
+        return "value_set_or_collection"
+    if ontology in {"snomedct", "loinc", "mesh", "rh-mesh", "icd10", "icd9cm", "icpc2p", "ndfrt", "medgen"}:
+        return "clinical_or_biomedical_terminology"
+    if ontology in {"ncit", "doid", "mondo", "efo", "ogms", "obi", "sio"}:
+        return "curated_biomedical_ontology"
+    if "obo foundry" in row.get("ontology_metadata_source", "").lower():
+        return "obo_foundry_ontology"
+    return "ontology_or_terminology_candidate"
+
+
+def preassert_exclusion(row: dict[str, Any]) -> tuple[str, str, str]:
+    text = ontology_text(row)
+    status = row.get("ontology_status", "").lower()
+    ontology = row.get("ontology", "").lower()
+    if any(token in status for token in ["obsolete", "inactive", "deprecated", "retired"]):
+        return ("excluded_preasserted", "E1_status_noncurrent", "Ontology metadata indicates obsolete/inactive/deprecated/retired status.")
+    if re.search(r"\b(demo|tutorial|training|example|sample|student|thesis)\b", text):
+        return ("excluded_preasserted", "E2_demo_training_or_thesis", "Ontology appears to be a demo, training, student, sample, or thesis resource.")
+    if "generated-ontology" in text or "generated ontology" in text:
+        return ("excluded_preasserted", "E3_generated_local_ontology", "Ontology appears to be generated/local rather than a reusable published ontology.")
+    if "value set" in text or ontology in {"valuesets"}:
+        return ("excluded_preasserted", "E4_value_set_collection", "Resource appears to be a value-set collection rather than an ontology implementation.")
+    return ("candidate", "", "")
+
+
+def infer_native_ontology_guess(class_iri: str) -> str:
+    iri = class_iri or ""
+    patterns = [
+        (r"purl\.obolibrary\.org/obo/([A-Za-z0-9]+)_", None),
+        (r"ebi\.ac\.uk/efo/(EFO)_", None),
+        (r"ncicb\.nci\.nih\.gov/.+#C[0-9]+", "ncit"),
+        (r"bioontology\.org/ontology/LNC/", "loinc"),
+        (r"snomed\.info/id/", "snomedct"),
+        (r"semanticscience\.org/resource/", "sio"),
+        (r"w3id\.org/biolink", "biolink"),
+    ]
+    for pattern, fixed in patterns:
+        match = re.search(pattern, iri, re.IGNORECASE)
+        if match:
+            return (fixed or match.group(1)).lower()
+    return ""
+
+
+def infer_native_term_status(row: dict[str, Any]) -> tuple[str, str]:
+    native_guess = infer_native_ontology_guess(row.get("class_iri", ""))
+    ontology_ids = row_source_ontology_ids(row)
+    if not native_guess:
+        return "", "unknown_native_ontology"
+    if native_guess in ontology_ids:
+        if len(ontology_ids) > 1:
+            return native_guess, "native_source_seen_with_imports"
+        return native_guess, "native_source_seen"
+    return native_guess, "likely_imported_or_reused_term"
+
+
+def manual_screening_hint(row: dict[str, Any]) -> str:
+    hints = []
+    if row.get("ontology_exclusion_status") == "excluded_preasserted":
+        hints.append("preasserted ontology-level exclusion; verify before final exclusion")
+    if not row.get("definition"):
+        hints.append("missing definition")
+    if not row.get("comments"):
+        hints.append("missing comment")
+    if row.get("native_term_status") == "likely_imported_or_reused_term":
+        hints.append("term IRI namespace suggests imported/reused class")
+    if row.get("ontology_scope_category") == "clinical_or_biomedical_terminology":
+        hints.append("terminology/resource rather than strict ontology; decide scope")
+    return "; ".join(hints)
+
+
+def enrich_rows(rows: list[dict[str, Any]], *, apikey: str | None = None) -> list[dict[str, Any]]:
+    apikey = apikey or load_bioportal_api_key()
+    obo_metadata = obo_registry_metadata_by_id()
+    bioportal_metadata = fetch_bioportal_ontology_metadata_index(apikey)
+
+    enriched = []
+    for row in rows:
+        row = dict(row)
+        ontology = row.get("ontology", "")
+        ontology_key = ontology.lower()
+        metadata = {}
+        if ontology_key in obo_metadata:
+            metadata.update(obo_metadata[ontology_key])
+        if ontology_key in bioportal_metadata:
+            for key, value in bioportal_metadata[ontology_key].items():
+                if value:
+                    metadata[key] = value
+
+        for field in ENRICHMENT_FIELDNAMES:
+            row.setdefault(field, "")
+        row.update({key: value for key, value in metadata.items() if key in ENRICHMENT_FIELDNAMES})
+
+        row["ontology_scope_category"] = infer_ontology_scope_category(row)
+        status, rule, reason = preassert_exclusion(row)
+        row["ontology_exclusion_status"] = status
+        row["ontology_exclusion_rule"] = rule
+        row["ontology_exclusion_reason"] = reason
+        native_guess, native_status = infer_native_term_status(row)
+        row["native_ontology_guess"] = native_guess
+        row["native_term_status"] = native_status
+        row["manual_screening_hint"] = manual_screening_hint(row)
+        enriched.append(row)
+    return enriched
+
+
+def refresh_row_class_annotations(row: dict[str, Any], *, apikey: str, ols_base_url: str = OLS_BASE_URL) -> dict[str, Any]:
+    row = dict(row)
+    class_iri = row.get("class_iri", "")
+    if not class_iri:
+        return row
+
+    bioportal_ontologies = []
+    if "BioPortal" in row.get("source_databases", "") and row.get("ontology"):
+        bioportal_ontologies.append(row["ontology"])
+    for record in source_records(row):
+        if record.get("source") == "BioPortal" and record.get("ontology"):
+            bioportal_ontologies.append(str(record["ontology"]))
+    bioportal_ontologies = list(dict.fromkeys(bioportal_ontologies))[:3]
+
+    definitions = clean_list(str(row.get("definition", "")).split(";"))
+    comments = clean_list(str(row.get("comments", "")).split(";"))
+    synonyms = clean_list(str(row.get("synonyms", "")).split(";"))
+
+    for ontology in bioportal_ontologies:
+        detail = fetch_bioportal_class_details(ontology, class_iri, apikey)
+        definitions.extend(clean_list(detail.get("definition")) + extract_annotation_values(detail, DEFINITION_KEYS))
+        comments.extend(extract_annotation_values(detail, COMMENT_KEYS))
+        synonyms.extend(clean_list(detail.get("synonym")))
+
+    for record in source_records(row):
+        if record.get("source") != "OLS" or not record.get("ontology"):
+            continue
+        detail = fetch_ols_term_details(str(record["ontology"]), class_iri, normalise_ols_base_url(ols_base_url))
+        definitions.extend(clean_list(detail.get("description")) + extract_annotation_values(detail, DEFINITION_KEYS))
+        comments.extend(clean_list(detail.get("comment")) + extract_annotation_values(detail, COMMENT_KEYS))
+        synonyms.extend(clean_list(detail.get("synonym")) + clean_list(detail.get("exact_synonyms")))
+
+    row["definition"] = join_values(definitions)
+    row["comments"] = join_values(comments)
+    row["synonyms"] = join_values(synonyms)
+    return row
+
+
+def refresh_class_annotations(rows: list[dict[str, Any]], *, ols_base_url: str = OLS_BASE_URL) -> list[dict[str, Any]]:
+    apikey = load_bioportal_api_key()
+    refreshed = []
+    for index, row in enumerate(rows, start=1):
+        if index % 25 == 0:
+            print(f"  refreshed annotations for {index}/{len(rows)} rows", file=sys.stderr)
+        refreshed.append(refresh_row_class_annotations(row, apikey=apikey, ols_base_url=ols_base_url))
+    return refreshed
+
+
+def read_csv_rows(path: Path) -> list[dict[str, Any]]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def write_csv_rows(path: Path, rows: list[dict[str, Any]], fieldnames: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def enrich_existing_csv(in_path: Path, out_path: Path, *, refresh_annotations: bool = False) -> None:
+    rows = read_csv_rows(in_path)
+    if refresh_annotations:
+        rows = refresh_class_annotations(rows)
+    fieldnames = list(dict.fromkeys(list(rows[0].keys() if rows else FIELDNAMES) + ENRICHMENT_FIELDNAMES))
+    enriched = enrich_rows(rows)
+    write_csv_rows(out_path, enriched, fieldnames)
+    excluded = sum(row.get("ontology_exclusion_status") == "excluded_preasserted" for row in enriched)
+    print(f"Enriched {len(enriched)} rows -> {out_path} ({excluded} preasserted ontology exclusions)")
+
+
 # -- Main ----------------------------------------------------------------------
 
 FIELDNAMES = [
@@ -1043,6 +1426,21 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out", default=str(DEFAULT_OUT))
     parser.add_argument(
+        "--enrich-existing",
+        default="",
+        help="Read an existing extraction CSV and add ontology metadata/native-term/exclusion columns without rerunning searches.",
+    )
+    parser.add_argument(
+        "--enriched-out",
+        default="",
+        help="Output path for --enrich-existing. Default: <input stem>_enriched.csv",
+    )
+    parser.add_argument(
+        "--refresh-class-annotations",
+        action="store_true",
+        help="With --enrich-existing, refetch class-detail records to improve definitions/comments/synonyms.",
+    )
+    parser.add_argument(
         "--sources",
         default="bioportal,ols,obo",
         help="Comma-separated sources to run: bioportal,ols,obo. BioPortal is searched first when included.",
@@ -1067,7 +1465,18 @@ def main() -> None:
     )
     parser.add_argument("--terms", default="", help="Override term list (comma-separated)")
     parser.add_argument("--resume", action="store_true", help="Merge into existing output file if present")
+    parser.add_argument(
+        "--no-enrich-output",
+        action="store_true",
+        help="Write only raw extraction columns for a fresh search run.",
+    )
     args = parser.parse_args()
+
+    if args.enrich_existing:
+        in_path = Path(args.enrich_existing)
+        out_path = Path(args.enriched_out) if args.enriched_out else in_path.with_name(f"{in_path.stem}_enriched.csv")
+        enrich_existing_csv(in_path, out_path, refresh_annotations=args.refresh_class_annotations)
+        return
 
     sources = parse_sources(args.sources)
     terms = [term.strip() for term in args.terms.split(",") if term.strip()] if args.terms else DEFAULT_TERMS
@@ -1097,12 +1506,15 @@ def main() -> None:
             bp_ids = fetch_bioportal_ontology_ids(load_bioportal_api_key()) if "bioportal" in sources else set()
             merge_rows(rows_by_key, obo_rows(terms, max_ontologies=args.obo_max_ontologies, skip_ids=bp_ids))
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with out_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDNAMES, extrasaction="ignore")
-        writer.writeheader()
-        for row in sorted(rows_by_key.values(), key=lambda r: (r.get("term", ""), r.get("ontology", ""), r.get("class_iri", ""))):
-            writer.writerow(row)
+    output_rows = sorted(
+        rows_by_key.values(),
+        key=lambda r: (r.get("term", ""), r.get("ontology", ""), r.get("class_iri", "")),
+    )
+    output_fieldnames = FIELDNAMES
+    if not args.no_enrich_output:
+        output_rows = enrich_rows(output_rows)
+        output_fieldnames = FIELDNAMES + ENRICHMENT_FIELDNAMES
+    write_csv_rows(out_path, output_rows, output_fieldnames)
 
     print(f"\nDone. {len(rows_by_key)} merged rows -> {out_path}", file=sys.stderr)
 

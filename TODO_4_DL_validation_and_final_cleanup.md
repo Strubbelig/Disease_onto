@@ -40,18 +40,18 @@
 
 ## C. Finish ontology polish
 
-- [ ] **C1 — Decide whether `genetic variant` should be renamed to `pathogenic genetic variant`.** The structural error is fixed because the class is now a material entity, not an OGMS disorder, but the label remains broader than the intended risk-basis class.
+- [x] **C1 — Decide whether `genetic variant` should be renamed to `pathogenic genetic variant`.** The structural error is fixed because the class is now a material entity, not an OGMS disorder, but the label remains broader than the intended risk-basis class.
 
-- [ ] **C2 — Add the intended `disease predisposition` annotation.** Use the wording from TODO 3:
+- [x] **C2 — Add the intended `disease predisposition` annotation.** Use the wording from TODO 3:
   > A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder.
 
-- [ ] **C3 — Decide what to do with `silent disorder` (WOND_120004).** TODO 1 argued that silent/subclinical status may belong in the epistemic or observation layer rather than as a material subclass. Either retire the class or explicitly justify keeping it as a convenient pathological-disorder subclass.
+- [x] **C3 — Decide what to do with `silent disorder` (WOND_120004).** TODO 1 argued that silent/subclinical status may belong in the epistemic or observation layer rather than as a material subclass. Either retire the class or explicitly justify keeping it as a convenient pathological-disorder subclass.
 
-- [ ] **C4 — Dedupe `disorder removal process` and `disorder elimination process`.** Keep both only if their difference is documented; otherwise merge or retire one.
+- [x] **C4 — Dedupe `disorder removal process` and `disorder elimination process`.** Keep both only if their difference is documented; otherwise merge or retire one.
 
-- [ ] **C5 — Review the imported wound `ground_truth.owl` WOND IDs.** The merged OWL contains both project IRIs and imported `http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_...` classes. Confirm this namespace duplication is intentional and will not confuse reviewers.
+- [x] **C5 — Review the imported wound `ground_truth.owl` WOND IDs.** The merged OWL contains both project IRIs and imported `http://purl.obolibrary.org/obo/wond/ground_truth.owl/WOND_...` classes. Confirm this namespace duplication is intentional and will not confuse reviewers.
 
-- [ ] **C6 — Recheck `has realization some disorder development process` on `disease predisposition`.** The worked genetic-predisposition example exposes a possible overcommitment: if every disease predisposition necessarily has a realization process, OWL can entail an anonymous development process and, through that process, an output pathological disorder. That is too strong for unrealized risk. Consider moving this existential to a `realized disease predisposition` subclass or replacing it with a weaker modelling note/annotation.
+- [x] **C6 — Recheck `has realization some disorder development process` on `disease predisposition`.** The worked genetic-predisposition example exposes a possible overcommitment: if every disease predisposition necessarily has a realization process, OWL can entail an anonymous development process and, through that process, an output pathological disorder. That is too strong for unrealized risk. Consider moving this existential to a `realized disease predisposition` subclass or replacing it with a weaker modelling note/annotation.
 
 ---
 

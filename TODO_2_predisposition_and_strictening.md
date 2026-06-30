@@ -21,7 +21,7 @@
   ```
   Keep the existing `disjointWith material disease entity` / `disjointWith pathological disorder`.
 
-- [ ] **A2 — Add subclass `genetic predisposition`** (the variant case; was T11d). Ground it in a **material** variant, *not* `DOID_630` (which is an epistemic disease category, not a material basis):
+- [x] **A2 — Add subclass `genetic predisposition`** (the variant case; was T11d). Ground it in a **material** variant, *not* `DOID_630` (which is an epistemic disease category, not a material basis):
   ```
   'genetic predisposition'  ⊑
       'disease predisposition'
@@ -45,7 +45,7 @@
   - retype the input to the risk-conferring **material entity** (`'has input' some 'material entity'`); **or**
   - keep the disorder-input only on the complication subclass `120053`, where a prior disorder genuinely exists.
 
-- [ ] **A7 — On 120023: simplify the realization and fix the description.** `has realization some ('disorder development process' and ('has output' some 'pathological disorder'))` is redundant — 120021 already entails the output, and the extra existential does **not** bind the *target* disorder. Use just `has realization some 'disorder development process'` (A1) and document the target in an annotation. Reword the description (it still says "disease disposition … potential bearer of a disorder" → "a tendency inhering in a person in whom a disorder of the target type may develop").
+- [x] **A7 — On 120023: simplify the realization and fix the description.** `has realization some ('disorder development process' and ('has output' some 'pathological disorder'))` is redundant — 120021 already entails the output, and the extra existential does **not** bind the *target* disorder. Use just `has realization some 'disorder development process'` (A1) and document the target in an annotation. Reword the description (it still says "disease disposition … potential bearer of a disorder" → "a tendency inhering in a person in whom a disorder of the target type may develop").
 
 ---
 
@@ -63,8 +63,8 @@
 
 - [ ] **C1 — Reflexivity check.** If your BFO import declares `has part` (BFO_0000051) reflexive, then `material disease entity ⊑ has part some pathological disorder` (and the compound def) make **every** pathological disorder also a material disease entity (it has itself as part). If you don't want single disorders auto-classified as diseases, confirm `has part` is non-reflexive in the merge, or use `has proper continuant part`.
 - [x] **C2 — `perpetuation disposition` (120034):** perpetuation is graded/counteractable — consider re-parenting it under `tendency` (120005) instead of `disposition` for consistency with the risk modelling.
-- [ ] **C3 — Dedupe:** `disorder removal process` (120006) vs `disorder elimination process` (120087) look like the same concept; keep one.
-- [ ] **C4 — `Unknown-substrate diseases` (120007):** rename to singular `unknown-disorder disease`.
+- [x] **C3 — Dedupe:** `disorder removal process` (120006) vs `disorder elimination process` (120087) look like the same concept; keep one.
+- [x] **C4 — `Unknown-substrate diseases` (120007):** rename to singular `unknown-disorder disease`.
 
 ---
 
