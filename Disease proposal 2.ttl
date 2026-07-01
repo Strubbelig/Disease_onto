@@ -4,9 +4,21 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://www.semanticweb.org/strubbelig/moritzmilewskisdiseaseproposal/> .
 
 <https://bioportal.bioontology.org/ontologies/MILD> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://bioportal.bioontology.org/ontologies/MILD/0.1.0> ;
+                                                     dcterms:abstract "A mid-level BFO/OGMS-aligned ontology pattern for modelling disease by separating material pathological disorder, material disease individuation, disease course, predisposition, and diagnostic classification."@en ;
+                                                     dcterms:created "2026-06-30"^^xsd:date ;
+                                                     dcterms:creator "Dr. Moritz Rudolf Franz Valerius Milewski"@en ,
+                                                                     <https://orcid.org/0009-0006-6251-7592> ;
+                                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     dcterms:modified "2026-06-30"^^xsd:date ;
+                                                     dcterms:title "Mid Layer Disease Ontology"@en ;
+                                                     vann:preferredNamespacePrefix "MILD" ;
+                                                     vann:preferredNamespaceUri "https://bioportal.bioontology.org/ontologies/MILD/" ;
                                                      owl:imports <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
                                                                  <http://purl.obolibrary.org/obo/wond/modules/cob_module.owl> ,
                                                                  <http://purl.obolibrary.org/obo/wond/modules/doid_module.owl> ,
@@ -39,6 +51,38 @@
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 #################################################################
