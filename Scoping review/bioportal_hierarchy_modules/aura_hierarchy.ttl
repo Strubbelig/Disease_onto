@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/aura_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2014-01-21T00:00:00.000+00:00, creationDate=2014-01-21T11:51:39.000-08:00, submissionId=1" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.projecthalo.com/aura#Condition> <http://purl.org/dc/terms/source> "review target in AURA from disease_terms_review_enriched.csv" .
+<http://www.projecthalo.com/aura#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://www.projecthalo.com/aura#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#State> .
+<http://www.projecthalo.com/aura#Disease> <http://purl.org/dc/terms/source> "review target in AURA from disease_terms_review_enriched.csv" .
+<http://www.projecthalo.com/aura#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.projecthalo.com/aura#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Intangible-Entity> .
+<http://www.projecthalo.com/aura#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+<http://www.projecthalo.com/aura#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://www.projecthalo.com/aura#Intangible-Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Intangible-Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Intangible-Entity" .
+<http://www.projecthalo.com/aura#Intangible-Entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Entity> .
+<http://www.projecthalo.com/aura#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+<http://www.projecthalo.com/aura#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Event> .

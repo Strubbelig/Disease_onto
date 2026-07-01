@@ -1,0 +1,87 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/chear_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2.8, released=2019-09-10T00:00:00.000+00:00, creationDate=2019-09-10T13:13:01.000-07:00, submissionId=15" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://hadatac.org/ont/chear#MedicalHistory> <http://purl.obolibrary.org/obo/IAO_0000115> "Medical History Indicator Class" .
+<http://hadatac.org/ont/chear#MedicalHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hadatac.org/ont/chear#MedicalHistory> <http://www.w3.org/2000/01/rdf-schema#label> "Medical History" .
+<http://hadatac.org/ont/chear#MedicalHistory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hadatac.org/ont/hasco/StudyIndicator> .
+<http://hadatac.org/ont/hasco/Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hadatac.org/ont/hasco/Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute" .
+<http://hadatac.org/ont/hasco/Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://hadatac.org/ont/hasco/Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hadatac.org/ont/hasco/Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator" .
+<http://hadatac.org/ont/hasco/StudyIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hadatac.org/ont/hasco/StudyIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Study Indicator" .
+<http://hadatac.org/ont/hasco/StudyIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hadatac.org/ont/hasco/Indicator> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.org/dc/terms/source> "review target in CHEAR from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hadatac.org/ont/chear#MedicalHistory> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/Disease> .
+<http://semanticscience.org/resource/Disease> <http://purl.org/dc/terms/source> "review target in CHEAR from disease_terms_review_enriched.csv" .
+<http://semanticscience.org/resource/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://semanticscience.org/resource/SIO_000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000000> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/2000/01/rdf-schema#label> "quality" .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hadatac.org/ont/hasco/Attribute> .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000614> .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity" .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000776> .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/2000/01/rdf-schema#label> "object quality" .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000005> .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#label> "language entity" .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000015> .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#label> "capability" .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000340> .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000078> .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hadatac.org/ont/hasco/Attribute> .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000614> .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.obolibrary.org/obo/IAO_0000115> "dysfunction is a capability to act in a manner that is abnormal or opposite  to the object's typical function." .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.org/dc/terms/source> "review target in CHEAR from disease_terms_review_enriched.csv" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#label> "dysfunction" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000112> .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/2000/01/rdf-schema#label> "biological quality" .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000026> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000000> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/2000/01/rdf-schema#label> "object" .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000000> .
+<http://semanticscience.org/resource/SIO_001017> <http://purl.obolibrary.org/obo/IAO_0000115> "A syndrome is composed of a set of several clinically recognizable features, signs (observed by someone other than the patient), symptoms (reported by the patient), phenomena or characteristics that often occur together." .
+<http://semanticscience.org/resource/SIO_001017> <http://purl.org/dc/terms/source> "review target in CHEAR from disease_terms_review_enriched.csv" .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000136> .
+<http://semanticscience.org/resource/SIO_010299> <http://purl.obolibrary.org/obo/IAO_0000115> "disease is the outward manifestation of one or more disorders." .
+<http://semanticscience.org/resource/SIO_010299> <http://purl.org/dc/terms/source> "review target in CHEAR from disease_terms_review_enriched.csv" .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000475> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000000> .

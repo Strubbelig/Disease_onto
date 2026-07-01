@@ -1,0 +1,47 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/canco_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=0.3, released=2013-05-01T00:00:00.000-07:00, creationDate=2013-05-01T09:16:39.000-07:00, submissionId=3" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://chem.deri.ie/granatum#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "A Disease is any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function." .
+<http://chem.deri.ie/granatum#Disease> <http://purl.org/dc/terms/source> "review target in CANCO from disease_terms_review_enriched.csv" .
+<http://chem.deri.ie/granatum#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://chem.deri.ie/granatum#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "A Disease is any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function." .
+<http://chem.deri.ie/granatum#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://chem.deri.ie/granatum#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Disposition> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonyms: endurant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities." .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "dependent_continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A realizable entity [snap:RealizableEntity] that essentially causes a specific process or transformation in the object [snap:Object] in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object [snap:Object] has the disposition D to (transform, initiate a process) R under conditions C." .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the disposition of vegetables to decay when not refrigerated, the disposition of a vase to brake if dropped, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease, the disposition of metal to conduct electricity." .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Comment: If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized." .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity" .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "realizable_entity" .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc." .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonyms: property, trope, mode" .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "specifically_dependent_continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> .

@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/cco_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2.10, released=2014-06-24T00:00:00.000+00:00, creationDate=2014-06-26T02:58:33.000-07:00, submissionId=6" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.org/dc/terms/source> "review target in CCO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000014> .
+<http://purl.obolibrary.org/obo/SIO_000000> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity is either a type that has zero or more physical manifestations or is an individual that exists in spacetime." .
+<http://purl.obolibrary.org/obo/SIO_000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000000> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/SIO_000014> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition is the tendency of a capability to be exhibited under certain conditions or in response to a certain stimulus (trigger)" .
+<http://purl.obolibrary.org/obo/SIO_000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000014> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/SIO_000014> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000112> .
+<http://purl.obolibrary.org/obo/SIO_000112> <http://purl.obolibrary.org/obo/IAO_0000115> "A capability is a realizable entity whose basis lies in one or more parts or qualities and reflects possility of an entity to act in a specified way under certain conditions or in response to a certain stimulus (trigger)." .
+<http://purl.obolibrary.org/obo/SIO_000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#label> "capability" .
+<http://purl.obolibrary.org/obo/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000340> .
+<http://purl.obolibrary.org/obo/SIO_000260> <http://purl.obolibrary.org/obo/IAO_0000115> "An abstract entity is an entity that exhibits zero, one or more physical manifestations." .
+<http://purl.obolibrary.org/obo/SIO_000260> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000260> <http://www.w3.org/2000/01/rdf-schema#label> "abstract entity" .
+<http://purl.obolibrary.org/obo/SIO_000260> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000000> .
+<http://purl.obolibrary.org/obo/SIO_000340> <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity is an attribute that is exhibited under some condition and is realized in some process." .
+<http://purl.obolibrary.org/obo/SIO_000340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://purl.obolibrary.org/obo/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000614> .
+<http://purl.obolibrary.org/obo/SIO_000614> <http://purl.obolibrary.org/obo/IAO_0000115> "An attribute is an abstract entity that describes some aspect of an entity." .
+<http://purl.obolibrary.org/obo/SIO_000614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<http://purl.obolibrary.org/obo/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SIO_000260> .

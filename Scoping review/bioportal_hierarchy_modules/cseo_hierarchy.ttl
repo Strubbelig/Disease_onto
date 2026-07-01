@@ -1,0 +1,56 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/cseo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2014-07-10T00:00:00.000+00:00, creationDate=2014-07-10T11:38:44.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/2000/01/rdf-schema#label> "Biological response" .
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/span#Process> .
+<http://scai.fraunhofer.de/CSEO#CSEO_00000817> <http://purl.org/dc/terms/source> "review target in CSEO from disease_terms_review_enriched.csv" .
+<http://scai.fraunhofer.de/CSEO#CSEO_00000817> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://scai.fraunhofer.de/CSEO#CSEO_00000817> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological Process" .
+<http://scai.fraunhofer.de/CSEO#CSEO_00000817> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000077> .
+<http://scai.fraunhofer.de/CSEO#CSEO_10000024> <http://purl.org/dc/terms/source> "review target in CSEO from disease_terms_review_enriched.csv" .
+<http://scai.fraunhofer.de/CSEO#CSEO_10000024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://scai.fraunhofer.de/CSEO#CSEO_10000024> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://scai.fraunhofer.de/CSEO#CSEO_10000024> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#Disposition> .
+<http://scai.fraunhofer.de/CSEO#Condition> <http://purl.org/dc/terms/source> "review target in CSEO from disease_terms_review_enriched.csv" .
+<http://scai.fraunhofer.de/CSEO#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://scai.fraunhofer.de/CSEO#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://scai.fraunhofer.de/CSEO#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#Quality> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://www.ifomis.org/snap#Continuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://www.ifomis.org/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/snap#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "dependent_continuant" .
+<http://www.ifomis.org/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#Continuant> .
+<http://www.ifomis.org/snap#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://www.ifomis.org/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#RealizableEntity> .
+<http://www.ifomis.org/snap#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "quality" .
+<http://www.ifomis.org/snap#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#SpecificallyDependentContinuant> .
+<http://www.ifomis.org/snap#RealizableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "realizable_entity" .
+<http://www.ifomis.org/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#SpecificallyDependentContinuant> .
+<http://www.ifomis.org/snap#SpecificallyDependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "specifically_dependent_continuant" .
+<http://www.ifomis.org/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/snap#DependentContinuant> .
+<http://www.ifomis.org/span#Occurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#label> "occurrent" .
+<http://www.ifomis.org/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/span#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/span#Process> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://www.ifomis.org/span#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/span#ProcessualEntity> .
+<http://www.ifomis.org/span#ProcessualEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/span#ProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#label> "processual_entity" .
+<http://www.ifomis.org/span#ProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/span#Occurrent> .

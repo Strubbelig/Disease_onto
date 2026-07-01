@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/bcgo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.5, released=2010-11-06T00:00:00.000-07:00, creationDate=2011-05-24T01:39:44.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.owl-ontologies.com/Ontology1239104585.owl#ConceptualEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1239104585.owl#ConceptualEntity> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptualEntity" .
+<http://www.owl-ontologies.com/Ontology1239104585.owl#Disease> <http://purl.org/dc/terms/source> "review target in BCGO from disease_terms_review_enriched.csv" .
+<http://www.owl-ontologies.com/Ontology1239104585.owl#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1239104585.owl#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.owl-ontologies.com/Ontology1239104585.owl#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1239104585.owl#ConceptualEntity> .

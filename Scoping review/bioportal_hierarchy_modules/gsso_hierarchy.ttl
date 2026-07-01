@@ -1,0 +1,197 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/gsso_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2.0.6, released=2022-09-08T18:08:47.000-07:00, creationDate=2022-09-08T18:08:55.000-07:00, submissionId=75" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/STY/T072> <http://purl.obolibrary.org/obo/IAO_0000115> "A physical object is an identifiable collection of matter, which may be constrained by an identifiable boundary, and may move as a unit by translation or rotation, in 3-dimensional space." .
+<http://purl.bioontology.org/ontology/STY/T072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T072> <http://www.w3.org/2000/01/rdf-schema#label> "physical object" .
+<http://purl.bioontology.org/ontology/STY/T072> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity is anything that exists or has existed or will exist." .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity." .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/IAO_0000115> "An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies a temporal region or a spatiotemporal region." .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/2000/01/rdf-schema#label> "occurrent" .
+<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/IAO_0000115> "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t." .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/2000/01/rdf-schema#label> "independent continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000004> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/IAO_0000115> "A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists." .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000003> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2004/02/skos/core#altLabel> "processed" .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2004/02/skos/core#altLabel> "processing" .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2004/02/skos/core#altLabel> "processual" .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity is an attribute that is exhibited under some condition and is realized in some process." .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000020> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000614> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence." .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "specifically dependent continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://purl.obolibrary.org/obo/IAO_0000115> "An object is an entity that is wholly identifiable at any instant of time during which it exists." .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "object" .
+<http://purl.obolibrary.org/obo/BFO_0000030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000004> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/IAO_0000115> "An activity occurring within an organism, between organisms or among organisms and the mechanisms underlying such events." .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2000/01/rdf-schema#label> "biological process" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://purl.obolibrary.org/obo/GSSO_000484> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being related to an organism's health." .
+<http://purl.obolibrary.org/obo/GSSO_000484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000484> <http://www.w3.org/2000/01/rdf-schema#label> "health condition" .
+<http://purl.obolibrary.org/obo/GSSO_000484> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25457> .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://purl.obolibrary.org/obo/IAO_0000115> "A broad term that includes all diseases, lesions, disorders, or nonpathologic condition that normally receives medical treatment, such as pregnancy or childbirth." .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://purl.obolibrary.org/obo/IAO_0000115> "Any kind of illness or circumstance which requires medical monitoring." .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://www.w3.org/2000/01/rdf-schema#label> "medical condition" .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000484> .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://purl.obolibrary.org/obo/IAO_0000115> "Any condition that impairs the normal functioning of the body. For this reason, diseases are associated with dysfunctioning of the body's normal homeostatic processes." .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000485> .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_1110122> .
+<http://purl.obolibrary.org/obo/GSSO_000486> <http://www.w3.org/2004/02/skos/core#altLabel> "http://purl.obolibrary.org/obo/GSSO_000488" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://purl.obolibrary.org/obo/IAO_0000115> "The patient's personal experience of their disease." .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/2000/01/rdf-schema#label> "illness" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000485> .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://purl.obolibrary.org/obo/IAO_0000115> "A functional abnormality or disturbance." .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000485> .
+<http://purl.obolibrary.org/obo/GSSO_000488> <http://www.w3.org/2004/02/skos/core#altLabel> "http://purl.obolibrary.org/obo/GSSO_000486" .
+<http://purl.obolibrary.org/obo/GSSO_000496> <http://purl.obolibrary.org/obo/IAO_0000115> "Biological entity which consists of a maximum number of some instances of discontinuous members of the same class." .
+<http://purl.obolibrary.org/obo/GSSO_000496> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000496> <http://www.w3.org/2000/01/rdf-schema#label> "biological set" .
+<http://purl.obolibrary.org/obo/GSSO_000496> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000289> .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://purl.obolibrary.org/obo/IAO_0000115> "A set of medical signs and symptoms that are correlated with each other and, often, with a particular disease or disorder." .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://purl.obolibrary.org/obo/IAO_0000115> "A syndrome is composed of a set of several clinically recognizable features, signs (observed by someone other than the patient), symptoms (reported by the patient), phenomena or characteristics that often occur together." .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000485> .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000496> .
+<http://purl.obolibrary.org/obo/GSSO_000497> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000136> .
+<http://purl.obolibrary.org/obo/GSSO_005252> <http://purl.obolibrary.org/obo/IAO_0000115> "Any part of an organism." .
+<http://purl.obolibrary.org/obo/GSSO_005252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_005252> <http://www.w3.org/2000/01/rdf-schema#label> "body structure" .
+<http://purl.obolibrary.org/obo/GSSO_005252> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/UBERON_0000061> .
+<http://purl.obolibrary.org/obo/GSSO_005253> <http://purl.obolibrary.org/obo/IAO_0000115> "A structure of the body which has had its morphology altered in some way." .
+<http://purl.obolibrary.org/obo/GSSO_005253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_005253> <http://www.w3.org/2000/01/rdf-schema#label> "morphologically altered structure" .
+<http://purl.obolibrary.org/obo/GSSO_005253> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_005252> .
+<http://purl.obolibrary.org/obo/GSSO_005254> <http://purl.obolibrary.org/obo/IAO_0000115> "A body structure which has undergone some process of alteration which is nonnormative or otherwise considered abnormal." .
+<http://purl.obolibrary.org/obo/GSSO_005254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_005254> <http://www.w3.org/2000/01/rdf-schema#label> "morphologically abnormal structure" .
+<http://purl.obolibrary.org/obo/GSSO_005254> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_005253> .
+<http://purl.obolibrary.org/obo/GSSO_005255> <http://purl.obolibrary.org/obo/IAO_0000115> "A localized pathological or traumatic structural change, damage, deformity, or discontinuity of tissue, organ, or body part." .
+<http://purl.obolibrary.org/obo/GSSO_005255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_005255> <http://www.w3.org/2000/01/rdf-schema#label> "lesion" .
+<http://purl.obolibrary.org/obo/GSSO_005255> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_005254> .
+<http://purl.obolibrary.org/obo/GSSO_009122> <http://purl.obolibrary.org/obo/IAO_0000115> "Physical harm which impairs the usefulness or regular functionality of a part of the body." .
+<http://purl.obolibrary.org/obo/GSSO_009122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_009122> <http://www.w3.org/2000/01/rdf-schema#label> "morphological damage" .
+<http://purl.obolibrary.org/obo/GSSO_009122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_005255> .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_009122> .
+<http://purl.obolibrary.org/obo/GSSO_009123> <http://www.w3.org/2004/02/skos/core#altLabel> "wounds and injuries" .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being, such as a state of health." .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000017> .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://purl.obolibrary.org/obo/IAO_0000115> "A biologic function or a process having an abnormal or deleterious effect at the subcellular, cellular, multicellular, or organismal level." .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://purl.obolibrary.org/obo/IAO_0000115> "The abnormal mechanisms and forms involved in the dysfunctions of tissues and organs." .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/2000/01/rdf-schema#label> "pathologic process" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GO_0008150> .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/IAO_0000115> "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/2000/01/rdf-schema#label> "anatomical structure" .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T072> .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sig/ont/fma/fma67165> .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/2004/02/skos/core#altLabel> "biological structure" .
+<http://purl.obolibrary.org/obo/UBERON_0000061> <http://www.w3.org/2004/02/skos/core#altLabel> "connected biological structure" .
+<http://purl.org/sig/ont/fma/fma61775> <http://purl.obolibrary.org/obo/IAO_0000115> "Anatomical entity, each instance of which has three or fewer spatial dimensions." .
+<http://purl.org/sig/ont/fma/fma61775> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sig/ont/fma/fma61775> <http://www.w3.org/2000/01/rdf-schema#label> "physical anatomical entity" .
+<http://purl.org/sig/ont/fma/fma61775> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sig/ont/fma/fma62955> .
+<http://purl.org/sig/ont/fma/fma62955> <http://purl.obolibrary.org/obo/IAO_0000115> "an anatomical entity is an object that is a structural part (material or immaterial) of a biological entity." .
+<http://purl.org/sig/ont/fma/fma62955> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sig/ont/fma/fma62955> <http://www.w3.org/2000/01/rdf-schema#label> "anatomical entity" .
+<http://purl.org/sig/ont/fma/fma62955> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_001353> .
+<http://purl.org/sig/ont/fma/fma67165> <http://purl.obolibrary.org/obo/IAO_0000115> "Anatomical entity that has mass." .
+<http://purl.org/sig/ont/fma/fma67165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sig/ont/fma/fma67165> <http://www.w3.org/2000/01/rdf-schema#label> "material anatomical entity" .
+<http://purl.org/sig/ont/fma/fma67165> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sig/ont/fma/fma61775> .
+<http://semanticscience.org/resource/SIO_000015> <http://purl.obolibrary.org/obo/IAO_0000115> "A generically dependent continuant that is about some thing." .
+<http://semanticscience.org/resource/SIO_000015> <http://purl.obolibrary.org/obo/IAO_0000115> "An information entity is an entity that represents information about some other entity. For example, a measurement, a clustered data set." .
+<http://semanticscience.org/resource/SIO_000015> <http://purl.obolibrary.org/obo/IAO_0000115> "Information content entity is an object that requires some background knowledge or procedure to correctly interpret." .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity" .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2004/02/skos/core#altLabel> "information artifact" .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2004/02/skos/core#altLabel> "information resource" .
+<http://semanticscience.org/resource/SIO_000075> <http://purl.obolibrary.org/obo/IAO_0000115> "A mathematical entity is an information content entity that are components of a mathematical system or can be defined in mathematical terms." .
+<http://semanticscience.org/resource/SIO_000075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000075> <http://www.w3.org/2000/01/rdf-schema#label> "mathematical entity" .
+<http://semanticscience.org/resource/SIO_000075> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000015> .
+<http://semanticscience.org/resource/SIO_000078> <http://purl.obolibrary.org/obo/IAO_0000115> "A language entity implements some language specification for the visual interpretation and is part of some document." .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#label> "language entity" .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000015> .
+<http://semanticscience.org/resource/SIO_000112> <http://purl.obolibrary.org/obo/IAO_0000115> "A capability is a realizable entity whose basis lies in one or more parts or qualities and reflects possibility of an entity to behave in a specified way under certain conditions or in response to a certain stimulus (trigger)." .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#label> "capability" .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000017> .
+<http://semanticscience.org/resource/SIO_000136> <http://purl.obolibrary.org/obo/IAO_0000115> "A description is language entity in which elements of a language (formal or natural) are used to characterize an entity." .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000078> .
+<http://semanticscience.org/resource/SIO_000289> <http://purl.obolibrary.org/obo/IAO_0000115> "A set is a collection of entities, for which there may be zero members." .
+<http://semanticscience.org/resource/SIO_000289> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000289> <http://www.w3.org/2000/01/rdf-schema#label> "set" .
+<http://semanticscience.org/resource/SIO_000289> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000075> .
+<http://semanticscience.org/resource/SIO_000289> <http://www.w3.org/2004/02/skos/core#altLabel> "mathematical set" .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.obolibrary.org/obo/IAO_0000115> "Dysfunction is a capability to act in a manner that is abnormal or opposite to the object's typical function." .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.org/dc/terms/source> "review target in GSSO from disease_terms_review_enriched.csv" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#label> "dysfunction" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000112> .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2004/02/skos/core#altLabel> "dysfunctional" .
+<http://semanticscience.org/resource/SIO_000614> <http://purl.obolibrary.org/obo/IAO_0000115> "An attribute is a characteristic of some entity." .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2004/02/skos/core#altLabel> "attributed" .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2004/02/skos/core#altLabel> "attributing" .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2004/02/skos/core#altLabel> "attributive" .
+<http://semanticscience.org/resource/SIO_001353> <http://purl.obolibrary.org/obo/IAO_0000115> "Any of various objects with specified purpose or purposes." .
+<http://semanticscience.org/resource/SIO_001353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001353> <http://www.w3.org/2000/01/rdf-schema#label> "specialized object" .
+<http://semanticscience.org/resource/SIO_001353> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://semanticscience.org/resource/SIO_001353> <http://www.w3.org/2004/02/skos/core#altLabel> "specialized entity" .

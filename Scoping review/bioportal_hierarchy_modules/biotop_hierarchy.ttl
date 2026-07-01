@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/biotop_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=v2012-04-24, released=2012-04-24T00:00:00.000+00:00, creationDate=2026-01-22T00:00:00.000+00:00, submissionId=4" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.org/biotop/biotop.owl#BiologicalProcessualEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#BiologicalProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#label> "biological processual entity" .
+<http://purl.org/biotop/biotop.owl#BiologicalProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Process> .
+<http://purl.org/biotop/biotop.owl#Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "Union of material entity, process, or disposition. The rationale of this class is to represent the ambiguous nature of what is commonly referred to by health-related condition (not necessarily pathologic)" .
+<http://purl.org/biotop/biotop.owl#Condition> <http://purl.org/dc/terms/source> "review target in BIOTOP from disease_terms_review_enriched.csv" .
+<http://purl.org/biotop/biotop.owl#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://purl.org/biotop/biotop.owl#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Particular> .
+<http://purl.org/biotop/biotop.owl#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.org/biotop/biotop.owl#Disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Particular> .
+<http://purl.org/biotop/biotop.owl#Particular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#Particular> <http://www.w3.org/2000/01/rdf-schema#label> "Particular" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://purl.obolibrary.org/obo/IAO_0000115> "any kind of disposition considered non-canonical. The criteria of canonicity are not further specified. \nThe classification of certain dispositions as dysfunctional or pathological is dependent on a historic and cultural context. Dysfunction or disease therefore hasn't the status of a universal." .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://purl.org/dc/terms/source> "review target in BIOTOP from disease_terms_review_enriched.csv" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#label> "pathological disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Disposition> .
+<http://purl.org/biotop/biotop.owl#PathologicalProcess> <http://purl.obolibrary.org/obo/IAO_0000115> "a biological process which is non-canonic" .
+<http://purl.org/biotop/biotop.owl#PathologicalProcess> <http://purl.org/dc/terms/source> "review target in BIOTOP from disease_terms_review_enriched.csv" .
+<http://purl.org/biotop/biotop.owl#PathologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "pathological process" .
+<http://purl.org/biotop/biotop.owl#PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#BiologicalProcessualEntity> .
+<http://purl.org/biotop/biotop.owl#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#Process> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://purl.org/biotop/biotop.owl#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Particular> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .

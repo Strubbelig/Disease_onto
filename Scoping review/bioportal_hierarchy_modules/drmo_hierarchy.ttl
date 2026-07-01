@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/drmo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: released=2023-05-09T00:00:00.000+00:00, creationDate=2023-05-09T08:27:33.000-07:00, submissionId=1" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.org/dc/terms/source> "review target in DRMO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/titutuli/nivedita/drmo#AssociatedConsideration> .
+<http://purl.obolibrary.org/obo/OGMS_0000102> <http://purl.obolibrary.org/obo/IAO_0000115> "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure." .
+<http://purl.obolibrary.org/obo/OGMS_0000102> <http://purl.org/dc/terms/source> "review target in DRMO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000102> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.obolibrary.org/obo/OGMS_0000102> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/titutuli/nivedita/drmo#AssociatedConsideration> .
+<http://www.semanticweb.org/ontologies/2022/titutuli/nivedita/drmo#AssociatedConsideration> <http://purl.obolibrary.org/obo/IAO_0000115> "Associated Consideration demand extra attention for using dental material objects. Manufactured object participates in some recommended dental procedure. Few associated conditions do not allow the recommended procedures to be performed in the conventional way.\nClinicians had to modify the material selection process for that specific condition.  \nManufacturers modify few objects for some specific dental conditions like high stress area, sub gingival area, low occlusal clearance, area with more saliva, edge-to-edge bite, restoration in asthmatic patients, epileptic patients." .
+<http://www.semanticweb.org/ontologies/2022/titutuli/nivedita/drmo#AssociatedConsideration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2022/titutuli/nivedita/drmo#AssociatedConsideration> <http://www.w3.org/2000/01/rdf-schema#label> "Associated Consideration" .

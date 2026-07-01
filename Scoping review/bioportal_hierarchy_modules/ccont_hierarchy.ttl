@@ -1,0 +1,75 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ccont_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2014-07-23T00:00:00.000+00:00, creationDate=2014-07-23T18:00:22.000-07:00, submissionId=3" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/IAO_0000115> "A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs." .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ebi.ac.uk/efo/EFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition is an entity that causes a specific process or transformation in an entity in which it inheres, under specific circumstances and in conjunction with the laws of nature. For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease." .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000020> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental factor which is a property or characteristic of some other entity.  For example, the mouse has the colour white." .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "material property" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ebi.ac.uk/efo/EFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2004/02/skos/core#altLabel> "SpecificallyDependentContinuant" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2004/02/skos/core#altLabel> "specifically dependent continuant" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/IAO_0000115> "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/IAO_0000115> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this." .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2000/01/rdf-schema#label> "biological_process" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2004/02/skos/core#altLabel> "biological process" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2004/02/skos/core#altLabel> "physiological process" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2004/02/skos/core#altLabel> "single organism process" .
+<http://purl.obolibrary.org/obo/GO_0008150> <http://www.w3.org/2004/02/skos/core#altLabel> "single-organism process" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://purl.obolibrary.org/obo/IAO_0000115> "Abnormal, harmful processes caused by or associated with a disease" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://purl.obolibrary.org/obo/IAO_0000115> "abnormal, harmful processes caused by or associated with a disease" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://purl.org/dc/terms/source> "review target in CCONT from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/2000/01/rdf-schema#label> "pathological process" .
+<http://purl.obolibrary.org/obo/OBI_1110122> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GO_0008150> .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change." .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "Concept naming convention is lower case natural naming with spaces, when necessary captials should be used, for example disease factor, HIV, breast carcinoma, Ewing's sarcoma" .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "experimental factor" .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "ExperimentalFactor" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition that describes states of disease associated with a particular sample and/or organism." .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://purl.org/dc/terms/source> "review target in CCONT from disease_terms_review_enriched.csv" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "Homo sapiens disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "human disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://purl.org/dc/terms/source> "review target in CCONT from disease_terms_review_enriched.csv" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "Trauma" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "Wound" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .

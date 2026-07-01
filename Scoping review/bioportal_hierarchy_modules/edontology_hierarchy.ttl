@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/edontology_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: released=2025-12-13T00:00:00.000+00:00, creationDate=2025-12-13T00:00:00.000+00:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/abid/ontologies/2022/9/untitled-ontology-11#Disease> <http://purl.org/dc/terms/source> "review target in EDONTOLOGY from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/abid/ontologies/2022/9/untitled-ontology-11#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/abid/ontologies/2022/9/untitled-ontology-11#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .

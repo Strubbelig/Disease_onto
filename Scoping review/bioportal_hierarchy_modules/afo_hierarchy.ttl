@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/afo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=REC/2026/03, released=2026-03-27T06:35:02.000+00:00, creationDate=2026-03-31T00:00:00.000+00:00, submissionId=44" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.allotrope.org/ontologies/common#AFC_0000090> <http://purl.obolibrary.org/obo/IAO_0000115> "A condition is an information content entity that is about the portion of reality under which something occurs or is valid. The condition is limited by its scope and may have preconditions. It restricts the possible realizations. [Allotrope]" .
+<http://purl.allotrope.org/ontologies/common#AFC_0000090> <http://purl.org/dc/terms/source> "review target in AFO from disease_terms_review_enriched.csv" .
+<http://purl.allotrope.org/ontologies/common#AFC_0000090> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.allotrope.org/ontologies/common#AFC_0000090> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://purl.allotrope.org/ontologies/common#AFC_0000090> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.allotrope.org/ontologies/result#AFR_0000991> .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://purl.obolibrary.org/obo/IAO_0000115> "A proposition is an information content entity that is statement or assertion that has a truth value. [Allotrope]" .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/2000/01/rdf-schema#label> "proposition" .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/2004/02/skos/core#altLabel> "assertion" .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/2004/02/skos/core#altLabel> "content" .
+<http://purl.allotrope.org/ontologies/result#AFR_0000991> <http://www.w3.org/2004/02/skos/core#altLabel> "statement" .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity is anything that exists or has existed or will exist. [BFO]" .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. [BFO]" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "b is a generically dependent continuant if b is a continuant that generically depends on one or more other entities. [BFO]" .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "generically dependent continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000115> "A generically dependent continuant that is about some thing. [IAO]" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2004/02/skos/core#altLabel> "information object" .

@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/allergidoc_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=3.0, released=2025-03-12T00:00:00.000+00:00, creationDate=2025-03-12T01:56:56.000-07:00, submissionId=9" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement> <http://www.w3.org/2000/01/rdf-schema#label> "Evènement" .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement_ou_état_ou_processus> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement_ou_état_ou_processus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement_ou_état_ou_processus> <http://www.w3.org/2000/01/rdf-schema#label> "Evènement_ou_état_ou_processus" .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Signe_symptôme_ou_syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Signe_symptôme_ou_syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Signe_symptôme_ou_syndrome" .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Signe_symptôme_ou_syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://allergo.infodocs.eu/ontologie/allergidoc3.0/Evènement> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome> <http://purl.org/dc/terms/source> "review target in ALLERGIDOC from disease_terms_review_enriched.csv" .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://allergo.infodocs.eu/ontologie/allergidoc3.0/Signe_symptôme_ou_syndrome> .

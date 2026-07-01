@@ -1,0 +1,164 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iao:     <http://purl.obolibrary.org/obo/IAO_> .
+@prefix rev:     <https://example.org/disease-review/ap/> .
+
+<https://example.org/disease-review/review-core>
+    rdf:type owl:Ontology ;
+    rdfs:label "Disease Ontology Scoping Review — Core Annotation Properties"@en ;
+    dcterms:description "Declares the annotation properties used in the manual-annotation layer (disease_terms_manual_annotations.csv) of the disease-ontology scoping review. Each property corresponds to a column in the CSV. Controlled-value sets are listed in skos:scopeNote."@en ;
+    owl:versionInfo "2026-07-01" .
+
+#################################################################
+#  Context / provenance (read-only reference columns)
+#################################################################
+
+rev:term
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "search term"@en ;
+    iao:0000115 "The search term that matched this class in the original database query (e.g. 'disease', 'disorder'). Human-readable context only; not a stable key."@en .
+
+rev:preferred_label
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "preferred label"@en ;
+    iao:0000115 "The preferred label of the class as returned by the source database at retrieval time. Copied from the extraction for reviewer orientation."@en .
+
+rev:source_ontology_ids
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source ontology IDs"@en ;
+    iao:0000115 "Semicolon-separated list of ontology identifiers (e.g. 'BioPortal: DOID; OLS: doid') in which this class was found. Copied from the extraction for cross-database orientation."@en .
+
+#################################################################
+#  Ontology-level eligibility
+#################################################################
+
+rev:ontology_type_manual
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology type (manual)"@en ;
+    iao:0000115 "Human-assigned classification of the resource type of the ontology in which this class was found."@en ;
+    skos:scopeNote "Controlled values: curated_ontology | clinical_terminology | value_set | application_ontology | demo_or_training_resource | generated_or_local_resource | unclear"@en .
+
+rev:native_or_imported_manual
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "native or imported (manual)"@en ;
+    iao:0000115 "Human judgement on whether this class IRI is native to the reporting ontology or imported/reused from another ontology."@en ;
+    skos:scopeNote "Controlled values: native | imported | reused_unclear | unknown"@en .
+
+#################################################################
+#  Inclusion decision
+#################################################################
+
+rev:manual_include_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "manual include status"@en ;
+    iao:0000115 "The reviewer's overall inclusion decision for this class in the substantive analysis."@en ;
+    skos:scopeNote "Controlled values: include | exclude | maybe | needs_second_review"@en .
+
+rev:manual_exclusion_reason
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "manual exclusion reason"@en ;
+    iao:0000115 "When manual_include_status is 'exclude', the primary reason for exclusion chosen from the controlled vocabulary."@en ;
+    skos:scopeNote "Controlled values: demo_or_training_resource | value_set_or_collection | not_disease_modelling_relevant | terminology_not_ontology | duplicate_imported_term | obsolete_or_noncurrent | insufficient_metadata | out_of_scope_other"@en .
+
+rev:manual_exclusion_detail
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "manual exclusion detail"@en ;
+    iao:0000115 "Free-text elaboration of the exclusion reason. Required when manual_exclusion_reason is 'out_of_scope_other' or when the controlled term needs qualification."@en .
+
+#################################################################
+#  Entity relevance and disease modelling
+#################################################################
+
+rev:disease_model_category
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "disease model category"@en ;
+    iao:0000115 "The disease-modelling perspective that best fits the upper-level interpretation of this class."@en ;
+    skos:scopeNote "Controlled values: disease_as_disposition | disease_as_disorder | disease_as_process | disease_as_finding | disease_as_condition | disease_as_pathology | disease_as_syndrome | mixed_or_unclear | not_applicable"@en .
+
+rev:upper_level_interpretation
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "upper-level interpretation"@en ;
+    iao:0000115 "Plain-language summary of how this class is anchored in the upper ontology, derived from parent_labels, parent_iris, and bfo_anchor. Examples: 'subclass of disposition', 'subclass of process', 'clinical finding', 'quality or state', 'unclear'."@en .
+
+#################################################################
+#  Quality assessments
+#################################################################
+
+rev:definition_quality
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "definition quality"@en ;
+    iao:0000115 "Quality of the class definition based on the definition, comments, and synonyms columns."@en ;
+    skos:scopeNote "Controlled values: good (genus/differentia or clear ontological meaning) | partial (informative but incomplete, circular, or underspecified) | poor (vague, operational, or mostly lexical) | absent (no definition)"@en .
+
+rev:comment_quality
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "comment quality"@en ;
+    iao:0000115 "Quality of comments and editor notes associated with the class, as supporting evidence for the definition."@en ;
+    skos:scopeNote "Controlled values: good | partial | poor | absent | not_applicable"@en .
+
+rev:parentage_quality
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "parentage quality"@en ;
+    iao:0000115 "Quality of the class's placement in the hierarchy, assessed from parent_labels, parent_iris, and bfo_anchor."@en ;
+    skos:scopeNote "Controlled values: good | partial | poor | absent"@en .
+
+rev:provenance_quality
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "provenance quality"@en ;
+    iao:0000115 "Quality of the class's source provenance metadata, including ontology version, retrieval timestamp, and source URL as recorded in the extraction."@en ;
+    skos:scopeNote "Controlled values: good | partial | poor | absent"@en .
+
+rev:entity_quality_score
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "entity quality score"@en ;
+    iao:0000115 "Composite integer score summarising the overall entity quality across definition, parentage, and relevance."@en ;
+    skos:scopeNote "Controlled values: 3 (clear, relevant, well-defined, structurally interpretable) | 2 (relevant but incomplete or partially underspecified) | 1 (weak, vague, mostly terminological, or poorly grounded) | 0 (exclude from substantive analysis)"@en .
+
+rev:quality_decision
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "quality decision"@en ;
+    iao:0000115 "The final inclusion decision derived from the quality assessment, indicating how the class should be handled in the substantive synthesis."@en ;
+    skos:scopeNote "Controlled values: high_confidence_include | include_with_caveat | exclude | uncertain_second_review"@en .
+
+#################################################################
+#  Review provenance
+#################################################################
+
+rev:reviewer
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "reviewer"@en ;
+    iao:0000115 "Name or identifier of the person who performed the primary review of this class."@en .
+
+rev:review_date
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "review date"@en ;
+    iao:0000115 "ISO 8601 date on which the primary review was completed (e.g. 2026-06-29)."@en .
+
+rev:review_notes
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "review notes"@en ;
+    iao:0000115 "Free-text notes from the primary reviewer explaining the rationale for decisions or recording open questions."@en .
+
+rev:second_reviewer
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "second reviewer"@en ;
+    iao:0000115 "Name or identifier of the person who performed the secondary review pass, if any."@en .
+
+rev:second_review_date
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "second review date"@en ;
+    iao:0000115 "ISO 8601 date on which the secondary review was completed."@en .
+
+rev:disagreement_flag
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "disagreement flag"@en ;
+    iao:0000115 "Indicates whether the primary and secondary reviewers reached different inclusion decisions for this class. Set to 'true' when disagreement is detected; left blank otherwise."@en .
+
+rev:adjudication_decision
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "adjudication decision"@en ;
+    iao:0000115 "The final decision reached after adjudication of a disagreement between reviewers. Populated only when disagreement_flag is true."@en .

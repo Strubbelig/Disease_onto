@@ -1,0 +1,51 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/efo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=3.91.0, released=2026-06-15T18:03:13.000-07:00, creationDate=2026-06-15T00:00:00.000+00:00, submissionId=289" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition is an entity that causes a specific process or transformation in an entity in which it inheres, under specific circumstances and in conjunction with the laws of nature. For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease." .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000020> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental factor which is a property or characteristic of some other entity.  For example, the mouse has the colour white." .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "material property" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ebi.ac.uk/efo/EFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2004/02/skos/core#altLabel> "SpecificallyDependentContinuant" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2004/02/skos/core#altLabel> "specifically dependent continuant" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.org/dc/terms/source> "review target in EFO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.org/dc/terms/source> "review target in EFO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change." .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "Concept naming convention is lower case natural naming with spaces, when necessary captials should be used, for example disease factor, HIV, breast carcinoma, Ewing's sarcoma" .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "experimental factor" .
+<http://www.ebi.ac.uk/efo/EFO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "ExperimentalFactor" .
