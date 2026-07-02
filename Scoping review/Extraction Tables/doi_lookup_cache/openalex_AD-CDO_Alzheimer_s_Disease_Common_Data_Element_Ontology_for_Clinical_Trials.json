@@ -1,0 +1,5089 @@
+{
+  "meta": {
+    "count": 8,
+    "db_response_time_ms": 265,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Alzheimer's Disease Common Data Element Ontology for Clinical Trials AD-CDO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials AD-CDO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Alzheimer%27s Disease Common Data Element Ontology for Clinical Trials AD-CDO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W7163210958",
+      "doi": "https://doi.org/10.5281/zenodo.20510832",
+      "title": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "display_name": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "relevance_score": 93.19729,
+      "publication_year": 2026,
+      "publication_date": "2026-06-02",
+      "ids": {
+        "openalex": "https://openalex.org/W7163210958",
+        "doi": "https://doi.org/10.5281/zenodo.20510832"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.20510832",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20510832",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.20510832",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5137653468",
+            "display_name": "Zenan Sun",
+            "orcid": "https://orcid.org/0000-0003-1577-874X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210146710",
+              "display_name": "Mayo Clinic in Florida",
+              "ror": "https://ror.org/03zzw1w08",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I1330342723",
+                "https://openalex.org/I4210146710"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sun, Zenan",
+          "raw_affiliation_strings": [
+            "UTHealth Houston",
+            "Mayo Clinic in Florida"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1577-874X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UTHealth Houston",
+              "institution_ids": [
+                "https://openalex.org/I919571938"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Mayo Clinic in Florida",
+              "institution_ids": [
+                "https://openalex.org/I4210146710"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083171882",
+            "display_name": "Rashmie Abeysinghe",
+            "orcid": "https://orcid.org/0000-0001-9297-9540"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Abeysinghe, Rashmie",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137680431",
+            "display_name": "Xiaojin Li",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Li, Xiaojin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137653058",
+            "display_name": "Xinyue Hu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Xinyue",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137688787",
+            "display_name": "Qizhen Lan",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Lan, Qizhen",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137627478",
+            "display_name": "Lijing Zhu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhu, Lijing",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137692218",
+            "display_name": "Licong Cui",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Cui, Licong",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137673064",
+            "display_name": "Guo-Qiang Zhang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Guo-Qiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5137712706",
+            "display_name": "Jiang Bian",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bian, Jiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5137639578",
+            "display_name": "Cui Tao",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Tao, Cui",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/keywords/snomed-ct",
+          "display_name": "SNOMED CT",
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/keywords/clinical-trial",
+          "display_name": "Clinical trial",
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/keywords/executable",
+          "display_name": "Executable",
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/keywords/data-integration",
+          "display_name": "Data integration",
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.44279998540878296
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7128000259399414
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/C535046627",
+          "wikidata": "https://www.wikidata.org/wiki/Q30612",
+          "display_name": "Clinical trial",
+          "level": 2,
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/C160145156",
+          "wikidata": "https://www.wikidata.org/wiki/Q778586",
+          "display_name": "Executable",
+          "level": 2,
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.48019999265670776
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.47699999809265137
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.44279998540878296
+        },
+        {
+          "id": "https://openalex.org/C9357733",
+          "wikidata": "https://www.wikidata.org/wiki/Q6878417",
+          "display_name": "Missing data",
+          "level": 2,
+          "score": 0.39660000801086426
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.38190001249313354
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3531000018119812
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3264000117778778
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3221000134944916
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3052000105381012
+        },
+        {
+          "id": "https://openalex.org/C200288055",
+          "wikidata": "https://www.wikidata.org/wiki/Q2621792",
+          "display_name": "Element (criminal law)",
+          "level": 2,
+          "score": 0.298799991607666
+        },
+        {
+          "id": "https://openalex.org/C2777212361",
+          "wikidata": "https://www.wikidata.org/wiki/Q5127848",
+          "display_name": "Class (philosophy)",
+          "level": 2,
+          "score": 0.2953000068664551
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2874000072479248
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.27889999747276306
+        },
+        {
+          "id": "https://openalex.org/C1668388",
+          "wikidata": "https://www.wikidata.org/wiki/Q1149776",
+          "display_name": "Data management",
+          "level": 2,
+          "score": 0.2766000032424927
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.266400009393692
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.26249998807907104
+        },
+        {
+          "id": "https://openalex.org/C138958017",
+          "wikidata": "https://www.wikidata.org/wiki/Q190087",
+          "display_name": "Data type",
+          "level": 2,
+          "score": 0.25540000200271606
+        },
+        {
+          "id": "https://openalex.org/C100463513",
+          "wikidata": "https://www.wikidata.org/wiki/Q5227322",
+          "display_name": "Data model (GIS)",
+          "level": 2,
+          "score": 0.2549999952316284
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.20510832",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.20510832",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.20510832",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20510832",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          72
+        ],
+        "Alzheimer’s": [
+          1
+        ],
+        "Disease": [
+          2
+        ],
+        "Common": [
+          3,
+          119
+        ],
+        "Data": [
+          4,
+          120
+        ],
+        "Element": [
+          5
+        ],
+        "Ontology": [
+          6
+        ],
+        "for": [
+          7,
+          149
+        ],
+        "Clinical": [
+          8
+        ],
+        "Trials": [
+          9
+        ],
+        "(AD-CDO)": [
+          10
+        ],
+        "is": [
+          11,
+          109
+        ],
+        "a": [
+          12,
+          54
+        ],
+        "lightweight,": [
+          13
+        ],
+        "data-driven": [
+          14
+        ],
+        "semantic": [
+          15
+        ],
+        "resource": [
+          16
+        ],
+        "designed": [
+          17
+        ],
+        "to": [
+          18,
+          65,
+          112,
+          139
+        ],
+        "formally": [
+          19
+        ],
+        "represent": [
+          20
+        ],
+        "the": [
+          21,
+          117
+        ],
+        "most": [
+          22
+        ],
+        "frequent": [
+          23
+        ],
+        "and": [
+          24,
+          97,
+          125,
+          155
+        ],
+        "impactful": [
+          25
+        ],
+        "clinical": [
+          26,
+          46,
+          84,
+          105,
+          143
+        ],
+        "concepts": [
+          27
+        ],
+        "utilized": [
+          28
+        ],
+        "in": [
+          29,
+          104
+        ],
+        "AD": [
+          30
+        ],
+        "trial": [
+          31,
+          51
+        ],
+        "eligibility": [
+          32
+        ],
+        "criteria.": [
+          33
+        ],
+        "Unlike": [
+          34
+        ],
+        "traditional": [
+          35
+        ],
+        "top-down": [
+          36
+        ],
+        "ontologies,": [
+          37
+        ],
+        "AD-CDO": [
+          38,
+          130
+        ],
+        "was": [
+          39
+        ],
+        "empirically": [
+          40
+        ],
+        "derived": [
+          41
+        ],
+        "by": [
+          42,
+          59
+        ],
+        "extracting": [
+          43
+        ],
+        "over": [
+          44
+        ],
+        "38,000": [
+          45
+        ],
+        "tokens": [
+          47
+        ],
+        "from": [
+          48
+        ],
+        "1,500+": [
+          49
+        ],
+        "unstructured": [
+          50
+        ],
+        "protocols": [
+          52
+        ],
+        "using": [
+          53
+        ],
+        "hybrid": [
+          55
+        ],
+        "NLP": [
+          56
+        ],
+        "pipeline,": [
+          57
+        ],
+        "followed": [
+          58
+        ],
+        "statistical": [
+          60
+        ],
+        "optimization": [
+          61
+        ],
+        "(Jenks": [
+          62
+        ],
+        "Natural": [
+          63
+        ],
+        "Breaks)": [
+          64
+        ],
+        "ensure": [
+          66
+        ],
+        "computational": [
+          67
+        ],
+        "efficiency": [
+          68
+        ],
+        "without": [
+          69
+        ],
+        "sacrificing": [
+          70
+        ],
+        "coverage.": [
+          71
+        ],
+        "resulting": [
+          73
+        ],
+        "ontology": [
+          74
+        ],
+        "comprises": [
+          75
+        ],
+        "293": [
+          76
+        ],
+        "expertly": [
+          77
+        ],
+        "curated": [
+          78
+        ],
+        "classes": [
+          79
+        ],
+        "distributed": [
+          80
+        ],
+        "across": [
+          81
+        ],
+        "seven": [
+          82
+        ],
+        "practical": [
+          83
+        ],
+        "domains:": [
+          85
+        ],
+        "Disease,": [
+          86
+        ],
+        "Medication,": [
+          87
+        ],
+        "Diagnostic": [
+          88
+        ],
+        "Test,": [
+          89
+        ],
+        "Procedure,": [
+          90
+        ],
+        "Social": [
+          91
+        ],
+        "Determinants": [
+          92
+        ],
+        "of": [
+          93
+        ],
+        "Health,": [
+          94
+        ],
+        "Rating": [
+          95
+        ],
+        "Criteria,": [
+          96
+        ],
+        "Fertility.": [
+          98
+        ],
+        "To": [
+          99
+        ],
+        "enable": [
+          100
+        ],
+        "immediate": [
+          101
+        ],
+        "downstream": [
+          102
+        ],
+        "applicability": [
+          103
+        ],
+        "informatics,": [
+          106
+        ],
+        "every": [
+          107
+        ],
+        "class": [
+          108
+        ],
+        "explicitly": [
+          110
+        ],
+        "mapped": [
+          111
+        ],
+        "interoperable": [
+          113,
+          134
+        ],
+        "global": [
+          114
+        ],
+        "standards,": [
+          115
+        ],
+        "including": [
+          116
+        ],
+        "OMOP": [
+          118
+        ],
+        "Model,": [
+          121
+        ],
+        "UMLS,": [
+          122
+        ],
+        "SNOMED": [
+          123
+        ],
+        "CT,": [
+          124
+        ],
+        "NLM": [
+          126
+        ],
+        "VSAC": [
+          127
+        ],
+        "value": [
+          128
+        ],
+        "sets.": [
+          129
+        ],
+        "serves": [
+          131
+        ],
+        "as": [
+          132
+        ],
+        "an": [
+          133
+        ],
+        "translational": [
+          135
+        ],
+        "hub,": [
+          136
+        ],
+        "allowing": [
+          137
+        ],
+        "researchers": [
+          138
+        ],
+        "computationally": [
+          140
+        ],
+        "transform": [
+          141
+        ],
+        "narrative": [
+          142
+        ],
+        "text": [
+          144
+        ],
+        "into": [
+          145
+        ],
+        "executable": [
+          146
+        ],
+        "EHR": [
+          147
+        ],
+        "queries": [
+          148
+        ],
+        "automated": [
+          150
+        ],
+        "cohort": [
+          151
+        ],
+        "identification,": [
+          152
+        ],
+        "computable": [
+          153
+        ],
+        "phenotyping,": [
+          154
+        ],
+        "cross-study": [
+          156
+        ],
+        "harmonization.": [
+          157
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2026-06-03T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7161707773",
+      "doi": "https://doi.org/10.5281/zenodo.20290088",
+      "title": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "display_name": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "relevance_score": 92.83818,
+      "publication_year": 2026,
+      "publication_date": "2026-05-19",
+      "ids": {
+        "openalex": "https://openalex.org/W7161707773",
+        "doi": "https://doi.org/10.5281/zenodo.20290088"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.20290088",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20290088",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.20290088",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5136470948",
+            "display_name": "Zenan Sun",
+            "orcid": "https://orcid.org/0000-0003-1577-874X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210146710",
+              "display_name": "Mayo Clinic in Florida",
+              "ror": "https://ror.org/03zzw1w08",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I1330342723",
+                "https://openalex.org/I4210146710"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Sun, Zenan",
+          "raw_affiliation_strings": [
+            "UTHealth Houston",
+            "Mayo Clinic in Florida"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1577-874X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UTHealth Houston",
+              "institution_ids": [
+                "https://openalex.org/I919571938"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Mayo Clinic in Florida",
+              "institution_ids": [
+                "https://openalex.org/I4210146710"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5136470948"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210146710",
+        "https://openalex.org/I919571938"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/keywords/snomed-ct",
+          "display_name": "SNOMED CT",
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/keywords/clinical-trial",
+          "display_name": "Clinical trial",
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/keywords/executable",
+          "display_name": "Executable",
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/keywords/data-integration",
+          "display_name": "Data integration",
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.44279998540878296
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7128000259399414
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/C535046627",
+          "wikidata": "https://www.wikidata.org/wiki/Q30612",
+          "display_name": "Clinical trial",
+          "level": 2,
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/C160145156",
+          "wikidata": "https://www.wikidata.org/wiki/Q778586",
+          "display_name": "Executable",
+          "level": 2,
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.48019999265670776
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.47699999809265137
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.44279998540878296
+        },
+        {
+          "id": "https://openalex.org/C9357733",
+          "wikidata": "https://www.wikidata.org/wiki/Q6878417",
+          "display_name": "Missing data",
+          "level": 2,
+          "score": 0.39660000801086426
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.38190001249313354
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3531000018119812
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3264000117778778
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3221000134944916
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3052000105381012
+        },
+        {
+          "id": "https://openalex.org/C200288055",
+          "wikidata": "https://www.wikidata.org/wiki/Q2621792",
+          "display_name": "Element (criminal law)",
+          "level": 2,
+          "score": 0.298799991607666
+        },
+        {
+          "id": "https://openalex.org/C2777212361",
+          "wikidata": "https://www.wikidata.org/wiki/Q5127848",
+          "display_name": "Class (philosophy)",
+          "level": 2,
+          "score": 0.2953000068664551
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2874000072479248
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.27889999747276306
+        },
+        {
+          "id": "https://openalex.org/C1668388",
+          "wikidata": "https://www.wikidata.org/wiki/Q1149776",
+          "display_name": "Data management",
+          "level": 2,
+          "score": 0.2766000032424927
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.266400009393692
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.26249998807907104
+        },
+        {
+          "id": "https://openalex.org/C138958017",
+          "wikidata": "https://www.wikidata.org/wiki/Q190087",
+          "display_name": "Data type",
+          "level": 2,
+          "score": 0.25540000200271606
+        },
+        {
+          "id": "https://openalex.org/C100463513",
+          "wikidata": "https://www.wikidata.org/wiki/Q5227322",
+          "display_name": "Data model (GIS)",
+          "level": 2,
+          "score": 0.2549999952316284
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.20290088",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.20290088",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.20290088",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20290088",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          72
+        ],
+        "Alzheimer’s": [
+          1
+        ],
+        "Disease": [
+          2
+        ],
+        "Common": [
+          3,
+          119
+        ],
+        "Data": [
+          4,
+          120
+        ],
+        "Element": [
+          5
+        ],
+        "Ontology": [
+          6
+        ],
+        "for": [
+          7,
+          149
+        ],
+        "Clinical": [
+          8
+        ],
+        "Trials": [
+          9
+        ],
+        "(AD-CDO)": [
+          10
+        ],
+        "is": [
+          11,
+          109
+        ],
+        "a": [
+          12,
+          54
+        ],
+        "lightweight,": [
+          13
+        ],
+        "data-driven": [
+          14
+        ],
+        "semantic": [
+          15
+        ],
+        "resource": [
+          16
+        ],
+        "designed": [
+          17
+        ],
+        "to": [
+          18,
+          65,
+          112,
+          139
+        ],
+        "formally": [
+          19
+        ],
+        "represent": [
+          20
+        ],
+        "the": [
+          21,
+          117
+        ],
+        "most": [
+          22
+        ],
+        "frequent": [
+          23
+        ],
+        "and": [
+          24,
+          97,
+          125,
+          155
+        ],
+        "impactful": [
+          25
+        ],
+        "clinical": [
+          26,
+          46,
+          84,
+          105,
+          143
+        ],
+        "concepts": [
+          27
+        ],
+        "utilized": [
+          28
+        ],
+        "in": [
+          29,
+          104
+        ],
+        "AD": [
+          30
+        ],
+        "trial": [
+          31,
+          51
+        ],
+        "eligibility": [
+          32
+        ],
+        "criteria.": [
+          33
+        ],
+        "Unlike": [
+          34
+        ],
+        "traditional": [
+          35
+        ],
+        "top-down": [
+          36
+        ],
+        "ontologies,": [
+          37
+        ],
+        "AD-CDO": [
+          38,
+          130
+        ],
+        "was": [
+          39
+        ],
+        "empirically": [
+          40
+        ],
+        "derived": [
+          41
+        ],
+        "by": [
+          42,
+          59
+        ],
+        "extracting": [
+          43
+        ],
+        "over": [
+          44
+        ],
+        "38,000": [
+          45
+        ],
+        "tokens": [
+          47
+        ],
+        "from": [
+          48
+        ],
+        "1,500+": [
+          49
+        ],
+        "unstructured": [
+          50
+        ],
+        "protocols": [
+          52
+        ],
+        "using": [
+          53
+        ],
+        "hybrid": [
+          55
+        ],
+        "NLP": [
+          56
+        ],
+        "pipeline,": [
+          57
+        ],
+        "followed": [
+          58
+        ],
+        "statistical": [
+          60
+        ],
+        "optimization": [
+          61
+        ],
+        "(Jenks": [
+          62
+        ],
+        "Natural": [
+          63
+        ],
+        "Breaks)": [
+          64
+        ],
+        "ensure": [
+          66
+        ],
+        "computational": [
+          67
+        ],
+        "efficiency": [
+          68
+        ],
+        "without": [
+          69
+        ],
+        "sacrificing": [
+          70
+        ],
+        "coverage.": [
+          71
+        ],
+        "resulting": [
+          73
+        ],
+        "ontology": [
+          74
+        ],
+        "comprises": [
+          75
+        ],
+        "293": [
+          76
+        ],
+        "expertly": [
+          77
+        ],
+        "curated": [
+          78
+        ],
+        "classes": [
+          79
+        ],
+        "distributed": [
+          80
+        ],
+        "across": [
+          81
+        ],
+        "seven": [
+          82
+        ],
+        "practical": [
+          83
+        ],
+        "domains:": [
+          85
+        ],
+        "Disease,": [
+          86
+        ],
+        "Medication,": [
+          87
+        ],
+        "Diagnostic": [
+          88
+        ],
+        "Test,": [
+          89
+        ],
+        "Procedure,": [
+          90
+        ],
+        "Social": [
+          91
+        ],
+        "Determinants": [
+          92
+        ],
+        "of": [
+          93
+        ],
+        "Health,": [
+          94
+        ],
+        "Rating": [
+          95
+        ],
+        "Criteria,": [
+          96
+        ],
+        "Fertility.": [
+          98
+        ],
+        "To": [
+          99
+        ],
+        "enable": [
+          100
+        ],
+        "immediate": [
+          101
+        ],
+        "downstream": [
+          102
+        ],
+        "applicability": [
+          103
+        ],
+        "informatics,": [
+          106
+        ],
+        "every": [
+          107
+        ],
+        "class": [
+          108
+        ],
+        "explicitly": [
+          110
+        ],
+        "mapped": [
+          111
+        ],
+        "interoperable": [
+          113,
+          134
+        ],
+        "global": [
+          114
+        ],
+        "standards,": [
+          115
+        ],
+        "including": [
+          116
+        ],
+        "OMOP": [
+          118
+        ],
+        "Model,": [
+          121
+        ],
+        "UMLS,": [
+          122
+        ],
+        "SNOMED": [
+          123
+        ],
+        "CT,": [
+          124
+        ],
+        "NLM": [
+          126
+        ],
+        "VSAC": [
+          127
+        ],
+        "value": [
+          128
+        ],
+        "sets.": [
+          129
+        ],
+        "serves": [
+          131
+        ],
+        "as": [
+          132
+        ],
+        "an": [
+          133
+        ],
+        "translational": [
+          135
+        ],
+        "hub,": [
+          136
+        ],
+        "allowing": [
+          137
+        ],
+        "researchers": [
+          138
+        ],
+        "computationally": [
+          140
+        ],
+        "transform": [
+          141
+        ],
+        "narrative": [
+          142
+        ],
+        "text": [
+          144
+        ],
+        "into": [
+          145
+        ],
+        "executable": [
+          146
+        ],
+        "EHR": [
+          147
+        ],
+        "queries": [
+          148
+        ],
+        "automated": [
+          150
+        ],
+        "cohort": [
+          151
+        ],
+        "identification,": [
+          152
+        ],
+        "computable": [
+          153
+        ],
+        "phenotyping,": [
+          154
+        ],
+        "cross-study": [
+          156
+        ],
+        "harmonization.": [
+          157
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2026-05-20T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7161743566",
+      "doi": "https://doi.org/10.5281/zenodo.20290087",
+      "title": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "display_name": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "relevance_score": 92.67735,
+      "publication_year": 2026,
+      "publication_date": "2026-06-02",
+      "ids": {
+        "openalex": "https://openalex.org/W7161743566",
+        "doi": "https://doi.org/10.5281/zenodo.20290087"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.20290087",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20290087",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.20290087",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5136470948",
+            "display_name": "Zenan Sun",
+            "orcid": "https://orcid.org/0000-0003-1577-874X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210146710",
+              "display_name": "Mayo Clinic in Florida",
+              "ror": "https://ror.org/03zzw1w08",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I1330342723",
+                "https://openalex.org/I4210146710"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sun, Zenan",
+          "raw_affiliation_strings": [
+            "UTHealth Houston",
+            "Mayo Clinic in Florida"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1577-874X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UTHealth Houston",
+              "institution_ids": [
+                "https://openalex.org/I919571938"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Mayo Clinic in Florida",
+              "institution_ids": [
+                "https://openalex.org/I4210146710"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Abeysinghe, Rashmie",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Abeysinghe, Rashmie",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Li, Xiaojin",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Li, Xiaojin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Hu, Xinyue",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Xinyue",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Lan, Qizhen",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Lan, Qizhen",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhu, Lijing",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhu, Lijing",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Cui, Licong",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Cui, Licong",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhang, Guo-Qiang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Guo-Qiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Bian, Jiang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bian, Jiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Tao, Cui",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Tao, Cui",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/keywords/snomed-ct",
+          "display_name": "SNOMED CT",
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/keywords/clinical-trial",
+          "display_name": "Clinical trial",
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/keywords/executable",
+          "display_name": "Executable",
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/keywords/data-integration",
+          "display_name": "Data integration",
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.44279998540878296
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7128000259399414
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/C535046627",
+          "wikidata": "https://www.wikidata.org/wiki/Q30612",
+          "display_name": "Clinical trial",
+          "level": 2,
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/C160145156",
+          "wikidata": "https://www.wikidata.org/wiki/Q778586",
+          "display_name": "Executable",
+          "level": 2,
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.48019999265670776
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.47699999809265137
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.44279998540878296
+        },
+        {
+          "id": "https://openalex.org/C9357733",
+          "wikidata": "https://www.wikidata.org/wiki/Q6878417",
+          "display_name": "Missing data",
+          "level": 2,
+          "score": 0.39660000801086426
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.38190001249313354
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3531000018119812
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3264000117778778
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3221000134944916
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3052000105381012
+        },
+        {
+          "id": "https://openalex.org/C200288055",
+          "wikidata": "https://www.wikidata.org/wiki/Q2621792",
+          "display_name": "Element (criminal law)",
+          "level": 2,
+          "score": 0.298799991607666
+        },
+        {
+          "id": "https://openalex.org/C2777212361",
+          "wikidata": "https://www.wikidata.org/wiki/Q5127848",
+          "display_name": "Class (philosophy)",
+          "level": 2,
+          "score": 0.2953000068664551
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2874000072479248
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.27889999747276306
+        },
+        {
+          "id": "https://openalex.org/C1668388",
+          "wikidata": "https://www.wikidata.org/wiki/Q1149776",
+          "display_name": "Data management",
+          "level": 2,
+          "score": 0.2766000032424927
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.266400009393692
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.26249998807907104
+        },
+        {
+          "id": "https://openalex.org/C138958017",
+          "wikidata": "https://www.wikidata.org/wiki/Q190087",
+          "display_name": "Data type",
+          "level": 2,
+          "score": 0.25540000200271606
+        },
+        {
+          "id": "https://openalex.org/C100463513",
+          "wikidata": "https://www.wikidata.org/wiki/Q5227322",
+          "display_name": "Data model (GIS)",
+          "level": 2,
+          "score": 0.2549999952316284
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.20290087",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.20290087",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.20290087",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20290087",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          72
+        ],
+        "Alzheimer’s": [
+          1
+        ],
+        "Disease": [
+          2
+        ],
+        "Common": [
+          3,
+          119
+        ],
+        "Data": [
+          4,
+          120
+        ],
+        "Element": [
+          5
+        ],
+        "Ontology": [
+          6
+        ],
+        "for": [
+          7,
+          149
+        ],
+        "Clinical": [
+          8
+        ],
+        "Trials": [
+          9
+        ],
+        "(AD-CDO)": [
+          10
+        ],
+        "is": [
+          11,
+          109
+        ],
+        "a": [
+          12,
+          54
+        ],
+        "lightweight,": [
+          13
+        ],
+        "data-driven": [
+          14
+        ],
+        "semantic": [
+          15
+        ],
+        "resource": [
+          16
+        ],
+        "designed": [
+          17
+        ],
+        "to": [
+          18,
+          65,
+          112,
+          139
+        ],
+        "formally": [
+          19
+        ],
+        "represent": [
+          20
+        ],
+        "the": [
+          21,
+          117
+        ],
+        "most": [
+          22
+        ],
+        "frequent": [
+          23
+        ],
+        "and": [
+          24,
+          97,
+          125,
+          155
+        ],
+        "impactful": [
+          25
+        ],
+        "clinical": [
+          26,
+          46,
+          84,
+          105,
+          143
+        ],
+        "concepts": [
+          27
+        ],
+        "utilized": [
+          28
+        ],
+        "in": [
+          29,
+          104
+        ],
+        "AD": [
+          30
+        ],
+        "trial": [
+          31,
+          51
+        ],
+        "eligibility": [
+          32
+        ],
+        "criteria.": [
+          33
+        ],
+        "Unlike": [
+          34
+        ],
+        "traditional": [
+          35
+        ],
+        "top-down": [
+          36
+        ],
+        "ontologies,": [
+          37
+        ],
+        "AD-CDO": [
+          38,
+          130
+        ],
+        "was": [
+          39
+        ],
+        "empirically": [
+          40
+        ],
+        "derived": [
+          41
+        ],
+        "by": [
+          42,
+          59
+        ],
+        "extracting": [
+          43
+        ],
+        "over": [
+          44
+        ],
+        "38,000": [
+          45
+        ],
+        "tokens": [
+          47
+        ],
+        "from": [
+          48
+        ],
+        "1,500+": [
+          49
+        ],
+        "unstructured": [
+          50
+        ],
+        "protocols": [
+          52
+        ],
+        "using": [
+          53
+        ],
+        "hybrid": [
+          55
+        ],
+        "NLP": [
+          56
+        ],
+        "pipeline,": [
+          57
+        ],
+        "followed": [
+          58
+        ],
+        "statistical": [
+          60
+        ],
+        "optimization": [
+          61
+        ],
+        "(Jenks": [
+          62
+        ],
+        "Natural": [
+          63
+        ],
+        "Breaks)": [
+          64
+        ],
+        "ensure": [
+          66
+        ],
+        "computational": [
+          67
+        ],
+        "efficiency": [
+          68
+        ],
+        "without": [
+          69
+        ],
+        "sacrificing": [
+          70
+        ],
+        "coverage.": [
+          71
+        ],
+        "resulting": [
+          73
+        ],
+        "ontology": [
+          74
+        ],
+        "comprises": [
+          75
+        ],
+        "293": [
+          76
+        ],
+        "expertly": [
+          77
+        ],
+        "curated": [
+          78
+        ],
+        "classes": [
+          79
+        ],
+        "distributed": [
+          80
+        ],
+        "across": [
+          81
+        ],
+        "seven": [
+          82
+        ],
+        "practical": [
+          83
+        ],
+        "domains:": [
+          85
+        ],
+        "Disease,": [
+          86
+        ],
+        "Medication,": [
+          87
+        ],
+        "Diagnostic": [
+          88
+        ],
+        "Test,": [
+          89
+        ],
+        "Procedure,": [
+          90
+        ],
+        "Social": [
+          91
+        ],
+        "Determinants": [
+          92
+        ],
+        "of": [
+          93
+        ],
+        "Health,": [
+          94
+        ],
+        "Rating": [
+          95
+        ],
+        "Criteria,": [
+          96
+        ],
+        "Fertility.": [
+          98
+        ],
+        "To": [
+          99
+        ],
+        "enable": [
+          100
+        ],
+        "immediate": [
+          101
+        ],
+        "downstream": [
+          102
+        ],
+        "applicability": [
+          103
+        ],
+        "informatics,": [
+          106
+        ],
+        "every": [
+          107
+        ],
+        "class": [
+          108
+        ],
+        "explicitly": [
+          110
+        ],
+        "mapped": [
+          111
+        ],
+        "interoperable": [
+          113,
+          134
+        ],
+        "global": [
+          114
+        ],
+        "standards,": [
+          115
+        ],
+        "including": [
+          116
+        ],
+        "OMOP": [
+          118
+        ],
+        "Model,": [
+          121
+        ],
+        "UMLS,": [
+          122
+        ],
+        "SNOMED": [
+          123
+        ],
+        "CT,": [
+          124
+        ],
+        "NLM": [
+          126
+        ],
+        "VSAC": [
+          127
+        ],
+        "value": [
+          128
+        ],
+        "sets.": [
+          129
+        ],
+        "serves": [
+          131
+        ],
+        "as": [
+          132
+        ],
+        "an": [
+          133
+        ],
+        "translational": [
+          135
+        ],
+        "hub,": [
+          136
+        ],
+        "allowing": [
+          137
+        ],
+        "researchers": [
+          138
+        ],
+        "computationally": [
+          140
+        ],
+        "transform": [
+          141
+        ],
+        "narrative": [
+          142
+        ],
+        "text": [
+          144
+        ],
+        "into": [
+          145
+        ],
+        "executable": [
+          146
+        ],
+        "EHR": [
+          147
+        ],
+        "queries": [
+          148
+        ],
+        "automated": [
+          150
+        ],
+        "cohort": [
+          151
+        ],
+        "identification,": [
+          152
+        ],
+        "computable": [
+          153
+        ],
+        "phenotyping,": [
+          154
+        ],
+        "cross-study": [
+          156
+        ],
+        "harmonization.": [
+          157
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2026-05-20T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7161942112",
+      "doi": "https://doi.org/10.5281/zenodo.20331538",
+      "title": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "display_name": "Alzheimer's Disease Common Data Element Ontology for Clinical Trials (AD-CDO)",
+      "relevance_score": 92.60389,
+      "publication_year": 2026,
+      "publication_date": "2026-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W7161942112",
+        "doi": "https://doi.org/10.5281/zenodo.20331538"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.20331538",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20331538",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.20331538",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5136655212",
+            "display_name": "Zenan Sun",
+            "orcid": "https://orcid.org/0000-0003-1577-874X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210146710",
+              "display_name": "Mayo Clinic in Florida",
+              "ror": "https://ror.org/03zzw1w08",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I1330342723",
+                "https://openalex.org/I4210146710"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sun, Zenan",
+          "raw_affiliation_strings": [
+            "UTHealth Houston",
+            "Mayo Clinic in Florida"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1577-874X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UTHealth Houston",
+              "institution_ids": [
+                "https://openalex.org/I919571938"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Mayo Clinic in Florida",
+              "institution_ids": [
+                "https://openalex.org/I4210146710"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083171882",
+            "display_name": "Rashmie Abeysinghe",
+            "orcid": "https://orcid.org/0000-0001-9297-9540"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Abeysinghe, Rashmie",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136687529",
+            "display_name": "Xiaojin Li",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Li, Xiaojin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136654852",
+            "display_name": "Xinyue Hu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Xinyue",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136694786",
+            "display_name": "Qizhen Lan",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Lan, Qizhen",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136632435",
+            "display_name": "Lijing Zhu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhu, Lijing",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136706773",
+            "display_name": "Licong Cui",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Cui, Licong",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136681065",
+            "display_name": "Guo-Qiang Zhang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Guo-Qiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5136726498",
+            "display_name": "Jiang Bian",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bian, Jiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5136643047",
+            "display_name": "Cui Tao",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Tao, Cui",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/keywords/snomed-ct",
+          "display_name": "SNOMED CT",
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/keywords/clinical-trial",
+          "display_name": "Clinical trial",
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/keywords/executable",
+          "display_name": "Executable",
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/keywords/data-integration",
+          "display_name": "Data integration",
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.44279998540878296
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7128000259399414
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6769999861717224
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.6363999843597412
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.6015999913215637
+        },
+        {
+          "id": "https://openalex.org/C535046627",
+          "wikidata": "https://www.wikidata.org/wiki/Q30612",
+          "display_name": "Clinical trial",
+          "level": 2,
+          "score": 0.5835999846458435
+        },
+        {
+          "id": "https://openalex.org/C160145156",
+          "wikidata": "https://www.wikidata.org/wiki/Q778586",
+          "display_name": "Executable",
+          "level": 2,
+          "score": 0.5162000060081482
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.5051000118255615
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.48019999265670776
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.47699999809265137
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.4657999873161316
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.44279998540878296
+        },
+        {
+          "id": "https://openalex.org/C9357733",
+          "wikidata": "https://www.wikidata.org/wiki/Q6878417",
+          "display_name": "Missing data",
+          "level": 2,
+          "score": 0.39660000801086426
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.38190001249313354
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3531000018119812
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3264000117778778
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3221000134944916
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3052000105381012
+        },
+        {
+          "id": "https://openalex.org/C200288055",
+          "wikidata": "https://www.wikidata.org/wiki/Q2621792",
+          "display_name": "Element (criminal law)",
+          "level": 2,
+          "score": 0.298799991607666
+        },
+        {
+          "id": "https://openalex.org/C2777212361",
+          "wikidata": "https://www.wikidata.org/wiki/Q5127848",
+          "display_name": "Class (philosophy)",
+          "level": 2,
+          "score": 0.2953000068664551
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2874000072479248
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.27889999747276306
+        },
+        {
+          "id": "https://openalex.org/C1668388",
+          "wikidata": "https://www.wikidata.org/wiki/Q1149776",
+          "display_name": "Data management",
+          "level": 2,
+          "score": 0.2766000032424927
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.266400009393692
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.26249998807907104
+        },
+        {
+          "id": "https://openalex.org/C138958017",
+          "wikidata": "https://www.wikidata.org/wiki/Q190087",
+          "display_name": "Data type",
+          "level": 2,
+          "score": 0.25540000200271606
+        },
+        {
+          "id": "https://openalex.org/C100463513",
+          "wikidata": "https://www.wikidata.org/wiki/Q5227322",
+          "display_name": "Data model (GIS)",
+          "level": 2,
+          "score": 0.2549999952316284
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.20331538",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.20331538",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.20331538",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.20331538",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          72
+        ],
+        "Alzheimer’s": [
+          1
+        ],
+        "Disease": [
+          2
+        ],
+        "Common": [
+          3,
+          119
+        ],
+        "Data": [
+          4,
+          120
+        ],
+        "Element": [
+          5
+        ],
+        "Ontology": [
+          6
+        ],
+        "for": [
+          7,
+          149
+        ],
+        "Clinical": [
+          8
+        ],
+        "Trials": [
+          9
+        ],
+        "(AD-CDO)": [
+          10
+        ],
+        "is": [
+          11,
+          109
+        ],
+        "a": [
+          12,
+          54
+        ],
+        "lightweight,": [
+          13
+        ],
+        "data-driven": [
+          14
+        ],
+        "semantic": [
+          15
+        ],
+        "resource": [
+          16
+        ],
+        "designed": [
+          17
+        ],
+        "to": [
+          18,
+          65,
+          112,
+          139
+        ],
+        "formally": [
+          19
+        ],
+        "represent": [
+          20
+        ],
+        "the": [
+          21,
+          117
+        ],
+        "most": [
+          22
+        ],
+        "frequent": [
+          23
+        ],
+        "and": [
+          24,
+          97,
+          125,
+          155
+        ],
+        "impactful": [
+          25
+        ],
+        "clinical": [
+          26,
+          46,
+          84,
+          105,
+          143
+        ],
+        "concepts": [
+          27
+        ],
+        "utilized": [
+          28
+        ],
+        "in": [
+          29,
+          104
+        ],
+        "AD": [
+          30
+        ],
+        "trial": [
+          31,
+          51
+        ],
+        "eligibility": [
+          32
+        ],
+        "criteria.": [
+          33
+        ],
+        "Unlike": [
+          34
+        ],
+        "traditional": [
+          35
+        ],
+        "top-down": [
+          36
+        ],
+        "ontologies,": [
+          37
+        ],
+        "AD-CDO": [
+          38,
+          130
+        ],
+        "was": [
+          39
+        ],
+        "empirically": [
+          40
+        ],
+        "derived": [
+          41
+        ],
+        "by": [
+          42,
+          59
+        ],
+        "extracting": [
+          43
+        ],
+        "over": [
+          44
+        ],
+        "38,000": [
+          45
+        ],
+        "tokens": [
+          47
+        ],
+        "from": [
+          48
+        ],
+        "1,500+": [
+          49
+        ],
+        "unstructured": [
+          50
+        ],
+        "protocols": [
+          52
+        ],
+        "using": [
+          53
+        ],
+        "hybrid": [
+          55
+        ],
+        "NLP": [
+          56
+        ],
+        "pipeline,": [
+          57
+        ],
+        "followed": [
+          58
+        ],
+        "statistical": [
+          60
+        ],
+        "optimization": [
+          61
+        ],
+        "(Jenks": [
+          62
+        ],
+        "Natural": [
+          63
+        ],
+        "Breaks)": [
+          64
+        ],
+        "ensure": [
+          66
+        ],
+        "computational": [
+          67
+        ],
+        "efficiency": [
+          68
+        ],
+        "without": [
+          69
+        ],
+        "sacrificing": [
+          70
+        ],
+        "coverage.": [
+          71
+        ],
+        "resulting": [
+          73
+        ],
+        "ontology": [
+          74
+        ],
+        "comprises": [
+          75
+        ],
+        "293": [
+          76
+        ],
+        "expertly": [
+          77
+        ],
+        "curated": [
+          78
+        ],
+        "classes": [
+          79
+        ],
+        "distributed": [
+          80
+        ],
+        "across": [
+          81
+        ],
+        "seven": [
+          82
+        ],
+        "practical": [
+          83
+        ],
+        "domains:": [
+          85
+        ],
+        "Disease,": [
+          86
+        ],
+        "Medication,": [
+          87
+        ],
+        "Diagnostic": [
+          88
+        ],
+        "Test,": [
+          89
+        ],
+        "Procedure,": [
+          90
+        ],
+        "Social": [
+          91
+        ],
+        "Determinants": [
+          92
+        ],
+        "of": [
+          93
+        ],
+        "Health,": [
+          94
+        ],
+        "Rating": [
+          95
+        ],
+        "Criteria,": [
+          96
+        ],
+        "Fertility.": [
+          98
+        ],
+        "To": [
+          99
+        ],
+        "enable": [
+          100
+        ],
+        "immediate": [
+          101
+        ],
+        "downstream": [
+          102
+        ],
+        "applicability": [
+          103
+        ],
+        "informatics,": [
+          106
+        ],
+        "every": [
+          107
+        ],
+        "class": [
+          108
+        ],
+        "explicitly": [
+          110
+        ],
+        "mapped": [
+          111
+        ],
+        "interoperable": [
+          113,
+          134
+        ],
+        "global": [
+          114
+        ],
+        "standards,": [
+          115
+        ],
+        "including": [
+          116
+        ],
+        "OMOP": [
+          118
+        ],
+        "Model,": [
+          121
+        ],
+        "UMLS,": [
+          122
+        ],
+        "SNOMED": [
+          123
+        ],
+        "CT,": [
+          124
+        ],
+        "NLM": [
+          126
+        ],
+        "VSAC": [
+          127
+        ],
+        "value": [
+          128
+        ],
+        "sets.": [
+          129
+        ],
+        "serves": [
+          131
+        ],
+        "as": [
+          132
+        ],
+        "an": [
+          133
+        ],
+        "translational": [
+          135
+        ],
+        "hub,": [
+          136
+        ],
+        "allowing": [
+          137
+        ],
+        "researchers": [
+          138
+        ],
+        "computationally": [
+          140
+        ],
+        "transform": [
+          141
+        ],
+        "narrative": [
+          142
+        ],
+        "text": [
+          144
+        ],
+        "into": [
+          145
+        ],
+        "executable": [
+          146
+        ],
+        "EHR": [
+          147
+        ],
+        "queries": [
+          148
+        ],
+        "automated": [
+          150
+        ],
+        "cohort": [
+          151
+        ],
+        "identification,": [
+          152
+        ],
+        "computable": [
+          153
+        ],
+        "phenotyping,": [
+          154
+        ],
+        "cross-study": [
+          156
+        ],
+        "harmonization.": [
+          157
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2026-05-22T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7108247670",
+      "doi": null,
+      "title": "AD-CDO: A Lightweight Ontology for Representing Eligibility Criteria in Alzheimer's Disease Clinical Trials",
+      "display_name": "AD-CDO: A Lightweight Ontology for Representing Eligibility Criteria in Alzheimer's Disease Clinical Trials",
+      "relevance_score": 43.13057,
+      "publication_year": 2025,
+      "publication_date": "2025-11-20",
+      "ids": {
+        "openalex": "https://openalex.org/W7108247670"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2511.21724",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2511.21724",
+        "pdf_url": "https://arxiv.org/pdf/2511.21724",
+        "source": {
+          "id": "https://openalex.org/S4393918464",
+          "display_name": "ArXiv.org",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "arxiv"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2511.21724",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Sun, Zenan",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Sun, Zenan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Abeysinghe, Rashmie",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Abeysinghe, Rashmie",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Li, Xiaojin",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Li, Xiaojin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Hu, Xinyue",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hu, Xinyue",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Cui, Licong",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Cui, Licong",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Zhang, Guo-Qiang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Zhang, Guo-Qiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Bian, Jiang",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bian, Jiang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Tao, Cui",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Tao, Cui",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9517999887466431,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9517999887466431,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.014999999664723873,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.00860000029206276,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/interpretability",
+          "display_name": "Interpretability",
+          "score": 0.7620999813079834
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6345999836921692
+        },
+        {
+          "id": "https://openalex.org/keywords/clinical-trial",
+          "display_name": "Clinical trial",
+          "score": 0.6007000207901001
+        },
+        {
+          "id": "https://openalex.org/keywords/consistency",
+          "display_name": "Consistency (knowledge bases)",
+          "score": 0.49390000104904175
+        },
+        {
+          "id": "https://openalex.org/keywords/snomed-ct",
+          "display_name": "SNOMED CT",
+          "score": 0.45739999413490295
+        },
+        {
+          "id": "https://openalex.org/keywords/data-integration",
+          "display_name": "Data integration",
+          "score": 0.4551999866962433
+        },
+        {
+          "id": "https://openalex.org/keywords/raw-data",
+          "display_name": "Raw data",
+          "score": 0.40619999170303345
+        },
+        {
+          "id": "https://openalex.org/keywords/set",
+          "display_name": "Set (abstract data type)",
+          "score": 0.37119999527931213
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781067378",
+          "wikidata": "https://www.wikidata.org/wiki/Q17027399",
+          "display_name": "Interpretability",
+          "level": 2,
+          "score": 0.7620999813079834
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6564000248908997
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6345999836921692
+        },
+        {
+          "id": "https://openalex.org/C535046627",
+          "wikidata": "https://www.wikidata.org/wiki/Q30612",
+          "display_name": "Clinical trial",
+          "level": 2,
+          "score": 0.6007000207901001
+        },
+        {
+          "id": "https://openalex.org/C2776436953",
+          "wikidata": "https://www.wikidata.org/wiki/Q5163215",
+          "display_name": "Consistency (knowledge bases)",
+          "level": 2,
+          "score": 0.49390000104904175
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.46650001406669617
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.45739999413490295
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.4551999866962433
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.4361000061035156
+        },
+        {
+          "id": "https://openalex.org/C132964779",
+          "wikidata": "https://www.wikidata.org/wiki/Q2110223",
+          "display_name": "Raw data",
+          "level": 2,
+          "score": 0.40619999170303345
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.37209999561309814
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.37119999527931213
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3433000147342682
+        },
+        {
+          "id": "https://openalex.org/C2780385302",
+          "wikidata": "https://www.wikidata.org/wiki/Q367158",
+          "display_name": "Protocol (science)",
+          "level": 3,
+          "score": 0.34119999408721924
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.3407000005245209
+        },
+        {
+          "id": "https://openalex.org/C19527891",
+          "wikidata": "https://www.wikidata.org/wiki/Q1120908",
+          "display_name": "Medical physics",
+          "level": 1,
+          "score": 0.3314000070095062
+        },
+        {
+          "id": "https://openalex.org/C2780451532",
+          "wikidata": "https://www.wikidata.org/wiki/Q759676",
+          "display_name": "Task (project management)",
+          "level": 2,
+          "score": 0.32249999046325684
+        },
+        {
+          "id": "https://openalex.org/C9357733",
+          "wikidata": "https://www.wikidata.org/wiki/Q6878417",
+          "display_name": "Missing data",
+          "level": 2,
+          "score": 0.3077999949455261
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.2980000078678131
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.28630000352859497
+        },
+        {
+          "id": "https://openalex.org/C2779473830",
+          "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+          "display_name": "MEDLINE",
+          "level": 2,
+          "score": 0.2849000096321106
+        },
+        {
+          "id": "https://openalex.org/C136886441",
+          "wikidata": "https://www.wikidata.org/wiki/Q926129",
+          "display_name": "Normalization (sociology)",
+          "level": 2,
+          "score": 0.2786000072956085
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.2678000032901764
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.26589998602867126
+        },
+        {
+          "id": "https://openalex.org/C177212765",
+          "wikidata": "https://www.wikidata.org/wiki/Q627335",
+          "display_name": "Workflow",
+          "level": 2,
+          "score": 0.2653000056743622
+        },
+        {
+          "id": "https://openalex.org/C534262118",
+          "wikidata": "https://www.wikidata.org/wiki/Q177719",
+          "display_name": "Medical diagnosis",
+          "level": 2,
+          "score": 0.2572000026702881
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2551000118255615
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "pmh:oai:arXiv.org:2511.21724",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2511.21724",
+          "pdf_url": "https://arxiv.org/pdf/2511.21724",
+          "source": {
+            "id": "https://openalex.org/S4393918464",
+            "display_name": "ArXiv.org",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:arXiv.org:2511.21724",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2511.21724",
+        "pdf_url": "https://arxiv.org/pdf/2511.21724",
+        "source": {
+          "id": "https://openalex.org/S4393918464",
+          "display_name": "ArXiv.org",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "Objective": [
+          0
+        ],
+        "This": [
+          1
+        ],
+        "study": [
+          2
+        ],
+        "introduces": [
+          3
+        ],
+        "the": [
+          4,
+          80,
+          99,
+          133,
+          192
+        ],
+        "Alzheimer's": [
+          5,
+          30
+        ],
+        "Disease": [
+          6
+        ],
+        "Common": [
+          7
+        ],
+        "Data": [
+          8
+        ],
+        "Element": [
+          9
+        ],
+        "Ontology": [
+          10
+        ],
+        "for": [
+          11,
+          160,
+          235
+        ],
+        "Clinical": [
+          12
+        ],
+        "Trials": [
+          13
+        ],
+        "(AD-CDO),": [
+          14
+        ],
+        "a": [
+          15,
+          232
+        ],
+        "lightweight,": [
+          16
+        ],
+        "semantically": [
+          17
+        ],
+        "enriched": [
+          18
+        ],
+        "ontology": [
+          19,
+          130
+        ],
+        "designed": [
+          20
+        ],
+        "to": [
+          21,
+          104,
+          179
+        ],
+        "represent": [
+          22
+        ],
+        "and": [
+          23,
+          36,
+          51,
+          69,
+          87,
+          95,
+          127,
+          136,
+          163,
+          169,
+          184,
+          198,
+          214,
+          224
+        ],
+        "standardize": [
+          24
+        ],
+        "key": [
+          25
+        ],
+        "eligibility": [
+          26,
+          143,
+          222
+        ],
+        "criteria": [
+          27
+        ],
+        "concepts": [
+          28,
+          41,
+          123
+        ],
+        "in": [
+          29,
+          141
+        ],
+        "disease": [
+          31
+        ],
+        "(AD)": [
+          32
+        ],
+        "clinical": [
+          33,
+          47,
+          167,
+          177,
+          238
+        ],
+        "trials.": [
+          34
+        ],
+        "Materials": [
+          35
+        ],
+        "Methods": [
+          37
+        ],
+        "We": [
+          38,
+          145
+        ],
+        "extracted": [
+          39,
+          121
+        ],
+        "high-frequency": [
+          40
+        ],
+        "from": [
+          42
+        ],
+        "more": [
+          43
+        ],
+        "than": [
+          44
+        ],
+        "1,500": [
+          45
+        ],
+        "AD": [
+          46,
+          142,
+          237
+        ],
+        "trials": [
+          48
+        ],
+        "on": [
+          49
+        ],
+        "ClinicalTrials.gov": [
+          50
+        ],
+        "organized": [
+          52
+        ],
+        "them": [
+          53,
+          226
+        ],
+        "into": [
+          54
+        ],
+        "seven": [
+          55
+        ],
+        "semantic": [
+          56
+        ],
+        "categories:": [
+          57
+        ],
+        "Disease,": [
+          58
+        ],
+        "Medication,": [
+          59
+        ],
+        "Diagnostic": [
+          60
+        ],
+        "Test,": [
+          61
+        ],
+        "Procedure,": [
+          62
+        ],
+        "Social": [
+          63
+        ],
+        "Determinants": [
+          64
+        ],
+        "of": [
+          65,
+          109,
+          120,
+          166
+        ],
+        "Health,": [
+          66
+        ],
+        "Rating": [
+          67
+        ],
+        "Criteria,": [
+          68
+        ],
+        "Fertility.": [
+          70
+        ],
+        "Each": [
+          71
+        ],
+        "concept": [
+          72
+        ],
+        "was": [
+          73
+        ],
+        "annotated": [
+          74
+        ],
+        "with": [
+          75,
+          186,
+          227
+        ],
+        "standard": [
+          76
+        ],
+        "biomedical": [
+          77,
+          196
+        ],
+        "vocabularies,": [
+          78,
+          229
+        ],
+        "including": [
+          79,
+          208
+        ],
+        "UMLS,": [
+          81
+        ],
+        "OMOP": [
+          82
+        ],
+        "Standardized": [
+          83
+        ],
+        "Vocabularies,": [
+          84
+        ],
+        "DrugBank,": [
+          85
+        ],
+        "NDC,": [
+          86
+        ],
+        "NLM": [
+          88
+        ],
+        "VSAC": [
+          89
+        ],
+        "value": [
+          90
+        ],
+        "sets.": [
+          91
+        ],
+        "To": [
+          92
+        ],
+        "balance": [
+          93
+        ],
+        "coverage": [
+          94,
+          119
+        ],
+        "manageability,": [
+          96
+        ],
+        "we": [
+          97
+        ],
+        "applied": [
+          98
+        ],
+        "Jenks": [
+          100
+        ],
+        "Natural": [
+          101
+        ],
+        "Breaks": [
+          102
+        ],
+        "method": [
+          103
+        ],
+        "identify": [
+          105
+        ],
+        "an": [
+          106,
+          155,
+          171
+        ],
+        "optimal": [
+          107
+        ],
+        "set": [
+          108
+        ],
+        "representative": [
+          110
+        ],
+        "concepts.": [
+          111
+        ],
+        "Results": [
+          112
+        ],
+        "The": [
+          113,
+          129
+        ],
+        "optimized": [
+          114
+        ],
+        "AD-CDO": [
+          115,
+          190,
+          230
+        ],
+        "achieved": [
+          116
+        ],
+        "over": [
+          117
+        ],
+        "63%": [
+          118
+        ],
+        "trial": [
+          122,
+          157,
+          200,
+          239
+        ],
+        "while": [
+          124
+        ],
+        "maintaining": [
+          125
+        ],
+        "interpretability": [
+          126
+        ],
+        "compactness.": [
+          128
+        ],
+        "effectively": [
+          131
+        ],
+        "captured": [
+          132
+        ],
+        "most": [
+          134
+        ],
+        "frequent": [
+          135
+        ],
+        "clinically": [
+          137
+        ],
+        "meaningful": [
+          138
+        ],
+        "entities": [
+          139,
+          223
+        ],
+        "used": [
+          140
+        ],
+        "criteria.": [
+          144
+        ],
+        "demonstrated": [
+          146
+        ],
+        "AD-CDO's": [
+          147
+        ],
+        "practical": [
+          148
+        ],
+        "utility": [
+          149
+        ],
+        "through": [
+          150
+        ],
+        "two": [
+          151
+        ],
+        "use": [
+          152
+        ],
+        "cases:": [
+          153
+        ],
+        "(a)": [
+          154
+        ],
+        "ontology-driven": [
+          156,
+          236
+        ],
+        "simulation": [
+          158
+        ],
+        "system": [
+          159
+        ],
+        "formal": [
+          161
+        ],
+        "modeling": [
+          162,
+          201
+        ],
+        "virtual": [
+          164
+        ],
+        "execution": [
+          165
+        ],
+        "trials,": [
+          168
+        ],
+        "(b)": [
+          170
+        ],
+        "entity": [
+          172
+        ],
+        "normalization": [
+          173
+        ],
+        "task": [
+          174
+        ],
+        "mapping": [
+          175
+        ],
+        "raw": [
+          176
+        ],
+        "text": [
+          178
+        ],
+        "ontology-aligned": [
+          180
+        ],
+        "terms,": [
+          181
+        ],
+        "enabling": [
+          182
+        ],
+        "consistency": [
+          183
+        ],
+        "integration": [
+          185
+        ],
+        "EHR": [
+          187
+        ],
+        "data.": [
+          188
+        ],
+        "Discussion": [
+          189
+        ],
+        "bridges": [
+          191
+        ],
+        "gap": [
+          193
+        ],
+        "between": [
+          194
+        ],
+        "broad": [
+          195
+        ],
+        "ontologies": [
+          197
+        ],
+        "task-specific": [
+          199
+        ],
+        "needs.": [
+          202
+        ],
+        "It": [
+          203
+        ],
+        "supports": [
+          204
+        ],
+        "multiple": [
+          205
+        ],
+        "downstream": [
+          206
+        ],
+        "applications,": [
+          207
+        ],
+        "phenotyping": [
+          209
+        ],
+        "algorithm": [
+          210
+        ],
+        "development,": [
+          211
+        ],
+        "cohort": [
+          212
+        ],
+        "identification,": [
+          213
+        ],
+        "structured": [
+          215
+        ],
+        "data": [
+          216
+        ],
+        "integration.": [
+          217
+        ],
+        "Conclusion": [
+          218
+        ],
+        "By": [
+          219
+        ],
+        "harmonizing": [
+          220
+        ],
+        "essential": [
+          221
+        ],
+        "aligning": [
+          225
+        ],
+        "standardized": [
+          228
+        ],
+        "provides": [
+          231
+        ],
+        "versatile": [
+          233
+        ],
+        "foundation": [
+          234
+        ],
+        "research.": [
+          240
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-30T13:55:48.251075",
+      "created_date": "2025-12-03T00:00:00"
+    }
+  ],
+  "group_by": []
+}

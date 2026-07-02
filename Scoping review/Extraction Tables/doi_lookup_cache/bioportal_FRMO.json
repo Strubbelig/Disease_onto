@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/979f0b00-6a2d-013a-6cd8-005056010088",
+      "name": "Fatimah Altuhaifa",
+      "email": "ftuhaifa@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/ftuhaifa"
+    ],
+    "acronym": "FRMO",
+    "name": "Fall Risk Management Ontology ",
+    "@id": "https://data.bioontology.org/ontologies/FRMO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/FRMO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/FRMO/properties",
+      "classes": "https://data.bioontology.org/ontologies/FRMO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/FRMO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/FRMO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/FRMO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/FRMO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/FRMO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/FRMO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/FRMO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/FRMO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/FRMO/notes",
+      "groups": "https://data.bioontology.org/ontologies/FRMO/groups",
+      "categories": "https://data.bioontology.org/ontologies/FRMO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/FRMO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/FRMO/projects",
+      "download": "https://data.bioontology.org/ontologies/FRMO/download",
+      "views": "https://data.bioontology.org/ontologies/FRMO/views",
+      "analytics": "https://data.bioontology.org/ontologies/FRMO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/FRMO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-03-28T00:00:00.000+00:00",
+  "creationDate": "2025-02-27T17:41:54.000-08:00",
+  "homepage": null,
+  "publication": [
+    "https://link.springer.com/article/10.1007/s10916-024-02062-2"
+  ],
+  "documentation": null,
+  "version": "09.10",
+  "description": "We have developed an ontology representing major fall risk management entities to support approaches to text mining, data descriptions and linkage in the context of fall risk management. This ontology contains concepts related to fall risk factors, fall risk interventions, and fall consequences.\r\n\r\nTitle: Developing an Ontology Representing Fall Risk Management Domain Knowledge\r\nLink to the article: https://link.springer.com/article/10.1007/s10916-024-02062-2",
+  "status": "alpha",
+  "submissionId": 19,
+  "@id": "https://data.bioontology.org/ontologies/FRMO/submissions/19",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/FRMO/submissions/19/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

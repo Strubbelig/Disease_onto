@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/scio_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for SCIO; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1, released=2017-09-19T00:00:00.000+00:00, creationDate=2017-09-20T07:29:51.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-02T14:59:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://psink.de/scio/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://psink.de/scio/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://psink.de/scio/Injury> <http://purl.obolibrary.org/obo/IAO_0000115> "Aggregation class for injury properties, like injury intensity, injury device etc." .
+<http://psink.de/scio/Injury> <http://purl.obolibrary.org/obo/IAO_0000115> "Includes all the specific information regarding the injuryl model. Type of lesion, i.e. contusion, compression. As listed in drop down menu. Class of Aggregation within the injury paradigm." .
+<http://psink.de/scio/Injury> <http://purl.org/dc/terms/source> "generated review target module for SCIO from disease_terms_review_enriched.csv" .
+<http://psink.de/scio/Injury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://psink.de/scio/Injury> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregation class for injury properties, like injury intensity, injury device etc." .
+<http://psink.de/scio/Injury> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://psink.de/scio/Injury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://psink.de/scio/Event> .

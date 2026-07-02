@@ -1,0 +1,3648 @@
+{
+  "meta": {
+    "count": 3,
+    "db_response_time_ms": 116,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Dental Restorative Material Ontology DRMO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Dental Restorative Material Ontology DRMO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Dental Restorative Material Ontology DRMO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4390048740",
+      "doi": "https://doi.org/10.3233/faia231135",
+      "title": "Dental Restorative Material Ontology (DrMO)",
+      "display_name": "Dental Restorative Material Ontology (DrMO)",
+      "relevance_score": 432.8237,
+      "publication_year": 2023,
+      "publication_date": "2023-12-21",
+      "ids": {
+        "openalex": "https://openalex.org/W4390048740",
+        "doi": "https://doi.org/10.3233/faia231135"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3233/faia231135",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3233/faia231135",
+        "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA231135",
+        "source": {
+          "id": "https://openalex.org/S4210201731",
+          "display_name": "Frontiers in artificial intelligence and applications",
+          "issn_l": "0922-6389",
+          "issn": [
+            "0922-6389",
+            "1879-8314"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+        "raw_type": "book-chapter"
+      },
+      "type": "book-chapter",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA231135",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5012586149",
+            "display_name": "Nivedita Dutta",
+            "orcid": "https://orcid.org/0000-0001-6424-4096"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800100691",
+              "display_name": "Ayurvedic Institute",
+              "ror": "https://ror.org/04t8gaz30",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I2800100691"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nivedita Dutta",
+          "raw_affiliation_strings": [
+            "Clinician and Independent Researcher. Email: niveditadgp@gmail.com"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6424-4096",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Clinician and Independent Researcher. Email: niveditadgp@gmail.com",
+              "institution_ids": [
+                "https://openalex.org/I2800100691"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5041152313",
+            "display_name": "Michael DeBellis",
+            "orcid": "https://orcid.org/0000-0002-8824-9577"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164339",
+              "display_name": "Oldham Council",
+              "ror": "https://ror.org/05cxzzq07",
+              "country_code": "GB",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210164339"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Michael DeBellis",
+          "raw_affiliation_strings": [
+            "Independent Researcher and Consultant. Business: ; Email: mdebellissf@gmail.com"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-8824-9577",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Independent Researcher and Consultant. Business: ; Email: mdebellissf@gmail.com",
+              "institution_ids": [
+                "https://openalex.org/I4210164339"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.9977,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": {
+        "value": 0.80635668,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 98
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.9937000274658203,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9937000274658203,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.982200026512146,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12881",
+          "display_name": "linguistics and terminology studies",
+          "score": 0.9485999941825867,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7994458675384521
+        },
+        {
+          "id": "https://openalex.org/keywords/terminology",
+          "display_name": "Terminology",
+          "score": 0.6914877891540527
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6484284996986389
+        },
+        {
+          "id": "https://openalex.org/keywords/open-biomedical-ontologies",
+          "display_name": "Open Biomedical Ontologies",
+          "score": 0.6076736450195312
+        },
+        {
+          "id": "https://openalex.org/keywords/upper-ontology",
+          "display_name": "Upper ontology",
+          "score": 0.5824281573295593
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.5623506307601929
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.5178773403167725
+        },
+        {
+          "id": "https://openalex.org/keywords/standardization",
+          "display_name": "Standardization",
+          "score": 0.45295676589012146
+        },
+        {
+          "id": "https://openalex.org/keywords/vocabulary",
+          "display_name": "Vocabulary",
+          "score": 0.4108573794364929
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.3429962992668152
+        },
+        {
+          "id": "https://openalex.org/keywords/suggested-upper-merged-ontology",
+          "display_name": "Suggested Upper Merged Ontology",
+          "score": 0.3212355971336365
+        },
+        {
+          "id": "https://openalex.org/keywords/domain-knowledge",
+          "display_name": "Domain knowledge",
+          "score": 0.27901971340179443
+        },
+        {
+          "id": "https://openalex.org/keywords/software-engineering",
+          "display_name": "Software engineering",
+          "score": 0.278472900390625
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7994458675384521
+        },
+        {
+          "id": "https://openalex.org/C547195049",
+          "wikidata": "https://www.wikidata.org/wiki/Q1725664",
+          "display_name": "Terminology",
+          "level": 2,
+          "score": 0.6914877891540527
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6484284996986389
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.6076736450195312
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.5824281573295593
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.5623506307601929
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.5178773403167725
+        },
+        {
+          "id": "https://openalex.org/C188087704",
+          "wikidata": "https://www.wikidata.org/wiki/Q369577",
+          "display_name": "Standardization",
+          "level": 2,
+          "score": 0.45295676589012146
+        },
+        {
+          "id": "https://openalex.org/C2777601683",
+          "wikidata": "https://www.wikidata.org/wiki/Q6499736",
+          "display_name": "Vocabulary",
+          "level": 2,
+          "score": 0.4108573794364929
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3429962992668152
+        },
+        {
+          "id": "https://openalex.org/C50971890",
+          "wikidata": "https://www.wikidata.org/wiki/Q7635093",
+          "display_name": "Suggested Upper Merged Ontology",
+          "level": 4,
+          "score": 0.3212355971336365
+        },
+        {
+          "id": "https://openalex.org/C207685749",
+          "wikidata": "https://www.wikidata.org/wiki/Q2088941",
+          "display_name": "Domain knowledge",
+          "level": 2,
+          "score": 0.27901971340179443
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.278472900390625
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.3233/faia231135",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3233/faia231135",
+          "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA231135",
+          "source": {
+            "id": "https://openalex.org/S4210201731",
+            "display_name": "Frontiers in artificial intelligence and applications",
+            "issn_l": "0922-6389",
+            "issn": [
+              "0922-6389",
+              "1879-8314"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+          "raw_type": "book-chapter"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3233/faia231135",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3233/faia231135",
+        "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA231135",
+        "source": {
+          "id": "https://openalex.org/S4210201731",
+          "display_name": "Frontiers in artificial intelligence and applications",
+          "issn_l": "0922-6389",
+          "issn": [
+            "0922-6389",
+            "1879-8314"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+        "raw_type": "book-chapter"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G3644296431",
+          "display_name": null,
+          "funder_award_id": "GM10331601",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G4082557964",
+          "display_name": null,
+          "funder_award_id": "GM10331601",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320337354",
+          "display_name": "National Institute of General Medical Sciences",
+          "ror": "https://ror.org/04q48ey07"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4390048740.pdf"
+      },
+      "referenced_works_count": 18,
+      "referenced_works": [
+        "https://openalex.org/W50022627",
+        "https://openalex.org/W131779851",
+        "https://openalex.org/W1802346448",
+        "https://openalex.org/W2026340217",
+        "https://openalex.org/W2087726001",
+        "https://openalex.org/W2148945835",
+        "https://openalex.org/W2281863100",
+        "https://openalex.org/W2522873621",
+        "https://openalex.org/W2810492965",
+        "https://openalex.org/W2899876413",
+        "https://openalex.org/W2917693949",
+        "https://openalex.org/W2941572989",
+        "https://openalex.org/W2947401163",
+        "https://openalex.org/W3007897187",
+        "https://openalex.org/W3080752706",
+        "https://openalex.org/W4281978031",
+        "https://openalex.org/W4300242245",
+        "https://openalex.org/W6650094647"
+      ],
+      "related_works": [
+        "https://openalex.org/W26549824",
+        "https://openalex.org/W2732632690",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W72173000",
+        "https://openalex.org/W2726617685",
+        "https://openalex.org/W1794266373",
+        "https://openalex.org/W2357775360",
+        "https://openalex.org/W2608149786",
+        "https://openalex.org/W2130691104",
+        "https://openalex.org/W2365397974"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          209,
+          235,
+          248
+        ],
+        "DrMO": [
+          1,
+          82,
+          130,
+          145
+        ],
+        "ontology": [
+          2,
+          6,
+          148,
+          188,
+          207,
+          210,
+          236,
+          268
+        ],
+        "is": [
+          3,
+          70,
+          121,
+          196,
+          237
+        ],
+        "a": [
+          4,
+          40,
+          165,
+          252
+        ],
+        "domain": [
+          5,
+          69,
+          224
+        ],
+        "that": [
+          7,
+          124,
+          258
+        ],
+        "represents": [
+          8
+        ],
+        "knowledge": [
+          9,
+          37,
+          85,
+          104,
+          163
+        ],
+        "underlying": [
+          10
+        ],
+        "the": [
+          11,
+          21,
+          54,
+          58,
+          66,
+          87,
+          117,
+          133,
+          157,
+          168,
+          187,
+          204,
+          214,
+          260,
+          267
+        ],
+        "composition,": [
+          12
+        ],
+        "characterization": [
+          13
+        ],
+        "and": [
+          14,
+          61,
+          72,
+          79,
+          91,
+          94,
+          171,
+          177,
+          200,
+          241
+        ],
+        "standardization": [
+          15
+        ],
+        "of": [
+          16,
+          105,
+          108,
+          116,
+          167,
+          255,
+          266
+        ],
+        "different": [
+          17,
+          122
+        ],
+        "materials": [
+          18,
+          32,
+          77
+        ],
+        "involved": [
+          19
+        ],
+        "in": [
+          20,
+          29,
+          126,
+          143,
+          174,
+          186,
+          198,
+          226
+        ],
+        "dental": [
+          22,
+          67,
+          109
+        ],
+        "restoration": [
+          23,
+          68
+        ],
+        "procedure.": [
+          24
+        ],
+        "It": [
+          25,
+          49,
+          161,
+          195
+        ],
+        "will": [
+          26
+        ],
+        "assist": [
+          27
+        ],
+        "dentists": [
+          28
+        ],
+        "selecting": [
+          30
+        ],
+        "appropriate": [
+          31,
+          134
+        ],
+        "based": [
+          33
+        ],
+        "on": [
+          34,
+          239
+        ],
+        "up-to-date": [
+          35
+        ],
+        "scientific": [
+          36
+        ],
+        "to": [
+          38,
+          100,
+          136,
+          181,
+          228
+        ],
+        "satisfy": [
+          39
+        ],
+        "patient’s": [
+          41
+        ],
+        "specific": [
+          42
+        ],
+        "requirements,": [
+          43
+        ],
+        "without": [
+          44
+        ],
+        "jeopardizing": [
+          45
+        ],
+        "their": [
+          46,
+          233
+        ],
+        "clinical": [
+          47,
+          127
+        ],
+        "time.": [
+          48
+        ],
+        "reuses": [
+          50
+        ],
+        "several": [
+          51
+        ],
+        "ontologies": [
+          52,
+          99
+        ],
+        "from": [
+          53,
+          76,
+          86,
+          119,
+          156,
+          164
+        ],
+        "OBO": [
+          55
+        ],
+        "foundry,": [
+          56
+        ],
+        "especially": [
+          57
+        ],
+        "Oral": [
+          59
+        ],
+        "Health": [
+          60
+        ],
+        "Disease": [
+          62
+        ],
+        "(OHD)": [
+          63
+        ],
+        "Ontology.": [
+          64
+        ],
+        "However,": [
+          65,
+          114
+        ],
+        "complex": [
+          71
+        ],
+        "also": [
+          73,
+          83,
+          146,
+          231
+        ],
+        "requires": [
+          74
+        ],
+        "concepts": [
+          75
+        ],
+        "science": [
+          78
+        ],
+        "engineering.": [
+          80
+        ],
+        "Thus,": [
+          81,
+          129
+        ],
+        "incorporates": [
+          84
+        ],
+        "Devices,": [
+          88
+        ],
+        "Experimental": [
+          89
+        ],
+        "scaffolds,": [
+          90
+        ],
+        "Biomaterials": [
+          92
+        ],
+        "(DEB)": [
+          93
+        ],
+        "Functionally": [
+          95
+        ],
+        "Graded": [
+          96
+        ],
+        "Materials": [
+          97,
+          176
+        ],
+        "(FGM)": [
+          98
+        ],
+        "provide": [
+          101
+        ],
+        "more": [
+          102
+        ],
+        "comprehensive": [
+          103
+        ],
+        "this": [
+          106
+        ],
+        "area": [
+          107
+        ],
+        "material": [
+          110
+        ],
+        "than": [
+          111,
+          123
+        ],
+        "previous": [
+          112
+        ],
+        "ontologies.": [
+          113
+        ],
+        "much": [
+          115
+        ],
+        "terminology": [
+          118,
+          141
+        ],
+        "FGM": [
+          120
+        ],
+        "used": [
+          125
+        ],
+        "dentistry.": [
+          128,
+          144
+        ],
+        "has": [
+          131
+        ],
+        "changed": [
+          132
+        ],
+        "classes": [
+          135
+        ],
+        "make": [
+          137
+        ],
+        "them": [
+          138
+        ],
+        "consistent": [
+          139
+        ],
+        "with": [
+          140,
+          192,
+          203
+        ],
+        "common": [
+          142
+        ],
+        "follows": [
+          147
+        ],
+        "design": [
+          149
+        ],
+        "best": [
+          150
+        ],
+        "practices": [
+          151
+        ],
+        "by": [
+          152,
+          219
+        ],
+        "reusing": [
+          153
+        ],
+        "meta-data": [
+          154,
+          190
+        ],
+        "properties": [
+          155
+        ],
+        "Dublin": [
+          158,
+          193
+        ],
+        "Core": [
+          159
+        ],
+        "vocabulary.": [
+          160
+        ],
+        "captures": [
+          162
+        ],
+        "set": [
+          166
+        ],
+        "most": [
+          169
+        ],
+        "recent": [
+          170
+        ],
+        "influential": [
+          172
+        ],
+        "papers": [
+          173,
+          183
+        ],
+        "Dental": [
+          175
+        ],
+        "related": [
+          178
+        ],
+        "fields.": [
+          179
+        ],
+        "Links": [
+          180
+        ],
+        "these": [
+          182
+        ],
+        "are": [
+          184
+        ],
+        "included": [
+          185
+        ],
+        "as": [
+          189,
+          264
+        ],
+        "defined": [
+          191,
+          263
+        ],
+        "Core.": [
+          194
+        ],
+        "implemented": [
+          197
+        ],
+        "OWL2": [
+          199
+        ],
+        "was": [
+          201,
+          211
+        ],
+        "developed": [
+          202
+        ],
+        "Protégé": [
+          205
+        ],
+        "5.6": [
+          206
+        ],
+        "editor.": [
+          208
+        ],
+        "created": [
+          212
+        ],
+        "using": [
+          213
+        ],
+        "Ontology": [
+          215
+        ],
+        "Development": [
+          216
+        ],
+        "101": [
+          217
+        ],
+        "methodology": [
+          218
+        ],
+        "Noy": [
+          220
+        ],
+        "et.": [
+          221
+        ],
+        "al.": [
+          222
+        ],
+        "Several": [
+          223
+        ],
+        "experts": [
+          225
+        ],
+        "addition": [
+          227
+        ],
+        "Dr.": [
+          229
+        ],
+        "Dutta": [
+          230
+        ],
+        "provided": [
+          232
+        ],
+        "expertise.": [
+          234
+        ],
+        "available": [
+          238
+        ],
+        "GitHub": [
+          240,
+          249
+        ],
+        "licensed": [
+          242
+        ],
+        "via": [
+          243
+        ],
+        "an": [
+          244
+        ],
+        "open": [
+          245
+        ],
+        "source": [
+          246
+        ],
+        "license.": [
+          247
+        ],
+        "project": [
+          250
+        ],
+        "includes": [
+          251
+        ],
+        "corresponding": [
+          253
+        ],
+        "file": [
+          254
+        ],
+        "SPARQL": [
+          256
+        ],
+        "queries": [
+          257
+        ],
+        "answer": [
+          259
+        ],
+        "competency": [
+          261
+        ],
+        "questions": [
+          262
+        ],
+        "part": [
+          265
+        ],
+        "development": [
+          269
+        ],
+        "methodology.": [
+          270
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7154631812",
+      "doi": "https://doi.org/10.1186/s13326-026-00352-x",
+      "title": "Representing dental restoration materials in the oral health and disease ontology",
+      "display_name": "Representing dental restoration materials in the oral health and disease ontology",
+      "relevance_score": 19.054428,
+      "publication_year": 2026,
+      "publication_date": "2026-04-16",
+      "ids": {
+        "openalex": "https://openalex.org/W7154631812",
+        "doi": "https://doi.org/10.1186/s13326-026-00352-x",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/41992354"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s13326-026-00352-x",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-026-00352-x",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13326-026-00352-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://link.springer.com/content/pdf/10.1186/s13326-026-00352-x.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5012586149",
+            "display_name": "Nivedita Dutta",
+            "orcid": "https://orcid.org/0000-0001-6424-4096"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I155837530",
+              "display_name": "National Institute of Technology Durgapur",
+              "ror": "https://ror.org/04ds0jm32",
+              "country_code": "IN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I155837530"
+              ]
+            }
+          ],
+          "countries": [
+            "IN"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Nivedita Dutta",
+          "raw_affiliation_strings": [
+            "Dental Clinic, Medical Unit, National Institute of Technology, Durgapur, WB, India. niveditadgp@gmail.com"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dental Clinic, Medical Unit, National Institute of Technology, Durgapur, WB, India. niveditadgp@gmail.com",
+              "institution_ids": [
+                "https://openalex.org/I155837530"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5041152313",
+            "display_name": "Michael DeBellis",
+            "orcid": "https://orcid.org/0000-0002-8824-9577"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800251648",
+              "display_name": "Sobell House",
+              "ror": "https://ror.org/04h84kq35",
+              "country_code": "GB",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I2800251648"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Michael DeBellis",
+          "raw_affiliation_strings": [
+            "michaeldebellis.com, San Francisco, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "michaeldebellis.com, San Francisco, USA",
+              "institution_ids": [
+                "https://openalex.org/I2800251648"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085292862",
+            "display_name": "Nripen Chanda",
+            "orcid": "https://orcid.org/0000-0002-9902-5595"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I70735523",
+              "display_name": "Central Mechanical Engineering Research Institute",
+              "ror": "https://ror.org/059h0ng81",
+              "country_code": "IN",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2799351866",
+                "https://openalex.org/I4210134808",
+                "https://openalex.org/I66760702",
+                "https://openalex.org/I70735523"
+              ]
+            }
+          ],
+          "countries": [
+            "IN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nripen Chanda",
+          "raw_affiliation_strings": [
+            "CSIR-Central Mechanical Engineering Research Institute, Durgapur, WB, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CSIR-Central Mechanical Engineering Research Institute, Durgapur, WB, India",
+              "institution_ids": [
+                "https://openalex.org/I70735523"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5084833749",
+            "display_name": "Alexander D. Diehl",
+            "orcid": "https://orcid.org/0000-0001-9990-8331"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63190737",
+              "display_name": "University at Buffalo, State University of New York",
+              "ror": "https://ror.org/01y64my43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63190737"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Alexander D. Diehl",
+          "raw_affiliation_strings": [
+            "Department of Biomedical Informatics, University at Buffalo, Buffalo, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biomedical Informatics, University at Buffalo, Buffalo, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I63190737"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5096171608",
+            "display_name": "Finn Wilson",
+            "orcid": "https://orcid.org/0009-0002-7282-0836"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I33213144",
+              "display_name": "University of Florida",
+              "ror": "https://ror.org/02y3ad647",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I33213144"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I94062374",
+              "display_name": "Florida College",
+              "ror": "https://ror.org/010bgev76",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Finn Wilson",
+          "raw_affiliation_strings": [
+            "Department of Community Dentistry and Behavioral Science, University of Florida College of Dentistry, Gainesville, FL, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Community Dentistry and Behavioral Science, University of Florida College of Dentistry, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I33213144",
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5133541152",
+            "display_name": "M Rocha",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I33213144",
+              "display_name": "University of Florida",
+              "ror": "https://ror.org/02y3ad647",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I33213144"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I94062374",
+              "display_name": "Florida College",
+              "ror": "https://ror.org/010bgev76",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mateus Rocha",
+          "raw_affiliation_strings": [
+            "Department of Restorative Dental Sciences, University of Florida College of Dentistry, Gainesville, FL, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Restorative Dental Sciences, University of Florida College of Dentistry, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I33213144",
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5133748132",
+            "display_name": "Mattew Diller",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1299303238",
+              "display_name": "National Institutes of Health",
+              "ror": "https://ror.org/01cwqze88",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I2800548410",
+              "display_name": "United States National Library of Medicine",
+              "ror": "https://ror.org/0060t0j89",
+              "country_code": "US",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I2800548410"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mattew Diller",
+          "raw_affiliation_strings": [
+            "Division of Intramural Research, National Library of Medicine, National Institutes of Health, Bethesda, MD, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Intramural Research, National Library of Medicine, National Institutes of Health, Bethesda, MD, USA",
+              "institution_ids": [
+                "https://openalex.org/I2800548410",
+                "https://openalex.org/I1299303238"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090103793",
+            "display_name": "Gopikrishnan M. Chandrasekharan",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I55769427",
+              "display_name": "Indiana University – Purdue University Indianapolis",
+              "ror": "https://ror.org/05gxnyn08",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I55769427",
+                "https://openalex.org/I592451"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gopikrishnan M. Chandrasekharan",
+          "raw_affiliation_strings": [
+            "Department of Biomedical Engineering and Informatics, Luddy School of Informatics, Computing, and Engineering, Indiana University Indianapolis, Indianapolis, IN, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biomedical Engineering and Informatics, Luddy School of Informatics, Computing, and Engineering, Indiana University Indianapolis, Indianapolis, IN, USA",
+              "institution_ids": [
+                "https://openalex.org/I55769427"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5005828535",
+            "display_name": "William D. Duncan",
+            "orcid": "https://orcid.org/0000-0001-9625-1899"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I33213144",
+              "display_name": "University of Florida",
+              "ror": "https://ror.org/02y3ad647",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I33213144"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I94062374",
+              "display_name": "Florida College",
+              "ror": "https://ror.org/010bgev76",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "William D. Duncan",
+          "raw_affiliation_strings": [
+            "Department of Community Dentistry and Behavioral Science, University of Florida College of Dentistry, Gainesville, FL, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Community Dentistry and Behavioral Science, University of Florida College of Dentistry, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I33213144",
+                "https://openalex.org/I94062374"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 9,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5012586149"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I155837530"
+      ],
+      "apc_list": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "apc_paid": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.47903437,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": "17",
+        "issue": "1",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.7678999900817871,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.7678999900817871,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.19269999861717224,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10887",
+          "display_name": "Bioinformatics and Genomic Networks",
+          "score": 0.009499999694526196,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7633000016212463
+        },
+        {
+          "id": "https://openalex.org/keywords/open-biomedical-ontologies",
+          "display_name": "Open Biomedical Ontologies",
+          "score": 0.6395999789237976
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.5303999781608582
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.5182999968528748
+        },
+        {
+          "id": "https://openalex.org/keywords/upper-ontology",
+          "display_name": "Upper ontology",
+          "score": 0.4715999960899353
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.4616999924182892
+        },
+        {
+          "id": "https://openalex.org/keywords/standardization",
+          "display_name": "Standardization",
+          "score": 0.4323999881744385
+        },
+        {
+          "id": "https://openalex.org/keywords/class",
+          "display_name": "Class (philosophy)",
+          "score": 0.38989999890327454
+        },
+        {
+          "id": "https://openalex.org/keywords/hierarchy",
+          "display_name": "Hierarchy",
+          "score": 0.37959998846054077
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-integration",
+          "display_name": "Semantic integration",
+          "score": 0.36469998955726624
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7633000016212463
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7426999807357788
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.6395999789237976
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.5303999781608582
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.5182999968528748
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.4715999960899353
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.4616999924182892
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.45489999651908875
+        },
+        {
+          "id": "https://openalex.org/C188087704",
+          "wikidata": "https://www.wikidata.org/wiki/Q369577",
+          "display_name": "Standardization",
+          "level": 2,
+          "score": 0.4323999881744385
+        },
+        {
+          "id": "https://openalex.org/C2777212361",
+          "wikidata": "https://www.wikidata.org/wiki/Q5127848",
+          "display_name": "Class (philosophy)",
+          "level": 2,
+          "score": 0.38989999890327454
+        },
+        {
+          "id": "https://openalex.org/C31170391",
+          "wikidata": "https://www.wikidata.org/wiki/Q188619",
+          "display_name": "Hierarchy",
+          "level": 2,
+          "score": 0.37959998846054077
+        },
+        {
+          "id": "https://openalex.org/C110903229",
+          "wikidata": "https://www.wikidata.org/wiki/Q7449064",
+          "display_name": "Semantic integration",
+          "level": 4,
+          "score": 0.36469998955726624
+        },
+        {
+          "id": "https://openalex.org/C98045186",
+          "wikidata": "https://www.wikidata.org/wiki/Q205663",
+          "display_name": "Process (computing)",
+          "level": 2,
+          "score": 0.3490999937057495
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.3416999876499176
+        },
+        {
+          "id": "https://openalex.org/C161301231",
+          "wikidata": "https://www.wikidata.org/wiki/Q3478658",
+          "display_name": "Knowledge representation and reasoning",
+          "level": 2,
+          "score": 0.3345000147819519
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.3343000113964081
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.3059000074863434
+        },
+        {
+          "id": "https://openalex.org/C56666940",
+          "wikidata": "https://www.wikidata.org/wiki/Q788790",
+          "display_name": "Documentation",
+          "level": 2,
+          "score": 0.30570000410079956
+        },
+        {
+          "id": "https://openalex.org/C69505689",
+          "wikidata": "https://www.wikidata.org/wiki/Q455338",
+          "display_name": "Unified Medical Language System",
+          "level": 2,
+          "score": 0.3043999969959259
+        },
+        {
+          "id": "https://openalex.org/C94124525",
+          "wikidata": "https://www.wikidata.org/wiki/Q912550",
+          "display_name": "Categorization",
+          "level": 2,
+          "score": 0.2987000048160553
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.29750001430511475
+        },
+        {
+          "id": "https://openalex.org/C2780767217",
+          "wikidata": "https://www.wikidata.org/wiki/Q5532421",
+          "display_name": "Generality",
+          "level": 2,
+          "score": 0.2969000041484833
+        },
+        {
+          "id": "https://openalex.org/C2781289151",
+          "wikidata": "https://www.wikidata.org/wiki/Q2903989",
+          "display_name": "Class hierarchy",
+          "level": 3,
+          "score": 0.2930000126361847
+        },
+        {
+          "id": "https://openalex.org/C25343380",
+          "wikidata": "https://www.wikidata.org/wiki/Q277521",
+          "display_name": "Relation (database)",
+          "level": 2,
+          "score": 0.28700000047683716
+        },
+        {
+          "id": "https://openalex.org/C206497026",
+          "wikidata": "https://www.wikidata.org/wiki/Q1753883",
+          "display_name": "SNOMED CT",
+          "level": 3,
+          "score": 0.2867000102996826
+        },
+        {
+          "id": "https://openalex.org/C66782513",
+          "wikidata": "https://www.wikidata.org/wiki/Q864601",
+          "display_name": "Biomedicine",
+          "level": 2,
+          "score": 0.28529998660087585
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.2824000120162964
+        },
+        {
+          "id": "https://openalex.org/C50971890",
+          "wikidata": "https://www.wikidata.org/wiki/Q7635093",
+          "display_name": "Suggested Upper Merged Ontology",
+          "level": 4,
+          "score": 0.2800000011920929
+        },
+        {
+          "id": "https://openalex.org/C93518851",
+          "wikidata": "https://www.wikidata.org/wiki/Q180160",
+          "display_name": "Metadata",
+          "level": 2,
+          "score": 0.2745000123977661
+        },
+        {
+          "id": "https://openalex.org/C2777146004",
+          "wikidata": "https://www.wikidata.org/wiki/Q14949826",
+          "display_name": "CLARITY",
+          "level": 2,
+          "score": 0.2745000123977661
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.26930001378059387
+        },
+        {
+          "id": "https://openalex.org/C206588197",
+          "wikidata": "https://www.wikidata.org/wiki/Q846574",
+          "display_name": "Reuse",
+          "level": 2,
+          "score": 0.2648000121116638
+        },
+        {
+          "id": "https://openalex.org/C90734943",
+          "wikidata": "https://www.wikidata.org/wiki/Q17008777",
+          "display_name": "Conceptualization",
+          "level": 2,
+          "score": 0.25440001487731934
+        },
+        {
+          "id": "https://openalex.org/C547195049",
+          "wikidata": "https://www.wikidata.org/wiki/Q1725664",
+          "display_name": "Terminology",
+          "level": 2,
+          "score": 0.250900000333786
+        },
+        {
+          "id": "https://openalex.org/C72634772",
+          "wikidata": "https://www.wikidata.org/wiki/Q386824",
+          "display_name": "Data integration",
+          "level": 2,
+          "score": 0.25040000677108765
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D003764",
+          "descriptor_name": "Dental Materials",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009909",
+          "descriptor_name": "Oral Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "doi:10.1186/s13326-026-00352-x",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s13326-026-00352-x",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13326-026-00352-x.pdf",
+          "source": {
+            "id": "https://openalex.org/S172276550",
+            "display_name": "Journal of Biomedical Semantics",
+            "issn_l": "2041-1480",
+            "issn": [
+              "2041-1480"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Biomedical Semantics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:41992354",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41992354",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of biomedical semantics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:scholarworks.indianapolis.iu.edu:1805/56267",
+          "is_oa": false,
+          "landing_page_url": "https://hdl.handle.net/1805/56267",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400987",
+            "display_name": "IUScholarWorks (Indiana University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I592451",
+            "host_organization_name": "Indiana University",
+            "host_organization_lineage": [
+              "https://openalex.org/I592451"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "PMC",
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:cbfa96f7dcec4027b20fc5b902ddb81b",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/cbfa96f7dcec4027b20fc5b902ddb81b",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Biomedical Semantics, Vol 17, Iss 1 (2026)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:13088783",
+          "is_oa": true,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13088783/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Biomed Semantics",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s13326-026-00352-x",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-026-00352-x",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13326-026-00352-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W7154631812.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W7154631812.grobid-xml"
+      },
+      "referenced_works_count": 28,
+      "referenced_works": [
+        "https://openalex.org/W334453972",
+        "https://openalex.org/W1871852719",
+        "https://openalex.org/W1935434993",
+        "https://openalex.org/W1975062706",
+        "https://openalex.org/W2096757125",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2123152121",
+        "https://openalex.org/W2158191506",
+        "https://openalex.org/W2261812172",
+        "https://openalex.org/W2381442930",
+        "https://openalex.org/W2521644033",
+        "https://openalex.org/W2531883117",
+        "https://openalex.org/W2902382698",
+        "https://openalex.org/W2917693949",
+        "https://openalex.org/W2984431655",
+        "https://openalex.org/W3007897187",
+        "https://openalex.org/W3033057923",
+        "https://openalex.org/W3080752706",
+        "https://openalex.org/W3170771812",
+        "https://openalex.org/W4221005971",
+        "https://openalex.org/W4292513159",
+        "https://openalex.org/W4293387161",
+        "https://openalex.org/W4386373114",
+        "https://openalex.org/W4389452221",
+        "https://openalex.org/W4390048740",
+        "https://openalex.org/W4390331596",
+        "https://openalex.org/W4403137571",
+        "https://openalex.org/W4404579307"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Semantic": [
+          1
+        ],
+        "clarity": [
+          2
+        ],
+        "and": [
+          3,
+          17,
+          29,
+          56,
+          77,
+          82,
+          92,
+          118,
+          121,
+          136,
+          181,
+          207,
+          223
+        ],
+        "standardization": [
+          4
+        ],
+        "in": [
+          5,
+          25,
+          196
+        ],
+        "representing": [
+          6
+        ],
+        "dental": [
+          7,
+          63,
+          104,
+          220
+        ],
+        "restoration": [
+          8,
+          64,
+          105,
+          221
+        ],
+        "materials": [
+          9,
+          89,
+          106,
+          206,
+          222
+        ],
+        "are": [
+          10
+        ],
+        "essential": [
+          11
+        ],
+        "for": [
+          12,
+          228
+        ],
+        "ensuring": [
+          13
+        ],
+        "interoperability": [
+          14
+        ],
+        "across": [
+          15
+        ],
+        "research": [
+          16
+        ],
+        "clinical": [
+          18,
+          75,
+          193
+        ],
+        "settings.": [
+          19
+        ],
+        "However,": [
+          20
+        ],
+        "existing": [
+          21
+        ],
+        "ontologies,": [
+          22
+        ],
+        "including": [
+          23
+        ],
+        "those": [
+          24
+        ],
+        "the": [
+          26,
+          53,
+          129,
+          137,
+          146,
+          187,
+          202,
+          216
+        ],
+        "Open": [
+          27
+        ],
+        "Biological": [
+          28,
+          133
+        ],
+        "Biomedical": [
+          30
+        ],
+        "Ontology": [
+          31,
+          139,
+          148
+        ],
+        "(OBO)": [
+          32
+        ],
+        "Foundry,": [
+          33
+        ],
+        "provide": [
+          34
+        ],
+        "minimal": [
+          35
+        ],
+        "coverage": [
+          36
+        ],
+        "of": [
+          37,
+          52,
+          103,
+          126,
+          132,
+          189,
+          205,
+          219
+        ],
+        "this": [
+          38
+        ],
+        "clinically": [
+          39
+        ],
+        "relevant": [
+          40
+        ],
+        "domain.": [
+          41
+        ],
+        "METHODS:": [
+          42
+        ],
+        "Guided": [
+          43
+        ],
+        "by": [
+          44,
+          90
+        ],
+        "OBO": [
+          45
+        ],
+        "Foundry": [
+          46
+        ],
+        "principles,": [
+          47
+        ],
+        "developed": [
+          48
+        ],
+        "an": [
+          49
+        ],
+        "ontological": [
+          50
+        ],
+        "extension": [
+          51
+        ],
+        "Oral": [
+          54
+        ],
+        "Health": [
+          55
+        ],
+        "Disease": [
+          57
+        ],
+        "(OHD)": [
+          58
+        ],
+        "ontology": [
+          59,
+          97,
+          163,
+          177,
+          214
+        ],
+        "to": [
+          60,
+          73,
+          87
+        ],
+        "formally": [
+          61
+        ],
+        "represent": [
+          62
+        ],
+        "materials.": [
+          65
+        ],
+        "The": [
+          66,
+          95,
+          171,
+          211
+        ],
+        "modeling": [
+          67
+        ],
+        "process": [
+          68
+        ],
+        "included": [
+          69
+        ],
+        "iterative": [
+          70
+        ],
+        "expert": [
+          71
+        ],
+        "input": [
+          72
+        ],
+        "ensure": [
+          74
+        ],
+        "accuracy": [
+          76
+        ],
+        "precise": [
+          78
+        ],
+        "terminology.": [
+          79
+        ],
+        "Logical": [
+          80
+        ],
+        "definitions": [
+          81
+        ],
+        "subclass": [
+          83
+        ],
+        "hierarchies": [
+          84
+        ],
+        "were": [
+          85
+        ],
+        "created": [
+          86
+        ],
+        "classify": [
+          88
+        ],
+        "composition": [
+          91
+        ],
+        "microstructure.": [
+          93
+        ],
+        "RESULTS:": [
+          94
+        ],
+        "extended": [
+          96,
+          212
+        ],
+        "introduces": [
+          98
+        ],
+        "a": [
+          99,
+          197,
+          225
+        ],
+        "logically": [
+          100
+        ],
+        "structured": [
+          101
+        ],
+        "taxonomy": [
+          102
+        ],
+        "using": [
+          107
+        ],
+        "genus-differentia": [
+          108
+        ],
+        "definitions.": [
+          109
+        ],
+        "Its": [
+          110
+        ],
+        "class": [
+          111,
+          127
+        ],
+        "hierarchy": [
+          112
+        ],
+        "aligns": [
+          113
+        ],
+        "with": [
+          114,
+          153
+        ],
+        "domain-specific": [
+          115
+        ],
+        "classification": [
+          116
+        ],
+        "systems": [
+          117
+        ],
+        "captures": [
+          119
+        ],
+        "current": [
+          120
+        ],
+        "emerging": [
+          122
+        ],
+        "material": [
+          123,
+          169
+        ],
+        "types.": [
+          124
+        ],
+        "Reuse": [
+          125
+        ],
+        "from": [
+          128,
+          145,
+          176
+        ],
+        "Chemical": [
+          130
+        ],
+        "Entities": [
+          131
+        ],
+        "Interest": [
+          134
+        ],
+        "(ChEBI)": [
+          135
+        ],
+        "Environment": [
+          138
+        ],
+        "(ENVO)": [
+          140
+        ],
+        "as": [
+          141,
+          143
+        ],
+        "well": [
+          142
+        ],
+        "relations": [
+          144
+        ],
+        "Relation": [
+          147
+        ],
+        "(RO)": [
+          149
+        ],
+        "supports": [
+          150
+        ],
+        "semantic": [
+          151,
+          217
+        ],
+        "integration": [
+          152
+        ],
+        "related": [
+          154
+        ],
+        "biomedical": [
+          155
+        ],
+        "ontologies.": [
+          156
+        ],
+        "CONCLUSION:": [
+          157
+        ],
+        "This": [
+          158,
+          184
+        ],
+        "work": [
+          159
+        ],
+        "highlights": [
+          160
+        ],
+        "how": [
+          161
+        ],
+        "domain-informed": [
+          162
+        ],
+        "design": [
+          164
+        ],
+        "can": [
+          165
+        ],
+        "effectively": [
+          166
+        ],
+        "capture": [
+          167,
+          188
+        ],
+        "complex": [
+          168
+        ],
+        "knowledge.": [
+          170
+        ],
+        "extensive": [
+          172
+        ],
+        "collaboration": [
+          173
+        ],
+        "integrates": [
+          174
+        ],
+        "expertise": [
+          175
+        ],
+        "engineers,": [
+          178
+        ],
+        "academic": [
+          179
+        ],
+        "researchers,": [
+          180
+        ],
+        "practicing": [
+          182
+        ],
+        "clinicians.": [
+          183
+        ],
+        "approach": [
+          185
+        ],
+        "enables": [
+          186
+        ],
+        "intricate,": [
+          190
+        ],
+        "often-disregarded": [
+          191
+        ],
+        "real": [
+          192
+        ],
+        "factors,": [
+          194
+        ],
+        "resulting": [
+          195
+        ],
+        "model": [
+          198
+        ],
+        "that": [
+          199
+        ],
+        "reflects": [
+          200
+        ],
+        "both": [
+          201
+        ],
+        "structural": [
+          203
+        ],
+        "properties": [
+          204
+        ],
+        "their": [
+          208
+        ],
+        "practical": [
+          209
+        ],
+        "use.": [
+          210
+        ],
+        "OHD": [
+          213
+        ],
+        "improves": [
+          215
+        ],
+        "representation": [
+          218
+        ],
+        "provides": [
+          224
+        ],
+        "scalable": [
+          226
+        ],
+        "foundation": [
+          227
+        ],
+        "advancing": [
+          229
+        ],
+        "oral": [
+          230
+        ],
+        "health": [
+          231
+        ],
+        "informatics.": [
+          232
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-29T08:53:18.405633",
+      "created_date": "2026-04-17T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7165225864",
+      "doi": null,
+      "title": "Автоматизация проектирования дентальных имплантатов в составе системы поддержки принятия врачебных решений.",
+      "display_name": "Автоматизация проектирования дентальных имплантатов в составе системы поддержки принятия врачебных решений.",
+      "relevance_score": 2.905916,
+      "publication_year": null,
+      "publication_date": null,
+      "ids": {
+        "openalex": "https://openalex.org/W7165225864"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "pmh:https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+        "is_oa": true,
+        "landing_page_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+        "pdf_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy/pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401404",
+          "display_name": "CyberLeninK (CyberLeninka)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "type": "article",
+      "indexed_in": [],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5138913895",
+            "display_name": "Кийко Анастасия Алексеевна",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Кийко Анастасия Алексеевна",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5023865516",
+            "display_name": "Николаенко Андрей Николаевич",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Николаенко Андрей Николаевич",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5066289574",
+            "display_name": "М А Постников",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Постников Михаил Александрович",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5065425703",
+            "display_name": "Колсанов Александр Владимирович",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Колсанов Александр Владимирович",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5138868509",
+            "display_name": "Байриков Иван Михайлович",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Байриков Иван Михайлович",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/process",
+          "display_name": "Process (computing)",
+          "score": 0.19869999587535858
+        },
+        {
+          "id": "https://openalex.org/keywords/identification",
+          "display_name": "Identification (biology)",
+          "score": 0.19499999284744263
+        },
+        {
+          "id": "https://openalex.org/keywords/product",
+          "display_name": "Product (mathematics)",
+          "score": 0.1860000044107437
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C98045186",
+          "wikidata": "https://www.wikidata.org/wiki/Q205663",
+          "display_name": "Process (computing)",
+          "level": 2,
+          "score": 0.19869999587535858
+        },
+        {
+          "id": "https://openalex.org/C116834253",
+          "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+          "display_name": "Identification (biology)",
+          "level": 2,
+          "score": 0.19499999284744263
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.1906999945640564
+        },
+        {
+          "id": "https://openalex.org/C90673727",
+          "wikidata": "https://www.wikidata.org/wiki/Q901718",
+          "display_name": "Product (mathematics)",
+          "level": 2,
+          "score": 0.1860000044107437
+        },
+        {
+          "id": "https://openalex.org/C18762648",
+          "wikidata": "https://www.wikidata.org/wiki/Q42213",
+          "display_name": "Work (physics)",
+          "level": 2,
+          "score": 0.18389999866485596
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.16850000619888306
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.16580000519752502
+        },
+        {
+          "id": "https://openalex.org/C61797465",
+          "wikidata": "https://www.wikidata.org/wiki/Q1188986",
+          "display_name": "Term (time)",
+          "level": 2,
+          "score": 0.16410000622272491
+        },
+        {
+          "id": "https://openalex.org/C2776608160",
+          "wikidata": "https://www.wikidata.org/wiki/Q4785462",
+          "display_name": "Natural (archaeology)",
+          "level": 2,
+          "score": 0.16120000183582306
+        },
+        {
+          "id": "https://openalex.org/C81917197",
+          "wikidata": "https://www.wikidata.org/wiki/Q628760",
+          "display_name": "Selection (genetic algorithm)",
+          "level": 2,
+          "score": 0.15870000422000885
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "pmh:https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+          "is_oa": true,
+          "landing_page_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+          "pdf_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy/pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401404",
+            "display_name": "CyberLeninK (CyberLeninka)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+        "is_oa": true,
+        "landing_page_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy",
+        "pdf_url": "https://cyberleninka.ru/article/n/avtomatizatsiya-proektirovaniya-dentalnyh-implantatov-v-sostave-sistemy-podderzhki-prinyatiya-vrachebnyh-resheniy/pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401404",
+          "display_name": "CyberLeninK (CyberLeninka)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W7165225864.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W7165225864.grobid-xml"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "Автоматизация": [
+          0
+        ],
+        "проектирования": [
+          1,
+          35,
+          65,
+          104,
+          157
+        ],
+        "и": [
+          2,
+          9,
+          26,
+          36,
+          57,
+          76,
+          85,
+          109,
+          123,
+          131,
+          145,
+          158,
+          174,
+          177
+        ],
+        "производства": [
+          3,
+          37,
+          159
+        ],
+        "сложных": [
+          4
+        ],
+        "инженерных": [
+          5
+        ],
+        "изделий": [
+          6
+        ],
+        "является": [
+          7
+        ],
+        "важным": [
+          8
+        ],
+        "достаточно": [
+          10
+        ],
+        "глубоко": [
+          11
+        ],
+        "проработанным": [
+          12
+        ],
+        "направлением": [
+          13
+        ],
+        "внедрения": [
+          14
+        ],
+        "информационных": [
+          15,
+          24
+        ],
+        "технологий.": [
+          16
+        ],
+        "Цифровая": [
+          17
+        ],
+        "трансформация": [
+          18
+        ],
+        "системы": [
+          19,
+          70,
+          93,
+          138
+        ],
+        "здравоохранения": [
+          20
+        ],
+        "с": [
+          21,
+          164
+        ],
+        "использованием": [
+          22
+        ],
+        "современных": [
+          23,
+          83
+        ],
+        "технологий": [
+          25,
+          86
+        ],
+        "искусственного": [
+          27,
+          107
+        ],
+        "интеллекта": [
+          28,
+          108
+        ],
+        "способствует": [
+          29
+        ],
+        "внедрению": [
+          30
+        ],
+        "технократического": [
+          31
+        ],
+        "подхода": [
+          32
+        ],
+        "к": [
+          33
+        ],
+        "организации": [
+          34
+        ],
+        "медицинских": [
+          38,
+          181
+        ],
+        "изделий,": [
+          39
+        ],
+        "что,": [
+          40
+        ],
+        "в": [
+          41,
+          52,
+          68,
+          162
+        ],
+        "свою": [
+          42
+        ],
+        "очередь,": [
+          43
+        ],
+        "требует": [
+          44
+        ],
+        "построения": [
+          45,
+          120
+        ],
+        "единого": [
+          46
+        ],
+        "информационного": [
+          47,
+          125
+        ],
+        "пространства": [
+          48
+        ],
+        "медицинской": [
+          49
+        ],
+        "инженерии,": [
+          50
+        ],
+        "например,": [
+          51
+        ],
+        "стоматологии,": [
+          53,
+          117
+        ],
+        "аналогично": [
+          54
+        ],
+        "отраслям": [
+          55
+        ],
+        "машиностроения": [
+          56
+        ],
+        "приборостроения.": [
+          58
+        ],
+        "Цель": [
+          59
+        ],
+        "исследования:": [
+          60
+        ],
+        "разработка": [
+          61
+        ],
+        "новой": [
+          62
+        ],
+        "технологии": [
+          63
+        ],
+        "автоматизированного": [
+          64,
+          103
+        ],
+        "дентальных": [
+          66,
+          105,
+          148,
+          160
+        ],
+        "имплантатов": [
+          67,
+          161,
+          176
+        ],
+        "составе": [
+          69
+        ],
+        "поддержки": [
+          71,
+          94,
+          139
+        ],
+        "принятия": [
+          72,
+          95,
+          140
+        ],
+        "врачебных": [
+          73,
+          96,
+          141
+        ],
+        "решений.": [
+          74
+        ],
+        "Материалы": [
+          75
+        ],
+        "методы.": [
+          77
+        ],
+        "На": [
+          78,
+          127
+        ],
+        "основании": [
+          79
+        ],
+        "результатов": [
+          80
+        ],
+        "системного": [
+          81
+        ],
+        "анализа": [
+          82
+        ],
+        "трендов": [
+          84
+        ],
+        "цифровой": [
+          87,
+          116
+        ],
+        "стоматологии": [
+          88
+        ],
+        "была": [
+          89
+        ],
+        "предложена": [
+          90
+        ],
+        "унифицированная": [
+          91
+        ],
+        "архитектура": [
+          92
+        ],
+        "решений,": [
+          97
+        ],
+        "основанная": [
+          98
+        ],
+        "на": [
+          99
+        ],
+        "комбинированном": [
+          100
+        ],
+        "применении": [
+          101
+        ],
+        "средств": [
+          102
+        ],
+        "имплантатов,": [
+          106
+        ],
+        "инженерии": [
+          110
+        ],
+        "знаний.": [
+          111
+        ],
+        "Результаты.": [
+          112
+        ],
+        "Разработана": [
+          113
+        ],
+        "формально-логическая": [
+          114
+        ],
+        "модель": [
+          115
+        ],
+        "предназначенная": [
+          118
+        ],
+        "для": [
+          119
+        ],
+        "базы": [
+          121
+        ],
+        "знаний": [
+          122
+        ],
+        "реализации": [
+          124
+        ],
+        "обеспечения.": [
+          126
+        ],
+        "основе": [
+          128
+        ],
+        "предложенной": [
+          129
+        ],
+        "архитектуры": [
+          130
+        ],
+        "формально-логической": [
+          132
+        ],
+        "модели": [
+          133
+        ],
+        "было": [
+          134
+        ],
+        "разработано": [
+          135
+        ],
+        "программное": [
+          136
+        ],
+        "обеспечение": [
+          137
+        ],
+        "решений": [
+          142
+        ],
+        "по": [
+          143,
+          172
+        ],
+        "выбору": [
+          144
+        ],
+        "расчету": [
+          146
+        ],
+        "параметров": [
+          147
+        ],
+        "имплантатов.": [
+          149
+        ],
+        "Выводы.": [
+          150
+        ],
+        "Предложенные": [
+          151
+        ],
+        "технические": [
+          152
+        ],
+        "решения": [
+          153
+        ],
+        "позволяют": [
+          154
+        ],
+        "автоматизировать": [
+          155
+        ],
+        "процесс": [
+          156
+        ],
+        "соответствии": [
+          163
+        ],
+        "принципами": [
+          165
+        ],
+        "персонализированной": [
+          166
+        ],
+        "медицины,": [
+          167
+        ],
+        "что": [
+          168
+        ],
+        "обеспечивает": [
+          169
+        ],
+        "сокращение": [
+          170
+        ],
+        "трудоемкости": [
+          171
+        ],
+        "подбору": [
+          173
+        ],
+        "параметризации": [
+          175
+        ],
+        "повышение": [
+          178
+        ],
+        "качества": [
+          179
+        ],
+        "оказания": [
+          180
+        ],
+        "услуг.": [
+          182
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-19T15:51:49.773706",
+      "created_date": "2026-06-19T00:00:00"
+    }
+  ],
+  "group_by": []
+}

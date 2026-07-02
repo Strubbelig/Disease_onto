@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/fd42ab90-0348-0131-abbd-001ec9b0ea92",
+      "name": "Irena Spasic",
+      "email": "i.spasic@cs.cardiff.ac.uk"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/irenas"
+    ],
+    "acronym": "TRAK",
+    "name": "Taxonomy for Rehabilitation of Knee Conditions",
+    "@id": "https://data.bioontology.org/ontologies/TRAK",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/TRAK/submissions",
+      "properties": "https://data.bioontology.org/ontologies/TRAK/properties",
+      "classes": "https://data.bioontology.org/ontologies/TRAK/classes",
+      "single_class": "https://data.bioontology.org/ontologies/TRAK/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/TRAK/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/TRAK/schemes",
+      "collections": "https://data.bioontology.org/ontologies/TRAK/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/TRAK/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/TRAK/instances",
+      "metrics": "https://data.bioontology.org/ontologies/TRAK/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/TRAK/reviews",
+      "notes": "https://data.bioontology.org/ontologies/TRAK/notes",
+      "groups": "https://data.bioontology.org/ontologies/TRAK/groups",
+      "categories": "https://data.bioontology.org/ontologies/TRAK/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/TRAK/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/TRAK/projects",
+      "download": "https://data.bioontology.org/ontologies/TRAK/download",
+      "views": "https://data.bioontology.org/ontologies/TRAK/views",
+      "analytics": "https://data.bioontology.org/ontologies/TRAK/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/TRAK",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OBO",
+  "released": "2015-09-14T00:00:00.000+00:00",
+  "creationDate": "2015-09-14T03:39:19.000-07:00",
+  "homepage": "http://www.cs.cf.ac.uk/trak",
+  "publication": [],
+  "documentation": null,
+  "version": "unknown",
+  "description": "TRAK (Taxonomy for RehAbilitation of Knee conditions) is an ontology that formally models information relevant for the rehabilitation of knee conditions. TRAK provides the framework that can be used to collect coded data in sufficient detail to support epidemiologic studies so that the most effective treatment components can be identified, new interventions developed and the quality of future randomized control trials improved to incorporate a control intervention that is well defined and reflects clinical practice. ",
+  "status": "beta",
+  "submissionId": 5,
+  "@id": "https://data.bioontology.org/ontologies/TRAK/submissions/5",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/TRAK/submissions/5/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

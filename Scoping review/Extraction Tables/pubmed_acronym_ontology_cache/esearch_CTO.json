@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35992013",
+      "17911819",
+      "36561774",
+      "28972947",
+      "35547243",
+      "37868767",
+      "35311086",
+      "24981941",
+      "39191219",
+      "40595290"
+    ],
+    "translationset": [
+      {
+        "from": "CTO",
+        "to": "\"GMS Curr Top Otorhinolaryngol Head Neck Surg\"[Journal:__jid101275966] OR \"Cells Tissues Organs\"[Journal:__jid100883360] OR \"Cardiovasc Thorac Open\"[Journal:__jid101735643] OR \"cto\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"gms curr top otorhinolaryngol head neck surg\"[Journal] OR \"cells tissues organs\"[Journal] OR \"cardiovasc thorac open\"[Journal] OR \"cto\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

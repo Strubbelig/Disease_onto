@@ -1,0 +1,113 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/3867a630-8794-0134-635e-005056010073",
+      "name": "Fernanda Farinelli",
+      "email": "fernanda.farinelli@gmail.com"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/592bdc10-552d-0135-ddde-005056010074",
+      "name": "OntONeo project discussing group",
+      "email": "ontoneo-discuss@googlegroups.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/ffarinel"
+    ],
+    "acronym": "ONTONEO",
+    "name": "Obstetric and Neonatal Ontology",
+    "@id": "https://data.bioontology.org/ontologies/ONTONEO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ONTONEO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ONTONEO/properties",
+      "classes": "https://data.bioontology.org/ontologies/ONTONEO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ONTONEO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ONTONEO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ONTONEO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ONTONEO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ONTONEO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ONTONEO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ONTONEO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ONTONEO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ONTONEO/notes",
+      "groups": "https://data.bioontology.org/ontologies/ONTONEO/groups",
+      "categories": "https://data.bioontology.org/ontologies/ONTONEO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ONTONEO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ONTONEO/projects",
+      "download": "https://data.bioontology.org/ontologies/ONTONEO/download",
+      "views": "https://data.bioontology.org/ontologies/ONTONEO/views",
+      "analytics": "https://data.bioontology.org/ontologies/ONTONEO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ONTONEO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2025-03-14T00:00:00.000+00:00",
+  "creationDate": "2025-03-14T15:00:17.000-07:00",
+  "homepage": "https://ontoneo.com/",
+  "publication": [
+    "https://github.com/ontoneo-project/Ontoneo"
+  ],
+  "documentation": "https://ontoneo.com/",
+  "version": "2025-03-14",
+  "description": "The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.",
+  "status": "alpha",
+  "submissionId": 15,
+  "@id": "https://data.bioontology.org/ontologies/ONTONEO/submissions/15",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ONTONEO/submissions/15/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

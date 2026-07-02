@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/poem_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for POEM; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2025-01-07T18:13:42.000-08:00, creationDate=2025-01-07T18:13:46.000-08:00, submissionId=8" ;
+    dcterms:created "2026-07-02T14:58:37-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.org/twc/poem/Construct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/poem/Construct> <http://www.w3.org/2000/01/rdf-schema#label> "construct" .
+<http://purl.org/twc/poem/Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "a disease entity typically representing a non-normative elevation on a syndrome in conjuction with marked distress or impairment" .
+<http://purl.org/twc/poem/Disorder> <http://purl.org/dc/terms/source> "generated review target module for POEM from disease_terms_review_enriched.csv" .
+<http://purl.org/twc/poem/Disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/poem/Disorder> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .
+<http://purl.org/twc/poem/Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/poem/Construct> .

@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "745",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33346828",
+      "36996094",
+      "34891707",
+      "38778394",
+      "34275487",
+      "33791734",
+      "35649389",
+      "37324543",
+      "34789243",
+      "37161560"
+    ],
+    "translationset": [
+      {
+        "from": "COVID-19",
+        "to": "(\"COVID-19\" OR \"COVID19\" OR \"COVID-19\"[MeSH Terms] OR \"COVID-19 Vaccines\" OR \"COVID-19 Vaccines\"[MeSH Terms] OR \"COVID-19 serotherapy\" OR \"COVID-19 serotherapy\"[MeSH Terms] OR \"COVID-19 Nucleic Acid Testing\" OR \"covid-19 nucleic acid testing\"[MeSH Terms] OR \"COVID-19 Serological Testing\" OR \"covid-19 serological testing\"[MeSH Terms] OR \"COVID-19 Testing\" OR \"covid-19 testing\"[MeSH Terms] OR \"SARS-CoV-2\" OR \"SARSCoV2\" OR \"SARSCoV-2\" OR \"SARS-CoV2\" OR \"sars-cov-2\"[MeSH Terms] OR \"Severe Acute Respiratory Syndrome Coronavirus 2\" OR \"2019 NCOV\" OR ((\"coronavirus\"[MeSH Terms] OR \"coronavirus\" OR \"COV\" OR \"NCOV\") AND 2019/11/01[PDAT] : 3000/12/31[PDAT]))"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"covid 19\"[All Fields] OR \"covid19\"[All Fields] OR \"covid 19\"[MeSH Terms] OR \"covid 19 vaccines\"[All Fields] OR \"covid 19 vaccines\"[MeSH Terms] OR \"covid 19 serotherapy\"[All Fields] OR \"covid 19 serotherapy\"[MeSH Terms] OR \"covid 19 nucleic acid testing\"[All Fields] OR \"covid 19 nucleic acid testing\"[MeSH Terms] OR \"covid 19 serological testing\"[All Fields] OR \"covid 19 serological testing\"[MeSH Terms] OR \"covid 19 testing\"[All Fields] OR \"covid 19 testing\"[MeSH Terms] OR \"sars cov 2\"[All Fields] OR \"sarscov2\"[All Fields] OR \"sarscov 2\"[All Fields] OR \"sars cov2\"[All Fields] OR \"sars cov 2\"[MeSH Terms] OR \"severe acute respiratory syndrome coronavirus 2\"[All Fields] OR \"2019 ncov\"[All Fields] OR ((\"coronavirus\"[MeSH Terms] OR \"coronavirus\"[All Fields] OR \"cov\"[All Fields] OR \"ncov\"[All Fields]) AND 2019/11/01:3000/12/31[Date - Publication])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

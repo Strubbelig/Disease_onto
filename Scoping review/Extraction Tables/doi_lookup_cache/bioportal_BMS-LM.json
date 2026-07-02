@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/729b1610-8453-013b-44eb-005056010073",
+      "name": "Amel Raboudi",
+      "email": "araboudi.fealinx@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/Amel+Raboudi"
+    ],
+    "acronym": "BMS-LM",
+    "name": "BioMedical Study Lifecycle Management",
+    "@id": "https://data.bioontology.org/ontologies/BMS-LM",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/BMS-LM/submissions",
+      "properties": "https://data.bioontology.org/ontologies/BMS-LM/properties",
+      "classes": "https://data.bioontology.org/ontologies/BMS-LM/classes",
+      "single_class": "https://data.bioontology.org/ontologies/BMS-LM/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/BMS-LM/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/BMS-LM/schemes",
+      "collections": "https://data.bioontology.org/ontologies/BMS-LM/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/BMS-LM/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/BMS-LM/instances",
+      "metrics": "https://data.bioontology.org/ontologies/BMS-LM/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/BMS-LM/reviews",
+      "notes": "https://data.bioontology.org/ontologies/BMS-LM/notes",
+      "groups": "https://data.bioontology.org/ontologies/BMS-LM/groups",
+      "categories": "https://data.bioontology.org/ontologies/BMS-LM/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/BMS-LM/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/BMS-LM/projects",
+      "download": "https://data.bioontology.org/ontologies/BMS-LM/download",
+      "views": "https://data.bioontology.org/ontologies/BMS-LM/views",
+      "analytics": "https://data.bioontology.org/ontologies/BMS-LM/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/BMS-LM",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2022-02-01T00:00:00.000+00:00",
+  "creationDate": "2023-02-01T03:42:37.000-08:00",
+  "homepage": null,
+  "publication": [
+    "https://doi.org/10.1016/j.jbi.2022.104007"
+  ],
+  "documentation": null,
+  "version": "Version 1.1",
+  "description": "Biomedical research data reuse and sharing is essential for fostering research\r\nprogress. To this aim, data producers need to master data management and reporting\r\nthrough standard and rich metadata, as encouraged by open data initiatives such as\r\nthe FAIR (Findable, Accessible, Interoperable, Reusable) guidelines. This helps data re-users to understand and reuse the shared data with confidence. Therefore, dedicated frameworks are required. The provenance reporting throughout a biomedical study lifecycle has been proposed as a way to increase confidence in data while reusing it. The Biomedical Study - Lifecycle Management (BMS-LM) data model has implemented provenance and lifecycle traceability for several multimodal-imaging techniques but this is not enough for data understanding while reusing it. Actually, in the large scope of biomedical research, a multitude of metadata sources, also called Knowledge Organization Systems (KOSs), are available for data annotation. In addition, data producers uses local terminologies or KOSs, containing vernacular\r\nterms for data reporting. The result is a set of heterogeneous KOSs (local and published) with different formats and levels of granularity. To manage the inherent heterogeneity, semantic interoperability is encouraged by the Research Data\r\nManagement (RDM) community. Ontologies, and more specifically top ontologies such as BFO and DOLCE, make explicit the metadata semantics and enhance semantic interoperability. Based on the BMS-LM data model and the BFO top ontology, the BioMedical Study - Lifecycle Management (BMS-LM) core ontology is proposed together with an associated framework for semantic interoperability between heterogeneous KOSs. It is made of four ontological levels: top/core/domain/local and\r\naims to build bridges between local and published KOSs. In this paper, the conversion of the BMS-LM data model to a core ontology is detailed. The implementation of its semantic interoperability in a specific domain context is explained and illustrated with examples from small animal preclinical research.",
+  "status": "production",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/BMS-LM/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/BMS-LM/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

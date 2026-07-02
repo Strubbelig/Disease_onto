@@ -1,0 +1,5349 @@
+{
+  "meta": {
+    "count": 9,
+    "db_response_time_ms": 177,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Adverse Childhood Experiences Ontology ACESO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Adverse Childhood Experiences Ontology ACESO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Adverse Childhood Experiences Ontology ACESO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3091797093",
+      "doi": "https://doi.org/10.2196/18752",
+      "title": "Explainable Artificial Intelligence Recommendation System by Leveraging the Semantics of Adverse Childhood Experiences: Proof-of-Concept Prototype Development",
+      "display_name": "Explainable Artificial Intelligence Recommendation System by Leveraging the Semantics of Adverse Childhood Experiences: Proof-of-Concept Prototype Development",
+      "relevance_score": 204.04706,
+      "publication_year": 2020,
+      "publication_date": "2020-10-08",
+      "ids": {
+        "openalex": "https://openalex.org/W3091797093",
+        "doi": "https://doi.org/10.2196/18752",
+        "mag": "3091797093",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/33146623"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.2196/18752",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/18752",
+        "pdf_url": "https://medinform.jmir.org/2020/11/e18752/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764650051",
+          "display_name": "JMIR Medical Informatics",
+          "issn_l": "2291-9694",
+          "issn": [
+            "2291-9694"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Medical Informatics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "arxiv",
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://medinform.jmir.org/2020/11/e18752/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Nariman Ammar",
+            "orcid": "https://orcid.org/0000-0002-5363-2541"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nariman Ammar",
+          "raw_affiliation_strings": [
+            "University of Tennessee Health Science Center - Oak Ridge National Laboratory, Center for Biomedical Informatics, Department of Pediatrics, College of Medicine, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5363-2541",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Tennessee Health Science Center - Oak Ridge National Laboratory, Center for Biomedical Informatics, Department of Pediatrics, College of Medicine, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I160606119",
+                "https://openalex.org/I1289243028"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Arash Shaban-Nejad",
+            "orcid": "https://orcid.org/0000-0003-2047-4759"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Arash Shaban-Nejad",
+          "raw_affiliation_strings": [
+            "University of Tennessee Health Science Center - Oak Ridge National Laboratory, Center for Biomedical Informatics, Department of Pediatrics, College of Medicine, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2047-4759",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Tennessee Health Science Center - Oak Ridge National Laboratory, Center for Biomedical Informatics, Department of Pediatrics, College of Medicine, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I160606119",
+                "https://openalex.org/I1289243028"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 2300,
+        "currency": "USD",
+        "value_usd": 2300
+      },
+      "apc_paid": {
+        "value": 2300,
+        "currency": "USD",
+        "value_usd": 2300
+      },
+      "fwci": 4.293,
+      "has_fulltext": true,
+      "cited_by_count": 67,
+      "citation_normalized_percentile": {
+        "value": 0.9530614,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 98,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "8",
+        "issue": "11",
+        "first_page": "e18752",
+        "last_page": "e18752"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12026",
+        "display_name": "Explainable Artificial Intelligence (XAI)",
+        "score": 0.40209999680519104,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12026",
+          "display_name": "Explainable Artificial Intelligence (XAI)",
+          "score": 0.40209999680519104,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11273",
+          "display_name": "Advanced Graph Neural Networks",
+          "score": 0.16060000658035278,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12488",
+          "display_name": "Mental Health via Writing",
+          "score": 0.10239999741315842,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/semantics",
+          "display_name": "Semantics (computer science)",
+          "score": 0.6126999855041504
+        },
+        {
+          "id": "https://openalex.org/keywords/recommender-system",
+          "display_name": "Recommender system",
+          "score": 0.5101000070571899
+        },
+        {
+          "id": "https://openalex.org/keywords/expert-system",
+          "display_name": "Expert system",
+          "score": 0.4016999900341034
+        },
+        {
+          "id": "https://openalex.org/keywords/applications-of-artificial-intelligence",
+          "display_name": "Applications of artificial intelligence",
+          "score": 0.3659000098705292
+        },
+        {
+          "id": "https://openalex.org/keywords/chatbot",
+          "display_name": "Chatbot",
+          "score": 0.3109999895095825
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7419999837875366
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.6126999855041504
+        },
+        {
+          "id": "https://openalex.org/C557471498",
+          "wikidata": "https://www.wikidata.org/wiki/Q554950",
+          "display_name": "Recommender system",
+          "level": 2,
+          "score": 0.5101000070571899
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.48489999771118164
+        },
+        {
+          "id": "https://openalex.org/C58328972",
+          "wikidata": "https://www.wikidata.org/wiki/Q184609",
+          "display_name": "Expert system",
+          "level": 2,
+          "score": 0.4016999900341034
+        },
+        {
+          "id": "https://openalex.org/C157170001",
+          "wikidata": "https://www.wikidata.org/wiki/Q4781507",
+          "display_name": "Applications of artificial intelligence",
+          "level": 2,
+          "score": 0.3659000098705292
+        },
+        {
+          "id": "https://openalex.org/C2779041454",
+          "wikidata": "https://www.wikidata.org/wiki/Q870780",
+          "display_name": "Chatbot",
+          "level": 2,
+          "score": 0.3109999895095825
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.29679998755455017
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.29190000891685486
+        },
+        {
+          "id": "https://openalex.org/C160735492",
+          "wikidata": "https://www.wikidata.org/wiki/Q31207",
+          "display_name": "Health care",
+          "level": 2,
+          "score": 0.287200003862381
+        },
+        {
+          "id": "https://openalex.org/C20162079",
+          "wikidata": "https://www.wikidata.org/wiki/Q1151406",
+          "display_name": "Case-based reasoning",
+          "level": 2,
+          "score": 0.2867000102996826
+        },
+        {
+          "id": "https://openalex.org/C107457646",
+          "wikidata": "https://www.wikidata.org/wiki/Q207434",
+          "display_name": "Human–computer interaction",
+          "level": 1,
+          "score": 0.27880001068115234
+        },
+        {
+          "id": "https://openalex.org/C202645933",
+          "wikidata": "https://www.wikidata.org/wiki/Q4930",
+          "display_name": "eHealth",
+          "level": 3,
+          "score": 0.2777999937534332
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.2768000066280365
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.25519999861717224
+        }
+      ],
+      "mesh": [],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.2196/18752",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/18752",
+          "pdf_url": "https://medinform.jmir.org/2020/11/e18752/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764650051",
+            "display_name": "JMIR Medical Informatics",
+            "issn_l": "2291-9694",
+            "issn": [
+              "2291-9694"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR Medical Informatics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:33146623",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33146623",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR medical informatics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:arXiv.org:2011.08090",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2011.08090",
+          "pdf_url": "https://arxiv.org/pdf/2011.08090",
+          "source": {
+            "id": "https://openalex.org/S4393918464",
+            "display_name": "ArXiv.org",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:osti.gov:1815906",
+          "is_oa": true,
+          "landing_page_url": "https://www.osti.gov/biblio/1815906",
+          "pdf_url": "https://www.osti.gov/servlets/purl/1815906",
+          "source": {
+            "id": "https://openalex.org/S4306402487",
+            "display_name": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I139351228",
+            "host_organization_name": "Office of Scientific and Technical Information",
+            "host_organization_lineage": [
+              "https://openalex.org/I139351228"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:dc94cd72b25f4eb09fb4156c6d0b5f6d",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/dc94cd72b25f4eb09fb4156c6d0b5f6d",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR Medical Informatics, Vol 8, Iss 11, p e18752 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7673979",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7673979",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR Med Inform",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/18752",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/18752",
+        "pdf_url": "https://medinform.jmir.org/2020/11/e18752/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764650051",
+          "display_name": "JMIR Medical Informatics",
+          "issn_l": "2291-9694",
+          "issn": [
+            "2291-9694"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Medical Informatics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3091797093.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3091797093.grobid-xml"
+      },
+      "referenced_works_count": 17,
+      "referenced_works": [
+        "https://openalex.org/W1482585805",
+        "https://openalex.org/W2008214343",
+        "https://openalex.org/W2085339586",
+        "https://openalex.org/W2108630796",
+        "https://openalex.org/W2116839388",
+        "https://openalex.org/W2339337244",
+        "https://openalex.org/W2536991335",
+        "https://openalex.org/W2735585131",
+        "https://openalex.org/W2888396126",
+        "https://openalex.org/W2914655152",
+        "https://openalex.org/W2941932503",
+        "https://openalex.org/W2961798429",
+        "https://openalex.org/W2965825633",
+        "https://openalex.org/W2971301364",
+        "https://openalex.org/W2973604503",
+        "https://openalex.org/W2996617694",
+        "https://openalex.org/W3036078253"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "The": [
+          1
+        ],
+        "study": [
+          2
+        ],
+        "of": [
+          3,
+          30,
+          64,
+          68,
+          80,
+          265,
+          273,
+          296
+        ],
+        "adverse": [
+          4
+        ],
+        "childhood": [
+          5
+        ],
+        "experiences": [
+          6
+        ],
+        "and": [
+          7,
+          44,
+          54,
+          82,
+          95,
+          118,
+          147,
+          168,
+          197,
+          220,
+          240,
+          285,
+          294
+        ],
+        "their": [
+          8
+        ],
+        "consequences": [
+          9
+        ],
+        "has": [
+          10
+        ],
+        "emerged": [
+          11
+        ],
+        "over": [
+          12
+        ],
+        "the": [
+          13,
+          18,
+          25,
+          31,
+          65,
+          69,
+          78,
+          114,
+          203,
+          210,
+          213,
+          231,
+          242,
+          266,
+          274,
+          297,
+          316
+        ],
+        "past": [
+          14
+        ],
+        "20": [
+          15
+        ],
+        "years.": [
+          16
+        ],
+        "Although": [
+          17
+        ],
+        "conclusions": [
+          19
+        ],
+        "from": [
+          20,
+          48,
+          134,
+          188
+        ],
+        "these": [
+          21,
+          49
+        ],
+        "studies": [
+          22
+        ],
+        "are": [
+          23,
+          117
+        ],
+        "available,": [
+          24
+        ],
+        "same": [
+          26
+        ],
+        "is": [
+          27,
+          35,
+          87,
+          150
+        ],
+        "not": [
+          28
+        ],
+        "true": [
+          29
+        ],
+        "data.": [
+          32
+        ],
+        "Accordingly,": [
+          33
+        ],
+        "it": [
+          34
+        ],
+        "a": [
+          36,
+          41,
+          60,
+          151,
+          170,
+          174,
+          199,
+          237,
+          257,
+          277,
+          281,
+          287
+        ],
+        "complex": [
+          37
+        ],
+        "problem": [
+          38
+        ],
+        "to": [
+          39,
+          77,
+          154,
+          163,
+          179,
+          195,
+          209,
+          290,
+          312
+        ],
+        "build": [
+          40,
+          196
+        ],
+        "training": [
+          42
+        ],
+        "set": [
+          43
+        ],
+        "develop": [
+          45
+        ],
+        "machine-learning": [
+          46,
+          105
+        ],
+        "models": [
+          47,
+          149
+        ],
+        "studies.": [
+          50
+        ],
+        "Classic": [
+          51
+        ],
+        "machine": [
+          52,
+          130
+        ],
+        "learning": [
+          53,
+          131
+        ],
+        "artificial": [
+          55,
+          85,
+          166,
+          303
+        ],
+        "intelligence": [
+          56,
+          86,
+          304
+        ],
+        "techniques": [
+          57,
+          109
+        ],
+        "cannot": [
+          58
+        ],
+        "provide": [
+          59,
+          313
+        ],
+        "full": [
+          61
+        ],
+        "scientific": [
+          62
+        ],
+        "understanding": [
+          63
+        ],
+        "inner": [
+          66
+        ],
+        "workings": [
+          67
+        ],
+        "underlying": [
+          70
+        ],
+        "models.": [
+          71
+        ],
+        "This": [
+          72,
+          300
+        ],
+        "raises": [
+          73
+        ],
+        "credibility": [
+          74
+        ],
+        "issues": [
+          75
+        ],
+        "due": [
+          76
+        ],
+        "lack": [
+          79
+        ],
+        "transparency": [
+          81
+        ],
+        "generalizability.": [
+          83
+        ],
+        "Explainable": [
+          84
+        ],
+        "an": [
+          88,
+          189,
+          252,
+          270
+        ],
+        "emerging": [
+          89
+        ],
+        "approach": [
+          90
+        ],
+        "for": [
+          91,
+          173,
+          315
+        ],
+        "promoting": [
+          92
+        ],
+        "credibility,": [
+          93
+        ],
+        "accountability,": [
+          94
+        ],
+        "trust": [
+          96
+        ],
+        "in": [
+          97,
+          260
+        ],
+        "mission-critical": [
+          98
+        ],
+        "areas": [
+          99
+        ],
+        "such": [
+          100
+        ],
+        "as": [
+          101,
+          142,
+          144
+        ],
+        "medicine": [
+          102
+        ],
+        "by": [
+          103,
+          251
+        ],
+        "combining": [
+          104
+        ],
+        "approaches": [
+          106
+        ],
+        "with": [
+          107
+        ],
+        "explanatory": [
+          108
+        ],
+        "that": [
+          110,
+          137,
+          191,
+          223
+        ],
+        "explicitly": [
+          111
+        ],
+        "show": [
+          112
+        ],
+        "what": [
+          113
+        ],
+        "decision": [
+          115
+        ],
+        "criteria": [
+          116
+        ],
+        "why": [
+          119
+        ],
+        "(or": [
+          120
+        ],
+        "how)": [
+          121
+        ],
+        "they": [
+          122,
+          318
+        ],
+        "have": [
+          123,
+          193
+        ],
+        "been": [
+          124
+        ],
+        "established.": [
+          125
+        ],
+        "Hence,": [
+          126
+        ],
+        "thinking": [
+          127
+        ],
+        "about": [
+          128
+        ],
+        "how": [
+          129
+        ],
+        "could": [
+          132
+        ],
+        "benefit": [
+          133
+        ],
+        "knowledge": [
+          135,
+          141,
+          217
+        ],
+        "graphs": [
+          136
+        ],
+        "combine": [
+          138
+        ],
+        "\"common": [
+          139
+        ],
+        "sense\"": [
+          140
+        ],
+        "well": [
+          143
+        ],
+        "semantic": [
+          145
+        ],
+        "reasoning": [
+          146
+        ],
+        "causality": [
+          148
+        ],
+        "potential": [
+          152
+        ],
+        "solution": [
+          153
+        ],
+        "this": [
+          155,
+          159
+        ],
+        "problem.": [
+          156
+        ],
+        "OBJECTIVE:": [
+          157
+        ],
+        "In": [
+          158,
+          207
+        ],
+        "study,": [
+          160
+        ],
+        "we": [
+          161,
+          192,
+          234
+        ],
+        "aimed": [
+          162
+        ],
+        "leverage": [
+          164,
+          224
+        ],
+        "explainable": [
+          165,
+          302
+        ],
+        "intelligence,": [
+          167
+        ],
+        "propose": [
+          169
+        ],
+        "proof-of-concept": [
+          171
+        ],
+        "prototype": [
+          172,
+          215,
+          238,
+          267,
+          305
+        ],
+        "knowledge-driven": [
+          175
+        ],
+        "evidence-based": [
+          176
+        ],
+        "recommendation": [
+          177,
+          221
+        ],
+        "system": [
+          178
+        ],
+        "improve": [
+          180
+        ],
+        "mental": [
+          181
+        ],
+        "health": [
+          182,
+          283,
+          308
+        ],
+        "surveillance.": [
+          183
+        ],
+        "METHODS:": [
+          184
+        ],
+        "We": [
+          185
+        ],
+        "used": [
+          186
+        ],
+        "concepts": [
+          187
+        ],
+        "ontology": [
+          190
+        ],
+        "developed": [
+          194
+        ],
+        "train": [
+          198
+        ],
+        "question-answering": [
+          200,
+          211
+        ],
+        "agent": [
+          201
+        ],
+        "using": [
+          202
+        ],
+        "Google": [
+          204
+        ],
+        "DialogFlow": [
+          205
+        ],
+        "engine.": [
+          206
+        ],
+        "addition": [
+          208
+        ],
+        "agent,": [
+          212
+        ],
+        "initial": [
+          214
+        ],
+        "includes": [
+          216
+        ],
+        "graph": [
+          218,
+          226
+        ],
+        "generation": [
+          219
+        ],
+        "components": [
+          222
+        ],
+        "third-party": [
+          225
+        ],
+        "technology.": [
+          227
+        ],
+        "RESULTS:": [
+          228
+        ],
+        "To": [
+          229
+        ],
+        "showcase": [
+          230
+        ],
+        "framework": [
+          232
+        ],
+        "functionalities,": [
+          233
+        ],
+        "here": [
+          235
+        ],
+        "present": [
+          236
+        ],
+        "design": [
+          239
+        ],
+        "demonstrate": [
+          241
+        ],
+        "main": [
+          243
+        ],
+        "features": [
+          244
+        ],
+        "through": [
+          245,
+          280
+        ],
+        "four": [
+          246
+        ],
+        "use": [
+          247
+        ],
+        "case": [
+          248
+        ],
+        "scenarios": [
+          249
+        ],
+        "motivated": [
+          250
+        ],
+        "initiative": [
+          253
+        ],
+        "currently": [
+          254
+        ],
+        "implemented": [
+          255
+        ],
+        "at": [
+          256
+        ],
+        "children's": [
+          258
+        ],
+        "hospital": [
+          259
+        ],
+        "Memphis,": [
+          261
+        ],
+        "Tennessee.": [
+          262
+        ],
+        "Ongoing": [
+          263
+        ],
+        "development": [
+          264
+        ],
+        "requires": [
+          268
+        ],
+        "implementing": [
+          269
+        ],
+        "optimization": [
+          271
+        ],
+        "algorithm": [
+          272
+        ],
+        "recommendations,": [
+          275
+        ],
+        "incorporating": [
+          276
+        ],
+        "privacy": [
+          278
+        ],
+        "layer": [
+          279
+        ],
+        "personal": [
+          282
+        ],
+        "library,": [
+          284
+        ],
+        "conducting": [
+          286
+        ],
+        "clinical": [
+          288
+        ],
+        "trial": [
+          289
+        ],
+        "assess": [
+          291
+        ],
+        "both": [
+          292
+        ],
+        "usability": [
+          293
+        ],
+        "usefulness": [
+          295
+        ],
+        "implementation.": [
+          298
+        ],
+        "CONCLUSIONS:": [
+          299
+        ],
+        "semantic-driven": [
+          301
+        ],
+        "can": [
+          306
+        ],
+        "enhance": [
+          307
+        ],
+        "care": [
+          309
+        ],
+        "practitioners'": [
+          310
+        ],
+        "ability": [
+          311
+        ],
+        "explanations": [
+          314
+        ],
+        "decisions": [
+          317
+        ],
+        "make.": [
+          319
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 9
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 21
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 12
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 13
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 8
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2020-10-15T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2996617694",
+      "doi": "https://doi.org/10.2196/13498",
+      "title": "Adverse Childhood Experiences Ontology for Mental Health Surveillance, Research, and Evaluation: Advanced Knowledge Representation and Semantic Web Techniques",
+      "display_name": "Adverse Childhood Experiences Ontology for Mental Health Surveillance, Research, and Evaluation: Advanced Knowledge Representation and Semantic Web Techniques",
+      "relevance_score": 187.81117,
+      "publication_year": 2019,
+      "publication_date": "2019-04-02",
+      "ids": {
+        "openalex": "https://openalex.org/W2996617694",
+        "doi": "https://doi.org/10.2196/13498",
+        "mag": "2996617694",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/31115344"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.2196/13498",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/13498",
+        "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764449704",
+          "display_name": "JMIR Mental Health",
+          "issn_l": "2368-7959",
+          "issn": [
+            "2368-7959"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Mental Health",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "arxiv",
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Jon Hael Brenas",
+            "orcid": "https://orcid.org/0000-0001-9395-9365"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jon Hael Brenas",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9395-9365",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Eun Kyong Shin",
+            "orcid": "https://orcid.org/0000-0002-0541-788X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eun Kyong Shin",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0541-788X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Arash Shaban-Nejad",
+            "orcid": "https://orcid.org/0000-0003-2047-4759"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Arash Shaban-Nejad",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2047-4759",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I1289243028",
+        "https://openalex.org/I160606119"
+      ],
+      "apc_list": {
+        "value": 2750,
+        "currency": "USD",
+        "value_usd": 2750
+      },
+      "apc_paid": {
+        "value": 2750,
+        "currency": "USD",
+        "value_usd": 2750
+      },
+      "fwci": 1.1596,
+      "has_fulltext": true,
+      "cited_by_count": 22,
+      "citation_normalized_percentile": {
+        "value": 0.78727805,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "6",
+        "issue": "5",
+        "first_page": "e13498",
+        "last_page": "e13498"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.35749998688697815,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.35749998688697815,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10426",
+          "display_name": "Child Abuse and Trauma",
+          "score": 0.09160000085830688,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3203",
+            "display_name": "Clinical Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12488",
+          "display_name": "Mental Health via Writing",
+          "score": 0.08020000159740448,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7660999894142151
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-health",
+          "display_name": "Mental health",
+          "score": 0.625
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.5354999899864197
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-network",
+          "display_name": "Semantic network",
+          "score": 0.4860000014305115
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-representation-and-reasoning",
+          "display_name": "Knowledge representation and reasoning",
+          "score": 0.47749999165534973
+        },
+        {
+          "id": "https://openalex.org/keywords/representation",
+          "display_name": "Representation (politics)",
+          "score": 0.4490000009536743
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-representation",
+          "display_name": "Mental representation",
+          "score": 0.44600000977516174
+        },
+        {
+          "id": "https://openalex.org/keywords/semantics",
+          "display_name": "Semantics (computer science)",
+          "score": 0.3797000050544739
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7660999894142151
+        },
+        {
+          "id": "https://openalex.org/C134362201",
+          "wikidata": "https://www.wikidata.org/wiki/Q317309",
+          "display_name": "Mental health",
+          "level": 2,
+          "score": 0.625
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.5354999899864197
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5289000272750854
+        },
+        {
+          "id": "https://openalex.org/C85407183",
+          "wikidata": "https://www.wikidata.org/wiki/Q1045785",
+          "display_name": "Semantic network",
+          "level": 2,
+          "score": 0.4860000014305115
+        },
+        {
+          "id": "https://openalex.org/C161301231",
+          "wikidata": "https://www.wikidata.org/wiki/Q3478658",
+          "display_name": "Knowledge representation and reasoning",
+          "level": 2,
+          "score": 0.47749999165534973
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.4490000009536743
+        },
+        {
+          "id": "https://openalex.org/C96199812",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145290",
+          "display_name": "Mental representation",
+          "level": 3,
+          "score": 0.44600000977516174
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.4449000060558319
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.4108999967575073
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3797000050544739
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.3440999984741211
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3305000066757202
+        },
+        {
+          "id": "https://openalex.org/C50382505",
+          "wikidata": "https://www.wikidata.org/wiki/Q2553356",
+          "display_name": "OWL-S",
+          "level": 4,
+          "score": 0.28529998660087585
+        },
+        {
+          "id": "https://openalex.org/C2982912361",
+          "wikidata": "https://www.wikidata.org/wiki/Q1851867",
+          "display_name": "Mental model",
+          "level": 2,
+          "score": 0.27720001339912415
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.27140000462532043
+        },
+        {
+          "id": "https://openalex.org/C110903229",
+          "wikidata": "https://www.wikidata.org/wiki/Q7449064",
+          "display_name": "Semantic integration",
+          "level": 4,
+          "score": 0.2651999890804291
+        },
+        {
+          "id": "https://openalex.org/C2908744105",
+          "wikidata": "https://www.wikidata.org/wiki/Q105821669",
+          "display_name": "Adverse Childhood Experiences",
+          "level": 3,
+          "score": 0.26420000195503235
+        },
+        {
+          "id": "https://openalex.org/C3019659195",
+          "wikidata": "https://www.wikidata.org/wiki/Q5690566",
+          "display_name": "Meaningful use",
+          "level": 3,
+          "score": 0.2630999982357025
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.26080000400543213
+        },
+        {
+          "id": "https://openalex.org/C534406577",
+          "wikidata": "https://www.wikidata.org/wiki/Q7550843",
+          "display_name": "Social Semantic Web",
+          "level": 3,
+          "score": 0.260699987411499
+        },
+        {
+          "id": "https://openalex.org/C2779473830",
+          "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+          "display_name": "MEDLINE",
+          "level": 2,
+          "score": 0.2574000060558319
+        }
+      ],
+      "mesh": [],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.2196/13498",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/13498",
+          "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764449704",
+            "display_name": "JMIR Mental Health",
+            "issn_l": "2368-7959",
+            "issn": [
+              "2368-7959"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR Mental Health",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:31115344",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31115344",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mental health",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:arXiv.org:1912.05530",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/1912.05530",
+          "pdf_url": "https://arxiv.org/pdf/1912.05530",
+          "source": {
+            "id": "https://openalex.org/S4393918464",
+            "display_name": "ArXiv.org",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:5816700",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6707574",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/13498",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/13498",
+        "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764449704",
+          "display_name": "JMIR Mental Health",
+          "issn_l": "2368-7959",
+          "issn": [
+            "2368-7959"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Mental Health",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2996617694.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2996617694.grobid-xml"
+      },
+      "referenced_works_count": 10,
+      "referenced_works": [
+        "https://openalex.org/W1920801162",
+        "https://openalex.org/W2077878361",
+        "https://openalex.org/W2116839388",
+        "https://openalex.org/W2166372248",
+        "https://openalex.org/W2534494754",
+        "https://openalex.org/W2750641905",
+        "https://openalex.org/W2751084379",
+        "https://openalex.org/W2752089765",
+        "https://openalex.org/W2762672046",
+        "https://openalex.org/W2898031839"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Adverse": [
+          1
+        ],
+        "Childhood": [
+          2
+        ],
+        "Experiences": [
+          3
+        ],
+        "(ACEs),": [
+          4
+        ],
+        "a": [
+          5,
+          13,
+          31,
+          81,
+          85,
+          136,
+          221,
+          233
+        ],
+        "set": [
+          6
+        ],
+        "of": [
+          7,
+          30,
+          33,
+          126,
+          138,
+          179,
+          204,
+          218
+        ],
+        "negative": [
+          8,
+          34,
+          209
+        ],
+        "events": [
+          9
+        ],
+        "and": [
+          10,
+          19,
+          37,
+          43,
+          53,
+          62,
+          66,
+          97,
+          100,
+          105,
+          113,
+          117,
+          151,
+          159,
+          175,
+          206,
+          223,
+          226,
+          235,
+          239,
+          248,
+          254
+        ],
+        "processes": [
+          11
+        ],
+        "that": [
+          12,
+          211
+        ],
+        "person": [
+          14
+        ],
+        "might": [
+          15,
+          213
+        ],
+        "encounter": [
+          16,
+          214
+        ],
+        "during": [
+          17
+        ],
+        "childhood": [
+          18
+        ],
+        "adolescence,": [
+          20
+        ],
+        "have": [
+          21,
+          170
+        ],
+        "been": [
+          22,
+          149,
+          171
+        ],
+        "proven": [
+          23
+        ],
+        "to": [
+          24,
+          27,
+          63,
+          71,
+          87,
+          93,
+          101,
+          119,
+          154,
+          173,
+          188,
+          215,
+          250
+        ],
+        "be": [
+          25,
+          189
+        ],
+        "linked": [
+          26
+        ],
+        "increased": [
+          28
+        ],
+        "risks": [
+          29
+        ],
+        "multitude": [
+          32
+        ],
+        "health": [
+          35,
+          60,
+          91,
+          157,
+          246
+        ],
+        "outcomes": [
+          36,
+          61,
+          210
+        ],
+        "conditions": [
+          38
+        ],
+        "when": [
+          39
+        ],
+        "children": [
+          40
+        ],
+        "reach": [
+          41
+        ],
+        "adulthood": [
+          42
+        ],
+        "beyond.": [
+          44
+        ],
+        "OBJECTIVE:": [
+          45
+        ],
+        "To": [
+          46
+        ],
+        "better": [
+          47
+        ],
+        "understand": [
+          48
+        ],
+        "the": [
+          49,
+          89,
+          121,
+          127,
+          132,
+          155,
+          160,
+          163,
+          177,
+          180,
+          195,
+          202,
+          216
+        ],
+        "relationship": [
+          50
+        ],
+        "between": [
+          51
+        ],
+        "ACEs": [
+          52,
+          146,
+          196,
+          219,
+          230
+        ],
+        "their": [
+          54
+        ],
+        "relevant": [
+          55
+        ],
+        "risk": [
+          56
+        ],
+        "factors": [
+          57
+        ],
+        "with": [
+          58,
+          198
+        ],
+        "associated": [
+          59
+        ],
+        "eventually": [
+          64
+        ],
+        "design": [
+          65
+        ],
+        "implement": [
+          67,
+          120
+        ],
+        "preventive": [
+          68
+        ],
+        "interventions,": [
+          69
+        ],
+        "access": [
+          70
+        ],
+        "an": [
+          72,
+          240
+        ],
+        "integrated": [
+          73,
+          241
+        ],
+        "coherent": [
+          74
+        ],
+        "dataset": [
+          75
+        ],
+        "is": [
+          76,
+          129
+        ],
+        "needed.": [
+          77
+        ],
+        "Therefore,": [
+          78
+        ],
+        "we": [
+          79
+        ],
+        "implemented": [
+          80,
+          150
+        ],
+        "formal": [
+          82
+        ],
+        "ontology": [
+          83,
+          128,
+          181,
+          185
+        ],
+        "as": [
+          84
+        ],
+        "resource": [
+          86
+        ],
+        "allow": [
+          88
+        ],
+        "mental": [
+          90,
+          156,
+          245
+        ],
+        "community": [
+          92,
+          158,
+          197
+        ],
+        "facilitate": [
+          94
+        ],
+        "data": [
+          95
+        ],
+        "integration": [
+          96
+        ],
+        "knowledge": [
+          98,
+          111,
+          242
+        ],
+        "modeling": [
+          99
+        ],
+        "improve": [
+          102,
+          251
+        ],
+        "ACEs'": [
+          103,
+          252
+        ],
+        "surveillance": [
+          104,
+          253
+        ],
+        "research.": [
+          106
+        ],
+        "METHODS:": [
+          107
+        ],
+        "We": [
+          108
+        ],
+        "use": [
+          109
+        ],
+        "advanced": [
+          110
+        ],
+        "representation": [
+          112
+        ],
+        "semantic": [
+          114,
+          237
+        ],
+        "Web": [
+          115,
+          139
+        ],
+        "tools": [
+          116
+        ],
+        "techniques": [
+          118
+        ],
+        "ontology.": [
+          122
+        ],
+        "The": [
+          123,
+          145,
+          184,
+          229
+        ],
+        "current": [
+          124
+        ],
+        "implementation": [
+          125
+        ],
+        "expressed": [
+          130
+        ],
+        "in": [
+          131,
+          182,
+          194,
+          220
+        ],
+        "description": [
+          133
+        ],
+        "logic": [
+          134
+        ],
+        "ALCRIQ(D),": [
+          135
+        ],
+        "sublogic": [
+          137
+        ],
+        "Ontology": [
+          140,
+          147,
+          231
+        ],
+        "Language": [
+          141
+        ],
+        "(OWL": [
+          142
+        ],
+        "2).": [
+          143
+        ],
+        "RESULTS:": [
+          144
+        ],
+        "has": [
+          148
+        ],
+        "made": [
+          152
+        ],
+        "available": [
+          153
+        ],
+        "public": [
+          161
+        ],
+        "via": [
+          162
+        ],
+        "BioPortal": [
+          164
+        ],
+        "repository.": [
+          165
+        ],
+        "Moreover,": [
+          166
+        ],
+        "multiple": [
+          167
+        ],
+        "use-case": [
+          168
+        ],
+        "scenarios": [
+          169
+        ],
+        "introduced": [
+          172
+        ],
+        "showcase": [
+          174
+        ],
+        "evaluate": [
+          176
+        ],
+        "usability": [
+          178
+        ],
+        "action.": [
+          183
+        ],
+        "was": [
+          186
+        ],
+        "created": [
+          187
+        ],
+        "used": [
+          190
+        ],
+        "by": [
+          191
+        ],
+        "major": [
+          192
+        ],
+        "actors": [
+          193
+        ],
+        "different": [
+          199
+        ],
+        "applications,": [
+          200
+        ],
+        "from": [
+          201
+        ],
+        "diagnosis": [
+          203
+        ],
+        "individuals": [
+          205
+        ],
+        "predicting": [
+          207
+        ],
+        "potential": [
+          208
+        ],
+        "they": [
+          212
+        ],
+        "prevention": [
+          217
+        ],
+        "population": [
+          222
+        ],
+        "designing": [
+          224
+        ],
+        "interventions": [
+          225
+        ],
+        "policies.": [
+          227
+        ],
+        "CONCLUSIONS:": [
+          228
+        ],
+        "provides": [
+          232
+        ],
+        "uniform": [
+          234
+        ],
+        "reusable": [
+          236
+        ],
+        "network": [
+          238
+        ],
+        "structure": [
+          243
+        ],
+        "for": [
+          244
+        ],
+        "practitioners": [
+          247
+        ],
+        "researchers": [
+          249
+        ],
+        "evaluation.": [
+          255
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2019-12-26T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4293332536",
+      "doi": "https://doi.org/10.48550/arxiv.2208.11701",
+      "title": "Ontology-Driven Self-Supervision for Adverse Childhood Experiences Identification Using Social Media Datasets",
+      "display_name": "Ontology-Driven Self-Supervision for Adverse Childhood Experiences Identification Using Social Media Datasets",
+      "relevance_score": 89.70865,
+      "publication_year": 2022,
+      "publication_date": "2022-08-24",
+      "ids": {
+        "openalex": "https://openalex.org/W4293332536",
+        "doi": "https://doi.org/10.48550/arxiv.2208.11701"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:eprints.gla.ac.uk:326982",
+        "is_oa": true,
+        "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210235606",
+          "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+          "issn_l": "2622-8912",
+          "issn": [
+            "2622-8912",
+            "2622-8920"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Articles"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "arxiv",
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5089428279",
+            "display_name": "Jinge Wu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wu, Jinge",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112055160",
+            "display_name": "Rowena Smith",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Smith, Rowena",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5043821806",
+            "display_name": "Honghan Wu",
+            "orcid": "https://orcid.org/0000-0002-0213-5668"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wu, Honghan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12488",
+        "display_name": "Mental Health via Writing",
+        "score": 0.9559000134468079,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3207",
+          "display_name": "Social Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12488",
+          "display_name": "Mental Health via Writing",
+          "score": 0.9559000134468079,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6886042356491089
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6551552414894104
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.6479239463806152
+        },
+        {
+          "id": "https://openalex.org/keywords/natural-language-processing",
+          "display_name": "Natural language processing",
+          "score": 0.6373991966247559
+        },
+        {
+          "id": "https://openalex.org/keywords/identification",
+          "display_name": "Identification (biology)",
+          "score": 0.5300564169883728
+        },
+        {
+          "id": "https://openalex.org/keywords/annotation",
+          "display_name": "Annotation",
+          "score": 0.5045169591903687
+        },
+        {
+          "id": "https://openalex.org/keywords/machine-learning",
+          "display_name": "Machine learning",
+          "score": 0.4892311096191406
+        },
+        {
+          "id": "https://openalex.org/keywords/social-media",
+          "display_name": "Social media",
+          "score": 0.48054319620132446
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.4705999791622162
+        },
+        {
+          "id": "https://openalex.org/keywords/named-entity-recognition",
+          "display_name": "Named-entity recognition",
+          "score": 0.4688979685306549
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.36133813858032227
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.32031679153442383
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.31115514039993286
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6886042356491089
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6551552414894104
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.6479239463806152
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.6373991966247559
+        },
+        {
+          "id": "https://openalex.org/C116834253",
+          "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+          "display_name": "Identification (biology)",
+          "level": 2,
+          "score": 0.5300564169883728
+        },
+        {
+          "id": "https://openalex.org/C2776321320",
+          "wikidata": "https://www.wikidata.org/wiki/Q857525",
+          "display_name": "Annotation",
+          "level": 2,
+          "score": 0.5045169591903687
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.4892311096191406
+        },
+        {
+          "id": "https://openalex.org/C518677369",
+          "wikidata": "https://www.wikidata.org/wiki/Q202833",
+          "display_name": "Social media",
+          "level": 2,
+          "score": 0.48054319620132446
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.4705999791622162
+        },
+        {
+          "id": "https://openalex.org/C2779135771",
+          "wikidata": "https://www.wikidata.org/wiki/Q403574",
+          "display_name": "Named-entity recognition",
+          "level": 3,
+          "score": 0.4688979685306549
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.36133813858032227
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.32031679153442383
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.31115514039993286
+        },
+        {
+          "id": "https://openalex.org/C31258907",
+          "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+          "display_name": "Computer network",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2780451532",
+          "wikidata": "https://www.wikidata.org/wiki/Q759676",
+          "display_name": "Task (project management)",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C187736073",
+          "wikidata": "https://www.wikidata.org/wiki/Q2920921",
+          "display_name": "Management",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C59822182",
+          "wikidata": "https://www.wikidata.org/wiki/Q441",
+          "display_name": "Botany",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "pmh:oai:eprints.gla.ac.uk:326982",
+          "is_oa": true,
+          "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210235606",
+            "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+            "issn_l": "2622-8912",
+            "issn": [
+              "2622-8912",
+              "2622-8920"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Articles"
+        },
+        {
+          "id": "pmh:oai:arXiv.org:2208.11701",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2208.11701",
+          "pdf_url": "https://arxiv.org/pdf/2208.11701",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "text"
+        },
+        {
+          "id": "doi:10.48550/arxiv.2208.11701",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.48550/arxiv.2208.11701",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Preprint"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:eprints.gla.ac.uk:326982",
+        "is_oa": true,
+        "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210235606",
+          "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+          "issn_l": "2622-8912",
+          "issn": [
+            "2622-8912",
+            "2622-8920"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Articles"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Quality Education",
+          "score": 0.7099999785423279,
+          "id": "https://metadata.un.org/sdg/4"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G5436805323",
+          "display_name": "Artificial Intelligence and Multimorbidity: Clustering in Individuals, Space and Clinical Context (AIM-CISC)",
+          "funder_award_id": "NIHR202639",
+          "funder_id": "https://openalex.org/F4320319990",
+          "funder_display_name": "National Institute for Health and Care Research"
+        },
+        {
+          "id": "https://openalex.org/G7475414022",
+          "display_name": "Deriving an actionable patient phenome from healthcare data",
+          "funder_award_id": "MR/S004149/2",
+          "funder_id": "https://openalex.org/F4320334626",
+          "funder_display_name": "Medical Research Council"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320319990",
+          "display_name": "National Institute for Health and Care Research",
+          "ror": "https://ror.org/0187kwz08"
+        },
+        {
+          "id": "https://openalex.org/F4320334626",
+          "display_name": "Medical Research Council",
+          "ror": "https://ror.org/03x94j517"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2361861616",
+        "https://openalex.org/W2263699433",
+        "https://openalex.org/W2377979023",
+        "https://openalex.org/W2218034408",
+        "https://openalex.org/W2392921965",
+        "https://openalex.org/W2358755282",
+        "https://openalex.org/W2625833328",
+        "https://openalex.org/W1533177136",
+        "https://openalex.org/W4377865234"
+      ],
+      "abstract_inverted_index": {
+        "Adverse": [
+          0
+        ],
+        "Childhood": [
+          1
+        ],
+        "Experiences": [
+          2
+        ],
+        "(ACEs)": [
+          3
+        ],
+        "are": [
+          4,
+          63,
+          71,
+          152
+        ],
+        "defined": [
+          5
+        ],
+        "as": [
+          6,
+          146,
+          148
+        ],
+        "a": [
+          7,
+          123,
+          182
+        ],
+        "collection": [
+          8
+        ],
+        "of": [
+          9,
+          34,
+          48,
+          94,
+          184
+        ],
+        "highly": [
+          10
+        ],
+        "stressful,": [
+          11
+        ],
+        "and": [
+          12,
+          91,
+          191
+        ],
+        "potentially": [
+          13
+        ],
+        "traumatic,": [
+          14
+        ],
+        "events": [
+          15
+        ],
+        "or": [
+          16,
+          38
+        ],
+        "circumstances": [
+          17
+        ],
+        "that": [
+          18,
+          127
+        ],
+        "occur": [
+          19
+        ],
+        "throughout": [
+          20
+        ],
+        "childhood": [
+          21
+        ],
+        "and/or": [
+          22
+        ],
+        "adolescence.": [
+          23
+        ],
+        "They": [
+          24
+        ],
+        "have": [
+          25
+        ],
+        "been": [
+          26
+        ],
+        "shown": [
+          27
+        ],
+        "to": [
+          28,
+          154
+        ],
+        "be": [
+          29
+        ],
+        "associated": [
+          30
+        ],
+        "with": [
+          31,
+          53
+        ],
+        "increased": [
+          32
+        ],
+        "risks": [
+          33
+        ],
+        "mental": [
+          35
+        ],
+        "health": [
+          36
+        ],
+        "diseases": [
+          37
+        ],
+        "other": [
+          39
+        ],
+        "abnormal": [
+          40
+        ],
+        "behaviours": [
+          41
+        ],
+        "in": [
+          42,
+          158,
+          167
+        ],
+        "later": [
+          43
+        ],
+        "lives.": [
+          44
+        ],
+        "However,": [
+          45
+        ],
+        "the": [
+          46,
+          79,
+          149,
+          156,
+          192
+        ],
+        "identification": [
+          47
+        ],
+        "ACEs": [
+          49,
+          166
+        ],
+        "from": [
+          50,
+          82,
+          117
+        ],
+        "textual": [
+          51
+        ],
+        "data": [
+          52,
+          80
+        ],
+        "Natural": [
+          54
+        ],
+        "Language": [
+          55
+        ],
+        "Processing": [
+          56
+        ],
+        "(NLP)": [
+          57
+        ],
+        "is": [
+          58,
+          196
+        ],
+        "challenging": [
+          59
+        ],
+        "because": [
+          60
+        ],
+        "(a)": [
+          61
+        ],
+        "there": [
+          62,
+          70
+        ],
+        "no": [
+          64
+        ],
+        "NLP": [
+          65,
+          119,
+          161,
+          171,
+          193
+        ],
+        "ready": [
+          66
+        ],
+        "ACE": [
+          67,
+          185,
+          188
+        ],
+        "ontologies;": [
+          68
+        ],
+        "(b)": [
+          69
+        ],
+        "few": [
+          72
+        ],
+        "resources": [
+          73
+        ],
+        "available": [
+          74,
+          125,
+          197
+        ],
+        "for": [
+          75,
+          96,
+          121,
+          163
+        ],
+        "machine": [
+          76,
+          99,
+          131
+        ],
+        "learning,": [
+          77
+        ],
+        "necessitating": [
+          78
+        ],
+        "annotation": [
+          81
+        ],
+        "clinical": [
+          83,
+          173
+        ],
+        "experts;": [
+          84
+        ],
+        "(c)": [
+          85
+        ],
+        "costly": [
+          86
+        ],
+        "annotations": [
+          87
+        ],
+        "by": [
+          88
+        ],
+        "domain": [
+          89
+        ],
+        "experts": [
+          90
+        ],
+        "large": [
+          92,
+          98,
+          137
+        ],
+        "number": [
+          93
+        ],
+        "documents": [
+          95
+        ],
+        "supporting": [
+          97
+        ],
+        "learning": [
+          100,
+          132
+        ],
+        "models.": [
+          101
+        ],
+        "In": [
+          102
+        ],
+        "this": [
+          103
+        ],
+        "paper,": [
+          104
+        ],
+        "we": [
+          105
+        ],
+        "present": [
+          106
+        ],
+        "an": [
+          107,
+          115
+        ],
+        "ontology-driven": [
+          108
+        ],
+        "self-supervised": [
+          109
+        ],
+        "approach": [
+          110,
+          151
+        ],
+        "(derive": [
+          111
+        ],
+        "concept": [
+          112,
+          189
+        ],
+        "embeddings": [
+          113,
+          190
+        ],
+        "using": [
+          114
+        ],
+        "auto-encoder": [
+          116
+        ],
+        "baseline": [
+          118
+        ],
+        "results)": [
+          120
+        ],
+        "producing": [
+          122
+        ],
+        "publicly": [
+          124
+        ],
+        "resource": [
+          126,
+          145,
+          180
+        ],
+        "would": [
+          128
+        ],
+        "support": [
+          129
+        ],
+        "large-scale": [
+          130
+        ],
+        "(e.g.,": [
+          133
+        ],
+        "training": [
+          134,
+          159
+        ],
+        "transformer": [
+          135
+        ],
+        "based": [
+          136
+        ],
+        "language": [
+          138
+        ],
+        "models)": [
+          139
+        ],
+        "on": [
+          140,
+          172
+        ],
+        "social": [
+          141
+        ],
+        "media": [
+          142
+        ],
+        "corpus.": [
+          143
+        ],
+        "This": [
+          144
+        ],
+        "well": [
+          147
+        ],
+        "proposed": [
+          150
+        ],
+        "aimed": [
+          153
+        ],
+        "facilitate": [
+          155
+        ],
+        "community": [
+          157
+        ],
+        "transferable": [
+          160
+        ],
+        "models": [
+          162
+        ],
+        "effectively": [
+          164
+        ],
+        "surfacing": [
+          165
+        ],
+        "low-resource": [
+          168
+        ],
+        "scenarios": [
+          169
+        ],
+        "like": [
+          170
+        ],
+        "notes": [
+          174
+        ],
+        "within": [
+          175
+        ],
+        "Electronic": [
+          176
+        ],
+        "Health": [
+          177
+        ],
+        "Records.": [
+          178
+        ],
+        "The": [
+          179
+        ],
+        "including": [
+          181
+        ],
+        "list": [
+          183
+        ],
+        "ontology": [
+          186
+        ],
+        "terms,": [
+          187
+        ],
+        "annotated": [
+          194
+        ],
+        "corpus": [
+          195
+        ],
+        "at": [
+          198
+        ],
+        "https://github.com/knowlab/ACE-NLP.": [
+          199
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2023,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4293168019",
+      "doi": "https://doi.org/10.48550/arxiv.2208.11466",
+      "title": "Adverse Childhood Experiences Identification from Clinical Notes with Ontologies and NLP",
+      "display_name": "Adverse Childhood Experiences Identification from Clinical Notes with Ontologies and NLP",
+      "relevance_score": 21.088196,
+      "publication_year": 2022,
+      "publication_date": "2022-08-24",
+      "ids": {
+        "openalex": "https://openalex.org/W4293168019",
+        "doi": "https://doi.org/10.48550/arxiv.2208.11466"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:eprints.gla.ac.uk:326979",
+        "is_oa": true,
+        "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210235606",
+          "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+          "issn_l": "2622-8912",
+          "issn": [
+            "2622-8912",
+            "2622-8920"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Articles"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "arxiv",
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5089428279",
+            "display_name": "Jinge Wu",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wu, Jinge",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112055160",
+            "display_name": "Rowena Smith",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Smith, Rowena",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5043821806",
+            "display_name": "Honghan Wu",
+            "orcid": "https://orcid.org/0000-0002-0213-5668"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wu, Honghan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11633",
+        "display_name": "Prenatal Substance Exposure Effects",
+        "score": 0.8851000070571899,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2735",
+          "display_name": "Pediatrics, Perinatology and Child Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11633",
+          "display_name": "Prenatal Substance Exposure Effects",
+          "score": 0.8851000070571899,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2735",
+            "display_name": "Pediatrics, Perinatology and Child Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10426",
+          "display_name": "Child Abuse and Trauma",
+          "score": 0.867900013923645,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3203",
+            "display_name": "Clinical Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10043",
+          "display_name": "Substance Abuse Treatment and Outcomes",
+          "score": 0.7937999963760376,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2713",
+            "display_name": "Epidemiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/identification",
+          "display_name": "Identification (biology)",
+          "score": 0.6879070997238159
+        },
+        {
+          "id": "https://openalex.org/keywords/adverse-childhood-experiences",
+          "display_name": "Adverse Childhood Experiences",
+          "score": 0.5946742296218872
+        },
+        {
+          "id": "https://openalex.org/keywords/health-records",
+          "display_name": "Health records",
+          "score": 0.536423921585083
+        },
+        {
+          "id": "https://openalex.org/keywords/annotation",
+          "display_name": "Annotation",
+          "score": 0.48545604944229126
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-health",
+          "display_name": "Mental health",
+          "score": 0.44519102573394775
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.43462204933166504
+        },
+        {
+          "id": "https://openalex.org/keywords/natural-language-processing",
+          "display_name": "Natural language processing",
+          "score": 0.42109283804893494
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-illness",
+          "display_name": "Mental illness",
+          "score": 0.41817939281463623
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.38017675280570984
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.3521948456764221
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.340692937374115
+        },
+        {
+          "id": "https://openalex.org/keywords/psychiatry",
+          "display_name": "Psychiatry",
+          "score": 0.3283630609512329
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.3240344524383545
+        },
+        {
+          "id": "https://openalex.org/keywords/health-care",
+          "display_name": "Health care",
+          "score": 0.1093137264251709
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C116834253",
+          "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+          "display_name": "Identification (biology)",
+          "level": 2,
+          "score": 0.6879070997238159
+        },
+        {
+          "id": "https://openalex.org/C2908744105",
+          "wikidata": "https://www.wikidata.org/wiki/Q105821669",
+          "display_name": "Adverse Childhood Experiences",
+          "level": 3,
+          "score": 0.5946742296218872
+        },
+        {
+          "id": "https://openalex.org/C3019952477",
+          "wikidata": "https://www.wikidata.org/wiki/Q1324077",
+          "display_name": "Health records",
+          "level": 3,
+          "score": 0.536423921585083
+        },
+        {
+          "id": "https://openalex.org/C2776321320",
+          "wikidata": "https://www.wikidata.org/wiki/Q857525",
+          "display_name": "Annotation",
+          "level": 2,
+          "score": 0.48545604944229126
+        },
+        {
+          "id": "https://openalex.org/C134362201",
+          "wikidata": "https://www.wikidata.org/wiki/Q317309",
+          "display_name": "Mental health",
+          "level": 2,
+          "score": 0.44519102573394775
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.43462204933166504
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.42109283804893494
+        },
+        {
+          "id": "https://openalex.org/C2776674806",
+          "wikidata": "https://www.wikidata.org/wiki/Q12135",
+          "display_name": "Mental illness",
+          "level": 3,
+          "score": 0.41817939281463623
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.38017675280570984
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.3521948456764221
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.340692937374115
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.3283630609512329
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.3240344524383545
+        },
+        {
+          "id": "https://openalex.org/C160735492",
+          "wikidata": "https://www.wikidata.org/wiki/Q31207",
+          "display_name": "Health care",
+          "level": 2,
+          "score": 0.1093137264251709
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C50522688",
+          "wikidata": "https://www.wikidata.org/wiki/Q189833",
+          "display_name": "Economic growth",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C59822182",
+          "wikidata": "https://www.wikidata.org/wiki/Q441",
+          "display_name": "Botany",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "pmh:oai:eprints.gla.ac.uk:326979",
+          "is_oa": true,
+          "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210235606",
+            "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+            "issn_l": "2622-8912",
+            "issn": [
+              "2622-8912",
+              "2622-8920"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Articles"
+        },
+        {
+          "id": "pmh:oai:arXiv.org:2208.11466",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2208.11466",
+          "pdf_url": "https://arxiv.org/pdf/2208.11466",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "text"
+        },
+        {
+          "id": "doi:10.48550/arxiv.2208.11466",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.48550/arxiv.2208.11466",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Preprint"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:eprints.gla.ac.uk:326979",
+        "is_oa": true,
+        "landing_page_url": "https://eprints.gla.ac.uk/view/author/77060.html>",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210235606",
+          "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+          "issn_l": "2622-8912",
+          "issn": [
+            "2622-8912",
+            "2622-8920"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Articles"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Quality Education",
+          "score": 0.7799999713897705,
+          "id": "https://metadata.un.org/sdg/4"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G956835308",
+          "display_name": null,
+          "funder_award_id": "MR/S004149/1",
+          "funder_id": "https://openalex.org/F4320334626",
+          "funder_display_name": "Medical Research Council"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320334626",
+          "display_name": "Medical Research Council",
+          "ror": "https://ror.org/03x94j517"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2361861616",
+        "https://openalex.org/W2263699433",
+        "https://openalex.org/W2377979023",
+        "https://openalex.org/W2218034408",
+        "https://openalex.org/W2392921965",
+        "https://openalex.org/W2358755282",
+        "https://openalex.org/W2625833328",
+        "https://openalex.org/W1533177136",
+        "https://openalex.org/W4380994516",
+        "https://openalex.org/W2251519152"
+      ],
+      "abstract_inverted_index": {
+        "Adverse": [
+          0
+        ],
+        "Childhood": [
+          1
+        ],
+        "Experiences": [
+          2
+        ],
+        "(ACEs)": [
+          3
+        ],
+        "are": [
+          4,
+          74,
+          89
+        ],
+        "defined": [
+          5
+        ],
+        "as": [
+          6
+        ],
+        "a": [
+          7,
+          92
+        ],
+        "collection": [
+          8
+        ],
+        "of": [
+          9,
+          34,
+          48,
+          117,
+          126
+        ],
+        "highly": [
+          10
+        ],
+        "stressful,": [
+          11
+        ],
+        "and": [
+          12,
+          122,
+          133
+        ],
+        "potentially": [
+          13
+        ],
+        "traumatic,": [
+          14
+        ],
+        "events": [
+          15
+        ],
+        "or": [
+          16,
+          38
+        ],
+        "circumstances": [
+          17
+        ],
+        "that": [
+          18,
+          94
+        ],
+        "occur": [
+          19
+        ],
+        "throughout": [
+          20
+        ],
+        "childhood": [
+          21
+        ],
+        "and/or": [
+          22
+        ],
+        "adolescence.": [
+          23
+        ],
+        "They": [
+          24
+        ],
+        "have": [
+          25
+        ],
+        "been": [
+          26,
+          141
+        ],
+        "shown": [
+          27
+        ],
+        "to": [
+          28,
+          99
+        ],
+        "be": [
+          29
+        ],
+        "associated": [
+          30
+        ],
+        "with": [
+          31,
+          56
+        ],
+        "increased": [
+          32
+        ],
+        "risks": [
+          33
+        ],
+        "mental": [
+          35,
+          127
+        ],
+        "health": [
+          36
+        ],
+        "diseases": [
+          37
+        ],
+        "other": [
+          39
+        ],
+        "abnormal": [
+          40
+        ],
+        "behaviours": [
+          41
+        ],
+        "in": [
+          42,
+          102,
+          114,
+          131
+        ],
+        "later": [
+          43
+        ],
+        "lives.": [
+          44
+        ],
+        "However,": [
+          45
+        ],
+        "the": [
+          46,
+          82,
+          118,
+          123
+        ],
+        "identification": [
+          47
+        ],
+        "ACEs": [
+          49,
+          104,
+          121
+        ],
+        "from": [
+          50,
+          85,
+          105
+        ],
+        "free-text": [
+          51,
+          135
+        ],
+        "Electronic": [
+          52
+        ],
+        "Health": [
+          53
+        ],
+        "Records": [
+          54
+        ],
+        "(EHRs)": [
+          55
+        ],
+        "Natural": [
+          57
+        ],
+        "Language": [
+          58
+        ],
+        "Processing": [
+          59
+        ],
+        "(NLP)": [
+          60
+        ],
+        "is": [
+          61,
+          66
+        ],
+        "challenging": [
+          62
+        ],
+        "because": [
+          63
+        ],
+        "(a)": [
+          64
+        ],
+        "there": [
+          65,
+          73
+        ],
+        "no": [
+          67
+        ],
+        "NLP": [
+          68,
+          97
+        ],
+        "ready": [
+          69
+        ],
+        "ACE": [
+          70
+        ],
+        "ontologies;": [
+          71
+        ],
+        "(b)": [
+          72
+        ],
+        "limited": [
+          75
+        ],
+        "cases": [
+          76
+        ],
+        "available": [
+          77
+        ],
+        "for": [
+          78
+        ],
+        "machine": [
+          79
+        ],
+        "learning,": [
+          80
+        ],
+        "necessitating": [
+          81
+        ],
+        "data": [
+          83
+        ],
+        "annotation": [
+          84
+        ],
+        "clinical": [
+          86,
+          106
+        ],
+        "experts.": [
+          87
+        ],
+        "We": [
+          88
+        ],
+        "currently": [
+          90
+        ],
+        "developing": [
+          91
+        ],
+        "tool": [
+          93
+        ],
+        "would": [
+          95
+        ],
+        "use": [
+          96
+        ],
+        "techniques": [
+          98
+        ],
+        "assist": [
+          100
+        ],
+        "us": [
+          101,
+          111
+        ],
+        "surfacing": [
+          103
+        ],
+        "notes.": [
+          107
+        ],
+        "This": [
+          108
+        ],
+        "will": [
+          109
+        ],
+        "enable": [
+          110
+        ],
+        "further": [
+          112
+        ],
+        "research": [
+          113
+        ],
+        "identifying": [
+          115
+        ],
+        "evidence": [
+          116
+        ],
+        "relationship": [
+          119
+        ],
+        "between": [
+          120
+        ],
+        "subsequent": [
+          124
+        ],
+        "developments": [
+          125
+        ],
+        "illness": [
+          128
+        ],
+        "(e.g.,": [
+          129
+        ],
+        "addictions)": [
+          130
+        ],
+        "large-scale": [
+          132
+        ],
+        "longitudinal": [
+          134
+        ],
+        "EHRs,": [
+          136
+        ],
+        "which": [
+          137
+        ],
+        "has": [
+          138
+        ],
+        "previously": [
+          139
+        ],
+        "not": [
+          140
+        ],
+        "possible.": [
+          142
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4404610757",
+      "doi": "https://doi.org/10.1007/978-3-031-77792-9_16",
+      "title": "Understanding Inflicted Injuries in Young Children: Toward an Ontology Based Approach",
+      "display_name": "Understanding Inflicted Injuries in Young Children: Toward an Ontology Based Approach",
+      "relevance_score": 11.444023,
+      "publication_year": 2024,
+      "publication_date": "2024-11-20",
+      "ids": {
+        "openalex": "https://openalex.org/W4404610757",
+        "doi": "https://doi.org/10.1007/978-3-031-77792-9_16"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-77792-9_16",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-77792-9_16",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S106296714",
+          "display_name": "Lecture notes in computer science",
+          "issn_l": "0302-9743",
+          "issn": [
+            "0302-9743",
+            "1611-3349"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Lecture Notes in Computer Science",
+        "raw_type": "book-chapter"
+      },
+      "type": "book-chapter",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5042622518",
+            "display_name": "Fatima Maikore",
+            "orcid": "https://orcid.org/0000-0001-8294-5283"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Fatima Maikore",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8294-5283",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5013832591",
+            "display_name": "Suvodeep Mazumdar",
+            "orcid": "https://orcid.org/0000-0002-0748-7638"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Suvodeep Mazumdar",
+          "raw_affiliation_strings": [
+            "Information School, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0748-7638",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Information School, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060164558",
+            "display_name": "Amaka C Offiah",
+            "orcid": "https://orcid.org/0000-0001-8991-5036"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Amaka Offiah",
+          "raw_affiliation_strings": [
+            "School of Medicine and Population Health, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8991-5036",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Medicine and Population Health, Sheffield, UK",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103015346",
+            "display_name": "Anthony Hughes",
+            "orcid": "https://orcid.org/0009-0003-4065-1094"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anthony Hughes",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0003-4065-1094",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090639890",
+            "display_name": "Sneha Roychowdhury",
+            "orcid": "https://orcid.org/0000-0002-9364-3499"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sneha Roychowdhury",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9364-3499",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5114746617",
+            "display_name": "Katie Hocking",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210102902",
+              "display_name": "Sheffield Teaching Hospitals NHS Foundation Trust",
+              "ror": "https://ror.org/018hjpz25",
+              "country_code": "GB",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I4210102902"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Katie Hocking",
+          "raw_affiliation_strings": [
+            "Sheffield Teaching Hospitals NHS Foundation Trust, Sheffield, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Sheffield Teaching Hospitals NHS Foundation Trust, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I4210102902"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030717108",
+            "display_name": "Vitaveska Lanfranchi",
+            "orcid": "https://orcid.org/0000-0003-3148-2535"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vitaveska Lanfranchi",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3148-2535",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5013832591",
+        "https://openalex.org/A5042622518"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I91136226"
+      ],
+      "apc_list": {
+        "value": 5000,
+        "currency": "EUR",
+        "value_usd": 5392
+      },
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.64468468,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "260",
+        "last_page": "270"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11824",
+        "display_name": "Injury Epidemiology and Prevention",
+        "score": 0.9850000143051147,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11824",
+          "display_name": "Injury Epidemiology and Prevention",
+          "score": 0.9850000143051147,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10416",
+          "display_name": "Traumatic Brain Injury Research",
+          "score": 0.9790999889373779,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2713",
+            "display_name": "Epidemiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7471417188644409
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6791585683822632
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-security",
+          "display_name": "Computer security",
+          "score": 0.3650960624217987
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.08975782990455627
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7471417188644409
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6791585683822632
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.3650960624217987
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.08975782990455627
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1007/978-3-031-77792-9_16",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-77792-9_16",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S106296714",
+            "display_name": "Lecture notes in computer science",
+            "issn_l": "0302-9743",
+            "issn": [
+              "0302-9743",
+              "1611-3349"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "book series"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Lecture Notes in Computer Science",
+          "raw_type": "book-chapter"
+        },
+        {
+          "id": "pmh:oai:eprints.whiterose.ac.uk:220624",
+          "is_oa": true,
+          "landing_page_url": "https://orcid.org/0000-0001-8294-5283>,",
+          "pdf_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400854",
+            "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2800616092",
+            "host_organization_name": "White Rose University Consortium",
+            "host_organization_lineage": [
+              "https://openalex.org/I2800616092"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Proceedings Paper"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:eprints.whiterose.ac.uk:220624",
+        "is_oa": true,
+        "landing_page_url": "https://orcid.org/0000-0001-8294-5283>,",
+        "pdf_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400854",
+          "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2800616092",
+          "host_organization_name": "White Rose University Consortium",
+          "host_organization_lineage": [
+            "https://openalex.org/I2800616092"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Proceedings Paper"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Gender equality",
+          "score": 0.5199999809265137,
+          "id": "https://metadata.un.org/sdg/5"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4404610757.pdf"
+      },
+      "referenced_works_count": 27,
+      "referenced_works": [
+        "https://openalex.org/W2007870907",
+        "https://openalex.org/W2013496295",
+        "https://openalex.org/W2033269807",
+        "https://openalex.org/W2045231044",
+        "https://openalex.org/W2073194617",
+        "https://openalex.org/W2104700039",
+        "https://openalex.org/W2114624166",
+        "https://openalex.org/W2154829072",
+        "https://openalex.org/W2155249637",
+        "https://openalex.org/W2156433885",
+        "https://openalex.org/W2170922090",
+        "https://openalex.org/W2265431061",
+        "https://openalex.org/W2571326886",
+        "https://openalex.org/W2729968666",
+        "https://openalex.org/W2836969313",
+        "https://openalex.org/W2888828233",
+        "https://openalex.org/W3091797093",
+        "https://openalex.org/W3128442157",
+        "https://openalex.org/W3130411038",
+        "https://openalex.org/W3159754281",
+        "https://openalex.org/W3213218629",
+        "https://openalex.org/W4205640558",
+        "https://openalex.org/W4296041706",
+        "https://openalex.org/W4327650647",
+        "https://openalex.org/W4384914555",
+        "https://openalex.org/W4387421209",
+        "https://openalex.org/W6600344744"
+      ],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801",
+        "https://openalex.org/W4391913857",
+        "https://openalex.org/W2358668433",
+        "https://openalex.org/W4396701345",
+        "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890",
+        "https://openalex.org/W4396696052"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

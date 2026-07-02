@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "95",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39082169",
+      "40887575",
+      "40799511",
+      "25091279",
+      "32024414",
+      "39456883",
+      "37956187",
+      "38436028",
+      "32240514",
+      "34603473"
+    ],
+    "translationset": [
+      {
+        "from": "SWEET",
+        "to": "\"sweet\"[All Fields] OR \"sweetness\"[All Fields] OR \"sweets\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"sweet\"[All Fields] OR \"sweetness\"[All Fields] OR \"sweets\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

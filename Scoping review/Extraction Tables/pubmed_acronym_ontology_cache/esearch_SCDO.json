@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "33021900",
+      "35363306",
+      "31769834",
+      "31766582",
+      "40681965"
+    ],
+    "translationset": [
+      {
+        "from": "SCDO",
+        "to": "\"jarcho-levin syndrome\"[Supplementary Concept] OR \"jarcho-levin syndrome\"[All Fields] OR \"scdo\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"jarcho levin syndrome\"[Supplementary Concept] OR \"jarcho levin syndrome\"[All Fields] OR \"scdo\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

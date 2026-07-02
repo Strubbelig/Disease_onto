@@ -1,0 +1,68 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "en-us"
+  ],
+  "lang": "en",
+  "ontologyId": "msio",
+  "loaded": "2026-06-26T09:02:12.248464064",
+  "updated": "2026-06-26T09:02:12.248464064",
+  "status": "LOADED",
+  "message": "",
+  "version": "1.0.1",
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 1294,
+  "numberOfProperties": 133,
+  "numberOfIndividuals": 33,
+  "config": {
+    "id": "msio",
+    "versionIri": null,
+    "namespace": "msio",
+    "preferredPrefix": "MSIO",
+    "title": "Metabolomics Standards Initiative Ontology (MSIO)",
+    "description": "an application ontology for supporting description and annotation of mass-spectrometry and nmr-spectroscopy based metabolomics experiments and fluxomics studies.",
+    "homepage": "https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO",
+    "version": "1.0.1",
+    "mailingList": "https://github.com/MSI-Metabolomics-Standards-Initiative/MSIO/issues",
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000115"
+    ],
+    "synonymProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000118"
+    ],
+    "hierarchicalProperties": [],
+    "baseUris": [
+      "http://purl.obolibrary.org/obo/MSIO_"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "http://purl.obolibrary.org/obo/MSIO_"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/msio?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/msio/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/msio/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/msio/individuals"
+    }
+  }
+}

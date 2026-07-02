@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/73cace40-5b13-0139-99fd-005056010088",
+      "name": "Osnat Hakimi",
+      "email": "osnat.hakimi@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/osnat.hakimi"
+    ],
+    "acronym": "DEB",
+    "name": "Devices, Experimental scaffolds and Biomaterials Ontology",
+    "@id": "https://data.bioontology.org/ontologies/DEB",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/DEB/submissions",
+      "properties": "https://data.bioontology.org/ontologies/DEB/properties",
+      "classes": "https://data.bioontology.org/ontologies/DEB/classes",
+      "single_class": "https://data.bioontology.org/ontologies/DEB/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/DEB/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/DEB/schemes",
+      "collections": "https://data.bioontology.org/ontologies/DEB/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/DEB/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/DEB/instances",
+      "metrics": "https://data.bioontology.org/ontologies/DEB/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/DEB/reviews",
+      "notes": "https://data.bioontology.org/ontologies/DEB/notes",
+      "groups": "https://data.bioontology.org/ontologies/DEB/groups",
+      "categories": "https://data.bioontology.org/ontologies/DEB/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/DEB/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/DEB/projects",
+      "download": "https://data.bioontology.org/ontologies/DEB/download",
+      "views": "https://data.bioontology.org/ontologies/DEB/views",
+      "analytics": "https://data.bioontology.org/ontologies/DEB/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/DEB",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2021-06-02T00:00:00.000+00:00",
+  "creationDate": "2021-06-02T10:54:15.000-07:00",
+  "homepage": "https://projectdebbie.github.io/",
+  "publication": [
+    "https://onlinelibrary.wiley.com/doi/10.1002/adfm.201909910"
+  ],
+  "documentation": "https://github.com/ProjectDebbie/Ontology_DEB",
+  "version": "4.0",
+  "description": "An ontology developed to facilitate information curation in the area of medical devices, experimental scaffolds and biomaterials. The ontology was designed to complement existing medical vocabularies, with emphasis on material processing, structures and features associated with biomaterials and experimental scaffolds. It is used as part of an automated text mining pipeline which populates the database of Experimental Biomaterials and their Biological Effect (DEBBIE). \r\nDEBBIE is an EU Horizon 2020 funded project. For more information visit https://projectdebbie.github.io/ ",
+  "status": "beta",
+  "submissionId": 7,
+  "@id": "https://data.bioontology.org/ontologies/DEB/submissions/7",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/DEB/submissions/7/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

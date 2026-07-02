@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "20",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38082240",
+      "24093723",
+      "35118378",
+      "38222434",
+      "39962095",
+      "34882195",
+      "33691250",
+      "38355242",
+      "17238294",
+      "33441905"
+    ],
+    "translationset": [
+      {
+        "from": "CCO",
+        "to": "\"Chin Clin Oncol\"[Journal:__jid101608375] OR \"cco\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"chin clin oncol\"[Journal] OR \"cco\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

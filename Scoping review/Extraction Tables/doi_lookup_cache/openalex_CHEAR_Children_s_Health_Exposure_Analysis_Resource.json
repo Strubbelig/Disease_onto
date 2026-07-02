@@ -1,0 +1,7025 @@
+{
+  "meta": {
+    "count": 21,
+    "db_response_time_ms": 279,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Children's Health Exposure Analysis Resource CHEAR ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Children's Health Exposure Analysis Resource CHEAR ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Children%27s Health Exposure Analysis Resource CHEAR ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2488060668",
+      "doi": "https://doi.org/10.1289/ehp412",
+      "title": "The Exposome: Embracing the Complexity for Discovery in Environmental Health",
+      "display_name": "The Exposome: Embracing the Complexity for Discovery in Environmental Health",
+      "relevance_score": 173.00993,
+      "publication_year": 2016,
+      "publication_date": "2016-08-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2488060668",
+        "doi": "https://doi.org/10.1289/ehp412",
+        "mag": "2488060668",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/27479988"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1289/ehp412",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1289/ehp412",
+        "pdf_url": "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP412",
+        "source": {
+          "id": "https://openalex.org/S10446503",
+          "display_name": "Environmental Health Perspectives",
+          "issn_l": "0091-6765",
+          "issn": [
+            "0091-6765",
+            "1552-9924"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319799",
+          "host_organization_name": "National Institute of Environmental Health Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319799",
+            "https://openalex.org/P4310316754"
+          ],
+          "host_organization_lineage_names": [
+            "National Institute of Environmental Health Sciences",
+            "National Institutes of Health"
+          ],
+          "type": "journal"
+        },
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Environmental Health Perspectives",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP412",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5008308356",
+            "display_name": "Yuxia Cui",
+            "orcid": "https://orcid.org/0000-0002-0425-4206"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1299303238",
+              "display_name": "National Institutes of Health",
+              "ror": "https://ror.org/01cwqze88",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yuxia Cui",
+          "raw_affiliation_strings": [
+            "Exposure, Response, and Technology Branch, Division of Extramural Research and Training, National Institute of Environmental Health Sciences (NIEHS), National Institutes of Health (NIH), U.S. Department of Health and Human Services (DHHS), Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Exposure, Response, and Technology Branch, Division of Extramural Research and Training, National Institute of Environmental Health Sciences (NIEHS), National Institutes of Health (NIH), U.S. Department of Health and Human Services (DHHS), Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140",
+                "https://openalex.org/I1299303238"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004764954",
+            "display_name": "David M. Balshaw",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1299303238",
+              "display_name": "National Institutes of Health",
+              "ror": "https://ror.org/01cwqze88",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "David M. Balshaw",
+          "raw_affiliation_strings": [
+            "Exposure, Response, and Technology Branch, Division of Extramural Research and Training, National Institute of Environmental Health Sciences (NIEHS), National Institutes of Health (NIH), U.S. Department of Health and Human Services (DHHS), Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Exposure, Response, and Technology Branch, Division of Extramural Research and Training, National Institute of Environmental Health Sciences (NIEHS), National Institutes of Health (NIH), U.S. Department of Health and Human Services (DHHS), Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140",
+                "https://openalex.org/I1299303238"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5042189444",
+            "display_name": "Richard K. Kwok",
+            "orcid": "https://orcid.org/0000-0002-6794-8360"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210090916",
+              "display_name": "Triangle",
+              "ror": "https://ror.org/00fhbr831",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210090916"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Richard K. Kwok",
+          "raw_affiliation_strings": [
+            "Epidemiology Branch, Division of Intramural Research, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Epidemiology Branch, Division of Intramural Research, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140",
+                "https://openalex.org/I4210090916"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110117661",
+            "display_name": "Claudia Thompson",
+            "orcid": "https://orcid.org/0000-0002-2793-209X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Claudia L. Thompson",
+          "raw_affiliation_strings": [
+            "Population Health Branch, Division of Extramural Research and Training, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Population Health Branch, Division of Extramural Research and Training, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088705358",
+            "display_name": "Gwen W. Collman",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gwen W. Collman",
+          "raw_affiliation_strings": [
+            "Division of Extramural Research and Training, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Extramural Research and Training, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5023792841",
+            "display_name": "Linda S. Birnbaum",
+            "orcid": "https://orcid.org/0000-0001-5429-5658"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210090916",
+              "display_name": "Triangle",
+              "ror": "https://ror.org/00fhbr831",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210090916"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210091794",
+              "display_name": "Office of the Director",
+              "ror": "https://ror.org/00fj8a872",
+              "country_code": "US",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210091794"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Linda S. Birnbaum",
+          "raw_affiliation_strings": [
+            "Office of the Director, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Office of the Director, NIEHS, NIH, DHHS, Research Triangle Park, North Carolina, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210091794",
+                "https://openalex.org/I4210095140",
+                "https://openalex.org/I4210090916"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 7.9074,
+      "has_fulltext": true,
+      "cited_by_count": 97,
+      "citation_normalized_percentile": {
+        "value": 0.97885465,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "124",
+        "issue": "8",
+        "first_page": "A137",
+        "last_page": "40"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14393",
+        "display_name": "Health, Environment, Cognitive Aging",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T14393",
+          "display_name": "Health, Environment, Cognitive Aging",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2307",
+            "display_name": "Health, Toxicology and Mutagenesis"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12443",
+          "display_name": "Delphi Technique in Research",
+          "score": 0.9717000126838684,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3312",
+            "display_name": "Sociology and Political Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10866",
+          "display_name": "Nutritional Studies and Diet",
+          "score": 0.9664000272750854,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/exposome",
+          "display_name": "Exposome",
+          "score": 0.9989511966705322
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-epidemiology",
+          "display_name": "Environmental epidemiology",
+          "score": 0.5804126858711243
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-medicine",
+          "display_name": "Environmental medicine",
+          "score": 0.4288625717163086
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-health",
+          "display_name": "Environmental health",
+          "score": 0.4242873787879944
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.3907471299171448
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering-ethics",
+          "display_name": "Engineering ethics",
+          "score": 0.3544928729534149
+        },
+        {
+          "id": "https://openalex.org/keywords/public-health",
+          "display_name": "Public health",
+          "score": 0.3118687570095062
+        },
+        {
+          "id": "https://openalex.org/keywords/pathology",
+          "display_name": "Pathology",
+          "score": 0.15318745374679565
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.12358444929122925
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C119709500",
+          "wikidata": "https://www.wikidata.org/wiki/Q2142347",
+          "display_name": "Exposome",
+          "level": 2,
+          "score": 0.9989511966705322
+        },
+        {
+          "id": "https://openalex.org/C201052633",
+          "wikidata": "https://www.wikidata.org/wiki/Q5381223",
+          "display_name": "Environmental epidemiology",
+          "level": 2,
+          "score": 0.5804126858711243
+        },
+        {
+          "id": "https://openalex.org/C540213393",
+          "wikidata": "https://www.wikidata.org/wiki/Q512285",
+          "display_name": "Environmental medicine",
+          "level": 3,
+          "score": 0.4288625717163086
+        },
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.4242873787879944
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3907471299171448
+        },
+        {
+          "id": "https://openalex.org/C55587333",
+          "wikidata": "https://www.wikidata.org/wiki/Q1133029",
+          "display_name": "Engineering ethics",
+          "level": 1,
+          "score": 0.3544928729534149
+        },
+        {
+          "id": "https://openalex.org/C138816342",
+          "wikidata": "https://www.wikidata.org/wiki/Q189603",
+          "display_name": "Public health",
+          "level": 2,
+          "score": 0.3118687570095062
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.15318745374679565
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.12358444929122925
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "doi:10.1289/ehp412",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1289/ehp412",
+          "pdf_url": "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP412",
+          "source": {
+            "id": "https://openalex.org/S10446503",
+            "display_name": "Environmental Health Perspectives",
+            "issn_l": "0091-6765",
+            "issn": [
+              "0091-6765",
+              "1552-9924"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319799",
+            "host_organization_name": "National Institute of Environmental Health Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319799",
+              "https://openalex.org/P4310316754"
+            ],
+            "host_organization_lineage_names": [
+              "National Institute of Environmental Health Sciences",
+              "National Institutes of Health"
+            ],
+            "type": "journal"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Environmental Health Perspectives",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:27479988",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/27479988",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Environmental health perspectives",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:europepmc.org:3952122",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4977033",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1289/ehp412",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1289/ehp412",
+        "pdf_url": "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP412",
+        "source": {
+          "id": "https://openalex.org/S10446503",
+          "display_name": "Environmental Health Perspectives",
+          "issn_l": "0091-6765",
+          "issn": [
+            "0091-6765",
+            "1552-9924"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319799",
+          "host_organization_name": "National Institute of Environmental Health Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319799",
+            "https://openalex.org/P4310316754"
+          ],
+          "host_organization_lineage_names": [
+            "National Institute of Environmental Health Sciences",
+            "National Institutes of Health"
+          ],
+          "type": "journal"
+        },
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Environmental Health Perspectives",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/9",
+          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.550000011920929
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320306085",
+          "display_name": "U.S. Department of Health and Human Services",
+          "ror": "https://ror.org/033jnv181"
+        },
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320337361",
+          "display_name": "National Institute of Environmental Health Sciences",
+          "ror": "https://ror.org/00j4k1h63"
+        },
+        {
+          "id": "https://openalex.org/F4320338421",
+          "display_name": "NHLBI Division of Intramural Research",
+          "ror": null
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2488060668.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2488060668.grobid-xml"
+      },
+      "referenced_works_count": 19,
+      "referenced_works": [
+        "https://openalex.org/W1513271034",
+        "https://openalex.org/W1579760457",
+        "https://openalex.org/W1653659070",
+        "https://openalex.org/W1980094133",
+        "https://openalex.org/W1980991473",
+        "https://openalex.org/W2039684625",
+        "https://openalex.org/W2043964379",
+        "https://openalex.org/W2050014967",
+        "https://openalex.org/W2075696694",
+        "https://openalex.org/W2087591041",
+        "https://openalex.org/W2108170463",
+        "https://openalex.org/W2110052313",
+        "https://openalex.org/W2110272025",
+        "https://openalex.org/W2138649409",
+        "https://openalex.org/W2146726700",
+        "https://openalex.org/W2162856271",
+        "https://openalex.org/W2165075155",
+        "https://openalex.org/W2466902048",
+        "https://openalex.org/W2468100412"
+      ],
+      "related_works": [
+        "https://openalex.org/W4380483524",
+        "https://openalex.org/W2526047447",
+        "https://openalex.org/W2470220912",
+        "https://openalex.org/W4391197590",
+        "https://openalex.org/W3034146557",
+        "https://openalex.org/W4282821669",
+        "https://openalex.org/W2908055164",
+        "https://openalex.org/W2119151793",
+        "https://openalex.org/W4376107328",
+        "https://openalex.org/W2972395350"
+      ],
+      "abstract_inverted_index": {
+        "Summary:Environmental": [
+          0
+        ],
+        "exposures": [
+          1,
+          26,
+          39,
+          69
+        ],
+        "are": [
+          2
+        ],
+        "ubiquitous": [
+          3
+        ],
+        "and": [
+          4,
+          40,
+          44,
+          70,
+          101,
+          122,
+          159,
+          176,
+          185,
+          196
+        ],
+        "play": [
+          5
+        ],
+        "a": [
+          6,
+          46,
+          97,
+          144,
+          182
+        ],
+        "fundamental": [
+          7
+        ],
+        "role": [
+          8
+        ],
+        "in": [
+          9,
+          51,
+          115
+        ],
+        "the": [
+          10,
+          22,
+          28,
+          36,
+          57,
+          63,
+          71,
+          77,
+          84,
+          93,
+          110,
+          113,
+          120,
+          128,
+          137,
+          140,
+          171
+        ],
+        "development": [
+          11
+        ],
+        "of": [
+          12,
+          24,
+          35,
+          87,
+          99,
+          112
+        ],
+        "complex": [
+          13
+        ],
+        "human": [
+          14
+        ],
+        "diseases.": [
+          15
+        ],
+        "The": [
+          16
+        ],
+        "exposome,": [
+          17
+        ],
+        "which": [
+          18
+        ],
+        "is": [
+          19,
+          60,
+          142,
+          167
+        ],
+        "defined": [
+          20
+        ],
+        "as": [
+          21
+        ],
+        "totality": [
+          23
+        ],
+        "environmental": [
+          25,
+          52,
+          177
+        ],
+        "over": [
+          27
+        ],
+        "life": [
+          29
+        ],
+        "course,": [
+          30
+        ],
+        "allows": [
+          31
+        ],
+        "for": [
+          32,
+          49,
+          126,
+          155
+        ],
+        "systematic": [
+          33
+        ],
+        "evaluation": [
+          34
+        ],
+        "relationship": [
+          37
+        ],
+        "between": [
+          38
+        ],
+        "associated": [
+          41
+        ],
+        "biological": [
+          42
+        ],
+        "consequences,": [
+          43
+        ],
+        "represents": [
+          45
+        ],
+        "powerful": [
+          47
+        ],
+        "approach": [
+          48
+        ],
+        "discovery": [
+          50
+        ],
+        "health": [
+          53,
+          164,
+          178
+        ],
+        "research.": [
+          54
+        ],
+        "However,": [
+          55
+        ],
+        "implementing": [
+          56
+        ],
+        "exposome": [
+          58,
+          121,
+          129,
+          172
+        ],
+        "concept": [
+          59,
+          130,
+          173
+        ],
+        "challenged": [
+          61
+        ],
+        "by": [
+          62
+        ],
+        "ability": [
+          64,
+          72
+        ],
+        "to": [
+          65,
+          73,
+          108,
+          119,
+          123,
+          151,
+          157,
+          162
+        ],
+        "accurately": [
+          66
+        ],
+        "assess": [
+          67
+        ],
+        "multiple": [
+          68
+        ],
+        "integrate": [
+          74
+        ],
+        "information": [
+          75
+        ],
+        "across": [
+          76
+        ],
+        "exposure–disease": [
+          78
+        ],
+        "continuum.": [
+          79
+        ],
+        "On": [
+          80
+        ],
+        "14–15": [
+          81
+        ],
+        "January": [
+          82
+        ],
+        "2015,": [
+          83
+        ],
+        "National": [
+          85
+        ],
+        "Institute": [
+          86
+        ],
+        "Environmental": [
+          88
+        ],
+        "Health": [
+          89,
+          146
+        ],
+        "Sciences": [
+          90
+        ],
+        "(NIEHS)": [
+          91
+        ],
+        "held": [
+          92
+        ],
+        "Exposome": [
+          94
+        ],
+        "Workshop": [
+          95
+        ],
+        "where": [
+          96
+        ],
+        "group": [
+          98
+        ],
+        "international": [
+          100
+        ],
+        "U.S.": [
+          102
+        ],
+        "scientists": [
+          103
+        ],
+        "from": [
+          104,
+          191
+        ],
+        "different": [
+          105,
+          192
+        ],
+        "disciplines": [
+          106
+        ],
+        "gathered": [
+          107
+        ],
+        "review": [
+          109
+        ],
+        "state": [
+          111
+        ],
+        "science": [
+          114
+        ],
+        "research": [
+          116,
+          133,
+          179
+        ],
+        "areas": [
+          117
+        ],
+        "related": [
+          118
+        ],
+        "provide": [
+          124,
+          152
+        ],
+        "recommendations": [
+          125
+        ],
+        "incorporating": [
+          127,
+          170
+        ],
+        "into": [
+          131,
+          174
+        ],
+        "each": [
+          132
+        ],
+        "area.": [
+          134
+        ],
+        "To": [
+          135
+        ],
+        "move": [
+          136
+        ],
+        "field": [
+          138
+        ],
+        "forward,": [
+          139
+        ],
+        "NIEHS": [
+          141
+        ],
+        "establishing": [
+          143
+        ],
+        "Children’s": [
+          145
+        ],
+        "Exposure": [
+          147
+        ],
+        "Analysis": [
+          148
+        ],
+        "Resource": [
+          149
+        ],
+        "(CHEAR)": [
+          150
+        ],
+        "infrastructure": [
+          153
+        ],
+        "support": [
+          154
+        ],
+        "access": [
+          156
+        ],
+        "laboratory": [
+          158
+        ],
+        "statistical": [
+          160
+        ],
+        "analyses": [
+          161
+        ],
+        "children’s": [
+          163
+        ],
+        "studies.": [
+          165
+        ],
+        "It": [
+          166
+        ],
+        "recognized": [
+          168
+        ],
+        "that": [
+          169
+        ],
+        "exposure": [
+          175
+        ],
+        "will": [
+          180,
+          186
+        ],
+        "be": [
+          181
+        ],
+        "long": [
+          183
+        ],
+        "journey": [
+          184
+        ],
+        "require": [
+          187
+        ],
+        "significant": [
+          188
+        ],
+        "collaborative": [
+          189
+        ],
+        "efforts": [
+          190
+        ],
+        "scientific": [
+          193
+        ],
+        "disciplines,": [
+          194
+        ],
+        "nations,": [
+          195
+        ],
+        "stakeholders.": [
+          197
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 9
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 11
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 11
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 12
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 14
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 13
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-13T07:54:00.901334",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2990151792",
+      "doi": "https://doi.org/10.1289/isee.2015.2015-3040",
+      "title": "The Children's Health Exposure Analysis Resource",
+      "display_name": "The Children's Health Exposure Analysis Resource",
+      "relevance_score": 151.70877,
+      "publication_year": 2015,
+      "publication_date": "2015-08-20",
+      "ids": {
+        "openalex": "https://openalex.org/W2990151792",
+        "doi": "https://doi.org/10.1289/isee.2015.2015-3040",
+        "mag": "2990151792"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1289/isee.2015.2015-3040",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1289/isee.2015.2015-3040",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210195765",
+          "display_name": "ISEE Conference Abstracts",
+          "issn_l": "1078-0475",
+          "issn": [
+            "1078-0475",
+            "2169-2181"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319799",
+          "host_organization_name": "National Institute of Environmental Health Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319799",
+            "https://openalex.org/P4310316754"
+          ],
+          "host_organization_lineage_names": [
+            "National Institute of Environmental Health Sciences",
+            "National Institutes of Health"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "ISEE Conference Abstracts",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5004764954",
+            "display_name": "David M. Balshaw",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "David Balshaw",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000188349",
+            "display_name": "Caroline Dilworth",
+            "orcid": "https://orcid.org/0000-0002-4477-7722"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Caroline Dilworth",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5031608539",
+            "display_name": "Kimberly A. Gray",
+            "orcid": "https://orcid.org/0000-0002-9415-9527"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Kimberly Gray",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007916896",
+            "display_name": "Bonnie R. Joubert",
+            "orcid": "https://orcid.org/0000-0001-7952-1180"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bonnie Joubert",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054195420",
+            "display_name": "Cindy P. Lawler",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Cindy Lawler,",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5042593990",
+            "display_name": "Daniel Shaughnessy",
+            "orcid": "https://orcid.org/0000-0001-7248-4882"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Daniel Shaughnessy",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5110117661",
+            "display_name": "Claudia Thompson",
+            "orcid": "https://orcid.org/0000-0002-2793-209X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108750",
+              "display_name": "National Institute of Health Sciences",
+              "ror": "https://ror.org/01q0eat70",
+              "country_code": "LK",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210108750"
+              ]
+            }
+          ],
+          "countries": [
+            "LK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Claudia Thompson",
+          "raw_affiliation_strings": [
+            "National Institute Of Environmental Health Sciences; Gwencollman, - National Institute Of Environmental Health Sciences",
+            "National Institute Of Environmental Health Sciences",
+            "Gwencollman, - National Institute Of Environmental Health Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences; Gwencollman, - National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            },
+            {
+              "raw_affiliation_string": "National Institute Of Environmental Health Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210108750"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Gwencollman, - National Institute Of Environmental Health Sciences",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210108750"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.5043,
+      "has_fulltext": false,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": {
+        "value": 0.76606053,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 94
+      },
+      "biblio": {
+        "volume": "2015",
+        "issue": "1",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13770",
+        "display_name": "Pediatric health and respiratory diseases",
+        "score": 0.4569000005722046,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3604",
+          "display_name": "Emergency Medical Services"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/36",
+          "display_name": "Health Professions"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T13770",
+          "display_name": "Pediatric health and respiratory diseases",
+          "score": 0.4569000005722046,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3604",
+            "display_name": "Emergency Medical Services"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/36",
+            "display_name": "Health Professions"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/environmental-health",
+          "display_name": "Environmental health",
+          "score": 0.46962714195251465
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.4412424564361572
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.3524746894836426
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.30183976888656616
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.46962714195251465
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.4412424564361572
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3524746894836426
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.30183976888656616
+        },
+        {
+          "id": "https://openalex.org/C31258907",
+          "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+          "display_name": "Computer network",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1289/isee.2015.2015-3040",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1289/isee.2015.2015-3040",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210195765",
+            "display_name": "ISEE Conference Abstracts",
+            "issn_l": "1078-0475",
+            "issn": [
+              "1078-0475",
+              "2169-2181"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319799",
+            "host_organization_name": "National Institute of Environmental Health Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319799",
+              "https://openalex.org/P4310316754"
+            ],
+            "host_organization_lineage_names": [
+              "National Institute of Environmental Health Sciences",
+              "National Institutes of Health"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "ISEE Conference Abstracts",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2187254338",
+        "https://openalex.org/W2754805082",
+        "https://openalex.org/W2929814923",
+        "https://openalex.org/W2169376940",
+        "https://openalex.org/W2009411895",
+        "https://openalex.org/W2346334693",
+        "https://openalex.org/W2255682014",
+        "https://openalex.org/W2566512064",
+        "https://openalex.org/W2167494541",
+        "https://openalex.org/W2018228101",
+        "https://openalex.org/W2118307627",
+        "https://openalex.org/W3033081400",
+        "https://openalex.org/W2139985946",
+        "https://openalex.org/W2076962544",
+        "https://openalex.org/W3192055331",
+        "https://openalex.org/W2136722632",
+        "https://openalex.org/W2039828307",
+        "https://openalex.org/W2556122725",
+        "https://openalex.org/W2043842492",
+        "https://openalex.org/W2181656272"
+      ],
+      "abstract_inverted_index": {
+        "Children's": [
+          0,
+          136
+        ],
+        "health": [
+          1,
+          23,
+          123,
+          212
+        ],
+        "and": [
+          2,
+          13,
+          48,
+          86,
+          109,
+          158,
+          171,
+          179,
+          181,
+          190,
+          209,
+          237,
+          245
+        ],
+        "wellbeing": [
+          3
+        ],
+        "are": [
+          4,
+          130
+        ],
+        "known": [
+          5
+        ],
+        "to": [
+          6,
+          32,
+          80,
+          106,
+          176,
+          187,
+          217
+        ],
+        "be": [
+          7,
+          144
+        ],
+        "influenced": [
+          8
+        ],
+        "by": [
+          9
+        ],
+        "interactions": [
+          10
+        ],
+        "between": [
+          11
+        ],
+        "environmental": [
+          12,
+          34,
+          118,
+          249
+        ],
+        "genetic": [
+          14
+        ],
+        "factors;": [
+          15
+        ],
+        "however,": [
+          16
+        ],
+        "the": [
+          17,
+          58,
+          61,
+          64,
+          88,
+          93,
+          98,
+          115,
+          135,
+          188,
+          198,
+          205,
+          227,
+          241
+        ],
+        "characterization": [
+          18
+        ],
+        "of": [
+          19,
+          60,
+          90,
+          117,
+          146,
+          152,
+          193,
+          207,
+          243
+        ],
+        "exposure": [
+          20,
+          84,
+          160,
+          195,
+          235
+        ],
+        "in": [
+          21,
+          36,
+          67,
+          120,
+          233
+        ],
+        "children's": [
+          22,
+          122,
+          211
+        ],
+        "studies": [
+          24,
+          30
+        ],
+        "is": [
+          25,
+          71
+        ],
+        "often": [
+          26
+        ],
+        "relatively": [
+          27
+        ],
+        "limited.": [
+          28
+        ],
+        "Many": [
+          29
+        ],
+        "fail": [
+          31
+        ],
+        "consider": [
+          33,
+          55
+        ],
+        "factors": [
+          35
+        ],
+        "their": [
+          37,
+          121
+        ],
+        "analysis,": [
+          38
+        ],
+        "some": [
+          39
+        ],
+        "will": [
+          40,
+          53,
+          113,
+          143,
+          203,
+          221
+        ],
+        "focus": [
+          41
+        ],
+        "on": [
+          42,
+          57,
+          231
+        ],
+        "one": [
+          43
+        ],
+        "or": [
+          44
+        ],
+        "two": [
+          45,
+          76
+        ],
+        "targeted": [
+          46,
+          157
+        ],
+        "exposures,": [
+          47
+        ],
+        "only": [
+          49
+        ],
+        "a": [
+          50,
+          72,
+          132,
+          150,
+          162,
+          168,
+          182,
+          191,
+          224
+        ],
+        "small": [
+          51
+        ],
+        "number": [
+          52
+        ],
+        "broadly": [
+          54
+        ],
+        "exposures": [
+          56,
+          91,
+          119
+        ],
+        "scale": [
+          59
+        ],
+        "exposome.": [
+          62
+        ],
+        "Implementing": [
+          63
+        ],
+        "exposome": [
+          65
+        ],
+        "concept": [
+          66
+        ],
+        "an": [
+          68,
+          102
+        ],
+        "epidemiological": [
+          69
+        ],
+        "setting": [
+          70
+        ],
+        "daunting": [
+          73
+        ],
+        "problem": [
+          74
+        ],
+        "with": [
+          75,
+          226
+        ],
+        "major": [
+          77
+        ],
+        "challenges:": [
+          78
+        ],
+        "access": [
+          79,
+          105,
+          186,
+          216
+        ],
+        "state-of-the-art": [
+          81
+        ],
+        "technologies": [
+          82
+        ],
+        "for": [
+          83,
+          197,
+          248
+        ],
+        "monitoring,": [
+          85
+        ],
+        "addressing": [
+          87
+        ],
+        "totality": [
+          89
+        ],
+        "throughout": [
+          92
+        ],
+        "life-course.": [
+          94
+        ],
+        "To": [
+          95,
+          125
+        ],
+        "address": [
+          96
+        ],
+        "these,": [
+          97
+        ],
+        "research": [
+          99,
+          199,
+          229
+        ],
+        "community": [
+          100,
+          230,
+          246
+        ],
+        "needs": [
+          101
+        ],
+        "infrastructure": [
+          103,
+          189
+        ],
+        "enabling": [
+          104
+        ],
+        "both": [
+          107,
+          156
+        ],
+        "laboratory": [
+          108
+        ],
+        "data": [
+          110,
+          163,
+          169,
+          172,
+          238
+        ],
+        "analyses": [
+          111
+        ],
+        "that": [
+          112
+        ],
+        "expand": [
+          114
+        ],
+        "inclusion": [
+          116
+        ],
+        "research.": [
+          124
+        ],
+        "meet": [
+          126
+        ],
+        "this": [
+          127,
+          218
+        ],
+        "need,": [
+          128
+        ],
+        "we": [
+          129
+        ],
+        "establishing": [
+          131
+        ],
+        "large": [
+          133
+        ],
+        "infrastructure,": [
+          134
+        ],
+        "Health": [
+          137
+        ],
+        "Exposure": [
+          138
+        ],
+        "Analysis": [
+          139
+        ],
+        "Resource": [
+          140
+        ],
+        "(CHEAR).": [
+          141
+        ],
+        "CHEAR": [
+          142,
+          208
+        ],
+        "comprised": [
+          145
+        ],
+        "three": [
+          147
+        ],
+        "integrated": [
+          148
+        ],
+        "units:": [
+          149
+        ],
+        "network": [
+          151
+        ],
+        "analytical": [
+          153
+        ],
+        "laboratories": [
+          154
+        ],
+        "providing": [
+          155,
+          165,
+          185
+        ],
+        "untargeted": [
+          159
+        ],
+        "analysis;": [
+          161
+        ],
+        "center": [
+          164,
+          184
+        ],
+        "statistical": [
+          166
+        ],
+        "services,": [
+          167
+        ],
+        "repository": [
+          170
+        ],
+        "standards": [
+          173,
+          247
+        ],
+        "(e.g.,": [
+          174
+        ],
+        "ontologies)": [
+          175
+        ],
+        "enable": [
+          177
+        ],
+        "integration": [
+          178
+        ],
+        "sharing;": [
+          180
+        ],
+        "coordinating": [
+          183
+        ],
+        "catalog": [
+          192
+        ],
+        "additional": [
+          194
+        ],
+        "resources": [
+          196
+        ],
+        "community.": [
+          200
+        ],
+        "This": [
+          201
+        ],
+        "poster": [
+          202
+        ],
+        "describe": [
+          204
+        ],
+        "capabilities": [
+          206
+        ],
+        "how": [
+          210
+        ],
+        "researchers": [
+          213
+        ],
+        "can": [
+          214
+        ],
+        "gain": [
+          215
+        ],
+        "resource.": [
+          219
+        ],
+        "It": [
+          220
+        ],
+        "also": [
+          222
+        ],
+        "initiate": [
+          223
+        ],
+        "dialog": [
+          225
+        ],
+        "broader": [
+          228
+        ],
+        "issues": [
+          232
+        ],
+        "comprehensive": [
+          234
+        ],
+        "analysis": [
+          236
+        ],
+        "sharing": [
+          239
+        ],
+        "including": [
+          240
+        ],
+        "development": [
+          242
+        ],
+        "ontologies": [
+          244
+        ],
+        "health.": [
+          250
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-26T08:34:08.712188",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2735230796",
+      "doi": "https://doi.org/10.1145/3091478.3091497",
+      "title": "Broad, Interdisciplinary Science <i>In Tela</i>",
+      "display_name": "Broad, Interdisciplinary Science <i>In Tela</i>",
+      "relevance_score": 108.59919,
+      "publication_year": 2017,
+      "publication_date": "2017-06-25",
+      "ids": {
+        "openalex": "https://openalex.org/W2735230796",
+        "doi": "https://doi.org/10.1145/3091478.3091497",
+        "mag": "2735230796"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1145/3091478.3091497",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1145/3091478.3091497",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 2017 ACM on Web Science Conference",
+        "raw_type": "proceedings-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5030875887",
+            "display_name": "Jamie P. McCusker",
+            "orcid": "https://orcid.org/0000-0003-1085-6059"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jamie Patricia McCusker",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072382690",
+            "display_name": "Sabbir M. Rashid",
+            "orcid": "https://orcid.org/0000-0002-4162-8334"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sabbir M. Rashid",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102182831",
+            "display_name": "Zhicheng Liang",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhicheng Liang",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100320094",
+            "display_name": "Yue Liu",
+            "orcid": "https://orcid.org/0000-0002-7961-4771"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yue Liu",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062509367",
+            "display_name": "Katherine Chastain",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Katherine Chastain",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002153185",
+            "display_name": "Paulo Pinheiro",
+            "orcid": "https://orcid.org/0000-0002-8912-2244"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Paulo Pinheiro",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5080301373",
+            "display_name": "Jeanette A. Stingone",
+            "orcid": "https://orcid.org/0000-0003-3508-8260"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I98704320",
+              "display_name": "Icahn School of Medicine at Mount Sinai",
+              "ror": "https://ror.org/04a9tmd77",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I1320796813",
+                "https://openalex.org/I98704320"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jeanette A. Stingone",
+          "raw_affiliation_strings": [
+            "Icahn School of Medicine at Mount Sinai, New York, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Icahn School of Medicine at Mount Sinai, New York, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I98704320"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5043699777",
+            "display_name": "Deborah L. McGuinness",
+            "orcid": "https://orcid.org/0000-0001-7037-4567"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165799507",
+              "display_name": "Rensselaer Polytechnic Institute",
+              "ror": "https://ror.org/01rtyzb94",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Deborah L. McGuinness",
+          "raw_affiliation_strings": [
+            "Rensselaer Polytechnic Institute, Troy, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I165799507"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 8,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.8931,
+      "has_fulltext": false,
+      "cited_by_count": 7,
+      "citation_normalized_percentile": {
+        "value": 0.76525662,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 97
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "349",
+        "last_page": "357"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14472",
+        "display_name": "Environmental and Cultural Studies in Latin America and Beyond",
+        "score": 0.8029000163078308,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2303",
+          "display_name": "Ecology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T14472",
+          "display_name": "Environmental and Cultural Studies in Latin America and Beyond",
+          "score": 0.8029000163078308,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2303",
+            "display_name": "Ecology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13934",
+          "display_name": "Indigenous Knowledge Systems and Agriculture",
+          "score": 0.7833999991416931,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1110",
+            "display_name": "Plant Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/11",
+            "display_name": "Agricultural and Biological Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13492",
+          "display_name": "Science, Technology, and Education in Latin America",
+          "score": 0.7080000042915344,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3317",
+            "display_name": "Demography"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.5204917788505554
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5204917788505554
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1145/3091478.3091497",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1145/3091478.3091497",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Proceedings of the 2017 ACM on Web Science Conference",
+          "raw_type": "proceedings-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/17",
+          "display_name": "Partnerships for the goals",
+          "score": 0.5799999833106995
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G3277642016",
+          "display_name": null,
+          "funder_award_id": "0255-0236-4609 / 1U2CES026555-01",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320309658",
+          "display_name": "Icahn School of Medicine at Mount Sinai",
+          "ror": "https://ror.org/04a9tmd77"
+        },
+        {
+          "id": "https://openalex.org/F4320337361",
+          "display_name": "National Institute of Environmental Health Sciences",
+          "ror": "https://ror.org/00j4k1h63"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 28,
+      "referenced_works": [
+        "https://openalex.org/W90362830",
+        "https://openalex.org/W1526655180",
+        "https://openalex.org/W1969350172",
+        "https://openalex.org/W2031752570",
+        "https://openalex.org/W2033377040",
+        "https://openalex.org/W2040022355",
+        "https://openalex.org/W2051496057",
+        "https://openalex.org/W2053346910",
+        "https://openalex.org/W2063015833",
+        "https://openalex.org/W2093606987",
+        "https://openalex.org/W2116034137",
+        "https://openalex.org/W2120534674",
+        "https://openalex.org/W2127553917",
+        "https://openalex.org/W2144427809",
+        "https://openalex.org/W2144573571",
+        "https://openalex.org/W2159092541",
+        "https://openalex.org/W2165748167",
+        "https://openalex.org/W2177317049",
+        "https://openalex.org/W2178026535",
+        "https://openalex.org/W2259172389",
+        "https://openalex.org/W2342249984",
+        "https://openalex.org/W2406789403",
+        "https://openalex.org/W2963010537",
+        "https://openalex.org/W2977393556",
+        "https://openalex.org/W4232336951",
+        "https://openalex.org/W4320300838",
+        "https://openalex.org/W6603112357",
+        "https://openalex.org/W6603694148"
+      ],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801",
+        "https://openalex.org/W2358668433",
+        "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890",
+        "https://openalex.org/W2382290278",
+        "https://openalex.org/W2478288626",
+        "https://openalex.org/W2350741829",
+        "https://openalex.org/W2530322880",
+        "https://openalex.org/W1596801655"
+      ],
+      "abstract_inverted_index": {
+        "Data": [
+          0,
+          55
+        ],
+        "curation": [
+          1
+        ],
+        "for": [
+          2,
+          46,
+          123,
+          198,
+          282,
+          314
+        ],
+        "interdisciplinary": [
+          3,
+          317
+        ],
+        "collaborative": [
+          4,
+          316
+        ],
+        "science": [
+          5
+        ],
+        "requires": [
+          6
+        ],
+        "a": [
+          7,
+          44,
+          68,
+          183,
+          212
+        ],
+        "new": [
+          8
+        ],
+        "online": [
+          9
+        ],
+        "web-based": [
+          10,
+          315
+        ],
+        "approach": [
+          11,
+          176,
+          268,
+          313
+        ],
+        "that": [
+          12,
+          61,
+          70,
+          139,
+          154,
+          233
+        ],
+        "integrates": [
+          13,
+          62,
+          77
+        ],
+        "domain": [
+          14,
+          31,
+          125,
+          283,
+          290
+        ],
+        "knowledge": [
+          15
+        ],
+        "from": [
+          16,
+          148
+        ],
+        "multiple": [
+          17
+        ],
+        "resources": [
+          18
+        ],
+        "and": [
+          19,
+          33,
+          49,
+          64,
+          76,
+          84,
+          115,
+          133,
+          145,
+          150,
+          297,
+          320,
+          322,
+          328,
+          331
+        ],
+        "enables": [
+          20
+        ],
+        "in": [
+          21,
+          67,
+          189,
+          200,
+          256
+        ],
+        "tela": [
+          22
+        ],
+        "(in": [
+          23
+        ],
+        "the": [
+          24,
+          74,
+          89,
+          102,
+          110,
+          116,
+          120,
+          156,
+          159,
+          163,
+          179,
+          196,
+          215,
+          218,
+          230,
+          239,
+          244,
+          251,
+          293,
+          325
+        ],
+        "web)": [
+          25
+        ],
+        "interactive": [
+          26
+        ],
+        "collaboration": [
+          27
+        ],
+        "between": [
+          28
+        ],
+        "data": [
+          29,
+          34,
+          66,
+          147,
+          160,
+          165
+        ],
+        "providers,": [
+          30
+        ],
+        "specialists,": [
+          32
+        ],
+        "analysts.": [
+          35
+        ],
+        "The": [
+          36,
+          53
+        ],
+        "Children's": [
+          37
+        ],
+        "Health": [
+          38
+        ],
+        "Exposure": [
+          39
+        ],
+        "Analysis": [
+          40
+        ],
+        "Resource": [
+          41
+        ],
+        "(CHEAR)": [
+          42
+        ],
+        "is": [
+          43,
+          71,
+          269
+        ],
+        "resource": [
+          45
+        ],
+        "child": [
+          47,
+          332
+        ],
+        "development": [
+          48,
+          319
+        ],
+        "environmental": [
+          50
+        ],
+        "exposure": [
+          51,
+          65,
+          152,
+          330
+        ],
+        "data.": [
+          52
+        ],
+        "CHEAR": [
+          54,
+          164
+        ],
+        "Center": [
+          56
+        ],
+        "has": [
+          57
+        ],
+        "developed": [
+          58
+        ],
+        "an": [
+          59,
+          174,
+          202,
+          226
+        ],
+        "ontology": [
+          60,
+          180,
+          197,
+          219,
+          227,
+          264,
+          303,
+          318
+        ],
+        "study": [
+          63
+        ],
+        "way": [
+          69
+        ],
+        "consistent": [
+          72
+        ],
+        "across": [
+          73
+        ],
+        "program,": [
+          75
+        ],
+        "with": [
+          78,
+          137,
+          220,
+          299,
+          302
+        ],
+        "many": [
+          79
+        ],
+        "best": [
+          80
+        ],
+        "practice": [
+          81
+        ],
+        "relevant": [
+          82
+        ],
+        "vocabularies": [
+          83
+        ],
+        "repository": [
+          85
+        ],
+        "schemas.": [
+          86
+        ],
+        "This": [
+          87
+        ],
+        "includes": [
+          88
+        ],
+        "World": [
+          90
+        ],
+        "Wide": [
+          91
+        ],
+        "Web": [
+          92
+        ],
+        "Consortium's": [
+          93
+        ],
+        "recommended": [
+          94
+        ],
+        "Provenance": [
+          95
+        ],
+        "Ontology": [
+          96,
+          100,
+          118
+        ],
+        "(PROV),": [
+          97
+        ],
+        "Semanticscience": [
+          98
+        ],
+        "Integrated": [
+          99
+        ],
+        "(SIO),": [
+          101
+        ],
+        "Chemical": [
+          103
+        ],
+        "Entities": [
+          104
+        ],
+        "of": [
+          105,
+          158,
+          185,
+          214,
+          238,
+          254,
+          274,
+          295
+        ],
+        "Biological": [
+          106
+        ],
+        "Interest": [
+          107
+        ],
+        "(CheBI)": [
+          108
+        ],
+        "ontology,": [
+          109,
+          114,
+          252
+        ],
+        "Uberon": [
+          111
+        ],
+        "multi-species": [
+          112
+        ],
+        "anatomy": [
+          113
+        ],
+        "Units": [
+          117
+        ],
+        "as": [
+          119
+        ],
+        "starting": [
+          121
+        ],
+        "point": [
+          122
+        ],
+        "our": [
+          124,
+          311
+        ],
+        "modeling.": [
+          126
+        ],
+        "We": [
+          127
+        ],
+        "mapped": [
+          128
+        ],
+        "terms": [
+          129
+        ],
+        "where": [
+          130,
+          258
+        ],
+        "they": [
+          131
+        ],
+        "overlapped": [
+          132
+        ],
+        "extended": [
+          134
+        ],
+        "these": [
+          135
+        ],
+        "ontologies": [
+          136
+        ],
+        "classes": [
+          138,
+          240
+        ],
+        "were": [
+          140
+        ],
+        "required": [
+          141
+        ],
+        "to": [
+          142,
+          169,
+          177,
+          210,
+          217,
+          242,
+          247,
+          250,
+          261,
+          270,
+          280,
+          288
+        ],
+        "support": [
+          143
+        ],
+        "modeling": [
+          144
+        ],
+        "integrating": [
+          146
+        ],
+        "epidemiology": [
+          149
+        ],
+        "chemical": [
+          151
+        ],
+        "measurements": [
+          153
+        ],
+        "comprise": [
+          155
+        ],
+        "majority": [
+          157,
+          294
+        ],
+        "recorded": [
+          161
+        ],
+        "by": [
+          162,
+          225
+        ],
+        "center.": [
+          166
+        ],
+        "In": [
+          167,
+          229,
+          305
+        ],
+        "response": [
+          168
+        ],
+        "this": [
+          170,
+          306
+        ],
+        "challenge,": [
+          171
+        ],
+        "we": [
+          172,
+          194,
+          259,
+          286,
+          308
+        ],
+        "used": [
+          173
+        ],
+        "on-demand": [
+          175,
+          312
+        ],
+        "develop": [
+          178
+        ],
+        "based": [
+          181
+        ],
+        "on": [
+          182,
+          310
+        ],
+        "set": [
+          184
+        ],
+        "representative": [
+          186
+        ],
+        "pilot": [
+          187,
+          204
+        ],
+        "projects": [
+          188
+        ],
+        "CHEAR.": [
+          190
+        ],
+        "After": [
+          191
+        ],
+        "initial": [
+          192
+        ],
+        "development,": [
+          193
+        ],
+        "evaluated": [
+          195
+        ],
+        "completeness": [
+          199
+        ],
+        "representing": [
+          201
+        ],
+        "additional": [
+          203
+        ],
+        "study.": [
+          205
+        ],
+        "An": [
+          206
+        ],
+        "epidemiologist": [
+          207
+        ],
+        "was": [
+          208,
+          234
+        ],
+        "able": [
+          209
+        ],
+        "produce": [
+          211
+        ],
+        "mapping": [
+          213
+        ],
+        "project": [
+          216
+        ],
+        "only": [
+          221
+        ],
+        "minor": [
+          222
+        ],
+        "corrections": [
+          223
+        ],
+        "needed": [
+          224,
+          241,
+          246
+        ],
+        "expert.": [
+          228
+        ],
+        "large": [
+          231
+        ],
+        "dataset": [
+          232,
+          245
+        ],
+        "tested,": [
+          235
+        ],
+        "one": [
+          236
+        ],
+        "third": [
+          237
+        ],
+        "represent": [
+          243
+        ],
+        "be": [
+          248
+        ],
+        "added": [
+          249
+        ],
+        "all": [
+          253
+        ],
+        "them": [
+          255
+        ],
+        "areas": [
+          257
+        ],
+        "expected": [
+          260
+        ],
+        "see": [
+          262
+        ],
+        "more": [
+          263
+        ],
+        "expansion.": [
+          265
+        ],
+        "Our": [
+          266
+        ],
+        "overall": [
+          267
+        ],
+        "drive": [
+          271
+        ],
+        "towards": [
+          272
+        ],
+        "completion": [
+          273
+        ],
+        "coverage": [
+          275
+        ],
+        "while": [
+          276
+        ],
+        "being": [
+          277
+        ],
+        "relatively": [
+          278
+        ],
+        "easy": [
+          279
+        ],
+        "use": [
+          281
+        ],
+        "experts.": [
+          284,
+          304
+        ],
+        "Ultimately": [
+          285
+        ],
+        "aim": [
+          287
+        ],
+        "have": [
+          289
+        ],
+        "experts": [
+          291
+        ],
+        "handle": [
+          292
+        ],
+        "extensions": [
+          296
+        ],
+        "evolution": [
+          298
+        ],
+        "small": [
+          300
+        ],
+        "interactions": [
+          301
+        ],
+        "paper,": [
+          307
+        ],
+        "report": [
+          309
+        ],
+        "maintenance": [
+          321
+        ],
+        "also": [
+          323
+        ],
+        "introduce": [
+          324
+        ],
+        "resulting": [
+          326
+        ],
+        "extensible": [
+          327
+        ],
+        "interoperable": [
+          329
+        ],
+        "health": [
+          333
+        ],
+        "ontology.": [
+          334
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2772900610",
+      "doi": "https://doi.org/10.1186/s40246-017-0128-0",
+      "title": "Yale school of public health symposium on lifetime exposures and human health: the exposome; summary and future reflections",
+      "display_name": "Yale school of public health symposium on lifetime exposures and human health: the exposome; summary and future reflections",
+      "relevance_score": 93.96129,
+      "publication_year": 2017,
+      "publication_date": "2017-12-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2772900610",
+        "doi": "https://doi.org/10.1186/s40246-017-0128-0",
+        "mag": "2772900610",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/29221465"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s40246-017-0128-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s40246-017-0128-0",
+        "pdf_url": "https://humgenomics.biomedcentral.com/track/pdf/10.1186/s40246-017-0128-0",
+        "source": {
+          "id": "https://openalex.org/S2738571386",
+          "display_name": "Human Genomics",
+          "issn_l": "1473-9542",
+          "issn": [
+            "1473-9542",
+            "1479-7364"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Human Genomics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://humgenomics.biomedcentral.com/track/pdf/10.1186/s40246-017-0128-0",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5006765542",
+            "display_name": "Caroline H. Johnson",
+            "orcid": "https://orcid.org/0000-0002-5298-1299"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210117499",
+              "display_name": "Yale New Haven Health System",
+              "ror": "https://ror.org/01s1hsq14",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210117499"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Caroline H. Johnson",
+          "raw_affiliation_strings": [
+            "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA. caroline.johnson@yale.edu",
+            "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA. caroline.johnson@yale.edu",
+              "institution_ids": [
+                "https://openalex.org/I4210117499"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5047831421",
+            "display_name": "Toby J. Athersuch",
+            "orcid": "https://orcid.org/0000-0002-5732-9574"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I47508984",
+              "display_name": "Imperial College London",
+              "ror": "https://ror.org/041kmwe10",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I47508984"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Toby J. Athersuch",
+          "raw_affiliation_strings": [
+            "Department of Surgery and Cancer, Faculty of Medicine, Imperial College London, London, UK",
+            "MRC-PHE Centre for Environment and Health, School of Public Health, Imperial College Norfolk Place, London, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Surgery and Cancer, Faculty of Medicine, Imperial College London, London, UK",
+              "institution_ids": [
+                "https://openalex.org/I47508984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "MRC-PHE Centre for Environment and Health, School of Public Health, Imperial College Norfolk Place, London, UK",
+              "institution_ids": [
+                "https://openalex.org/I47508984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088705358",
+            "display_name": "Gwen W. Collman",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1299303238",
+              "display_name": "National Institutes of Health",
+              "ror": "https://ror.org/01cwqze88",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210095140",
+              "display_name": "National Institute of Environmental Health Sciences",
+              "ror": "https://ror.org/00j4k1h63",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1299022934",
+                "https://openalex.org/I1299303238",
+                "https://openalex.org/I4210095140"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gwen W. Collman",
+          "raw_affiliation_strings": [
+            "Division of Extramural Research and Training, National Institute of Environmental Health Sciences, National Institutes of Health, Morrisville, NC, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Extramural Research and Training, National Institute of Environmental Health Sciences, National Institutes of Health, Morrisville, NC, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210095140",
+                "https://openalex.org/I1299303238"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000702539",
+            "display_name": "Suraj Dhungana",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180980256",
+              "display_name": "Waters (United States)",
+              "ror": "https://ror.org/01h8xv021",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I180980256"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Suraj Dhungana",
+          "raw_affiliation_strings": [
+            "Waters Corporation, Metabolomics and Translational Research, Milford, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Waters Corporation, Metabolomics and Translational Research, Milford, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I180980256"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5065872566",
+            "display_name": "David F. Grant",
+            "orcid": "https://orcid.org/0000-0003-3616-6689"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I140172145",
+              "display_name": "University of Connecticut",
+              "ror": "https://ror.org/02der9h97",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I140172145"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "David F. Grant",
+          "raw_affiliation_strings": [
+            "Department of Pharmaceutical Sciences, University of Connecticut, Storrs, CT, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pharmaceutical Sciences, University of Connecticut, Storrs, CT, USA",
+              "institution_ids": [
+                "https://openalex.org/I140172145"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035904189",
+            "display_name": "Dean P. Jones",
+            "orcid": "https://orcid.org/0000-0002-2090-0677"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I150468666",
+              "display_name": "Emory University",
+              "ror": "https://ror.org/03czfpz43",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dean P. Jones",
+          "raw_affiliation_strings": [
+            "Department of Medicine, Emory University School of Medicine, Atlanta, GA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Medicine, Emory University School of Medicine, Atlanta, GA, USA",
+              "institution_ids": [
+                "https://openalex.org/I150468666"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100638285",
+            "display_name": "Chirag J. Patel",
+            "orcid": "https://orcid.org/0000-0002-8756-8525"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chirag J. Patel",
+          "raw_affiliation_strings": [
+            "Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5069585147",
+            "display_name": "Vasilis Vasiliou",
+            "orcid": "https://orcid.org/0000-0003-2552-3118"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210117499",
+              "display_name": "Yale New Haven Health System",
+              "ror": "https://ror.org/01s1hsq14",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210117499"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vasilis Vasiliou",
+          "raw_affiliation_strings": [
+            "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA. vasilis.vasiliou@yale.edu",
+            "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA. vasilis.vasiliou@yale.edu",
+              "institution_ids": [
+                "https://openalex.org/I4210117499"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Environmental Health Sciences, Yale School of Public Health, New Haven, CT, USA",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 8,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 2090,
+        "currency": "GBP",
+        "value_usd": 2563
+      },
+      "apc_paid": {
+        "value": 2090,
+        "currency": "GBP",
+        "value_usd": 2563
+      },
+      "fwci": 2.0724,
+      "has_fulltext": true,
+      "cited_by_count": 27,
+      "citation_normalized_percentile": {
+        "value": 0.85366737,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 91,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": "1",
+        "first_page": "32",
+        "last_page": "32"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14393",
+        "display_name": "Health, Environment, Cognitive Aging",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2307",
+          "display_name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T14393",
+          "display_name": "Health, Environment, Cognitive Aging",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2307",
+            "display_name": "Health, Toxicology and Mutagenesis"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10866",
+          "display_name": "Nutritional Studies and Diet",
+          "score": 0.95660001039505,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12443",
+          "display_name": "Delphi Technique in Research",
+          "score": 0.9355999827384949,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3312",
+            "display_name": "Sociology and Political Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/exposome",
+          "display_name": "Exposome",
+          "score": 0.9960217475891113
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-epidemiology",
+          "display_name": "Environmental epidemiology",
+          "score": 0.5638492107391357
+        },
+        {
+          "id": "https://openalex.org/keywords/public-health",
+          "display_name": "Public health",
+          "score": 0.5208992958068848
+        },
+        {
+          "id": "https://openalex.org/keywords/biorepository",
+          "display_name": "Biorepository",
+          "score": 0.47894006967544556
+        },
+        {
+          "id": "https://openalex.org/keywords/biomonitoring",
+          "display_name": "Biomonitoring",
+          "score": 0.4652842879295349
+        },
+        {
+          "id": "https://openalex.org/keywords/human-health",
+          "display_name": "Human health",
+          "score": 0.4470689296722412
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.4429609775543213
+        },
+        {
+          "id": "https://openalex.org/keywords/exposure-assessment",
+          "display_name": "Exposure assessment",
+          "score": 0.4406702518463135
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-health",
+          "display_name": "Environmental health",
+          "score": 0.427548885345459
+        },
+        {
+          "id": "https://openalex.org/keywords/standardization",
+          "display_name": "Standardization",
+          "score": 0.4224271774291992
+        },
+        {
+          "id": "https://openalex.org/keywords/biobank",
+          "display_name": "Biobank",
+          "score": 0.3890896737575531
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.36043649911880493
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.2587816119194031
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.2568662166595459
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.2503204941749573
+        },
+        {
+          "id": "https://openalex.org/keywords/pathology",
+          "display_name": "Pathology",
+          "score": 0.13703763484954834
+        },
+        {
+          "id": "https://openalex.org/keywords/ecology",
+          "display_name": "Ecology",
+          "score": 0.10478213429450989
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C119709500",
+          "wikidata": "https://www.wikidata.org/wiki/Q2142347",
+          "display_name": "Exposome",
+          "level": 2,
+          "score": 0.9960217475891113
+        },
+        {
+          "id": "https://openalex.org/C201052633",
+          "wikidata": "https://www.wikidata.org/wiki/Q5381223",
+          "display_name": "Environmental epidemiology",
+          "level": 2,
+          "score": 0.5638492107391357
+        },
+        {
+          "id": "https://openalex.org/C138816342",
+          "wikidata": "https://www.wikidata.org/wiki/Q189603",
+          "display_name": "Public health",
+          "level": 2,
+          "score": 0.5208992958068848
+        },
+        {
+          "id": "https://openalex.org/C2780932742",
+          "wikidata": "https://www.wikidata.org/wiki/Q4915239",
+          "display_name": "Biorepository",
+          "level": 3,
+          "score": 0.47894006967544556
+        },
+        {
+          "id": "https://openalex.org/C109051061",
+          "wikidata": "https://www.wikidata.org/wiki/Q864610",
+          "display_name": "Biomonitoring",
+          "level": 2,
+          "score": 0.4652842879295349
+        },
+        {
+          "id": "https://openalex.org/C2987857752",
+          "wikidata": "https://www.wikidata.org/wiki/Q12147",
+          "display_name": "Human health",
+          "level": 2,
+          "score": 0.4470689296722412
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.4429609775543213
+        },
+        {
+          "id": "https://openalex.org/C198408306",
+          "wikidata": "https://www.wikidata.org/wiki/Q4008388",
+          "display_name": "Exposure assessment",
+          "level": 2,
+          "score": 0.4406702518463135
+        },
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.427548885345459
+        },
+        {
+          "id": "https://openalex.org/C188087704",
+          "wikidata": "https://www.wikidata.org/wiki/Q369577",
+          "display_name": "Standardization",
+          "level": 2,
+          "score": 0.4224271774291992
+        },
+        {
+          "id": "https://openalex.org/C116567970",
+          "wikidata": "https://www.wikidata.org/wiki/Q864217",
+          "display_name": "Biobank",
+          "level": 2,
+          "score": 0.3890896737575531
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.36043649911880493
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.2587816119194031
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.2568662166595459
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.2503204941749573
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.13703763484954834
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.10478213429450989
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004781",
+          "descriptor_name": "Environmental Exposure",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004782",
+          "descriptor_name": "Environmental Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011634",
+          "descriptor_name": "Public Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011634",
+          "descriptor_name": "Public Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011634",
+          "descriptor_name": "Public Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011634",
+          "descriptor_name": "Public Health",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012958",
+          "descriptor_name": "Societies, Scientific",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012958",
+          "descriptor_name": "Societies, Scientific",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012958",
+          "descriptor_name": "Societies, Scientific",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012958",
+          "descriptor_name": "Societies, Scientific",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.1186/s40246-017-0128-0",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s40246-017-0128-0",
+          "pdf_url": "https://humgenomics.biomedcentral.com/track/pdf/10.1186/s40246-017-0128-0",
+          "source": {
+            "id": "https://openalex.org/S2738571386",
+            "display_name": "Human Genomics",
+            "issn_l": "1473-9542",
+            "issn": [
+              "1473-9542",
+              "1479-7364"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Human Genomics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:29221465",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/29221465",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Human genomics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:dash.harvard.edu:1/34651841",
+          "is_oa": true,
+          "landing_page_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:34651841",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401540",
+            "display_name": "Digital Access to Scholarship at Harvard (DASH) (Harvard University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I136199984",
+            "host_organization_name": "Harvard University",
+            "host_organization_lineage": [
+              "https://openalex.org/I136199984"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:e2150a20689a411f9b015b823034d8d5",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/e2150a20689a411f9b015b823034d8d5",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Human Genomics, Vol 11, Iss 1, Pp 1-8 (2017)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:4639252",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5723043",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:spiral.imperial.ac.uk:10044/1/55469",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10044/1/55469",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401396",
+            "display_name": "Spiral (Imperial College London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I47508984",
+            "host_organization_name": "Imperial College London",
+            "host_organization_lineage": [
+              "https://openalex.org/I47508984"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Journal Article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s40246-017-0128-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s40246-017-0128-0",
+        "pdf_url": "https://humgenomics.biomedcentral.com/track/pdf/10.1186/s40246-017-0128-0",
+        "source": {
+          "id": "https://openalex.org/S2738571386",
+          "display_name": "Human Genomics",
+          "issn_l": "1473-9542",
+          "issn": [
+            "1473-9542",
+            "1479-7364"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Human Genomics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G1903070866",
+          "display_name": null,
+          "funder_award_id": "R01 EY017963",
+          "funder_id": "https://openalex.org/F4320337350",
+          "funder_display_name": "National Eye Institute"
+        },
+        {
+          "id": "https://openalex.org/G2252801914",
+          "display_name": null,
+          "funder_award_id": "R01 ES023485",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G2455188558",
+          "display_name": null,
+          "funder_award_id": "R00 ES023504",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G2616087901",
+          "display_name": null,
+          "funder_award_id": "R21 ES025052",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G3125156071",
+          "display_name": null,
+          "funder_award_id": "AA022057",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G4103250585",
+          "display_name": null,
+          "funder_award_id": "EY017963",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G4408159200",
+          "display_name": null,
+          "funder_award_id": "U2C ES026560",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G52389107",
+          "display_name": null,
+          "funder_award_id": "U01 AA021724",
+          "funder_id": "https://openalex.org/F4320337330",
+          "funder_display_name": "National Institute on Alcohol Abuse and Alcoholism"
+        },
+        {
+          "id": "https://openalex.org/G5271088036",
+          "display_name": null,
+          "funder_award_id": "ES019776",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G5333161666",
+          "display_name": null,
+          "funder_award_id": "ES025632",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G5790489892",
+          "display_name": null,
+          "funder_award_id": "ES023485",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G581778383",
+          "display_name": null,
+          "funder_award_id": "S10 OD018006",
+          "funder_id": "https://openalex.org/F4320337349",
+          "funder_display_name": "NIH Office of the Director"
+        },
+        {
+          "id": "https://openalex.org/G6135630397",
+          "display_name": null,
+          "funder_award_id": "R01 ES023485",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G62748882",
+          "display_name": null,
+          "funder_award_id": "R24 AA022057",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G6561462237",
+          "display_name": null,
+          "funder_award_id": "R21 ES025632",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G7032191860",
+          "display_name": null,
+          "funder_award_id": "S10 OD018006",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G7635558712",
+          "display_name": null,
+          "funder_award_id": "R24 AA022057",
+          "funder_id": "https://openalex.org/F4320337330",
+          "funder_display_name": "National Institute on Alcohol Abuse and Alcoholism"
+        },
+        {
+          "id": "https://openalex.org/G7711259543",
+          "display_name": null,
+          "funder_award_id": "P30 ES019776",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G7862152857",
+          "display_name": null,
+          "funder_award_id": "P30 ES019776",
+          "funder_id": "https://openalex.org/F4320337361",
+          "funder_display_name": "National Institute of Environmental Health Sciences"
+        },
+        {
+          "id": "https://openalex.org/G8288036582",
+          "display_name": null,
+          "funder_award_id": "NIH R01",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G8446125654",
+          "display_name": null,
+          "funder_award_id": "OD018006",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G8661701742",
+          "display_name": null,
+          "funder_award_id": "AA021724",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G904021062",
+          "display_name": null,
+          "funder_award_id": "R01 EY017963",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320308380",
+          "display_name": "Yale University",
+          "ror": "https://ror.org/03v76x132"
+        },
+        {
+          "id": "https://openalex.org/F4320312423",
+          "display_name": "Yale Cancer Center",
+          "ror": "https://ror.org/03j7sze86"
+        },
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320337330",
+          "display_name": "National Institute on Alcohol Abuse and Alcoholism",
+          "ror": "https://ror.org/02jzrsm59"
+        },
+        {
+          "id": "https://openalex.org/F4320337349",
+          "display_name": "NIH Office of the Director",
+          "ror": "https://ror.org/00fj8a872"
+        },
+        {
+          "id": "https://openalex.org/F4320337350",
+          "display_name": "National Eye Institute",
+          "ror": "https://ror.org/03wkg3b53"
+        },
+        {
+          "id": "https://openalex.org/F4320337361",
+          "display_name": "National Institute of Environmental Health Sciences",
+          "ror": "https://ror.org/00j4k1h63"
+        },
+        {
+          "id": "https://openalex.org/F6433078316",
+          "display_name": "Women's Health Research at Yale, Yale School of Medicine",
+          "ror": null
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2772900610.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2772900610.grobid-xml"
+      },
+      "referenced_works_count": 73,
+      "referenced_works": [
+        "https://openalex.org/W1456625250",
+        "https://openalex.org/W1480100581",
+        "https://openalex.org/W1855058198",
+        "https://openalex.org/W1968547755",
+        "https://openalex.org/W1976750784",
+        "https://openalex.org/W1983950597",
+        "https://openalex.org/W1987638499",
+        "https://openalex.org/W1988629244",
+        "https://openalex.org/W1994742756",
+        "https://openalex.org/W1998767819",
+        "https://openalex.org/W2002405850",
+        "https://openalex.org/W2005317772",
+        "https://openalex.org/W2006710737",
+        "https://openalex.org/W2010707723",
+        "https://openalex.org/W2012660994",
+        "https://openalex.org/W2015703383",
+        "https://openalex.org/W2024340432",
+        "https://openalex.org/W2025944550",
+        "https://openalex.org/W2032047739",
+        "https://openalex.org/W2040567513",
+        "https://openalex.org/W2049693423",
+        "https://openalex.org/W2053369230",
+        "https://openalex.org/W2063028213",
+        "https://openalex.org/W2069637401",
+        "https://openalex.org/W2073939393",
+        "https://openalex.org/W2084375915",
+        "https://openalex.org/W2087591041",
+        "https://openalex.org/W2090056656",
+        "https://openalex.org/W2104226995",
+        "https://openalex.org/W2104443195",
+        "https://openalex.org/W2108170463",
+        "https://openalex.org/W2110272025",
+        "https://openalex.org/W2110812878",
+        "https://openalex.org/W2125011914",
+        "https://openalex.org/W2130319566",
+        "https://openalex.org/W2131848047",
+        "https://openalex.org/W2135607659",
+        "https://openalex.org/W2138649409",
+        "https://openalex.org/W2141034208",
+        "https://openalex.org/W2147443546",
+        "https://openalex.org/W2149893397",
+        "https://openalex.org/W2157931132",
+        "https://openalex.org/W2174047668",
+        "https://openalex.org/W2186889723",
+        "https://openalex.org/W2190572731",
+        "https://openalex.org/W2275955764",
+        "https://openalex.org/W2276063231",
+        "https://openalex.org/W2314442617",
+        "https://openalex.org/W2338551889",
+        "https://openalex.org/W2466902048",
+        "https://openalex.org/W2467710961",
+        "https://openalex.org/W2468100412",
+        "https://openalex.org/W2487757292",
+        "https://openalex.org/W2493256721",
+        "https://openalex.org/W2500755047",
+        "https://openalex.org/W2511615068",
+        "https://openalex.org/W2511842053",
+        "https://openalex.org/W2512767308",
+        "https://openalex.org/W2515148499",
+        "https://openalex.org/W2518686384",
+        "https://openalex.org/W2526047447",
+        "https://openalex.org/W2526986571",
+        "https://openalex.org/W2529573043",
+        "https://openalex.org/W2530164615",
+        "https://openalex.org/W2532137099",
+        "https://openalex.org/W2560273460",
+        "https://openalex.org/W2561291010",
+        "https://openalex.org/W2596100941",
+        "https://openalex.org/W2605965689",
+        "https://openalex.org/W2611990874",
+        "https://openalex.org/W2756689898",
+        "https://openalex.org/W2766190419",
+        "https://openalex.org/W6704206212"
+      ],
+      "related_works": [
+        "https://openalex.org/W2564501837",
+        "https://openalex.org/W2400586671",
+        "https://openalex.org/W2153448167",
+        "https://openalex.org/W4247865788",
+        "https://openalex.org/W2006320202",
+        "https://openalex.org/W2556546522",
+        "https://openalex.org/W4239172512",
+        "https://openalex.org/W2557805005",
+        "https://openalex.org/W2328005876",
+        "https://openalex.org/W2013231944"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          84
+        ],
+        "exposome": [
+          1
+        ],
+        "is": [
+          2,
+          152
+        ],
+        "defined": [
+          3
+        ],
+        "as": [
+          4
+        ],
+        "\"the": [
+          5
+        ],
+        "totality": [
+          6,
+          141
+        ],
+        "of": [
+          7,
+          36,
+          72,
+          90,
+          105,
+          138,
+          142,
+          167,
+          212
+        ],
+        "environmental": [
+          8,
+          24,
+          116
+        ],
+        "exposures": [
+          9,
+          143
+        ],
+        "encountered": [
+          10
+        ],
+        "from": [
+          11,
+          128
+        ],
+        "birth": [
+          12
+        ],
+        "to": [
+          13,
+          18,
+          27,
+          33,
+          44,
+          56,
+          65,
+          96,
+          154
+        ],
+        "death\"": [
+          14
+        ],
+        "and": [
+          15,
+          50,
+          54,
+          58,
+          81,
+          112,
+          173,
+          182,
+          187,
+          190,
+          203,
+          210,
+          218,
+          228
+        ],
+        "was": [
+          16,
+          95,
+          123
+        ],
+        "developed": [
+          17
+        ],
+        "address": [
+          19
+        ],
+        "the": [
+          20,
+          34,
+          37,
+          70,
+          98,
+          106,
+          119,
+          140,
+          157,
+          177,
+          184,
+          188,
+          195
+        ],
+        "need": [
+          21
+        ],
+        "for": [
+          22,
+          47,
+          103,
+          207,
+          216,
+          223,
+          230
+        ],
+        "comprehensive": [
+          23
+        ],
+        "exposure": [
+          25,
+          52,
+          217
+        ],
+        "assessment": [
+          26
+        ],
+        "better": [
+          28,
+          155
+        ],
+        "understand": [
+          29,
+          156
+        ],
+        "disease": [
+          30
+        ],
+        "etiology.": [
+          31
+        ],
+        "Due": [
+          32
+        ],
+        "complexity": [
+          35
+        ],
+        "exposome,": [
+          38,
+          107
+        ],
+        "significant": [
+          39
+        ],
+        "efforts": [
+          40
+        ],
+        "have": [
+          41
+        ],
+        "been": [
+          42
+        ],
+        "made": [
+          43
+        ],
+        "develop": [
+          45
+        ],
+        "technologies": [
+          46
+        ],
+        "longitudinal,": [
+          48
+        ],
+        "internal": [
+          49
+        ],
+        "external": [
+          51
+        ],
+        "monitoring,": [
+          53
+        ],
+        "bioinformatics": [
+          55,
+          108,
+          174,
+          221
+        ],
+        "integrate": [
+          57
+        ],
+        "analyze": [
+          59
+        ],
+        "datasets": [
+          60
+        ],
+        "generated.": [
+          61
+        ],
+        "Our": [
+          62,
+          93
+        ],
+        "objectives": [
+          63
+        ],
+        "were": [
+          64,
+          197
+        ],
+        "bring": [
+          66
+        ],
+        "together": [
+          67
+        ],
+        "leaders": [
+          68
+        ],
+        "in": [
+          69,
+          115,
+          171,
+          180,
+          194
+        ],
+        "field": [
+          71,
+          178
+        ],
+        "exposomics,": [
+          73
+        ],
+        "at": [
+          74,
+          87
+        ],
+        "a": [
+          75,
+          129,
+          135
+        ],
+        "recent": [
+          76,
+          100
+        ],
+        "Symposium": [
+          77
+        ],
+        "on": [
+          78,
+          125,
+          161
+        ],
+        "\"Lifetime": [
+          79
+        ],
+        "Exposures": [
+          80
+        ],
+        "Human": [
+          82
+        ],
+        "Health:": [
+          83
+        ],
+        "Exposome,\"": [
+          85
+        ],
+        "held": [
+          86
+        ],
+        "Yale": [
+          88
+        ],
+        "School": [
+          89
+        ],
+        "Public": [
+          91
+        ],
+        "Health.": [
+          92
+        ],
+        "aim": [
+          94
+        ],
+        "highlight": [
+          97
+        ],
+        "most": [
+          99
+        ],
+        "technological": [
+          101,
+          189
+        ],
+        "advancements": [
+          102,
+          170
+        ],
+        "measurement": [
+          104
+        ],
+        "development,": [
+          109
+        ],
+        "current": [
+          110
+        ],
+        "limitations,": [
+          111
+        ],
+        "future": [
+          113
+        ],
+        "needs": [
+          114
+        ],
+        "health.": [
+          117
+        ],
+        "In": [
+          118,
+          199
+        ],
+        "discussions,": [
+          120
+        ],
+        "an": [
+          121
+        ],
+        "emphasis": [
+          122
+        ],
+        "placed": [
+          124
+        ],
+        "moving": [
+          126
+        ],
+        "away": [
+          127
+        ],
+        "one-chemical": [
+          130
+        ],
+        "one-health": [
+          131
+        ],
+        "outcome": [
+          132
+        ],
+        "model": [
+          133
+        ],
+        "toward": [
+          134
+        ],
+        "new": [
+          136
+        ],
+        "paradigm": [
+          137
+        ],
+        "monitoring": [
+          139
+        ],
+        "that": [
+          144
+        ],
+        "individuals": [
+          145
+        ],
+        "may": [
+          146
+        ],
+        "experience": [
+          147
+        ],
+        "over": [
+          148
+        ],
+        "their": [
+          149
+        ],
+        "lifetime.": [
+          150
+        ],
+        "This": [
+          151
+        ],
+        "critical": [
+          153
+        ],
+        "underlying": [
+          158
+        ],
+        "biological": [
+          159,
+          185
+        ],
+        "impact": [
+          160
+        ],
+        "human": [
+          162
+        ],
+        "health,": [
+          163
+        ],
+        "particularly": [
+          164
+        ],
+        "during": [
+          165
+        ],
+        "windows": [
+          166
+        ],
+        "susceptibility.": [
+          168
+        ],
+        "Recent": [
+          169
+        ],
+        "metabolomics": [
+          172
+        ],
+        "are": [
+          175,
+          205
+        ],
+        "driving": [
+          176
+        ],
+        "forward": [
+          179
+        ],
+        "biomonitoring": [
+          181,
+          209
+        ],
+        "understanding": [
+          183
+        ],
+        "impact,": [
+          186
+        ],
+        "logistical": [
+          191
+        ],
+        "challenges": [
+          192
+        ],
+        "involved": [
+          193
+        ],
+        "analyses": [
+          196
+        ],
+        "highlighted.": [
+          198
+        ],
+        "conclusion,": [
+          200
+        ],
+        "further": [
+          201
+        ],
+        "developments": [
+          202
+        ],
+        "support": [
+          204
+        ],
+        "needed": [
+          206
+        ],
+        "large-scale": [
+          208
+        ],
+        "management": [
+          211
+        ],
+        "big": [
+          213
+        ],
+        "data,": [
+          214
+        ],
+        "standardization": [
+          215
+        ],
+        "data": [
+          219,
+          231
+        ],
+        "analyses,": [
+          220,
+          227
+        ],
+        "tools": [
+          222
+        ],
+        "co-exposure": [
+          224
+        ],
+        "or": [
+          225
+        ],
+        "mixture": [
+          226
+        ],
+        "methods": [
+          229
+        ],
+        "sharing.": [
+          232
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 4
+        }
+      ],
+      "updated_date": "2026-06-23T13:55:30.953635",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2996617694",
+      "doi": "https://doi.org/10.2196/13498",
+      "title": "Adverse Childhood Experiences Ontology for Mental Health Surveillance, Research, and Evaluation: Advanced Knowledge Representation and Semantic Web Techniques",
+      "display_name": "Adverse Childhood Experiences Ontology for Mental Health Surveillance, Research, and Evaluation: Advanced Knowledge Representation and Semantic Web Techniques",
+      "relevance_score": 89.557144,
+      "publication_year": 2019,
+      "publication_date": "2019-04-02",
+      "ids": {
+        "openalex": "https://openalex.org/W2996617694",
+        "doi": "https://doi.org/10.2196/13498",
+        "mag": "2996617694",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/31115344"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.2196/13498",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/13498",
+        "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764449704",
+          "display_name": "JMIR Mental Health",
+          "issn_l": "2368-7959",
+          "issn": [
+            "2368-7959"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Mental Health",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "arxiv",
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Jon Hael Brenas",
+            "orcid": "https://orcid.org/0000-0001-9395-9365"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jon Hael Brenas",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9395-9365",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Eun Kyong Shin",
+            "orcid": "https://orcid.org/0000-0002-0541-788X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eun Kyong Shin",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0541-788X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Arash Shaban-Nejad",
+            "orcid": "https://orcid.org/0000-0003-2047-4759"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1289243028",
+              "display_name": "Oak Ridge National Laboratory",
+              "ror": "https://ror.org/01qz5mb56",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I4210159294"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I160606119",
+              "display_name": "University of Tennessee Health Science Center",
+              "ror": "https://ror.org/0011qv509",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Arash Shaban-Nejad",
+          "raw_affiliation_strings": [
+            "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2047-4759",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pediatrics, Oak Ridge National Laboratory Center for Biomedical Informatics, University of Tennessee Health Science Center, Memphis, TN, United States",
+              "institution_ids": [
+                "https://openalex.org/I1289243028",
+                "https://openalex.org/I160606119"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I1289243028",
+        "https://openalex.org/I160606119"
+      ],
+      "apc_list": {
+        "value": 2750,
+        "currency": "USD",
+        "value_usd": 2750
+      },
+      "apc_paid": {
+        "value": 2750,
+        "currency": "USD",
+        "value_usd": 2750
+      },
+      "fwci": 1.1596,
+      "has_fulltext": true,
+      "cited_by_count": 22,
+      "citation_normalized_percentile": {
+        "value": 0.78727805,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "6",
+        "issue": "5",
+        "first_page": "e13498",
+        "last_page": "e13498"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.35749998688697815,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.35749998688697815,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10426",
+          "display_name": "Child Abuse and Trauma",
+          "score": 0.09160000085830688,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3203",
+            "display_name": "Clinical Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12488",
+          "display_name": "Mental Health via Writing",
+          "score": 0.08020000159740448,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7660999894142151
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-health",
+          "display_name": "Mental health",
+          "score": 0.625
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.5354999899864197
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-network",
+          "display_name": "Semantic network",
+          "score": 0.4860000014305115
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-representation-and-reasoning",
+          "display_name": "Knowledge representation and reasoning",
+          "score": 0.47749999165534973
+        },
+        {
+          "id": "https://openalex.org/keywords/representation",
+          "display_name": "Representation (politics)",
+          "score": 0.4490000009536743
+        },
+        {
+          "id": "https://openalex.org/keywords/mental-representation",
+          "display_name": "Mental representation",
+          "score": 0.44600000977516174
+        },
+        {
+          "id": "https://openalex.org/keywords/semantics",
+          "display_name": "Semantics (computer science)",
+          "score": 0.3797000050544739
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7660999894142151
+        },
+        {
+          "id": "https://openalex.org/C134362201",
+          "wikidata": "https://www.wikidata.org/wiki/Q317309",
+          "display_name": "Mental health",
+          "level": 2,
+          "score": 0.625
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.5354999899864197
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5289000272750854
+        },
+        {
+          "id": "https://openalex.org/C85407183",
+          "wikidata": "https://www.wikidata.org/wiki/Q1045785",
+          "display_name": "Semantic network",
+          "level": 2,
+          "score": 0.4860000014305115
+        },
+        {
+          "id": "https://openalex.org/C161301231",
+          "wikidata": "https://www.wikidata.org/wiki/Q3478658",
+          "display_name": "Knowledge representation and reasoning",
+          "level": 2,
+          "score": 0.47749999165534973
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.4490000009536743
+        },
+        {
+          "id": "https://openalex.org/C96199812",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145290",
+          "display_name": "Mental representation",
+          "level": 3,
+          "score": 0.44600000977516174
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.4449000060558319
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.4108999967575073
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3797000050544739
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.3440999984741211
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3305000066757202
+        },
+        {
+          "id": "https://openalex.org/C50382505",
+          "wikidata": "https://www.wikidata.org/wiki/Q2553356",
+          "display_name": "OWL-S",
+          "level": 4,
+          "score": 0.28529998660087585
+        },
+        {
+          "id": "https://openalex.org/C2982912361",
+          "wikidata": "https://www.wikidata.org/wiki/Q1851867",
+          "display_name": "Mental model",
+          "level": 2,
+          "score": 0.27720001339912415
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.27140000462532043
+        },
+        {
+          "id": "https://openalex.org/C110903229",
+          "wikidata": "https://www.wikidata.org/wiki/Q7449064",
+          "display_name": "Semantic integration",
+          "level": 4,
+          "score": 0.2651999890804291
+        },
+        {
+          "id": "https://openalex.org/C2908744105",
+          "wikidata": "https://www.wikidata.org/wiki/Q105821669",
+          "display_name": "Adverse Childhood Experiences",
+          "level": 3,
+          "score": 0.26420000195503235
+        },
+        {
+          "id": "https://openalex.org/C3019659195",
+          "wikidata": "https://www.wikidata.org/wiki/Q5690566",
+          "display_name": "Meaningful use",
+          "level": 3,
+          "score": 0.2630999982357025
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.26080000400543213
+        },
+        {
+          "id": "https://openalex.org/C534406577",
+          "wikidata": "https://www.wikidata.org/wiki/Q7550843",
+          "display_name": "Social Semantic Web",
+          "level": 3,
+          "score": 0.260699987411499
+        },
+        {
+          "id": "https://openalex.org/C2779473830",
+          "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+          "display_name": "MEDLINE",
+          "level": 2,
+          "score": 0.2574000060558319
+        }
+      ],
+      "mesh": [],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.2196/13498",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/13498",
+          "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764449704",
+            "display_name": "JMIR Mental Health",
+            "issn_l": "2368-7959",
+            "issn": [
+              "2368-7959"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR Mental Health",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:31115344",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31115344",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mental health",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:arXiv.org:1912.05530",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/1912.05530",
+          "pdf_url": "https://arxiv.org/pdf/1912.05530",
+          "source": {
+            "id": "https://openalex.org/S4393918464",
+            "display_name": "ArXiv.org",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:5816700",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6707574",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/13498",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/13498",
+        "pdf_url": "https://mental.jmir.org/2019/5/e13498/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764449704",
+          "display_name": "JMIR Mental Health",
+          "issn_l": "2368-7959",
+          "issn": [
+            "2368-7959"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR Mental Health",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2996617694.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2996617694.grobid-xml"
+      },
+      "referenced_works_count": 10,
+      "referenced_works": [
+        "https://openalex.org/W1920801162",
+        "https://openalex.org/W2077878361",
+        "https://openalex.org/W2116839388",
+        "https://openalex.org/W2166372248",
+        "https://openalex.org/W2534494754",
+        "https://openalex.org/W2750641905",
+        "https://openalex.org/W2751084379",
+        "https://openalex.org/W2752089765",
+        "https://openalex.org/W2762672046",
+        "https://openalex.org/W2898031839"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Adverse": [
+          1
+        ],
+        "Childhood": [
+          2
+        ],
+        "Experiences": [
+          3
+        ],
+        "(ACEs),": [
+          4
+        ],
+        "a": [
+          5,
+          13,
+          31,
+          81,
+          85,
+          136,
+          221,
+          233
+        ],
+        "set": [
+          6
+        ],
+        "of": [
+          7,
+          30,
+          33,
+          126,
+          138,
+          179,
+          204,
+          218
+        ],
+        "negative": [
+          8,
+          34,
+          209
+        ],
+        "events": [
+          9
+        ],
+        "and": [
+          10,
+          19,
+          37,
+          43,
+          53,
+          62,
+          66,
+          97,
+          100,
+          105,
+          113,
+          117,
+          151,
+          159,
+          175,
+          206,
+          223,
+          226,
+          235,
+          239,
+          248,
+          254
+        ],
+        "processes": [
+          11
+        ],
+        "that": [
+          12,
+          211
+        ],
+        "person": [
+          14
+        ],
+        "might": [
+          15,
+          213
+        ],
+        "encounter": [
+          16,
+          214
+        ],
+        "during": [
+          17
+        ],
+        "childhood": [
+          18
+        ],
+        "adolescence,": [
+          20
+        ],
+        "have": [
+          21,
+          170
+        ],
+        "been": [
+          22,
+          149,
+          171
+        ],
+        "proven": [
+          23
+        ],
+        "to": [
+          24,
+          27,
+          63,
+          71,
+          87,
+          93,
+          101,
+          119,
+          154,
+          173,
+          188,
+          215,
+          250
+        ],
+        "be": [
+          25,
+          189
+        ],
+        "linked": [
+          26
+        ],
+        "increased": [
+          28
+        ],
+        "risks": [
+          29
+        ],
+        "multitude": [
+          32
+        ],
+        "health": [
+          35,
+          60,
+          91,
+          157,
+          246
+        ],
+        "outcomes": [
+          36,
+          61,
+          210
+        ],
+        "conditions": [
+          38
+        ],
+        "when": [
+          39
+        ],
+        "children": [
+          40
+        ],
+        "reach": [
+          41
+        ],
+        "adulthood": [
+          42
+        ],
+        "beyond.": [
+          44
+        ],
+        "OBJECTIVE:": [
+          45
+        ],
+        "To": [
+          46
+        ],
+        "better": [
+          47
+        ],
+        "understand": [
+          48
+        ],
+        "the": [
+          49,
+          89,
+          121,
+          127,
+          132,
+          155,
+          160,
+          163,
+          177,
+          180,
+          195,
+          202,
+          216
+        ],
+        "relationship": [
+          50
+        ],
+        "between": [
+          51
+        ],
+        "ACEs": [
+          52,
+          146,
+          196,
+          219,
+          230
+        ],
+        "their": [
+          54
+        ],
+        "relevant": [
+          55
+        ],
+        "risk": [
+          56
+        ],
+        "factors": [
+          57
+        ],
+        "with": [
+          58,
+          198
+        ],
+        "associated": [
+          59
+        ],
+        "eventually": [
+          64
+        ],
+        "design": [
+          65
+        ],
+        "implement": [
+          67,
+          120
+        ],
+        "preventive": [
+          68
+        ],
+        "interventions,": [
+          69
+        ],
+        "access": [
+          70
+        ],
+        "an": [
+          72,
+          240
+        ],
+        "integrated": [
+          73,
+          241
+        ],
+        "coherent": [
+          74
+        ],
+        "dataset": [
+          75
+        ],
+        "is": [
+          76,
+          129
+        ],
+        "needed.": [
+          77
+        ],
+        "Therefore,": [
+          78
+        ],
+        "we": [
+          79
+        ],
+        "implemented": [
+          80,
+          150
+        ],
+        "formal": [
+          82
+        ],
+        "ontology": [
+          83,
+          128,
+          181,
+          185
+        ],
+        "as": [
+          84
+        ],
+        "resource": [
+          86
+        ],
+        "allow": [
+          88
+        ],
+        "mental": [
+          90,
+          156,
+          245
+        ],
+        "community": [
+          92,
+          158,
+          197
+        ],
+        "facilitate": [
+          94
+        ],
+        "data": [
+          95
+        ],
+        "integration": [
+          96
+        ],
+        "knowledge": [
+          98,
+          111,
+          242
+        ],
+        "modeling": [
+          99
+        ],
+        "improve": [
+          102,
+          251
+        ],
+        "ACEs'": [
+          103,
+          252
+        ],
+        "surveillance": [
+          104,
+          253
+        ],
+        "research.": [
+          106
+        ],
+        "METHODS:": [
+          107
+        ],
+        "We": [
+          108
+        ],
+        "use": [
+          109
+        ],
+        "advanced": [
+          110
+        ],
+        "representation": [
+          112
+        ],
+        "semantic": [
+          114,
+          237
+        ],
+        "Web": [
+          115,
+          139
+        ],
+        "tools": [
+          116
+        ],
+        "techniques": [
+          118
+        ],
+        "ontology.": [
+          122
+        ],
+        "The": [
+          123,
+          145,
+          184,
+          229
+        ],
+        "current": [
+          124
+        ],
+        "implementation": [
+          125
+        ],
+        "expressed": [
+          130
+        ],
+        "in": [
+          131,
+          182,
+          194,
+          220
+        ],
+        "description": [
+          133
+        ],
+        "logic": [
+          134
+        ],
+        "ALCRIQ(D),": [
+          135
+        ],
+        "sublogic": [
+          137
+        ],
+        "Ontology": [
+          140,
+          147,
+          231
+        ],
+        "Language": [
+          141
+        ],
+        "(OWL": [
+          142
+        ],
+        "2).": [
+          143
+        ],
+        "RESULTS:": [
+          144
+        ],
+        "has": [
+          148
+        ],
+        "made": [
+          152
+        ],
+        "available": [
+          153
+        ],
+        "public": [
+          161
+        ],
+        "via": [
+          162
+        ],
+        "BioPortal": [
+          164
+        ],
+        "repository.": [
+          165
+        ],
+        "Moreover,": [
+          166
+        ],
+        "multiple": [
+          167
+        ],
+        "use-case": [
+          168
+        ],
+        "scenarios": [
+          169
+        ],
+        "introduced": [
+          172
+        ],
+        "showcase": [
+          174
+        ],
+        "evaluate": [
+          176
+        ],
+        "usability": [
+          178
+        ],
+        "action.": [
+          183
+        ],
+        "was": [
+          186
+        ],
+        "created": [
+          187
+        ],
+        "used": [
+          190
+        ],
+        "by": [
+          191
+        ],
+        "major": [
+          192
+        ],
+        "actors": [
+          193
+        ],
+        "different": [
+          199
+        ],
+        "applications,": [
+          200
+        ],
+        "from": [
+          201
+        ],
+        "diagnosis": [
+          203
+        ],
+        "individuals": [
+          205
+        ],
+        "predicting": [
+          207
+        ],
+        "potential": [
+          208
+        ],
+        "they": [
+          212
+        ],
+        "prevention": [
+          217
+        ],
+        "population": [
+          222
+        ],
+        "designing": [
+          224
+        ],
+        "interventions": [
+          225
+        ],
+        "policies.": [
+          227
+        ],
+        "CONCLUSIONS:": [
+          228
+        ],
+        "provides": [
+          232
+        ],
+        "uniform": [
+          234
+        ],
+        "reusable": [
+          236
+        ],
+        "network": [
+          238
+        ],
+        "structure": [
+          243
+        ],
+        "for": [
+          244
+        ],
+        "practitioners": [
+          247
+        ],
+        "researchers": [
+          249
+        ],
+        "evaluation.": [
+          255
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2019-12-26T00:00:00"
+    }
+  ],
+  "group_by": []
+}

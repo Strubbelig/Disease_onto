@@ -1,0 +1,5643 @@
+{
+  "meta": {
+    "count": 53,
+    "db_response_time_ms": 121,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (FNS-Harmony ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "FNS-Harmony ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:FNS-Harmony ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4293168744",
+      "doi": "https://doi.org/10.1051/wujns/2022273240",
+      "title": "Improving the Efficiency of Multi-Objective Grasshopper Optimization Algorithm to Enhance Ontology Alignment",
+      "display_name": "Improving the Efficiency of Multi-Objective Grasshopper Optimization Algorithm to Enhance Ontology Alignment",
+      "relevance_score": 35.003803,
+      "publication_year": 2022,
+      "publication_date": "2022-06-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4293168744",
+        "doi": "https://doi.org/10.1051/wujns/2022273240"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1051/wujns/2022273240",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1051/wujns/2022273240",
+        "pdf_url": "https://wujns.edpsciences.org/articles/wujns/pdf/2022/03/wujns-1007-1202-2022-03-0240-15.pdf",
+        "source": {
+          "id": "https://openalex.org/S91713211",
+          "display_name": "Wuhan University Journal of Natural Sciences",
+          "issn_l": "1007-1202",
+          "issn": [
+            "1007-1202",
+            "1993-4998"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Wuhan University Journal of Natural Sciences",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://wujns.edpsciences.org/articles/wujns/pdf/2022/03/wujns-1007-1202-2022-03-0240-15.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015592821",
+            "display_name": "Zhaoming Lv",
+            "orcid": "https://orcid.org/0000-0002-2365-853X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I37461747",
+              "display_name": "Wuhan University",
+              "ror": "https://ror.org/033vjfk17",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I37461747"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zhaoming LV",
+          "raw_affiliation_strings": [
+            "School of Computer Science, Wuhan University, Wuhan 430072, Hubei, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computer Science, Wuhan University, Wuhan 430072, Hubei, China",
+              "institution_ids": [
+                "https://openalex.org/I37461747"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5078083652",
+            "display_name": "Rong Peng",
+            "orcid": "https://orcid.org/0000-0003-2330-9409"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I37461747",
+              "display_name": "Wuhan University",
+              "ror": "https://ror.org/033vjfk17",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I37461747"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Rong PENG",
+          "raw_affiliation_strings": [
+            "School of Computer Science, Wuhan University, Wuhan 430072, Hubei, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Computer Science, Wuhan University, Wuhan 430072, Hubei, China",
+              "institution_ids": [
+                "https://openalex.org/I37461747"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I37461747"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.6939,
+      "has_fulltext": true,
+      "cited_by_count": 5,
+      "citation_normalized_percentile": {
+        "value": 0.75263715,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 96
+      },
+      "biblio": {
+        "volume": "27",
+        "issue": "3",
+        "first_page": "240",
+        "last_page": "254"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.9983000159263611,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9983000159263611,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10679",
+          "display_name": "Service-Oriented Architecture and Web Services",
+          "score": 0.9657999873161316,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1710",
+            "display_name": "Information Systems"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology-alignment",
+          "display_name": "Ontology alignment",
+          "score": 0.84282386302948
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.8134365081787109
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7406576871871948
+        },
+        {
+          "id": "https://openalex.org/keywords/heuristics",
+          "display_name": "Heuristics",
+          "score": 0.6454067230224609
+        },
+        {
+          "id": "https://openalex.org/keywords/benchmark",
+          "display_name": "Benchmark (surveying)",
+          "score": 0.567551851272583
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.5159724354743958
+        },
+        {
+          "id": "https://openalex.org/keywords/metaheuristic",
+          "display_name": "Metaheuristic",
+          "score": 0.48777419328689575
+        },
+        {
+          "id": "https://openalex.org/keywords/set",
+          "display_name": "Set (abstract data type)",
+          "score": 0.4870052933692932
+        },
+        {
+          "id": "https://openalex.org/keywords/data-mining",
+          "display_name": "Data mining",
+          "score": 0.47809740900993347
+        },
+        {
+          "id": "https://openalex.org/keywords/sorting",
+          "display_name": "Sorting",
+          "score": 0.47194212675094604
+        },
+        {
+          "id": "https://openalex.org/keywords/multi-objective-optimization",
+          "display_name": "Multi-objective optimization",
+          "score": 0.4412471652030945
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.41682425141334534
+        },
+        {
+          "id": "https://openalex.org/keywords/algorithm",
+          "display_name": "Algorithm",
+          "score": 0.3930070996284485
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.297335684299469
+        },
+        {
+          "id": "https://openalex.org/keywords/machine-learning",
+          "display_name": "Machine learning",
+          "score": 0.2524787187576294
+        },
+        {
+          "id": "https://openalex.org/keywords/domain-knowledge",
+          "display_name": "Domain knowledge",
+          "score": 0.09363409876823425
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.84282386302948
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.8134365081787109
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7406576871871948
+        },
+        {
+          "id": "https://openalex.org/C127705205",
+          "wikidata": "https://www.wikidata.org/wiki/Q5748245",
+          "display_name": "Heuristics",
+          "level": 2,
+          "score": 0.6454067230224609
+        },
+        {
+          "id": "https://openalex.org/C185798385",
+          "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+          "display_name": "Benchmark (surveying)",
+          "level": 2,
+          "score": 0.567551851272583
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.5159724354743958
+        },
+        {
+          "id": "https://openalex.org/C109718341",
+          "wikidata": "https://www.wikidata.org/wiki/Q1385229",
+          "display_name": "Metaheuristic",
+          "level": 2,
+          "score": 0.48777419328689575
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.4870052933692932
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.47809740900993347
+        },
+        {
+          "id": "https://openalex.org/C111696304",
+          "wikidata": "https://www.wikidata.org/wiki/Q2303697",
+          "display_name": "Sorting",
+          "level": 2,
+          "score": 0.47194212675094604
+        },
+        {
+          "id": "https://openalex.org/C68781425",
+          "wikidata": "https://www.wikidata.org/wiki/Q2052203",
+          "display_name": "Multi-objective optimization",
+          "level": 2,
+          "score": 0.4412471652030945
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.41682425141334534
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.3930070996284485
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.297335684299469
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2524787187576294
+        },
+        {
+          "id": "https://openalex.org/C207685749",
+          "wikidata": "https://www.wikidata.org/wiki/Q2088941",
+          "display_name": "Domain knowledge",
+          "level": 2,
+          "score": 0.09363409876823425
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C13280743",
+          "wikidata": "https://www.wikidata.org/wiki/Q131089",
+          "display_name": "Geodesy",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1051/wujns/2022273240",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1051/wujns/2022273240",
+          "pdf_url": "https://wujns.edpsciences.org/articles/wujns/pdf/2022/03/wujns-1007-1202-2022-03-0240-15.pdf",
+          "source": {
+            "id": "https://openalex.org/S91713211",
+            "display_name": "Wuhan University Journal of Natural Sciences",
+            "issn_l": "1007-1202",
+            "issn": [
+              "1007-1202",
+              "1993-4998"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Wuhan University Journal of Natural Sciences",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:edpsciences.org:dkey/10.1051/wujns/2022273240",
+          "is_oa": false,
+          "landing_page_url": null,
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400744",
+            "display_name": "Springer Link (Chiba Institute of Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I8488066",
+            "host_organization_name": "Chiba Institute of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I8488066"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "https://doi.org/10.1051/wujns/2022273240",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1051/wujns/2022273240",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1051/wujns/2022273240",
+        "pdf_url": "https://wujns.edpsciences.org/articles/wujns/pdf/2022/03/wujns-1007-1202-2022-03-0240-15.pdf",
+        "source": {
+          "id": "https://openalex.org/S91713211",
+          "display_name": "Wuhan University Journal of Natural Sciences",
+          "issn_l": "1007-1202",
+          "issn": [
+            "1007-1202",
+            "1993-4998"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Wuhan University Journal of Natural Sciences",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4293168744.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4293168744.grobid-xml"
+      },
+      "referenced_works_count": 30,
+      "referenced_works": [
+        "https://openalex.org/W1483156870",
+        "https://openalex.org/W2023574714",
+        "https://openalex.org/W2027416828",
+        "https://openalex.org/W2052306008",
+        "https://openalex.org/W2081580037",
+        "https://openalex.org/W2105511939",
+        "https://openalex.org/W2126105956",
+        "https://openalex.org/W2141595878",
+        "https://openalex.org/W2144244034",
+        "https://openalex.org/W2145546232",
+        "https://openalex.org/W2147393868",
+        "https://openalex.org/W2165612380",
+        "https://openalex.org/W2171590889",
+        "https://openalex.org/W2239161882",
+        "https://openalex.org/W2249233388",
+        "https://openalex.org/W2501316194",
+        "https://openalex.org/W2572470967",
+        "https://openalex.org/W2585392941",
+        "https://openalex.org/W2599319273",
+        "https://openalex.org/W2742961367",
+        "https://openalex.org/W2771243680",
+        "https://openalex.org/W2774805341",
+        "https://openalex.org/W2921421327",
+        "https://openalex.org/W2944519689",
+        "https://openalex.org/W2970276968",
+        "https://openalex.org/W2973261574",
+        "https://openalex.org/W3026973239",
+        "https://openalex.org/W3080839855",
+        "https://openalex.org/W3091895038",
+        "https://openalex.org/W4241410814"
+      ],
+      "related_works": [
+        "https://openalex.org/W3123800493",
+        "https://openalex.org/W269285493",
+        "https://openalex.org/W2464347310",
+        "https://openalex.org/W2159818280",
+        "https://openalex.org/W2223008607",
+        "https://openalex.org/W2015306306",
+        "https://openalex.org/W2150106658",
+        "https://openalex.org/W1794266373",
+        "https://openalex.org/W2264478587",
+        "https://openalex.org/W2373434917"
+      ],
+      "abstract_inverted_index": {
+        "Ontology": [
+          0
+        ],
+        "alignment": [
+          1,
+          45,
+          132,
+          147
+        ],
+        "is": [
+          2,
+          84,
+          94,
+          111
+        ],
+        "an": [
+          3,
+          19
+        ],
+        "essential": [
+          4
+        ],
+        "and": [
+          5,
+          35,
+          59,
+          91,
+          125,
+          133,
+          143
+        ],
+        "complex": [
+          6
+        ],
+        "task": [
+          7
+        ],
+        "to": [
+          8,
+          17,
+          79,
+          107
+        ],
+        "integrate": [
+          9
+        ],
+        "heterogeneous": [
+          10
+        ],
+        "ontology.": [
+          11
+        ],
+        "The": [
+          12,
+          47,
+          101,
+          118
+        ],
+        "meta-heuristic": [
+          13
+        ],
+        "algorithm": [
+          14,
+          34
+        ],
+        "has": [
+          15
+        ],
+        "proven": [
+          16
+        ],
+        "be": [
+          18
+        ],
+        "effective": [
+          20
+        ],
+        "method": [
+          21
+        ],
+        "for": [
+          22
+        ],
+        "ontology": [
+          23,
+          44,
+          81,
+          110,
+          131,
+          146
+        ],
+        "alignment.": [
+          24,
+          82
+        ],
+        "However,": [
+          25
+        ],
+        "it": [
+          26
+        ],
+        "only": [
+          27
+        ],
+        "applies": [
+          28
+        ],
+        "the": [
+          29,
+          38,
+          42,
+          57,
+          60,
+          92,
+          104,
+          109,
+          115,
+          122,
+          128,
+          135,
+          144
+        ],
+        "inherent": [
+          30
+        ],
+        "advantages": [
+          31
+        ],
+        "of": [
+          32,
+          49,
+          63,
+          103,
+          130
+        ],
+        "meta-heuristics": [
+          33
+        ],
+        "rarely": [
+          36
+        ],
+        "considers": [
+          37
+        ],
+        "execution": [
+          39
+        ],
+        "efficiency,": [
+          40
+        ],
+        "especially": [
+          41
+        ],
+        "multi-objective": [
+          43,
+          51,
+          72
+        ],
+        "model.": [
+          46
+        ],
+        "performance": [
+          48,
+          102
+        ],
+        "such": [
+          50
+        ],
+        "optimization": [
+          52,
+          74
+        ],
+        "models": [
+          53
+        ],
+        "mostly": [
+          54
+        ],
+        "depends": [
+          55
+        ],
+        "on": [
+          56
+        ],
+        "well-distributed": [
+          58
+        ],
+        "fast-converged": [
+          61
+        ],
+        "set": [
+          62
+        ],
+        "solutions": [
+          64
+        ],
+        "in": [
+          65
+        ],
+        "real-world": [
+          66
+        ],
+        "applications.": [
+          67
+        ],
+        "In": [
+          68
+        ],
+        "this": [
+          69
+        ],
+        "paper,": [
+          70
+        ],
+        "two": [
+          71,
+          105
+        ],
+        "grasshopper": [
+          73
+        ],
+        "algorithms": [
+          75
+        ],
+        "(MOGOA)": [
+          76
+        ],
+        "are": [
+          77
+        ],
+        "proposed": [
+          78,
+          123
+        ],
+        "enhance": [
+          80
+        ],
+        "One": [
+          83
+        ],
+        "ε": [
+          85
+        ],
+        "-dominance": [
+          86
+        ],
+        "concept": [
+          87
+        ],
+        "based": [
+          88,
+          98
+        ],
+        "GOA": [
+          89,
+          99
+        ],
+        "(EMO-GOA)": [
+          90
+        ],
+        "other": [
+          93,
+          140
+        ],
+        "fast": [
+          95
+        ],
+        "Non-dominated": [
+          96
+        ],
+        "Sorting": [
+          97
+        ],
+        "(NS-MOGOA).": [
+          100
+        ],
+        "methods": [
+          106
+        ],
+        "align": [
+          108
+        ],
+        "evaluated": [
+          112
+        ],
+        "by": [
+          113
+        ],
+        "using": [
+          114
+        ],
+        "benchmark": [
+          116
+        ],
+        "dataset.": [
+          117
+        ],
+        "results": [
+          119
+        ],
+        "demonstrate": [
+          120
+        ],
+        "that": [
+          121
+        ],
+        "EMO-GOA": [
+          124
+        ],
+        "NS-MOGOA": [
+          126
+        ],
+        "improve": [
+          127
+        ],
+        "quality": [
+          129
+        ],
+        "reduce": [
+          134
+        ],
+        "running": [
+          136
+        ],
+        "time": [
+          137
+        ],
+        "compared": [
+          138
+        ],
+        "with": [
+          139
+        ],
+        "well-known": [
+          141
+        ],
+        "metaheuristic": [
+          142
+        ],
+        "state-of-the-art": [
+          145
+        ],
+        "methods.": [
+          148
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-06-26T08:34:08.712188",
+      "created_date": "2022-08-27T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4385474945",
+      "doi": "https://doi.org/10.5281/zenodo.8208533",
+      "title": "Extended FNS Services integrated with the FNS-Cloud",
+      "display_name": "Extended FNS Services integrated with the FNS-Cloud",
+      "relevance_score": 21.603542,
+      "publication_year": 2023,
+      "publication_date": "2023-07-31",
+      "ids": {
+        "openalex": "https://openalex.org/W4385474945",
+        "doi": "https://doi.org/10.5281/zenodo.8208533"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.8208533",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.8208533",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "type": "report",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.8208533",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5092579975",
+            "display_name": "Ina Popova",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164526",
+              "display_name": "Meso Scale Discovery (United States)",
+              "ror": "https://ror.org/05jgy0m16",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Popova, Ina",
+          "raw_affiliation_strings": [
+            "ScaleFocus"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ScaleFocus",
+              "institution_ids": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5092579976",
+            "display_name": "Daria Aladzhem",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164526",
+              "display_name": "Meso Scale Discovery (United States)",
+              "ror": "https://ror.org/05jgy0m16",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Aladzhem, Daria",
+          "raw_affiliation_strings": [
+            "ScaleFocus"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ScaleFocus",
+              "institution_ids": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5092579977",
+            "display_name": "Anton Bivolarov",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210164526",
+              "display_name": "Meso Scale Discovery (United States)",
+              "ror": "https://ror.org/05jgy0m16",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bivolarov, Anton",
+          "raw_affiliation_strings": [
+            "ScaleFocus"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ScaleFocus",
+              "institution_ids": [
+                "https://openalex.org/I4210164526"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5077223857",
+            "display_name": "Panče Panov",
+            "orcid": "https://orcid.org/0000-0002-7685-9140"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3006985408",
+              "display_name": "Jožef Stefan Institute",
+              "ror": "https://ror.org/05060sz93",
+              "country_code": "SI",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I3006985408"
+              ]
+            }
+          ],
+          "countries": [
+            "SI"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Panov, Panče",
+          "raw_affiliation_strings": [
+            "Institut Jozef Stefan"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7685-9140",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institut Jozef Stefan",
+              "institution_ids": [
+                "https://openalex.org/I3006985408"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 4,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.11706143,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11801",
+        "display_name": "Reservoir Engineering and Simulation Methods",
+        "score": 0.47440001368522644,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11801",
+          "display_name": "Reservoir Engineering and Simulation Methods",
+          "score": 0.47440001368522644,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/cloud-computing",
+          "display_name": "Cloud computing",
+          "score": 0.6399698853492737
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.4515870213508606
+        },
+        {
+          "id": "https://openalex.org/keywords/operating-system",
+          "display_name": "Operating system",
+          "score": 0.19086387753486633
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C79974875",
+          "wikidata": "https://www.wikidata.org/wiki/Q483639",
+          "display_name": "Cloud computing",
+          "level": 2,
+          "score": 0.6399698853492737
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.4515870213508606
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.19086387753486633
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.8208533",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.8208533",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.8208533",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.8208533",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Industry, innovation and infrastructure",
+          "id": "https://metadata.un.org/sdg/9",
+          "score": 0.41999998688697815
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G5014702639",
+          "display_name": null,
+          "funder_award_id": "863059",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W4244478748",
+        "https://openalex.org/W4223488648",
+        "https://openalex.org/W2134969820",
+        "https://openalex.org/W2251605416",
+        "https://openalex.org/W4389340727",
+        "https://openalex.org/W4205786897",
+        "https://openalex.org/W3150465815",
+        "https://openalex.org/W2802581102",
+        "https://openalex.org/W1997222214"
+      ],
+      "abstract_inverted_index": {
+        "Long-term": [
+          0
+        ],
+        "sustainability": [
+          1
+        ],
+        "of": [
+          2,
+          15,
+          22,
+          47,
+          64,
+          95,
+          103,
+          142,
+          162,
+          177,
+          202
+        ],
+        "the": [
+          3,
+          13,
+          31,
+          77,
+          93,
+          104,
+          112,
+          128,
+          148,
+          154,
+          160,
+          185,
+          194,
+          200,
+          217
+        ],
+        "Food": [
+          4
+        ],
+        "Nutrition": [
+          5
+        ],
+        "Security": [
+          6
+        ],
+        "(FNS)": [
+          7
+        ],
+        "Cloud": [
+          8
+        ],
+        "project": [
+          9
+        ],
+        "is": [
+          10
+        ],
+        "based": [
+          11,
+          146
+        ],
+        "on": [
+          12,
+          24,
+          147
+        ],
+        "implementation": [
+          14,
+          44,
+          139
+        ],
+        "different": [
+          16,
+          124
+        ],
+        "services": [
+          17,
+          125,
+          145,
+          172
+        ],
+        "for": [
+          18,
+          173
+        ],
+        "standardisation": [
+          19
+        ],
+        "and": [
+          20,
+          27,
+          38,
+          45,
+          57,
+          68,
+          90,
+          120,
+          140,
+          175,
+          182,
+          204,
+          212
+        ],
+        "interoperability": [
+          21
+        ],
+        "data": [
+          23,
+          122,
+          179
+        ],
+        "food,": [
+          25
+        ],
+        "nutrition,": [
+          26
+        ],
+        "security,": [
+          28
+        ],
+        "that": [
+          29
+        ],
+        "have": [
+          30
+        ],
+        "capacity": [
+          32
+        ],
+        "to": [
+          33,
+          100,
+          118,
+          153,
+          159
+        ],
+        "link": [
+          34
+        ],
+        "with": [
+          35
+        ],
+        "new": [
+          36
+        ],
+        "resources": [
+          37
+        ],
+        "enable": [
+          39
+        ],
+        "crosstalk": [
+          40
+        ],
+        "amongst": [
+          41,
+          72
+        ],
+        "them.": [
+          42
+        ],
+        "The": [
+          43
+        ],
+        "integration": [
+          46,
+          141
+        ],
+        "those": [
+          48,
+          197
+        ],
+        "services,": [
+          49
+        ],
+        "driven": [
+          50
+        ],
+        "by": [
+          51,
+          61
+        ],
+        "FAIR": [
+          52
+        ],
+        "principles": [
+          53
+        ],
+        "(findable,": [
+          54
+        ],
+        "accessible,": [
+          55
+        ],
+        "interoperable": [
+          56
+        ],
+        "reusable),": [
+          58
+        ],
+        "was": [
+          59,
+          116,
+          157
+        ],
+        "followed": [
+          60
+        ],
+        "usability": [
+          62
+        ],
+        "testing": [
+          63
+        ],
+        "WP4": [
+          65,
+          203
+        ],
+        "Use": [
+          66
+        ],
+        "Cases": [
+          67
+        ],
+        "WP5": [
+          69,
+          205
+        ],
+        "Demonstrators,": [
+          70
+        ],
+        "performed": [
+          71
+        ],
+        "user": [
+          73
+        ],
+        "communities": [
+          74
+        ],
+        "from": [
+          75,
+          82
+        ],
+        "within": [
+          76,
+          193
+        ],
+        "consortium.": [
+          78
+        ],
+        "As": [
+          79
+        ],
+        "a": [
+          80,
+          133
+        ],
+        "result,": [
+          81
+        ],
+        "this": [
+          83,
+          107
+        ],
+        "testing,": [
+          84
+        ],
+        "additional": [
+          85,
+          97
+        ],
+        "needs": [
+          86
+        ],
+        "were": [
+          87,
+          180,
+          206
+        ],
+        "identified,": [
+          88
+        ],
+        "considered": [
+          89
+        ],
+        "implemented": [
+          91,
+          126,
+          192
+        ],
+        "in": [
+          92,
+          184,
+          216
+        ],
+        "form": [
+          94
+        ],
+        "two": [
+          96
+        ],
+        "web": [
+          98,
+          210
+        ],
+        "applications": [
+          99,
+          211
+        ],
+        "support": [
+          101,
+          119
+        ],
+        "users": [
+          102
+        ],
+        "FNS-Cloud.": [
+          105
+        ],
+        "In": [
+          106
+        ],
+        "deliverable,": [
+          108
+        ],
+        "we": [
+          109,
+          131
+        ],
+        "first": [
+          110
+        ],
+        "introduce": [
+          111,
+          132
+        ],
+        "FNS-Harmony": [
+          113
+        ],
+        "ontology,": [
+          114
+        ],
+        "which": [
+          115,
+          137
+        ],
+        "developed": [
+          117,
+          181,
+          207
+        ],
+        "interconnect": [
+          121
+        ],
+        "between": [
+          123
+        ],
+        "throughout": [
+          127,
+          199
+        ],
+        "project.": [
+          129
+        ],
+        "Next,": [
+          130
+        ],
+        "reliable": [
+          134
+        ],
+        "back-end": [
+          135,
+          155,
+          186
+        ],
+        "infrastructure": [
+          136,
+          156,
+          187
+        ],
+        "allows": [
+          138
+        ],
+        "loosely": [
+          143
+        ],
+        "coupled": [
+          144
+        ],
+        "microservices": [
+          149
+        ],
+        "architecture.": [
+          150
+        ],
+        "External": [
+          151
+        ],
+        "access": [
+          152
+        ],
+        "abstracted": [
+          158
+        ],
+        "usage": [
+          161
+        ],
+        "an": [
+          163
+        ],
+        "application": [
+          164
+        ],
+        "programming": [
+          165
+        ],
+        "interface": [
+          166
+        ],
+        "(API),": [
+          167
+        ],
+        "i.e.,": [
+          168
+        ],
+        "Metadata": [
+          169
+        ],
+        "API.": [
+          170
+        ],
+        "FNS": [
+          171
+        ],
+        "curation": [
+          174
+        ],
+        "annotation": [
+          176
+        ],
+        "research": [
+          178
+        ],
+        "integrated": [
+          183
+        ],
+        "as": [
+          188,
+          208
+        ],
+        "microservices.": [
+          189
+        ],
+        "All": [
+          190
+        ],
+        "tools": [
+          191
+        ],
+        "FNSCloud,": [
+          195
+        ],
+        "including": [
+          196
+        ],
+        "identified": [
+          198
+        ],
+        "exploration": [
+          201
+        ],
+        "standalone": [
+          209
+        ],
+        "could": [
+          213
+        ],
+        "be": [
+          214
+        ],
+        "found": [
+          215
+        ],
+        "FNS-Cloud": [
+          218
+        ],
+        "Catalogues.": [
+          219
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-19T17:40:00.097472",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4406110507",
+      "doi": "https://doi.org/10.3389/fnut.2024.1503389",
+      "title": "NutriBase – management system for the integration and interoperability of food- and nutrition-related data and knowledge",
+      "display_name": "NutriBase – management system for the integration and interoperability of food- and nutrition-related data and knowledge",
+      "relevance_score": 20.760712,
+      "publication_year": 2025,
+      "publication_date": "2025-01-06",
+      "ids": {
+        "openalex": "https://openalex.org/W4406110507",
+        "doi": "https://doi.org/10.3389/fnut.2024.1503389",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/39834464"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3389/fnut.2024.1503389",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/fnut.2024.1503389",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2596909297",
+          "display_name": "Frontiers in Nutrition",
+          "issn_l": "2296-861X",
+          "issn": [
+            "2296-861X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Nutrition",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.3389/fnut.2024.1503389",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5085766503",
+            "display_name": "Eva Valenčič",
+            "orcid": "https://orcid.org/0000-0001-8560-920X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3006985408",
+              "display_name": "Jožef Stefan Institute",
+              "ror": "https://ror.org/05060sz93",
+              "country_code": "SI",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I3006985408"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210087646",
+              "display_name": "Hunter Medical Research Institute",
+              "ror": "https://ror.org/0020x6414",
+              "country_code": "AU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210113529",
+              "display_name": "Jožef Stefan International Postgraduate School",
+              "ror": "https://ror.org/01hdkb925",
+              "country_code": "SI",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210113529"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I78757542",
+              "display_name": "University of Newcastle Australia",
+              "ror": "https://ror.org/00eae9z71",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ],
+          "countries": [
+            "AU",
+            "SI"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eva Valenčič",
+          "raw_affiliation_strings": [
+            "Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia",
+            "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+            "Jožef Stefan International Postgraduate School, Ljubljana, Slovenia",
+            "School of Health Sciences, College of Health, Medicine and Wellbeing, University of Newcastle, Newcastle, NSW, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia",
+              "institution_ids": [
+                "https://openalex.org/I3006985408"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Jožef Stefan International Postgraduate School, Ljubljana, Slovenia",
+              "institution_ids": [
+                "https://openalex.org/I4210113529"
+              ]
+            },
+            {
+              "raw_affiliation_string": "School of Health Sciences, College of Health, Medicine and Wellbeing, University of Newcastle, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086571403",
+            "display_name": "Emma Beckett",
+            "orcid": "https://orcid.org/0000-0002-8888-3789"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210087646",
+              "display_name": "Hunter Medical Research Institute",
+              "ror": "https://ror.org/0020x6414",
+              "country_code": "AU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I78757542",
+              "display_name": "University of Newcastle Australia",
+              "ror": "https://ror.org/00eae9z71",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I83657090",
+              "display_name": "Neuroscience Research Australia",
+              "ror": "https://ror.org/01g7s6g79",
+              "country_code": "AU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I83657090"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Emma Beckett",
+          "raw_affiliation_strings": [
+            "Department of Science, Nutrition Research Australia, Sydney, NSW, Australia",
+            "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+            "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Science, Nutrition Research Australia, Sydney, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I83657090"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "raw_affiliation_string": "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054367685",
+            "display_name": "Tamara Bucher",
+            "orcid": "https://orcid.org/0000-0003-3244-5867"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210087646",
+              "display_name": "Hunter Medical Research Institute",
+              "ror": "https://ror.org/0020x6414",
+              "country_code": "AU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I78757542",
+              "display_name": "University of Newcastle Australia",
+              "ror": "https://ror.org/00eae9z71",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Tamara Bucher",
+          "raw_affiliation_strings": [
+            "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+            "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "raw_affiliation_string": "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000516677",
+            "display_name": "Clare E. Collins",
+            "orcid": "https://orcid.org/0000-0003-3298-756X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210087646",
+              "display_name": "Hunter Medical Research Institute",
+              "ror": "https://ror.org/0020x6414",
+              "country_code": "AU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I78757542",
+              "display_name": "University of Newcastle Australia",
+              "ror": "https://ror.org/00eae9z71",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Clare E. Collins",
+          "raw_affiliation_strings": [
+            "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+            "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Food and Nutrition Research Program, Hunter Medical Research Institute, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I4210087646"
+              ]
+            },
+            {
+              "raw_affiliation_string": "School of Environmental and Life Sciences, College of Engineering, Science and Environment, University of Newcastle, Newcastle, NSW, Australia",
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5076065873",
+            "display_name": "Barbara Koroušić Seljak",
+            "orcid": "https://orcid.org/0000-0001-7597-2590"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3006985408",
+              "display_name": "Jožef Stefan Institute",
+              "ror": "https://ror.org/05060sz93",
+              "country_code": "SI",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I3006985408"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210113529",
+              "display_name": "Jožef Stefan International Postgraduate School",
+              "ror": "https://ror.org/01hdkb925",
+              "country_code": "SI",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210113529"
+              ]
+            }
+          ],
+          "countries": [
+            "SI"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Barbara Koroušić Seljak",
+          "raw_affiliation_strings": [
+            "Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia",
+            "Jožef Stefan International Postgraduate School, Ljubljana, Slovenia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computer Systems Department, Jožef Stefan Institute, Ljubljana, Slovenia",
+              "institution_ids": [
+                "https://openalex.org/I3006985408"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Jožef Stefan International Postgraduate School, Ljubljana, Slovenia",
+              "institution_ids": [
+                "https://openalex.org/I4210113529"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 2490,
+        "currency": "USD",
+        "value_usd": 2490
+      },
+      "apc_paid": {
+        "value": 2490,
+        "currency": "USD",
+        "value_usd": 2490
+      },
+      "fwci": 7.4468,
+      "has_fulltext": true,
+      "cited_by_count": 6,
+      "citation_normalized_percentile": {
+        "value": 0.96842146,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 95,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": null,
+        "first_page": "1503389",
+        "last_page": "1503389"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10866",
+        "display_name": "Nutritional Studies and Diet",
+        "score": 0.2639000117778778,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10866",
+          "display_name": "Nutritional Studies and Diet",
+          "score": 0.2639000117778778,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11937",
+          "display_name": "Research Data Management Practices",
+          "score": 0.15639999508857727,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1710",
+            "display_name": "Information Systems"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13984",
+          "display_name": "Nutrition, Genetics, and Disease",
+          "score": 0.09510000050067902,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.8127200603485107
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.511427104473114
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.4906555712223053
+        },
+        {
+          "id": "https://openalex.org/keywords/business",
+          "display_name": "Business",
+          "score": 0.3819066286087036
+        },
+        {
+          "id": "https://openalex.org/keywords/process-management",
+          "display_name": "Process management",
+          "score": 0.3340902328491211
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.22755703330039978
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.8127200603485107
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.511427104473114
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.4906555712223053
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.3819066286087036
+        },
+        {
+          "id": "https://openalex.org/C195094911",
+          "wikidata": "https://www.wikidata.org/wiki/Q14167904",
+          "display_name": "Process management",
+          "level": 1,
+          "score": 0.3340902328491211
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.22755703330039978
+        }
+      ],
+      "mesh": [],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.3389/fnut.2024.1503389",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3389/fnut.2024.1503389",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2596909297",
+            "display_name": "Frontiers in Nutrition",
+            "issn_l": "2296-861X",
+            "issn": [
+              "2296-861X"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_name": "Frontiers Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Frontiers in Nutrition",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:39834464",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39834464",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Frontiers in nutrition",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:dirros.openscience.si:IzpisGradiva.php?id=25369",
+          "is_oa": true,
+          "landing_page_url": "https://dirros.openscience.si/IzpisGradiva.php?id=25369",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196363",
+            "display_name": "DiRROS repository (University of Maribor)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I37696226",
+            "host_organization_name": "University of Maribor",
+            "host_organization_lineage": [
+              "https://openalex.org/I37696226"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Švica",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11743969",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11743969",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11743969/pdf/fnut-11-1503389.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Front Nutr",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:d.cobiss.net/repository/si:222255107",
+          "is_oa": true,
+          "landing_page_url": "https://d.cobiss.net/repository/si/files/222255107/170781/NutriBase-–-management-system-for-the-integration-and-intero.pdf/terms",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407055177",
+            "display_name": "dCOBISS.SI Digital Repository",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "COBISS-ID: 4431992",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:f51a7eb0f3234f08aeae4a68de3c5507",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/f51a7eb0f3234f08aeae4a68de3c5507",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Frontiers in Nutrition, Vol 11 (2025)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3389/fnut.2024.1503389",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/fnut.2024.1503389",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2596909297",
+          "display_name": "Frontiers in Nutrition",
+          "issn_l": "2296-861X",
+          "issn": [
+            "2296-861X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Nutrition",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G147493208",
+          "display_name": null,
+          "funder_award_id": "APP2009340",
+          "funder_id": "https://openalex.org/F4320334705",
+          "funder_display_name": "National Health and Medical Research Council"
+        },
+        {
+          "id": "https://openalex.org/G4979944849",
+          "display_name": null,
+          "funder_award_id": "101005259",
+          "funder_id": "https://openalex.org/F4320334322",
+          "funder_display_name": "HORIZON EUROPE Framework Programme"
+        },
+        {
+          "id": "https://openalex.org/G791504897",
+          "display_name": null,
+          "funder_award_id": "P2-0098",
+          "funder_id": "https://openalex.org/F4320322554",
+          "funder_display_name": "Javna Agencija za Raziskovalno Dejavnost RS"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320322554",
+          "display_name": "Javna Agencija za Raziskovalno Dejavnost RS",
+          "ror": "https://ror.org/059bp8k51"
+        },
+        {
+          "id": "https://openalex.org/F4320334322",
+          "display_name": "HORIZON EUROPE Framework Programme",
+          "ror": null
+        },
+        {
+          "id": "https://openalex.org/F4320334705",
+          "display_name": "National Health and Medical Research Council",
+          "ror": "https://ror.org/011kf5r70"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 28,
+      "referenced_works": [
+        "https://openalex.org/W1998970388",
+        "https://openalex.org/W2032818308",
+        "https://openalex.org/W2039735127",
+        "https://openalex.org/W2054216651",
+        "https://openalex.org/W2071321331",
+        "https://openalex.org/W2080891130",
+        "https://openalex.org/W2110218984",
+        "https://openalex.org/W2171737233",
+        "https://openalex.org/W2522932653",
+        "https://openalex.org/W2596242378",
+        "https://openalex.org/W2603270228",
+        "https://openalex.org/W2755016030",
+        "https://openalex.org/W2899074422",
+        "https://openalex.org/W2903298154",
+        "https://openalex.org/W2956077997",
+        "https://openalex.org/W2989322016",
+        "https://openalex.org/W3131985837",
+        "https://openalex.org/W3173816815",
+        "https://openalex.org/W3193903729",
+        "https://openalex.org/W4205529462",
+        "https://openalex.org/W4207036985",
+        "https://openalex.org/W4210616330",
+        "https://openalex.org/W4220830970",
+        "https://openalex.org/W4280490195",
+        "https://openalex.org/W4294808319",
+        "https://openalex.org/W4309003901",
+        "https://openalex.org/W4376641278",
+        "https://openalex.org/W6802478903"
+      ],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2093262417",
+        "https://openalex.org/W4312626803",
+        "https://openalex.org/W2123131699",
+        "https://openalex.org/W650116260",
+        "https://openalex.org/W2378329187",
+        "https://openalex.org/W4390790060",
+        "https://openalex.org/W2134191509"
+      ],
+      "abstract_inverted_index": {
+        "Introduction:": [
+          0
+        ],
+        "Contemporary": [
+          1
+        ],
+        "data": [
+          2,
+          30,
+          56,
+          95,
+          122,
+          133,
+          136,
+          178,
+          182,
+          215,
+          248,
+          269,
+          275,
+          294
+        ],
+        "and": [
+          3,
+          6,
+          15,
+          18,
+          23,
+          31,
+          41,
+          57,
+          72,
+          90,
+          98,
+          130,
+          145,
+          154,
+          169,
+          183,
+          207,
+          212,
+          216,
+          235,
+          249,
+          277,
+          295,
+          310
+        ],
+        "knowledge": [
+          4,
+          32,
+          58,
+          97,
+          184,
+          250
+        ],
+        "management": [
+          5,
+          59,
+          173,
+          258
+        ],
+        "exploration": [
+          7
+        ],
+        "are": [
+          8,
+          44,
+          320
+        ],
+        "challenging": [
+          9
+        ],
+        "due": [
+          10
+        ],
+        "to": [
+          11,
+          35,
+          159,
+          176,
+          224,
+          240,
+          264
+        ],
+        "regular": [
+          12
+        ],
+        "releases,": [
+          13
+        ],
+        "updates,": [
+          14
+        ],
+        "different": [
+          16,
+          271
+        ],
+        "types": [
+          17
+        ],
+        "formats.": [
+          19
+        ],
+        "In": [
+          20,
+          282
+        ],
+        "the": [
+          21,
+          36,
+          65,
+          88,
+          105,
+          112,
+          127,
+          171,
+          219,
+          244,
+          247,
+          253,
+          285
+        ],
+        "food": [
+          22,
+          69,
+          93,
+          205,
+          225,
+          308,
+          311
+        ],
+        "nutrition": [
+          24
+        ],
+        "domain,": [
+          25
+        ],
+        "solutions": [
+          26
+        ],
+        "for": [
+          27,
+          87,
+          200
+        ],
+        "integrating": [
+          28
+        ],
+        "such": [
+          29,
+          305
+        ],
+        "with": [
+          33,
+          75,
+          96,
+          141,
+          191,
+          301
+        ],
+        "respect": [
+          34
+        ],
+        "FAIR": [
+          37
+        ],
+        "(Findability,": [
+          38
+        ],
+        "Accessibility,": [
+          39
+        ],
+        "Interoperability,": [
+          40
+        ],
+        "Reusability)": [
+          42
+        ],
+        "principles": [
+          43
+        ],
+        "still": [
+          45
+        ],
+        "lacking.": [
+          46
+        ],
+        "Methods:": [
+          47
+        ],
+        "To": [
+          48
+        ],
+        "address": [
+          49
+        ],
+        "this": [
+          50,
+          283
+        ],
+        "issue,": [
+          51
+        ],
+        "we": [
+          52
+        ],
+        "have": [
+          53,
+          313
+        ],
+        "developed": [
+          54,
+          148
+        ],
+        "a": [
+          55,
+          68,
+          81,
+          107,
+          256
+        ],
+        "system": [
+          60,
+          174,
+          261
+        ],
+        "called": [
+          61
+        ],
+        "NutriBase,": [
+          62
+        ],
+        "which": [
+          63,
+          273,
+          297
+        ],
+        "supports": [
+          64
+        ],
+        "compilation": [
+          66,
+          254
+        ],
+        "of": [
+          67,
+          92,
+          114,
+          246,
+          255,
+          268,
+          279,
+          287
+        ],
+        "composition": [
+          70,
+          94
+        ],
+        "database": [
+          71
+        ],
+        "its": [
+          73
+        ],
+        "integration": [
+          74,
+          113,
+          267
+        ],
+        "evidence-based": [
+          76
+        ],
+        "knowledge.": [
+          77,
+          115,
+          217
+        ],
+        "This": [
+          78
+        ],
+        "research": [
+          79
+        ],
+        "is": [
+          80,
+          151,
+          194,
+          198,
+          221,
+          262,
+          289,
+          298
+        ],
+        "novel": [
+          82
+        ],
+        "contribution": [
+          83
+        ],
+        "because": [
+          84
+        ],
+        "it": [
+          85
+        ],
+        "allows": [
+          86,
+          252
+        ],
+        "interconnection": [
+          89
+        ],
+        "complementation": [
+          91
+        ],
+        "takes": [
+          99
+        ],
+        "what": [
+          100
+        ],
+        "has": [
+          101
+        ],
+        "been": [
+          102,
+          314
+        ],
+        "done": [
+          103
+        ],
+        "in": [
+          104,
+          324
+        ],
+        "past": [
+          106
+        ],
+        "step": [
+          108
+        ],
+        "further": [
+          109,
+          157,
+          299
+        ],
+        "by": [
+          110,
+          125,
+          134,
+          202
+        ],
+        "enabling": [
+          111
+        ],
+        "NutriBase": [
+          116,
+          288
+        ],
+        "focuses": [
+          117
+        ],
+        "on": [
+          118,
+          291
+        ],
+        "two": [
+          119
+        ],
+        "important": [
+          120
+        ],
+        "challenges;": [
+          121
+        ],
+        "(semantic)": [
+          123
+        ],
+        "harmonization": [
+          124
+        ],
+        "using": [
+          126
+        ],
+        "existing": [
+          128,
+          142
+        ],
+        "ontologies,": [
+          129
+        ],
+        "reducing": [
+          131
+        ],
+        "missing": [
+          132,
+          280
+        ],
+        "semi-automatic": [
+          135
+        ],
+        "imputation": [
+          137
+        ],
+        "made": [
+          138
+        ],
+        "from": [
+          139,
+          270
+        ],
+        "conflating": [
+          140
+        ],
+        "databases.": [
+          143
+        ],
+        "Results": [
+          144
+        ],
+        "discussion:": [
+          146
+        ],
+        "The": [
+          147,
+          196,
+          260
+        ],
+        "web-based": [
+          149
+        ],
+        "tool": [
+          150,
+          197,
+          220
+        ],
+        "highly": [
+          152
+        ],
+        "modifiable": [
+          153
+        ],
+        "can": [
+          155,
+          166,
+          185,
+          210,
+          228
+        ],
+        "be": [
+          156,
+          187
+        ],
+        "customized": [
+          158
+        ],
+        "meet": [
+          160
+        ],
+        "national": [
+          161
+        ],
+        "or": [
+          162
+        ],
+        "international": [
+          163,
+          302,
+          326
+        ],
+        "requirements.": [
+          164
+        ],
+        "It": [
+          165
+        ],
+        "help": [
+          167
+        ],
+        "create": [
+          168
+        ],
+        "maintain": [
+          170
+        ],
+        "quality": [
+          172
+        ],
+        "needed": [
+          175
+        ],
+        "assure": [
+          177
+        ],
+        "quality.": [
+          179
+        ],
+        "Newly": [
+          180
+        ],
+        "generated": [
+          181
+        ],
+        "continuously": [
+          186
+        ],
+        "added,": [
+          188
+        ],
+        "as": [
+          189,
+          306
+        ],
+        "interoperability": [
+          190
+        ],
+        "other": [
+          192
+        ],
+        "systems": [
+          193
+        ],
+        "enabled.": [
+          195
+        ],
+        "intended": [
+          199
+        ],
+        "use": [
+          201
+        ],
+        "domain": [
+          203
+        ],
+        "experts,": [
+          204
+        ],
+        "compilers,": [
+          206
+        ],
+        "researchers": [
+          208
+        ],
+        "who": [
+          209,
+          227
+        ],
+        "add": [
+          211
+        ],
+        "edit": [
+          213
+        ],
+        "food-relevant": [
+          214
+        ],
+        "However,": [
+          218
+        ],
+        "also": [
+          222
+        ],
+        "accessible": [
+          223
+        ],
+        "manufacturers,": [
+          226
+        ],
+        "regularly": [
+          229
+        ],
+        "update": [
+          230
+        ],
+        "information": [
+          231
+        ],
+        "about": [
+          232
+        ],
+        "their": [
+          233
+        ],
+        "products": [
+          234
+        ],
+        "thus": [
+          236
+        ],
+        "give": [
+          237
+        ],
+        "consumers": [
+          238
+        ],
+        "access": [
+          239
+        ],
+        "current": [
+          241
+        ],
+        "data.": [
+          242,
+          281
+        ],
+        "Moreover,": [
+          243
+        ],
+        "traceability": [
+          245
+        ],
+        "provenance": [
+          251
+        ],
+        "trustworthy": [
+          257
+        ],
+        "system.": [
+          259
+        ],
+        "designed": [
+          263
+        ],
+        "allow": [
+          265
+        ],
+        "easy": [
+          266
+        ],
+        "sources,": [
+          272
+        ],
+        "enables": [
+          274
+        ],
+        "borrowing": [
+          276
+        ],
+        "reduction": [
+          278
+        ],
+        "paper,": [
+          284
+        ],
+        "feasibility": [
+          286
+        ],
+        "demonstrated": [
+          290
+        ],
+        "Slovenian": [
+          292
+        ],
+        "food-related": [
+          293
+        ],
+        "knowledge,": [
+          296
+        ],
+        "linked": [
+          300
+        ],
+        "resources.": [
+          303
+        ],
+        "Outputs": [
+          304
+        ],
+        "matched": [
+          307
+        ],
+        "components": [
+          309
+        ],
+        "classifications": [
+          312
+        ],
+        "integrated": [
+          315
+        ],
+        "into": [
+          316
+        ],
+        "semantic": [
+          317
+        ],
+        "resources": [
+          318
+        ],
+        "that": [
+          319
+        ],
+        "currently": [
+          321
+        ],
+        "under": [
+          322
+        ],
+        "development": [
+          323
+        ],
+        "various": [
+          325
+        ],
+        "projects.": [
+          327
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2149252692",
+      "doi": "https://doi.org/10.1111/j.1747-9991.2009.00216.x",
+      "title": "Margaret Cavendish on the Relation between God and World",
+      "display_name": "Margaret Cavendish on the Relation between God and World",
+      "relevance_score": 13.392764,
+      "publication_year": 2009,
+      "publication_date": "2009-05-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2149252692",
+        "doi": "https://doi.org/10.1111/j.1747-9991.2009.00216.x",
+        "mag": "2149252692"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1111/j.1747-9991.2009.00216.x",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1111/j.1747-9991.2009.00216.x",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S34011028",
+          "display_name": "Philosophy Compass",
+          "issn_l": "1747-9991",
+          "issn": [
+            "1747-9991"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Philosophy Compass",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://philpapers.org/archive/DETMCO.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5056706828",
+            "display_name": "Karen Detlefsen",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I36788626",
+              "display_name": "California University of Pennsylvania",
+              "ror": "https://ror.org/01spssf70",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I36788626"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Karen Detlefsen",
+          "raw_affiliation_strings": [
+            "University of Pennsylvania"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Pennsylvania",
+              "institution_ids": [
+                "https://openalex.org/I36788626"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5056706828"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I36788626"
+      ],
+      "apc_list": {
+        "value": 2630,
+        "currency": "USD",
+        "value_usd": 2630
+      },
+      "apc_paid": null,
+      "fwci": 2.1759,
+      "has_fulltext": true,
+      "cited_by_count": 30,
+      "citation_normalized_percentile": {
+        "value": 0.91272121,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "4",
+        "issue": "3",
+        "first_page": "421",
+        "last_page": "438"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11137",
+        "display_name": "Historical Philosophy and Science",
+        "score": 0.9975000023841858,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1207",
+          "display_name": "History and Philosophy of Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11137",
+          "display_name": "Historical Philosophy and Science",
+          "score": 0.9975000023841858,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1207",
+            "display_name": "History and Philosophy of Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T14517",
+          "display_name": "Diverse Historical and Scientific Studies",
+          "score": 0.9732999801635742,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1207",
+            "display_name": "History and Philosophy of Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T14475",
+          "display_name": "History of Science and Medicine",
+          "score": 0.9700000286102295,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1207",
+            "display_name": "History and Philosophy of Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/teleology",
+          "display_name": "Teleology",
+          "score": 0.8464089632034302
+        },
+        {
+          "id": "https://openalex.org/keywords/relation",
+          "display_name": "Relation (database)",
+          "score": 0.7857449650764465
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.7435334920883179
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.6544406414031982
+        },
+        {
+          "id": "https://openalex.org/keywords/natural",
+          "display_name": "Natural (archaeology)",
+          "score": 0.6148613691329956
+        },
+        {
+          "id": "https://openalex.org/keywords/natural-philosophy",
+          "display_name": "Natural philosophy",
+          "score": 0.6086946725845337
+        },
+        {
+          "id": "https://openalex.org/keywords/theology",
+          "display_name": "Theology",
+          "score": 0.3567330837249756
+        },
+        {
+          "id": "https://openalex.org/keywords/history",
+          "display_name": "History",
+          "score": 0.09278598427772522
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.04701608419418335
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C80038905",
+          "wikidata": "https://www.wikidata.org/wiki/Q192121",
+          "display_name": "Teleology",
+          "level": 2,
+          "score": 0.8464089632034302
+        },
+        {
+          "id": "https://openalex.org/C25343380",
+          "wikidata": "https://www.wikidata.org/wiki/Q277521",
+          "display_name": "Relation (database)",
+          "level": 2,
+          "score": 0.7857449650764465
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.7435334920883179
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.6544406414031982
+        },
+        {
+          "id": "https://openalex.org/C2776608160",
+          "wikidata": "https://www.wikidata.org/wiki/Q4785462",
+          "display_name": "Natural (archaeology)",
+          "level": 2,
+          "score": 0.6148613691329956
+        },
+        {
+          "id": "https://openalex.org/C190040717",
+          "wikidata": "https://www.wikidata.org/wiki/Q269323",
+          "display_name": "Natural philosophy",
+          "level": 2,
+          "score": 0.6086946725845337
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.3567330837249756
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.09278598427772522
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.04701608419418335
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "doi:10.1111/j.1747-9991.2009.00216.x",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1111/j.1747-9991.2009.00216.x",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S34011028",
+            "display_name": "Philosophy Compass",
+            "issn_l": "1747-9991",
+            "issn": [
+              "1747-9991"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Philosophy Compass",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:philarchive.org/rec/DETMCO",
+          "is_oa": true,
+          "landing_page_url": "https://philarchive.org/rec/DETMCO",
+          "pdf_url": "https://philpapers.org/archive/DETMCO.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402130",
+            "display_name": "PhilPapers (PhilPapers Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:philpapers.org/rec/DETMCO",
+          "is_oa": false,
+          "landing_page_url": "https://philpapers.org/rec/DETMCO",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402131",
+            "display_name": "PhilPapers (PhilPapers Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:philarchive.org/rec/DETMCO",
+        "is_oa": true,
+        "landing_page_url": "https://philarchive.org/rec/DETMCO",
+        "pdf_url": "https://philpapers.org/archive/DETMCO.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402130",
+          "display_name": "PhilPapers (PhilPapers Foundation)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2149252692.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2149252692.grobid-xml"
+      },
+      "referenced_works_count": 38,
+      "referenced_works": [
+        "https://openalex.org/W66262559",
+        "https://openalex.org/W111128099",
+        "https://openalex.org/W584374669",
+        "https://openalex.org/W597165652",
+        "https://openalex.org/W656745790",
+        "https://openalex.org/W1186004640",
+        "https://openalex.org/W1513777854",
+        "https://openalex.org/W1557839079",
+        "https://openalex.org/W1603175548",
+        "https://openalex.org/W1967832493",
+        "https://openalex.org/W1984808863",
+        "https://openalex.org/W1993321444",
+        "https://openalex.org/W2000410442",
+        "https://openalex.org/W2004384941",
+        "https://openalex.org/W2004814717",
+        "https://openalex.org/W2046134985",
+        "https://openalex.org/W2087441614",
+        "https://openalex.org/W2323064714",
+        "https://openalex.org/W2324272766",
+        "https://openalex.org/W2326475071",
+        "https://openalex.org/W2331069635",
+        "https://openalex.org/W2489622619",
+        "https://openalex.org/W2491255929",
+        "https://openalex.org/W2796594689",
+        "https://openalex.org/W2802872812",
+        "https://openalex.org/W2969397330",
+        "https://openalex.org/W3129089095",
+        "https://openalex.org/W3134758287",
+        "https://openalex.org/W3159235823",
+        "https://openalex.org/W3165082502",
+        "https://openalex.org/W3175801683",
+        "https://openalex.org/W3193887020",
+        "https://openalex.org/W4206280938",
+        "https://openalex.org/W4252676692",
+        "https://openalex.org/W4255854961",
+        "https://openalex.org/W4292811987",
+        "https://openalex.org/W4300816334",
+        "https://openalex.org/W4301465202"
+      ],
+      "related_works": [
+        "https://openalex.org/W2384294123",
+        "https://openalex.org/W1583619997",
+        "https://openalex.org/W1693849728",
+        "https://openalex.org/W1470012352",
+        "https://openalex.org/W2064957010",
+        "https://openalex.org/W2050887744",
+        "https://openalex.org/W2562887777",
+        "https://openalex.org/W4317178006",
+        "https://openalex.org/W1869736397",
+        "https://openalex.org/W641637038"
+      ],
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "It": [
+          1
+        ],
+        "has": [
+          2,
+          82
+        ],
+        "often": [
+          3
+        ],
+        "been": [
+          4
+        ],
+        "noted": [
+          5
+        ],
+        "that": [
+          6,
+          30
+        ],
+        "Margaret": [
+          7
+        ],
+        "Cavendish": [
+          8,
+          81
+        ],
+        "discusses": [
+          9
+        ],
+        "God": [
+          10,
+          34,
+          59
+        ],
+        "in": [
+          11,
+          47,
+          57,
+          71
+        ],
+        "her": [
+          12,
+          27,
+          63,
+          72
+        ],
+        "writings": [
+          13
+        ],
+        "on": [
+          14
+        ],
+        "natural": [
+          15,
+          48,
+          64
+        ],
+        "philosophy": [
+          16
+        ],
+        "far": [
+          17
+        ],
+        "more": [
+          18
+        ],
+        "than": [
+          19
+        ],
+        "one": [
+          20,
+          55
+        ],
+        "might": [
+          21
+        ],
+        "think": [
+          22
+        ],
+        "she": [
+          23,
+          92
+        ],
+        "ought": [
+          24
+        ],
+        "to": [
+          25,
+          36,
+          40,
+          87
+        ],
+        "given": [
+          26
+        ],
+        "explicit": [
+          28
+        ],
+        "claim": [
+          29
+        ],
+        "a": [
+          31,
+          97
+        ],
+        "study": [
+          32
+        ],
+        "of": [
+          33,
+          75
+        ],
+        "belongs": [
+          35
+        ],
+        "theology": [
+          37
+        ],
+        "which": [
+          38,
+          58,
+          86
+        ],
+        "is": [
+          39,
+          93
+        ],
+        "be": [
+          41
+        ],
+        "kept": [
+          42
+        ],
+        "strictly": [
+          43
+        ],
+        "separate": [
+          44
+        ],
+        "from": [
+          45
+        ],
+        "studies": [
+          46
+        ],
+        "philosophy.": [
+          49
+        ],
+        "In": [
+          50
+        ],
+        "this": [
+          51,
+          90
+        ],
+        "article,": [
+          52
+        ],
+        "I": [
+          53,
+          77
+        ],
+        "examine": [
+          54
+        ],
+        "way": [
+          56
+        ],
+        "enters": [
+          60
+        ],
+        "substantially": [
+          61
+        ],
+        "into": [
+          62
+        ],
+        "philosophy,": [
+          65
+        ],
+        "namely": [
+          66
+        ],
+        "the": [
+          67
+        ],
+        "role": [
+          68
+        ],
+        "he": [
+          69
+        ],
+        "plays": [
+          70
+        ],
+        "particular": [
+          73
+        ],
+        "version": [
+          74
+        ],
+        "teleology.": [
+          76
+        ],
+        "conclude": [
+          78
+        ],
+        "that,": [
+          79
+        ],
+        "while": [
+          80
+        ],
+        "some": [
+          83
+        ],
+        "resources": [
+          84
+        ],
+        "with": [
+          85,
+          96
+        ],
+        "partially": [
+          88
+        ],
+        "alleviate": [
+          89
+        ],
+        "tension,": [
+          91
+        ],
+        "nonetheless": [
+          94
+        ],
+        "left": [
+          95
+        ],
+        "significant": [
+          98
+        ],
+        "difficulty.": [
+          99
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 16
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4385474979",
+      "doi": "https://doi.org/10.5281/zenodo.8207962",
+      "title": "Future Exploitation Report",
+      "display_name": "Future Exploitation Report",
+      "relevance_score": 10.22158,
+      "publication_year": 2023,
+      "publication_date": "2023-07-31",
+      "ids": {
+        "openalex": "https://openalex.org/W4385474979",
+        "doi": "https://doi.org/10.5281/zenodo.8207962"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.8207962",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.8207962",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "type": "report",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.8207962",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5092580000",
+            "display_name": "Daniela Segovia-Lizano",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3018370718",
+              "display_name": "Quadram Institute",
+              "ror": "https://ror.org/04td3ys19",
+              "country_code": "GB",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2799693246",
+                "https://openalex.org/I3018370718",
+                "https://openalex.org/I4210087105"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Segovia-Lizano, Daniela",
+          "raw_affiliation_strings": [
+            "Quadram Institute Bioscience"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Quadram Institute Bioscience",
+              "institution_ids": [
+                "https://openalex.org/I3018370718"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5031431504",
+            "display_name": "Paul Finglas",
+            "orcid": "https://orcid.org/0000-0003-4143-2398"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3018370718",
+              "display_name": "Quadram Institute",
+              "ror": "https://ror.org/04td3ys19",
+              "country_code": "GB",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2799693246",
+                "https://openalex.org/I3018370718",
+                "https://openalex.org/I4210087105"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Finglas, Paul",
+          "raw_affiliation_strings": [
+            "Quadram Institute Bioscience"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4143-2398",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Quadram Institute Bioscience",
+              "institution_ids": [
+                "https://openalex.org/I3018370718"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I3018370718"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.17474037,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10866",
+        "display_name": "Nutritional Studies and Diet",
+        "score": 0.3409000039100647,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10866",
+          "display_name": "Nutritional Studies and Diet",
+          "score": 0.3409000039100647,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13984",
+          "display_name": "Nutrition, Genetics, and Disease",
+          "score": 0.3070000112056732,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11610",
+          "display_name": "Food Security and Health in Diverse Populations",
+          "score": 0.022600000724196434,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3600",
+            "display_name": "General Health Professions"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/36",
+            "display_name": "Health Professions"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.31744757294654846
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.31744757294654846
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.8207962",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.8207962",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.8207962",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.8207962",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Decent work and economic growth",
+          "id": "https://metadata.un.org/sdg/8",
+          "score": 0.4300000071525574
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G5014702639",
+          "display_name": null,
+          "funder_award_id": "863059",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801",
+        "https://openalex.org/W2358668433",
+        "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890",
+        "https://openalex.org/W2382290278",
+        "https://openalex.org/W2350741829",
+        "https://openalex.org/W2530322880",
+        "https://openalex.org/W1596801655",
+        "https://openalex.org/W2359140296"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          137,
+          202
+        ],
+        "Food": [
+          1,
+          279
+        ],
+        "and": [
+          2,
+          20,
+          42,
+          53,
+          73,
+          80,
+          128,
+          130,
+          134,
+          150,
+          161,
+          164,
+          171,
+          184,
+          191,
+          195,
+          206,
+          223,
+          228,
+          231,
+          234,
+          243,
+          262,
+          264,
+          321,
+          362,
+          369,
+          399,
+          427,
+          444,
+          448
+        ],
+        "Nutrition": [
+          3,
+          127,
+          183
+        ],
+        "Security": [
+          4
+        ],
+        "Cloud": [
+          5,
+          38,
+          283,
+          379,
+          432
+        ],
+        "(FNS": [
+          6
+        ],
+        "Cloud)": [
+          7
+        ],
+        "project": [
+          8,
+          275
+        ],
+        "aim": [
+          9
+        ],
+        "was": [
+          10
+        ],
+        "to": [
+          11,
+          115,
+          247,
+          358,
+          365,
+          402,
+          424
+        ],
+        "launch": [
+          12
+        ],
+        "a": [
+          13,
+          439
+        ],
+        "first-generation": [
+          14
+        ],
+        "food": [
+          15,
+          148,
+          158,
+          189
+        ],
+        "cloud": [
+          16
+        ],
+        "by": [
+          17,
+          36,
+          331,
+          394
+        ],
+        "federating": [
+          18
+        ],
+        "existing": [
+          19,
+          48
+        ],
+        "emerging": [
+          21
+        ],
+        "datasets,": [
+          22
+        ],
+        "which": [
+          23,
+          101,
+          187,
+          422
+        ],
+        "would": [
+          24
+        ],
+        "solve": [
+          25
+        ],
+        "the": [
+          26,
+          32,
+          56,
+          83,
+          121,
+          135,
+          147,
+          182,
+          207,
+          249,
+          270,
+          300,
+          313,
+          317,
+          352,
+          366,
+          374,
+          377,
+          387,
+          430,
+          436,
+          449
+        ],
+        "current": [
+          27
+        ],
+        "fragmentation": [
+          28
+        ],
+        "problems.": [
+          29
+        ],
+        "To": [
+          30
+        ],
+        "demonstrate": [
+          31
+        ],
+        "integration": [
+          33
+        ],
+        "process": [
+          34
+        ],
+        "undertaken": [
+          35
+        ],
+        "FNS": [
+          37,
+          122,
+          277,
+          282,
+          288,
+          378,
+          431
+        ],
+        "Beneficiaries,": [
+          39
+        ],
+        "new": [
+          40,
+          60
+        ],
+        "data": [
+          41,
+          75,
+          160,
+          194,
+          198
+        ],
+        "tools": [
+          43,
+          244,
+          320,
+          330,
+          361
+        ],
+        "were": [
+          44,
+          50,
+          102,
+          177,
+          245,
+          256,
+          304,
+          383
+        ],
+        "generated,": [
+          45
+        ],
+        "but": [
+          46,
+          414
+        ],
+        "also": [
+          47,
+          266
+        ],
+        "ones": [
+          49
+        ],
+        "further": [
+          51,
+          105,
+          397,
+          408
+        ],
+        "improved": [
+          52
+        ],
+        "developed": [
+          54,
+          103,
+          178,
+          258,
+          305
+        ],
+        "throughout": [
+          55
+        ],
+        "4-years’": [
+          57
+        ],
+        "project.": [
+          58,
+          88,
+          380
+        ],
+        "Those": [
+          59,
+          254
+        ],
+        "or": [
+          61,
+          104,
+          334
+        ],
+        "enhanced": [
+          62,
+          106
+        ],
+        "resources": [
+          63,
+          255,
+          293,
+          363
+        ],
+        "varied": [
+          64
+        ],
+        "in": [
+          65,
+          199,
+          259,
+          346,
+          371,
+          410
+        ],
+        "their": [
+          66
+        ],
+        "nature": [
+          67
+        ],
+        "(e.g.,": [
+          68,
+          276,
+          392
+        ],
+        "training": [
+          69
+        ],
+        "materials,": [
+          70
+        ],
+        "videos,": [
+          71
+        ],
+        "software": [
+          72
+        ],
+        "apps,": [
+          74
+        ],
+        "repositories,": [
+          76
+        ],
+        "case": [
+          77,
+          143,
+          175,
+          211
+        ],
+        "studies,": [
+          78,
+          412
+        ],
+        "others)": [
+          79
+        ],
+        "are": [
+          81,
+          265,
+          310
+        ],
+        "considered": [
+          82,
+          267
+        ],
+        "main": [
+          84,
+          142,
+          271
+        ],
+        "outputs": [
+          85,
+          272,
+          298
+        ],
+        "of": [
+          86,
+          94,
+          109,
+          146,
+          181,
+          251,
+          269,
+          273,
+          316,
+          351,
+          376,
+          389,
+          416,
+          442
+        ],
+        "this": [
+          87,
+          274,
+          347
+        ],
+        "This": [
+          89
+        ],
+        "deliverable": [
+          90
+        ],
+        "provides": [
+          91
+        ],
+        "an": [
+          92
+        ],
+        "overview": [
+          93
+        ],
+        "all": [
+          95,
+          252,
+          360,
+          415
+        ],
+        "work": [
+          96
+        ],
+        "package": [
+          97
+        ],
+        "(WP)": [
+          98
+        ],
+        "5": [
+          99
+        ],
+        "outputs,": [
+          100
+        ],
+        "as": [
+          107,
+          125,
+          179,
+          297,
+          326,
+          349
+        ],
+        "part": [
+          108,
+          180,
+          268,
+          350
+        ],
+        "three": [
+          110,
+          141,
+          155,
+          210
+        ],
+        "different": [
+          111
+        ],
+        "demonstrators": [
+          112
+        ],
+        "that": [
+          113,
+          356
+        ],
+        "intended": [
+          114
+        ],
+        "address": [
+          116
+        ],
+        "several": [
+          117
+        ],
+        "distinct": [
+          118
+        ],
+        "topics": [
+          119
+        ],
+        "from": [
+          120
+        ],
+        "domain,": [
+          123
+        ],
+        "such": [
+          124
+        ],
+        "Agri-Food,": [
+          126
+        ],
+        "Lifestyle,": [
+          129
+        ],
+        "Non-communicable": [
+          131
+        ],
+        "diseases": [
+          132
+        ],
+        "(NCDs)": [
+          133
+        ],
+        "Microbiome.": [
+          136
+        ],
+        "Agri-Food": [
+          138
+        ],
+        "demonstrator": [
+          139
+        ],
+        "generated": [
+          140
+        ],
+        "studies:": [
+          144,
+          212
+        ],
+        "exploitation": [
+          145,
+          338,
+          354,
+          437
+        ],
+        "traceability": [
+          149
+        ],
+        "metrology": [
+          151
+        ],
+        "search": [
+          152
+        ],
+        "engine": [
+          153
+        ],
+        "for": [
+          154,
+          215,
+          219,
+          238,
+          312,
+          340,
+          407,
+          455
+        ],
+        "agri-food": [
+          156
+        ],
+        "chains,": [
+          157
+        ],
+        "labelling": [
+          159
+        ],
+        "reformulation": [
+          162
+        ],
+        "tools,": [
+          163
+        ],
+        "Total": [
+          165
+        ],
+        "Diet": [
+          166
+        ],
+        "Studies": [
+          167
+        ],
+        "(TDS):": [
+          168
+        ],
+        "risk": [
+          169,
+          226
+        ],
+        "assessment": [
+          170,
+          227,
+          286
+        ],
+        "occurrence": [
+          172
+        ],
+        "visualisation.": [
+          173
+        ],
+        "Two": [
+          174
+        ],
+        "studies": [
+          176
+        ],
+        "Lifestyle": [
+          185
+        ],
+        "demonstrator,": [
+          186,
+          204
+        ],
+        "included": [
+          188
+        ],
+        "intake": [
+          190,
+          197,
+          284
+        ],
+        "consumer": [
+          192
+        ],
+        "behaviour": [
+          193
+        ],
+        "dietary": [
+          196,
+          230
+        ],
+        "vulnerable": [
+          200
+        ],
+        "populations.": [
+          201
+        ],
+        "third": [
+          203
+        ],
+        "NCDs": [
+          205
+        ],
+        "Microbiome,": [
+          208
+        ],
+        "produced": [
+          209
+        ],
+        "healthy": [
+          213,
+          216
+        ],
+        "diets": [
+          214
+        ],
+        "microbiome,": [
+          217
+        ],
+        "tool": [
+          218
+        ],
+        "type-2": [
+          220
+        ],
+        "diabetes": [
+          221
+        ],
+        "(T2D)": [
+          222
+        ],
+        "hypertension": [
+          224
+        ],
+        "(HTN)": [
+          225
+        ],
+        "personalised": [
+          229
+        ],
+        "lifestyle": [
+          232
+        ],
+        "feedback,": [
+          233
+        ],
+        "alert": [
+          235
+        ],
+        "classification": [
+          236
+        ],
+        "system": [
+          237
+        ],
+        "food-diet-drug": [
+          239
+        ],
+        "interactions.": [
+          240
+        ],
+        "Additional": [
+          241
+        ],
+        "services": [
+          242,
+          322,
+          328
+        ],
+        "needed": [
+          246
+        ],
+        "guarantee": [
+          248
+        ],
+        "success": [
+          250
+        ],
+        "demonstrators.": [
+          253
+        ],
+        "mainly": [
+          257
+        ],
+        "WPs": [
+          260
+        ],
+        "2": [
+          261
+        ],
+        "3": [
+          263
+        ],
+        "Catalogues,": [
+          278
+        ],
+        "matching": [
+          280
+        ],
+        "service,": [
+          281
+        ],
+        "dataset": [
+          285
+        ],
+        "tool,": [
+          287
+        ],
+        "Harmony": [
+          289
+        ],
+        "ontology).": [
+          290
+        ],
+        "All": [
+          291
+        ],
+        "these": [
+          292,
+          319
+        ],
+        "have": [
+          294,
+          458
+        ],
+        "been": [
+          295,
+          344,
+          459
+        ],
+        "listed": [
+          296
+        ],
+        "under": [
+          299
+        ],
+        "corresponding": [
+          301
+        ],
+        "task": [
+          302
+        ],
+        "they": [
+          303,
+          309
+        ],
+        "for.": [
+          306
+        ],
+        "Even": [
+          307
+        ],
+        "though": [
+          308
+        ],
+        "key": [
+          311
+        ],
+        "correct": [
+          314
+        ],
+        "functioning": [
+          315
+        ],
+        "demonstrators,": [
+          318
+        ],
+        "can": [
+          323
+        ],
+        "be": [
+          324,
+          403,
+          425
+        ],
+        "used/accessed": [
+          325
+        ],
+        "standalone": [
+          327
+        ],
+        "and/or": [
+          329
+        ],
+        "other": [
+          332,
+          395
+        ],
+        "researchers": [
+          333
+        ],
+        "end": [
+          335
+        ],
+        "users.": [
+          336
+        ],
+        "An": [
+          337
+        ],
+        "plan": [
+          339
+        ],
+        "each": [
+          341,
+          390,
+          456
+        ],
+        "output": [
+          342,
+          391,
+          457
+        ],
+        "has": [
+          343
+        ],
+        "proposed": [
+          345
+        ],
+        "document": [
+          348
+        ],
+        "post-project": [
+          353
+        ],
+        "activities,": [
+          355
+        ],
+        "seek": [
+          357
+        ],
+        "maintain": [
+          359
+        ],
+        "available": [
+          364,
+          406
+        ],
+        "scientific": [
+          367
+        ],
+        "community": [
+          368
+        ],
+        "public": [
+          370
+        ],
+        "general": [
+          372
+        ],
+        "after": [
+          373
+        ],
+        "conclusion": [
+          375
+        ],
+        "Exploitation": [
+          381
+        ],
+        "strategies": [
+          382
+        ],
+        "defined": [
+          384
+        ],
+        "depending": [
+          385
+        ],
+        "on": [
+          386
+        ],
+        "characteristics": [
+          388
+        ],
+        "uptake": [
+          393
+        ],
+        "project,": [
+          396
+        ],
+        "research,": [
+          398
+        ],
+        "development": [
+          400
+        ],
+        "[R&amp;D]": [
+          401
+        ],
+        "carried": [
+          404
+        ],
+        "out,": [
+          405
+        ],
+        "usage": [
+          409
+        ],
+        "research": [
+          411
+        ],
+        "others),": [
+          413
+        ],
+        "them": [
+          417
+        ],
+        "should": [
+          418
+        ],
+        "fulfil": [
+          419
+        ],
+        "one": [
+          420
+        ],
+        "requirement,": [
+          421
+        ],
+        "is": [
+          423
+        ],
+        "findable": [
+          426
+        ],
+        "accessible": [
+          428
+        ],
+        "via": [
+          429
+        ],
+        "Catalogues.": [
+          433
+        ],
+        "Together": [
+          434
+        ],
+        "with": [
+          435
+        ],
+        "plan,": [
+          438
+        ],
+        "comprehensive": [
+          440
+        ],
+        "list": [
+          441
+        ],
+        "dissemination": [
+          443
+        ],
+        "communication": [
+          445
+        ],
+        "(D&amp;C)": [
+          446
+        ],
+        "activities": [
+          447
+        ],
+        "appropriate": [
+          450
+        ],
+        "intellectual": [
+          451
+        ],
+        "property": [
+          452
+        ],
+        "(IP)": [
+          453
+        ],
+        "strategy": [
+          454
+        ],
+        "detailed.": [
+          460
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-26T08:34:08.712188",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

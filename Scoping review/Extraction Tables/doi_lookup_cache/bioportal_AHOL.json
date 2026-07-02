@@ -1,0 +1,121 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/2973e310-b8e7-0136-3c5b-005056010073",
+      "name": "Jérémy Yon",
+      "email": "jeremy.yon@inra.fr"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/297c2930-b8e7-0136-3c5b-005056010073",
+      "name": "Matthieu Reichstadt",
+      "email": "matthieu.reichstadt@inra.fr"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/296b27d0-b8e7-0136-3c5b-005056010073",
+      "name": "Marie-Christine Salaun",
+      "email": "marie-christine.salaun@inra.fr"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/2961c4f0-b8e7-0136-3c5b-005056010073",
+      "name": "Pierre-Yves Le Bail",
+      "email": "pierre-yves.le-bail@inra.fr"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/mreichstadt"
+    ],
+    "acronym": "AHOL",
+    "name": "Animal Health Ontology for Livestock",
+    "@id": "https://data.bioontology.org/ontologies/AHOL",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/AHOL/submissions",
+      "properties": "https://data.bioontology.org/ontologies/AHOL/properties",
+      "classes": "https://data.bioontology.org/ontologies/AHOL/classes",
+      "single_class": "https://data.bioontology.org/ontologies/AHOL/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/AHOL/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/AHOL/schemes",
+      "collections": "https://data.bioontology.org/ontologies/AHOL/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/AHOL/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/AHOL/instances",
+      "metrics": "https://data.bioontology.org/ontologies/AHOL/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/AHOL/reviews",
+      "notes": "https://data.bioontology.org/ontologies/AHOL/notes",
+      "groups": "https://data.bioontology.org/ontologies/AHOL/groups",
+      "categories": "https://data.bioontology.org/ontologies/AHOL/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/AHOL/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/AHOL/projects",
+      "download": "https://data.bioontology.org/ontologies/AHOL/download",
+      "views": "https://data.bioontology.org/ontologies/AHOL/views",
+      "analytics": "https://data.bioontology.org/ontologies/AHOL/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/AHOL",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2018-10-23T00:00:00.000+00:00",
+  "creationDate": "2018-10-23T04:46:11.000-07:00",
+  "homepage": "http://147.99.156.182/ontologies/visualisation/ontologie/",
+  "publication": [],
+  "documentation": null,
+  "version": "1.0",
+  "description": "AHOL (Animal Health Ontology for Livestock) is an ontology of characteristics defining health issues of livestock in their environment (EOL) linked to their phenotypes (ATOL). AHOL aims to: - provide a reference ontology of health traits of farm animals for the international scientific and educational - communities, farmers, etc.; - deliver this reference ontology in a language which can be used by computers in order to support database management, semantic analysis and modeling; - represent traits as generic as possible for livestock vertebrates; - make the AHOL ontology as operational as possible and closely related to measurement techniques; - structure the ontology in relation to animal production ",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/AHOL/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/AHOL/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

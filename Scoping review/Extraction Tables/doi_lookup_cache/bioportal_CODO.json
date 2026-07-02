@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/c7f80760-a99e-0138-3aad-005056010073",
+      "name": "Dutta, Biswanath ",
+      "email": "dutta2005@gmail.com, bisu@drtc.isibang.ac.in"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/biswanathdutta"
+    ],
+    "acronym": "CODO",
+    "name": "CODO: an Ontology for collection and analysis of COviD-19 data",
+    "@id": "https://data.bioontology.org/ontologies/CODO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CODO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CODO/properties",
+      "classes": "https://data.bioontology.org/ontologies/CODO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CODO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CODO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CODO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CODO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CODO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CODO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CODO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CODO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CODO/notes",
+      "groups": "https://data.bioontology.org/ontologies/CODO/groups",
+      "categories": "https://data.bioontology.org/ontologies/CODO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CODO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CODO/projects",
+      "download": "https://data.bioontology.org/ontologies/CODO/download",
+      "views": "https://data.bioontology.org/ontologies/CODO/views",
+      "analytics": "https://data.bioontology.org/ontologies/CODO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CODO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-07-26T00:00:00.000+00:00",
+  "creationDate": "2024-05-29T11:20:14.000+00:00",
+  "homepage": "https://github.com/biswanathdutta/CODO",
+  "publication": [
+    "https://www.isibang.ac.in/~bisu/covid19project.html"
+  ],
+  "documentation": "https://w3id.org/codo",
+  "version": "1.5",
+  "description": "The initial version, CODO ontology v1.0 to v1.3, encompasses pivotal features such as classes like patients, clinical findings, symptoms, and properties like relationships between patients, travel history, and test results. It facilitates tracking specific pandemic cases, detailing how patients may have been infected, and identifying potential contacts at risk due to their connection with the infected individual. CODO also enables monitoring of clinical tests, travel history, available resources, and actual needs like ICU beds and invasive ventilators. With capabilities for advanced analytics, contact tracing, trend studies, and growth projections based on daily COVID-19 data, CODO supports the organization and representation of COVID-19 data on a daily basis. It allows semantic querying and data retrieval and aids in behavior analysis of the disease and transmission routes.\r\n\r\nIn contrast, Version 1.4, also known as CODO_COVIDRO 1.4 or COVID-19 Drug and Risk Ontology (COViDRO), presents a formal model specifically designed to tackle the multifaceted challenges associated with COVID-19 treatment, risk factors, and drug interactions. The knowledge embedded in the COViDRO model is extracted from diverse medical literature and treatment guidelines provided by reputable organizations such as the World Health Organization (WHO), the National Institutes of Health (NIH), the Food and Drug Administration (FDA), and the Centers for Disease Control and Prevention (CDC). The model incorporates information on therapeutics, adverse effects, and drug interactions from authoritative medical literature, making a significant contribution to patient care, research, and public health strategies.\r\n\r\nCOViDRO, or COVID-19 Drug and Risk Ontology 1.4, seamlessly integrates into knowledge graph information systems or recommender systems. It assists healthcare professionals in suggesting appropriate treatments by considering a comprehensive set of factors, abbreviated as \"PRADiCT\" (Patient Risk factors, Adverse effects, Drug interaction, Clinical findings, and Treatment procedure). These factors encompass patient risk level, risk factors (such as underlying health conditions, age, immunocompromised state, and occupation), drug interactions, drug adverse effects, clinical findings (including diagnosis, signs, symptoms, and status), and treatment procedures.\r\n\r\nBy offering a standardized framework for organizing and integrating data from diverse sources like clinical trials, medical literature, and real-world patient data, COViDRO enhances informed decision-making, thereby elevating the quality of patient care. It stands as a patient-centric solution, facilitating COVID-19 treatment options and personalized care based on individual patient characteristics. \r\n\r\nCODO V1.5 extends the previous CODO V1.4 with the focus on COVID-19 Virus Genomics for representation of genomic sequence data. VGO model comprises 261 classes, 55 object properties, and 14 data properties. Designed to streamline the use and dissemination of COVID-19 genomic sequence data, VGO serves as a robust resource for researchers and healthcare professionals. It incorporates data from the Global Initiative on Sharing All Influenza Data (GISAID), which facilitates efficient querying and visualization of genomic data, thereby improving both accessibility and usability. VGO includes a variety of classes that represent COVID-19-related data such as variants, mutations, amino acids, genes, proteins, genome sequencing, samples, hosts, sampling strategies, and assembly methods. Furthermore, VGO supports automated reasoning, enhancing its functionality for in-depth analysis and interpretation. By integrating GISAID data into the VGO knowledge graph, the model not only enriches its conceptual representation but also optimizes the querying and visualization processes, making genomic data more accessible and usable for the scientific and medical communities.",
+  "status": "beta",
+  "submissionId": 6,
+  "@id": "https://data.bioontology.org/ontologies/CODO/submissions/6",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CODO/submissions/6/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

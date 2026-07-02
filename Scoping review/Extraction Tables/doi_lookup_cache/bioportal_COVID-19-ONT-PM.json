@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/1d5d1190-c037-0131-410a-005056010073",
+      "name": "Hanfei Bao",
+      "email": "hanfeib@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/HanfeiBaoOnt"
+    ],
+    "acronym": "COVID-19-ONT-PM",
+    "name": "COVID-19OntologyInPatternMedicine",
+    "@id": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/submissions",
+      "properties": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/properties",
+      "classes": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/classes",
+      "single_class": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/schemes",
+      "collections": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/instances",
+      "metrics": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/reviews",
+      "notes": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/notes",
+      "groups": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/groups",
+      "categories": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/projects",
+      "download": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/download",
+      "views": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/views",
+      "analytics": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/COVID-19-ONT-PM",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2021-08-20T00:00:00.000+00:00",
+  "creationDate": "2022-04-04T20:13:03.000-07:00",
+  "homepage": "https://blog.51.ca/u-345129/2020/11/13/the-preliminary-researches-on-the-data-dynamics-of-covid-19/",
+  "publication": [
+    "https://blog.51.ca/u-345129/2020/11/13/the-preliminary-researches-on-the-data-dynamics-of-covid-19/"
+  ],
+  "documentation": "https://blog.51.ca/u-345129/2020/11/13/the-preliminary-researches-on-the-data-dynamics-of-covid-19/",
+  "version": "007",
+  "description": "This ontology will focus on the COVID-19 fields in order to help the hard efforts against the outbreak of the pandemic. It is expected, through the ontology, to understand the medical events or conditions and make medical decisions in more integrated or systematic ways, based on more engineered or calculation methods.\r\nThis ontology will also be involved in the explorations on the Pattern Medicines (PMs) and so called the Generalized Biology Mechanics (GBM), raised by the author in his Biomedical Knowledge Integration (BMKI), a pilot topic full of challenges.  \r\n",
+  "status": "alpha",
+  "submissionId": 9,
+  "@id": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/submissions/9",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/COVID-19-ONT-PM/submissions/9/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

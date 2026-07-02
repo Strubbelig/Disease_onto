@@ -1,0 +1,1919 @@
+{
+  "meta": {
+    "count": 2,
+    "db_response_time_ms": 221,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Ontology for ELEctronic tool for Clinicians Trainers \"and\" Researchers In Child Abuse ELECTRICA ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Ontology for ELEctronic tool for Clinicians, Trainers and Researchers In Child Abuse ELECTRICA ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Ontology for ELEctronic tool for Clinicians, Trainers and Researchers In Child Abuse ELECTRICA ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3178440138",
+      "doi": "https://doi.org/10.1007/s00247-021-05130-8",
+      "title": "Current and emerging artificial intelligence applications for pediatric musculoskeletal radiology",
+      "display_name": "Current and emerging artificial intelligence applications for pediatric musculoskeletal radiology",
+      "relevance_score": 50.710377,
+      "publication_year": 2021,
+      "publication_date": "2021-07-16",
+      "ids": {
+        "openalex": "https://openalex.org/W3178440138",
+        "doi": "https://doi.org/10.1007/s00247-021-05130-8",
+        "mag": "3178440138",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/34272573"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/s00247-021-05130-8",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s00247-021-05130-8",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00247-021-05130-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S44033376",
+          "display_name": "Pediatric Radiology",
+          "issn_l": "0301-0449",
+          "issn": [
+            "0301-0449",
+            "1432-1998"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Pediatric Radiology",
+        "raw_type": "journal-article"
+      },
+      "type": "review",
+      "indexed_in": [
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s00247-021-05130-8.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5060164558",
+            "display_name": "Amaka C Offiah",
+            "orcid": "https://orcid.org/0000-0001-8991-5036"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210121472",
+              "display_name": "Sheffield Children's NHS Foundation Trust",
+              "ror": "https://ror.org/02md8hv62",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210121472"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Amaka C. Offiah",
+          "raw_affiliation_strings": [
+            "Department of Oncology and Metabolism, University of Sheffield, Damer Street Building, Sheffield, S10 2TH, UK. a.offiah@sheffield.ac.uk",
+            "Department of Radiology, Sheffield Children's NHS Foundation Trust, Sheffield, UK. a.offiah@sheffield.ac.uk",
+            "Department of Oncology and Metabolism, University of Sheffield, Damer Street Building, Sheffield, S10 2TH, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8991-5036",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Oncology and Metabolism, University of Sheffield, Damer Street Building, Sheffield, S10 2TH, UK. a.offiah@sheffield.ac.uk",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Radiology, Sheffield Children's NHS Foundation Trust, Sheffield, UK. a.offiah@sheffield.ac.uk",
+              "institution_ids": [
+                "https://openalex.org/I4210121472"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Oncology and Metabolism, University of Sheffield, Damer Street Building, Sheffield, S10 2TH, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5060164558"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210121472",
+        "https://openalex.org/I91136226"
+      ],
+      "apc_list": {
+        "value": 3060,
+        "currency": "EUR",
+        "value_usd": 3860
+      },
+      "apc_paid": {
+        "value": 3060,
+        "currency": "EUR",
+        "value_usd": 3860
+      },
+      "fwci": 2.0429,
+      "has_fulltext": true,
+      "cited_by_count": 55,
+      "citation_normalized_percentile": {
+        "value": 0.87649402,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 97,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "52",
+        "issue": "11",
+        "first_page": "2149",
+        "last_page": "2158"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11636",
+        "display_name": "Artificial Intelligence in Healthcare and Education",
+        "score": 0.9854999780654907,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2718",
+          "display_name": "Health Informatics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11636",
+          "display_name": "Artificial Intelligence in Healthcare and Education",
+          "score": 0.9854999780654907,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2718",
+            "display_name": "Health Informatics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T14510",
+          "display_name": "Medical Imaging and Analysis",
+          "score": 0.9814000129699707,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2204",
+            "display_name": "Biomedical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12296",
+          "display_name": "Autopsy Techniques and Outcomes",
+          "score": 0.9778000116348267,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2741",
+            "display_name": "Radiology, Nuclear Medicine and Imaging"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.7440142631530762
+        },
+        {
+          "id": "https://openalex.org/keywords/pediatric-radiology",
+          "display_name": "Pediatric Radiology",
+          "score": 0.6769546866416931
+        },
+        {
+          "id": "https://openalex.org/keywords/neuroradiology",
+          "display_name": "Neuroradiology",
+          "score": 0.5927409529685974
+        },
+        {
+          "id": "https://openalex.org/keywords/applications-of-artificial-intelligence",
+          "display_name": "Applications of artificial intelligence",
+          "score": 0.46917325258255005
+        },
+        {
+          "id": "https://openalex.org/keywords/radiology",
+          "display_name": "Radiology",
+          "score": 0.44443079829216003
+        },
+        {
+          "id": "https://openalex.org/keywords/medical-physics",
+          "display_name": "Medical physics",
+          "score": 0.3725301921367645
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.28616732358932495
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.13638490438461304
+        },
+        {
+          "id": "https://openalex.org/keywords/neurology",
+          "display_name": "Neurology",
+          "score": 0.08163976669311523
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.7440142631530762
+        },
+        {
+          "id": "https://openalex.org/C2909053340",
+          "wikidata": "https://www.wikidata.org/wiki/Q7124058",
+          "display_name": "Pediatric Radiology",
+          "level": 2,
+          "score": 0.6769546866416931
+        },
+        {
+          "id": "https://openalex.org/C2779889316",
+          "wikidata": "https://www.wikidata.org/wiki/Q642836",
+          "display_name": "Neuroradiology",
+          "level": 3,
+          "score": 0.5927409529685974
+        },
+        {
+          "id": "https://openalex.org/C157170001",
+          "wikidata": "https://www.wikidata.org/wiki/Q4781507",
+          "display_name": "Applications of artificial intelligence",
+          "level": 2,
+          "score": 0.46917325258255005
+        },
+        {
+          "id": "https://openalex.org/C126838900",
+          "wikidata": "https://www.wikidata.org/wiki/Q77604",
+          "display_name": "Radiology",
+          "level": 1,
+          "score": 0.44443079829216003
+        },
+        {
+          "id": "https://openalex.org/C19527891",
+          "wikidata": "https://www.wikidata.org/wiki/Q1120908",
+          "display_name": "Medical physics",
+          "level": 1,
+          "score": 0.3725301921367645
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.28616732358932495
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.13638490438461304
+        },
+        {
+          "id": "https://openalex.org/C16568411",
+          "wikidata": "https://www.wikidata.org/wiki/Q83042",
+          "display_name": "Neurology",
+          "level": 2,
+          "score": 0.08163976669311523
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000072177",
+          "descriptor_name": "Radiologists",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000072177",
+          "descriptor_name": "Radiologists",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000072177",
+          "descriptor_name": "Radiologists",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000072177",
+          "descriptor_name": "Radiologists",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000328",
+          "descriptor_name": "Adult",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000328",
+          "descriptor_name": "Adult",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000328",
+          "descriptor_name": "Adult",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000328",
+          "descriptor_name": "Adult",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009141",
+          "descriptor_name": "Musculoskeletal System",
+          "qualifier_ui": "Q000000981",
+          "qualifier_name": "diagnostic imaging",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009141",
+          "descriptor_name": "Musculoskeletal System",
+          "qualifier_ui": "Q000000981",
+          "qualifier_name": "diagnostic imaging",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009141",
+          "descriptor_name": "Musculoskeletal System",
+          "qualifier_ui": "Q000000981",
+          "qualifier_name": "diagnostic imaging",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009141",
+          "descriptor_name": "Musculoskeletal System",
+          "qualifier_ui": "Q000000981",
+          "qualifier_name": "diagnostic imaging",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D010372",
+          "descriptor_name": "Pediatrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D010372",
+          "descriptor_name": "Pediatrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D010372",
+          "descriptor_name": "Pediatrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D010372",
+          "descriptor_name": "Pediatrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D011871",
+          "descriptor_name": "Radiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D011871",
+          "descriptor_name": "Radiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D011871",
+          "descriptor_name": "Radiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D011871",
+          "descriptor_name": "Radiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1007/s00247-021-05130-8",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s00247-021-05130-8",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00247-021-05130-8.pdf",
+          "source": {
+            "id": "https://openalex.org/S44033376",
+            "display_name": "Pediatric Radiology",
+            "issn_l": "0301-0449",
+            "issn": [
+              "0301-0449",
+              "1432-1998"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Pediatric Radiology",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:34272573",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34272573",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Pediatric radiology",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:eprints.whiterose.ac.uk:191927",
+          "is_oa": false,
+          "landing_page_url": null,
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400854",
+            "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2800616092",
+            "host_organization_name": "White Rose University Consortium",
+            "host_organization_lineage": [
+              "https://openalex.org/I2800616092"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:9537230",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9537230",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Pediatr Radiol",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1007/s00247-021-05130-8",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s00247-021-05130-8",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00247-021-05130-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S44033376",
+          "display_name": "Pediatric Radiology",
+          "issn_l": "0301-0449",
+          "issn": [
+            "0301-0449",
+            "1432-1998"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Pediatric Radiology",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Quality Education",
+          "id": "https://metadata.un.org/sdg/4",
+          "score": 0.6299999952316284
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3178440138.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3178440138.grobid-xml"
+      },
+      "referenced_works_count": 81,
+      "referenced_works": [
+        "https://openalex.org/W1978219647",
+        "https://openalex.org/W1985311321",
+        "https://openalex.org/W1998811694",
+        "https://openalex.org/W2023324870",
+        "https://openalex.org/W2031114303",
+        "https://openalex.org/W2032243855",
+        "https://openalex.org/W2044178924",
+        "https://openalex.org/W2045529827",
+        "https://openalex.org/W2048495389",
+        "https://openalex.org/W2052961351",
+        "https://openalex.org/W2056962466",
+        "https://openalex.org/W2064082484",
+        "https://openalex.org/W2076337769",
+        "https://openalex.org/W2087009268",
+        "https://openalex.org/W2091844174",
+        "https://openalex.org/W2093470977",
+        "https://openalex.org/W2095092873",
+        "https://openalex.org/W2132254835",
+        "https://openalex.org/W2139983503",
+        "https://openalex.org/W2306506154",
+        "https://openalex.org/W2343759142",
+        "https://openalex.org/W2521150797",
+        "https://openalex.org/W2563892156",
+        "https://openalex.org/W2568230768",
+        "https://openalex.org/W2570463213",
+        "https://openalex.org/W2590270989",
+        "https://openalex.org/W2611997736",
+        "https://openalex.org/W2766766852",
+        "https://openalex.org/W2776581140",
+        "https://openalex.org/W2793851096",
+        "https://openalex.org/W2887693514",
+        "https://openalex.org/W2888226794",
+        "https://openalex.org/W2893956025",
+        "https://openalex.org/W2895777734",
+        "https://openalex.org/W2896709288",
+        "https://openalex.org/W2897354718",
+        "https://openalex.org/W2900371303",
+        "https://openalex.org/W2901705632",
+        "https://openalex.org/W2901778018",
+        "https://openalex.org/W2903408278",
+        "https://openalex.org/W2903435654",
+        "https://openalex.org/W2904595536",
+        "https://openalex.org/W2911217459",
+        "https://openalex.org/W2912504222",
+        "https://openalex.org/W2921601627",
+        "https://openalex.org/W2922159377",
+        "https://openalex.org/W2945418913",
+        "https://openalex.org/W2945719313",
+        "https://openalex.org/W2948528345",
+        "https://openalex.org/W2962840999",
+        "https://openalex.org/W2964433937",
+        "https://openalex.org/W2965950381",
+        "https://openalex.org/W2973596909",
+        "https://openalex.org/W2981421798",
+        "https://openalex.org/W2984447549",
+        "https://openalex.org/W2988912012",
+        "https://openalex.org/W2989916101",
+        "https://openalex.org/W2990286494",
+        "https://openalex.org/W2995433406",
+        "https://openalex.org/W2997566125",
+        "https://openalex.org/W2997858295",
+        "https://openalex.org/W2997961818",
+        "https://openalex.org/W3001305411",
+        "https://openalex.org/W3004983689",
+        "https://openalex.org/W3005526108",
+        "https://openalex.org/W3008695090",
+        "https://openalex.org/W3016480132",
+        "https://openalex.org/W3017804246",
+        "https://openalex.org/W3032662719",
+        "https://openalex.org/W3033255453",
+        "https://openalex.org/W3045519347",
+        "https://openalex.org/W3095433392",
+        "https://openalex.org/W3097322357",
+        "https://openalex.org/W3099409464",
+        "https://openalex.org/W3101659587",
+        "https://openalex.org/W3112317047",
+        "https://openalex.org/W3113307991",
+        "https://openalex.org/W3132434189",
+        "https://openalex.org/W3164860994",
+        "https://openalex.org/W4232156096",
+        "https://openalex.org/W4238680549"
+      ],
+      "related_works": [
+        "https://openalex.org/W4214520308",
+        "https://openalex.org/W4245821111",
+        "https://openalex.org/W4243529417",
+        "https://openalex.org/W4243134761",
+        "https://openalex.org/W4248534311",
+        "https://openalex.org/W4242051983",
+        "https://openalex.org/W4294605603",
+        "https://openalex.org/W4233495510",
+        "https://openalex.org/W2614567580",
+        "https://openalex.org/W4252472676"
+      ],
+      "abstract_inverted_index": {
+        "Artificial": [
+          0
+        ],
+        "intelligence": [
+          1,
+          172
+        ],
+        "(AI)": [
+          2
+        ],
+        "is": [
+          3,
+          67,
+          98,
+          135
+        ],
+        "playing": [
+          4
+        ],
+        "an": [
+          5,
+          72,
+          77
+        ],
+        "ever-increasing": [
+          6
+        ],
+        "role": [
+          7,
+          33
+        ],
+        "in": [
+          8,
+          12,
+          17,
+          44,
+          71,
+          89,
+          101,
+          112,
+          123,
+          132,
+          138
+        ],
+        "radiology": [
+          9,
+          170
+        ],
+        "(more": [
+          10
+        ],
+        "so": [
+          11
+        ],
+        "the": [
+          13,
+          20,
+          32,
+          35,
+          51,
+          60,
+          99,
+          124,
+          130,
+          141,
+          147,
+          165
+        ],
+        "adult": [
+          14
+        ],
+        "world": [
+          15
+        ],
+        "than": [
+          16,
+          76,
+          94
+        ],
+        "pediatrics),": [
+          18
+        ],
+        "to": [
+          19,
+          39,
+          140,
+          160
+        ],
+        "extent": [
+          21
+        ],
+        "that": [
+          22
+        ],
+        "there": [
+          23
+        ],
+        "are": [
+          24,
+          48,
+          158
+        ],
+        "unfounded": [
+          25
+        ],
+        "fears": [
+          26
+        ],
+        "it": [
+          27
+        ],
+        "will": [
+          28,
+          55
+        ],
+        "completely": [
+          29
+        ],
+        "take": [
+          30
+        ],
+        "over": [
+          31
+        ],
+        "of": [
+          34,
+          42,
+          164
+        ],
+        "radiologist.": [
+          36
+        ],
+        "In": [
+          37
+        ],
+        "relation": [
+          38,
+          139
+        ],
+        "musculoskeletal": [
+          40,
+          143
+        ],
+        "applications": [
+          41
+        ],
+        "AI": [
+          43,
+          54,
+          66,
+          82,
+          134
+        ],
+        "pediatric": [
+          45,
+          142,
+          169
+        ],
+        "radiology,": [
+          46
+        ],
+        "we": [
+          47
+        ],
+        "far": [
+          49
+        ],
+        "from": [
+          50
+        ],
+        "time": [
+          52
+        ],
+        "when": [
+          53
+        ],
+        "replace": [
+          56
+        ],
+        "radiologists;": [
+          57
+        ],
+        "even": [
+          58
+        ],
+        "for": [
+          59,
+          83,
+          92,
+          153
+        ],
+        "commonest": [
+          61
+        ],
+        "application": [
+          62
+        ],
+        "(bone": [
+          63
+        ],
+        "age": [
+          64,
+          85
+        ],
+        "assessment),": [
+          65
+        ],
+        "more": [
+          68,
+          93
+        ],
+        "often": [
+          69
+        ],
+        "employed": [
+          70
+        ],
+        "AI-assist": [
+          73
+        ],
+        "mode": [
+          74
+        ],
+        "rather": [
+          75
+        ],
+        "AI-replace": [
+          78
+        ],
+        "or": [
+          79
+        ],
+        "AI-extend": [
+          80
+        ],
+        "mode.": [
+          81
+        ],
+        "bone": [
+          84
+        ],
+        "assessment": [
+          86
+        ],
+        "has": [
+          87,
+          105
+        ],
+        "been": [
+          88,
+          106
+        ],
+        "clinical": [
+          90
+        ],
+        "use": [
+          91
+        ],
+        "a": [
+          95
+        ],
+        "decade": [
+          96
+        ],
+        "and": [
+          97,
+          117,
+          150
+        ],
+        "area": [
+          100
+        ],
+        "which": [
+          102,
+          133
+        ],
+        "most": [
+          103,
+          136
+        ],
+        "research": [
+          104,
+          125,
+          166
+        ],
+        "conducted.": [
+          107
+        ],
+        "Most": [
+          108
+        ],
+        "other": [
+          109
+        ],
+        "potential": [
+          110
+        ],
+        "indications": [
+          111
+        ],
+        "children": [
+          113
+        ],
+        "(such": [
+          114
+        ],
+        "as": [
+          115,
+          162
+        ],
+        "appendicular": [
+          116
+        ],
+        "vertebral": [
+          118
+        ],
+        "fracture": [
+          119
+        ],
+        "detection)": [
+          120
+        ],
+        "remain": [
+          121
+        ],
+        "largely": [
+          122
+        ],
+        "domain.": [
+          126
+        ],
+        "This": [
+          127
+        ],
+        "article": [
+          128
+        ],
+        "reviews": [
+          129
+        ],
+        "areas": [
+          131,
+          152
+        ],
+        "prominent": [
+          137
+        ],
+        "system,": [
+          144
+        ],
+        "briefly": [
+          145
+        ],
+        "summarizing": [
+          146
+        ],
+        "current": [
+          148
+        ],
+        "literature": [
+          149
+        ],
+        "highlighting": [
+          151
+        ],
+        "future": [
+          154
+        ],
+        "research.": [
+          155,
+          173
+        ],
+        "Pediatric": [
+          156
+        ],
+        "radiologists": [
+          157
+        ],
+        "encouraged": [
+          159
+        ],
+        "participate": [
+          161
+        ],
+        "members": [
+          163
+        ],
+        "teams": [
+          167
+        ],
+        "conducting": [
+          168
+        ],
+        "artificial": [
+          171
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 16
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 18
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 4
+        }
+      ],
+      "updated_date": "2026-06-25T08:15:23.626066",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4404610757",
+      "doi": "https://doi.org/10.1007/978-3-031-77792-9_16",
+      "title": "Understanding Inflicted Injuries in Young Children: Toward an Ontology Based Approach",
+      "display_name": "Understanding Inflicted Injuries in Young Children: Toward an Ontology Based Approach",
+      "relevance_score": 16.332748,
+      "publication_year": 2024,
+      "publication_date": "2024-11-20",
+      "ids": {
+        "openalex": "https://openalex.org/W4404610757",
+        "doi": "https://doi.org/10.1007/978-3-031-77792-9_16"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/978-3-031-77792-9_16",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-031-77792-9_16",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S106296714",
+          "display_name": "Lecture notes in computer science",
+          "issn_l": "0302-9743",
+          "issn": [
+            "0302-9743",
+            "1611-3349"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Lecture Notes in Computer Science",
+        "raw_type": "book-chapter"
+      },
+      "type": "book-chapter",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5042622518",
+            "display_name": "Fatima Maikore",
+            "orcid": "https://orcid.org/0000-0001-8294-5283"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Fatima Maikore",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8294-5283",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5013832591",
+            "display_name": "Suvodeep Mazumdar",
+            "orcid": "https://orcid.org/0000-0002-0748-7638"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Suvodeep Mazumdar",
+          "raw_affiliation_strings": [
+            "Information School, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0748-7638",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Information School, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060164558",
+            "display_name": "Amaka C Offiah",
+            "orcid": "https://orcid.org/0000-0001-8991-5036"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Amaka Offiah",
+          "raw_affiliation_strings": [
+            "School of Medicine and Population Health, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8991-5036",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Medicine and Population Health, Sheffield, UK",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103015346",
+            "display_name": "Anthony Hughes",
+            "orcid": "https://orcid.org/0009-0003-4065-1094"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anthony Hughes",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0009-0003-4065-1094",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090639890",
+            "display_name": "Sneha Roychowdhury",
+            "orcid": "https://orcid.org/0000-0002-9364-3499"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sneha Roychowdhury",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9364-3499",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5114746617",
+            "display_name": "Katie Hocking",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210102902",
+              "display_name": "Sheffield Teaching Hospitals NHS Foundation Trust",
+              "ror": "https://ror.org/018hjpz25",
+              "country_code": "GB",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I4210102902"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Katie Hocking",
+          "raw_affiliation_strings": [
+            "Sheffield Teaching Hospitals NHS Foundation Trust, Sheffield, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Sheffield Teaching Hospitals NHS Foundation Trust, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I4210102902"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030717108",
+            "display_name": "Vitaveska Lanfranchi",
+            "orcid": "https://orcid.org/0000-0003-3148-2535"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vitaveska Lanfranchi",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3148-2535",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5013832591",
+        "https://openalex.org/A5042622518"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I91136226"
+      ],
+      "apc_list": {
+        "value": 5000,
+        "currency": "EUR",
+        "value_usd": 5392
+      },
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.64468468,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "260",
+        "last_page": "270"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11824",
+        "display_name": "Injury Epidemiology and Prevention",
+        "score": 0.9850000143051147,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11824",
+          "display_name": "Injury Epidemiology and Prevention",
+          "score": 0.9850000143051147,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10416",
+          "display_name": "Traumatic Brain Injury Research",
+          "score": 0.9790999889373779,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2713",
+            "display_name": "Epidemiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7471417188644409
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6791585683822632
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-security",
+          "display_name": "Computer security",
+          "score": 0.3650960624217987
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.08975782990455627
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7471417188644409
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6791585683822632
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.3650960624217987
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.08975782990455627
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1007/978-3-031-77792-9_16",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1007/978-3-031-77792-9_16",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S106296714",
+            "display_name": "Lecture notes in computer science",
+            "issn_l": "0302-9743",
+            "issn": [
+              "0302-9743",
+              "1611-3349"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "book series"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Lecture Notes in Computer Science",
+          "raw_type": "book-chapter"
+        },
+        {
+          "id": "pmh:oai:eprints.whiterose.ac.uk:220624",
+          "is_oa": true,
+          "landing_page_url": "https://orcid.org/0000-0001-8294-5283>,",
+          "pdf_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400854",
+            "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2800616092",
+            "host_organization_name": "White Rose University Consortium",
+            "host_organization_lineage": [
+              "https://openalex.org/I2800616092"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Proceedings Paper"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:eprints.whiterose.ac.uk:220624",
+        "is_oa": true,
+        "landing_page_url": "https://orcid.org/0000-0001-8294-5283>,",
+        "pdf_url": "https://eprints.whiterose.ac.uk/220624/7/paper_80__1_.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400854",
+          "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2800616092",
+          "host_organization_name": "White Rose University Consortium",
+          "host_organization_lineage": [
+            "https://openalex.org/I2800616092"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Proceedings Paper"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Gender equality",
+          "id": "https://metadata.un.org/sdg/5",
+          "score": 0.5199999809265137
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4404610757.pdf"
+      },
+      "referenced_works_count": 27,
+      "referenced_works": [
+        "https://openalex.org/W2007870907",
+        "https://openalex.org/W2013496295",
+        "https://openalex.org/W2033269807",
+        "https://openalex.org/W2045231044",
+        "https://openalex.org/W2073194617",
+        "https://openalex.org/W2104700039",
+        "https://openalex.org/W2114624166",
+        "https://openalex.org/W2154829072",
+        "https://openalex.org/W2155249637",
+        "https://openalex.org/W2156433885",
+        "https://openalex.org/W2170922090",
+        "https://openalex.org/W2265431061",
+        "https://openalex.org/W2571326886",
+        "https://openalex.org/W2729968666",
+        "https://openalex.org/W2836969313",
+        "https://openalex.org/W2888828233",
+        "https://openalex.org/W3091797093",
+        "https://openalex.org/W3128442157",
+        "https://openalex.org/W3130411038",
+        "https://openalex.org/W3159754281",
+        "https://openalex.org/W3213218629",
+        "https://openalex.org/W4205640558",
+        "https://openalex.org/W4296041706",
+        "https://openalex.org/W4327650647",
+        "https://openalex.org/W4384914555",
+        "https://openalex.org/W4387421209",
+        "https://openalex.org/W6600344744"
+      ],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801",
+        "https://openalex.org/W4391913857",
+        "https://openalex.org/W2358668433",
+        "https://openalex.org/W4396701345",
+        "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890",
+        "https://openalex.org/W4396696052"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

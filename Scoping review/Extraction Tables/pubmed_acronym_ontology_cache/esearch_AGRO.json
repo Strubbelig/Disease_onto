@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "415",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "41829356",
+      "35015827",
+      "37666867",
+      "38089711",
+      "40117331",
+      "40199101",
+      "37908741",
+      "37935368",
+      "36757871",
+      "36016412"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"AGRO\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

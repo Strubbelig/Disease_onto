@@ -1,0 +1,109 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/66e32140-4431-0137-fd91-005056010088",
+      "name": "Shruthi Chari",
+      "email": "charis@rpi.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/oshani",
+      "https://data.bioontology.org/users/shruthichari"
+    ],
+    "acronym": "SCO",
+    "name": "Study Cohort Ontology",
+    "@id": "https://data.bioontology.org/ontologies/SCO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/SCO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/SCO/properties",
+      "classes": "https://data.bioontology.org/ontologies/SCO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/SCO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/SCO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/SCO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/SCO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/SCO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/SCO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/SCO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/SCO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/SCO/notes",
+      "groups": "https://data.bioontology.org/ontologies/SCO/groups",
+      "categories": "https://data.bioontology.org/ontologies/SCO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/SCO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/SCO/projects",
+      "download": "https://data.bioontology.org/ontologies/SCO/download",
+      "views": "https://data.bioontology.org/ontologies/SCO/views",
+      "analytics": "https://data.bioontology.org/ontologies/SCO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/SCO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2019-04-18T00:00:00.000+00:00",
+  "creationDate": "2020-07-02T13:24:40.000-07:00",
+  "homepage": "https://tetherless-world.github.io/study-cohort-ontology/",
+  "publication": [
+    "https://link.springer.com/chapter/10.1007/978-3-030-30796-7_4"
+  ],
+  "documentation": "https://tetherless-world.github.io/study-cohort-ontology/ontology-resource",
+  "version": "1.1.0",
+  "description": "The Study Cohort Ontology (SCO) is developed to model overall structure and patterns of cohort variables and control/intervention groups defined within the structured population descriptions (commonly referred to as Table1's or Cohort Summary Tables)of observational case studies and clinical trials. We maintain only domain agnostic and commonly occuring subject variables and interventions in SCO, and we have a suite of ontologies (Diseases, Medications, LabResults etc) to encode Diabetes related terminology. We have adopted a bottom-up approach to modeling and we have revised the structure of SCO upon investigation of a few research studies (11 to be precise) from the Pharmacological Interventions (Chapter 8) and Cardiovascular Complications (Chapter 9) of the American Diabetes Association (ADA)’s Standards of Medical Care 2018 CPG. We enable deep drive visualizations driven off queries to knowledge graphs modeled on SCO, to help assist physician visualize the similarity of a patient to a study group, at a quick glance. We welcome contributions and suggestions to extend SCO to represent cohort descriptions of publications targeted to other diseases, and we plan to release set of tools to make this process seamless.",
+  "status": "alpha",
+  "submissionId": 5,
+  "@id": "https://data.bioontology.org/ontologies/SCO/submissions/5",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/SCO/submissions/5/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

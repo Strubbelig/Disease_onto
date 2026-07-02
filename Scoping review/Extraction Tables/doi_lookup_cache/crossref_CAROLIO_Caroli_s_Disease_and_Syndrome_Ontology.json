@@ -1,0 +1,911 @@
+{
+  "facets": {},
+  "total-results": 3292909,
+  "items": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            21
+          ]
+        ],
+        "date-time": "2025-11-21T15:54:49Z",
+        "timestamp": 1763740489869,
+        "version": "3.45.0"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            10
+          ]
+        ]
+      },
+      "reference-count": 0,
+      "publisher": "F1000 Research Ltd",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                10
+              ]
+            ],
+            "date-time": "2016-07-10T00:00:00Z",
+            "timestamp": 1468108800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "abstract": "<ns3:p>One strategy for building ontologies covering domains such as disease or anatomy is to weave together existing knowledge sources (databases, vocabularies and ontologies) into single cohesive whole. A first step in this process is to generate mappings between the elements of these different sources. There are a number of well-known techniques for generating mappings (also known as ontology alignment), both manual and automatic. Sometimes mappings are seen as an end in themselves, with the sources remaining in a loosely connected state. However, if we want to take the next step and use the mappings to integrate the different sources into a cohesive reference ontology, then we need to translate the mappings into precise logical relationships. This will allow us to safely merge equivalent concepts, creating a unified ontology. This translation is a non-trivial step, as each mapping can be interpreted as multiple different logical relationships, with each interpretation affecting the likelihood of the others. There is a lack of automated methods to assist with this last step; this resolution is typically performed by expert ontologists.</ns3:p>\n                <ns3:p>Here we describe an ontology construction technique that takes two or more ontologies linked by hypothetical axioms, and estimates the most likely unified logical ontology. Hypothetical axioms can themselves be derived from semantically loose mappings. The method combines deductive reasoning and probabilistic inference and is called Bayesian OWL Ontology Merging (BOOM). We describe a special form k-BOOM that works by factorizing the probabilistic ontology into $k$ submodules.</ns3:p>\n                <ns3:p>We also briefly describe a supplemental lexical and knowledge-based technique for generating a set of hypothetical axioms from loose mappings.</ns3:p>\n                <ns3:p>We are currently using this technique to build a merged disease ontology (Monarch Disease Ontology; MonDO) that unifies a broad range of vocabularies into a consistent and coherent whole.</ns3:p>",
+      "DOI": "10.7490/f1000research.1112545.1",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            21
+          ]
+        ],
+        "date-time": "2025-11-21T15:27:09Z",
+        "timestamp": 1763738829000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "k-BOOM: A Bayesian approach to ontology structure inference, with applications in disease ontology construction"
+      ],
+      "prefix": "10.7490",
+      "author": [
+        {
+          "given": "Chris",
+          "family": "Mungall",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "2560",
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            21
+          ]
+        ],
+        "date-time": "2025-11-21T15:27:21Z",
+        "timestamp": 1763738841000
+      },
+      "score": 30.577892,
+      "resource": {
+        "primary": {
+          "URL": "https://f1000research.com/slides/5-1648"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            10
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.7490/f1000research.1112545.1",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            10
+          ]
+        ]
+      },
+      "subtype": "other"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            9
+          ]
+        ],
+        "date-time": "2026-01-09T12:34:41Z",
+        "timestamp": 1767962081291,
+        "version": "3.49.0"
+      },
+      "reference-count": 17,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "12",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                10,
+                2
+              ]
+            ],
+            "date-time": "2016-10-02T00:00:00Z",
+            "timestamp": 1475366400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 2685,
+          "URL": "http://creativecommons.org/licenses/by-nc/2.0/uk/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            15
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Subjective methods have been reported to adapt a general-purpose ontology for a specific application. For example, Gene Ontology (GO) Slim was created from GO to generate a highly aggregated report of the human-genome annotation. We propose statistical methods to adapt the general purpose, OBO Foundry Disease Ontology (DO) for the identification of gene-disease associations. Thus, we need a simplified definition of disease categories derived from implicated genes. On the basis of the assumption that the DO terms having similar associated genes are closely related, we group the DO terms based on the similarity of gene-to-DO mapping profiles. Two types of binary distance metrics are defined to measure the overall and subset similarity between DO terms. A compactness-scalable fuzzy clustering method is then applied to group similar DO terms. To reduce false clustering, the semantic similarities between DO terms are also used to constrain clustering results. As such, the DO terms are aggregated and the redundant DO terms are largely removed. Using these methods, we constructed a simplified vocabulary list from the DO called Disease Ontology Lite (DOLite). We demonstrated that DOLite results in more interpretable results than DO for gene-disease association tests. The resultant DOLite has been used in the Functional Disease Ontology (FunDO) Web application at http://www.projects.bioinformatics.northwestern.edu/fundo.</jats:p>\n               <jats:p>Contact:  s-lin2@northwestern.edu</jats:p>",
+      "DOI": "10.1093/bioinformatics/btp193",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            28
+          ]
+        ],
+        "date-time": "2009-05-28T15:48:54Z",
+        "timestamp": 1243525734000
+      },
+      "page": "i63-i68",
+      "source": "Crossref",
+      "is-referenced-by-count": 92,
+      "title": [
+        "From disease ontology to disease-ontology lite: statistical methods to adapt a general-purpose ontology for the test of gene-ontology associations"
+      ],
+      "prefix": "10.1093",
+      "volume": "25",
+      "author": [
+        {
+          "given": "Pan",
+          "family": "Du",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Gang",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jared",
+          "family": "Flatow",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Michelle",
+          "family": "Holko",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Warren A.",
+          "family": "Kibbe",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Simon M.",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 The Biomedical Informatics Center, Northwestern University, Chicago, IL 60611, 2Department of Pathology, University of Chicago, IL 60637 and 3Department of Preventive Medicine, Northwestern University, Chicago, IL 60611, USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            27
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "2023013111583421400_B1",
+          "doi-asserted-by": "crossref",
+          "first-page": "2185",
+          "DOI": "10.1126/science.287.5461.2185",
+          "article-title": "The genome sequence of Drosophila melanogaster",
+          "volume": "287",
+          "author": "Adams",
+          "year": "2000",
+          "journal-title": "Science"
+        },
+        {
+          "key": "2023013111583421400_B2",
+          "doi-asserted-by": "crossref",
+          "first-page": "D322",
+          "DOI": "10.1093/nar/gkl799",
+          "article-title": "GO PaD: the gene ontology partition database",
+          "volume": "35",
+          "author": "Alterovitz",
+          "year": "2007",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "2023013111583421400_B3",
+          "doi-asserted-by": "crossref",
+          "first-page": "W347",
+          "DOI": "10.1093/nar/gkn239",
+          "article-title": "ProfCom: a web tool for profiling the complex functionality of gene groups identified from high-throughput data",
+          "volume": "36",
+          "author": "Antonov",
+          "year": "2008",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "2023013111583421400_B4",
+          "doi-asserted-by": "crossref",
+          "first-page": "P3",
+          "DOI": "10.1186/gb-2003-4-5-p3",
+          "article-title": "DAVID: database for annotation, visualization, and integrated discovery",
+          "volume": "4",
+          "author": "Dennis",
+          "year": "2003",
+          "journal-title": "Genome Biol"
+        },
+        {
+          "key": "2023013111583421400_B5",
+          "doi-asserted-by": "crossref",
+          "first-page": "398",
+          "DOI": "10.1089/omi.2006.10.398",
+          "article-title": "Functional interpretation of microarray experiments",
+          "volume": "10",
+          "author": "Dopazo",
+          "year": "2006",
+          "journal-title": "OMICS"
+        },
+        {
+          "key": "2023013111583421400_B6",
+          "first-page": "1351",
+          "article-title": "Modeling gene expression networks using fuzzy logic",
+          "volume": "35",
+          "author": "Du",
+          "year": "2005",
+          "journal-title": "IEEE Trans. on SMCB (Part B)"
+        },
+        {
+          "key": "2023013111583421400_B7",
+          "doi-asserted-by": "crossref",
+          "first-page": "257",
+          "DOI": "10.1093/bioinformatics/btl567",
+          "article-title": "Using GOstats to test gene lists for GO term association",
+          "volume": "23",
+          "author": "Falcon",
+          "year": "2007",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "2023013111583421400_B8",
+          "doi-asserted-by": "crossref",
+          "first-page": "537",
+          "DOI": "10.1093/bioinformatics/btm628",
+          "article-title": "Multiple testing on the directed acyclic graph of gene ontology",
+          "volume": "24",
+          "author": "Goeman",
+          "year": "2008",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "2023013111583421400_B9",
+          "doi-asserted-by": "crossref",
+          "first-page": "D258",
+          "DOI": "10.1093/nar/gkh036",
+          "article-title": "The gene ontology (GO) database and informatics resource",
+          "volume": "32",
+          "author": "Harris",
+          "year": "2004",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "2023013111583421400_B10",
+          "article-title": "Semantic similarity based on corpus statistics and lexical taxonomy",
+          "volume-title": "Proceeding of ROCLING X.",
+          "author": "Jiang",
+          "year": "1997"
+        },
+        {
+          "key": "2023013111583421400_B11",
+          "doi-asserted-by": "crossref",
+          "first-page": "189",
+          "DOI": "10.1093/bib/bbn001",
+          "article-title": "Gene-set approach for expression pattern analysis",
+          "volume": "9",
+          "author": "Nam",
+          "year": "2008",
+          "journal-title": "Brief Bioinform"
+        },
+        {
+          "key": "2023013111583421400_B12",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1186/1471-2164-10-S1-S6",
+          "article-title": "Annotating the human genome with disease ontology",
+          "volume-title": "BMC Genomics.",
+          "author": "Osborne",
+          "year": "2009"
+        },
+        {
+          "key": "2023013111583421400_B13",
+          "doi-asserted-by": "crossref",
+          "first-page": "95",
+          "DOI": "10.1613/jair.514",
+          "article-title": "Semantic similarity in a taxonomy: an information-based measure and its application to problems of ambiguity in natural language",
+          "volume": "11",
+          "author": "Resnik",
+          "year": "1999",
+          "journal-title": "JAIR"
+        },
+        {
+          "key": "2023013111583421400_B14",
+          "doi-asserted-by": "crossref",
+          "first-page": "1196",
+          "DOI": "10.1093/bioinformatics/bth056",
+          "article-title": "CLENCH: a program for calculating cluster enrichment using the gene ontology",
+          "volume": "20",
+          "author": "Shah",
+          "year": "2004",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "2023013111583421400_B15",
+          "doi-asserted-by": "crossref",
+          "first-page": "468",
+          "DOI": "10.1186/1471-2105-9-468",
+          "article-title": "A relation-based measure of semantic similarity for gene ontology annotations",
+          "volume": "9",
+          "author": "Sheehan",
+          "year": "2008",
+          "journal-title": "BMC Bioinformatics"
+        },
+        {
+          "key": "2023013111583421400_B16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1274",
+          "DOI": "10.1093/bioinformatics/btm087",
+          "article-title": "A new method to measure the semantic similarity of GO terms",
+          "volume": "23",
+          "author": "Wang",
+          "year": "2007",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "2023013111583421400_B17",
+          "doi-asserted-by": "crossref",
+          "first-page": "2822",
+          "DOI": "10.1093/nar/gki573",
+          "article-title": "Prediction of functional modules based on comparative genome analysis and gene ontology application",
+          "volume": "33",
+          "author": "Wu",
+          "year": "2005",
+          "journal-title": "Nucleic Acids Res"
+        }
+      ],
+      "container-title": [
+        "Bioinformatics"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://academic.oup.com/bioinformatics/article-pdf/25/12/i63/48991091/bioinformatics_25_12_i63.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://academic.oup.com/bioinformatics/article-pdf/25/12/i63/48991091/bioinformatics_25_12_i63.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            31
+          ]
+        ],
+        "date-time": "2023-01-31T21:05:30Z",
+        "timestamp": 1675199130000
+      },
+      "score": 30.383083,
+      "resource": {
+        "primary": {
+          "URL": "https://academic.oup.com/bioinformatics/article/25/12/i63/187739"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            27
+          ]
+        ]
+      },
+      "references-count": 17,
+      "journal-issue": {
+        "issue": "12",
+        "published-print": {
+          "date-parts": [
+            [
+              2009,
+              6,
+              15
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1093/bioinformatics/btp193",
+      "ISSN": [
+        "1367-4811",
+        "1367-4803"
+      ],
+      "issn-type": [
+        {
+          "value": "1367-4811",
+          "type": "electronic"
+        },
+        {
+          "value": "1367-4803",
+          "type": "print"
+        }
+      ],
+      "published-other": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            15
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2024-08-03T19:36:16Z",
+        "timestamp": 1722713776161
+      },
+      "reference-count": 0,
+      "publisher": "ThinkLab",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      },
+      "DOI": "10.15363/thinklab.d68",
+      "type": "component",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            17
+          ]
+        ],
+        "date-time": "2015-05-17T01:56:09Z",
+        "timestamp": 1431827769000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Disease Ontology feature requests"
+      ],
+      "prefix": "10.15363",
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Himmelstein",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "6260",
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            16
+          ]
+        ],
+        "date-time": "2017-07-16T03:31:22Z",
+        "timestamp": 1500175882000
+      },
+      "score": 29.99752,
+      "resource": {
+        "primary": {
+          "URL": "https://think-lab.github.io/d/68"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.15363/thinklab.d68",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            11
+          ]
+        ],
+        "date-time": "2024-09-11T11:12:19Z",
+        "timestamp": 1726053139577
+      },
+      "reference-count": 1,
+      "publisher": "Qeios",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.32388/bz60kk",
+      "type": "reference-entry",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            9
+          ]
+        ],
+        "date-time": "2021-09-09T05:51:37Z",
+        "timestamp": 1631166697000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Long COVID"
+      ],
+      "prefix": "10.32388",
+      "author": [
+        {
+          "name": "Disease Ontology (DO)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "17262",
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            9
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "unstructured": "Disease Ontology (DO). Long COVID. DOID:0080848."
+        }
+      ],
+      "container-title": [
+        "Definitions"
+      ],
+      "language": "en",
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            9
+          ]
+        ],
+        "date-time": "2021-09-09T05:51:37Z",
+        "timestamp": 1631166697000
+      },
+      "score": 29.833712,
+      "resource": {
+        "primary": {
+          "URL": "https://www.qeios.com/read/BZ60KK"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            9
+          ]
+        ]
+      },
+      "references-count": 1,
+      "URL": "https://doi.org/10.32388/bz60kk",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            11
+          ]
+        ],
+        "date-time": "2024-09-11T10:06:54Z",
+        "timestamp": 1726049214581
+      },
+      "reference-count": 1,
+      "publisher": "Qeios",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.32388/rno85h",
+      "type": "reference-entry",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            7
+          ]
+        ],
+        "date-time": "2020-02-07T13:15:53Z",
+        "timestamp": 1581081353000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Disease Ontology Object"
+      ],
+      "prefix": "10.32388",
+      "author": [
+        {
+          "name": "National Cancer Institute",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "17262",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            7
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "unstructured": "National Cancer Institute. Disease Ontology Object. NCI Thesaurus. Code C45370."
+        }
+      ],
+      "container-title": [
+        "Definitions"
+      ],
+      "language": "en",
+      "deposited": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            7
+          ]
+        ],
+        "date-time": "2020-02-07T13:15:53Z",
+        "timestamp": 1581081353000
+      },
+      "score": 29.499239,
+      "resource": {
+        "primary": {
+          "URL": "https://www.qeios.com/read/definition/58587"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            7
+          ]
+        ]
+      },
+      "references-count": 1,
+      "URL": "https://doi.org/10.32388/rno85h",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            7
+          ]
+        ]
+      }
+    }
+  ],
+  "items-per-page": 5,
+  "query": {
+    "start-index": 0,
+    "search-terms": null
+  }
+}

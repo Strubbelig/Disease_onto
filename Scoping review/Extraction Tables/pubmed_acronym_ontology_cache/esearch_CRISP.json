@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "15",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34642549",
+      "16240764",
+      "37244189",
+      "25525591",
+      "32184350",
+      "31860752",
+      "23414780",
+      "26014501",
+      "27061999",
+      "28918527"
+    ],
+    "translationset": [
+      {
+        "from": "CRISP",
+        "to": "\"crisp\"[All Fields] OR \"crisps\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"crisp\"[All Fields] OR \"crisps\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

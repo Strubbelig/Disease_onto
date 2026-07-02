@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/f0bc44b0-12fe-0136-0597-005056010074",
+      "name": "EFO User List",
+      "email": "efo-users@ebi.ac.uk"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/zmp"
+    ],
+    "acronym": "EFO",
+    "name": "Experimental Factor Ontology",
+    "@id": "https://data.bioontology.org/ontologies/EFO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/EFO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/EFO/properties",
+      "classes": "https://data.bioontology.org/ontologies/EFO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/EFO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/EFO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/EFO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/EFO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/EFO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/EFO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/EFO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/EFO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/EFO/notes",
+      "groups": "https://data.bioontology.org/ontologies/EFO/groups",
+      "categories": "https://data.bioontology.org/ontologies/EFO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/EFO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/EFO/projects",
+      "download": "https://data.bioontology.org/ontologies/EFO/download",
+      "views": "https://data.bioontology.org/ontologies/EFO/views",
+      "analytics": "https://data.bioontology.org/ontologies/EFO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/EFO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-06-15T18:03:13.000-07:00",
+  "creationDate": "2026-06-15T00:00:00.000+00:00",
+  "homepage": "http://www.ebi.ac.uk/efo",
+  "publication": [],
+  "documentation": "http://www.ebi.ac.uk/efo",
+  "version": "3.91.0",
+  "description": "The Experimental Factor Ontology (EFO) is an application focused ontology modelling the experimental variables in multiple resources at the EBI and Open Targets. The ontology has been developed to increase the richness of the annotations that are currently made in resources and to promote consistent annotation, to facilitate automatic annotation and to integrate external data. The ontology pulls together classes from reference ontologies such as disease, cell line, cell type and anatomy and adds axiomatisation as necessary to connect areas such as disease to phenotype. Contact EFO users list for information: efo-users@ebi.ac.uk., The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for projects such as the NHGRI-EBI GWAS catalog. It combines parts of several biological ontologies, such as UBERON anatomy, ChEBI chemical compounds, Cell Ontology and the Monarch Disease Ontology (MONDO). The scope of EFO is to support the annotation, analysis and visualization of data handled by many groups at the EBI and as the core ontology for Open Targets.",
+  "status": "production",
+  "submissionId": 289,
+  "@id": "https://data.bioontology.org/ontologies/EFO/submissions/289",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/EFO/submissions/289/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/review-core" uri="review_core.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/extraction" uri="disease_terms_review.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/bioportal-hierarchy-smoke" uri="disease_terms_bioportal_hierarchy_smoke.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/bioportal-hierarchy" uri="disease_terms_bioportal_hierarchy.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/ols-hierarchy" uri="disease_terms_ols_hierarchy.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://example.org/disease-review/obo-direct-hierarchy" uri="disease_terms_obo_direct_hierarchy.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

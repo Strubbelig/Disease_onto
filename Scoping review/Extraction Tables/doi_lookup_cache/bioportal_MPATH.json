@@ -1,0 +1,107 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/1ecd3f40-edca-0135-3694-005056010073",
+      "name": "Mouse_pathology Administrators",
+      "email": "pns12@cam.ac.uk"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/PaulNSchofield",
+      "https://data.bioontology.org/users/PS%40mole.bio.cam.ac.uk"
+    ],
+    "acronym": "MPATH",
+    "name": "Mouse Pathology Ontology",
+    "@id": "https://data.bioontology.org/ontologies/MPATH",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/MPATH/submissions",
+      "properties": "https://data.bioontology.org/ontologies/MPATH/properties",
+      "classes": "https://data.bioontology.org/ontologies/MPATH/classes",
+      "single_class": "https://data.bioontology.org/ontologies/MPATH/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/MPATH/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/MPATH/schemes",
+      "collections": "https://data.bioontology.org/ontologies/MPATH/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/MPATH/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/MPATH/instances",
+      "metrics": "https://data.bioontology.org/ontologies/MPATH/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/MPATH/reviews",
+      "notes": "https://data.bioontology.org/ontologies/MPATH/notes",
+      "groups": "https://data.bioontology.org/ontologies/MPATH/groups",
+      "categories": "https://data.bioontology.org/ontologies/MPATH/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/MPATH/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/MPATH/projects",
+      "download": "https://data.bioontology.org/ontologies/MPATH/download",
+      "views": "https://data.bioontology.org/ontologies/MPATH/views",
+      "analytics": "https://data.bioontology.org/ontologies/MPATH/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/MPATH",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OBO",
+  "released": "2023-09-30T18:17:48.000-07:00",
+  "creationDate": "2023-09-30T18:17:50.000-07:00",
+  "homepage": "http://www.pathbase.net",
+  "publication": [],
+  "documentation": null,
+  "version": "2020-05-19",
+  "description": "A structured controlled vocabulary of mutant and transgenic mouse pathological lesions and processes",
+  "status": "production",
+  "submissionId": 22,
+  "@id": "https://data.bioontology.org/ontologies/MPATH/submissions/22",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/MPATH/submissions/22/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

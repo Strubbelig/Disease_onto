@@ -1,0 +1,1513 @@
+{
+  "meta": {
+    "count": 2,
+    "db_response_time_ms": 140,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (KB_Bio_101 AURA ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "KB_Bio_101 AURA ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:KB_Bio_101 AURA ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W106632145",
+      "doi": "https://doi.org/10.48550/arxiv.1312.6138",
+      "title": "Query Answering in Object Oriented Knowledge Bases in Logic Programming: Description and Challenge for ASP",
+      "display_name": "Query Answering in Object Oriented Knowledge Bases in Logic Programming: Description and Challenge for ASP",
+      "relevance_score": 26.439917,
+      "publication_year": 2013,
+      "publication_date": "2013-12-20",
+      "ids": {
+        "openalex": "https://openalex.org/W106632145",
+        "doi": "https://doi.org/10.48550/arxiv.1312.6138",
+        "mag": "106632145"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "mag:106632145",
+        "is_oa": true,
+        "landing_page_url": "https://arxiv.org/pdf/1312.6138.pdf",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "arXiv (Cornell University)",
+        "raw_type": null
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/1312.6138.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5021474475",
+            "display_name": "Vinay K. Chaudhri",
+            "orcid": "https://orcid.org/0000-0002-1363-645X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Chaudhri, Vinay K.",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057002563",
+            "display_name": "Stijn Heymans",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Heymans, Stijn",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057696511",
+            "display_name": "Michael Wessel",
+            "orcid": "https://orcid.org/0000-0002-2611-9689"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wessel, Michael",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5063459912",
+            "display_name": "Tran Cao Son",
+            "orcid": "https://orcid.org/0000-0003-3689-8433"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Son, Tran Cao",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 6,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11010",
+        "display_name": "Logic, Reasoning, and Knowledge",
+        "score": 0.9998000264167786,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11010",
+          "display_name": "Logic, Reasoning, and Knowledge",
+          "score": 0.9998000264167786,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9973000288009644,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10456",
+          "display_name": "Multi-Agent Systems and Negotiation",
+          "score": 0.9927999973297119,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/undecidable-problem",
+          "display_name": "Undecidable problem",
+          "score": 0.8362349271774292
+        },
+        {
+          "id": "https://openalex.org/keywords/suite",
+          "display_name": "Suite",
+          "score": 0.7107533812522888
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6975136995315552
+        },
+        {
+          "id": "https://openalex.org/keywords/scalability",
+          "display_name": "Scalability",
+          "score": 0.5721168518066406
+        },
+        {
+          "id": "https://openalex.org/keywords/programming-language",
+          "display_name": "Programming language",
+          "score": 0.552842915058136
+        },
+        {
+          "id": "https://openalex.org/keywords/object",
+          "display_name": "Object (grammar)",
+          "score": 0.48178502917289734
+        },
+        {
+          "id": "https://openalex.org/keywords/answer-set-programming",
+          "display_name": "Answer set programming",
+          "score": 0.4502493739128113
+        },
+        {
+          "id": "https://openalex.org/keywords/theoretical-computer-science",
+          "display_name": "Theoretical computer science",
+          "score": 0.3431317210197449
+        },
+        {
+          "id": "https://openalex.org/keywords/logic-programming",
+          "display_name": "Logic programming",
+          "score": 0.3429256081581116
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.2338421642780304
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.2051408290863037
+        },
+        {
+          "id": "https://openalex.org/keywords/geography",
+          "display_name": "Geography",
+          "score": 0.07655087113380432
+        },
+        {
+          "id": "https://openalex.org/keywords/decidability",
+          "display_name": "Decidability",
+          "score": 0.07380655407905579
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C192034797",
+          "wikidata": "https://www.wikidata.org/wiki/Q3502995",
+          "display_name": "Undecidable problem",
+          "level": 3,
+          "score": 0.8362349271774292
+        },
+        {
+          "id": "https://openalex.org/C79581498",
+          "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+          "display_name": "Suite",
+          "level": 2,
+          "score": 0.7107533812522888
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6975136995315552
+        },
+        {
+          "id": "https://openalex.org/C48044578",
+          "wikidata": "https://www.wikidata.org/wiki/Q727490",
+          "display_name": "Scalability",
+          "level": 2,
+          "score": 0.5721168518066406
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.552842915058136
+        },
+        {
+          "id": "https://openalex.org/C2781238097",
+          "wikidata": "https://www.wikidata.org/wiki/Q175026",
+          "display_name": "Object (grammar)",
+          "level": 2,
+          "score": 0.48178502917289734
+        },
+        {
+          "id": "https://openalex.org/C182620335",
+          "wikidata": "https://www.wikidata.org/wiki/Q2852531",
+          "display_name": "Answer set programming",
+          "level": 3,
+          "score": 0.4502493739128113
+        },
+        {
+          "id": "https://openalex.org/C80444323",
+          "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+          "display_name": "Theoretical computer science",
+          "level": 1,
+          "score": 0.3431317210197449
+        },
+        {
+          "id": "https://openalex.org/C128838566",
+          "wikidata": "https://www.wikidata.org/wiki/Q275603",
+          "display_name": "Logic programming",
+          "level": 2,
+          "score": 0.3429256081581116
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.2338421642780304
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.2051408290863037
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.07655087113380432
+        },
+        {
+          "id": "https://openalex.org/C153269930",
+          "wikidata": "https://www.wikidata.org/wiki/Q430001",
+          "display_name": "Decidability",
+          "level": 2,
+          "score": 0.07380655407905579
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "mag:106632145",
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/pdf/1312.6138.pdf",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "arXiv (Cornell University)",
+          "raw_type": null
+        },
+        {
+          "id": "doi:10.48550/arxiv.1312.6138",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.48550/arxiv.1312.6138",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Preprint"
+        }
+      ],
+      "best_oa_location": {
+        "id": "mag:106632145",
+        "is_oa": true,
+        "landing_page_url": "https://arxiv.org/pdf/1312.6138.pdf",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "arXiv (Cornell University)",
+        "raw_type": null
+      },
+      "sustainable_development_goals": [
+        {
+          "score": 0.5199999809265137,
+          "id": "https://metadata.un.org/sdg/9",
+          "display_name": "Industry, innovation and infrastructure"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 18,
+      "referenced_works": [
+        "https://openalex.org/W73864267",
+        "https://openalex.org/W115092553",
+        "https://openalex.org/W1511711492",
+        "https://openalex.org/W1513230022",
+        "https://openalex.org/W1619326861",
+        "https://openalex.org/W2011124182",
+        "https://openalex.org/W2033346143",
+        "https://openalex.org/W2051741066",
+        "https://openalex.org/W2073539738",
+        "https://openalex.org/W2130854946",
+        "https://openalex.org/W2156226590",
+        "https://openalex.org/W2293772303",
+        "https://openalex.org/W2396653483",
+        "https://openalex.org/W2399486411",
+        "https://openalex.org/W2403415529",
+        "https://openalex.org/W2735374180",
+        "https://openalex.org/W2911529331",
+        "https://openalex.org/W3098606030"
+      ],
+      "related_works": [
+        "https://openalex.org/W2735374180",
+        "https://openalex.org/W2399486411",
+        "https://openalex.org/W2396653483",
+        "https://openalex.org/W2332954378",
+        "https://openalex.org/W1619326861",
+        "https://openalex.org/W2945038147",
+        "https://openalex.org/W2043342557",
+        "https://openalex.org/W2160348326",
+        "https://openalex.org/W1864298756",
+        "https://openalex.org/W2404803650",
+        "https://openalex.org/W58151678",
+        "https://openalex.org/W80356457",
+        "https://openalex.org/W2798949790",
+        "https://openalex.org/W2486271243",
+        "https://openalex.org/W145766074",
+        "https://openalex.org/W2168698824",
+        "https://openalex.org/W110268192",
+        "https://openalex.org/W2000972206",
+        "https://openalex.org/W2948195291",
+        "https://openalex.org/W2108015644"
+      ],
+      "abstract_inverted_index": {
+        "Research": [
+          0
+        ],
+        "on": [
+          1
+        ],
+        "developing": [
+          2
+        ],
+        "efficient": [
+          3
+        ],
+        "and": [
+          4,
+          35,
+          53,
+          69
+        ],
+        "scalable": [
+          5
+        ],
+        "ASP": [
+          6,
+          52,
+          70,
+          95
+        ],
+        "solvers": [
+          7
+        ],
+        "can": [
+          8
+        ],
+        "substantially": [
+          9
+        ],
+        "benefit": [
+          10
+        ],
+        "by": [
+          11
+        ],
+        "the": [
+          12,
+          47,
+          54,
+          93
+        ],
+        "availability": [
+          13
+        ],
+        "of": [
+          14,
+          32,
+          46,
+          66,
+          75,
+          80
+        ],
+        "data": [
+          15
+        ],
+        "sets": [
+          16
+        ],
+        "to": [
+          17
+        ],
+        "experiment": [
+          18
+        ],
+        "with.": [
+          19
+        ],
+        "KB_Bio_101": [
+          20,
+          43
+        ],
+        "contains": [
+          21
+        ],
+        "knowledge": [
+          22
+        ],
+        "from": [
+          23
+        ],
+        "a": [
+          24,
+          64,
+          73
+        ],
+        "biology": [
+          25
+        ],
+        "textbook,": [
+          26
+        ],
+        "has": [
+          27,
+          36
+        ],
+        "been": [
+          28,
+          79
+        ],
+        "developed": [
+          29
+        ],
+        "as": [
+          30
+        ],
+        "part": [
+          31
+        ],
+        "Project": [
+          33
+        ],
+        "Halo,": [
+          34
+        ],
+        "recently": [
+          37
+        ],
+        "become": [
+          38
+        ],
+        "available": [
+          39,
+          50
+        ],
+        "for": [
+          40,
+          72,
+          92
+        ],
+        "research": [
+          41
+        ],
+        "use.": [
+          42
+        ],
+        "is": [
+          44,
+          58
+        ],
+        "one": [
+          45
+        ],
+        "largest": [
+          48
+        ],
+        "KBs": [
+          49
+        ],
+        "in": [
+          51,
+          60
+        ],
+        "reasoning": [
+          55
+        ],
+        "with": [
+          56
+        ],
+        "it": [
+          57
+        ],
+        "undecidable": [
+          59
+        ],
+        "general.": [
+          61
+        ],
+        "We": [
+          62,
+          83
+        ],
+        "give": [
+          63
+        ],
+        "description": [
+          65
+        ],
+        "this": [
+          67
+        ],
+        "KB": [
+          68
+        ],
+        "programs": [
+          71
+        ],
+        "suite": [
+          74
+        ],
+        "queries": [
+          76,
+          87
+        ],
+        "that": [
+          77
+        ],
+        "have": [
+          78
+        ],
+        "practical": [
+          81,
+          90
+        ],
+        "interest.": [
+          82
+        ],
+        "explain": [
+          84
+        ],
+        "why": [
+          85
+        ],
+        "these": [
+          86
+        ],
+        "pose": [
+          88
+        ],
+        "significant": [
+          89
+        ],
+        "challenges": [
+          91
+        ],
+        "current": [
+          94
+        ],
+        "solvers.": [
+          96
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2015,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 5
+        }
+      ],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4293864597",
+      "doi": "https://doi.org/10.48550/arxiv.1312.6138",
+      "title": "Query Answering in Object Oriented Knowledge Bases in Logic Programming: Description and Challenge for ASP",
+      "display_name": "Query Answering in Object Oriented Knowledge Bases in Logic Programming: Description and Challenge for ASP",
+      "relevance_score": 3.9468412,
+      "publication_year": 2013,
+      "publication_date": "2013-12-20",
+      "ids": {
+        "openalex": "https://openalex.org/W4293864597",
+        "doi": "https://doi.org/10.48550/arxiv.1312.6138"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:1312.6138",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/1312.6138",
+        "pdf_url": "https://arxiv.org/pdf/1312.6138",
+        "source": {
+          "id": "https://openalex.org/S4393918464",
+          "display_name": "ArXiv.org",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "arxiv"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/1312.6138",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5021474475",
+            "display_name": "Vinay K. Chaudhri",
+            "orcid": "https://orcid.org/0000-0002-1363-645X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Chaudhri, Vinay K.",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057002563",
+            "display_name": "Stijn Heymans",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Heymans, Stijn",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057696511",
+            "display_name": "Michael Wessel",
+            "orcid": "https://orcid.org/0000-0002-2611-9689"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wessel, Michael",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5063459912",
+            "display_name": "Tran Cao Son",
+            "orcid": "https://orcid.org/0000-0003-3689-8433"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Son, Tran Cao",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11010",
+        "display_name": "Logic, Reasoning, and Knowledge",
+        "score": 0.9987000226974487,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11010",
+          "display_name": "Logic, Reasoning, and Knowledge",
+          "score": 0.9987000226974487,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10126",
+          "display_name": "Logic, programming, and type systems",
+          "score": 0.9937000274658203,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9925000071525574,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/undecidable-problem",
+          "display_name": "Undecidable problem",
+          "score": 0.8171308636665344
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.714373767375946
+        },
+        {
+          "id": "https://openalex.org/keywords/suite",
+          "display_name": "Suite",
+          "score": 0.708564817905426
+        },
+        {
+          "id": "https://openalex.org/keywords/scalability",
+          "display_name": "Scalability",
+          "score": 0.5947448015213013
+        },
+        {
+          "id": "https://openalex.org/keywords/object",
+          "display_name": "Object (grammar)",
+          "score": 0.5131323933601379
+        },
+        {
+          "id": "https://openalex.org/keywords/programming-language",
+          "display_name": "Programming language",
+          "score": 0.5037593245506287
+        },
+        {
+          "id": "https://openalex.org/keywords/answer-set-programming",
+          "display_name": "Answer set programming",
+          "score": 0.46605831384658813
+        },
+        {
+          "id": "https://openalex.org/keywords/description-logic",
+          "display_name": "Description logic",
+          "score": 0.432498961687088
+        },
+        {
+          "id": "https://openalex.org/keywords/logic-programming",
+          "display_name": "Logic programming",
+          "score": 0.3867664039134979
+        },
+        {
+          "id": "https://openalex.org/keywords/theoretical-computer-science",
+          "display_name": "Theoretical computer science",
+          "score": 0.2564634084701538
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.23353376984596252
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.2258293628692627
+        },
+        {
+          "id": "https://openalex.org/keywords/decidability",
+          "display_name": "Decidability",
+          "score": 0.08641073107719421
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C192034797",
+          "wikidata": "https://www.wikidata.org/wiki/Q3502995",
+          "display_name": "Undecidable problem",
+          "level": 3,
+          "score": 0.8171308636665344
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.714373767375946
+        },
+        {
+          "id": "https://openalex.org/C79581498",
+          "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+          "display_name": "Suite",
+          "level": 2,
+          "score": 0.708564817905426
+        },
+        {
+          "id": "https://openalex.org/C48044578",
+          "wikidata": "https://www.wikidata.org/wiki/Q727490",
+          "display_name": "Scalability",
+          "level": 2,
+          "score": 0.5947448015213013
+        },
+        {
+          "id": "https://openalex.org/C2781238097",
+          "wikidata": "https://www.wikidata.org/wiki/Q175026",
+          "display_name": "Object (grammar)",
+          "level": 2,
+          "score": 0.5131323933601379
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.5037593245506287
+        },
+        {
+          "id": "https://openalex.org/C182620335",
+          "wikidata": "https://www.wikidata.org/wiki/Q2852531",
+          "display_name": "Answer set programming",
+          "level": 3,
+          "score": 0.46605831384658813
+        },
+        {
+          "id": "https://openalex.org/C102993220",
+          "wikidata": "https://www.wikidata.org/wiki/Q387196",
+          "display_name": "Description logic",
+          "level": 2,
+          "score": 0.432498961687088
+        },
+        {
+          "id": "https://openalex.org/C128838566",
+          "wikidata": "https://www.wikidata.org/wiki/Q275603",
+          "display_name": "Logic programming",
+          "level": 2,
+          "score": 0.3867664039134979
+        },
+        {
+          "id": "https://openalex.org/C80444323",
+          "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+          "display_name": "Theoretical computer science",
+          "level": 1,
+          "score": 0.2564634084701538
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.23353376984596252
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.2258293628692627
+        },
+        {
+          "id": "https://openalex.org/C153269930",
+          "wikidata": "https://www.wikidata.org/wiki/Q430001",
+          "display_name": "Decidability",
+          "level": 2,
+          "score": 0.08641073107719421
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "pmh:oai:arXiv.org:1312.6138",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/1312.6138",
+          "pdf_url": "https://arxiv.org/pdf/1312.6138",
+          "source": {
+            "id": "https://openalex.org/S4393918464",
+            "display_name": "ArXiv.org",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:arXiv.org:1312.6138",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/1312.6138",
+        "pdf_url": "https://arxiv.org/pdf/1312.6138",
+        "source": {
+          "id": "https://openalex.org/S4393918464",
+          "display_name": "ArXiv.org",
+          "issn_l": "2331-8422",
+          "issn": [
+            "2331-8422"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "text"
+      },
+      "sustainable_development_goals": [
+        {
+          "score": 0.550000011920929,
+          "id": "https://metadata.un.org/sdg/9",
+          "display_name": "Industry, innovation and infrastructure"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W1576921484",
+        "https://openalex.org/W53707990",
+        "https://openalex.org/W1511336005",
+        "https://openalex.org/W1903938722",
+        "https://openalex.org/W1875972884",
+        "https://openalex.org/W34858115",
+        "https://openalex.org/W2141565127",
+        "https://openalex.org/W2965350305",
+        "https://openalex.org/W2955773350",
+        "https://openalex.org/W1575307414"
+      ],
+      "abstract_inverted_index": {
+        "Research": [
+          0
+        ],
+        "on": [
+          1
+        ],
+        "developing": [
+          2
+        ],
+        "efficient": [
+          3
+        ],
+        "and": [
+          4,
+          35,
+          53,
+          69
+        ],
+        "scalable": [
+          5
+        ],
+        "ASP": [
+          6,
+          52,
+          70,
+          95
+        ],
+        "solvers": [
+          7
+        ],
+        "can": [
+          8
+        ],
+        "substantially": [
+          9
+        ],
+        "benefit": [
+          10
+        ],
+        "by": [
+          11
+        ],
+        "the": [
+          12,
+          47,
+          54,
+          93
+        ],
+        "availability": [
+          13
+        ],
+        "of": [
+          14,
+          32,
+          46,
+          66,
+          75,
+          80
+        ],
+        "data": [
+          15
+        ],
+        "sets": [
+          16
+        ],
+        "to": [
+          17
+        ],
+        "experiment": [
+          18
+        ],
+        "with.": [
+          19
+        ],
+        "KB_Bio_101": [
+          20,
+          43
+        ],
+        "contains": [
+          21
+        ],
+        "knowledge": [
+          22
+        ],
+        "from": [
+          23
+        ],
+        "a": [
+          24,
+          64,
+          73
+        ],
+        "biology": [
+          25
+        ],
+        "textbook,": [
+          26
+        ],
+        "has": [
+          27,
+          36
+        ],
+        "been": [
+          28,
+          79
+        ],
+        "developed": [
+          29
+        ],
+        "as": [
+          30
+        ],
+        "part": [
+          31
+        ],
+        "Project": [
+          33
+        ],
+        "Halo,": [
+          34
+        ],
+        "recently": [
+          37
+        ],
+        "become": [
+          38
+        ],
+        "available": [
+          39,
+          50
+        ],
+        "for": [
+          40,
+          72,
+          92
+        ],
+        "research": [
+          41
+        ],
+        "use.": [
+          42
+        ],
+        "is": [
+          44,
+          58
+        ],
+        "one": [
+          45
+        ],
+        "largest": [
+          48
+        ],
+        "KBs": [
+          49
+        ],
+        "in": [
+          51,
+          60
+        ],
+        "reasoning": [
+          55
+        ],
+        "with": [
+          56
+        ],
+        "it": [
+          57
+        ],
+        "undecidable": [
+          59
+        ],
+        "general.": [
+          61
+        ],
+        "We": [
+          62,
+          83
+        ],
+        "give": [
+          63
+        ],
+        "description": [
+          65
+        ],
+        "this": [
+          67
+        ],
+        "KB": [
+          68
+        ],
+        "programs": [
+          71
+        ],
+        "suite": [
+          74
+        ],
+        "queries": [
+          76,
+          87
+        ],
+        "that": [
+          77
+        ],
+        "have": [
+          78
+        ],
+        "practical": [
+          81,
+          90
+        ],
+        "interest.": [
+          82
+        ],
+        "explain": [
+          84
+        ],
+        "why": [
+          85
+        ],
+        "these": [
+          86
+        ],
+        "pose": [
+          88
+        ],
+        "significant": [
+          89
+        ],
+        "challenges": [
+          91
+        ],
+        "current": [
+          94
+        ],
+        "solvers.": [
+          96
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2022-09-01T00:00:00"
+    }
+  ],
+  "group_by": []
+}

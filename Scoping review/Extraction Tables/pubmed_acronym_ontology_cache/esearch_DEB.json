@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "23",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "24862384",
+      "39295298",
+      "39979334",
+      "38697337",
+      "38844844",
+      "25817920",
+      "34784691",
+      "42175393",
+      "38265362",
+      "29355972"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"DEB\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

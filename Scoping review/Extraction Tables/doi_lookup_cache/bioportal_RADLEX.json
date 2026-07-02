@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/ba3e9550-5f73-013a-03de-005056010088",
+      "name": "Radiological Society of North America",
+      "email": "radlex-feedback@lists.rsna.org"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/rboden"
+    ],
+    "acronym": "RADLEX",
+    "name": "Radiology Lexicon",
+    "@id": "https://data.bioontology.org/ontologies/RADLEX",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/RADLEX/submissions",
+      "properties": "https://data.bioontology.org/ontologies/RADLEX/properties",
+      "classes": "https://data.bioontology.org/ontologies/RADLEX/classes",
+      "single_class": "https://data.bioontology.org/ontologies/RADLEX/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/RADLEX/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/RADLEX/schemes",
+      "collections": "https://data.bioontology.org/ontologies/RADLEX/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/RADLEX/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/RADLEX/instances",
+      "metrics": "https://data.bioontology.org/ontologies/RADLEX/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/RADLEX/reviews",
+      "notes": "https://data.bioontology.org/ontologies/RADLEX/notes",
+      "groups": "https://data.bioontology.org/ontologies/RADLEX/groups",
+      "categories": "https://data.bioontology.org/ontologies/RADLEX/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/RADLEX/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/RADLEX/projects",
+      "download": "https://data.bioontology.org/ontologies/RADLEX/download",
+      "views": "https://data.bioontology.org/ontologies/RADLEX/views",
+      "analytics": "https://data.bioontology.org/ontologies/RADLEX/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/RADLEX",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2025-12-01T00:00:00.000+00:00",
+  "creationDate": "2025-12-01T00:00:00.000+00:00",
+  "homepage": "https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon",
+  "publication": [],
+  "documentation": "https://docs.google.com/document/d/10zRIBkXyj1eLt3LS_A7w3gSGRedXXoYvucH6H4trCZY/edit?hl=en#",
+  "version": "4.3",
+  "description": "RadLex OWL, as downloaded from BioPortal, includes a set of puns in order to facilitate browsing and display.  For the base RadLex ontology alone, without puns,  and release notes for the latest version, please see http://radlex.org/",
+  "status": "production",
+  "submissionId": 43,
+  "@id": "https://data.bioontology.org/ontologies/RADLEX/submissions/43",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/RADLEX/submissions/43/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,1202 @@
+{
+  "facets": {},
+  "total-results": 947217,
+  "items": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ],
+        "date-time": "2026-05-11T08:08:37Z",
+        "timestamp": 1778486917321,
+        "version": "3.51.4"
+      },
+      "reference-count": 89,
+      "publisher": "SAGE Publications",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                5,
+                8
+              ]
+            ],
+            "date-time": "2026-05-08T00:00:00Z",
+            "timestamp": 1778198400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100000272",
+          "name": "National Institute for Health and Care Research",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "NIHR203988"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "NIHR203988"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100000272",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Applied Ontology"
+      ],
+      "abstract": "<jats:p>Burden is a key concept in healthcare research, reflecting the challenges that illness and its management impose on patients, caregivers, and healthcare systems. While burden has been the focus of considerable scientific and clinical attention, the burden concept has attracted little in the way of theoretical attention. This has led to the absence of definitional consensus, which has, in turn, complicated the effort to provide ontological support for burden-related research. The present paper seeks to address these gaps by introducing the Biomedical Burden Ontology (BBO), a formal framework designed to represent and integrate burden-related data within biomedical informatics. The BBO is grounded in the Atlassian view of burden, which conceptualises burden as an individual’s obligatory participation in non-preferred processes. The ontology is implemented in the Web Ontology Language (OWL) and leverages Basic Formal Ontology (BFO), alongside existing ontologies such as the Mental Functioning Ontology (MFO) and the Emotion Ontology (MFOEM). Additionally, the BBO incorporates insights from predictive processing theories of brain function, framing burden as a disruption of an individual’s capacity to fulfil ‘optimistic’ predictions. By providing a structured approach to representing burden, the BBO facilitates research into patient experience, supports the development of minimally disruptive medicine, and enables more effective measurement of burden in clinical and policy contexts.</jats:p>",
+      "DOI": "10.1177/15705838261438032",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2026-05-08T11:27:36Z",
+        "timestamp": 1778239656000
+      },
+      "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Understanding the Burden of Illness: Steps Towards an Ontology of Patient Experience"
+      ],
+      "prefix": "10.1177",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9989-5307",
+          "authenticated-orcid": false,
+          "given": "Paul",
+          "family": "Smart",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "IT Innovation Centre, University of Southampton, Southampton, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1566-4689",
+          "authenticated-orcid": false,
+          "given": "Nic",
+          "family": "Fair",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IT Innovation Centre, University of Southampton, Southampton, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9281-6095",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Boniface",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IT Innovation Centre, University of Southampton, Southampton, United Kingdom"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "179",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            8
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "e_1_3_4_2_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neubiorev.2022.104590"
+        },
+        {
+          "key": "e_1_3_4_3_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7551/mitpress/9780262527811.001.0001"
+        },
+        {
+          "key": "e_1_3_4_4_1",
+          "unstructured": "Barton A. Rosier A. Burgun A. Ethier J.-F. (2014). The cardiovascular disease ontology. In P. Garbacz & O. Kutz (Eds.) Formal ontology in information systems. Frontiers in Artificial Intelligence and Applications (Vol. 267 pp. 409–414). IOS Press."
+        },
+        {
+          "key": "e_1_3_4_5_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Beverley J. Limbaugh D. Merrell E. Koch P. M. Smith B. (2024). Capabilities: An ontology. In I. Oliveira P. P. F. Barcelos R. Calhau C. M. Fonseca & G. Righetti (Eds.) The joint ontology workshops (Vol. 3882 pp. 1–14). CEUR Workshop Proceedings.",
+          "DOI": "10.2139/ssrn.5294422"
+        },
+        {
+          "key": "e_1_3_4_6_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.medj.2023.10.003"
+        },
+        {
+          "key": "e_1_3_4_7_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1056/NEJM198203183061104"
+        },
+        {
+          "key": "e_1_3_4_8_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/inm.12544"
+        },
+        {
+          "key": "e_1_3_4_9_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1017/S0140525X12000477"
+        },
+        {
+          "key": "e_1_3_4_10_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Clark A. (2015). Perceiving as predicting. In D. Stokes M. Matthen & S. Biggs (Eds.) Perception and its modalities (pp. 23–43). Oxford University Press.",
+          "DOI": "10.1093/acprof:oso/9780199832798.003.0002"
+        },
+        {
+          "key": "e_1_3_4_11_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/acprof:oso/9780190217013.001.0001"
+        },
+        {
+          "key": "e_1_3_4_12_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5840/jphil20191161241"
+        },
+        {
+          "key": "e_1_3_4_13_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/00048402.2019.1602661"
+        },
+        {
+          "key": "e_1_3_4_14_1",
+          "volume-title": "The experience machine: How our minds predict and shape reality",
+          "author": "Clark A.",
+          "year": "2023",
+          "unstructured": "Clark A. (2023). The experience machine: How our minds predict and shape reality. Pantheon Books."
+        },
+        {
+          "key": "e_1_3_4_15_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/jncimonographs/lgm005"
+        },
+        {
+          "key": "e_1_3_4_16_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12882-018-0882-9"
+        },
+        {
+          "key": "e_1_3_4_17_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/phpr.12841"
+        },
+        {
+          "key": "e_1_3_4_18_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/AO-2011-0087"
+        },
+        {
+          "key": "e_1_3_4_19_1",
+          "unstructured": "CUBRC. (2020). Modeling information with the common core ontologies (Technical Report). CUBRC Inc.."
+        },
+        {
+          "key": "e_1_3_4_20_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0125457"
+        },
+        {
+          "key": "e_1_3_4_21_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.2105/AJPH.32.6.589"
+        },
+        {
+          "key": "e_1_3_4_22_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1023/A:1022537117643"
+        },
+        {
+          "key": "e_1_3_4_23_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/26335565221081291"
+        },
+        {
+          "key": "e_1_3_4_24_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s11136-016-1397-0"
+        },
+        {
+          "key": "e_1_3_4_25_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s11097-019-09635-4"
+        },
+        {
+          "key": "e_1_3_4_26_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s11229-020-02755-4"
+        },
+        {
+          "key": "e_1_3_4_27_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12882-015-0189-z"
+        },
+        {
+          "key": "e_1_3_4_28_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nrn2787"
+        },
+        {
+          "key": "e_1_3_4_29_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/17588928.2015.1020053"
+        },
+        {
+          "key": "e_1_3_4_30_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s00422-010-0364-z"
+        },
+        {
+          "key": "e_1_3_4_31_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S2215-0366(14)70275-5"
+        },
+        {
+          "key": "e_1_3_4_32_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12875-017-0691-4"
+        },
+        {
+          "key": "e_1_3_4_33_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1188/07.ONF.673-680"
+        },
+        {
+          "key": "e_1_3_4_34_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/082585971202800204"
+        },
+        {
+          "key": "e_1_3_4_35_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/AO-230275"
+        },
+        {
+          "key": "e_1_3_4_36_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fpsyg.2022.865203"
+        },
+        {
+          "key": "e_1_3_4_37_1",
+          "unstructured": "Hastings J. Ceusters W. Jensen M. Mulligan K. Smith B. (2012). Representing mental functioning: Ontologies for mental health and disease. In Third international conference on biomedical ontology: Towards an ontology of mental functioning workshop (pp. 1–5). ."
+        },
+        {
+          "key": "e_1_3_4_38_1",
+          "unstructured": "Hastings J. Ceusters W. Smith B. Mulligan K. (2011a). Dispositions and processes in the emotion ontology. In O. Bodenreider M. E. Martone & A. Ruttenberg (Eds.) Second international conference on biomedical ontology (pp. 71–78). CEUR Workshop Proceedings."
+        },
+        {
+          "key": "e_1_3_4_39_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Hastings J. Ceusters W. Smith B. Mulligan K. (2011b). The emotion ontology: Enabling interdisciplinary research in the affective sciences. In M. Beigl H. Christiansen T. R. Roth-Berghofer A. Kofod-Petersen K. R. Coventry & H. R. Schmidtke (Eds.) Modeling and using context (Vol. 6967 pp. 119–123). Springer.",
+          "DOI": "10.1007/978-3-642-24279-3_14"
+        },
+        {
+          "key": "e_1_3_4_40_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1162/neco_a_01341"
+        },
+        {
+          "key": "e_1_3_4_41_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13326-016-0087-8"
+        },
+        {
+          "key": "e_1_3_4_42_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/acprof:oso/9780199682737.001.0001"
+        },
+        {
+          "issue": "3446",
+          "key": "e_1_3_4_43_1",
+          "first-page": "1",
+          "article-title": "The impact of living with multiple long-term conditions (multimorbidity) on everyday life—A qualitative evidence synthesis",
+          "volume": "24",
+          "author": "Holland E.",
+          "year": "2024",
+          "unstructured": "Holland E., Matthews K., Macdonald S., Ashworth M., Laidlaw L., Cheung K. S. Y., Stannard S., Francis N. A., Mair F. S., Gooding C. (2024). The impact of living with multiple long-term conditions (multimorbidity) on everyday life—A qualitative evidence synthesis. BMC Public Health, 24(3446), 1–31.",
+          "journal-title": "BMC Public Health"
+        },
+        {
+          "key": "e_1_3_4_44_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3399/BJGP.2022.0103"
+        },
+        {
+          "key": "e_1_3_4_45_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12859-019-3002-3"
+        },
+        {
+          "key": "e_1_3_4_46_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Jensen M. Colle G. D. Kindya S. More C. Cox A. P. Beverley J. (2024). The common core ontologies. Preprint at https://arxiv.org/abs/2404.17758",
+          "DOI": "10.3233/FAIA241292"
+        },
+        {
+          "key": "e_1_3_4_47_1",
+          "unstructured": "Jupp S. Burdett T. Leroy C. Parkinson H. E. (2015). A new ontology lookup service at EMBL-EBI. In J. Malone R. Stevens K. Forsberg & A. Splendiani (Eds.) Eighth international conference on semantic web applications and tools for life sciences (Vol. 1546 pp. 118–119). CEUR Workshop Proceedings."
+        },
+        {
+          "key": "e_1_3_4_48_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cpr.2020.101829"
+        },
+        {
+          "key": "e_1_3_4_49_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.17454/pam-1815"
+        },
+        {
+          "key": "e_1_3_4_50_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S2215-0366(22)00156-0"
+        },
+        {
+          "key": "e_1_3_4_51_1",
+          "volume-title": "Stress, appraisal, and coping",
+          "author": "Lazarus R. S.",
+          "year": "1984",
+          "unstructured": "Lazarus R. S., Folkman S. (1984). Stress, appraisal, and coping. Springer Publishing Company."
+        },
+        {
+          "key": "e_1_3_4_52_1",
+          "unstructured": "Limbaugh D. Kasmier D. Ceusters W. Smith B. (2019). Warranted diagnosis. In A. D. Diehl W. D. Duncan & G. Sanso (Eds.) Tenth international conference on biomedical ontology (Vol. 2931 pp. 1–10). CEUR Workshop Proceedings."
+        },
+        {
+          "issue": "1",
+          "key": "e_1_3_4_53_1",
+          "first-page": "3",
+          "article-title": "Ontology and cognitive outcomes",
+          "volume": "1",
+          "author": "Limbaugh D.",
+          "year": "2020",
+          "unstructured": "Limbaugh D., Landgrebe J., Kasmier D., Rudnicki R., Llinas J., Smith B. (2020). Ontology and cognitive outcomes. Journal of Knowledge Structures and Systems, 1(1), 3–22.",
+          "journal-title": "Journal of Knowledge Structures and Systems"
+        },
+        {
+          "key": "e_1_3_4_54_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1037/rev0000290"
+        },
+        {
+          "key": "e_1_3_4_55_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3399/BJGP.2022.0066"
+        },
+        {
+          "key": "e_1_3_4_56_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/1472-6963-14-281"
+        },
+        {
+          "key": "e_1_3_4_57_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "McClelland T. (2020). The disruption model of suffering. In D. Bain M. Brady & J. Corns (Eds.) Philosophy of suffering: Metaphysics value and normativity (pp. 37–54). Routledge.",
+          "DOI": "10.4324/9781351115469-3"
+        },
+        {
+          "key": "e_1_3_4_58_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.2307/292996"
+        },
+        {
+          "key": "e_1_3_4_59_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/17540739211063851"
+        },
+        {
+          "key": "e_1_3_4_60_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s13164-022-00644-y"
+        },
+        {
+          "key": "e_1_3_4_61_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/AO-220262"
+        },
+        {
+          "key": "e_1_3_4_62_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7551/mitpress/12441.001.0001"
+        },
+        {
+          "key": "e_1_3_4_63_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.pneurobio.2017.05.004"
+        },
+        {
+          "key": "e_1_3_4_64_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.tics.2018.01.009"
+        },
+        {
+          "key": "e_1_3_4_65_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.4018/ijswis.2014040102"
+        },
+        {
+          "key": "e_1_3_4_66_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ramstead M. J. D. Wiese W. Miller M. Friston K. J. (2023). Deep neurophenomenology: An active inference account of some features of conscious experience and of their disturbance in major depressive disorder. In T. Cheng R. Sato & J. Hohwy (Eds.) Expected experiences: The predictive mind in an uncertain world (pp. 9–46). Routledge.",
+          "DOI": "10.4324/9781003084082-3"
+        },
+        {
+          "key": "e_1_3_4_67_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.2147/PPA.S58014"
+        },
+        {
+          "key": "e_1_3_4_68_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0179916"
+        },
+        {
+          "key": "e_1_3_4_69_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/hex.12046"
+        },
+        {
+          "key": "e_1_3_4_70_1",
+          "first-page": "116",
+          "article-title": "Toward an ontological treatment of disease and diagnosis",
+          "volume": "2009",
+          "author": "Scheuermann R. H.",
+          "year": "2009",
+          "unstructured": "Scheuermann R. H., Ceusters W., Smith B. (2009). Toward an ontological treatment of disease and diagnosis. Summit on Translational Bioinformatics, 2009, 116–120.",
+          "journal-title": "Summit on Translational Bioinformatics"
+        },
+        {
+          "key": "e_1_3_4_71_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s00335-015-9576-9"
+        },
+        {
+          "key": "e_1_3_4_72_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/nar/gkab1063"
+        },
+        {
+          "key": "e_1_3_4_73_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7551/mitpress/5759.001.0001"
+        },
+        {
+          "key": "e_1_3_4_74_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12877-019-1222-z"
+        },
+        {
+          "key": "e_1_3_4_75_1",
+          "unstructured": "Smart P. R. Fair N. Boniface M. (2024). Modeling biomedical burdens in Basic Formal Ontology. In Fifteenth international conference on biological and biomedical ontology. https://doi.org/10.5258/SOTON/P1236"
+        },
+        {
+          "key": "e_1_3_4_76_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nbt1346"
+        },
+        {
+          "key": "e_1_3_4_77_1",
+          "unstructured": "Smith B. Ceusters W. (2015). Aboutness: Towards foundations for the Information Artifact Ontology. In F. M. Couto & J. Hastings (Eds.) Sixth international conference on biomedical ontology (Vol. 1515 pp. 1–5). CEUR Workshop Proceedings."
+        },
+        {
+          "key": "e_1_3_4_78_1",
+          "unstructured": "Smith B. Ceusters W. Goldberg L. J. Ohrbach R. (2011). Towards an ontology of pain. In O. Mitsuhiro (Ed.) Proceedings of the conference on ontology and analytical metaphysics (pp. 23–36). Keio University Press."
+        },
+        {
+          "key": "e_1_3_4_79_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/2041-1480-4-26"
+        },
+        {
+          "key": "e_1_3_4_80_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.bpsc.2019.11.012"
+        },
+        {
+          "key": "e_1_3_4_81_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s11229-022-03480-w"
+        },
+        {
+          "key": "e_1_3_4_82_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5502/ijw.v12i4.2659"
+        },
+        {
+          "key": "e_1_3_4_83_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1097/PSY.0000000000000661"
+        },
+        {
+          "key": "e_1_3_4_84_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/JPD-212612"
+        },
+        {
+          "key": "e_1_3_4_85_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12916-015-0356-x"
+        },
+        {
+          "key": "e_1_3_4_86_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.biopsycho.2022.108266"
+        },
+        {
+          "key": "e_1_3_4_87_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.tics.2020.05.012"
+        },
+        {
+          "key": "e_1_3_4_88_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neubiorev.2017.01.015"
+        },
+        {
+          "key": "e_1_3_4_89_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/1756-0500-3-175"
+        },
+        {
+          "key": "e_1_3_4_90_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12976-015-0017-y"
+        }
+      ],
+      "container-title": [
+        "Applied Ontology"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15705838261438032",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/15705838261438032",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15705838261438032",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            11
+          ]
+        ],
+        "date-time": "2026-05-11T07:16:27Z",
+        "timestamp": 1778483787000
+      },
+      "score": 34.160965,
+      "resource": {
+        "primary": {
+          "URL": "https://journals.sagepub.com/doi/10.1177/15705838261438032"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            8
+          ]
+        ]
+      },
+      "references-count": 89,
+      "alternative-id": [
+        "10.1177/15705838261438032"
+      ],
+      "URL": "https://doi.org/10.1177/15705838261438032",
+      "ISSN": [
+        "1570-5838",
+        "1875-8533"
+      ],
+      "issn-type": [
+        {
+          "value": "1570-5838",
+          "type": "print"
+        },
+        {
+          "value": "1875-8533",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            8
+          ]
+        ]
+      },
+      "article-number": "15705838261438032"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            8
+          ]
+        ],
+        "date-time": "2026-06-08T12:47:11Z",
+        "timestamp": 1780922831944,
+        "version": "3.54.1"
+      },
+      "reference-count": 0,
+      "publisher": "ACPI",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.34190/km.19.113",
+      "type": "proceedings-article",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2020-03-30T12:38:50Z",
+        "timestamp": 1585571930000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 6,
+      "title": [
+        "BBO: BPMN 2.0 Based Ontology for Business Process Representation"
+      ],
+      "prefix": "10.34190",
+      "member": "20105",
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            5
+          ]
+        ]
+      },
+      "event": {
+        "name": "20th European Conference on Knowledge Management",
+        "acronym": "ECKM 2019"
+      },
+      "container-title": [
+        "Proceedings of the 20th European Conference on Knowledge Management"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2020,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2020-03-30T12:38:52Z",
+        "timestamp": 1585571932000
+      },
+      "score": 33.81819,
+      "resource": {
+        "primary": {
+          "URL": "https://www.academic-conferences.org/wp-content/uploads/dlm_uploads/2019/09/ECKM-abstract-booklet-Download_embedded.pdf#page=66"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            5
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.34190/km.19.113",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            29
+          ]
+        ],
+        "date-time": "2026-04-29T03:08:01Z",
+        "timestamp": 1777432081803,
+        "version": "3.51.4"
+      },
+      "reference-count": 0,
+      "publisher": "SAGE Publications",
+      "issue": "1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "DOI": "10.3233/ao-2009-0066",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            29
+          ]
+        ],
+        "date-time": "2019-11-29T19:04:10Z",
+        "timestamp": 1575054250000
+      },
+      "page": "1-4",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Special Issue: Biomedical Ontology in Action"
+      ],
+      "prefix": "10.1177",
+      "volume": "4",
+      "author": [
+        {
+          "given": "Olivier",
+          "family": "Bodenreider",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "179",
+      "container-title": [
+        "Applied Ontology"
+      ],
+      "link": [
+        {
+          "URL": "https://content.iospress.com/download?id=10.3233/AO-2009-0066",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            28
+          ]
+        ],
+        "date-time": "2026-04-28T11:46:43Z",
+        "timestamp": 1777376803000
+      },
+      "score": 31.989098,
+      "resource": {
+        "primary": {
+          "URL": "https://journals.sagepub.com/doi/full/10.3233/AO-2009-0066"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2009
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.3233/ao-2009-0066",
+      "ISSN": [
+        "1570-5838"
+      ],
+      "issn-type": [
+        {
+          "value": "1570-5838",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            23
+          ]
+        ],
+        "date-time": "2025-11-23T20:58:35Z",
+        "timestamp": 1763931515619,
+        "version": "3.45.0"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            29
+          ]
+        ]
+      },
+      "reference-count": 0,
+      "publisher": "F1000 Research Ltd",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                3,
+                29
+              ]
+            ],
+            "date-time": "2017-03-29T00:00:00Z",
+            "timestamp": 1490745600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "abstract": "<ns3:p>The number of biological ontologies has grown as they have become an increasingly popular tool for supporting biocuration methodologies. To achieve semantic interoperability and better presentation of data, methods for reusing ontology terms must be applied in the development of new and existing ontologies to create a web of linked data. The Evidence &amp; Conclusion Ontology (ECO) is a structured, controlled vocabulary for representing evidence in biological research, including author statements found in the literature, biocurator inferences, and evidence generated by experimental techniques or computational analyses. ECO is broadly used by model organism databases, ‘omics resources, and ontology projects (e.g Gene Ontology) for summarizing evidence. A related but orthogonal ontology, the Ontology for Biomedical Investigations (OBI), provides terms for describing investigations in detail. While both ontologies address biological investigations, OBI classes are in general more specific than ECO classes and represent specific instruments, reagents, processes, and so on, whereas ECO classes describe evidence at a summary level. Mapping classes between two ontologies when their semantic meanings are equivalent is one proven way to reuse ontologies. Thus, ECO terms are being logically defined following specific design patterns that leverage OBI terms to describe, for example, technique used, variable type, intervention, evaluant, and experiment design. Logically defining ECO terms using OBI classes (and creating one-to-one or one-to-many mappings between the ontologies) is helping ECO to disambiguate unclear definitions, increase expressivity, and achieve better logical organization. Here we describe recent advances in harmonizing the ontologies and integrating logical definitions into ECO. This work is supported by the National Science Foundation under Award Number 1458400.</ns3:p>",
+      "DOI": "10.7490/f1000research.1113851.1",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            23
+          ]
+        ],
+        "date-time": "2025-11-23T20:57:06Z",
+        "timestamp": 1763931426000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Refactoring the evidence and conclusion ontology by harmonizing with the ontology for biomedical investigations"
+      ],
+      "prefix": "10.7490",
+      "author": [
+        {
+          "given": "Rebecca C.",
+          "family": "Tauber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcus C.",
+          "family": "Chibucos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "2560",
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            23
+          ]
+        ],
+        "date-time": "2025-11-23T20:57:10Z",
+        "timestamp": 1763931430000
+      },
+      "score": 31.398417,
+      "resource": {
+        "primary": {
+          "URL": "https://f1000research.com/posters/6-395"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            29
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.7490/f1000research.1113851.1",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            29
+          ]
+        ]
+      },
+      "subtype": "other"
+    },
+    {
+      "institution": [
+        {
+          "id": [
+            {
+              "id": "https://ror.org/051escj72",
+              "id-type": "ROR",
+              "asserted-by": "publisher"
+            }
+          ],
+          "name": "Montpellier"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2026-04-01T13:19:18Z",
+        "timestamp": 1775049558832,
+        "version": "3.50.1"
+      },
+      "reference-count": 0,
+      "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "abstract": "<jats:title>Vers l'enrichissement d'ontologies biomédicales françaises</jats:title>\n                <jats:p xml:lang=\"fr\">En biomedicine, le domaine du « Big Data » (l'infobésité) pose le problème de l'analyse de gros volumes de données hétérogènes (i.e. vidéo, audio, texte, image). Les ontologies biomédicales, modèle conceptuel de la réalité, peuvent jouer un rôle important afin d'automatiser le traitement des données, les requêtes et la mise en correspondance des données hétérogènes. Il existe plusieurs ressources en anglais mais elles sont moins riches pour le français. Le manque d'outils et de services connexes pour les exploiter accentue ces lacunes. Dans un premier temps, les ontologies ont été construites manuellement. Au cours de ces dernières années, quelques méthodes semi-automatiques ont été proposées. Ces techniques semi-automatiques de construction/enrichissement d'ontologies sont principalement induites à partir de textes en utilisant des techniques du traitement du langage naturel (TALN). Les méthodes de TALN permettent de prendre en compte la complexité lexicale et sémantique des données biomédicales : (1) lexicale pour faire référence aux syntagmes biomédicaux complexes à considérer et (2) sémantique pour traiter l'induction du concept et du contexte de la terminologie. Dans cette thèse, afin de relever les défis mentionnés précédemment, nous proposons des méthodologies pour l'enrichissement/la construction d'ontologies biomédicales fondées sur deux principales contributions.La première contribution est liée à l'extraction automatique de termes biomédicaux spécialisés (complexité lexicale) à partir de corpus. De nouvelles mesures d'extraction et de classement de termes composés d'un ou plusieurs mots ont été proposées et évaluées. L'application BioTex implémente les mesures définies.La seconde contribution concerne l'extraction de concepts et le lien sémantique de la terminologie extraite (complexité sémantique). Ce travail vise à induire des concepts pour les nouveaux termes candidats et de déterminer leurs liens sémantiques, c'est-à-dire les positions les plus pertinentes au sein d'une ontologie biomédicale existante. Nous avons ainsi proposé une approche d'extraction de concepts qui intègre de nouveaux termes dans l'ontologie MeSH. Les évaluations, quantitatives et qualitatives, menées par des experts et non experts, sur des données réelles soulignent l'intérêt de ces contributions.</jats:p>",
+      "DOI": "10.70675/966c0bfezee56z4f4dz95c8z7985da481e7f",
+      "type": "dissertation",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2026-04-01T11:53:36Z",
+        "timestamp": 1775044416000
+      },
+      "approved": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            9
+          ]
+        ]
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Towards the French Biomedical Ontology Enrichment"
+      ],
+      "prefix": "10.70675",
+      "author": [
+        {
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0996-2356",
+          "authenticated-orcid": false,
+          "given": "Juan Antonio",
+          "family": "Lossio-Ventura",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "id": [
+                {
+                  "id": "https://ror.org/051escj72",
+                  "id-type": "ROR",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "name": "Montpellier"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "51494",
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2026-04-01T11:54:37Z",
+        "timestamp": 1775044477000
+      },
+      "score": 30.362995,
+      "degree": [
+        "Doctorat ès Informatique",
+        "PhD"
+      ],
+      "resource": {
+        "primary": {
+          "URL": "https://theses.fr/2015MONTS220"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "2015MONTS220"
+      ],
+      "URL": "https://doi.org/10.70675/966c0bfezee56z4f4dz95c8z7985da481e7f"
+    }
+  ],
+  "items-per-page": 5,
+  "query": {
+    "start-index": 0,
+    "search-terms": null
+  }
+}

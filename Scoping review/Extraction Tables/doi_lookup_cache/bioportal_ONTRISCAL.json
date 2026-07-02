@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/692366b0-8710-013c-8f69-005056010088",
+      "name": "EVALDO DE OLIVEIRA DA SILVA",
+      "email": "evaldo.oliveira@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/evaldo.oliveira"
+    ],
+    "acronym": "ONTRISCAL",
+    "name": "Ontology of Risk Stratification in Mental Health",
+    "@id": "https://data.bioontology.org/ontologies/ONTRISCAL",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ONTRISCAL/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ONTRISCAL/properties",
+      "classes": "https://data.bioontology.org/ontologies/ONTRISCAL/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ONTRISCAL/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ONTRISCAL/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ONTRISCAL/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ONTRISCAL/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ONTRISCAL/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ONTRISCAL/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ONTRISCAL/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ONTRISCAL/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ONTRISCAL/notes",
+      "groups": "https://data.bioontology.org/ontologies/ONTRISCAL/groups",
+      "categories": "https://data.bioontology.org/ontologies/ONTRISCAL/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ONTRISCAL/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ONTRISCAL/projects",
+      "download": "https://data.bioontology.org/ontologies/ONTRISCAL/download",
+      "views": "https://data.bioontology.org/ontologies/ONTRISCAL/views",
+      "analytics": "https://data.bioontology.org/ontologies/ONTRISCAL/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ONTRISCAL",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-12-27T00:00:00.000+00:00",
+  "creationDate": "2023-12-27T10:05:15.000-08:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": "https://github.com/evaldo/homoginise/tree/master/Ontologia",
+  "version": "1.0",
+  "description": "This ontology organizes concepts and properties of risk stratification in mental health. Stratification aims to determine the patient's risk level by scoring signs and symptoms. Psychotherapeutic treatments aim to minimize patient risk by producing qualitative data reported in therapeutic sessions. Thus, the ONTRISCAL is applied in projects that organize the knowledge about quali-quanti data produced by risk stratification and mental health treatments. Quali-quanti data, semantically annotated by ONTRISCAL, can be ingested into knowledge graphs. Domain specialists can use knowledge graphs to navigate the ONTRISCAL concepts, analyze psychotherapeutic treatments, and control risks in mental health. This is a non-profit and open-source project.",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/ONTRISCAL/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ONTRISCAL/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

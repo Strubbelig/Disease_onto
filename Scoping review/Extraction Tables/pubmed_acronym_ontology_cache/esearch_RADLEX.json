@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "43",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30706210",
+      "18999035",
+      "35166969",
+      "27804009",
+      "25590394",
+      "29560542",
+      "41532616",
+      "20354755",
+      "35331160",
+      "34714247"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"RADLEX\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

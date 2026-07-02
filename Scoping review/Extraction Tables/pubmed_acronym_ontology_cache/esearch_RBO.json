@@ -1,0 +1,25 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "37806331"
+    ],
+    "translationset": [
+      {
+        "from": "RBO",
+        "to": "\"Rev Bras Ortop\"[Journal:__jid101660959] OR \"Rev Bras Odontol\"[Journal:__jid0404254] OR \"rbo\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"rev bras ortop\"[Journal] OR \"rev bras odontol\"[Journal] OR \"rbo\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

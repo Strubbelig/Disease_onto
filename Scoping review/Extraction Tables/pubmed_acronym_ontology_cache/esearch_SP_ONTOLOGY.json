@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "644",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "39691501",
+      "37584546",
+      "41052288",
+      "22778902",
+      "35701784",
+      "39634285",
+      "28698996",
+      "40515808",
+      "40601671"
+    ],
+    "translationset": [
+      {
+        "from": "SP",
+        "to": "\"Syst Pharmacol\"[Journal:__jid101718356] OR \"Sociol Perspect\"[Journal:__jid8307698] OR \"Sci Parasitol\"[Journal:__jid101538190] OR \"Proc IEEE Symp Secur Priv\"[Journal:__jid101616179] OR \"sp\"[All Fields]"
+      },
+      {
+        "from": "ONTOLOGY",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"syst pharmacol\"[Journal] OR \"sociol perspect\"[Journal] OR \"proc ieee symp secur priv\"[Journal] OR \"sp\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

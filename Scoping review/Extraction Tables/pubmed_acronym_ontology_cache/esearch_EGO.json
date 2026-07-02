@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "17",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32362324",
+      "33897910",
+      "27152029",
+      "16209326",
+      "41032142",
+      "35730006",
+      "14656499",
+      "7275484",
+      "33131362",
+      "38634067"
+    ],
+    "translationset": [
+      {
+        "from": "EGO",
+        "to": "\"ego\"[MeSH Terms] OR \"ego\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"ego\"[MeSH Terms] OR \"ego\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

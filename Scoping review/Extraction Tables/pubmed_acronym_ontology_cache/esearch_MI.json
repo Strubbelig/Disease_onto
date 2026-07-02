@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4367",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33290552",
+      "26918107",
+      "38857186",
+      "40832256",
+      "25428369",
+      "33238868",
+      "31888755",
+      "32247963",
+      "42062309",
+      "40311258"
+    ],
+    "translationset": [
+      {
+        "from": "MI",
+        "to": "\"microbiology\"[Subheading] OR \"microbiology\"[All Fields] OR \"mi\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"microbiology\"[MeSH Subheading] OR \"microbiology\"[All Fields] OR \"mi\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

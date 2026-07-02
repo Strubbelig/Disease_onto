@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/5100ffb0-0341-0131-abbd-001ec9b0ea92",
+      "name": "Jingshan Huang",
+      "email": "huang@usouthal.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/huang-omit"
+    ],
+    "acronym": "NEUMORE",
+    "name": "Neural Motor Recovery Ontology",
+    "@id": "https://data.bioontology.org/ontologies/NEUMORE",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/NEUMORE/submissions",
+      "properties": "https://data.bioontology.org/ontologies/NEUMORE/properties",
+      "classes": "https://data.bioontology.org/ontologies/NEUMORE/classes",
+      "single_class": "https://data.bioontology.org/ontologies/NEUMORE/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/NEUMORE/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/NEUMORE/schemes",
+      "collections": "https://data.bioontology.org/ontologies/NEUMORE/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/NEUMORE/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/NEUMORE/instances",
+      "metrics": "https://data.bioontology.org/ontologies/NEUMORE/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/NEUMORE/reviews",
+      "notes": "https://data.bioontology.org/ontologies/NEUMORE/notes",
+      "groups": "https://data.bioontology.org/ontologies/NEUMORE/groups",
+      "categories": "https://data.bioontology.org/ontologies/NEUMORE/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/NEUMORE/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/NEUMORE/projects",
+      "download": "https://data.bioontology.org/ontologies/NEUMORE/download",
+      "views": "https://data.bioontology.org/ontologies/NEUMORE/views",
+      "analytics": "https://data.bioontology.org/ontologies/NEUMORE/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/NEUMORE",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2010-07-28T00:00:00.000-07:00",
+  "creationDate": "2010-08-11T12:20:22.000-07:00",
+  "homepage": "http://cis.usouthal.edu/~huang/",
+  "publication": [],
+  "documentation": null,
+  "version": "0.1",
+  "description": "Neural Functional Motor Recovery Ontology",
+  "status": null,
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/NEUMORE/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/NEUMORE/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

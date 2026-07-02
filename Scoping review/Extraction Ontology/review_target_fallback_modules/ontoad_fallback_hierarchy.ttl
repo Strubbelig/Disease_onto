@@ -1,0 +1,53 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ontoad_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for ONTOAD; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2013-08-10T00:00:00.000+00:00, creationDate=2013-12-02T10:00:14.000-08:00, submissionId=2" ;
+    dcterms:created "2026-07-02T14:58:37-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://purl.obolibrary.org/obo/IAO_0000115> "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown. (source : MSH)" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://purl.org/dc/terms/source> "generated review target module for ONTOAD from disease_terms_review_enriched.csv" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoAD#DiseaseOrSyndrome> .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "Clinical disease AND/OR syndrome" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "Clinical disease AND/OR syndrome present" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "DIS" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease AND/OR syndrome present" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease or Disorder" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "Illness" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "conditions" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "diagnoses, syndromes, and conditions" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://doe-generated-ontology.com/OntoAD#C0012634> <http://www.w3.org/2004/02/skos/core#altLabel> "pathology" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://purl.obolibrary.org/obo/IAO_0000115> "A symptom complex of unknown etiology, that is characteristic of a particular abnormality. (source : MSH)" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://purl.obolibrary.org/obo/IAO_0000115> "Ensemble de symptômes (signes) fréquemment associés" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://purl.obolibrary.org/obo/IAO_0000115> "un syndrome grippal, par exemple, associe une fièvre élevée, des courbatures et un mal de tête. Un même syndrome peut être présent dans des maladies de causes différentes. (source : CISMeF)" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://purl.org/dc/terms/source> "generated review target module for ONTOAD from disease_terms_review_enriched.csv" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoAD#C0012634> .
+<http://doe-generated-ontology.com/OntoAD#C0039082> <http://www.w3.org/2004/02/skos/core#altLabel> "syndromes" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://purl.obolibrary.org/obo/IAO_0000115> "Dommages infligés au corps résultatant, directement ou indirectement, d'une force extérieure, avec ou sans rupture de la continuité structurelle. (source : CISMeF)" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://purl.obolibrary.org/obo/IAO_0000115> "damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity. (source : CSP)" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://purl.org/dc/terms/source> "generated review target module for ONTOAD from disease_terms_review_enriched.csv" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoAD#C3263722> .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2004/02/skos/core#altLabel> "INJ" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2004/02/skos/core#altLabel> "Traumatic Injury" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2004/02/skos/core#altLabel> "injury from an external force" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2004/02/skos/core#altLabel> "lesion" .
+<http://doe-generated-ontology.com/OntoAD#C0175677> <http://www.w3.org/2004/02/skos/core#altLabel> "lesions" .
+<http://doe-generated-ontology.com/OntoAD#C3263722> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoAD#C3263722> <http://www.w3.org/2000/01/rdf-schema#label> "Traumatic AND/OR non-traumatic injury" .
+<http://doe-generated-ontology.com/OntoAD#DiseaseOrSyndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoAD#DiseaseOrSyndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Disease or Syndrome" .

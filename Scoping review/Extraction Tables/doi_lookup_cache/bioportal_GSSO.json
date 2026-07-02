@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/209a4100-5456-013e-bf35-005056010128",
+      "name": "Clair Kronk",
+      "email": "Clair.Kronk@mountsinai.org"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/superraptor2"
+    ],
+    "acronym": "GSSO",
+    "name": "Gender, Sex, and Sexual Orientation Ontology",
+    "@id": "https://data.bioontology.org/ontologies/GSSO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/GSSO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/GSSO/properties",
+      "classes": "https://data.bioontology.org/ontologies/GSSO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/GSSO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/GSSO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/GSSO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/GSSO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/GSSO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/GSSO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/GSSO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/GSSO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/GSSO/notes",
+      "groups": "https://data.bioontology.org/ontologies/GSSO/groups",
+      "categories": "https://data.bioontology.org/ontologies/GSSO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/GSSO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/GSSO/projects",
+      "download": "https://data.bioontology.org/ontologies/GSSO/download",
+      "views": "https://data.bioontology.org/ontologies/GSSO/views",
+      "analytics": "https://data.bioontology.org/ontologies/GSSO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/GSSO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2022-09-08T18:08:47.000-07:00",
+  "creationDate": "2022-09-08T18:08:55.000-07:00",
+  "homepage": "https://gsso.research.cchmc.org/",
+  "publication": [
+    "https://doi.org/10.1093/jamia/ocaa061"
+  ],
+  "documentation": "https://github.com/Superraptor/GSSO",
+  "version": "2.0.6",
+  "description": "The Gender, Sex, and Sexual Orientation (GSSO) ontology is an interdisciplinary ontology connecting terms from biology, medicine, psychology, sociology, and gender studies, aiming to bridge gaps between linguistic variations inside and outside of the health care environment. A large focus of the ontology is its consideration of LGBTQIA+ terminology.",
+  "status": "beta",
+  "submissionId": 75,
+  "@id": "https://data.bioontology.org/ontologies/GSSO/submissions/75",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/GSSO/submissions/75/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

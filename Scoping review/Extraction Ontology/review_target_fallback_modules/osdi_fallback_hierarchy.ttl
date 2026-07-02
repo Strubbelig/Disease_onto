@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/osdi_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for OSDI; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2026-01-16T00:00:00.000+00:00, creationDate=2026-01-16T00:00:00.000+00:00, submissionId=2" ;
+    dcterms:created "2026-07-02T14:59:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Any type of disease or health condition that a person may suffer. Since diseases may have or not costs, utilities... all of these properties has been explicitly defined with cardinality 'min 0' as an hint for the ontology users" .
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://purl.org/dc/terms/source> "generated review target module for OSDI from disease_terms_review_enriched.csv" .
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of disease or health condition that a person may suffer. Since diseases may have or not costs, utilities... all of these properties has been explicitly defined with cardinality 'min 0' as an hint for the ontology users" .
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<https://w3id.org/ontologies-ULL/OSDi#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontologies-ULL/OSDi#HealthCondition> .
+<https://w3id.org/ontologies-ULL/OSDi#HealthCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontologies-ULL/OSDi#HealthCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Health condition" .

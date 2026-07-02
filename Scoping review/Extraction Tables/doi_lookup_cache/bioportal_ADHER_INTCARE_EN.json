@@ -1,0 +1,111 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/4479c910-4b3c-0137-f607-005056010073",
+      "name": "Esther Román Villarán",
+      "email": "ester.roman.exts@juntadeandalucia.es"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/9d1dbc30-57ce-0137-1fcc-005056010073",
+      "name": "Carlos Luis Parra Calderón",
+      "email": "carlos.parra.sspa@juntadeandalucia.es"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/clparrac"
+    ],
+    "acronym": "ADHER_INTCARE_EN",
+    "name": "Adherence and Integrated Care",
+    "@id": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/properties",
+      "classes": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/notes",
+      "groups": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/groups",
+      "categories": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/projects",
+      "download": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/download",
+      "views": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/views",
+      "analytics": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ADHER_INTCARE_EN",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2019-05-13T00:00:00.000+00:00",
+  "creationDate": "2019-05-13T10:01:03.000-07:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "English 051319",
+  "description": "This ontology includes concepts in English related to adherence to therapeutic plans in the context of integrated care. Includes maps with Snomed CT, bibliographic references and definitions from the Dictionary of the Royal Academy of Medicine of Spain. Ontology developed with the support of the project StandICT.eu. The equivalent ontology in Spanish is ADHER_INTCARE_SP.",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

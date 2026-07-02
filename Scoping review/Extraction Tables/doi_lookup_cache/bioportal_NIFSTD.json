@@ -1,0 +1,110 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/13e88e30-2c8c-0135-a8c4-005056010088",
+      "name": "Tom Gillespie",
+      "email": "tgbugs@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/smtifahim",
+      "https://data.bioontology.org/users/tgbugs",
+      "https://data.bioontology.org/users/graybeal"
+    ],
+    "acronym": "NIFSTD",
+    "name": "Neuroscience Information Framework (NIF) Standard Ontology",
+    "@id": "https://data.bioontology.org/ontologies/NIFSTD",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/NIFSTD/submissions",
+      "properties": "https://data.bioontology.org/ontologies/NIFSTD/properties",
+      "classes": "https://data.bioontology.org/ontologies/NIFSTD/classes",
+      "single_class": "https://data.bioontology.org/ontologies/NIFSTD/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/NIFSTD/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/NIFSTD/schemes",
+      "collections": "https://data.bioontology.org/ontologies/NIFSTD/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/NIFSTD/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/NIFSTD/instances",
+      "metrics": "https://data.bioontology.org/ontologies/NIFSTD/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/NIFSTD/reviews",
+      "notes": "https://data.bioontology.org/ontologies/NIFSTD/notes",
+      "groups": "https://data.bioontology.org/ontologies/NIFSTD/groups",
+      "categories": "https://data.bioontology.org/ontologies/NIFSTD/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/NIFSTD/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/NIFSTD/projects",
+      "download": "https://data.bioontology.org/ontologies/NIFSTD/download",
+      "views": "https://data.bioontology.org/ontologies/NIFSTD/views",
+      "analytics": "https://data.bioontology.org/ontologies/NIFSTD/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/NIFSTD",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2018-02-10T18:06:57.000-08:00",
+  "creationDate": "2018-02-10T18:06:57.000-08:00",
+  "homepage": "http://ontology.neuinfo.org",
+  "publication": [
+    "http://neuinfo.org/about/publications.shtm"
+  ],
+  "documentation": "https://github.com/SciCrunch/NIF-Ontology#documentation",
+  "version": "3.1 - January 15, 2018",
+  "description": "NIF Standard ontology (NIFSTD) is a core component of Neuroscience Information Framework (NIF) project (http://neuinfo.org), a semantically enhanced portal for accessing and integrating neuroscience data, tools and information. NIFSTD includes a set of modular ontologies that provide a comprehensive collection of terminologies to describe neuroscience data and resources.",
+  "status": "production",
+  "submissionId": 27,
+  "@id": "https://data.bioontology.org/ontologies/NIFSTD/submissions/27",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/NIFSTD/submissions/27/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "88",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38170849",
+      "34144789",
+      "37027064",
+      "39238154",
+      "40769258",
+      "39722820",
+      "33186790",
+      "40976125",
+      "36699000",
+      "17911824"
+    ],
+    "translationset": [
+      {
+        "from": "COCHRANE",
+        "to": "\"cochran\"[All Fields] OR \"cochran's\"[All Fields] OR \"cochrane\"[All Fields] OR \"cochrane's\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"cochran\"[All Fields] OR \"cochran s\"[All Fields] OR \"cochrane\"[All Fields] OR \"cochrane s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

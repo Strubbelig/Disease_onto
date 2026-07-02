@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "14",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39914801",
+      "37741119",
+      "32293250",
+      "35447306",
+      "33084116",
+      "27404894",
+      "32218174",
+      "26599806",
+      "29884125",
+      "30458711"
+    ],
+    "translationset": [
+      {
+        "from": "DOVES",
+        "to": "\"columbidae\"[MeSH Terms] OR \"columbidae\"[All Fields] OR \"doves\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"columbidae\"[MeSH Terms] OR \"columbidae\"[All Fields] OR \"doves\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

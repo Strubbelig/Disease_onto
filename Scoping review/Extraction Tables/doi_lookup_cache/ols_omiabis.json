@@ -1,0 +1,58 @@
+{
+  "languages": [
+    "en"
+  ],
+  "lang": "en",
+  "ontologyId": "omiabis",
+  "loaded": "2026-06-26T09:02:10.406561736",
+  "updated": "2026-06-26T09:02:10.406561736",
+  "status": "LOADED",
+  "message": "",
+  "version": " 2014-05-28",
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 427,
+  "numberOfProperties": 109,
+  "numberOfIndividuals": 15,
+  "config": {
+    "id": "omiabis",
+    "versionIri": null,
+    "namespace": "omiabis",
+    "preferredPrefix": null,
+    "title": "Ontologized MIABIS",
+    "description": "An ontological version of MIABIS (Minimum Information About BIobank data Sharing)",
+    "homepage": "https://github.com/OMIABIS/omiabis-dev",
+    "version": " 2014-05-28",
+    "mailingList": null,
+    "tracker": "https://github.com/OMIABIS/omiabis-dev/issues",
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "http://purl.obolibrary.org/obo/omiabis.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [],
+    "synonymProperties": [],
+    "hierarchicalProperties": [],
+    "baseUris": [],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/omiabis?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/omiabis/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/omiabis/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/omiabis/individuals"
+    }
+  }
+}

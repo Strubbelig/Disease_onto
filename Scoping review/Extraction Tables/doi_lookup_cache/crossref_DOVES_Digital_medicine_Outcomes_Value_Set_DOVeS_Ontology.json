@@ -1,0 +1,861 @@
+{
+  "facets": {},
+  "total-results": 6891009,
+  "items": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            21
+          ]
+        ],
+        "date-time": "2025-02-21T00:48:05Z",
+        "timestamp": 1740098885389,
+        "version": "3.37.3"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      },
+      "group-title": "JMIR Medical Informatics",
+      "reference-count": 0,
+      "publisher": "JMIR Publications Inc.",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "abstract": "<sec>\n                    <title>BACKGROUND</title>\n                        <p>Over the last 10-15 years, U.S. healthcare and the practice of medicine itself have been transformed by a proliferation of digital medicine and digital therapeutic (collectively, digital health tool; DHT) products. While a number of DHT classifications have been proposed to help organize these tools for discovery, retrieval, and comparison by healthcare organizations seeking to potentially implement them, none have specifically addressed that organizations considering their implementation tend to approach the DHT discovery process with one or more specific outcomes in mind. An outcomes-based DHT ontology could therefore be valuable not only for health systems seeking to evaluate tools that influence certain outcomes, but for regulators and vendors seeking to ascertain potential substantial equivalence to predicate devices.</p>\n                </sec>\n                                <sec>\n                    <title>OBJECTIVE</title>\n                        <p>Our objective was to develop, with the input of industry, healthcare, payer, regulatory, and patient input through the Accelerated Digital Clinical Ecosystem (ADviCE) consortium, an ontology specific to DHT outcomes, the Digital medicine Outcomes Value Set (DOVeS), and to make this ontology publicly available and free to use.</p>\n                </sec>\n                                <sec>\n                    <title>METHODS</title>\n                        <p>From a starting point of a 4 generation deep hierarchical taxonomy developed by ADviCE, we developed DOVeS using the Web Ontology Language (OWL) through the open-source ontology editor Protégé, and data from 185 vendors who had submitted structured product information to ADviCE. We adhered to OBO Foundry principles and incorporated the MONDO Disease Ontology and the Ontology of Adverse Events (OAE). After development, DOVeS was field tested between December, 2022 and May, 2023 with 40 additional independent vendors previously unfamiliar with ADviCE or DOVeS; a process that continued until the top 4 generations of classes in the ontology received no further modification suggestions. As a proof of concept, we subsequently developed a prototype DHT Application Finder leveraging DOVeS to enable a user to query for DHT products based on specific outcomes of interest.</p>\n                </sec>\n                                <sec>\n                    <title>RESULTS</title>\n                        <p>In its current state, DOVeS contains 42,320 and 9,481 native axioms and distinct classes respectively. These numbers are enhanced when taking into account the axioms and classes contributed by MONDO and the OAE.</p>\n                </sec>\n                                <sec>\n                    <title>CONCLUSIONS</title>\n                        <p>DOVeS is publicly available on BioPortal and Github, and has a Creative Commons license CC-BY-SA that is intended to encourage stakeholders to modify, adapt, build upon, and distribute it. While no ontology is complete, DOVeS will benefit from a strong and engaged user base to help it grow and evolve in a way that best serves DHT stakeholders and the patients they serve.</p>\n                </sec>",
+      "DOI": "10.2196/preprints.67589",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            21
+          ]
+        ],
+        "date-time": "2024-10-21T21:07:01Z",
+        "timestamp": 1729544821000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "An Ontology for Digital Medicine Outcomes: Development of the Digital medicine Outcomes Value Set (DOVeS) (Preprint)"
+      ],
+      "prefix": "10.2196",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3609-6481",
+          "authenticated-orcid": false,
+          "given": "Benjamin",
+          "family": "Rosner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8921-6593",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Horridge",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Guillen",
+          "family": "Austria",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tiffany",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8440-0527",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Auerbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "1010",
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            21
+          ]
+        ],
+        "date-time": "2024-10-21T21:07:01Z",
+        "timestamp": 1729544821000
+      },
+      "score": 73.92516,
+      "resource": {
+        "primary": {
+          "URL": "http://preprints.jmir.org/preprint/67589"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.2196/preprints.67589",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            16
+          ]
+        ]
+      },
+      "subtype": "preprint"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            7
+          ]
+        ],
+        "date-time": "2025-02-07T05:29:36Z",
+        "timestamp": 1738906176995,
+        "version": "3.37.0"
+      },
+      "reference-count": 35,
+      "publisher": "JMIR Publications Inc.",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "JMIR Med Inform"
+      ],
+      "abstract": "<jats:sec>\n            <jats:title>Background</jats:title>\n            <jats:p>Over the last 10-15 years, US health care and the practice of medicine itself have been transformed by a proliferation of digital medicine and digital therapeutic products (collectively, digital health tools [DHTs]). While a number of DHT classifications have been proposed to help organize these tools for discovery, retrieval, and comparison by health care organizations seeking to potentially implement them, none have specifically addressed that organizations considering their implementation approach the DHT discovery process with one or more specific outcomes in mind. An outcomes-based DHT ontology could therefore be valuable not only for health systems seeking to evaluate tools that influence certain outcomes, but also for regulators and vendors seeking to ascertain potential substantial equivalence to predicate devices.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Objective</jats:title>\n            <jats:p>This study aimed to develop, with inputs from industry, health care providers, payers, regulatory bodies, and patients through the Accelerated Digital Clinical Ecosystem (ADviCE) consortium, an ontology specific to DHT outcomes, the Digital medicine Outcomes Value Set (DOVeS), and to make this ontology publicly available and free to use.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Methods</jats:title>\n            <jats:p>From a starting point of a 4-generation–deep hierarchical taxonomy developed by ADviCE, we developed DOVeS using the Web Ontology Language through the open-source ontology editor Protégé, and data from 185 vendors who had submitted structured product information to ADviCE. We used a custom, decentralized, collaborative ontology engineering methodology, and were guided by Open Biological and Biomedical Ontologies (OBO) Foundry principles. We incorporated the Mondo Disease Ontology (MONDO) and the Ontology of Adverse Events. After development, DOVeS was field-tested between December 2022 and May 2023 with 40 additional independent vendors previously unfamiliar with ADviCE or DOVeS. As a proof of concept, we subsequently developed a prototype DHT Application Finder leveraging DOVeS to enable a user to query for DHT products based on specific outcomes of interest.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>In its current state, DOVeS contains 42,320 and 9481 native axioms and distinct classes, respectively. These numbers are enhanced when taking into account the axioms and classes contributed by MONDO and the Ontology of Adverse Events.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusions</jats:title>\n            <jats:p>DOVeS is publicly available on BioPortal and GitHub, and has a Creative Commons license CC-BY-SA that is intended to encourage stakeholders to modify, adapt, build upon, and distribute it. While no ontology is complete, DOVeS will benefit from a strong and engaged user base to help it grow and evolve in a way that best serves DHT stakeholders and the patients they serve.</jats:p>\n          </jats:sec>",
+      "DOI": "10.2196/67589",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            12
+          ]
+        ],
+        "date-time": "2025-01-12T09:03:47Z",
+        "timestamp": 1736672627000
+      },
+      "page": "e67589",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "An Ontology for Digital Medicine Outcomes: Development of the Digital Medicine Outcomes Value Set (DOVeS)"
+      ],
+      "prefix": "10.2196",
+      "volume": "13",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3609-6481",
+          "authenticated-orcid": false,
+          "given": "Benjamin",
+          "family": "Rosner",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8921-6593",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Horridge",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-5443-1765",
+          "authenticated-orcid": false,
+          "given": "Guillen",
+          "family": "Austria",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-6618-164X",
+          "authenticated-orcid": false,
+          "given": "Tiffany",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8440-0527",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "Auerbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "1010",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            6
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "unstructured": "OlsenEDigital health apps balloon to more than 350,000 available on the market, according to IQVIA reportmobihealthnews20212024-04-08https://www.mobihealthnews.com/news/digital-health-apps-balloon-more-350000-available-market-according-iqvia-report"
+        },
+        {
+          "key": "ref2",
+          "unstructured": "WylieLHealth app revenue and usage statistics (2024)Business of Apps2024-04-08https://web.archive.org/web/20240412105511/https://www.businessofapps.com/data/health-app-market/"
+        },
+        {
+          "key": "ref3",
+          "unstructured": "Software as a medical device (SaMD)International Medical Device Regulators Forum20142019-11-30https://www.imdrf.org/working-groups/software-medical-device-samd"
+        },
+        {
+          "key": "ref4",
+          "unstructured": "Digital Health, Digital Medicine, Digital Therapeutics (DTx): What’s the difference?Digital Medicine Society20192025-02-05https://dimesociety.org/digital-health-digital-medicine-digital-therapeutics-dtx-whats-the-difference/"
+        },
+        {
+          "key": "ref5",
+          "unstructured": "ISO/TR 11147:2023-Health informatics — Personalized digital health — Digital therapeutics health software systems20232024-04-09https://www.iso.org/standard/83767.html"
+        },
+        {
+          "key": "ref6",
+          "unstructured": "The 510(k) program: evaluating substantial equivalence in premarket notifications [510(k)] guidance for industry and food and drug administration staffUS Food and Drug Administration20142024-12-04https://www.fda.gov/media/82395/download?attachment"
+        },
+        {
+          "key": "ref7",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/B978-0-323-95354-2.00006-2"
+        },
+        {
+          "key": "ref8",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/j.1524-4733.2009.00557.x"
+        },
+        {
+          "key": "ref9",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s41669-021-00311-5"
+        },
+        {
+          "key": "ref10",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1055/s-0041-1730284"
+        },
+        {
+          "key": "ref11",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.2196/16980"
+        },
+        {
+          "key": "ref12",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s13740-017-0081-z"
+        },
+        {
+          "key": "ref13",
+          "unstructured": "Curated health apps for health systemsADVICE (Accelerated Digital Clinical Ecosystem)2024-04-09https://www.advicehealth.org"
+        },
+        {
+          "key": "ref14",
+          "unstructured": "Developing frameworks and tools for integration of digital health tools into clinical practiceU.S. Food and Drug Administration2024-10-01https://www.fda.gov/science-research/advancing-regulatory-science/developing-frameworks-and-tools-integration-digital-health-tools-clinical-practice"
+        },
+        {
+          "key": "ref15",
+          "unstructured": "Developing software precertification program: a working model (v0.2-June 2018)U.S. Food and Drug Administration20182019-04-06https://www.fda.gov/media/113802/download?attachment"
+        },
+        {
+          "key": "ref16",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.compind.2023.103979"
+        },
+        {
+          "key": "ref17",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1017/s0269888920000065"
+        },
+        {
+          "key": "ref18",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s10115-005-0227-4"
+        },
+        {
+          "key": "ref19",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1145/2757001.2757003"
+        },
+        {
+          "key": "ref20",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/nar/gkr469"
+        },
+        {
+          "key": "ref21",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7326/M17-3108"
+        },
+        {
+          "journal-title": "Institut für Theoretische Informatik TU Dresden. Pushing the EL Envelope",
+          "year": "2005",
+          "author": "Baader, F",
+          "key": "ref22"
+        },
+        {
+          "key": "ref23",
+          "unstructured": "Principles: overviewOBO Foundry2024-09-13https://obofoundry.org/principles/fp-000-summary.html"
+        },
+        {
+          "key": "ref24",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/genetics/iyad031"
+        },
+        {
+          "key": "ref25",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/75556"
+        },
+        {
+          "key": "ref26",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1101/2022.04.13.22273750"
+        },
+        {
+          "key": "ref27",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/ao-2011-0087"
+        },
+        {
+          "key": "ref28",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12859-019-3002-3"
+        },
+        {
+          "key": "ref29",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/2041-1480-5-29"
+        },
+        {
+          "key": "ref30",
+          "unstructured": "RosnerBDigital medicine outcomes value set (DOVeS) ontologyNCBO BioPortal2024-09-27https://bioportal.bioontology.org/ontologies/DOVES"
+        },
+        {
+          "key": "ref31",
+          "unstructured": "Digital health technology galleryDigital.Health2024-04-09https://digital.health/new-products"
+        },
+        {
+          "journal-title": "Classification of Digital Interventions, Services, and Applications in Health. A Shared Language to Describe the Uses of Digital Technology for Health",
+          "year": "2023",
+          "key": "ref32"
+        },
+        {
+          "key": "ref33",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jclinepi.2017.12.020"
+        },
+        {
+          "key": "ref34",
+          "unstructured": "Library of digital endpointsDigital Medicine Society (DiMe)2024-09-04https://dimesociety.org/get-involved/library-of-digital-endpoints/"
+        },
+        {
+          "key": "ref35",
+          "unstructured": "HorridgeMdovesprojectGithub2024-09-27https://github.com/dovesproject"
+        }
+      ],
+      "container-title": [
+        "JMIR Medical Informatics"
+      ],
+      "language": "en",
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            6
+          ]
+        ],
+        "date-time": "2025-02-06T22:01:45Z",
+        "timestamp": 1738879305000
+      },
+      "score": 69.39277,
+      "resource": {
+        "primary": {
+          "URL": "https://medinform.jmir.org/2025/1/e67589"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            6
+          ]
+        ]
+      },
+      "references-count": 35,
+      "URL": "https://doi.org/10.2196/67589",
+      "ISSN": [
+        "2291-9694"
+      ],
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2291-9694"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            12
+          ]
+        ],
+        "date-time": "2024-07-12T00:40:10Z",
+        "timestamp": 1720744810982
+      },
+      "reference-count": 0,
+      "publisher": "Princeton University Press",
+      "isbn-type": [
+        {
+          "value": "9781400880706",
+          "type": "electronic"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            31
+          ]
+        ]
+      },
+      "DOI": "10.1515/9781400880706-049",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            4
+          ]
+        ],
+        "date-time": "2016-06-04T16:05:36Z",
+        "timestamp": 1465056336000
+      },
+      "page": "128-129",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "QUAIL-DOVES AND GROUND-DOVES"
+      ],
+      "prefix": "10.1515",
+      "member": "374",
+      "container-title": [
+        "Birds of Western Ecuador"
+      ],
+      "link": [
+        {
+          "URL": "https://princetonup.degruyter.com/view/book/9781400880706/10.1515/9781400880706-049.xml",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.degruyter.com/document/doi/10.1515/9781400880706-049/xml",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.degruyter.com/document/doi/10.1515/9781400880706-049/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            12
+          ]
+        ],
+        "date-time": "2024-07-12T00:27:38Z",
+        "timestamp": 1720744058000
+      },
+      "score": 38.141033,
+      "resource": {
+        "primary": {
+          "URL": "https://www.degruyter.com/document/doi/10.1515/9781400880706-049/html"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            31
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781400880706"
+      ],
+      "references-count": 0,
+      "alternative-id": [
+        "10.1515/9781400880706-049",
+        "10.1515/9781400880706"
+      ],
+      "URL": "https://doi.org/10.1515/9781400880706-049",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            11
+          ]
+        ],
+        "date-time": "2025-10-11T02:58:46Z",
+        "timestamp": 1760151526176,
+        "version": "build-2065373602"
+      },
+      "reference-count": 0,
+      "publisher": "SPIE",
+      "isbn-type": [
+        {
+          "value": "9781486304042",
+          "type": "print"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1071/978148630404205.1.6.2015.5",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            10
+          ]
+        ],
+        "date-time": "2025-10-10T22:43:36Z",
+        "timestamp": 1760136216000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Australian Pigeons and Doves in Aviculture"
+      ],
+      "prefix": "10.1071",
+      "author": [
+        {
+          "given": "Joseph",
+          "family": "Forshaw",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "67",
+      "container-title": [
+        "Pigeons and Doves in Australia"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            10
+          ]
+        ],
+        "date-time": "2025-10-10T22:43:36Z",
+        "timestamp": 1760136216000
+      },
+      "score": 37.4322,
+      "resource": {
+        "primary": {
+          "URL": "https://bioone.org/eBooks/inti/Pigeons-and-Doves-in-Australia/Chapter5/Australian-Pigeons-and-Doves-in-Aviculture/10.1071/978148630404205.1.6.2015.5"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781486304042"
+      ],
+      "references-count": 0,
+      "URL": "https://doi.org/10.1071/978148630404205.1.6.2015.5",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2026-02-03T15:50:51Z",
+        "timestamp": 1770133851418,
+        "version": "3.49.0"
+      },
+      "reference-count": 0,
+      "publisher": "CSIRO Publishing",
+      "isbn-type": [
+        {
+          "value": "9780643096332",
+          "type": "print"
+        },
+        {
+          "value": "9781486304042",
+          "type": "electronic"
+        },
+        {
+          "value": "9781486304059",
+          "type": "electronic"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1071/9781486304042.australian",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2025-10-22T07:06:43Z",
+        "timestamp": 1761116803000
+      },
+      "page": "1-6",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Australian pigeons and doves in aviculture"
+      ],
+      "prefix": "10.1071",
+      "member": "67",
+      "container-title": [
+        "Pigeons and Doves in Australia"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://connectsci.au/books/monograph/chapter-pdf/14159/9781486304042_australian.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2026-02-03T05:25:57Z",
+        "timestamp": 1770096357000
+      },
+      "score": 36.961594,
+      "resource": {
+        "primary": {
+          "URL": "https://connectsci.au/books/book/422/chapter/44526/Australian-pigeons-and-doves-in-aviculture"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      },
+      "ISBN": [
+        "9780643096332",
+        "9781486304042",
+        "9781486304059"
+      ],
+      "references-count": 0,
+      "URL": "https://doi.org/10.1071/9781486304042.australian",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "items-per-page": 5,
+  "query": {
+    "start-index": 0,
+    "search-terms": null
+  }
+}

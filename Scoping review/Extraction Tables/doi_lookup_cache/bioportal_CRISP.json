@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/b1f52ce0-0341-0131-abbd-001ec9b0ea92",
+      "name": "Anita Ghebeles",
+      "email": "af8d@nih.gov"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/admin"
+    ],
+    "acronym": "CRISP",
+    "name": "Computer Retrieval of Information on Scientific Projects Thesaurus",
+    "@id": "https://data.bioontology.org/ontologies/CRISP",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CRISP/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CRISP/properties",
+      "classes": "https://data.bioontology.org/ontologies/CRISP/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CRISP/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CRISP/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CRISP/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CRISP/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CRISP/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CRISP/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CRISP/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CRISP/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CRISP/notes",
+      "groups": "https://data.bioontology.org/ontologies/CRISP/groups",
+      "categories": "https://data.bioontology.org/ontologies/CRISP/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CRISP/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CRISP/projects",
+      "download": "https://data.bioontology.org/ontologies/CRISP/download",
+      "views": "https://data.bioontology.org/ontologies/CRISP/views",
+      "analytics": "https://data.bioontology.org/ontologies/CRISP/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CRISP",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "UMLS",
+  "released": "2013-05-08T00:00:00.000+00:00",
+  "creationDate": "2013-09-25T12:00:00.000+00:00",
+  "homepage": "https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/CSP/index.html",
+  "publication": [
+    "http://www.ncbi.nlm.nih.gov/pubmed/8718842"
+  ],
+  "documentation": null,
+  "version": "CSP2006",
+  "description": "The Computer Retrieval of Information on Scientific Projects (CRISP) Thesaurus was developed by the National Institutes of Health for use in the CRISP database of research projects funded by the U.S. Public Health Service (PHS).\r\n\r\nCRISP contains over 8,000 preferred terms that are grouped hierarchically into 11 domains. The 11 domains are:\r\n\r\n- anatomy\r\n- behavioral/social science\r\n- biology\r\n- chemical\r\n- disease/disorder\r\n- food science/technology\r\n- medicine\r\n- named group\r\n- organism\r\n- physical science\r\ntechnology/technique",
+  "status": "retired",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/CRISP/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CRISP/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

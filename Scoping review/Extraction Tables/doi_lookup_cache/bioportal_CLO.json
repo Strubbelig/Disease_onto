@@ -1,0 +1,114 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/3e5d9940-0342-0131-abbd-001ec9b0ea92",
+      "name": "Oliver He",
+      "email": "yongqunh@med.umich.edu"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/50f8fca0-032b-0131-abbd-001ec9b0ea92",
+      "name": "Sirarat Sarntivijai",
+      "email": "siiraa@umich.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/siiraa",
+      "https://data.bioontology.org/users/yongqunh%40med.umich.edu"
+    ],
+    "acronym": "CLO",
+    "name": "Cell Line Ontology",
+    "@id": "https://data.bioontology.org/ontologies/CLO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CLO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CLO/properties",
+      "classes": "https://data.bioontology.org/ontologies/CLO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CLO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CLO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CLO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CLO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CLO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CLO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CLO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CLO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CLO/notes",
+      "groups": "https://data.bioontology.org/ontologies/CLO/groups",
+      "categories": "https://data.bioontology.org/ontologies/CLO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CLO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CLO/projects",
+      "download": "https://data.bioontology.org/ontologies/CLO/download",
+      "views": "https://data.bioontology.org/ontologies/CLO/views",
+      "analytics": "https://data.bioontology.org/ontologies/CLO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CLO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-06-20T18:01:32.000-07:00",
+  "creationDate": "2026-06-20T00:00:00.000+00:00",
+  "homepage": "http://www.clo-ontology.org/",
+  "publication": [
+    "http://www.jbiomedsem.com/content/5/1/37"
+  ],
+  "documentation": "https://code.google.com/p/clo-ontology/",
+  "version": "2026-06-19",
+  "description": "The Cell Line Ontology (CLO) is a community-based ontology in domain of biological cell lines with a focus on permanent cell lines from culture collections. Upper ontology structures that frame the skeleton of CLO include Basic Formal Ontology and Relation Ontology. Cell lines contained in CLO are associated with terms from other ontologies such as Cell Type Ontology, NCBI Taxonomy, and Ontology for Biomedical Investigation. A common design pattern for the cell line is used to model cell lines and their attributes, the Jurkat cell line provides ane xample.  Currently CLO contains over 36,000 cell line entries obtained from ATCC, HyperCLDB, Coriell, and bymanual curation. The cell lines are derived from 194 cell types, 656 anatomical entries, and 217 organisms. The OWL-based CLO is machine-readable and can be used in various applications., The Cell Line Ontology (CLO) is a community-based ontology of cell lines. The CLO is developed to unify publicly available cell line entry data from multiple sources to a standardized logically defined format based on consensus design patterns.",
+  "status": "production",
+  "submissionId": 67,
+  "@id": "https://data.bioontology.org/ontologies/CLO/submissions/67",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CLO/submissions/67/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,5080 @@
+{
+  "meta": {
+    "count": 4,
+    "db_response_time_ms": 184,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Drug Database for Inborn Errors of Metabolism DDIEM Ontology ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Drug Database for Inborn Errors of Metabolism (DDIEM) Ontology ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Drug Database for Inborn Errors of Metabolism %28DDIEM%29 Ontology ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2999910879",
+      "doi": "https://doi.org/10.1186/s13023-020-01428-2",
+      "title": "DDIEM: drug database for inborn errors of metabolism",
+      "display_name": "DDIEM: drug database for inborn errors of metabolism",
+      "relevance_score": 508.37018,
+      "publication_year": 2020,
+      "publication_date": "2020-06-11",
+      "ids": {
+        "openalex": "https://openalex.org/W2999910879",
+        "doi": "https://doi.org/10.1186/s13023-020-01428-2",
+        "mag": "2999910879",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/32527280"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s13023-020-01428-2",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13023-020-01428-2",
+        "pdf_url": "https://ojrd.biomedcentral.com/counter/pdf/10.1186/s13023-020-01428-2",
+        "source": {
+          "id": "https://openalex.org/S71291065",
+          "display_name": "Orphanet Journal of Rare Diseases",
+          "issn_l": "1750-1172",
+          "issn": [
+            "1750-1172"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Orphanet Journal of Rare Diseases",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "datacite",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ojrd.biomedcentral.com/counter/pdf/10.1186/s13023-020-01428-2",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5063729142",
+            "display_name": "Marwa Abdelhakim",
+            "orcid": "https://orcid.org/0000-0001-6816-2119"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marwa Abdelhakim",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030621835",
+            "display_name": "Eunice McMurray",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eunice McMurray",
+          "raw_affiliation_strings": [
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, Cambridge, CB2 3EG, United Kingdom"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, Cambridge, CB2 3EG, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Ali Raza Syed",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ali Raza Syed",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5069397549",
+            "display_name": "Şenay Kafkas",
+            "orcid": "https://orcid.org/0000-0001-7509-5786"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Senay Kafkas",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5026103082",
+            "display_name": "Allan Kamau",
+            "orcid": "https://orcid.org/0000-0002-6659-3713"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Allan Anthony Kamau",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5059588755",
+            "display_name": "Paul N. Schofield",
+            "orcid": "https://orcid.org/0000-0002-5111-7263"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Paul N Schofield",
+          "raw_affiliation_strings": [
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, Cambridge, CB2 3EG, United Kingdom"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, Cambridge, CB2 3EG, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5043808311",
+            "display_name": "Robert Hoehndorf",
+            "orcid": "https://orcid.org/0000-0001-8149-5890"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Robert Hoehndorf",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia. robert.hoehndorf@kaust.edu.sa",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia. robert.hoehndorf@kaust.edu.sa",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8149-5890",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, 23955, Kingdom of Saudi Arabia. robert.hoehndorf@kaust.edu.sa",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia. robert.hoehndorf@kaust.edu.sa",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, Thuwal, PO 23955, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5043808311"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I71920554"
+      ],
+      "apc_list": {
+        "value": 1870,
+        "currency": "GBP",
+        "value_usd": 2293
+      },
+      "apc_paid": {
+        "value": 1870,
+        "currency": "GBP",
+        "value_usd": 2293
+      },
+      "fwci": 1.6017,
+      "has_fulltext": true,
+      "cited_by_count": 17,
+      "citation_normalized_percentile": {
+        "value": 0.80977312,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 98
+      },
+      "biblio": {
+        "volume": "15",
+        "issue": "1",
+        "first_page": "146",
+        "last_page": "146"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11027",
+        "display_name": "Metabolism and Genetic Disorders",
+        "score": 0.6998000144958496,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1308",
+          "display_name": "Clinical Biochemistry"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11027",
+          "display_name": "Metabolism and Genetic Disorders",
+          "score": 0.6998000144958496,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1308",
+            "display_name": "Clinical Biochemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.2736999988555908,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10932",
+          "display_name": "Microbial Metabolic Engineering and Bioproduction",
+          "score": 0.003800000064074993,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/human-genetics",
+          "display_name": "Human genetics",
+          "score": 0.654576301574707
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.47146350145339966
+        },
+        {
+          "id": "https://openalex.org/keywords/drug",
+          "display_name": "Drug",
+          "score": 0.43758973479270935
+        },
+        {
+          "id": "https://openalex.org/keywords/inborn-error-of-metabolism",
+          "display_name": "Inborn error of metabolism",
+          "score": 0.4124298691749573
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.37470221519470215
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.3535653054714203
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.3288438320159912
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacology",
+          "display_name": "Pharmacology",
+          "score": 0.30056411027908325
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.26210302114486694
+        },
+        {
+          "id": "https://openalex.org/keywords/genetics",
+          "display_name": "Genetics",
+          "score": 0.2454099953174591
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.16097897291183472
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C47042493",
+          "wikidata": "https://www.wikidata.org/wiki/Q265799",
+          "display_name": "Human genetics",
+          "level": 3,
+          "score": 0.654576301574707
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.47146350145339966
+        },
+        {
+          "id": "https://openalex.org/C2780035454",
+          "wikidata": "https://www.wikidata.org/wiki/Q8386",
+          "display_name": "Drug",
+          "level": 2,
+          "score": 0.43758973479270935
+        },
+        {
+          "id": "https://openalex.org/C2779646400",
+          "wikidata": "https://www.wikidata.org/wiki/Q1758393",
+          "display_name": "Inborn error of metabolism",
+          "level": 2,
+          "score": 0.4124298691749573
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.37470221519470215
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.3535653054714203
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.3288438320159912
+        },
+        {
+          "id": "https://openalex.org/C98274493",
+          "wikidata": "https://www.wikidata.org/wiki/Q128406",
+          "display_name": "Pharmacology",
+          "level": 1,
+          "score": 0.30056411027908325
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.26210302114486694
+        },
+        {
+          "id": "https://openalex.org/C54355233",
+          "wikidata": "https://www.wikidata.org/wiki/Q7162",
+          "display_name": "Genetics",
+          "level": 1,
+          "score": 0.2454099953174591
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.16097897291183472
+        },
+        {
+          "id": "https://openalex.org/C104317684",
+          "wikidata": "https://www.wikidata.org/wiki/Q7187",
+          "display_name": "Gene",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008661",
+          "descriptor_name": "Metabolism, Inborn Errors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008661",
+          "descriptor_name": "Metabolism, Inborn Errors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008661",
+          "descriptor_name": "Metabolism, Inborn Errors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D010641",
+          "descriptor_name": "Phenotype",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010641",
+          "descriptor_name": "Phenotype",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010641",
+          "descriptor_name": "Phenotype",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035583",
+          "descriptor_name": "Rare Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035583",
+          "descriptor_name": "Rare Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035583",
+          "descriptor_name": "Rare Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062313",
+          "descriptor_name": "Databases, Pharmaceutical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D062313",
+          "descriptor_name": "Databases, Pharmaceutical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D062313",
+          "descriptor_name": "Databases, Pharmaceutical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 11,
+      "locations": [
+        {
+          "id": "doi:10.1186/s13023-020-01428-2",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s13023-020-01428-2",
+          "pdf_url": "https://ojrd.biomedcentral.com/counter/pdf/10.1186/s13023-020-01428-2",
+          "source": {
+            "id": "https://openalex.org/S71291065",
+            "display_name": "Orphanet Journal of Rare Diseases",
+            "issn_l": "1750-1172",
+            "issn": [
+              "1750-1172"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Orphanet Journal of Rare Diseases",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:32527280",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32527280",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Orphanet journal of rare diseases",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:8c894fb0be8444c2b38c85e275b9df18",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/8c894fb0be8444c2b38c85e275b9df18",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Orphanet Journal of Rare Diseases, Vol 15, Iss 1, Pp 1-12 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7291537",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7291537",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Orphanet J Rare Dis",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:repository.kaust.edu.sa:10754/661031",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10754/661031",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401596",
+            "display_name": "King Abdullah University of Science and Technology Repository (King Abdullah University of Science and Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I71920554",
+            "host_organization_name": "King Abdullah University of Science and Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I71920554"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:www.repository.cam.ac.uk:1810/306730",
+          "is_oa": true,
+          "landing_page_url": "https://www.repository.cam.ac.uk/handle/1810/306730",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401777",
+            "display_name": "Apollo (University of Cambridge)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I241749",
+            "host_organization_name": "University of Cambridge",
+            "host_organization_lineage": [
+              "https://openalex.org/I241749"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:www.repository.cam.ac.uk:1810/309499",
+          "is_oa": true,
+          "landing_page_url": "https://www.repository.cam.ac.uk/handle/1810/309499",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401777",
+            "display_name": "Apollo (University of Cambridge)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I241749",
+            "host_organization_name": "University of Cambridge",
+            "host_organization_lineage": [
+              "https://openalex.org/I241749"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:www.repository.cam.ac.uk:1810/323743",
+          "is_oa": true,
+          "landing_page_url": "https://www.repository.cam.ac.uk/handle/1810/323743",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401777",
+            "display_name": "Apollo (University of Cambridge)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I241749",
+            "host_organization_name": "University of Cambridge",
+            "host_organization_lineage": [
+              "https://openalex.org/I241749"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Article"
+        },
+        {
+          "id": "doi:10.17863/cam.53818",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17863/cam.53818",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407050737",
+            "display_name": "Apollo",
+            "issn_l": null,
+            "issn": [],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        },
+        {
+          "id": "doi:10.17863/cam.56592",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17863/cam.56592",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407050737",
+            "display_name": "Apollo",
+            "issn_l": null,
+            "issn": [],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "JournalArticle"
+        },
+        {
+          "id": "doi:10.17863/cam.71201",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17863/cam.71201",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407050737",
+            "display_name": "Apollo",
+            "issn_l": null,
+            "issn": [],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s13023-020-01428-2",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13023-020-01428-2",
+        "pdf_url": "https://ojrd.biomedcentral.com/counter/pdf/10.1186/s13023-020-01428-2",
+        "source": {
+          "id": "https://openalex.org/S71291065",
+          "display_name": "Orphanet Journal of Rare Diseases",
+          "issn_l": "1750-1172",
+          "issn": [
+            "1750-1172"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Orphanet Journal of Rare Diseases",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Good health and well-being",
+          "score": 0.5099999904632568,
+          "id": "https://metadata.un.org/sdg/3"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G198788104",
+          "display_name": null,
+          "funder_award_id": "URF/1/3454-01-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        },
+        {
+          "id": "https://openalex.org/G2344873991",
+          "display_name": null,
+          "funder_award_id": "URF/1/3790-01-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        },
+        {
+          "id": "https://openalex.org/G3699314141",
+          "display_name": null,
+          "funder_award_id": "FCC/1/1976-29-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        },
+        {
+          "id": "https://openalex.org/G4764494268",
+          "display_name": null,
+          "funder_award_id": "FCC/1/1976-28-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320322320",
+          "display_name": "King Abdullah University of Science and Technology",
+          "ror": "https://ror.org/01q3tbs38"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2999910879.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2999910879.grobid-xml"
+      },
+      "referenced_works_count": 70,
+      "referenced_works": [
+        "https://openalex.org/W128229878",
+        "https://openalex.org/W132296830",
+        "https://openalex.org/W414783057",
+        "https://openalex.org/W1495463208",
+        "https://openalex.org/W1518299086",
+        "https://openalex.org/W1757277845",
+        "https://openalex.org/W1983965561",
+        "https://openalex.org/W1990413556",
+        "https://openalex.org/W1995205105",
+        "https://openalex.org/W2007108746",
+        "https://openalex.org/W2015191210",
+        "https://openalex.org/W2015886351",
+        "https://openalex.org/W2024559544",
+        "https://openalex.org/W2026032866",
+        "https://openalex.org/W2033377040",
+        "https://openalex.org/W2051983899",
+        "https://openalex.org/W2052143019",
+        "https://openalex.org/W2055674397",
+        "https://openalex.org/W2072174275",
+        "https://openalex.org/W2107580398",
+        "https://openalex.org/W2110234583",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2122015665",
+        "https://openalex.org/W2126057638",
+        "https://openalex.org/W2131660156",
+        "https://openalex.org/W2132784310",
+        "https://openalex.org/W2135140530",
+        "https://openalex.org/W2139315672",
+        "https://openalex.org/W2142275018",
+        "https://openalex.org/W2144981148",
+        "https://openalex.org/W2147533449",
+        "https://openalex.org/W2150789570",
+        "https://openalex.org/W2152850487",
+        "https://openalex.org/W2158191506",
+        "https://openalex.org/W2177317049",
+        "https://openalex.org/W2240348948",
+        "https://openalex.org/W2302501749",
+        "https://openalex.org/W2331384579",
+        "https://openalex.org/W2405275595",
+        "https://openalex.org/W2546530173",
+        "https://openalex.org/W2557385283",
+        "https://openalex.org/W2558229157",
+        "https://openalex.org/W2559588208",
+        "https://openalex.org/W2567583209",
+        "https://openalex.org/W2620047683",
+        "https://openalex.org/W2737370169",
+        "https://openalex.org/W2738402542",
+        "https://openalex.org/W2744672018",
+        "https://openalex.org/W2747300218",
+        "https://openalex.org/W2767891136",
+        "https://openalex.org/W2773787581",
+        "https://openalex.org/W2782917400",
+        "https://openalex.org/W2792301545",
+        "https://openalex.org/W2807049387",
+        "https://openalex.org/W2810939851",
+        "https://openalex.org/W2887586341",
+        "https://openalex.org/W2888796281",
+        "https://openalex.org/W2898020169",
+        "https://openalex.org/W2900353268",
+        "https://openalex.org/W2901527454",
+        "https://openalex.org/W2913165892",
+        "https://openalex.org/W2922908926",
+        "https://openalex.org/W2934450419",
+        "https://openalex.org/W2980430454",
+        "https://openalex.org/W2999910879",
+        "https://openalex.org/W3099272318",
+        "https://openalex.org/W3136918052",
+        "https://openalex.org/W4237381349",
+        "https://openalex.org/W6752706007",
+        "https://openalex.org/W6931106457"
+      ],
+      "related_works": [
+        "https://openalex.org/W4206379684",
+        "https://openalex.org/W2003932708",
+        "https://openalex.org/W2284877871",
+        "https://openalex.org/W2366105490",
+        "https://openalex.org/W2580680567",
+        "https://openalex.org/W4252292942",
+        "https://openalex.org/W2138102289",
+        "https://openalex.org/W4285170202",
+        "https://openalex.org/W114270996",
+        "https://openalex.org/W1967424056"
+      ],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Inborn": [
+          1,
+          100
+        ],
+        "errors": [
+          2
+        ],
+        "of": [
+          3,
+          9,
+          18,
+          45,
+          55,
+          59,
+          102,
+          119,
+          134
+        ],
+        "metabolism": [
+          4
+        ],
+        "(IEM)": [
+          5
+        ],
+        "represent": [
+          6
+        ],
+        "a": [
+          7,
+          15,
+          28,
+          122,
+          128,
+          146
+        ],
+        "subclass": [
+          8
+        ],
+        "rare": [
+          10
+        ],
+        "inherited": [
+          11
+        ],
+        "diseases": [
+          12,
+          94
+        ],
+        "caused": [
+          13
+        ],
+        "by": [
+          14,
+          116
+        ],
+        "wide": [
+          16
+        ],
+        "range": [
+          17
+        ],
+        "defects": [
+          19
+        ],
+        "in": [
+          20,
+          64,
+          68
+        ],
+        "metabolic": [
+          21
+        ],
+        "enzymes": [
+          22
+        ],
+        "or": [
+          23
+        ],
+        "their": [
+          24,
+          117
+        ],
+        "regulation.": [
+          25
+        ],
+        "Of": [
+          26
+        ],
+        "over": [
+          27
+        ],
+        "thousand": [
+          29
+        ],
+        "characterized": [
+          30
+        ],
+        "IEMs,": [
+          31
+        ],
+        "only": [
+          32
+        ],
+        "about": [
+          33
+        ],
+        "half": [
+          34
+        ],
+        "are": [
+          35
+        ],
+        "understood": [
+          36
+        ],
+        "at": [
+          37,
+          152
+        ],
+        "the": [
+          38,
+          43,
+          56,
+          69,
+          74,
+          79,
+          96
+        ],
+        "molecular": [
+          39
+        ],
+        "level,": [
+          40
+        ],
+        "and": [
+          41,
+          47,
+          81,
+          110,
+          138,
+          149
+        ],
+        "overall": [
+          42
+        ],
+        "development": [
+          44
+        ],
+        "treatment": [
+          46
+        ],
+        "management": [
+          48
+        ],
+        "strategies": [
+          49,
+          91
+        ],
+        "has": [
+          50
+        ],
+        "proved": [
+          51
+        ],
+        "challenging.": [
+          52
+        ],
+        "An": [
+          53
+        ],
+        "overview": [
+          54
+        ],
+        "changing": [
+          57
+        ],
+        "landscape": [
+          58
+        ],
+        "therapeutic": [
+          60,
+          90,
+          136
+        ],
+        "approaches": [
+          61
+        ],
+        "is": [
+          62,
+          76,
+          142
+        ],
+        "helpful": [
+          63
+        ],
+        "assessing": [
+          65
+        ],
+        "strategic": [
+          66
+        ],
+        "patterns": [
+          67
+        ],
+        "approach": [
+          70
+        ],
+        "to": [
+          71
+        ],
+        "therapy,": [
+          72
+        ],
+        "but": [
+          73
+        ],
+        "information": [
+          75
+        ],
+        "scattered": [
+          77
+        ],
+        "throughout": [
+          78
+        ],
+        "literature": [
+          80
+        ],
+        "public": [
+          82
+        ],
+        "data": [
+          83,
+          88
+        ],
+        "resources.": [
+          84
+        ],
+        "RESULTS:": [
+          85
+        ],
+        "We": [
+          86,
+          126
+        ],
+        "gathered": [
+          87
+        ],
+        "on": [
+          89
+        ],
+        "for": [
+          92,
+          99,
+          150
+        ],
+        "300": [
+          93
+        ],
+        "into": [
+          95
+        ],
+        "Drug": [
+          97
+        ],
+        "Database": [
+          98
+        ],
+        "Errors": [
+          101
+        ],
+        "Metabolism": [
+          103
+        ],
+        "(DDIEM).": [
+          104
+        ],
+        "Therapeutic": [
+          105
+        ],
+        "approaches,": [
+          106
+        ],
+        "including": [
+          107
+        ],
+        "both": [
+          108
+        ],
+        "successful": [
+          109
+        ],
+        "ineffective": [
+          111
+        ],
+        "treatments,": [
+          112
+        ],
+        "were": [
+          113
+        ],
+        "manually": [
+          114,
+          129
+        ],
+        "classified": [
+          115
+        ],
+        "mechanisms": [
+          118
+        ],
+        "action": [
+          120
+        ],
+        "using": [
+          121
+        ],
+        "new": [
+          123
+        ],
+        "ontology.": [
+          124
+        ],
+        "CONCLUSIONS:": [
+          125
+        ],
+        "present": [
+          127
+        ],
+        "curated,": [
+          130
+        ],
+        "ontologically": [
+          131
+        ],
+        "formalized": [
+          132
+        ],
+        "knowledgebase": [
+          133
+        ],
+        "drugs,": [
+          135
+        ],
+        "procedures,": [
+          137
+        ],
+        "mitigated": [
+          139
+        ],
+        "phenotypes.": [
+          140
+        ],
+        "DDIEM": [
+          141
+        ],
+        "freely": [
+          143
+        ],
+        "available": [
+          144
+        ],
+        "through": [
+          145
+        ],
+        "web": [
+          147
+        ],
+        "interface": [
+          148
+        ],
+        "download": [
+          151
+        ],
+        "http://ddiem.phenomebrowser.net.": [
+          153
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 3
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W3034938733",
+      "doi": "https://doi.org/10.1101/2020.01.08.897223",
+      "title": "DDIEM: Drug Database for Inborn Errors of Metabolism",
+      "display_name": "DDIEM: Drug Database for Inborn Errors of Metabolism",
+      "relevance_score": 49.34229,
+      "publication_year": 2020,
+      "publication_date": "2020-01-09",
+      "ids": {
+        "openalex": "https://openalex.org/W3034938733",
+        "doi": "https://doi.org/10.1101/2020.01.08.897223",
+        "mag": "3034938733"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1101/2020.01.08.897223",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1101/2020.01.08.897223",
+        "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/01/09/2020.01.08.897223.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402567",
+          "display_name": "bioRxiv (Cold Spring Harbor Laboratory)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2750212522",
+          "host_organization_name": "Cold Spring Harbor Laboratory",
+          "host_organization_lineage": [
+            "https://openalex.org/I2750212522"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "bioRxiv",
+        "raw_type": "posted-content"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2020/01/09/2020.01.08.897223.full.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5063729142",
+            "display_name": "Marwa Abdelhakim",
+            "orcid": "https://orcid.org/0000-0001-6816-2119"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marwa Abdelhakim",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030621835",
+            "display_name": "Eunice McMurray",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eunice McMurray",
+          "raw_affiliation_strings": [
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 3EG Cambridge, United Kingdom",
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 EG Cambridge, United Kingdom"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 3EG Cambridge, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 EG Cambridge, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113459493",
+            "display_name": "Ali Syed",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ali Raza Syed",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5069397549",
+            "display_name": "Şenay Kafkas",
+            "orcid": "https://orcid.org/0000-0001-7509-5786"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Senay Kafkas",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5026103082",
+            "display_name": "Allan Kamau",
+            "orcid": "https://orcid.org/0000-0002-6659-3713"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Allan Anthony Kamau",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5059588755",
+            "display_name": "Paul N. Schofield",
+            "orcid": "https://orcid.org/0000-0002-5111-7263"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Paul N Schofield",
+          "raw_affiliation_strings": [
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 3EG Cambridge, United Kingdom",
+            "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 EG Cambridge, United Kingdom"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 3EG Cambridge, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physiology, Development & Neuroscience, University of Cambridge, Downing Street, CB2 EG Cambridge, United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5043808311",
+            "display_name": "Robert Hoehndorf",
+            "orcid": "https://orcid.org/0000-0001-8149-5890"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Robert Hoehndorf",
+          "raw_affiliation_strings": [
+            "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+            "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8149-5890",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Computational Bioscience Research Center (CBRC), King Abdullah University of Science and Technology, 4700 KAUST, 23955 Thuwal, Kingdom of Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 23955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Computer, Electrical and Mathematical Sciences & Engineering Division (CEMSE), King Abdullah University of Science and Technology, 4700 KAUST, PO 3955 Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 7,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5043808311"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I71920554"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11642",
+        "display_name": "Genomics and Rare Diseases",
+        "score": 0.9987999796867371,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1311",
+          "display_name": "Genetics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.9987999796867371,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12827",
+          "display_name": "Biochemical and Molecular Research",
+          "score": 0.9957000017166138,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11027",
+          "display_name": "Metabolism and Genetic Disorders",
+          "score": 0.9955999851226807,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1308",
+            "display_name": "Clinical Biochemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6033533811569214
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.5667973160743713
+        },
+        {
+          "id": "https://openalex.org/keywords/drug-metabolism",
+          "display_name": "Drug metabolism",
+          "score": 0.45219525694847107
+        },
+        {
+          "id": "https://openalex.org/keywords/inborn-error-of-metabolism",
+          "display_name": "Inborn error of metabolism",
+          "score": 0.4487461447715759
+        },
+        {
+          "id": "https://openalex.org/keywords/drug",
+          "display_name": "Drug",
+          "score": 0.4313771724700928
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.37508660554885864
+        },
+        {
+          "id": "https://openalex.org/keywords/computational-biology",
+          "display_name": "Computational biology",
+          "score": 0.3689872622489929
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.3351810574531555
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.3334019184112549
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.23852145671844482
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacology",
+          "display_name": "Pharmacology",
+          "score": 0.20296445488929749
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.07619807124137878
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6033533811569214
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5667973160743713
+        },
+        {
+          "id": "https://openalex.org/C89311334",
+          "wikidata": "https://www.wikidata.org/wiki/Q1124842",
+          "display_name": "Drug metabolism",
+          "level": 3,
+          "score": 0.45219525694847107
+        },
+        {
+          "id": "https://openalex.org/C2779646400",
+          "wikidata": "https://www.wikidata.org/wiki/Q1758393",
+          "display_name": "Inborn error of metabolism",
+          "level": 2,
+          "score": 0.4487461447715759
+        },
+        {
+          "id": "https://openalex.org/C2780035454",
+          "wikidata": "https://www.wikidata.org/wiki/Q8386",
+          "display_name": "Drug",
+          "level": 2,
+          "score": 0.4313771724700928
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.37508660554885864
+        },
+        {
+          "id": "https://openalex.org/C70721500",
+          "wikidata": "https://www.wikidata.org/wiki/Q177005",
+          "display_name": "Computational biology",
+          "level": 1,
+          "score": 0.3689872622489929
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3351810574531555
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.3334019184112549
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.23852145671844482
+        },
+        {
+          "id": "https://openalex.org/C98274493",
+          "wikidata": "https://www.wikidata.org/wiki/Q128406",
+          "display_name": "Pharmacology",
+          "level": 1,
+          "score": 0.20296445488929749
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.07619807124137878
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1101/2020.01.08.897223",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1101/2020.01.08.897223",
+          "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/01/09/2020.01.08.897223.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402567",
+            "display_name": "bioRxiv (Cold Spring Harbor Laboratory)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2750212522",
+            "host_organization_name": "Cold Spring Harbor Laboratory",
+            "host_organization_lineage": [
+              "https://openalex.org/I2750212522"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "bioRxiv",
+          "raw_type": "posted-content"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1101/2020.01.08.897223",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1101/2020.01.08.897223",
+        "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/01/09/2020.01.08.897223.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402567",
+          "display_name": "bioRxiv (Cold Spring Harbor Laboratory)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2750212522",
+          "host_organization_name": "Cold Spring Harbor Laboratory",
+          "host_organization_lineage": [
+            "https://openalex.org/I2750212522"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "bioRxiv",
+        "raw_type": "posted-content"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Good health and well-being",
+          "score": 0.5,
+          "id": "https://metadata.un.org/sdg/3"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G198788104",
+          "display_name": null,
+          "funder_award_id": "URF/1/3454-01-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        },
+        {
+          "id": "https://openalex.org/G2344873991",
+          "display_name": null,
+          "funder_award_id": "URF/1/3790-01-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        },
+        {
+          "id": "https://openalex.org/G3699314141",
+          "display_name": null,
+          "funder_award_id": "FCC/1/1976-29-01",
+          "funder_id": "https://openalex.org/F4320322320",
+          "funder_display_name": "King Abdullah University of Science and Technology"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320322320",
+          "display_name": "King Abdullah University of Science and Technology",
+          "ror": "https://ror.org/01q3tbs38"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3034938733.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3034938733.grobid-xml"
+      },
+      "referenced_works_count": 62,
+      "referenced_works": [
+        "https://openalex.org/W128229878",
+        "https://openalex.org/W132296830",
+        "https://openalex.org/W1495463208",
+        "https://openalex.org/W1518299086",
+        "https://openalex.org/W1757277845",
+        "https://openalex.org/W1983965561",
+        "https://openalex.org/W1990413556",
+        "https://openalex.org/W1995205105",
+        "https://openalex.org/W2007108746",
+        "https://openalex.org/W2015191210",
+        "https://openalex.org/W2015886351",
+        "https://openalex.org/W2024559544",
+        "https://openalex.org/W2026032866",
+        "https://openalex.org/W2033377040",
+        "https://openalex.org/W2051983899",
+        "https://openalex.org/W2052143019",
+        "https://openalex.org/W2055674397",
+        "https://openalex.org/W2072174275",
+        "https://openalex.org/W2107580398",
+        "https://openalex.org/W2110234583",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2122015665",
+        "https://openalex.org/W2126057638",
+        "https://openalex.org/W2131660156",
+        "https://openalex.org/W2132784310",
+        "https://openalex.org/W2135140530",
+        "https://openalex.org/W2139315672",
+        "https://openalex.org/W2142275018",
+        "https://openalex.org/W2147533449",
+        "https://openalex.org/W2150789570",
+        "https://openalex.org/W2152850487",
+        "https://openalex.org/W2158191506",
+        "https://openalex.org/W2177317049",
+        "https://openalex.org/W2240348948",
+        "https://openalex.org/W2302501749",
+        "https://openalex.org/W2405275595",
+        "https://openalex.org/W2429238494",
+        "https://openalex.org/W2544380753",
+        "https://openalex.org/W2546530173",
+        "https://openalex.org/W2557385283",
+        "https://openalex.org/W2559588208",
+        "https://openalex.org/W2567583209",
+        "https://openalex.org/W2737370169",
+        "https://openalex.org/W2738402542",
+        "https://openalex.org/W2744672018",
+        "https://openalex.org/W2767891136",
+        "https://openalex.org/W2773787581",
+        "https://openalex.org/W2782917400",
+        "https://openalex.org/W2792301545",
+        "https://openalex.org/W2807049387",
+        "https://openalex.org/W2810939851",
+        "https://openalex.org/W2887586341",
+        "https://openalex.org/W2888796281",
+        "https://openalex.org/W2898020169",
+        "https://openalex.org/W2901527454",
+        "https://openalex.org/W2913165892",
+        "https://openalex.org/W2922908926",
+        "https://openalex.org/W2934450419",
+        "https://openalex.org/W2980430454",
+        "https://openalex.org/W3099272318",
+        "https://openalex.org/W3136918052",
+        "https://openalex.org/W6931106457"
+      ],
+      "related_works": [
+        "https://openalex.org/W2202336857",
+        "https://openalex.org/W2412806641",
+        "https://openalex.org/W2411014426",
+        "https://openalex.org/W45232484",
+        "https://openalex.org/W2889241014",
+        "https://openalex.org/W3160948212",
+        "https://openalex.org/W2403081179",
+        "https://openalex.org/W1782647748",
+        "https://openalex.org/W4254948725",
+        "https://openalex.org/W3092094566"
+      ],
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Background": [
+          1
+        ],
+        "Inborn": [
+          2,
+          101
+        ],
+        "errors": [
+          3
+        ],
+        "of": [
+          4,
+          10,
+          19,
+          46,
+          56,
+          60,
+          103,
+          120,
+          135
+        ],
+        "metabolism": [
+          5
+        ],
+        "(IEM)": [
+          6
+        ],
+        "represent": [
+          7
+        ],
+        "a": [
+          8,
+          16,
+          29,
+          123,
+          129,
+          147
+        ],
+        "subclass": [
+          9
+        ],
+        "rare": [
+          11
+        ],
+        "inherited": [
+          12
+        ],
+        "diseases": [
+          13,
+          95
+        ],
+        "caused": [
+          14
+        ],
+        "by": [
+          15,
+          117
+        ],
+        "wide": [
+          17
+        ],
+        "range": [
+          18
+        ],
+        "defects": [
+          20
+        ],
+        "in": [
+          21,
+          65,
+          69
+        ],
+        "metabolic": [
+          22
+        ],
+        "enzymes": [
+          23
+        ],
+        "or": [
+          24
+        ],
+        "their": [
+          25,
+          118
+        ],
+        "regulation.": [
+          26
+        ],
+        "Of": [
+          27
+        ],
+        "over": [
+          28
+        ],
+        "thousand": [
+          30
+        ],
+        "characterized": [
+          31
+        ],
+        "IEMs,": [
+          32
+        ],
+        "only": [
+          33
+        ],
+        "about": [
+          34
+        ],
+        "half": [
+          35
+        ],
+        "are": [
+          36
+        ],
+        "understood": [
+          37
+        ],
+        "at": [
+          38,
+          153
+        ],
+        "the": [
+          39,
+          44,
+          57,
+          70,
+          75,
+          80,
+          97
+        ],
+        "molecular": [
+          40
+        ],
+        "level,": [
+          41
+        ],
+        "and": [
+          42,
+          48,
+          82,
+          111,
+          139,
+          150
+        ],
+        "overall": [
+          43
+        ],
+        "development": [
+          45
+        ],
+        "treatment": [
+          47
+        ],
+        "management": [
+          49
+        ],
+        "strategies": [
+          50,
+          92
+        ],
+        "has": [
+          51
+        ],
+        "proved": [
+          52
+        ],
+        "challenging.": [
+          53
+        ],
+        "An": [
+          54
+        ],
+        "overview": [
+          55
+        ],
+        "changing": [
+          58
+        ],
+        "landscape": [
+          59
+        ],
+        "therapeutic": [
+          61,
+          91,
+          137
+        ],
+        "approaches": [
+          62
+        ],
+        "is": [
+          63,
+          77,
+          143
+        ],
+        "helpful": [
+          64
+        ],
+        "assessing": [
+          66
+        ],
+        "strategic": [
+          67
+        ],
+        "patterns": [
+          68
+        ],
+        "approach": [
+          71
+        ],
+        "to": [
+          72
+        ],
+        "therapy,": [
+          73
+        ],
+        "but": [
+          74
+        ],
+        "information": [
+          76
+        ],
+        "scattered": [
+          78
+        ],
+        "throughout": [
+          79
+        ],
+        "literature": [
+          81
+        ],
+        "public": [
+          83
+        ],
+        "data": [
+          84,
+          89
+        ],
+        "resources.": [
+          85
+        ],
+        "Results": [
+          86
+        ],
+        "We": [
+          87,
+          127
+        ],
+        "gathered": [
+          88
+        ],
+        "on": [
+          90
+        ],
+        "for": [
+          93,
+          100,
+          151
+        ],
+        "299": [
+          94
+        ],
+        "into": [
+          96
+        ],
+        "Drug": [
+          98
+        ],
+        "Database": [
+          99
+        ],
+        "Errors": [
+          102
+        ],
+        "Metabolism": [
+          104
+        ],
+        "(DDIEM).": [
+          105
+        ],
+        "Therapeutic": [
+          106
+        ],
+        "approaches,": [
+          107
+        ],
+        "including": [
+          108
+        ],
+        "both": [
+          109
+        ],
+        "successful": [
+          110
+        ],
+        "ineffective": [
+          112
+        ],
+        "treatments,": [
+          113
+        ],
+        "were": [
+          114
+        ],
+        "manually": [
+          115,
+          130
+        ],
+        "classified": [
+          116
+        ],
+        "mechanisms": [
+          119
+        ],
+        "action": [
+          121
+        ],
+        "using": [
+          122
+        ],
+        "new": [
+          124
+        ],
+        "ontology.": [
+          125
+        ],
+        "Conclusions": [
+          126
+        ],
+        "present": [
+          128
+        ],
+        "curated,": [
+          131
+        ],
+        "ontologically": [
+          132
+        ],
+        "formalized": [
+          133
+        ],
+        "knowledgebase": [
+          134
+        ],
+        "drugs,": [
+          136
+        ],
+        "procedures,": [
+          138
+        ],
+        "mitigated": [
+          140
+        ],
+        "phenotypes.": [
+          141
+        ],
+        "DDIEM": [
+          142
+        ],
+        "freely": [
+          144
+        ],
+        "available": [
+          145
+        ],
+        "through": [
+          146
+        ],
+        "web": [
+          148
+        ],
+        "interface": [
+          149
+        ],
+        "download": [
+          152
+        ],
+        "http://ddiem.phenomebrowser.net": [
+          154
+        ],
+        ".": [
+          155
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-05-21T06:26:12.895304",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4392168810",
+      "doi": "https://doi.org/10.3390/genes15030290",
+      "title": "Drug Repurposing and Lysosomal Storage Disorders: A Trick to Treat",
+      "display_name": "Drug Repurposing and Lysosomal Storage Disorders: A Trick to Treat",
+      "relevance_score": 35.129627,
+      "publication_year": 2024,
+      "publication_date": "2024-02-25",
+      "ids": {
+        "openalex": "https://openalex.org/W4392168810",
+        "doi": "https://doi.org/10.3390/genes15030290",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/38540351"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3390/genes15030290",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/genes15030290",
+        "pdf_url": "https://www.mdpi.com/2073-4425/15/3/290/pdf?version=1708855092",
+        "source": {
+          "id": "https://openalex.org/S194631498",
+          "display_name": "Genes",
+          "issn_l": "2073-4425",
+          "issn": [
+            "2073-4425"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Genes",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2073-4425/15/3/290/pdf?version=1708855092",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5001422423",
+            "display_name": "Bruno Hay Mele",
+            "orcid": "https://orcid.org/0000-0001-5579-183X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108560",
+              "display_name": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli",
+              "ror": "https://ror.org/015kcdd40",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I160013858",
+                "https://openalex.org/I4210108560"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bruno Hay Mele",
+          "raw_affiliation_strings": [
+            "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+            "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5579-183X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034477713",
+            "display_name": "Federica Rossetti",
+            "orcid": "https://orcid.org/0009-0002-9148-4479"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108560",
+              "display_name": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli",
+              "ror": "https://ror.org/015kcdd40",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I160013858",
+                "https://openalex.org/I4210108560"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Federica Rossetti",
+          "raw_affiliation_strings": [
+            "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+            "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010599632",
+            "display_name": "Maria Vittoria Cubellis",
+            "orcid": "https://orcid.org/0000-0001-6147-6553"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802779139",
+              "display_name": "Stazione Zoologica Anton Dohrn",
+              "ror": "https://ror.org/03v5jj203",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2802779139"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210108560",
+              "display_name": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli",
+              "ror": "https://ror.org/015kcdd40",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I160013858",
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210147106",
+              "display_name": "Istituto di Chimica Biomolecolare",
+              "ror": "https://ror.org/03wyf0g15",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210147106"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Maria Vittoria Cubellis",
+          "raw_affiliation_strings": [
+            "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+            "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy",
+            "Stazione Zoologica “Anton Dohrn”, Villa Comunale, 80121 Naples, Italy",
+            "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy",
+            "Stazione Zoologica \"Anton Dohrn\", Villa Comunale, 80121 Naples, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6147-6553",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210147106"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Stazione Zoologica “Anton Dohrn”, Villa Comunale, 80121 Naples, Italy",
+              "institution_ids": [
+                "https://openalex.org/I2802779139"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Stazione Zoologica \"Anton Dohrn\", Villa Comunale, 80121 Naples, Italy",
+              "institution_ids": [
+                "https://openalex.org/I2802779139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085627974",
+            "display_name": "Maria Monticelli",
+            "orcid": "https://orcid.org/0000-0003-3136-2138"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108560",
+              "display_name": "Istituto Nazionale di Fisica Nucleare, Sezione di Napoli",
+              "ror": "https://ror.org/015kcdd40",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I160013858",
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210147106",
+              "display_name": "Istituto di Chimica Biomolecolare",
+              "ror": "https://ror.org/03wyf0g15",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210147106"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Maria Monticelli",
+          "raw_affiliation_strings": [
+            "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+            "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy",
+            "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3136-2138",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli “Federico II”, Complesso Universitario Monte Sant’Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210147106"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Biology, University of Napoli \"Federico II\", Complesso Universitario Monte Sant'Angelo, Via Cinthia, 80126 Napoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108560"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5053875999",
+            "display_name": "Giuseppina Andreotti",
+            "orcid": "https://orcid.org/0000-0002-1594-0156"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210147106",
+              "display_name": "Istituto di Chimica Biomolecolare",
+              "ror": "https://ror.org/03wyf0g15",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210147106"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Giuseppina Andreotti",
+          "raw_affiliation_strings": [
+            "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1594-0156",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Biomolecular Chemistry ICB, CNR, Via Campi Flegrei 34, 80078 Pozzuoli, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210147106"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5085627974"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210108560",
+        "https://openalex.org/I4210147106"
+      ],
+      "apc_list": {
+        "value": 2400,
+        "currency": "CHF",
+        "value_usd": 2598
+      },
+      "apc_paid": {
+        "value": 2400,
+        "currency": "CHF",
+        "value_usd": 2598
+      },
+      "fwci": 1.1403,
+      "has_fulltext": true,
+      "cited_by_count": 4,
+      "citation_normalized_percentile": {
+        "value": 0.76918997,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 94,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "15",
+        "issue": "3",
+        "first_page": "290",
+        "last_page": "290"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10945",
+        "display_name": "Lysosomal Storage Disorders Research",
+        "score": 0.9995999932289124,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2737",
+          "display_name": "Physiology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10945",
+          "display_name": "Lysosomal Storage Disorders Research",
+          "score": 0.9995999932289124,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2737",
+            "display_name": "Physiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13415",
+          "display_name": "Calcium signaling and nucleotide metabolism",
+          "score": 0.9933000206947327,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1314",
+            "display_name": "Physiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10890",
+          "display_name": "Trypanosoma species research and implications",
+          "score": 0.9848999977111816,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2713",
+            "display_name": "Epidemiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/drug-repositioning",
+          "display_name": "Drug repositioning",
+          "score": 0.8751431703567505
+        },
+        {
+          "id": "https://openalex.org/keywords/repurposing",
+          "display_name": "Repurposing",
+          "score": 0.7754309773445129
+        },
+        {
+          "id": "https://openalex.org/keywords/expediting",
+          "display_name": "Expediting",
+          "score": 0.6885576248168945
+        },
+        {
+          "id": "https://openalex.org/keywords/drug",
+          "display_name": "Drug",
+          "score": 0.5863891839981079
+        },
+        {
+          "id": "https://openalex.org/keywords/context",
+          "display_name": "Context (archaeology)",
+          "score": 0.5806460380554199
+        },
+        {
+          "id": "https://openalex.org/keywords/drug-discovery",
+          "display_name": "Drug discovery",
+          "score": 0.5075415372848511
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.4400074779987335
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacology",
+          "display_name": "Pharmacology",
+          "score": 0.37887218594551086
+        },
+        {
+          "id": "https://openalex.org/keywords/intensive-care-medicine",
+          "display_name": "Intensive care medicine",
+          "score": 0.33470284938812256
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.30817073583602905
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.2548929452896118
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.095269113779068
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C103637391",
+          "wikidata": "https://www.wikidata.org/wiki/Q5308921",
+          "display_name": "Drug repositioning",
+          "level": 3,
+          "score": 0.8751431703567505
+        },
+        {
+          "id": "https://openalex.org/C519536355",
+          "wikidata": "https://www.wikidata.org/wiki/Q21021151",
+          "display_name": "Repurposing",
+          "level": 2,
+          "score": 0.7754309773445129
+        },
+        {
+          "id": "https://openalex.org/C134448949",
+          "wikidata": "https://www.wikidata.org/wiki/Q1384274",
+          "display_name": "Expediting",
+          "level": 2,
+          "score": 0.6885576248168945
+        },
+        {
+          "id": "https://openalex.org/C2780035454",
+          "wikidata": "https://www.wikidata.org/wiki/Q8386",
+          "display_name": "Drug",
+          "level": 2,
+          "score": 0.5863891839981079
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.5806460380554199
+        },
+        {
+          "id": "https://openalex.org/C74187038",
+          "wikidata": "https://www.wikidata.org/wiki/Q1418791",
+          "display_name": "Drug discovery",
+          "level": 2,
+          "score": 0.5075415372848511
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.4400074779987335
+        },
+        {
+          "id": "https://openalex.org/C98274493",
+          "wikidata": "https://www.wikidata.org/wiki/Q128406",
+          "display_name": "Pharmacology",
+          "level": 1,
+          "score": 0.37887218594551086
+        },
+        {
+          "id": "https://openalex.org/C177713679",
+          "wikidata": "https://www.wikidata.org/wiki/Q679690",
+          "display_name": "Intensive care medicine",
+          "level": 1,
+          "score": 0.33470284938812256
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.30817073583602905
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.2548929452896118
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.095269113779068
+        },
+        {
+          "id": "https://openalex.org/C201995342",
+          "wikidata": "https://www.wikidata.org/wiki/Q682496",
+          "display_name": "Systems engineering",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C151730666",
+          "wikidata": "https://www.wikidata.org/wiki/Q7205",
+          "display_name": "Paleontology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008247",
+          "descriptor_name": "Lysosomes",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008247",
+          "descriptor_name": "Lysosomes",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008247",
+          "descriptor_name": "Lysosomes",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008247",
+          "descriptor_name": "Lysosomes",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008247",
+          "descriptor_name": "Lysosomes",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009154",
+          "descriptor_name": "Mutation",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009154",
+          "descriptor_name": "Mutation",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009154",
+          "descriptor_name": "Mutation",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009154",
+          "descriptor_name": "Mutation",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009154",
+          "descriptor_name": "Mutation",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016464",
+          "descriptor_name": "Lysosomal Storage Diseases",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "doi:10.3390/genes15030290",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/genes15030290",
+          "pdf_url": "https://www.mdpi.com/2073-4425/15/3/290/pdf?version=1708855092",
+          "source": {
+            "id": "https://openalex.org/S194631498",
+            "display_name": "Genes",
+            "issn_l": "2073-4425",
+            "issn": [
+              "2073-4425"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Genes",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:38540351",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38540351",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Genes",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:10970111",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10970111",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10970111/pdf/genes-15-00290.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Genes (Basel)",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3390/genes15030290",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/genes15030290",
+        "pdf_url": "https://www.mdpi.com/2073-4425/15/3/290/pdf?version=1708855092",
+        "source": {
+          "id": "https://openalex.org/S194631498",
+          "display_name": "Genes",
+          "issn_l": "2073-4425",
+          "issn": [
+            "2073-4425"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Genes",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Good health and well-being",
+          "score": 0.7400000095367432,
+          "id": "https://metadata.un.org/sdg/3"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4392168810.pdf"
+      },
+      "referenced_works_count": 96,
+      "referenced_works": [
+        "https://openalex.org/W637887209",
+        "https://openalex.org/W1601406615",
+        "https://openalex.org/W1971192989",
+        "https://openalex.org/W1971592129",
+        "https://openalex.org/W1974639513",
+        "https://openalex.org/W1977850625",
+        "https://openalex.org/W1983389661",
+        "https://openalex.org/W1990651860",
+        "https://openalex.org/W1991235623",
+        "https://openalex.org/W2010124122",
+        "https://openalex.org/W2012978799",
+        "https://openalex.org/W2017506227",
+        "https://openalex.org/W2041841720",
+        "https://openalex.org/W2047259738",
+        "https://openalex.org/W2049958331",
+        "https://openalex.org/W2062301023",
+        "https://openalex.org/W2062539932",
+        "https://openalex.org/W2062941476",
+        "https://openalex.org/W2077499130",
+        "https://openalex.org/W2083300726",
+        "https://openalex.org/W2085447994",
+        "https://openalex.org/W2099395323",
+        "https://openalex.org/W2105535112",
+        "https://openalex.org/W2109069677",
+        "https://openalex.org/W2113698463",
+        "https://openalex.org/W2121626937",
+        "https://openalex.org/W2124492148",
+        "https://openalex.org/W2125299541",
+        "https://openalex.org/W2139423368",
+        "https://openalex.org/W2149659010",
+        "https://openalex.org/W2150220236",
+        "https://openalex.org/W2156877656",
+        "https://openalex.org/W2162151166",
+        "https://openalex.org/W2168879855",
+        "https://openalex.org/W2171628311",
+        "https://openalex.org/W2336203720",
+        "https://openalex.org/W2424129215",
+        "https://openalex.org/W2444690946",
+        "https://openalex.org/W2598265731",
+        "https://openalex.org/W2611574484",
+        "https://openalex.org/W2796659008",
+        "https://openalex.org/W2801306738",
+        "https://openalex.org/W2898528389",
+        "https://openalex.org/W2900467096",
+        "https://openalex.org/W2904786998",
+        "https://openalex.org/W2912917861",
+        "https://openalex.org/W2952183412",
+        "https://openalex.org/W2972691463",
+        "https://openalex.org/W2988630324",
+        "https://openalex.org/W2999910879",
+        "https://openalex.org/W3000046224",
+        "https://openalex.org/W3006877085",
+        "https://openalex.org/W3009999522",
+        "https://openalex.org/W3033991682",
+        "https://openalex.org/W3037252239",
+        "https://openalex.org/W3046224048",
+        "https://openalex.org/W3084643244",
+        "https://openalex.org/W3095146947",
+        "https://openalex.org/W3109517993",
+        "https://openalex.org/W3131834435",
+        "https://openalex.org/W3153081940",
+        "https://openalex.org/W3168923590",
+        "https://openalex.org/W3176508635",
+        "https://openalex.org/W3195262205",
+        "https://openalex.org/W3212558148",
+        "https://openalex.org/W3216962992",
+        "https://openalex.org/W3217028541",
+        "https://openalex.org/W4200140951",
+        "https://openalex.org/W4205212395",
+        "https://openalex.org/W4210568332",
+        "https://openalex.org/W4211173369",
+        "https://openalex.org/W4214908566",
+        "https://openalex.org/W4220934626",
+        "https://openalex.org/W4221069555",
+        "https://openalex.org/W4225397238",
+        "https://openalex.org/W4288748468",
+        "https://openalex.org/W4296029907",
+        "https://openalex.org/W4297918253",
+        "https://openalex.org/W4312139135",
+        "https://openalex.org/W4313647411",
+        "https://openalex.org/W4318986126",
+        "https://openalex.org/W4320856085",
+        "https://openalex.org/W4322501451",
+        "https://openalex.org/W4323644096",
+        "https://openalex.org/W4362521569",
+        "https://openalex.org/W4362688945",
+        "https://openalex.org/W4365515190",
+        "https://openalex.org/W4366549198",
+        "https://openalex.org/W4372294445",
+        "https://openalex.org/W4377289963",
+        "https://openalex.org/W4379259857",
+        "https://openalex.org/W4382502822",
+        "https://openalex.org/W4382618467",
+        "https://openalex.org/W4382894749",
+        "https://openalex.org/W4383215624",
+        "https://openalex.org/W4390691526"
+      ],
+      "related_works": [
+        "https://openalex.org/W2899096130",
+        "https://openalex.org/W3190782215",
+        "https://openalex.org/W2902729297",
+        "https://openalex.org/W3110500039",
+        "https://openalex.org/W4255531208",
+        "https://openalex.org/W4396858017",
+        "https://openalex.org/W4400165188",
+        "https://openalex.org/W4206422705",
+        "https://openalex.org/W4320009247",
+        "https://openalex.org/W3186872001"
+      ],
+      "abstract_inverted_index": {
+        "Rare": [
+          0
+        ],
+        "diseases,": [
+          1,
+          4
+        ],
+        "or": [
+          2
+        ],
+        "orphan": [
+          3
+        ],
+        "are": [
+          5
+        ],
+        "defined": [
+          6
+        ],
+        "as": [
+          7,
+          100
+        ],
+        "diseases": [
+          8,
+          33
+        ],
+        "affecting": [
+          9
+        ],
+        "a": [
+          10,
+          28,
+          60,
+          67,
+          101,
+          132
+        ],
+        "small": [
+          11
+        ],
+        "number": [
+          12
+        ],
+        "of": [
+          13,
+          30,
+          63,
+          70,
+          83,
+          88,
+          97,
+          114,
+          123,
+          148
+        ],
+        "people": [
+          14
+        ],
+        "compared": [
+          15
+        ],
+        "to": [
+          16,
+          103
+        ],
+        "the": [
+          17,
+          81,
+          86,
+          95,
+          111,
+          121,
+          142,
+          145
+        ],
+        "general": [
+          18
+        ],
+        "population.": [
+          19
+        ],
+        "Among": [
+          20
+        ],
+        "these,": [
+          21
+        ],
+        "we": [
+          22
+        ],
+        "find": [
+          23
+        ],
+        "lysosomal": [
+          24
+        ],
+        "storage": [
+          25
+        ],
+        "disorders": [
+          26
+        ],
+        "(LSDs),": [
+          27
+        ],
+        "cluster": [
+          29
+        ],
+        "rare": [
+          31
+        ],
+        "metabolic": [
+          32
+        ],
+        "characterized": [
+          34
+        ],
+        "by": [
+          35
+        ],
+        "enzyme": [
+          36
+        ],
+        "mutations": [
+          37
+        ],
+        "causing": [
+          38
+        ],
+        "abnormal": [
+          39
+        ],
+        "glycolipid": [
+          40
+        ],
+        "storage.": [
+          41
+        ],
+        "Drug": [
+          42
+        ],
+        "repositioning": [
+          43,
+          99,
+          113
+        ],
+        "involves": [
+          44
+        ],
+        "repurposing": [
+          45,
+          74,
+          130
+        ],
+        "existing": [
+          46,
+          71
+        ],
+        "approved": [
+          47
+        ],
+        "drugs": [
+          48
+        ],
+        "for": [
+          49,
+          110,
+          135,
+          139,
+          144
+        ],
+        "new": [
+          50
+        ],
+        "therapeutic": [
+          51,
+          137
+        ],
+        "applications,": [
+          52
+        ],
+        "offering": [
+          53
+        ],
+        "advantages": [
+          54
+        ],
+        "in": [
+          55,
+          80,
+          119,
+          153
+        ],
+        "cost,": [
+          56
+        ],
+        "time": [
+          57
+        ],
+        "savings,": [
+          58
+        ],
+        "and": [
+          59,
+          76,
+          151
+        ],
+        "lower": [
+          61
+        ],
+        "risk": [
+          62
+        ],
+        "failure.": [
+          64
+        ],
+        "We": [
+          65,
+          126
+        ],
+        "present": [
+          66
+        ],
+        "comprehensive": [
+          68
+        ],
+        "analysis": [
+          69
+        ],
+        "drugs,": [
+          72,
+          115
+        ],
+        "their": [
+          73,
+          77
+        ],
+        "potential,": [
+          75
+        ],
+        "clinical": [
+          78
+        ],
+        "implications": [
+          79
+        ],
+        "context": [
+          82
+        ],
+        "LSDs,": [
+          84,
+          140
+        ],
+        "highlighting": [
+          85
+        ],
+        "necessity": [
+          87
+        ],
+        "mutation-specific": [
+          89
+        ],
+        "approaches.": [
+          90
+        ],
+        "Our": [
+          91
+        ],
+        "review": [
+          92
+        ],
+        "systematically": [
+          93
+        ],
+        "explores": [
+          94
+        ],
+        "landscape": [
+          96
+        ],
+        "drug": [
+          98,
+          129,
+          149
+        ],
+        "means": [
+          102
+        ],
+        "enhance": [
+          104
+        ],
+        "LSDs": [
+          105
+        ],
+        "therapies.": [
+          106
+        ],
+        "The": [
+          107
+        ],
+        "findings": [
+          108
+        ],
+        "advocate": [
+          109
+        ],
+        "strategic": [
+          112
+        ],
+        "accentuating": [
+          116
+        ],
+        "its": [
+          117
+        ],
+        "role": [
+          118
+        ],
+        "expediting": [
+          120
+        ],
+        "discovery": [
+          122,
+          138
+        ],
+        "effective": [
+          124
+        ],
+        "treatments.": [
+          125
+        ],
+        "conclude": [
+          127
+        ],
+        "that": [
+          128
+        ],
+        "represents": [
+          131
+        ],
+        "viable": [
+          133
+        ],
+        "pathway": [
+          134
+        ],
+        "accelerating": [
+          136
+        ],
+        "emphasizing": [
+          141
+        ],
+        "need": [
+          143
+        ],
+        "careful": [
+          146
+        ],
+        "evaluation": [
+          147
+        ],
+        "efficacy": [
+          150
+        ],
+        "toxicity": [
+          152
+        ],
+        "disease-specific": [
+          154
+        ],
+        "contexts.": [
+          155
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-06-21T07:57:09.225873",
+      "created_date": "2024-02-27T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W38540351",
+      "doi": "https://doi.org/10.3390/genes15030290",
+      "title": "Teaching mathematics through national lotteries",
+      "display_name": "Teaching mathematics through national lotteries",
+      "relevance_score": 3.416319,
+      "publication_year": 2000,
+      "publication_date": "2000-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W38540351",
+        "doi": "https://doi.org/10.3390/genes15030290",
+        "mag": "38540351"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "mag:38540351",
+        "is_oa": false,
+        "landing_page_url": "https://espace.library.uq.edu.au/view/UQ:139466",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210189680",
+          "display_name": "International Journal for Mathematics Teaching and Learning",
+          "issn_l": "1473-0111",
+          "issn": [
+            "1473-0111"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310318375",
+          "host_organization_name": "Ankara University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318375"
+          ],
+          "host_organization_lineage_names": [
+            "Ankara University"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "International Journal for Mathematics Teaching and Learning",
+        "raw_type": null
+      },
+      "type": "article",
+      "indexed_in": [],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5070895632",
+            "display_name": "David Burghes",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "David Burghes",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5072102842",
+            "display_name": "Peter Galbraith",
+            "orcid": "https://orcid.org/0000-0002-5589-0536"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Peter Galbraith",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0002-5589-0536",
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.00672269,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": "15",
+        "issue": "3",
+        "first_page": "1",
+        "last_page": "5"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14079",
+        "display_name": "Mathematics Education and Programs",
+        "score": 0.3222000002861023,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2611",
+          "display_name": "Modeling and Simulation"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/26",
+          "display_name": "Mathematics"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T14079",
+          "display_name": "Mathematics Education and Programs",
+          "score": 0.3222000002861023,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2611",
+            "display_name": "Modeling and Simulation"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/26",
+            "display_name": "Mathematics"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13532",
+          "display_name": "Education Systems and Policy",
+          "score": 0.28610000014305115,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12354",
+          "display_name": "Innovations in Educational Methods",
+          "score": 0.2678999900817871,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/mathematics-education",
+          "display_name": "Mathematics education",
+          "score": 0.7068566083908081
+        },
+        {
+          "id": "https://openalex.org/keywords/teaching-method",
+          "display_name": "Teaching method",
+          "score": 0.47446995973587036
+        },
+        {
+          "id": "https://openalex.org/keywords/connected-mathematics",
+          "display_name": "Connected Mathematics",
+          "score": 0.4172828495502472
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics",
+          "display_name": "Mathematics",
+          "score": 0.3770712614059448
+        },
+        {
+          "id": "https://openalex.org/keywords/pedagogy",
+          "display_name": "Pedagogy",
+          "score": 0.32165682315826416
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.31776151061058044
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C145420912",
+          "wikidata": "https://www.wikidata.org/wiki/Q853077",
+          "display_name": "Mathematics education",
+          "level": 1,
+          "score": 0.7068566083908081
+        },
+        {
+          "id": "https://openalex.org/C88610354",
+          "wikidata": "https://www.wikidata.org/wiki/Q1813494",
+          "display_name": "Teaching method",
+          "level": 2,
+          "score": 0.47446995973587036
+        },
+        {
+          "id": "https://openalex.org/C118840557",
+          "wikidata": "https://www.wikidata.org/wiki/Q5161405",
+          "display_name": "Connected Mathematics",
+          "level": 2,
+          "score": 0.4172828495502472
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.3770712614059448
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.32165682315826416
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.31776151061058044
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "mag:38540351",
+          "is_oa": false,
+          "landing_page_url": "https://espace.library.uq.edu.au/view/UQ:139466",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210189680",
+            "display_name": "International Journal for Mathematics Teaching and Learning",
+            "issn_l": "1473-0111",
+            "issn": [
+              "1473-0111"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310318375",
+            "host_organization_name": "Ankara University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318375"
+            ],
+            "host_organization_lineage_names": [
+              "Ankara University"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal for Mathematics Teaching and Learning",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:espace.library.uq.edu.au:UQ:139466",
+          "is_oa": false,
+          "landing_page_url": null,
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402388",
+            "display_name": "Queensland's institutional digital repository (The University of Queensland)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I165143802",
+            "host_organization_name": "The University of Queensland",
+            "host_organization_lineage": [
+              "https://openalex.org/I165143802"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Journal Article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 1,
+      "referenced_works": [
+        "https://openalex.org/W2424129215"
+      ],
+      "related_works": [
+        "https://openalex.org/W290556690",
+        "https://openalex.org/W2979078566",
+        "https://openalex.org/W280699116",
+        "https://openalex.org/W111716630",
+        "https://openalex.org/W1974741605",
+        "https://openalex.org/W2007008193",
+        "https://openalex.org/W2083551729",
+        "https://openalex.org/W1971561949",
+        "https://openalex.org/W2791153022",
+        "https://openalex.org/W2168357622",
+        "https://openalex.org/W1552083205",
+        "https://openalex.org/W334659529",
+        "https://openalex.org/W3136916842",
+        "https://openalex.org/W315967608",
+        "https://openalex.org/W1603058899",
+        "https://openalex.org/W210188705",
+        "https://openalex.org/W210479212",
+        "https://openalex.org/W282143240",
+        "https://openalex.org/W312962156",
+        "https://openalex.org/W2084113488"
+      ],
+      "abstract_inverted_index": {
+        "Rare": [
+          0
+        ],
+        "diseases,": [
+          1,
+          4
+        ],
+        "or": [
+          2
+        ],
+        "orphan": [
+          3
+        ],
+        "are": [
+          5
+        ],
+        "defined": [
+          6
+        ],
+        "as": [
+          7,
+          100
+        ],
+        "diseases": [
+          8,
+          33
+        ],
+        "affecting": [
+          9
+        ],
+        "a": [
+          10,
+          28,
+          60,
+          67,
+          101,
+          132
+        ],
+        "small": [
+          11
+        ],
+        "number": [
+          12
+        ],
+        "of": [
+          13,
+          30,
+          63,
+          70,
+          83,
+          88,
+          97,
+          114,
+          123,
+          148
+        ],
+        "people": [
+          14
+        ],
+        "compared": [
+          15
+        ],
+        "to": [
+          16,
+          103
+        ],
+        "the": [
+          17,
+          81,
+          86,
+          95,
+          111,
+          121,
+          142,
+          145
+        ],
+        "general": [
+          18
+        ],
+        "population.": [
+          19
+        ],
+        "Among": [
+          20
+        ],
+        "these,": [
+          21
+        ],
+        "we": [
+          22
+        ],
+        "find": [
+          23
+        ],
+        "lysosomal": [
+          24
+        ],
+        "storage": [
+          25
+        ],
+        "disorders": [
+          26
+        ],
+        "(LSDs),": [
+          27
+        ],
+        "cluster": [
+          29
+        ],
+        "rare": [
+          31
+        ],
+        "metabolic": [
+          32
+        ],
+        "characterized": [
+          34
+        ],
+        "by": [
+          35
+        ],
+        "enzyme": [
+          36
+        ],
+        "mutations": [
+          37
+        ],
+        "causing": [
+          38
+        ],
+        "abnormal": [
+          39
+        ],
+        "glycolipid": [
+          40
+        ],
+        "storage.": [
+          41
+        ],
+        "Drug": [
+          42
+        ],
+        "repositioning": [
+          43,
+          99,
+          113
+        ],
+        "involves": [
+          44
+        ],
+        "repurposing": [
+          45,
+          74,
+          130
+        ],
+        "existing": [
+          46,
+          71
+        ],
+        "approved": [
+          47
+        ],
+        "drugs": [
+          48
+        ],
+        "for": [
+          49,
+          110,
+          135,
+          139,
+          144
+        ],
+        "new": [
+          50
+        ],
+        "therapeutic": [
+          51,
+          137
+        ],
+        "applications,": [
+          52
+        ],
+        "offering": [
+          53
+        ],
+        "advantages": [
+          54
+        ],
+        "in": [
+          55,
+          80,
+          119,
+          153
+        ],
+        "cost,": [
+          56
+        ],
+        "time": [
+          57
+        ],
+        "savings,": [
+          58
+        ],
+        "and": [
+          59,
+          76,
+          151
+        ],
+        "lower": [
+          61
+        ],
+        "risk": [
+          62
+        ],
+        "failure.": [
+          64
+        ],
+        "We": [
+          65,
+          126
+        ],
+        "present": [
+          66
+        ],
+        "comprehensive": [
+          68
+        ],
+        "analysis": [
+          69
+        ],
+        "drugs,": [
+          72,
+          115
+        ],
+        "their": [
+          73,
+          77
+        ],
+        "potential,": [
+          75
+        ],
+        "clinical": [
+          78
+        ],
+        "implications": [
+          79
+        ],
+        "context": [
+          82
+        ],
+        "LSDs,": [
+          84,
+          140
+        ],
+        "highlighting": [
+          85
+        ],
+        "necessity": [
+          87
+        ],
+        "mutation-specific": [
+          89
+        ],
+        "approaches.": [
+          90
+        ],
+        "Our": [
+          91
+        ],
+        "review": [
+          92
+        ],
+        "systematically": [
+          93
+        ],
+        "explores": [
+          94
+        ],
+        "landscape": [
+          96
+        ],
+        "drug": [
+          98,
+          129,
+          149
+        ],
+        "means": [
+          102
+        ],
+        "enhance": [
+          104
+        ],
+        "LSDs": [
+          105
+        ],
+        "therapies.": [
+          106
+        ],
+        "The": [
+          107
+        ],
+        "findings": [
+          108
+        ],
+        "advocate": [
+          109
+        ],
+        "strategic": [
+          112
+        ],
+        "accentuating": [
+          116
+        ],
+        "its": [
+          117
+        ],
+        "role": [
+          118
+        ],
+        "expediting": [
+          120
+        ],
+        "discovery": [
+          122,
+          138
+        ],
+        "effective": [
+          124
+        ],
+        "treatments.": [
+          125
+        ],
+        "conclude": [
+          127
+        ],
+        "that": [
+          128
+        ],
+        "represents": [
+          131
+        ],
+        "viable": [
+          133
+        ],
+        "pathway": [
+          134
+        ],
+        "accelerating": [
+          136
+        ],
+        "emphasizing": [
+          141
+        ],
+        "need": [
+          143
+        ],
+        "careful": [
+          146
+        ],
+        "evaluation": [
+          147
+        ],
+        "efficacy": [
+          150
+        ],
+        "toxicity": [
+          152
+        ],
+        "disease-specific": [
+          154
+        ],
+        "contexts.": [
+          155
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

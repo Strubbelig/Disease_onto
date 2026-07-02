@@ -1,0 +1,6554 @@
+{
+  "meta": {
+    "count": 12,
+    "db_response_time_ms": 37,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Epilepsy Ontology EPILONT ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Epilepsy Ontology EPILONT ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Epilepsy Ontology EPILONT ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4353112603",
+      "doi": "https://doi.org/10.1093/bioadv/vbad033",
+      "title": "The Epilepsy Ontology: a community-based ontology tailored for semantic interoperability and text mining",
+      "display_name": "The Epilepsy Ontology: a community-based ontology tailored for semantic interoperability and text mining",
+      "relevance_score": 124.08654,
+      "publication_year": 2023,
+      "publication_date": "2023-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4353112603",
+        "doi": "https://doi.org/10.1093/bioadv/vbad033",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/37016683"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1093/bioadv/vbad033",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/bioadv/vbad033",
+        "pdf_url": "https://academic.oup.com/bioinformaticsadvances/article-pdf/3/1/vbad033/49726925/vbad033.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210234069",
+          "display_name": "Bioinformatics Advances",
+          "issn_l": "2635-0041",
+          "issn": [
+            "2635-0041"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311648",
+            "https://openalex.org/P4310311647"
+          ],
+          "host_organization_lineage_names": [
+            "Oxford University Press",
+            "University of Oxford"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Bioinformatics Advances",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://academic.oup.com/bioinformaticsadvances/article-pdf/3/1/vbad033/49726925/vbad033.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5010974805",
+            "display_name": "Astghik Sargsyan",
+            "orcid": "https://orcid.org/0000-0002-5860-6369"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210164149",
+              "display_name": "Bonn Aachen International Center for Information Technology",
+              "ror": "https://ror.org/054zhq066",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I135140700",
+                "https://openalex.org/I155417937",
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Astghik Sargsyan",
+          "raw_affiliation_strings": [
+            "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn , 53113 Bonn, Germany",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5860-6369",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn , 53113 Bonn, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061101746",
+            "display_name": "Philipp Wegner",
+            "orcid": "https://orcid.org/0000-0003-1159-9269"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Philipp Wegner",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1159-9269",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5036639166",
+            "display_name": "Stephan Gebel",
+            "orcid": "https://orcid.org/0000-0001-5086-8324"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stephan Gebel",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5003787674",
+            "display_name": "Abish Kaladharan",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Abish Kaladharan",
+          "raw_affiliation_strings": [
+            "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5067531408",
+            "display_name": "Priya Sethumadhavan",
+            "orcid": "https://orcid.org/0000-0002-4983-6728"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Priya Sethumadhavan",
+          "raw_affiliation_strings": [
+            "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5078369553",
+            "display_name": "Vanessa Lage‐Rupprecht",
+            "orcid": "https://orcid.org/0000-0003-1374-8184"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vanessa Lage-Rupprecht",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5077603419",
+            "display_name": "Johannes Darms",
+            "orcid": "https://orcid.org/0000-0001-5809-2276"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Johannes Darms",
+          "raw_affiliation_strings": [
+            "German National Library of Medicine (ZB MED)—Information Centre for Life Sciences , 53115 Bonn, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5809-2276",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "German National Library of Medicine (ZB MED)—Information Centre for Life Sciences , 53115 Bonn, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5091508214",
+            "display_name": "Bruce Schultz",
+            "orcid": "https://orcid.org/0000-0003-4492-9463"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bruce Schultz",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085915066",
+            "display_name": "Jürgen Klein",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jürgen Klein",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016675379",
+            "display_name": "Marc Jacobs",
+            "orcid": "https://orcid.org/0000-0003-4153-3930"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marc Jacobs",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4153-3930",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090087547",
+            "display_name": "Sumit Madan",
+            "orcid": "https://orcid.org/0000-0001-9970-4144"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sumit Madan",
+          "raw_affiliation_strings": [
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9970-4144",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5003139478",
+            "display_name": "Martin Hofmann‐Apitius",
+            "orcid": "https://orcid.org/0000-0001-9012-6720"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210164149",
+              "display_name": "Bonn Aachen International Center for Information Technology",
+              "ror": "https://ror.org/054zhq066",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I135140700",
+                "https://openalex.org/I155417937",
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martin Hofmann-Apitius",
+          "raw_affiliation_strings": [
+            "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn , 53113 Bonn, Germany",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9012-6720",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn , 53113 Bonn, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000031695",
+            "display_name": "Alpha Tom Kodamullil",
+            "orcid": "https://orcid.org/0000-0001-9896-3531"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Alpha Tom Kodamullil",
+          "raw_affiliation_strings": [
+            "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery , Cochin 683503, Kerala, India",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI) , 53754 Sankt Augustin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 13,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5000031695"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210098248"
+      ],
+      "apc_list": {
+        "value": 1765,
+        "currency": "GBP",
+        "value_usd": 2164
+      },
+      "apc_paid": {
+        "value": 1765,
+        "currency": "GBP",
+        "value_usd": 2164
+      },
+      "fwci": 0.7268,
+      "has_fulltext": true,
+      "cited_by_count": 5,
+      "citation_normalized_percentile": {
+        "value": 0.71339817,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 98
+      },
+      "biblio": {
+        "volume": "3",
+        "issue": "1",
+        "first_page": "vbad033",
+        "last_page": "vbad033"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.8640000224113464,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.8640000224113464,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.07440000027418137,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.006099999882280827,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.836848795413971
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.780007004737854
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7024678587913513
+        },
+        {
+          "id": "https://openalex.org/keywords/upper-ontology",
+          "display_name": "Upper ontology",
+          "score": 0.7008142471313477
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.6533258557319641
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.5278313755989075
+        },
+        {
+          "id": "https://openalex.org/keywords/owl-s",
+          "display_name": "OWL-S",
+          "score": 0.49781012535095215
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.45335379242897034
+        },
+        {
+          "id": "https://openalex.org/keywords/epilepsy",
+          "display_name": "Epilepsy",
+          "score": 0.4372844099998474
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-inference-layer",
+          "display_name": "Ontology Inference Layer",
+          "score": 0.4294310212135315
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.42195558547973633
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.3976311683654785
+        },
+        {
+          "id": "https://openalex.org/keywords/natural-language-processing",
+          "display_name": "Natural language processing",
+          "score": 0.3515506386756897
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.34453821182250977
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.2555050849914551
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.15264663100242615
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web-stack",
+          "display_name": "Semantic Web Stack",
+          "score": 0.12575209140777588
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.0750734806060791
+        },
+        {
+          "id": "https://openalex.org/keywords/neuroscience",
+          "display_name": "Neuroscience",
+          "score": 0.0592019259929657
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.047492027282714844
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.836848795413971
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.780007004737854
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7024678587913513
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.7008142471313477
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.6533258557319641
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.5278313755989075
+        },
+        {
+          "id": "https://openalex.org/C50382505",
+          "wikidata": "https://www.wikidata.org/wiki/Q2553356",
+          "display_name": "OWL-S",
+          "level": 4,
+          "score": 0.49781012535095215
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.45335379242897034
+        },
+        {
+          "id": "https://openalex.org/C2778186239",
+          "wikidata": "https://www.wikidata.org/wiki/Q41571",
+          "display_name": "Epilepsy",
+          "level": 2,
+          "score": 0.4372844099998474
+        },
+        {
+          "id": "https://openalex.org/C115408247",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882789",
+          "display_name": "Ontology Inference Layer",
+          "level": 5,
+          "score": 0.4294310212135315
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.42195558547973633
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3976311683654785
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3515506386756897
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.34453821182250977
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.2555050849914551
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.15264663100242615
+        },
+        {
+          "id": "https://openalex.org/C167379230",
+          "wikidata": "https://www.wikidata.org/wiki/Q1026884",
+          "display_name": "Semantic Web Stack",
+          "level": 3,
+          "score": 0.12575209140777588
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0750734806060791
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0592019259929657
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.047492027282714844
+        }
+      ],
+      "mesh": [],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1093/bioadv/vbad033",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1093/bioadv/vbad033",
+          "pdf_url": "https://academic.oup.com/bioinformaticsadvances/article-pdf/3/1/vbad033/49726925/vbad033.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210234069",
+            "display_name": "Bioinformatics Advances",
+            "issn_l": "2635-0041",
+            "issn": [
+              "2635-0041"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Bioinformatics Advances",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:37016683",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37016683",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Bioinformatics advances",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:10067149",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10067149",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10067149/pdf/vbad033.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Bioinform Adv",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:publica.fraunhofer.de:publica/450463",
+          "is_oa": false,
+          "landing_page_url": "https://publica.fraunhofer.de/handle/publica/450463",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400318",
+            "display_name": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4923324",
+            "host_organization_name": "Fraunhofer-Gesellschaft",
+            "host_organization_lineage": [
+              "https://openalex.org/I4923324"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "journal article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1093/bioadv/vbad033",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/bioadv/vbad033",
+        "pdf_url": "https://academic.oup.com/bioinformaticsadvances/article-pdf/3/1/vbad033/49726925/vbad033.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210234069",
+          "display_name": "Bioinformatics Advances",
+          "issn_l": "2635-0041",
+          "issn": [
+            "2635-0041"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311648",
+            "https://openalex.org/P4310311647"
+          ],
+          "host_organization_lineage_names": [
+            "Oxford University Press",
+            "University of Oxford"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Bioinformatics Advances",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/17",
+          "display_name": "Partnerships for the goals",
+          "score": 0.5
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G6607577419",
+          "display_name": null,
+          "funder_award_id": "785907",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4353112603.pdf"
+      },
+      "referenced_works_count": 6,
+      "referenced_works": [
+        "https://openalex.org/W1978437325",
+        "https://openalex.org/W2073176530",
+        "https://openalex.org/W2104542816",
+        "https://openalex.org/W2560211232",
+        "https://openalex.org/W2790731199",
+        "https://openalex.org/W3097589154"
+      ],
+      "related_works": [
+        "https://openalex.org/W2130691104",
+        "https://openalex.org/W2401469280",
+        "https://openalex.org/W2072752921",
+        "https://openalex.org/W2139874817",
+        "https://openalex.org/W2369088979",
+        "https://openalex.org/W1988347054",
+        "https://openalex.org/W2742693795",
+        "https://openalex.org/W184491905",
+        "https://openalex.org/W2408049303",
+        "https://openalex.org/W2185688944"
+      ],
+      "abstract_inverted_index": {
+        "Motivation:": [
+          0
+        ],
+        "Epilepsy": [
+          1,
+          76,
+          117
+        ],
+        "is": [
+          2,
+          33,
+          55,
+          60,
+          79,
+          148,
+          169,
+          183,
+          196
+        ],
+        "a": [
+          3,
+          9,
+          52,
+          173,
+          184
+        ],
+        "multifaceted": [
+          4
+        ],
+        "complex": [
+          5,
+          192
+        ],
+        "disorder": [
+          6
+        ],
+        "that": [
+          7
+        ],
+        "requires": [
+          8
+        ],
+        "precise": [
+          10
+        ],
+        "understanding": [
+          11
+        ],
+        "of": [
+          12,
+          82,
+          88,
+          128,
+          144,
+          166,
+          190
+        ],
+        "the": [
+          13,
+          71,
+          112,
+          167,
+          191
+        ],
+        "classification,": [
+          14,
+          119
+        ],
+        "diagnosis,": [
+          15
+        ],
+        "treatment": [
+          16
+        ],
+        "and": [
+          17,
+          30,
+          42,
+          97,
+          100,
+          107,
+          122,
+          131,
+          156,
+          161,
+          178,
+          182
+        ],
+        "disease": [
+          18
+        ],
+        "mechanism": [
+          19
+        ],
+        "governing": [
+          20
+        ],
+        "it.": [
+          21
+        ],
+        "Although": [
+          22
+        ],
+        "scattered": [
+          23
+        ],
+        "resources": [
+          24
+        ],
+        "are": [
+          25,
+          109
+        ],
+        "available": [
+          26,
+          171
+        ],
+        "on": [
+          27,
+          85
+        ],
+        "epilepsy,": [
+          28,
+          89
+        ],
+        "comprehensive": [
+          29
+        ],
+        "structured": [
+          31,
+          83
+        ],
+        "knowledge": [
+          32,
+          40,
+          84
+        ],
+        "missing.": [
+          34
+        ],
+        "In": [
+          35
+        ],
+        "contemplation": [
+          36
+        ],
+        "to": [
+          37,
+          62,
+          92,
+          150
+        ],
+        "promote": [
+          38
+        ],
+        "multidisciplinary": [
+          39
+        ],
+        "exchange": [
+          41
+        ],
+        "facilitate": [
+          43
+        ],
+        "advancement": [
+          44
+        ],
+        "in": [
+          45,
+          49,
+          70,
+          199
+        ],
+        "clinical": [
+          46
+        ],
+        "management,": [
+          47
+        ],
+        "especially": [
+          48
+        ],
+        "pre-clinical": [
+          50
+        ],
+        "research,": [
+          51
+        ],
+        "disease-specific": [
+          53
+        ],
+        "ontology": [
+          54,
+          59,
+          126,
+          147,
+          168,
+          195
+        ],
+        "necessary.": [
+          56
+        ],
+        "The": [
+          57,
+          75,
+          163,
+          194
+        ],
+        "presented": [
+          58
+        ],
+        "designed": [
+          61
+        ],
+        "enable": [
+          63
+        ],
+        "better": [
+          64
+        ],
+        "interconnection": [
+          65
+        ],
+        "between": [
+          66
+        ],
+        "scientific": [
+          67,
+          123
+        ],
+        "community": [
+          68
+        ],
+        "members": [
+          69
+        ],
+        "epilepsy": [
+          72
+        ],
+        "domain.": [
+          73
+        ],
+        "Results:": [
+          74
+        ],
+        "Ontology": [
+          77,
+          95,
+          102
+        ],
+        "(EPIO)": [
+          78
+        ],
+        "an": [
+          80
+        ],
+        "assembly": [
+          81
+        ],
+        "various": [
+          86,
+          188
+        ],
+        "aspects": [
+          87,
+          143
+        ],
+        "developed": [
+          90
+        ],
+        "according": [
+          91
+        ],
+        "Basic": [
+          93
+        ],
+        "Formal": [
+          94
+        ],
+        "(BFO)": [
+          96
+        ],
+        "Open": [
+          98
+        ],
+        "Biological": [
+          99
+        ],
+        "Biomedical": [
+          101
+        ],
+        "(OBO)": [
+          103
+        ],
+        "Foundry": [
+          104
+        ],
+        "principles.": [
+          105
+        ],
+        "Concepts": [
+          106
+        ],
+        "definitions": [
+          108
+        ],
+        "collected": [
+          110
+        ],
+        "from": [
+          111,
+          141
+        ],
+        "latest": [
+          113
+        ],
+        "International": [
+          114
+        ],
+        "League": [
+          115
+        ],
+        "against": [
+          116
+        ],
+        "(ILAE)": [
+          118
+        ],
+        "domain-specific": [
+          120
+        ],
+        "ontologies": [
+          121
+        ],
+        "literature.": [
+          124
+        ],
+        "This": [
+          125,
+          146
+        ],
+        "consists": [
+          127
+        ],
+        "1879": [
+          129
+        ],
+        "classes": [
+          130
+        ],
+        "28": [
+          132
+        ],
+        "151": [
+          133
+        ],
+        "axioms": [
+          134
+        ],
+        "(2171": [
+          135
+        ],
+        "declaration": [
+          136
+        ],
+        "axioms,": [
+          137
+        ],
+        "2219": [
+          138
+        ],
+        "logical": [
+          139
+        ],
+        "axioms)": [
+          140
+        ],
+        "several": [
+          142
+        ],
+        "epilepsy.": [
+          145
+        ],
+        "intended": [
+          149
+        ],
+        "be": [
+          151
+        ],
+        "used": [
+          152
+        ],
+        "for": [
+          153
+        ],
+        "data": [
+          154
+        ],
+        "management": [
+          155
+        ],
+        "text": [
+          157
+        ],
+        "mining": [
+          158
+        ],
+        "purposes.": [
+          159
+        ],
+        "Availability": [
+          160
+        ],
+        "implementation:": [
+          162
+        ],
+        "current": [
+          164
+        ],
+        "release": [
+          165
+        ],
+        "publicly": [
+          170
+        ],
+        "under": [
+          172
+        ],
+        "Creative": [
+          174
+        ],
+        "Commons": [
+          175
+        ],
+        "4.0": [
+          176
+        ],
+        "License": [
+          177
+        ],
+        "shared": [
+          179
+        ],
+        "via": [
+          180
+        ],
+        "http://purl.obolibrary.org/obo/epso.owl": [
+          181
+        ],
+        "community-based": [
+          185
+        ],
+        "effort": [
+          186
+        ],
+        "assembling": [
+          187
+        ],
+        "facets": [
+          189
+        ],
+        "disease.": [
+          193
+        ],
+        "also": [
+          197
+        ],
+        "deposited": [
+          198
+        ],
+        "BioPortal": [
+          200
+        ],
+        "at": [
+          201
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPIO.": [
+          202
+        ],
+        "Supplementary": [
+          203
+        ],
+        "information:": [
+          204
+        ],
+        "online.": [
+          205
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-05-21T06:26:12.895304",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4207016767",
+      "doi": "https://doi.org/10.1186/s13326-021-00258-w",
+      "title": "Ontology-based identification and prioritization of candidate drugs for epilepsy from literature",
+      "display_name": "Ontology-based identification and prioritization of candidate drugs for epilepsy from literature",
+      "relevance_score": 112.99303,
+      "publication_year": 2022,
+      "publication_date": "2022-01-24",
+      "ids": {
+        "openalex": "https://openalex.org/W4207016767",
+        "doi": "https://doi.org/10.1186/s13326-021-00258-w",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/35073996"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s13326-021-00258-w",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-021-00258-w",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-021-00258-w",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "type": "review",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-021-00258-w",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015732254",
+            "display_name": "B. G. Müller",
+            "orcid": "https://orcid.org/0000-0003-3062-8192"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Bernd Müller",
+          "raw_affiliation_strings": [
+            "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany. bernd.mueller@zbmed.de",
+            "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany. bernd.mueller@zbmed.de",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            },
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053160264",
+            "display_name": "Leyla Jael Castro",
+            "orcid": "https://orcid.org/0000-0003-3986-0510"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Leyla Jael Castro",
+          "raw_affiliation_strings": [
+            "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5006224704",
+            "display_name": "Dietrich Rebholz‐Schuhmann",
+            "orcid": "https://orcid.org/0000-0002-1018-0370"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180923762",
+              "display_name": "University of Cologne",
+              "ror": "https://ror.org/00rcxh774",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180923762"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dietrich Rebholz-Schuhmann",
+          "raw_affiliation_strings": [
+            "University of Cologne, Albertus-Magnus-Platz, Cologne, 50923, Germany",
+            "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1018-0370",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Cologne, Albertus-Magnus-Platz, Cologne, 50923, Germany",
+              "institution_ids": [
+                "https://openalex.org/I180923762"
+              ]
+            },
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences, Gleueler Str. 60, Cologne, 50931, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5015732254"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210112663"
+      ],
+      "apc_list": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "apc_paid": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "fwci": 0.7612,
+      "has_fulltext": true,
+      "cited_by_count": 6,
+      "citation_normalized_percentile": {
+        "value": 0.72894334,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 97
+      },
+      "biblio": {
+        "volume": "13",
+        "issue": "1",
+        "first_page": "3",
+        "last_page": "3"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10211",
+        "display_name": "Computational Drug Discovery Methods",
+        "score": 0.9983999729156494,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1703",
+          "display_name": "Computational Theory and Mathematics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10211",
+          "display_name": "Computational Drug Discovery Methods",
+          "score": 0.9983999729156494,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1703",
+            "display_name": "Computational Theory and Mathematics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9973000288009644,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10887",
+          "display_name": "Bioinformatics and Genomic Networks",
+          "score": 0.9908000230789185,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.8257442712783813
+        },
+        {
+          "id": "https://openalex.org/keywords/prioritization",
+          "display_name": "Prioritization",
+          "score": 0.7737292051315308
+        },
+        {
+          "id": "https://openalex.org/keywords/identification",
+          "display_name": "Identification (biology)",
+          "score": 0.6951600313186646
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6919349431991577
+        },
+        {
+          "id": "https://openalex.org/keywords/epilepsy",
+          "display_name": "Epilepsy",
+          "score": 0.6146551370620728
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.5822776556015015
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.4541352391242981
+        },
+        {
+          "id": "https://openalex.org/keywords/data-mining",
+          "display_name": "Data mining",
+          "score": 0.3469861149787903
+        },
+        {
+          "id": "https://openalex.org/keywords/management-science",
+          "display_name": "Management science",
+          "score": 0.16132718324661255
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.15798091888427734
+        },
+        {
+          "id": "https://openalex.org/keywords/psychiatry",
+          "display_name": "Psychiatry",
+          "score": 0.08751687407493591
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.8257442712783813
+        },
+        {
+          "id": "https://openalex.org/C2777615720",
+          "wikidata": "https://www.wikidata.org/wiki/Q11888847",
+          "display_name": "Prioritization",
+          "level": 2,
+          "score": 0.7737292051315308
+        },
+        {
+          "id": "https://openalex.org/C116834253",
+          "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+          "display_name": "Identification (biology)",
+          "level": 2,
+          "score": 0.6951600313186646
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6919349431991577
+        },
+        {
+          "id": "https://openalex.org/C2778186239",
+          "wikidata": "https://www.wikidata.org/wiki/Q41571",
+          "display_name": "Epilepsy",
+          "level": 2,
+          "score": 0.6146551370620728
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.5822776556015015
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.4541352391242981
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.3469861149787903
+        },
+        {
+          "id": "https://openalex.org/C539667460",
+          "wikidata": "https://www.wikidata.org/wiki/Q2414942",
+          "display_name": "Management science",
+          "level": 1,
+          "score": 0.16132718324661255
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.15798091888427734
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.08751687407493591
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C59822182",
+          "wikidata": "https://www.wikidata.org/wiki/Q441",
+          "display_name": "Botany",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D004364",
+          "descriptor_name": "Pharmaceutical Preparations",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004364",
+          "descriptor_name": "Pharmaceutical Preparations",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004364",
+          "descriptor_name": "Pharmaceutical Preparations",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004827",
+          "descriptor_name": "Epilepsy",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004827",
+          "descriptor_name": "Epilepsy",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004827",
+          "descriptor_name": "Epilepsy",
+          "qualifier_ui": "Q000188",
+          "qualifier_name": "drug therapy",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057225",
+          "descriptor_name": "Data Mining",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057225",
+          "descriptor_name": "Data Mining",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057225",
+          "descriptor_name": "Data Mining",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058492",
+          "descriptor_name": "Drug Repositioning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1186/s13326-021-00258-w",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s13326-021-00258-w",
+          "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-021-00258-w",
+          "source": {
+            "id": "https://openalex.org/S172276550",
+            "display_name": "Journal of Biomedical Semantics",
+            "issn_l": "2041-1480",
+            "issn": [
+              "2041-1480"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Biomedical Semantics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:35073996",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35073996",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of biomedical semantics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:0b471a773bf14a618ce0d84da49f2fbf",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/0b471a773bf14a618ce0d84da49f2fbf",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Biomedical Semantics, Vol 13, Iss 1, Pp 1-18 (2022)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8785029",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8785029",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Biomed Semantics",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s13326-021-00258-w",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-021-00258-w",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-021-00258-w",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320337372",
+          "display_name": "U.S. National Library of Medicine",
+          "ror": "https://ror.org/0060t0j89"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4207016767.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4207016767.grobid-xml"
+      },
+      "referenced_works_count": 54,
+      "referenced_works": [
+        "https://openalex.org/W30760744",
+        "https://openalex.org/W128719466",
+        "https://openalex.org/W623917164",
+        "https://openalex.org/W1562176487",
+        "https://openalex.org/W1933028489",
+        "https://openalex.org/W1946056514",
+        "https://openalex.org/W1963912149",
+        "https://openalex.org/W1974537164",
+        "https://openalex.org/W1976304880",
+        "https://openalex.org/W1981208470",
+        "https://openalex.org/W1984761526",
+        "https://openalex.org/W2007609032",
+        "https://openalex.org/W2011726136",
+        "https://openalex.org/W2053310324",
+        "https://openalex.org/W2057368032",
+        "https://openalex.org/W2057804290",
+        "https://openalex.org/W2067096102",
+        "https://openalex.org/W2073176530",
+        "https://openalex.org/W2086134411",
+        "https://openalex.org/W2089177530",
+        "https://openalex.org/W2103931177",
+        "https://openalex.org/W2104542816",
+        "https://openalex.org/W2105516334",
+        "https://openalex.org/W2112946624",
+        "https://openalex.org/W2118258530",
+        "https://openalex.org/W2123106337",
+        "https://openalex.org/W2130410032",
+        "https://openalex.org/W2138548161",
+        "https://openalex.org/W2140792819",
+        "https://openalex.org/W2141243410",
+        "https://openalex.org/W2165276227",
+        "https://openalex.org/W2208994311",
+        "https://openalex.org/W2277647142",
+        "https://openalex.org/W2574149054",
+        "https://openalex.org/W2800882209",
+        "https://openalex.org/W2809156537",
+        "https://openalex.org/W2898321887",
+        "https://openalex.org/W2901527454",
+        "https://openalex.org/W2983166786",
+        "https://openalex.org/W2991359005",
+        "https://openalex.org/W3004982447",
+        "https://openalex.org/W3011402647",
+        "https://openalex.org/W3013158405",
+        "https://openalex.org/W3037874056",
+        "https://openalex.org/W3043498388",
+        "https://openalex.org/W3044296243",
+        "https://openalex.org/W3087811306",
+        "https://openalex.org/W3093194543",
+        "https://openalex.org/W4253608092",
+        "https://openalex.org/W4297458751",
+        "https://openalex.org/W4393614232",
+        "https://openalex.org/W4393842171",
+        "https://openalex.org/W6931445030",
+        "https://openalex.org/W6968538872"
+      ],
+      "related_works": [
+        "https://openalex.org/W2506292322",
+        "https://openalex.org/W4283209547",
+        "https://openalex.org/W4367627632",
+        "https://openalex.org/W2395385109",
+        "https://openalex.org/W2773633178",
+        "https://openalex.org/W2802335767",
+        "https://openalex.org/W2080101436",
+        "https://openalex.org/W4388090985",
+        "https://openalex.org/W2356350882",
+        "https://openalex.org/W2184980933"
+      ],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "Drug": [
+          1
+        ],
+        "repurposing": [
+          2,
+          204
+        ],
+        "can": [
+          3,
+          190
+        ],
+        "improve": [
+          4
+        ],
+        "the": [
+          5,
+          40,
+          43,
+          82,
+          116,
+          146,
+          150,
+          154,
+          162,
+          166,
+          197,
+          206,
+          213,
+          237,
+          245
+        ],
+        "return": [
+          6
+        ],
+        "of": [
+          7,
+          42,
+          65,
+          73,
+          79,
+          91,
+          111,
+          118,
+          161,
+          168,
+          176,
+          199,
+          208,
+          212,
+          232
+        ],
+        "investment": [
+          8
+        ],
+        "as": [
+          9,
+          226
+        ],
+        "it": [
+          10,
+          31,
+          227
+        ],
+        "finds": [
+          11
+        ],
+        "new": [
+          12
+        ],
+        "uses": [
+          13
+        ],
+        "for": [
+          14,
+          115,
+          196,
+          202
+        ],
+        "existing": [
+          15
+        ],
+        "drugs.": [
+          16
+        ],
+        "Literature-based": [
+          17
+        ],
+        "analyses": [
+          18
+        ],
+        "exploit": [
+          19
+        ],
+        "factual": [
+          20
+        ],
+        "knowledge": [
+          21
+        ],
+        "on": [
+          22,
+          47
+        ],
+        "drugs": [
+          23
+        ],
+        "and": [
+          24,
+          29,
+          59,
+          138,
+          149,
+          223
+        ],
+        "diseases,": [
+          25
+        ],
+        "e.g.": [
+          26
+        ],
+        "from": [
+          27,
+          34,
+          81,
+          84
+        ],
+        "databases,": [
+          28
+        ],
+        "combine": [
+          30
+        ],
+        "with": [
+          32,
+          96,
+          193
+        ],
+        "information": [
+          33
+        ],
+        "scholarly": [
+          35
+        ],
+        "publications.": [
+          36
+        ],
+        "Here": [
+          37
+        ],
+        "we": [
+          38,
+          87,
+          103,
+          121
+        ],
+        "report": [
+          39
+        ],
+        "use": [
+          41,
+          64
+        ],
+        "Open": [
+          44
+        ],
+        "Discovery": [
+          45
+        ],
+        "Process": [
+          46
+        ],
+        "scientific": [
+          48,
+          238
+        ],
+        "literature": [
+          49
+        ],
+        "to": [
+          50,
+          76,
+          217,
+          221,
+          224,
+          241
+        ],
+        "identify": [
+          51
+        ],
+        "non-explicit": [
+          52
+        ],
+        "ties": [
+          53
+        ],
+        "between": [
+          54
+        ],
+        "a": [
+          55,
+          105,
+          123,
+          129,
+          171,
+          186,
+          229
+        ],
+        "disease,": [
+          56
+        ],
+        "namely": [
+          57
+        ],
+        "epilepsy,": [
+          58,
+          169
+        ],
+        "known": [
+          60
+        ],
+        "drugs,": [
+          61
+        ],
+        "making": [
+          62
+        ],
+        "full": [
+          63
+        ],
+        "available": [
+          66
+        ],
+        "epilepsy-specific": [
+          67,
+          74
+        ],
+        "ontologies.": [
+          68
+        ],
+        "RESULTS:": [
+          69
+        ],
+        "We": [
+          70,
+          156
+        ],
+        "identified": [
+          71
+        ],
+        "characteristics": [
+          72
+        ],
+        "ontologies": [
+          75,
+          184
+        ],
+        "create": [
+          77
+        ],
+        "subsets": [
+          78,
+          86
+        ],
+        "documents": [
+          80
+        ],
+        "literature;": [
+          83
+        ],
+        "these": [
+          85,
+          100
+        ],
+        "generated": [
+          88
+        ],
+        "ranked": [
+          89,
+          101,
+          141,
+          174
+        ],
+        "lists": [
+          90,
+          110,
+          142
+        ],
+        "co-occurring": [
+          92
+        ],
+        "neurological": [
+          93
+        ],
+        "drug": [
+          94,
+          124,
+          180,
+          200,
+          203,
+          214,
+          246
+        ],
+        "names": [
+          95,
+          201,
+          215
+        ],
+        "varying": [
+          97,
+          147
+        ],
+        "specificity.": [
+          98
+        ],
+        "From": [
+          99
+        ],
+        "lists,": [
+          102
+        ],
+        "observed": [
+          104
+        ],
+        "high": [
+          106
+        ],
+        "intersection": [
+          107
+        ],
+        "regarding": [
+          108
+        ],
+        "reference": [
+          109
+        ],
+        "pharmaceutical": [
+          112,
+          163
+        ],
+        "compounds": [
+          113
+        ],
+        "recommended": [
+          114
+        ],
+        "treatment": [
+          117
+        ],
+        "epilepsy.": [
+          119,
+          209
+        ],
+        "Furthermore,": [
+          120
+        ],
+        "performed": [
+          122
+        ],
+        "set": [
+          125
+        ],
+        "enrichment": [
+          126
+        ],
+        "analysis,": [
+          127
+        ],
+        "i.e.": [
+          128
+        ],
+        "novel": [
+          130
+        ],
+        "scoring": [
+          131
+        ],
+        "function": [
+          132
+        ],
+        "using": [
+          133
+        ],
+        "an": [
+          134,
+          159
+        ],
+        "adaptive": [
+          135
+        ],
+        "tuning": [
+          136
+        ],
+        "parameter": [
+          137
+        ],
+        "comparing": [
+          139
+        ],
+        "top-k": [
+          140
+        ],
+        "taking": [
+          143
+        ],
+        "into": [
+          144
+        ],
+        "account": [
+          145
+        ],
+        "length": [
+          148
+        ],
+        "current": [
+          151
+        ],
+        "position": [
+          152
+        ],
+        "in": [
+          153,
+          165,
+          205,
+          236,
+          244
+        ],
+        "list.": [
+          155
+        ],
+        "also": [
+          157
+        ],
+        "provide": [
+          158
+        ],
+        "overview": [
+          160
+        ],
+        "space": [
+          164
+        ],
+        "context": [
+          167
+        ],
+        "including": [
+          170
+        ],
+        "final": [
+          172
+        ],
+        "combined": [
+          173,
+          192
+        ],
+        "list": [
+          175
+        ],
+        "more": [
+          177
+        ],
+        "than": [
+          178
+        ],
+        "70": [
+          179
+        ],
+        "names.": [
+          181
+        ],
+        "CONCLUSIONS:": [
+          182
+        ],
+        "Biomedical": [
+          183
+        ],
+        "are": [
+          185
+        ],
+        "rich": [
+          187
+        ],
+        "resource": [
+          188
+        ],
+        "that": [
+          189
+        ],
+        "be": [
+          191
+        ],
+        "text": [
+          194
+        ],
+        "mining": [
+          195
+        ],
+        "identification": [
+          198
+        ],
+        "domain": [
+          207
+        ],
+        "The": [
+          210
+        ],
+        "ranking": [
+          211
+        ],
+        "related": [
+          216
+        ],
+        "epilepsy": [
+          218
+        ],
+        "provides": [
+          219
+        ],
+        "benefits": [
+          220
+        ],
+        "patients": [
+          222
+        ],
+        "researchers": [
+          225
+        ],
+        "enables": [
+          228
+        ],
+        "quick": [
+          230
+        ],
+        "evaluation": [
+          231
+        ],
+        "statistical": [
+          233
+        ],
+        "evidence": [
+          234
+        ],
+        "hidden": [
+          235
+        ],
+        "literature,": [
+          239
+        ],
+        "useful": [
+          240
+        ],
+        "validate": [
+          242
+        ],
+        "approaches": [
+          243
+        ],
+        "discovery": [
+          247
+        ],
+        "process.": [
+          248
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-25T06:16:34.145877",
+      "created_date": "2022-01-26T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4205605356",
+      "doi": "https://doi.org/10.21203/rs.3.rs-1259791/v1",
+      "title": "The Epilepsy Ontology: a community-based ontology tailored for semantic interoperability and text-mining",
+      "display_name": "The Epilepsy Ontology: a community-based ontology tailored for semantic interoperability and text-mining",
+      "relevance_score": 93.13891,
+      "publication_year": 2022,
+      "publication_date": "2022-01-14",
+      "ids": {
+        "openalex": "https://openalex.org/W4205605356",
+        "doi": "https://doi.org/10.21203/rs.3.rs-1259791/v1"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.21203/rs.3.rs-1259791/v1",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21203/rs.3.rs-1259791/v1",
+        "pdf_url": "https://www.researchsquare.com/article/rs-1259791/latest.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306525896",
+          "display_name": "Research Square",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "Research Square",
+        "raw_type": "posted-content"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.researchsquare.com/article/rs-1259791/latest.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5010974805",
+            "display_name": "Astghik Sargsyan",
+            "orcid": "https://orcid.org/0000-0002-5860-6369"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210164149",
+              "display_name": "Bonn Aachen International Center for Information Technology",
+              "ror": "https://ror.org/054zhq066",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I135140700",
+                "https://openalex.org/I155417937",
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Astghik Sargsyan",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn, 53113 Bonn, Germany,",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5860-6369",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn, 53113 Bonn, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061101746",
+            "display_name": "Philipp Wegner",
+            "orcid": "https://orcid.org/0000-0003-1159-9269"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Philipp Wegner",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1159-9269",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5036639166",
+            "display_name": "Stephan Gebel",
+            "orcid": "https://orcid.org/0000-0001-5086-8324"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stephan Gebel",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5086-8324",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5074297744",
+            "display_name": "Shounak Baksi",
+            "orcid": "https://orcid.org/0000-0001-7225-5377"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Shounak Baksi",
+          "raw_affiliation_strings": [
+            "Causality Biomodels",
+            "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery, Cochin, Kerala 683503, India,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7225-5377",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Causality Biomodels",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery, Cochin, Kerala 683503, India,",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030445051",
+            "display_name": "Geena Mariya Jose",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I285663978",
+              "display_name": "Weatherford College",
+              "ror": "https://ror.org/02xwsbr93",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I285663978"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Geena Mariya Jose",
+          "raw_affiliation_strings": [
+            "Causality Biomodels",
+            ".org/0000-0001-7775-6576",
+            "University Hospital CHUV",
+            "Fraunhofer SCAI",
+            "Institute of Computer Science, University of Bonn, 53115 Bonn, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Causality Biomodels",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": ".org/0000-0001-7775-6576",
+              "institution_ids": [
+                "https://openalex.org/I285663978"
+              ]
+            },
+            {
+              "raw_affiliation_string": "University Hospital CHUV",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Computer Science, University of Bonn, 53115 Bonn, Germany",
+              "institution_ids": [
+                "https://openalex.org/I135140700"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113978382",
+            "display_name": "Vanessa Lange-Rupprecht",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I285663978",
+              "display_name": "Weatherford College",
+              "ror": "https://ror.org/02xwsbr93",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I285663978"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vanessa Lange-Rupprecht",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "University Hospital CHUV",
+            "Institute of Computer Science, University of Bonn, 53115 Bonn, Germany",
+            ".org/0000-0001-7775-6576"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1374-8184",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "University Hospital CHUV",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Institute of Computer Science, University of Bonn, 53115 Bonn, Germany",
+              "institution_ids": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "raw_affiliation_string": ".org/0000-0001-7775-6576",
+              "institution_ids": [
+                "https://openalex.org/I285663978"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5077603419",
+            "display_name": "Johannes Darms",
+            "orcid": "https://orcid.org/0000-0001-5809-2276"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Johannes Darms",
+          "raw_affiliation_strings": [
+            "ZB Med",
+            "German National Library of Medicine (ZBMED) -Information Centre for Life Sciences, 53115 Bonn, Germany,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ZB Med",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            },
+            {
+              "raw_affiliation_string": "German National Library of Medicine (ZBMED) -Information Centre for Life Sciences, 53115 Bonn, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5091508214",
+            "display_name": "Bruce Schultz",
+            "orcid": "https://orcid.org/0000-0003-4492-9463"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bruce Schultz",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4492-9463",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085915066",
+            "display_name": "Jürgen Klein",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jürgen Klein",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016675379",
+            "display_name": "Marc Jacobs",
+            "orcid": "https://orcid.org/0000-0003-4153-3930"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marc Jacobs",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4153-3930",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5023594320",
+            "display_name": "Philippe Ryvlin",
+            "orcid": "https://orcid.org/0000-0001-7775-6576"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802229882",
+              "display_name": "University Hospital of Lausanne",
+              "ror": "https://ror.org/05a353079",
+              "country_code": "CH",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2802229882"
+              ]
+            }
+          ],
+          "countries": [
+            "CH"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Philippe Ryvlin",
+          "raw_affiliation_strings": [
+            "University Hospital CHUV",
+            "Department of Neurology and Acute Neurorehabilitation Unit, University Hospital CHUV, Lausanne, Switzerland",
+            "Department of Clinical Neurosciences, University Hospital CHUV, Lausanne, Switzerland,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7775-6576",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University Hospital CHUV",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Department of Neurology and Acute Neurorehabilitation Unit, University Hospital CHUV, Lausanne, Switzerland",
+              "institution_ids": [
+                "https://openalex.org/I2802229882"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical Neurosciences, University Hospital CHUV, Lausanne, Switzerland,",
+              "institution_ids": [
+                "https://openalex.org/I2802229882"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090087547",
+            "display_name": "Sumit Madan",
+            "orcid": "https://orcid.org/0000-0001-9970-4144"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sumit Madan",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5003139478",
+            "display_name": "Martin Hofmann‐Apitius",
+            "orcid": "https://orcid.org/0000-0001-9012-6720"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135140700",
+              "display_name": "University of Bonn",
+              "ror": "https://ror.org/041nas322",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135140700"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210164149",
+              "display_name": "Bonn Aachen International Center for Information Technology",
+              "ror": "https://ror.org/054zhq066",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I135140700",
+                "https://openalex.org/I155417937",
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martin Hofmann-Apitius",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+            "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn, 53113 Bonn, Germany,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9012-6720",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Bonn-Aachen International Center for Information Technology (B-IT), University of Bonn, 53113 Bonn, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210164149",
+                "https://openalex.org/I135140700"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000031695",
+            "display_name": "Alpha Tom Kodamullil",
+            "orcid": "https://orcid.org/0000-0001-9896-3531"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210098248",
+              "display_name": "Fraunhofer Institute for Algorithms and Scientific Computing",
+              "ror": "https://ror.org/00trw9c49",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210098248",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Alpha Tom Kodamullil",
+          "raw_affiliation_strings": [
+            "Fraunhofer SCAI",
+            "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+            "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery, Cochin, Kerala 683503, India,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9896-3531",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer SCAI",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientific Computing (SCAI), 53754 Sankt Augustin, Germany,",
+              "institution_ids": [
+                "https://openalex.org/I4210098248"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Causality Biomodels, Kinfra Hi-Tech Park, Kalamassery, Cochin, Kerala 683503, India,",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 14,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5000031695"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210098248"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9843999743461609,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10028",
+          "display_name": "Topic Modeling",
+          "score": 0.9786999821662903,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.8259886503219604
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7327141761779785
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.7057071924209595
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-interoperability",
+          "display_name": "Semantic interoperability",
+          "score": 0.669475793838501
+        },
+        {
+          "id": "https://openalex.org/keywords/upper-ontology",
+          "display_name": "Upper ontology",
+          "score": 0.6637385487556458
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.5256845951080322
+        },
+        {
+          "id": "https://openalex.org/keywords/owl-s",
+          "display_name": "OWL-S",
+          "score": 0.47812286019325256
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.41930609941482544
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-inference-layer",
+          "display_name": "Ontology Inference Layer",
+          "score": 0.41839659214019775
+        },
+        {
+          "id": "https://openalex.org/keywords/open-biomedical-ontologies",
+          "display_name": "Open Biomedical Ontologies",
+          "score": 0.41150805354118347
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.39568817615509033
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.37562060356140137
+        },
+        {
+          "id": "https://openalex.org/keywords/suggested-upper-merged-ontology",
+          "display_name": "Suggested Upper Merged Ontology",
+          "score": 0.3182668089866638
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.2822844982147217
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web-stack",
+          "display_name": "Semantic Web Stack",
+          "score": 0.18608349561691284
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.8259886503219604
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7327141761779785
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.7057071924209595
+        },
+        {
+          "id": "https://openalex.org/C192800085",
+          "wikidata": "https://www.wikidata.org/wiki/Q5258530",
+          "display_name": "Semantic interoperability",
+          "level": 3,
+          "score": 0.669475793838501
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.6637385487556458
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.5256845951080322
+        },
+        {
+          "id": "https://openalex.org/C50382505",
+          "wikidata": "https://www.wikidata.org/wiki/Q2553356",
+          "display_name": "OWL-S",
+          "level": 4,
+          "score": 0.47812286019325256
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.41930609941482544
+        },
+        {
+          "id": "https://openalex.org/C115408247",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882789",
+          "display_name": "Ontology Inference Layer",
+          "level": 5,
+          "score": 0.41839659214019775
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.41150805354118347
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.39568817615509033
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.37562060356140137
+        },
+        {
+          "id": "https://openalex.org/C50971890",
+          "wikidata": "https://www.wikidata.org/wiki/Q7635093",
+          "display_name": "Suggested Upper Merged Ontology",
+          "level": 4,
+          "score": 0.3182668089866638
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.2822844982147217
+        },
+        {
+          "id": "https://openalex.org/C167379230",
+          "wikidata": "https://www.wikidata.org/wiki/Q1026884",
+          "display_name": "Semantic Web Stack",
+          "level": 3,
+          "score": 0.18608349561691284
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.21203/rs.3.rs-1259791/v1",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.21203/rs.3.rs-1259791/v1",
+          "pdf_url": "https://www.researchsquare.com/article/rs-1259791/latest.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306525896",
+            "display_name": "Research Square",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "Research Square",
+          "raw_type": "posted-content"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.21203/rs.3.rs-1259791/v1",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21203/rs.3.rs-1259791/v1",
+        "pdf_url": "https://www.researchsquare.com/article/rs-1259791/latest.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306525896",
+          "display_name": "Research Square",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": "Research Square",
+        "raw_type": "posted-content"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G6607577419",
+          "display_name": null,
+          "funder_award_id": "785907",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4205605356.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4205605356.grobid-xml"
+      },
+      "referenced_works_count": 5,
+      "referenced_works": [
+        "https://openalex.org/W1978437325",
+        "https://openalex.org/W2104542816",
+        "https://openalex.org/W2560211232",
+        "https://openalex.org/W2790731199",
+        "https://openalex.org/W3097589154"
+      ],
+      "related_works": [
+        "https://openalex.org/W2130691104",
+        "https://openalex.org/W2401469280",
+        "https://openalex.org/W2072752921",
+        "https://openalex.org/W2394747331",
+        "https://openalex.org/W2369088979",
+        "https://openalex.org/W2084805105",
+        "https://openalex.org/W2742693795",
+        "https://openalex.org/W2185688944",
+        "https://openalex.org/W2395396051",
+        "https://openalex.org/W2074013882"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-05-21T06:26:12.895304",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4393614232",
+      "doi": "https://doi.org/10.5281/zenodo.4683353",
+      "title": "UIMA ConceptMapper Dictionaries for the Annotation of the 2021 BioASQ Corpus with Drug Names and Terms from Epilepsy Ontologies",
+      "display_name": "UIMA ConceptMapper Dictionaries for the Annotation of the 2021 BioASQ Corpus with Drug Names and Terms from Epilepsy Ontologies",
+      "relevance_score": 91.46701,
+      "publication_year": 2021,
+      "publication_date": "2021-04-13",
+      "ids": {
+        "openalex": "https://openalex.org/W4393614232",
+        "doi": "https://doi.org/10.5281/zenodo.4683353"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:zenodo.org:4683353",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/4683353",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/record/4683353",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015732254",
+            "display_name": "B. G. Müller",
+            "orcid": "https://orcid.org/0000-0003-3062-8192"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Müller, Bernd",
+          "raw_affiliation_strings": [
+            "ZB MED - Information Centre for Life Sciences"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3062-8192",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5015732254"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210112663"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 1,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9988999962806702,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9988999962806702,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9944000244140625,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13083",
+          "display_name": "Advanced Text Analysis Techniques",
+          "score": 0.9847000241279602,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/annotation",
+          "display_name": "Annotation",
+          "score": 0.8083474636077881
+        },
+        {
+          "id": "https://openalex.org/keywords/natural-language-processing",
+          "display_name": "Natural language processing",
+          "score": 0.649786114692688
+        },
+        {
+          "id": "https://openalex.org/keywords/epilepsy",
+          "display_name": "Epilepsy",
+          "score": 0.5807698369026184
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.5309516787528992
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.52142333984375
+        },
+        {
+          "id": "https://openalex.org/keywords/linguistics",
+          "display_name": "Linguistics",
+          "score": 0.39588868618011475
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.20267611742019653
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.14291727542877197
+        },
+        {
+          "id": "https://openalex.org/keywords/neuroscience",
+          "display_name": "Neuroscience",
+          "score": 0.0808539092540741
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776321320",
+          "wikidata": "https://www.wikidata.org/wiki/Q857525",
+          "display_name": "Annotation",
+          "level": 2,
+          "score": 0.8083474636077881
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.649786114692688
+        },
+        {
+          "id": "https://openalex.org/C2778186239",
+          "wikidata": "https://www.wikidata.org/wiki/Q41571",
+          "display_name": "Epilepsy",
+          "level": 2,
+          "score": 0.5807698369026184
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5309516787528992
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.52142333984375
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.39588868618011475
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.20267611742019653
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.14291727542877197
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0808539092540741
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "pmh:oai:zenodo.org:4683353",
+          "is_oa": true,
+          "landing_page_url": "https://zenodo.org/record/4683353",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "dataset"
+        },
+        {
+          "id": "doi:10.5281/zenodo.4683353",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.4683353",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:zenodo.org:4683353",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/4683353",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2361861616",
+        "https://openalex.org/W2263699433",
+        "https://openalex.org/W2377979023",
+        "https://openalex.org/W2218034408",
+        "https://openalex.org/W2392921965",
+        "https://openalex.org/W2358755282",
+        "https://openalex.org/W2625833328",
+        "https://openalex.org/W1533177136",
+        "https://openalex.org/W2251519152",
+        "https://openalex.org/W3204019825"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          38,
+          176,
+          224
+        ],
+        "dictionary": [
+          1,
+          39,
+          177
+        ],
+        "files": [
+          2,
+          178
+        ],
+        "for": [
+          3,
+          40,
+          117,
+          147,
+          163,
+          232,
+          245,
+          261
+        ],
+        "the": [
+          4,
+          15,
+          25,
+          41,
+          49,
+          62,
+          71,
+          90,
+          143,
+          164,
+          186,
+          193,
+          200,
+          207,
+          214,
+          221,
+          229,
+          233,
+          236,
+          242,
+          246,
+          262,
+          265
+        ],
+        "annotation": [
+          5,
+          234
+        ],
+        "of": [
+          6,
+          43,
+          58,
+          61,
+          113,
+          235,
+          248,
+          264
+        ],
+        "free": [
+          7
+        ],
+        "text": [
+          8,
+          64
+        ],
+        "with": [
+          9,
+          86,
+          228,
+          269
+        ],
+        "terms": [
+          10
+        ],
+        "from": [
+          11,
+          20,
+          24,
+          48,
+          89,
+          185,
+          192,
+          199,
+          206,
+          213,
+          220,
+          274
+        ],
+        "epilepsy": [
+          12
+        ],
+        "ontologies": [
+          13,
+          26
+        ],
+        "by": [
+          14
+        ],
+        "UIMA": [
+          16,
+          230,
+          258
+        ],
+        "ConceptMapper": [
+          17,
+          231,
+          259
+        ],
+        "are": [
+          18,
+          179
+        ],
+        "taken": [
+          19
+        ],
+        "NCBO": [
+          21
+        ],
+        "BioPortal,": [
+          22
+        ],
+        "namely": [
+          23
+        ],
+        "EpSO,": [
+          27
+        ],
+        "ESSO,": [
+          28
+        ],
+        "EPILONT,": [
+          29
+        ],
+        "EPISEM": [
+          30,
+          215
+        ],
+        "and": [
+          31,
+          169,
+          272
+        ],
+        "FENICS:": [
+          32
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPSO": [
+          33
+        ],
+        "https://bioportal.bioontology.org/ontologies/ESSO": [
+          34
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPILONT": [
+          35
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPISEM": [
+          36
+        ],
+        "https://bioportal.bioontology.org/ontologies/FENICS": [
+          37
+        ],
+        "identification": [
+          42
+        ],
+        "drug": [
+          44
+        ],
+        "names": [
+          45
+        ],
+        "is": [
+          46
+        ],
+        "derived": [
+          47
+        ],
+        "DrugBank": [
+          50,
+          187
+        ],
+        "vocabulary": [
+          51,
+          188
+        ],
+        "available": [
+          52
+        ],
+        "online": [
+          53
+        ],
+        "at": [
+          54
+        ],
+        "https://go.drugbank.com/releases/latest#open-data.": [
+          55
+        ],
+        "Further": [
+          56
+        ],
+        "descriptions": [
+          57
+        ],
+        "making": [
+          59
+        ],
+        "use": [
+          60
+        ],
+        "UIMA-based": [
+          63
+        ],
+        "mining": [
+          65
+        ],
+        "workflow": [
+          66
+        ],
+        "can": [
+          67
+        ],
+        "be": [
+          68
+        ],
+        "found": [
+          69
+        ],
+        "in": [
+          70,
+          84,
+          108,
+          119,
+          180,
+          241
+        ],
+        "following": [
+          72
+        ],
+        "publications:": [
+          73
+        ],
+        "Bernd": [
+          74,
+          99,
+          131,
+          154
+        ],
+        "Müller,": [
+          75,
+          100,
+          132,
+          155,
+          256
+        ],
+        "Alexandra": [
+          76,
+          101,
+          137
+        ],
+        "Hagelstein:": [
+          77
+        ],
+        "Beyond": [
+          78
+        ],
+        "Metadata:": [
+          79
+        ],
+        "Enriching": [
+          80
+        ],
+        "life": [
+          81
+        ],
+        "science": [
+          82
+        ],
+        "publications": [
+          83
+        ],
+        "Livivo": [
+          85
+        ],
+        "semantic": [
+          87
+        ],
+        "entities": [
+          88
+        ],
+        "linked": [
+          91
+        ],
+        "data": [
+          92,
+          254
+        ],
+        "cloud.": [
+          93
+        ],
+        "SEMANTiCS": [
+          94
+        ],
+        "(Posters,": [
+          95
+        ],
+        "Demos,": [
+          96
+        ],
+        "SuCCESS)": [
+          97
+        ],
+        "2016": [
+          98
+        ],
+        "Hagelstein,": [
+          102,
+          138
+        ],
+        "Thomas": [
+          103,
+          139
+        ],
+        "Gübitz:": [
+          104,
+          140
+        ],
+        "Life": [
+          105,
+          148
+        ],
+        "Science": [
+          106
+        ],
+        "Ontologies": [
+          107
+        ],
+        "Literature": [
+          109
+        ],
+        "Retrieval:": [
+          110
+        ],
+        "A": [
+          111
+        ],
+        "Comparison": [
+          112
+        ],
+        "Linked": [
+          114
+        ],
+        "Data": [
+          115
+        ],
+        "Sets": [
+          116
+        ],
+        "Use": [
+          118
+        ],
+        "Semantic": [
+          120
+        ],
+        "Search": [
+          121,
+          145
+        ],
+        "on": [
+          122
+        ],
+        "a": [
+          123
+        ],
+        "Heterogeneous": [
+          124
+        ],
+        "Corpus.": [
+          125
+        ],
+        "EKAW": [
+          126
+        ],
+        "(Satellite": [
+          127
+        ],
+        "Events)": [
+          128
+        ],
+        "2016:": [
+          129
+        ],
+        "158-161": [
+          130
+        ],
+        "Christoph": [
+          133
+        ],
+        "Poley,": [
+          134
+        ],
+        "Jana": [
+          135
+        ],
+        "Pössel,": [
+          136
+        ],
+        "LIVIVO": [
+          141
+        ],
+        "-": [
+          142,
+          183,
+          190,
+          197,
+          204,
+          211,
+          218
+        ],
+        "Vertical": [
+          144
+        ],
+        "Engine": [
+          146
+        ],
+        "Sciences.": [
+          149
+        ],
+        "Datenbank-Spektrum": [
+          150
+        ],
+        "17(1):": [
+          151
+        ],
+        "29-34": [
+          152
+        ],
+        "(2017)": [
+          153
+        ],
+        "Dietrich": [
+          156
+        ],
+        "Rebholz-Schuhmann:": [
+          157
+        ],
+        "Selected": [
+          158
+        ],
+        "Approaches": [
+          159
+        ],
+        "Ranking": [
+          160
+        ],
+        "Contextual": [
+          161
+        ],
+        "Term": [
+          162
+        ],
+        "BioASQ": [
+          165,
+          238,
+          243,
+          267
+        ],
+        "Multi-label": [
+          166
+        ],
+        "Classification": [
+          167
+        ],
+        "(Task6a": [
+          168
+        ],
+        "7a).": [
+          170
+        ],
+        "PKDD/ECML": [
+          171
+        ],
+        "Workshops": [
+          172
+        ],
+        "(2)": [
+          173
+        ],
+        "2019:": [
+          174
+        ],
+        "569-580": [
+          175
+        ],
+        "particular:": [
+          181
+        ],
+        "Dict_DrugNames.xml": [
+          182
+        ],
+        "constructed": [
+          184,
+          191,
+          198,
+          205,
+          212,
+          219
+        ],
+        "Dict_EpSO.xml": [
+          189
+        ],
+        "EpSO": [
+          194
+        ],
+        "ontology": [
+          195,
+          202,
+          209,
+          216,
+          223
+        ],
+        "Dict_ESSO.xml": [
+          196
+        ],
+        "ESSO": [
+          201
+        ],
+        "Dict_EPILONT.xml": [
+          203
+        ],
+        "EPILONT": [
+          208
+        ],
+        "Dict_EPISEM.xml": [
+          210
+        ],
+        "Dict_FENICS.xml": [
+          217
+        ],
+        "FENICS": [
+          222
+        ],
+        "dictionaries": [
+          225
+        ],
+        "were": [
+          226
+        ],
+        "used": [
+          227
+        ],
+        "2021": [
+          237,
+          266
+        ],
+        "corpus": [
+          239
+        ],
+        "resulting": [
+          240
+        ],
+        "Sub-Corpus": [
+          244
+        ],
+        "Pharmacology": [
+          247
+        ],
+        "Epilepsy": [
+          249,
+          275
+        ],
+        "(BioPepsy).": [
+          250
+        ],
+        "Please": [
+          251
+        ],
+        "cite": [
+          252
+        ],
+        "this": [
+          253
+        ],
+        "as:": [
+          255
+        ],
+        "Bernd.": [
+          257
+        ],
+        "Dictionaries": [
+          260
+        ],
+        "Annotation": [
+          263
+        ],
+        "Corpus": [
+          268
+        ],
+        "Drug": [
+          270
+        ],
+        "Names": [
+          271
+        ],
+        "Terms": [
+          273
+        ],
+        "Ontologies.": [
+          276
+        ],
+        "ZENODO,": [
+          277
+        ],
+        "10.5281/zenodo.4683353": [
+          278
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4393842171",
+      "doi": "https://doi.org/10.5281/zenodo.4680826",
+      "title": "BioASQ Sub-Corpus for the Pharmacology of Epilepsy (BioPepsy)",
+      "display_name": "BioASQ Sub-Corpus for the Pharmacology of Epilepsy (BioPepsy)",
+      "relevance_score": 72.44075,
+      "publication_year": 2021,
+      "publication_date": "2021-04-12",
+      "ids": {
+        "openalex": "https://openalex.org/W4393842171",
+        "doi": "https://doi.org/10.5281/zenodo.4680826"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:zenodo.org:4680826",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/4680826",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/record/4680826",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015732254",
+            "display_name": "B. G. Müller",
+            "orcid": "https://orcid.org/0000-0003-3062-8192"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112663",
+              "display_name": "ZB MED - Information Centre for Life Sciences",
+              "ror": "https://ror.org/0259fwx54",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Müller, Bernd",
+          "raw_affiliation_strings": [
+            "ZB MED - Information Centre for Life Sciences"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3062-8192",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ZB MED - Information Centre for Life Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210112663"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5015732254"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210112663"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 1,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9829000234603882,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9829000234603882,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10211",
+          "display_name": "Computational Drug Discovery Methods",
+          "score": 0.9320999979972839,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1703",
+            "display_name": "Computational Theory and Mathematics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/epilepsy",
+          "display_name": "Epilepsy",
+          "score": 0.7742400169372559
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.39998215436935425
+        },
+        {
+          "id": "https://openalex.org/keywords/neuroscience",
+          "display_name": "Neuroscience",
+          "score": 0.39681071043014526
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacology",
+          "display_name": "Pharmacology",
+          "score": 0.3648991286754608
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.32472437620162964
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778186239",
+          "wikidata": "https://www.wikidata.org/wiki/Q41571",
+          "display_name": "Epilepsy",
+          "level": 2,
+          "score": 0.7742400169372559
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.39998215436935425
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.39681071043014526
+        },
+        {
+          "id": "https://openalex.org/C98274493",
+          "wikidata": "https://www.wikidata.org/wiki/Q128406",
+          "display_name": "Pharmacology",
+          "level": 1,
+          "score": 0.3648991286754608
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.32472437620162964
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "pmh:oai:zenodo.org:4680826",
+          "is_oa": true,
+          "landing_page_url": "https://zenodo.org/record/4680826",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "dataset"
+        },
+        {
+          "id": "doi:10.5281/zenodo.4680826",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.4680826",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:zenodo.org:4680826",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/4680826",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W3031052312",
+        "https://openalex.org/W4389568370",
+        "https://openalex.org/W3032375762",
+        "https://openalex.org/W1995515455",
+        "https://openalex.org/W2080531066",
+        "https://openalex.org/W3108674512",
+        "https://openalex.org/W1506200166",
+        "https://openalex.org/W1489783725",
+        "https://openalex.org/W2148612803"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          23,
+          47,
+          65,
+          201,
+          206
+        ],
+        "sub": [
+          1
+        ],
+        "corpus": [
+          2,
+          225,
+          241,
+          268,
+          295,
+          322,
+          349
+        ],
+        "contains": [
+          3
+        ],
+        "Standoff": [
+          4
+        ],
+        "Annotations": [
+          5
+        ],
+        "for": [
+          6,
+          25,
+          49,
+          142,
+          172,
+          188,
+          218,
+          231,
+          258,
+          285,
+          312,
+          339,
+          389
+        ],
+        "Drug": [
+          7
+        ],
+        "Names": [
+          8
+        ],
+        "and": [
+          9,
+          40,
+          194
+        ],
+        "Terms": [
+          10
+        ],
+        "from": [
+          11,
+          29,
+          33,
+          57,
+          114,
+          237,
+          245,
+          264,
+          272,
+          291,
+          299,
+          318,
+          326,
+          345,
+          353
+        ],
+        "Epilepsy": [
+          12,
+          393
+        ],
+        "Ontologies": [
+          13,
+          132
+        ],
+        "with": [
+          14,
+          83,
+          111,
+          248,
+          275,
+          302,
+          329,
+          356
+        ],
+        "their": [
+          15,
+          378
+        ],
+        "Aggregations": [
+          16
+        ],
+        "Recognized": [
+          17
+        ],
+        "in": [
+          18,
+          95,
+          109,
+          133,
+          144,
+          221,
+          235,
+          262,
+          289,
+          316,
+          343
+        ],
+        "the": [
+          19,
+          34,
+          50,
+          58,
+          84,
+          96,
+          115,
+          168,
+          189,
+          222,
+          238,
+          265,
+          292,
+          319,
+          346,
+          390
+        ],
+        "2021": [
+          20,
+          223,
+          239,
+          266,
+          293,
+          320,
+          347
+        ],
+        "BioASQ": [
+          21,
+          190,
+          224,
+          240,
+          267,
+          294,
+          321,
+          348,
+          387
+        ],
+        "corpus.": [
+          22
+        ],
+        "terms": [
+          24,
+          66,
+          244,
+          271,
+          298,
+          325,
+          352
+        ],
+        "epilepsy": [
+          26
+        ],
+        "ontologies": [
+          27,
+          35
+        ],
+        "are": [
+          28,
+          375
+        ],
+        "NCBO": [
+          30
+        ],
+        "BioPortal,": [
+          31
+        ],
+        "namely": [
+          32
+        ],
+        "EpSO,": [
+          36
+        ],
+        "ESSO,": [
+          37
+        ],
+        "EPILONT,": [
+          38
+        ],
+        "EPISEM": [
+          39
+        ],
+        "FENICS:": [
+          41
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPSO": [
+          42
+        ],
+        "https://bioportal.bioontology.org/ontologies/ESSO": [
+          43
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPILONT": [
+          44
+        ],
+        "https://bioportal.bioontology.org/ontologies/EPISEM": [
+          45
+        ],
+        "https://bioportal.bioontology.org/ontologies/FENICS": [
+          46
+        ],
+        "dictionary": [
+          48
+        ],
+        "identificatin": [
+          51
+        ],
+        "of": [
+          52,
+          73,
+          89,
+          138,
+          229,
+          256,
+          283,
+          310,
+          337,
+          371,
+          392
+        ],
+        "drug": [
+          53,
+          252,
+          279,
+          306,
+          333,
+          360
+        ],
+        "names": [
+          54
+        ],
+        "is": [
+          55,
+          204,
+          209
+        ],
+        "derived": [
+          56
+        ],
+        "DrugBank": [
+          59
+        ],
+        "vocabulary": [
+          60
+        ],
+        "available": [
+          61
+        ],
+        "online": [
+          62
+        ],
+        "at": [
+          63,
+          249,
+          276,
+          303,
+          330,
+          357
+        ],
+        "https://go.drugbank.com/releases/latest#open-data.": [
+          64
+        ],
+        "were": [
+          67
+        ],
+        "identified": [
+          68,
+          376
+        ],
+        "using": [
+          69
+        ],
+        "a": [
+          70,
+          74,
+          148,
+          369,
+          372
+        ],
+        "custom": [
+          71
+        ],
+        "implementation": [
+          72
+        ],
+        "UIMA-based": [
+          75
+        ],
+        "text": [
+          76,
+          82
+        ],
+        "mining": [
+          77
+        ],
+        "wokflow": [
+          78
+        ],
+        "that": [
+          79,
+          242,
+          269,
+          296,
+          323,
+          350
+        ],
+        "annotates": [
+          80
+        ],
+        "free": [
+          81
+        ],
+        "UIMA": [
+          85
+        ],
+        "ConceptMapper.": [
+          86
+        ],
+        "Further": [
+          87
+        ],
+        "descriptions": [
+          88
+        ],
+        "this": [
+          90,
+          382
+        ],
+        "workflow": [
+          91
+        ],
+        "can": [
+          92
+        ],
+        "be": [
+          93,
+          366
+        ],
+        "found": [
+          94
+        ],
+        "following": [
+          97
+        ],
+        "publications:": [
+          98
+        ],
+        "Bernd": [
+          99,
+          124,
+          156,
+          179
+        ],
+        "Müller,": [
+          100,
+          125,
+          157,
+          180,
+          385
+        ],
+        "Alexandra": [
+          101,
+          126,
+          162
+        ],
+        "Hagelstein:": [
+          102
+        ],
+        "Beyond": [
+          103
+        ],
+        "Metadata:": [
+          104
+        ],
+        "Enriching": [
+          105
+        ],
+        "life": [
+          106
+        ],
+        "science": [
+          107
+        ],
+        "publications": [
+          108
+        ],
+        "Livivo": [
+          110
+        ],
+        "semantic": [
+          112
+        ],
+        "entities": [
+          113
+        ],
+        "linked": [
+          116
+        ],
+        "data": [
+          117,
+          383
+        ],
+        "cloud.": [
+          118
+        ],
+        "SEMANTiCS": [
+          119
+        ],
+        "(Posters,": [
+          120
+        ],
+        "Demos,": [
+          121
+        ],
+        "SuCCESS)": [
+          122
+        ],
+        "2016": [
+          123
+        ],
+        "Hagelstein,": [
+          127,
+          163
+        ],
+        "Thomas": [
+          128,
+          164
+        ],
+        "Gübitz:": [
+          129,
+          165
+        ],
+        "Life": [
+          130,
+          173
+        ],
+        "Science": [
+          131
+        ],
+        "Literature": [
+          134
+        ],
+        "Retrieval:": [
+          135
+        ],
+        "A": [
+          136
+        ],
+        "Comparison": [
+          137
+        ],
+        "Linked": [
+          139
+        ],
+        "Data": [
+          140
+        ],
+        "Sets": [
+          141
+        ],
+        "Use": [
+          143
+        ],
+        "Semantic": [
+          145
+        ],
+        "Search": [
+          146,
+          170
+        ],
+        "on": [
+          147
+        ],
+        "Heterogeneous": [
+          149
+        ],
+        "Corpus.": [
+          150
+        ],
+        "EKAW": [
+          151
+        ],
+        "(Satellite": [
+          152
+        ],
+        "Events)": [
+          153
+        ],
+        "2016:": [
+          154
+        ],
+        "158-161": [
+          155
+        ],
+        "Christoph": [
+          158
+        ],
+        "Poley,": [
+          159
+        ],
+        "Jana": [
+          160
+        ],
+        "Pössel,": [
+          161
+        ],
+        "LIVIVO": [
+          166
+        ],
+        "-": [
+          167,
+          214,
+          227
+        ],
+        "Vertical": [
+          169
+        ],
+        "Engine": [
+          171
+        ],
+        "Sciences.": [
+          174
+        ],
+        "Datenbank-Spektrum": [
+          175
+        ],
+        "17(1):": [
+          176
+        ],
+        "29-34": [
+          177
+        ],
+        "(2017)": [
+          178
+        ],
+        "Dietrich": [
+          181
+        ],
+        "Rebholz-Schuhmann:": [
+          182
+        ],
+        "Selected": [
+          183
+        ],
+        "Approaches": [
+          184
+        ],
+        "Ranking": [
+          185
+        ],
+        "Contextual": [
+          186
+        ],
+        "Term": [
+          187
+        ],
+        "Multi-label": [
+          191
+        ],
+        "Classification": [
+          192
+        ],
+        "(Task6a": [
+          193
+        ],
+        "7a).": [
+          195
+        ],
+        "PKDD/ECML": [
+          196
+        ],
+        "Workshops": [
+          197
+        ],
+        "(2)": [
+          198
+        ],
+        "2019:": [
+          199
+        ],
+        "569-580": [
+          200
+        ],
+        "file": [
+          202,
+          207
+        ],
+        "format": [
+          203
+        ],
+        "JSON.": [
+          205
+        ],
+        "content": [
+          208
+        ],
+        "described": [
+          210
+        ],
+        "as": [
+          211
+        ],
+        "follows:": [
+          212
+        ],
+        "bioasqepilepsy2021.json": [
+          213
+        ],
+        "All": [
+          215,
+          362
+        ],
+        "standoff": [
+          216,
+          233,
+          260,
+          287,
+          314,
+          341
+        ],
+        "annotations": [
+          217,
+          234,
+          261,
+          288,
+          315,
+          342
+        ],
+        "each": [
+          219
+        ],
+        "document": [
+          220
+        ],
+        "aggepilepsy2021EPSOANDDrugNames.json": [
+          226
+        ],
+        "aggregation": [
+          228,
+          255,
+          282,
+          309,
+          336
+        ],
+        "frequencies": [
+          230,
+          257,
+          284,
+          311,
+          338
+        ],
+        "all": [
+          232,
+          259,
+          286,
+          313,
+          340
+        ],
+        "documents": [
+          236,
+          263,
+          290,
+          317,
+          344
+        ],
+        "contain": [
+          243,
+          270,
+          297,
+          324,
+          351
+        ],
+        "<strong>EpSO": [
+          246
+        ],
+        "</strong>co-occurring": [
+          247,
+          274,
+          301,
+          328,
+          355
+        ],
+        "least": [
+          250,
+          277,
+          304,
+          331,
+          358
+        ],
+        "one": [
+          251,
+          278,
+          305,
+          332,
+          359
+        ],
+        "name": [
+          253,
+          280,
+          307,
+          334,
+          361
+        ],
+        "aggepilepsy2021ESSOANDDrugNames.json-": [
+          254
+        ],
+        "<strong>ESSO": [
+          273
+        ],
+        "aggepilepsy2021EPILONTANDDrugNames.json-": [
+          281
+        ],
+        "<strong>EPILONT": [
+          300
+        ],
+        "aggepilepsy2021EPISEMANDDrugNames.json-": [
+          308
+        ],
+        "<strong>EPISEM": [
+          327
+        ],
+        "aggepilepsy2021FENICSANDDrugNames.json-": [
+          335
+        ],
+        "<strong>FENICS": [
+          354
+        ],
+        "JSON": [
+          363
+        ],
+        "files": [
+          364
+        ],
+        "should": [
+          365
+        ],
+        "importable": [
+          367
+        ],
+        "into": [
+          368
+        ],
+        "collection": [
+          370
+        ],
+        "MongoDB.": [
+          373
+        ],
+        "Documents": [
+          374
+        ],
+        "by": [
+          377
+        ],
+        "PMIDs.": [
+          379
+        ],
+        "Please": [
+          380
+        ],
+        "cite": [
+          381
+        ],
+        "as:": [
+          384
+        ],
+        "Bernd.": [
+          386
+        ],
+        "Sub-Corpus": [
+          388
+        ],
+        "Pharmacology": [
+          391
+        ],
+        "(BioPEpsy)": [
+          394
+        ],
+        "2021.": [
+          395
+        ],
+        "ZENODO,": [
+          396
+        ],
+        "10.5281/zenodo.4680086": [
+          397
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

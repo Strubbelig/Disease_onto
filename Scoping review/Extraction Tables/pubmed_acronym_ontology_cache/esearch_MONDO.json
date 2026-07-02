@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "34",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38857186",
+      "36149471",
+      "41052288",
+      "41697974",
+      "37963467",
+      "40621601",
+      "39241757",
+      "36823605",
+      "41092581",
+      "37503136"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"MONDO\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

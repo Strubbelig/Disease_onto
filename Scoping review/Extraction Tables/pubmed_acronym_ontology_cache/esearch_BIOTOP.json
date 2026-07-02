@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "19",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "17911910",
+      "18586729",
+      "28423831",
+      "19283317",
+      "19478019",
+      "23046561",
+      "21685092",
+      "18487840",
+      "23865855",
+      "30917789"
+    ],
+    "translationset": [
+      {
+        "from": "BIOTOP",
+        "to": "\"biotope\"[All Fields] OR \"biotopes\"[All Fields] OR \"biotopic\"[All Fields] OR \"biotopical\"[All Fields] OR \"biotops\"[All Fields] OR \"poly(1,2,4-trioxy-o-phenylene)\"[Supplementary Concept] OR \"poly(1,2,4-trioxy-o-phenylene)\"[All Fields] OR \"biotop\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"biotope\"[All Fields] OR \"biotopes\"[All Fields] OR \"biotopic\"[All Fields] OR \"biotopical\"[All Fields] OR \"biotops\"[All Fields] OR \"poly 1 2 4 trioxy o phenylene\"[Supplementary Concept] OR \"poly 1 2 4 trioxy o phenylene\"[All Fields] OR \"biotop\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

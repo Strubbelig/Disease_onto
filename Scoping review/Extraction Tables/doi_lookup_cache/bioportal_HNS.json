@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/b2da8120-701a-0138-9662-005056010088",
+      "name": "SUBHASHIS DAS",
+      "email": "subhashis.das@dcu.ie"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/subhashis"
+    ],
+    "acronym": "HNS",
+    "name": "HNS_Ontolgoy",
+    "@id": "https://data.bioontology.org/ontologies/HNS",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/HNS/submissions",
+      "properties": "https://data.bioontology.org/ontologies/HNS/properties",
+      "classes": "https://data.bioontology.org/ontologies/HNS/classes",
+      "single_class": "https://data.bioontology.org/ontologies/HNS/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/HNS/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/HNS/schemes",
+      "collections": "https://data.bioontology.org/ontologies/HNS/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/HNS/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/HNS/instances",
+      "metrics": "https://data.bioontology.org/ontologies/HNS/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/HNS/reviews",
+      "notes": "https://data.bioontology.org/ontologies/HNS/notes",
+      "groups": "https://data.bioontology.org/ontologies/HNS/groups",
+      "categories": "https://data.bioontology.org/ontologies/HNS/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/HNS/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/HNS/projects",
+      "download": "https://data.bioontology.org/ontologies/HNS/download",
+      "views": "https://data.bioontology.org/ontologies/HNS/views",
+      "analytics": "https://data.bioontology.org/ontologies/HNS/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/HNS",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2020-05-05T00:00:00.000+00:00",
+  "creationDate": "2020-05-05T12:45:08.000-07:00",
+  "homepage": "https://github.com/subhashishhh/HNS-Ontology/blob/master/HNS_ontology.owl",
+  "publication": [
+    "https://www.ergon-verlag.de/isko_ko/downloads/ko_46_2019_3_c.pdf"
+  ],
+  "documentation": "https://github.com/subhashishhh/HNS-Ontology",
+  "version": "4.0",
+  "description": "The purpose of this research is to develop an ontology with subsequent testing and evaluation, for identifying utility and value. The domain that has been chosen is human nervous system (HNS) disorders. It is hypothesized here that an ontology-based patient records management system is more effective in meeting and addressing complex information needs of health-care personnel. Therefore, this study has been based on the premise that developing an ontology and using it as a component of the search interface in hospital records management systems will lead to more efficient and effective management of health-care. It is proposed here to develop an ontology of the domain of HNS disorders using a standard vocabulary such as MeSH or SNOMED CT. The principal classes of an ontology include facet analysis for arranging concepts based on their common characteristics to build mutually exclusive classes. We combine faceted theory with description logic, which helps us to better query and retrieve data by implementing an ontological model. Protégé 5.2.0 was used as ontology editor. The use of ontologies for domain modelling will be of acute help to doctors for searching patient records. In this paper we show how the faceted approach helps us to build a flexible model and retrieve better information. We use the medical domain as a case study to show examples and implementation.",
+  "status": "beta",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/HNS/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/HNS/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

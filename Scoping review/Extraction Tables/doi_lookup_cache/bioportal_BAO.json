@@ -1,0 +1,113 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/fa59a910-38af-013e-f666-005056010127",
+      "name": "Caty Chung",
+      "email": "c.chung@miami.edu"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/fa157360-0341-0131-abbd-001ec9b0ea92",
+      "name": "Stephan Schurer",
+      "email": "sschurer@med.miami.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/sschurer"
+    ],
+    "acronym": "BAO",
+    "name": "BioAssay Ontology",
+    "@id": "https://data.bioontology.org/ontologies/BAO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/BAO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/BAO/properties",
+      "classes": "https://data.bioontology.org/ontologies/BAO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/BAO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/BAO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/BAO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/BAO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/BAO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/BAO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/BAO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/BAO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/BAO/notes",
+      "groups": "https://data.bioontology.org/ontologies/BAO/groups",
+      "categories": "https://data.bioontology.org/ontologies/BAO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/BAO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/BAO/projects",
+      "download": "https://data.bioontology.org/ontologies/BAO/download",
+      "views": "https://data.bioontology.org/ontologies/BAO/views",
+      "analytics": "https://data.bioontology.org/ontologies/BAO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/BAO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-05-06T18:00:20.000-07:00",
+  "creationDate": "2026-05-06T00:00:00.000+00:00",
+  "homepage": null,
+  "publication": [
+    "http://www.bioassayontology.org/"
+  ],
+  "documentation": "http://www.bioassayontology.org/",
+  "version": "2.8.19",
+  "description": "The BioAssay Ontology (BAO) describes chemical biology screening assays and their results including high-throughput screening (HTS) data for the purpose of categorizing assays and data analysis.  BAO is an extensible, knowledge-based, highly expressive (currently SHOIQ(D)) description of biological assays making use of descriptive logic based features of the Web Ontology Language (OWL).  BAO currently has over 1000 classes and also makes use of several other ontologies.  It describes several concepts related to biological screening, including Perturbagen, Format, Meta Target, Design,  Detection Technology, and Endpoint.  Perturbagens are perturbing agents that are screened in an assay; they are mostly small molecules. Assay Meta Target describes what is known about the biological system and / or its components interrogated in the assay (and influenced by the Perturbagen).  Meta target can be directly described as a molecular entity (e.g. a purified protein or a protein complex), or indirectly by a biological process or event (e.g. phosphorylation).  Format describes the biological or chemical features common to each test condition in the assay and includes biochemical, cell-based, organism-based, and variations thereof.  The assay Design describes the assay methodology and implementation of how the perturbation of the biological system is translated into a detectable signal.  Detection Technology relates to the physical method and technical details to detect and record a signal.  Endpoints are the final HTS results as they are usually published (such as IC50, percent inhibition, etc.).  BAO has been designed to accommodate multiplexed assays.  All main BAO components include multiple levels of sub-categories and specification classes, which are linked via object property relationships forming an expressive knowledge-based representation.",
+  "status": "production",
+  "submissionId": 68,
+  "@id": "https://data.bioontology.org/ontologies/BAO/submissions/68",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/BAO/submissions/68/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

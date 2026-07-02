@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/6caf1150-3b97-013b-19d0-005056010074",
+      "name": "Sabbir Rashid",
+      "email": "rashidsabbir@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/rashidsabbir"
+    ],
+    "acronym": "DPCO",
+    "name": "Diabetes Pharmacology Ontology",
+    "@id": "https://data.bioontology.org/ontologies/DPCO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/DPCO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/DPCO/properties",
+      "classes": "https://data.bioontology.org/ontologies/DPCO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/DPCO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/DPCO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/DPCO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/DPCO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/DPCO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/DPCO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/DPCO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/DPCO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/DPCO/notes",
+      "groups": "https://data.bioontology.org/ontologies/DPCO/groups",
+      "categories": "https://data.bioontology.org/ontologies/DPCO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/DPCO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/DPCO/projects",
+      "download": "https://data.bioontology.org/ontologies/DPCO/download",
+      "views": "https://data.bioontology.org/ontologies/DPCO/views",
+      "analytics": "https://data.bioontology.org/ontologies/DPCO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/DPCO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2022-10-31T00:00:00.000+00:00",
+  "creationDate": "2022-12-18T07:38:21.000-08:00",
+  "homepage": "https://tetherless-world.github.io/diabetes-pharmacology-ontology/",
+  "publication": [],
+  "documentation": "https://tetherless-world.github.io/diabetes-pharmacology-ontology/docs/DiabetesPharmacologyOntology/index-en.html",
+  "version": "1.0",
+  "description": "The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies, pharmacotherapy factors, and diagnostic factors., The Diabetes Pharmacology Ontology contains the classes needed to describe antihyperglycemic therapies.",
+  "status": "beta",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/DPCO/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/DPCO/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

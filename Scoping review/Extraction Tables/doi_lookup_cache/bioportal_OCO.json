@@ -1,0 +1,111 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/7cdf44b0-21b0-013d-b44e-005056010126",
+      "name": "Biswanath Dutta",
+      "email": "bisu@drtc.isibang.ac.in"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/7cd504e0-21b0-013d-b44e-005056010126",
+      "name": "Debanjali Bain",
+      "email": "debanjali@drtc.isibang.ac.in"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/Debanjali"
+    ],
+    "acronym": "OCO",
+    "name": "OpenCareOntology ",
+    "@id": "https://data.bioontology.org/ontologies/OCO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/OCO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/OCO/properties",
+      "classes": "https://data.bioontology.org/ontologies/OCO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/OCO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/OCO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/OCO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/OCO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/OCO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/OCO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/OCO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/OCO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/OCO/notes",
+      "groups": "https://data.bioontology.org/ontologies/OCO/groups",
+      "categories": "https://data.bioontology.org/ontologies/OCO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/OCO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/OCO/projects",
+      "download": "https://data.bioontology.org/ontologies/OCO/download",
+      "views": "https://data.bioontology.org/ontologies/OCO/views",
+      "analytics": "https://data.bioontology.org/ontologies/OCO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/OCO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-05-05T00:00:00.000+00:00",
+  "creationDate": "2024-08-05T03:14:36.000-07:00",
+  "homepage": "https://w3id.org/opencare",
+  "publication": [],
+  "documentation": "https://w3id.org/opencare",
+  "version": "1.1",
+  "description": "Open healthCare Ontology (OpenCare) is an integrated metadata vocabulary expressed as an ontological data model, to facilitate the effective reasoning of patient-specific electronic health record (EHR) data. The OpenCare model identifies the concepts and semantic types in the EHR data with the aim of enabling the representation of clinical data in a way that is accessible and usable by researchers and healthcare facility users. The development of OpenCare and its components is formalized using the Ontology Web Language (OWL). This framework aims to enhance the accessibility and user-friendliness of EHR clinical data.",
+  "status": "alpha",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/OCO/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/OCO/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

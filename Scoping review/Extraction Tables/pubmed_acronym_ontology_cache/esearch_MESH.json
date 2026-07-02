@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "228",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33945566",
+      "17634620",
+      "35297766",
+      "36283581",
+      "41052288",
+      "35612105",
+      "38135173",
+      "41173136",
+      "39238154",
+      "15262796"
+    ],
+    "translationset": [
+      {
+        "from": "MESH",
+        "to": "\"medical subject headings\"[MeSH Terms] OR (\"medical\"[All Fields] AND \"subject\"[All Fields] AND \"headings\"[All Fields]) OR \"medical subject headings\"[All Fields] OR \"mesh\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"medical subject headings\"[MeSH Terms] OR (\"medical\"[All Fields] AND \"subject\"[All Fields] AND \"headings\"[All Fields]) OR \"medical subject headings\"[All Fields] OR \"mesh\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

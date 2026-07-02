@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/5e952640-8065-0135-c8e8-005056010088",
+      "name": "Marie-Angélique Laporte",
+      "email": "m.a.laporte@cgiar.org"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/vendetti"
+    ],
+    "acronym": "AGRO",
+    "name": "AGRonomy Ontology",
+    "@id": "https://data.bioontology.org/ontologies/AGRO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/AGRO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/AGRO/properties",
+      "classes": "https://data.bioontology.org/ontologies/AGRO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/AGRO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/AGRO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/AGRO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/AGRO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/AGRO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/AGRO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/AGRO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/AGRO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/AGRO/notes",
+      "groups": "https://data.bioontology.org/ontologies/AGRO/groups",
+      "categories": "https://data.bioontology.org/ontologies/AGRO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/AGRO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/AGRO/projects",
+      "download": "https://data.bioontology.org/ontologies/AGRO/download",
+      "views": "https://data.bioontology.org/ontologies/AGRO/views",
+      "analytics": "https://data.bioontology.org/ontologies/AGRO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/AGRO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2022-11-02T18:00:07.000-07:00",
+  "creationDate": "2022-11-02T18:00:12.000-07:00",
+  "homepage": "https://github.com/AgriculturalSemantics/agro",
+  "publication": [],
+  "documentation": "https://bigdata.cgiar.org/resources/agronomy-ontology/",
+  "version": null,
+  "description": "AGRO, the AGRonomy Ontology, describes agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments. AGRO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, and PATO, IAO, and CHEBI. Further, AGRO will power an Agronomy Management System and fieldbook modeled on a CGIAR Breeding Management System to capture agronomic data.",
+  "status": "production",
+  "submissionId": 6,
+  "@id": "https://data.bioontology.org/ontologies/AGRO/submissions/6",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/AGRO/submissions/6/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

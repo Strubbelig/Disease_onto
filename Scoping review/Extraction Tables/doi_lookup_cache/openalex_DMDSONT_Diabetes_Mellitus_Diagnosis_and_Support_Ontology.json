@@ -1,0 +1,1836 @@
+{
+  "meta": {
+    "count": 3,
+    "db_response_time_ms": 122,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Diabetes Mellitus Diagnosis \"and\" Support Ontology DMDSONT ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Diabetes Mellitus Diagnosis and Support Ontology DMDSONT ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Diabetes Mellitus Diagnosis and Support Ontology DMDSONT ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4394456425",
+      "doi": "https://doi.org/10.6084/m9.figshare.21070348.v1",
+      "title": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "display_name": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "relevance_score": 100.06097,
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4394456425",
+        "doi": "https://doi.org/10.6084/m9.figshare.21070348.v1"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.6084/m9.figshare.21070348.v1",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.6084/m9.figshare.21070348.v1",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015023007",
+            "display_name": "Duygu Çelik Ertuğrul",
+            "orcid": "https://orcid.org/0000-0003-1380-705X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Celik Ertugrul, Duygu",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030982675",
+            "display_name": "Yıltan Bitirim",
+            "orcid": "https://orcid.org/0000-0002-1780-2806"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bitirim, Yiltan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.5651000142097473,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.5651000142097473,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/diabetes-mellitus",
+          "display_name": "Diabetes mellitus",
+          "score": 0.6266776323318481
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.5716056823730469
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.39445948600769043
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.37073564529418945
+        },
+        {
+          "id": "https://openalex.org/keywords/computational-biology",
+          "display_name": "Computational biology",
+          "score": 0.36612528562545776
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.19858106970787048
+        },
+        {
+          "id": "https://openalex.org/keywords/endocrinology",
+          "display_name": "Endocrinology",
+          "score": 0.18173924088478088
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.10906577110290527
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.10520526766777039
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C555293320",
+          "wikidata": "https://www.wikidata.org/wiki/Q12206",
+          "display_name": "Diabetes mellitus",
+          "level": 2,
+          "score": 0.6266776323318481
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.5716056823730469
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.39445948600769043
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.37073564529418945
+        },
+        {
+          "id": "https://openalex.org/C70721500",
+          "wikidata": "https://www.wikidata.org/wiki/Q177005",
+          "display_name": "Computational biology",
+          "level": 1,
+          "score": 0.36612528562545776
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.19858106970787048
+        },
+        {
+          "id": "https://openalex.org/C134018914",
+          "wikidata": "https://www.wikidata.org/wiki/Q162606",
+          "display_name": "Endocrinology",
+          "level": 1,
+          "score": 0.18173924088478088
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.10906577110290527
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.10520526766777039
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.6084/m9.figshare.21070348.v1",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v1",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196282",
+            "display_name": "Figshare",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.6084/m9.figshare.21070348.v1",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W3031052312",
+        "https://openalex.org/W4389568370",
+        "https://openalex.org/W3032375762",
+        "https://openalex.org/W1995515455",
+        "https://openalex.org/W2080531066",
+        "https://openalex.org/W3108674512",
+        "https://openalex.org/W1506200166",
+        "https://openalex.org/W1489783725"
+      ],
+      "abstract_inverted_index": {
+        "<strong>Diabetes": [
+          0
+        ],
+        "Mellitus": [
+          1
+        ],
+        "Diagnosis": [
+          2
+        ],
+        "and": [
+          3,
+          22,
+          35,
+          39,
+          45,
+          65,
+          84
+        ],
+        "Support": [
+          4
+        ],
+        "Ontology": [
+          5
+        ],
+        "(DMDSOnt)": [
+          6
+        ],
+        "is": [
+          7,
+          10
+        ],
+        "shared</strong>.": [
+          8
+        ],
+        "DMDSOnt": [
+          9
+        ],
+        "created": [
+          11,
+          79,
+          101
+        ],
+        "using": [
+          12,
+          102
+        ],
+        "OWL": [
+          13
+        ],
+        "2.0.": [
+          14
+        ],
+        "DMDSont": [
+          15
+        ],
+        "developed": [
+          16
+        ],
+        "contains": [
+          17
+        ],
+        "various": [
+          18,
+          73
+        ],
+        "information": [
+          19
+        ],
+        "(e.g.,": [
+          20
+        ],
+        "symptoms": [
+          21
+        ],
+        "signs,": [
+          23
+        ],
+        "physical": [
+          24
+        ],
+        "activities,": [
+          25
+        ],
+        "genetic": [
+          26
+        ],
+        "history": [
+          27
+        ],
+        "of": [
+          28,
+          47
+        ],
+        "patients,": [
+          29
+        ],
+        "frequently": [
+          30
+        ],
+        "used": [
+          31,
+          41
+        ],
+        "clinical": [
+          32
+        ],
+        "laboratory": [
+          33
+        ],
+        "tests": [
+          34
+        ],
+        "other": [
+          36
+        ],
+        "risk": [
+          37
+        ],
+        "factors)": [
+          38
+        ],
+        "relationships": [
+          40
+        ],
+        "in": [
+          42,
+          70
+        ],
+        "the": [
+          43,
+          51,
+          71
+        ],
+        "diagnosis": [
+          44
+        ],
+        "treatment": [
+          46
+        ],
+        "diabetes": [
+          48
+        ],
+        "risk.": [
+          49
+        ],
+        "In": [
+          50,
+          67,
+          87
+        ],
+        "DMDSOnt,": [
+          52,
+          72,
+          88
+        ],
+        "8": [
+          53
+        ],
+        "high-level": [
+          54
+        ],
+        "classes": [
+          55,
+          83
+        ],
+        "which": [
+          56
+        ],
+        "are": [
+          57,
+          78,
+          90
+        ],
+        "<em>Disease,": [
+          58
+        ],
+        "Patient</em>,": [
+          59
+        ],
+        "<em>Suggestion</em>,": [
+          60
+        ],
+        "<em>Symptom,": [
+          61
+        ],
+        "Gender</em>,<em>": [
+          62
+        ],
+        "C_Peptid_Val</em>,": [
+          63
+        ],
+        "<em>Diagnose_Test</em>,": [
+          64
+        ],
+        "<em>Risk_Score_Result.": [
+          66
+        ],
+        "addition,": [
+          68
+        ],
+        "</em>": [
+          69
+        ],
+        "Data": [
+          74
+        ],
+        "Type": [
+          75,
+          93
+        ],
+        "Properties": [
+          76,
+          94
+        ],
+        "(DTP)": [
+          77
+        ],
+        "as": [
+          80
+        ],
+        "relations": [
+          81
+        ],
+        "between": [
+          82
+        ],
+        "data": [
+          85
+        ],
+        "types.": [
+          86
+        ],
+        "there": [
+          89
+        ],
+        "7": [
+          91
+        ],
+        "Object": [
+          92
+        ],
+        "(OTP).": [
+          95
+        ],
+        "Furthermore,": [
+          96
+        ],
+        "60": [
+          97
+        ],
+        "medical": [
+          98
+        ],
+        "semantic": [
+          99
+        ],
+        "rules": [
+          100
+        ],
+        "SWRL.": [
+          103
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2024-04-08T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4394360652",
+      "doi": "https://doi.org/10.6084/m9.figshare.21070348",
+      "title": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "display_name": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "relevance_score": 98.2004,
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4394360652",
+        "doi": "https://doi.org/10.6084/m9.figshare.21070348"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.6084/m9.figshare.21070348",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.6084/m9.figshare.21070348",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015023007",
+            "display_name": "Duygu Çelik Ertuğrul",
+            "orcid": "https://orcid.org/0000-0003-1380-705X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Celik Ertugrul, Duygu",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030982675",
+            "display_name": "Yıltan Bitirim",
+            "orcid": "https://orcid.org/0000-0002-1780-2806"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bitirim, Yiltan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.5889999866485596,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.5889999866485596,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11396",
+          "display_name": "Artificial Intelligence in Healthcare",
+          "score": 0.5038999915122986,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3605",
+            "display_name": "Health Information Management"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/36",
+            "display_name": "Health Professions"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/diabetes-mellitus",
+          "display_name": "Diabetes mellitus",
+          "score": 0.6987826824188232
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.5917948484420776
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.4595791697502136
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.36567720770835876
+        },
+        {
+          "id": "https://openalex.org/keywords/endocrinology",
+          "display_name": "Endocrinology",
+          "score": 0.15764865279197693
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.08534121513366699
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.08376803994178772
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C555293320",
+          "wikidata": "https://www.wikidata.org/wiki/Q12206",
+          "display_name": "Diabetes mellitus",
+          "level": 2,
+          "score": 0.6987826824188232
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.5917948484420776
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.4595791697502136
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.36567720770835876
+        },
+        {
+          "id": "https://openalex.org/C134018914",
+          "wikidata": "https://www.wikidata.org/wiki/Q162606",
+          "display_name": "Endocrinology",
+          "level": 1,
+          "score": 0.15764865279197693
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08534121513366699
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.08376803994178772
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.6084/m9.figshare.21070348",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196282",
+            "display_name": "Figshare",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.6084/m9.figshare.21070348",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W3031052312",
+        "https://openalex.org/W4389568370",
+        "https://openalex.org/W3032375762",
+        "https://openalex.org/W1995515455",
+        "https://openalex.org/W2080531066",
+        "https://openalex.org/W3108674512",
+        "https://openalex.org/W1506200166",
+        "https://openalex.org/W1489783725"
+      ],
+      "abstract_inverted_index": {
+        "<strong>Diabetes": [
+          0
+        ],
+        "Mellitus": [
+          1
+        ],
+        "Diagnosis": [
+          2
+        ],
+        "and": [
+          3,
+          22,
+          35,
+          39,
+          45,
+          65,
+          84
+        ],
+        "Support": [
+          4
+        ],
+        "Ontology": [
+          5
+        ],
+        "(DMDSOnt)": [
+          6
+        ],
+        "is": [
+          7,
+          10
+        ],
+        "shared</strong>.": [
+          8
+        ],
+        "DMDSOnt": [
+          9
+        ],
+        "created": [
+          11,
+          79,
+          101
+        ],
+        "using": [
+          12,
+          102
+        ],
+        "OWL": [
+          13
+        ],
+        "2.0.": [
+          14
+        ],
+        "DMDSont": [
+          15
+        ],
+        "developed": [
+          16
+        ],
+        "contains": [
+          17
+        ],
+        "various": [
+          18,
+          73
+        ],
+        "information": [
+          19
+        ],
+        "(e.g.,": [
+          20
+        ],
+        "symptoms": [
+          21
+        ],
+        "signs,": [
+          23
+        ],
+        "physical": [
+          24
+        ],
+        "activities,": [
+          25
+        ],
+        "genetic": [
+          26
+        ],
+        "history": [
+          27
+        ],
+        "of": [
+          28,
+          47
+        ],
+        "patients,": [
+          29
+        ],
+        "frequently": [
+          30
+        ],
+        "used": [
+          31,
+          41
+        ],
+        "clinical": [
+          32
+        ],
+        "laboratory": [
+          33
+        ],
+        "tests": [
+          34
+        ],
+        "other": [
+          36
+        ],
+        "risk": [
+          37
+        ],
+        "factors)": [
+          38
+        ],
+        "relationships": [
+          40
+        ],
+        "in": [
+          42,
+          70
+        ],
+        "the": [
+          43,
+          51,
+          71
+        ],
+        "diagnosis": [
+          44
+        ],
+        "treatment": [
+          46
+        ],
+        "diabetes": [
+          48
+        ],
+        "risk.": [
+          49
+        ],
+        "In": [
+          50,
+          67,
+          87
+        ],
+        "DMDSOnt,": [
+          52,
+          72,
+          88
+        ],
+        "8": [
+          53
+        ],
+        "high-level": [
+          54
+        ],
+        "classes": [
+          55,
+          83
+        ],
+        "which": [
+          56
+        ],
+        "are": [
+          57,
+          78,
+          90
+        ],
+        "<em>Disease,": [
+          58
+        ],
+        "Patient</em>,": [
+          59
+        ],
+        "<em>Suggestion</em>,": [
+          60
+        ],
+        "<em>Symptom,": [
+          61
+        ],
+        "Gender</em>,<em>": [
+          62
+        ],
+        "C_Peptid_Val</em>,": [
+          63
+        ],
+        "<em>Diagnose_Test</em>,": [
+          64
+        ],
+        "<em>Risk_Score_Result.": [
+          66
+        ],
+        "addition,": [
+          68
+        ],
+        "</em>": [
+          69
+        ],
+        "Data": [
+          74
+        ],
+        "Type": [
+          75,
+          93
+        ],
+        "Properties": [
+          76,
+          94
+        ],
+        "(DTP)": [
+          77
+        ],
+        "as": [
+          80
+        ],
+        "relations": [
+          81
+        ],
+        "between": [
+          82
+        ],
+        "data": [
+          85
+        ],
+        "types.": [
+          86
+        ],
+        "there": [
+          89
+        ],
+        "7": [
+          91
+        ],
+        "Object": [
+          92
+        ],
+        "(OTP).": [
+          95
+        ],
+        "Furthermore,": [
+          96
+        ],
+        "60": [
+          97
+        ],
+        "medical": [
+          98
+        ],
+        "semantic": [
+          99
+        ],
+        "rules": [
+          100
+        ],
+        "SWRL.": [
+          103
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2024-04-08T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4394395804",
+      "doi": "https://doi.org/10.6084/m9.figshare.21070348.v2",
+      "title": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "display_name": "Diabetes Mellitus Diagnosis and Support Ontology (DMDSOnt)",
+      "relevance_score": 98.04414,
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4394395804",
+        "doi": "https://doi.org/10.6084/m9.figshare.21070348.v2"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.6084/m9.figshare.21070348.v2",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v2",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.6084/m9.figshare.21070348.v2",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5015023007",
+            "display_name": "Duygu Çelik Ertuğrul",
+            "orcid": "https://orcid.org/0000-0003-1380-705X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Celik Ertugrul, Duygu",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030982675",
+            "display_name": "Yıltan Bitirim",
+            "orcid": "https://orcid.org/0000-0002-1780-2806"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bitirim, Yiltan",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.5651000142097473,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.5651000142097473,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6341767907142639
+        },
+        {
+          "id": "https://openalex.org/keywords/diabetes-mellitus",
+          "display_name": "Diabetes mellitus",
+          "score": 0.5742581486701965
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.43916332721710205
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.40559151768684387
+        },
+        {
+          "id": "https://openalex.org/keywords/computational-biology",
+          "display_name": "Computational biology",
+          "score": 0.4020378589630127
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.1789403259754181
+        },
+        {
+          "id": "https://openalex.org/keywords/endocrinology",
+          "display_name": "Endocrinology",
+          "score": 0.15726056694984436
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.14463931322097778
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.1337628960609436
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6341767907142639
+        },
+        {
+          "id": "https://openalex.org/C555293320",
+          "wikidata": "https://www.wikidata.org/wiki/Q12206",
+          "display_name": "Diabetes mellitus",
+          "level": 2,
+          "score": 0.5742581486701965
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.43916332721710205
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.40559151768684387
+        },
+        {
+          "id": "https://openalex.org/C70721500",
+          "wikidata": "https://www.wikidata.org/wiki/Q177005",
+          "display_name": "Computational biology",
+          "level": 1,
+          "score": 0.4020378589630127
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.1789403259754181
+        },
+        {
+          "id": "https://openalex.org/C134018914",
+          "wikidata": "https://www.wikidata.org/wiki/Q162606",
+          "display_name": "Endocrinology",
+          "level": 1,
+          "score": 0.15726056694984436
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.14463931322097778
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.1337628960609436
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.6084/m9.figshare.21070348.v2",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v2",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196282",
+            "display_name": "Figshare",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.6084/m9.figshare.21070348.v2",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.6084/m9.figshare.21070348.v2",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4377196282",
+          "display_name": "Figshare",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210132348",
+          "host_organization_name": "Figshare (United Kingdom)",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210132348"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "Dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W3031052312",
+        "https://openalex.org/W4389568370",
+        "https://openalex.org/W3032375762",
+        "https://openalex.org/W1995515455",
+        "https://openalex.org/W2080531066",
+        "https://openalex.org/W3108674512",
+        "https://openalex.org/W1506200166",
+        "https://openalex.org/W1489783725"
+      ],
+      "abstract_inverted_index": {
+        "<strong>Diabetes": [
+          0
+        ],
+        "Mellitus": [
+          1
+        ],
+        "Diagnosis": [
+          2
+        ],
+        "and": [
+          3,
+          22,
+          35,
+          39,
+          45,
+          65,
+          84
+        ],
+        "Support": [
+          4
+        ],
+        "Ontology": [
+          5
+        ],
+        "(DMDSOnt)": [
+          6
+        ],
+        "is": [
+          7,
+          10
+        ],
+        "shared</strong>.": [
+          8
+        ],
+        "DMDSOnt": [
+          9
+        ],
+        "created": [
+          11,
+          79,
+          101
+        ],
+        "using": [
+          12,
+          102
+        ],
+        "OWL": [
+          13
+        ],
+        "2.0.": [
+          14
+        ],
+        "DMDSont": [
+          15
+        ],
+        "developed": [
+          16
+        ],
+        "contains": [
+          17
+        ],
+        "various": [
+          18,
+          73
+        ],
+        "information": [
+          19
+        ],
+        "(e.g.,": [
+          20
+        ],
+        "symptoms": [
+          21
+        ],
+        "signs,": [
+          23
+        ],
+        "physical": [
+          24
+        ],
+        "activities,": [
+          25
+        ],
+        "genetic": [
+          26
+        ],
+        "history": [
+          27
+        ],
+        "of": [
+          28,
+          47
+        ],
+        "patients,": [
+          29
+        ],
+        "frequently": [
+          30
+        ],
+        "used": [
+          31,
+          41
+        ],
+        "clinical": [
+          32
+        ],
+        "laboratory": [
+          33
+        ],
+        "tests": [
+          34
+        ],
+        "other": [
+          36
+        ],
+        "risk": [
+          37
+        ],
+        "factors)": [
+          38
+        ],
+        "relationships": [
+          40
+        ],
+        "in": [
+          42,
+          70
+        ],
+        "the": [
+          43,
+          51,
+          71
+        ],
+        "diagnosis": [
+          44
+        ],
+        "treatment": [
+          46
+        ],
+        "diabetes": [
+          48
+        ],
+        "risk.": [
+          49
+        ],
+        "In": [
+          50,
+          67,
+          87
+        ],
+        "DMDSOnt,": [
+          52,
+          72,
+          88
+        ],
+        "8": [
+          53
+        ],
+        "high-level": [
+          54
+        ],
+        "classes": [
+          55,
+          83
+        ],
+        "which": [
+          56
+        ],
+        "are": [
+          57,
+          78,
+          90
+        ],
+        "<em>Disease,": [
+          58
+        ],
+        "Patient</em>,": [
+          59
+        ],
+        "<em>Suggestion</em>,": [
+          60
+        ],
+        "<em>Symptom,": [
+          61
+        ],
+        "Gender</em>,<em>": [
+          62
+        ],
+        "C_Peptid_Val</em>,": [
+          63
+        ],
+        "<em>Diagnose_Test</em>,": [
+          64
+        ],
+        "<em>Risk_Score_Result.": [
+          66
+        ],
+        "addition,": [
+          68
+        ],
+        "</em>": [
+          69
+        ],
+        "Data": [
+          74
+        ],
+        "Type": [
+          75,
+          93
+        ],
+        "Properties": [
+          76,
+          94
+        ],
+        "(DTP)": [
+          77
+        ],
+        "as": [
+          80
+        ],
+        "relations": [
+          81
+        ],
+        "between": [
+          82
+        ],
+        "data": [
+          85
+        ],
+        "types.": [
+          86
+        ],
+        "there": [
+          89
+        ],
+        "7": [
+          91
+        ],
+        "Object": [
+          92
+        ],
+        "(OTP).": [
+          95
+        ],
+        "Furthermore,": [
+          96
+        ],
+        "60": [
+          97
+        ],
+        "medical": [
+          98
+        ],
+        "semantic": [
+          99
+        ],
+        "rules": [
+          100
+        ],
+        "SWRL.": [
+          103
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2024-04-08T00:00:00"
+    }
+  ],
+  "group_by": []
+}

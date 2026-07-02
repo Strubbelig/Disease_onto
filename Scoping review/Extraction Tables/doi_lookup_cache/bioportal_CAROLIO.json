@@ -1,0 +1,111 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/8f9b62d0-a37a-013c-2156-005056010088",
+      "name": "Michael Saban",
+      "email": "msaban@luc.edu"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/8fb78b00-a37a-013c-2156-005056010088",
+      "name": "Mohammad Samie Tootooni",
+      "email": "mtootooni@luc.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/msaban"
+    ],
+    "acronym": "CAROLIO",
+    "name": "Caroli's Disease and Syndrome Ontology",
+    "@id": "https://data.bioontology.org/ontologies/CAROLIO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CAROLIO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CAROLIO/properties",
+      "classes": "https://data.bioontology.org/ontologies/CAROLIO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CAROLIO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CAROLIO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CAROLIO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CAROLIO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CAROLIO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CAROLIO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CAROLIO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CAROLIO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CAROLIO/notes",
+      "groups": "https://data.bioontology.org/ontologies/CAROLIO/groups",
+      "categories": "https://data.bioontology.org/ontologies/CAROLIO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CAROLIO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CAROLIO/projects",
+      "download": "https://data.bioontology.org/ontologies/CAROLIO/download",
+      "views": "https://data.bioontology.org/ontologies/CAROLIO/views",
+      "analytics": "https://data.bioontology.org/ontologies/CAROLIO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CAROLIO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-12-12T00:00:00.000+00:00",
+  "creationDate": "2024-02-01T13:55:40.000-08:00",
+  "homepage": "https://github.com/TootooniLab/CaroliO",
+  "publication": [],
+  "documentation": "https://github.com/TootooniLab/CaroliO/blob/main/RELEASES.md",
+  "version": "2.2",
+  "description": "We present CaroliO, an ontology for Caroli's disease and syndrome, aimed at enhancing the diagnosis and treatment of these rare liver conditions. Our work addresses the pressing need for structured knowledge resources in the field of rare diseases, which often present significant diagnostic and treatment challenges due to limited information.\r\n\r\nWe developed our ontology in two versions: CaroliO VB, which is the Basic ontology; and CaroliO VA, the Applied Version, which includes more complex axioms i.e. closure axioms and axioms that indicate combinations of scenarios among symptoms, signs, treatments, and outcomes. The Basic Version follows the underlying Open World Assumption and is suitable for ontologists and future researches, while the Applied Version includes more complex axioms to better reflect real world decision making in diagnosis and choosing treatments for Caroli’s disease and syndrome based on our current knowledge.",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/CAROLIO/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CAROLIO/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

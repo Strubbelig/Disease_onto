@@ -1,0 +1,1157 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 123,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Global Code Book Ontology GCBO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Global Code Book Ontology GCBO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Global Code Book Ontology GCBO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W302716926",
+      "doi": null,
+      "title": "Elevating the Civic Science Literacy of American Adults;Assessing a Renewed Citizen Science Paradigm Integrating Nonformal Outdoor Adult Education and Enhanced Experiential Learning",
+      "display_name": "Elevating the Civic Science Literacy of American Adults;Assessing a Renewed Citizen Science Paradigm Integrating Nonformal Outdoor Adult Education and Enhanced Experiential Learning",
+      "relevance_score": 0.8637201,
+      "publication_year": 2011,
+      "publication_date": "2011-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W302716926",
+        "mag": "302716926"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:engagedscholarship.csuohio.edu:etdarchive-1071",
+        "is_oa": true,
+        "landing_page_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+        "pdf_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+        "source": {
+          "id": "https://openalex.org/S4306400889",
+          "display_name": "EngagedScholarship @ Cleveland State University (Cleveland State University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I102607778",
+          "host_organization_name": "Cleveland State University",
+          "host_organization_lineage": [
+            "https://openalex.org/I102607778"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "ETD Archive",
+        "raw_type": "text"
+      },
+      "type": "book-chapter",
+      "indexed_in": [],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5042640873",
+            "display_name": "David Patrick Cronin",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I102607778",
+              "display_name": "Cleveland State University",
+              "ror": "https://ror.org/002tx1f22",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I102607778"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "David Patrick Cronin",
+          "raw_affiliation_strings": [
+            "Cleveland State University"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Cleveland State University",
+              "institution_ids": [
+                "https://openalex.org/I102607778"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5042640873"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I102607778"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.08963093,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11806",
+        "display_name": "Service-Learning and Community Engagement",
+        "score": 0.9987999796867371,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3304",
+          "display_name": "Education"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11806",
+          "display_name": "Service-Learning and Community Engagement",
+          "score": 0.9987999796867371,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12904",
+          "display_name": "Diverse Educational Innovations Studies",
+          "score": 0.9926999807357788,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1100",
+            "display_name": "General Agricultural and Biological Sciences"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/11",
+            "display_name": "Agricultural and Biological Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12997",
+          "display_name": "Outdoor and Experiential Education",
+          "score": 0.9865999817848206,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/scientific-literacy",
+          "display_name": "Scientific literacy",
+          "score": 0.6377599239349365
+        },
+        {
+          "id": "https://openalex.org/keywords/agency",
+          "display_name": "Agency (philosophy)",
+          "score": 0.6351375579833984
+        },
+        {
+          "id": "https://openalex.org/keywords/civic-engagement",
+          "display_name": "Civic engagement",
+          "score": 0.6259609460830688
+        },
+        {
+          "id": "https://openalex.org/keywords/science-education",
+          "display_name": "Science education",
+          "score": 0.6176027059555054
+        },
+        {
+          "id": "https://openalex.org/keywords/citizen-science",
+          "display_name": "Citizen science",
+          "score": 0.61221843957901
+        },
+        {
+          "id": "https://openalex.org/keywords/experiential-learning",
+          "display_name": "Experiential learning",
+          "score": 0.5805278420448303
+        },
+        {
+          "id": "https://openalex.org/keywords/public-awareness-of-science",
+          "display_name": "Public awareness of science",
+          "score": 0.5181114077568054
+        },
+        {
+          "id": "https://openalex.org/keywords/literacy",
+          "display_name": "Literacy",
+          "score": 0.4675150513648987
+        },
+        {
+          "id": "https://openalex.org/keywords/sociology",
+          "display_name": "Sociology",
+          "score": 0.42857107520103455
+        },
+        {
+          "id": "https://openalex.org/keywords/social-science-education",
+          "display_name": "Social science education",
+          "score": 0.42676645517349243
+        },
+        {
+          "id": "https://openalex.org/keywords/science-communication",
+          "display_name": "Science communication",
+          "score": 0.42484909296035767
+        },
+        {
+          "id": "https://openalex.org/keywords/public-relations",
+          "display_name": "Public relations",
+          "score": 0.4212767481803894
+        },
+        {
+          "id": "https://openalex.org/keywords/pedagogy",
+          "display_name": "Pedagogy",
+          "score": 0.3758181035518646
+        },
+        {
+          "id": "https://openalex.org/keywords/political-science",
+          "display_name": "Political science",
+          "score": 0.36773139238357544
+        },
+        {
+          "id": "https://openalex.org/keywords/social-science",
+          "display_name": "Social science",
+          "score": 0.33271658420562744
+        },
+        {
+          "id": "https://openalex.org/keywords/politics",
+          "display_name": "Politics",
+          "score": 0.2766069769859314
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C77379859",
+          "wikidata": "https://www.wikidata.org/wiki/Q2064596",
+          "display_name": "Scientific literacy",
+          "level": 3,
+          "score": 0.6377599239349365
+        },
+        {
+          "id": "https://openalex.org/C108170787",
+          "wikidata": "https://www.wikidata.org/wiki/Q3951828",
+          "display_name": "Agency (philosophy)",
+          "level": 2,
+          "score": 0.6351375579833984
+        },
+        {
+          "id": "https://openalex.org/C2776431611",
+          "wikidata": "https://www.wikidata.org/wiki/Q4116870",
+          "display_name": "Civic engagement",
+          "level": 3,
+          "score": 0.6259609460830688
+        },
+        {
+          "id": "https://openalex.org/C44877443",
+          "wikidata": "https://www.wikidata.org/wiki/Q2485457",
+          "display_name": "Science education",
+          "level": 2,
+          "score": 0.6176027059555054
+        },
+        {
+          "id": "https://openalex.org/C197352329",
+          "wikidata": "https://www.wikidata.org/wiki/Q1093434",
+          "display_name": "Citizen science",
+          "level": 2,
+          "score": 0.61221843957901
+        },
+        {
+          "id": "https://openalex.org/C37228920",
+          "wikidata": "https://www.wikidata.org/wiki/Q1307600",
+          "display_name": "Experiential learning",
+          "level": 2,
+          "score": 0.5805278420448303
+        },
+        {
+          "id": "https://openalex.org/C176049440",
+          "wikidata": "https://www.wikidata.org/wiki/Q7257698",
+          "display_name": "Public awareness of science",
+          "level": 4,
+          "score": 0.5181114077568054
+        },
+        {
+          "id": "https://openalex.org/C547764534",
+          "wikidata": "https://www.wikidata.org/wiki/Q8236",
+          "display_name": "Literacy",
+          "level": 2,
+          "score": 0.4675150513648987
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.42857107520103455
+        },
+        {
+          "id": "https://openalex.org/C543908354",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science education",
+          "level": 3,
+          "score": 0.42676645517349243
+        },
+        {
+          "id": "https://openalex.org/C472806",
+          "wikidata": "https://www.wikidata.org/wiki/Q472328",
+          "display_name": "Science communication",
+          "level": 3,
+          "score": 0.42484909296035767
+        },
+        {
+          "id": "https://openalex.org/C39549134",
+          "wikidata": "https://www.wikidata.org/wiki/Q133080",
+          "display_name": "Public relations",
+          "level": 1,
+          "score": 0.4212767481803894
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.3758181035518646
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.36773139238357544
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.33271658420562744
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.2766069769859314
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C59822182",
+          "wikidata": "https://www.wikidata.org/wiki/Q441",
+          "display_name": "Botany",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "pmh:oai:engagedscholarship.csuohio.edu:etdarchive-1071",
+          "is_oa": true,
+          "landing_page_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+          "pdf_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+          "source": {
+            "id": "https://openalex.org/S4306400889",
+            "display_name": "EngagedScholarship @ Cleveland State University (Cleveland State University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I102607778",
+            "host_organization_name": "Cleveland State University",
+            "host_organization_lineage": [
+              "https://openalex.org/I102607778"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "ETD Archive",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:etd.ohiolink.edu:csu1301628998",
+          "is_oa": true,
+          "landing_page_url": "http://rave.ohiolink.edu/etdc/view?acc_num=csu1301628998",
+          "pdf_url": "http://rave.ohiolink.edu/etdc/view?acc_num=csu1301628998",
+          "source": {
+            "id": "https://openalex.org/S4377196344",
+            "display_name": "OhioLink ETD Center (Ohio Library and Information Network)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210155183",
+            "host_organization_name": "Ohio Library and Information Network",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210155183"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://rave.ohiolink.edu/etdc/view?acc_num=csu1301628998",
+          "raw_type": "text"
+        },
+        {
+          "id": "mag:302716926",
+          "is_oa": false,
+          "landing_page_url": "https://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1071&context=etdarchive",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306478302",
+            "display_name": "ProQuest LLC eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": "ProQuest LLC eBooks",
+          "raw_type": null
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:engagedscholarship.csuohio.edu:etdarchive-1071",
+        "is_oa": true,
+        "landing_page_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+        "pdf_url": "https://engagedscholarship.csuohio.edu/etdarchive/72",
+        "source": {
+          "id": "https://openalex.org/S4306400889",
+          "display_name": "EngagedScholarship @ Cleveland State University (Cleveland State University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I102607778",
+          "host_organization_name": "Cleveland State University",
+          "host_organization_lineage": [
+            "https://openalex.org/I102607778"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "ETD Archive",
+        "raw_type": "text"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/4",
+          "score": 0.8999999761581421,
+          "display_name": "Quality Education"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W302716926.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W302716926.grobid-xml"
+      },
+      "referenced_works_count": 98,
+      "referenced_works": [
+        "https://openalex.org/W3223423",
+        "https://openalex.org/W91721385",
+        "https://openalex.org/W130925041",
+        "https://openalex.org/W416527316",
+        "https://openalex.org/W566848934",
+        "https://openalex.org/W576478785",
+        "https://openalex.org/W579683789",
+        "https://openalex.org/W601571927",
+        "https://openalex.org/W624349543",
+        "https://openalex.org/W1534144404",
+        "https://openalex.org/W1534799940",
+        "https://openalex.org/W1546305307",
+        "https://openalex.org/W1556867390",
+        "https://openalex.org/W1561697184",
+        "https://openalex.org/W1562811233",
+        "https://openalex.org/W1563276781",
+        "https://openalex.org/W1573056627",
+        "https://openalex.org/W1575260009",
+        "https://openalex.org/W1576849655",
+        "https://openalex.org/W1577785489",
+        "https://openalex.org/W1584112820",
+        "https://openalex.org/W1593874157",
+        "https://openalex.org/W1598066769",
+        "https://openalex.org/W1602783881",
+        "https://openalex.org/W1627144504",
+        "https://openalex.org/W1645927333",
+        "https://openalex.org/W1924110832",
+        "https://openalex.org/W1950299194",
+        "https://openalex.org/W1966135189",
+        "https://openalex.org/W1968070948",
+        "https://openalex.org/W1978252666",
+        "https://openalex.org/W1981343074",
+        "https://openalex.org/W1991084410",
+        "https://openalex.org/W1992251940",
+        "https://openalex.org/W1995883312",
+        "https://openalex.org/W1996293905",
+        "https://openalex.org/W1997179059",
+        "https://openalex.org/W1997880598",
+        "https://openalex.org/W1999869282",
+        "https://openalex.org/W2000007266",
+        "https://openalex.org/W2007845501",
+        "https://openalex.org/W2012019355",
+        "https://openalex.org/W2014748700",
+        "https://openalex.org/W2015073472",
+        "https://openalex.org/W2016335066",
+        "https://openalex.org/W2023453744",
+        "https://openalex.org/W2023788375",
+        "https://openalex.org/W2025183119",
+        "https://openalex.org/W2035190960",
+        "https://openalex.org/W2039474005",
+        "https://openalex.org/W2045338850",
+        "https://openalex.org/W2047832305",
+        "https://openalex.org/W2048326905",
+        "https://openalex.org/W2054454819",
+        "https://openalex.org/W2061493547",
+        "https://openalex.org/W2063533402",
+        "https://openalex.org/W2065164398",
+        "https://openalex.org/W2069132307",
+        "https://openalex.org/W2070515367",
+        "https://openalex.org/W2089029652",
+        "https://openalex.org/W2089895013",
+        "https://openalex.org/W2091810724",
+        "https://openalex.org/W2093732518",
+        "https://openalex.org/W2096286785",
+        "https://openalex.org/W2099829819",
+        "https://openalex.org/W2100874749",
+        "https://openalex.org/W2109605276",
+        "https://openalex.org/W2112237840",
+        "https://openalex.org/W2114837010",
+        "https://openalex.org/W2117496611",
+        "https://openalex.org/W2121813027",
+        "https://openalex.org/W2123950830",
+        "https://openalex.org/W2125719801",
+        "https://openalex.org/W2128441786",
+        "https://openalex.org/W2132183746",
+        "https://openalex.org/W2142822177",
+        "https://openalex.org/W2143208280",
+        "https://openalex.org/W2146064252",
+        "https://openalex.org/W2146171674",
+        "https://openalex.org/W2147671322",
+        "https://openalex.org/W2160625753",
+        "https://openalex.org/W2163342390",
+        "https://openalex.org/W2166658986",
+        "https://openalex.org/W2171539396",
+        "https://openalex.org/W2203580227",
+        "https://openalex.org/W2226602476",
+        "https://openalex.org/W2319468189",
+        "https://openalex.org/W2329672111",
+        "https://openalex.org/W2334396793",
+        "https://openalex.org/W2497967931",
+        "https://openalex.org/W2525565195",
+        "https://openalex.org/W2796965495",
+        "https://openalex.org/W2797595534",
+        "https://openalex.org/W2799247388",
+        "https://openalex.org/W2810164421",
+        "https://openalex.org/W2837281936",
+        "https://openalex.org/W2888190061",
+        "https://openalex.org/W2890064446"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "America's": [
+          0,
+          31
+        ],
+        "adult": [
+          1,
+          32,
+          53
+        ],
+        "populace": [
+          2,
+          33
+        ],
+        "has": [
+          3
+        ],
+        "failed": [
+          4
+        ],
+        "to": [
+          5,
+          77,
+          185
+        ],
+        "keep": [
+          6
+        ],
+        "pace": [
+          7
+        ],
+        "with": [
+          8
+        ],
+        "the": [
+          9,
+          45,
+          61,
+          69,
+          101,
+          108,
+          136,
+          144,
+          173
+        ],
+        "rapid": [
+          10
+        ],
+        "inundation": [
+          11
+        ],
+        "of": [
+          12,
+          19,
+          28,
+          64,
+          73,
+          103,
+          154,
+          162,
+          203
+        ],
+        "science-centric": [
+          13
+        ],
+        "advancements": [
+          14
+        ],
+        "affecting": [
+          15
+        ],
+        "nearly": [
+          16
+        ],
+        "every": [
+          17
+        ],
+        "facet": [
+          18
+        ],
+        "personal": [
+          20
+        ],
+        "and": [
+          21,
+          43,
+          55,
+          119,
+          125,
+          149,
+          187,
+          197
+        ],
+        "public": [
+          22
+        ],
+        "life.": [
+          23
+        ],
+        "With": [
+          24,
+          92
+        ],
+        "deficiencies": [
+          25
+        ],
+        "in": [
+          26,
+          165,
+          179,
+          194
+        ],
+        "areas": [
+          27
+        ],
+        "science": [
+          29,
+          38,
+          48,
+          71,
+          89,
+          139,
+          145,
+          150,
+          181,
+          192
+        ],
+        "knowledge,": [
+          30
+        ],
+        "is": [
+          34
+        ],
+        "characterized": [
+          35
+        ],
+        "as": [
+          36
+        ],
+        "civic": [
+          37,
+          70,
+          180,
+          191
+        ],
+        "illiterate.": [
+          39
+        ],
+        "This": [
+          40
+        ],
+        "research": [
+          41,
+          80,
+          84,
+          90,
+          167,
+          174
+        ],
+        "constructed": [
+          42
+        ],
+        "employed": [
+          44
+        ],
+        "renewed": [
+          46,
+          137
+        ],
+        "citizen": [
+          47,
+          65,
+          138
+        ],
+        "paradigm,": [
+          49
+        ],
+        "incorporating": [
+          50
+        ],
+        "nonformal": [
+          51
+        ],
+        "outdoor": [
+          52
+        ],
+        "education": [
+          54
+        ],
+        "enhanced": [
+          56
+        ],
+        "experiential": [
+          57
+        ],
+        "learning": [
+          58
+        ],
+        "while": [
+          59,
+          157
+        ],
+        "maintaining": [
+          60
+        ],
+        "basic": [
+          62
+        ],
+        "tenet": [
+          63
+        ],
+        "science,": [
+          66
+        ],
+        "towards": [
+          67,
+          81
+        ],
+        "elevating": [
+          68
+        ],
+        "literacy": [
+          72,
+          182,
+          193
+        ],
+        "adults": [
+          74,
+          96,
+          156
+        ],
+        "who": [
+          75
+        ],
+        "volunteered": [
+          76
+        ],
+        "conduct": [
+          78
+        ],
+        "scientific": [
+          79,
+          163
+        ],
+        "answering": [
+          82
+        ],
+        "important": [
+          83
+        ],
+        "questions": [
+          85
+        ],
+        "posed": [
+          86
+        ],
+        "by": [
+          87
+        ],
+        "a": [
+          88,
+          114
+        ],
+        "agency.": [
+          91,
+          171
+        ],
+        "67": [
+          93
+        ],
+        "volunteers,": [
+          94
+        ],
+        "23": [
+          95
+        ],
+        "were": [
+          97
+        ],
+        "purposively": [
+          98
+        ],
+        "selected": [
+          99
+        ],
+        "on": [
+          100
+        ],
+        "basis": [
+          102
+        ],
+        "their": [
+          104,
+          189
+        ],
+        "complete": [
+          105
+        ],
+        "participation": [
+          106
+        ],
+        "throughout": [
+          107
+        ],
+        "program.": [
+          109
+        ],
+        "Data": [
+          110
+        ],
+        "was": [
+          111
+        ],
+        "collected": [
+          112
+        ],
+        "through": [
+          113
+        ],
+        "concurrent": [
+          115
+        ],
+        "mixed": [
+          116,
+          127
+        ],
+        "methods": [
+          117
+        ],
+        "design,": [
+          118
+        ],
+        "both": [
+          120
+        ],
+        "quantitatively,": [
+          121
+        ],
+        "self-report": [
+          122
+        ],
+        "surveys": [
+          123
+        ],
+        "(n=23),": [
+          124
+        ],
+        "qualitatively,": [
+          126
+        ],
+        "method": [
+          128
+        ],
+        "interviews": [
+          129
+        ],
+        "(n=10),": [
+          130
+        ],
+        "analyzed.": [
+          131
+        ],
+        "The": [
+          132
+        ],
+        "results": [
+          133
+        ],
+        "demonstrate": [
+          134
+        ],
+        "that": [
+          135
+        ],
+        "paradigm": [
+          140
+        ],
+        "statistically": [
+          141
+        ],
+        "significantly": [
+          142
+        ],
+        "elevated": [
+          143
+        ],
+        "vocabulary": [
+          146
+        ],
+        "knowledge": [
+          147
+        ],
+        "(p<0.001)": [
+          148,
+          153
+        ],
+        "process": [
+          151
+        ],
+        "understanding": [
+          152
+        ],
+        "participating": [
+          155
+        ],
+        "collecting": [
+          158
+        ],
+        "over": [
+          159
+        ],
+        "30,000": [
+          160
+        ],
+        "pieces": [
+          161
+        ],
+        "data": [
+          164
+        ],
+        "conducting": [
+          166
+        ],
+        "for": [
+          168
+        ],
+        "an": [
+          169
+        ],
+        "outside": [
+          170
+        ],
+        "Additionally,": [
+          172
+        ],
+        "communicates": [
+          175
+        ],
+        "how": [
+          176
+        ],
+        "marked": [
+          177
+        ],
+        "elevations": [
+          178
+        ],
+        "catalyzed": [
+          183
+        ],
+        "volunteers": [
+          184
+        ],
+        "participate": [
+          186
+        ],
+        "assert": [
+          188
+        ],
+        "new": [
+          190
+        ],
+        "personal,": [
+          195
+        ],
+        "social,": [
+          196
+        ],
+        "political": [
+          198
+        ],
+        "forums,": [
+          199
+        ],
+        "having": [
+          200
+        ],
+        "taken": [
+          201
+        ],
+        "ownership": [
+          202
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-03-20T23:20:44.827607",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

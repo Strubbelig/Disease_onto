@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "22",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36252210",
+      "36940055",
+      "39575149",
+      "35596083",
+      "37789509",
+      "38683045",
+      "34865616",
+      "33593793",
+      "38505006",
+      "35735915"
+    ],
+    "translationset": [
+      {
+        "from": "GECKO",
+        "to": "\"gecko's\"[All Fields] OR \"geckoes\"[All Fields] OR \"lizards\"[MeSH Terms] OR \"lizards\"[All Fields] OR \"gecko\"[All Fields] OR \"geckos\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"gecko s\"[All Fields] OR \"geckoes\"[All Fields] OR \"lizards\"[MeSH Terms] OR \"lizards\"[All Fields] OR \"gecko\"[All Fields] OR \"geckos\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}
