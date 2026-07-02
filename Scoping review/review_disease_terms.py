@@ -1210,6 +1210,13 @@ def infer_ontology_scope_category(row: dict[str, Any]) -> str:
 
 
 def preassert_exclusion(row: dict[str, Any]) -> tuple[str, str, str]:
+    # OBO Foundry ontologies are accepted at the ontology level by standing policy.
+    if (
+        row.get("ontology_scope_category") == "obo_foundry_ontology"
+        or str(row.get("class_iri", "")).startswith("http://purl.obolibrary.org/obo/")
+        or "OBO Foundry Direct" in str(row.get("source_databases", ""))
+    ):
+        return ("candidate", "", "")
     text = ontology_text(row)
     status = row.get("ontology_status", "").lower()
     ontology = row.get("ontology", "").lower()
