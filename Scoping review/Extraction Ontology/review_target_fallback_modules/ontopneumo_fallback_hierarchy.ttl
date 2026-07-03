@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/ontopneumo_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for ONTOPNEUMO; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=0.1, released=2011-05-11T00:00:00.000+00:00, creationDate=2012-12-04T03:09:05.000-08:00, submissionId=1" ;
-    dcterms:created "2026-07-02T21:50:45-04:00" ;
+    dcterms:created "2026-07-03T12:41:43-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://doe-generated-ontology.com/OntoPneumo#EtatDeSante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

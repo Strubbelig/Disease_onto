@@ -39,7 +39,7 @@
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2015/0/disorderscluster.owl#DisorderCharacteristics> .
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/comment_quality> "absent" .
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/definition_quality> "absent" .
-<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/disease_model_category> "disease_as_disposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disposition" .
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/manual_screening_hint> "missing definition; missing comment" .
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/mapping_count> "5" .
 <http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
@@ -65,7 +65,7 @@
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CST/SKIN> .
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/comment_quality> "absent" .
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/definition_quality> "absent" .
-<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/disease_model_category> "disease_as_disorder" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disorder" .
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/manual_screening_hint> "missing definition; missing comment" .
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/mapping_count> "16" .
 <http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
@@ -129,7 +129,7 @@
 <http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
 <http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .
 <http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/comment_quality> "absent" .
-<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/disease_model_category> "disease_as_finding" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/disease_model_category> "entity_as_finding" .
 <http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/manual_include_status> "include" .
 <http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment; term IRI namespace suggests imported/reused class" .
 <http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/mapping_count> "91" .
@@ -158,7 +158,7 @@
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#label> "pathological disposition" .
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Disposition> .
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/comment_quality> "absent" .
-<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/disease_model_category> "disease_as_disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disposition" .
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment" .
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/mapping_count> "2" .
 <http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
@@ -236,7 +236,7 @@
 <https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "pathological process" .
 <https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalProcess> .
 <https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/comment_quality> "absent" .
-<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/disease_model_category> "disease_as_process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/disease_model_category> "entity_as_process" .
 <https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment" .
 <https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/mapping_count> "28" .
 <https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/native_ontology_guess> "biolink" .

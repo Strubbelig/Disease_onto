@@ -26,10 +26,12 @@ import re
 import sys
 import time
 import urllib.parse
+import webbrowser
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 
@@ -69,17 +71,21 @@ CANONICAL_MESH_ONTOLOGY = "MESH"
 DUPLICATE_MESH_ONTOLOGIES = {"MDM", "RH-MESH"}
 EXCLUDED_WEBPROTEGE_IRI_HOST = "webprotege.stanford.edu"
 WEBPROTEGE_EXCLUSION_REASON = "webprotege_random_or_local_iri_unstable_provenance"
+EXCLUDED_VALUESET_ONTOLOGIES = {"VALUESETS"}
+VALUESET_EXCLUSION_REASON = "value_set_collection_not_independent_ontology"
 CITATION_REVIEW_TERMS = {"condition", "disease", "injury"}
 ACCEPTED_CITATION_CONFIDENCES = {"correct", "high", "medium"}
 MANUAL_ACCEPTED_CITATION_CONFIDENCES = {"correct"}
 REJECTED_CITATION_CONFIDENCES = {
     "not_good",
     "not good",
+    "bad",
     "no paper there",
     "no paper yet",
     "no_candidate",
     "very_low",
     "low_screen",
+    "wrong ontology",
 }
 CITATION_DECISION_COLUMNS = [
     "certainty of correctness",
@@ -169,13 +175,17 @@ CONTROLLED_VALUES = {
     ],
     "native_or_imported_manual": ["native", "imported", "reused_unclear", "unknown"],
     "disease_model_category": [
-        "disease_as_disposition",
-        "disease_as_disorder",
-        "disease_as_process",
-        "disease_as_finding",
-        "disease_as_condition",
-        "disease_as_pathology",
-        "disease_as_syndrome",
+        "",
+        "entity_as_realizable_entity",
+        "entity_as_disposition",
+        "entity_as_situation",
+        "entity_as_disorder",
+        "entity_as_process",
+        "entity_as_finding",
+        "entity_as_condition",
+        "entity_as_state",
+        "entity_as_pathology",
+        "entity_as_syndrome",
         "mixed_or_unclear",
         "not_applicable",
     ],
@@ -187,24 +197,88 @@ CONTROLLED_VALUES = {
     "quality_decision": ["high_confidence_include", "include_with_caveat", "exclude", "uncertain_second_review"],
 }
 
-REVIEW_PROMPT_FIELDS = [
-    "ontology_type_manual",
-    "native_or_imported_manual",
-    "manual_include_status",
-    "manual_exclusion_reason",
-    "manual_exclusion_detail",
-    "disease_model_category",
-    "upper_level_interpretation",
-    "definition_quality",
-    "comment_quality",
-    "parentage_quality",
-    "provenance_quality",
-    "entity_quality_score",
-    "quality_decision",
-    "reviewer",
-    "review_date",
-    "review_notes",
+REVIEW_PROMPT_SECTIONS = [
+    (
+        "1. Eligibility",
+        [
+            "ontology_type_manual",
+            "native_or_imported_manual",
+            "manual_include_status",
+            "manual_exclusion_reason",
+            "manual_exclusion_detail",
+        ],
+    ),
+    (
+        "2. Modelling interpretation",
+        [
+            "upper_level_interpretation",
+            "disease_model_category",
+        ],
+    ),
+    (
+        "3. Evidence quality",
+        [
+            "definition_quality",
+            "comment_quality",
+            "parentage_quality",
+            "provenance_quality",
+            "entity_quality_score",
+        ],
+    ),
+    (
+        "4. Final decision and audit trail",
+        [
+            "quality_decision",
+            "reviewer",
+            "review_date",
+            "review_notes",
+        ],
+    ),
 ]
+
+REVIEW_PROMPT_FIELDS = [
+    field
+    for _, fields in REVIEW_PROMPT_SECTIONS
+    for field in fields
+]
+
+PROMPT_GUIDANCE = {
+    "ontology_type_manual": "What kind of source resource is this?",
+    "native_or_imported_manual": "Is this class defined natively here, imported, or reused unclearly?",
+    "manual_include_status": "Should this class enter the substantive review?",
+    "manual_exclusion_reason": "If excluded, why? Use blank for included or still-open cases.",
+    "manual_exclusion_detail": "Optional free-text detail for exclusions or special cases.",
+    "upper_level_interpretation": "Free text first: write what the ontology itself says, e.g. subclass of realizable entity, situation, process, clinical finding, or unclear. Do not force a category.",
+    "disease_model_category": "Optional later synthesis bucket. Leave blank if the ontology's own model is more precise than these options.",
+    "definition_quality": "How useful is the definition for understanding the entity?",
+    "comment_quality": "How useful are comments/notes, if present?",
+    "parentage_quality": "How informative is the superclass placement?",
+    "provenance_quality": "How adequate is version/source/provenance metadata?",
+    "entity_quality_score": "Overall score: 3 strong, 2 usable, 1 weak, 0 excluded.",
+    "quality_decision": "Final review decision for synthesis.",
+    "reviewer": "Reviewer initials/name.",
+    "review_date": "ISO date for this review.",
+    "review_notes": "Short caveats, reasoning, or paper evidence used.",
+}
+
+FIELD_LABELS = {
+    "ontology_type_manual": "Source type",
+    "native_or_imported_manual": "Native or imported?",
+    "manual_include_status": "Include in substantive review?",
+    "manual_exclusion_reason": "Exclusion reason",
+    "manual_exclusion_detail": "Exclusion detail",
+    "upper_level_interpretation": "Free-text modelling interpretation",
+    "disease_model_category": "Optional synthesis category",
+    "definition_quality": "Definition quality",
+    "comment_quality": "Comment quality",
+    "parentage_quality": "Parentage quality",
+    "provenance_quality": "Provenance quality",
+    "entity_quality_score": "Entity quality score",
+    "quality_decision": "Final quality decision",
+    "reviewer": "Reviewer",
+    "review_date": "Review date",
+    "review_notes": "Review notes",
+}
 
 MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY = [
     column
@@ -224,6 +298,7 @@ class ReviewPipelineConfig:
     review_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_review.ttl"
     smoke_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_bioportal_hierarchy_smoke.ttl"
     preferred_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs_changed by MM.xlsx"
+    citation_review_workbook: Path = TABLE_DIR / "Ontologies_Needing_Citations.xlsx"
     generated_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs.xlsx"
     citation_lookup_json: Path = TABLE_DIR / "ontology_merged_best_fit_lookup.json"
     citation_coverage_csv: Path = TABLE_DIR / "native_class_citation_coverage.csv"
@@ -586,6 +661,7 @@ class ReviewExtractionPipeline:
             "enrich": self.enrich,
             "prefill-manual": self.prefill_manual,
             "review-class": self.review_class_interactive,
+            "review-ui": self.review_ui,
             "export-appearance-report": self.export_source_appearance_report,
             "export-review-ontology": self.export_review_ontology,
             "export-smoke-ontology": self.export_smoke_ontology,
@@ -679,19 +755,23 @@ class ReviewExtractionPipeline:
         iri = target["class_iri"]
         manual_row = manual_by_iri[iri]
         evidence = self._class_module_evidence(iri)
-        self._print_review_packet(target, manual_row, evidence)
+        self._print_review_header(target, manual_row, evidence)
 
         if not self._confirm("Review this class now?", default=True):
             print("No changes written.")
             return
 
         updated = dict(manual_row)
-        for field in REVIEW_PROMPT_FIELDS:
-            if field == "reviewer" and args.reviewer and not updated.get(field):
-                updated[field] = args.reviewer
-            if field == "review_date" and not updated.get(field):
-                updated[field] = args.review_date or datetime.now().date().isoformat()
-            updated[field] = self._prompt_field(field, updated.get(field, ""))
+        for section_title, fields in REVIEW_PROMPT_SECTIONS:
+            print("\n" + "-" * 88)
+            print(section_title)
+            print("-" * 88)
+            for field in fields:
+                if field == "reviewer" and args.reviewer and not updated.get(field):
+                    updated[field] = args.reviewer
+                if field == "review_date" and not updated.get(field):
+                    updated[field] = args.review_date or datetime.now().date().isoformat()
+                updated[field] = self._prompt_field(field, updated.get(field, ""), target, evidence, updated)
 
         manual_by_iri[iri] = updated
         self._write_manual_annotations(enriched_rows, manual_by_iri)
@@ -824,39 +904,25 @@ class ReviewExtractionPipeline:
                 triples.append((subject, predicate, obj, False))
         return triples
 
-    def _print_review_packet(self, row: dict[str, str], manual: dict[str, str], evidence: dict[str, list[str]]) -> None:
+    def _print_review_header(self, row: dict[str, str], manual: dict[str, str], evidence: dict[str, list[str]]) -> None:
         print("\n" + "=" * 88)
         print("CLASS TO REVIEW")
         print("=" * 88)
         self._print_block("IRI", [row.get("class_iri", "")])
-        self._print_block("Label", evidence["labels"] or [row.get("preferred_label", "")])
-        self._print_block("Ontology/source", [
-            f"ontology: {row.get('ontology', '')}",
-            f"source_ontology_ids: {row.get('source_ontology_ids', '')}",
-            f"source_databases: {row.get('source_databases', '')}",
-            f"ontology_title: {row.get('ontology_title', '')}",
-            f"ontology_status: {row.get('ontology_status', '')}",
-            f"ontology_scope_category: {row.get('ontology_scope_category', '')}",
-            f"ontology_exclusion: {row.get('ontology_exclusion_status', '')} {row.get('ontology_exclusion_reason', '')}",
-            f"native_guess: {row.get('native_ontology_guess', '')} / {row.get('native_term_status', '')}",
+        self._print_block("Search term / matched concept", [
+            f"search term: {row.get('term', '')}",
+            f"preferred label: {row.get('preferred_label', '')}",
         ])
-        self._print_block("Definitions", evidence["definitions"] or split_semicolon(row.get("definition", "")) or ["(none)"])
-        self._print_block("Comments", evidence["comments"] or split_semicolon(row.get("comments", "")) or ["(none)"])
-        self._print_block("Synonyms", evidence["synonyms"] or split_semicolon(row.get("synonyms", "")) or ["(none)"])
-        self._print_block("Direct parents", evidence["parents"] or self._row_parent_lines(row) or ["(none)"])
-        self._print_block("Extraction hints", [
-            f"bfo_anchor: {row.get('bfo_anchor', '')}",
-            f"manual_screening_hint: {row.get('manual_screening_hint', '')}",
-            f"mapping_count: {row.get('mapping_count', '')}",
-            f"source_urls: {row.get('source_urls', '')}",
-            f"ontology_versions: {row.get('ontology_versions', '')}",
+        self._print_block("Label", evidence["labels"] or [row.get("preferred_label", "")])
+        self._print_block("Source", [
+            f"{row.get('ontology', '')}: {row.get('ontology_title', '')}",
+            f"native guess: {row.get('native_ontology_guess', '')} / {row.get('native_term_status', '')}",
         ])
         self._print_block("Current/manual defaults", [
             f"{field}: {manual.get(field, '')}"
             for field in REVIEW_PROMPT_FIELDS
             if manual.get(field, "")
-        ] or ["(none)"])
-        self._print_block("Resolving modules", evidence["module_paths"] or ["(no imported module found for this class)"])
+        ] or ["(none)"], max_items=8)
 
     @staticmethod
     def _row_parent_lines(row: dict[str, str]) -> list[str]:
@@ -887,11 +953,21 @@ class ReviewExtractionPipeline:
             return default
         return answer in {"y", "yes"}
 
-    @staticmethod
-    def _prompt_field(field: str, current: str) -> str:
+    def _prompt_field(
+        self,
+        field: str,
+        current: str,
+        row: dict[str, str],
+        evidence: dict[str, list[str]],
+        manual: dict[str, str],
+    ) -> str:
         values = CONTROLLED_VALUES.get(field)
+        guidance = PROMPT_GUIDANCE.get(field, "")
         if values:
-            print(f"\n{field}")
+            print(f"\n{FIELD_LABELS.get(field, field)} ({field})")
+            if guidance:
+                print(f"  {guidance}")
+            self._print_prompt_evidence(field, row, evidence, manual)
             for index, value in enumerate(values, start=1):
                 label = "(blank)" if value == "" else value
                 default_marker = " [current]" if value == current else ""
@@ -905,8 +981,857 @@ class ReviewExtractionPipeline:
                 return answer
             print(f"  Invalid value for {field}; keeping current.")
             return current
-        answer = input(f"\n{field} [{current or 'blank'}]: ").strip()
+        print(f"\n{FIELD_LABELS.get(field, field)} ({field})")
+        if guidance:
+            print(f"  {guidance}")
+        self._print_prompt_evidence(field, row, evidence, manual)
+        answer = input(f"Enter text, Enter keeps {current or 'blank'}: ").strip()
         return current if answer == "" else answer
+
+    def _print_prompt_evidence(
+        self,
+        field: str,
+        row: dict[str, str],
+        evidence: dict[str, list[str]],
+        manual: dict[str, str],
+    ) -> None:
+        lines = self._prompt_evidence_lines(field, row, evidence, manual)
+        if lines:
+            self._print_block("Evidence for this question", lines, max_items=8)
+
+    def _prompt_evidence_lines(
+        self,
+        field: str,
+        row: dict[str, str],
+        evidence: dict[str, list[str]],
+        manual: dict[str, str],
+    ) -> list[str]:
+        definitions = evidence["definitions"] or split_semicolon(row.get("definition", ""))
+        comments = evidence["comments"] or split_semicolon(row.get("comments", ""))
+        parents = evidence["parents"] or self._row_parent_lines(row)
+        base_identity = [
+            f"search term: {row.get('term', '')}",
+            f"label: {row.get('preferred_label', '')}",
+            f"IRI: {row.get('class_iri', '')}",
+        ]
+        source_context = [
+            f"ontology: {row.get('ontology', '')}",
+            f"source_ontology_ids: {row.get('source_ontology_ids', '')}",
+            f"source databases: {row.get('source_databases', '')}",
+            f"ontology title: {row.get('ontology_title', '')}",
+            f"ontology status: {row.get('ontology_status', '')}",
+            f"scope category: {row.get('ontology_scope_category', '')}",
+            f"exclusion status: {row.get('ontology_exclusion_status', '')} {row.get('ontology_exclusion_reason', '')}",
+        ]
+        native_context = [
+            f"native guess: {row.get('native_ontology_guess', '')}",
+            f"native term status: {row.get('native_term_status', '')}",
+            f"resolving modules: {'; '.join(evidence['module_paths']) or '(none)'}",
+        ]
+        extraction_hints = [
+            f"bfo_anchor: {row.get('bfo_anchor', '')}",
+            f"manual_screening_hint: {row.get('manual_screening_hint', '')}",
+            f"mapping_count: {row.get('mapping_count', '')}",
+        ]
+        provenance = [
+            f"source_urls: {row.get('source_urls', '')}",
+            f"ontology_versions: {row.get('ontology_versions', '')}",
+            f"resolving modules: {'; '.join(evidence['module_paths']) or '(none)'}",
+        ]
+        current_review = [
+            f"{name}: {manual.get(name, '')}"
+            for name in REVIEW_PROMPT_FIELDS
+            if manual.get(name, "") and name != field
+        ]
+
+        if field == "ontology_type_manual":
+            return self._nonblank(source_context)
+        if field == "native_or_imported_manual":
+            return self._nonblank(base_identity + source_context[:3] + native_context)
+        if field in {"manual_include_status", "manual_exclusion_reason", "manual_exclusion_detail"}:
+            return self._nonblank(base_identity + source_context + extraction_hints + definitions[:2] + parents[:3])
+        if field in {"disease_model_category", "upper_level_interpretation"}:
+            return self._nonblank(base_identity + extraction_hints + definitions[:3] + parents[:6])
+        if field == "definition_quality":
+            return self._nonblank(definitions or ["(no definition found)"])
+        if field == "comment_quality":
+            return self._nonblank(comments or ["(no comments found)"])
+        if field == "parentage_quality":
+            return self._nonblank(extraction_hints[:1] + (parents or ["(no parent found)"]))
+        if field == "provenance_quality":
+            return self._nonblank(provenance)
+        if field in {"entity_quality_score", "quality_decision", "review_notes"}:
+            return self._nonblank(current_review[:8] + definitions[:2] + parents[:3])
+        return []
+
+    @staticmethod
+    def _nonblank(values: list[str]) -> list[str]:
+        cleaned = []
+        for value in values:
+            text = str(value or "").strip()
+            if not text:
+                continue
+            if text.endswith(":"):
+                continue
+            cleaned.append(text)
+        return cleaned
+
+    def review_ui(self, args: argparse.Namespace) -> None:
+        pipeline = self
+
+        class ReviewUiHandler(BaseHTTPRequestHandler):
+            def log_message(self, fmt: str, *log_args: Any) -> None:
+                print(f"[review-ui] {self.address_string()} - {fmt % log_args}")
+
+            def _send(self, body: bytes, content_type: str, status: int = 200) -> None:
+                self.send_response(status)
+                self.send_header("Content-Type", content_type)
+                self.send_header("Content-Length", str(len(body)))
+                self.send_header("Cache-Control", "no-store")
+                self.end_headers()
+                self.wfile.write(body)
+
+            def _send_json(self, payload: Any, status: int = 200) -> None:
+                body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+                self._send(body, "application/json; charset=utf-8", status)
+
+            def do_GET(self) -> None:  # noqa: N802
+                parsed = urllib.parse.urlparse(self.path)
+                query = urllib.parse.parse_qs(parsed.query)
+                try:
+                    if parsed.path in {"/", "/index.html"}:
+                        self._send(pipeline._review_ui_html().encode("utf-8"), "text/html; charset=utf-8")
+                    elif parsed.path == "/api/config":
+                        self._send_json(pipeline._review_ui_config())
+                    elif parsed.path == "/api/classes":
+                        search = query.get("search", [""])[0]
+                        status_filter = query.get("status", ["todo"])[0]
+                        self._send_json(pipeline._review_ui_class_summaries(search, status_filter, args))
+                    elif parsed.path == "/api/class":
+                        iri = query.get("iri", [""])[0]
+                        payload = pipeline._review_ui_class_payload(iri, args)
+                        self._send_json(payload if payload else {"error": "class not found"}, 200 if payload else 404)
+                    elif parsed.path == "/api/health":
+                        self._send_json({"ok": True})
+                    else:
+                        self._send_json({"error": "not found"}, 404)
+                except Exception as exc:  # keep the browser from swallowing tracebacks silently
+                    self._send_json({"error": str(exc)}, 500)
+
+            def do_POST(self) -> None:  # noqa: N802
+                parsed = urllib.parse.urlparse(self.path)
+                try:
+                    length = int(self.headers.get("Content-Length", "0"))
+                    data = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
+                    if parsed.path == "/api/save":
+                        self._send_json(pipeline._review_ui_save(data, args))
+                    else:
+                        self._send_json({"error": "not found"}, 404)
+                except Exception as exc:
+                    self._send_json({"error": str(exc)}, 500)
+
+        server = ThreadingHTTPServer((args.host, args.port), ReviewUiHandler)
+        url = f"http://{args.host}:{args.port}/"
+        print(f"Review UI running at {url}")
+        print("Press Ctrl+C to stop the review UI.")
+        if not args.no_browser:
+            webbrowser.open(url)
+        try:
+            server.serve_forever()
+        except KeyboardInterrupt:
+            print("\nStopping review UI.")
+        finally:
+            server.server_close()
+
+    def _review_ui_rows_and_manual(
+        self,
+        args: argparse.Namespace,
+    ) -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
+        rows = self._review_export_rows(read_csv_rows(self.config.enriched_csv))
+        if args.limit_rows:
+            rows = rows[: args.limit_rows]
+        existing_manual = manual_script.load_existing(self.config.manual_csv)
+        manual_by_iri: dict[str, dict[str, str]] = {iri: dict(row) for iri, row in existing_manual.items()}
+        for row in rows:
+            iri = row.get("class_iri", "")
+            if not iri:
+                continue
+            manual_by_iri[iri] = manual_script.merge_rows(existing_manual.get(iri, {}), manual_script.prefill_row(row))
+        return rows, manual_by_iri
+
+    def _review_ui_config(self) -> dict[str, Any]:
+        return {
+            "controlledValues": CONTROLLED_VALUES,
+            "promptSections": [{"title": title, "fields": fields} for title, fields in REVIEW_PROMPT_SECTIONS],
+            "promptGuidance": PROMPT_GUIDANCE,
+            "fieldLabels": FIELD_LABELS,
+            "manualFields": manual_script.FIELDNAMES,
+            "defaultReviewer": os.environ.get("USER", ""),
+            "today": datetime.now().date().isoformat(),
+            "manualCsv": str(self.config.manual_csv),
+            "reviewOntologyTtl": str(self.config.review_ontology_ttl),
+        }
+
+    def _review_ui_class_summaries(
+        self,
+        search: str,
+        status_filter: str,
+        args: argparse.Namespace,
+    ) -> dict[str, Any]:
+        rows, manual_by_iri = self._review_ui_rows_and_manual(args)
+        seen: set[str] = set()
+        search_text = search.casefold().strip()
+        summaries = []
+        for row in rows:
+            iri = row.get("class_iri", "")
+            if not iri or iri in seen:
+                continue
+            seen.add(iri)
+            manual = manual_by_iri.get(iri, {})
+            if search_text and search_text not in self._review_ui_search_blob(row, manual):
+                continue
+            reviewed = bool(manual.get("quality_decision") and manual.get("reviewer"))
+            excluded = manual.get("quality_decision") == "exclude" or manual.get("manual_include_status") == "exclude"
+            if status_filter == "todo" and reviewed:
+                continue
+            if status_filter == "reviewed" and not reviewed:
+                continue
+            if status_filter == "excluded" and not excluded:
+                continue
+            summaries.append({
+                "iri": iri,
+                "label": row.get("preferred_label", ""),
+                "term": row.get("term", ""),
+                "ontology": row.get("ontology", ""),
+                "ontologyTitle": row.get("ontology_title", ""),
+                "status": manual.get("quality_decision") or manual.get("manual_include_status") or "unreviewed",
+                "reviewed": reviewed,
+                "excluded": excluded,
+            })
+        return {"classes": summaries, "count": len(summaries)}
+
+    @staticmethod
+    def _review_ui_search_blob(row: dict[str, str], manual: dict[str, str]) -> str:
+        values = [
+            row.get("class_iri", ""),
+            row.get("preferred_label", ""),
+            row.get("term", ""),
+            row.get("ontology", ""),
+            row.get("ontology_title", ""),
+            row.get("source_ontology_ids", ""),
+            row.get("definition", ""),
+            manual.get("quality_decision", ""),
+            manual.get("manual_include_status", ""),
+        ]
+        return " ".join(values).casefold()
+
+    def _review_ui_class_payload(self, iri: str, args: argparse.Namespace) -> dict[str, Any] | None:
+        rows, manual_by_iri = self._review_ui_rows_and_manual(args)
+        row = next((item for item in rows if item.get("class_iri") == iri), None)
+        if not row:
+            return None
+        manual = manual_by_iri.get(iri, {})
+        evidence = self._class_module_evidence(iri)
+        evidence_by_field = {
+            field: self._prompt_evidence_lines(field, row, evidence, manual)
+            for field in REVIEW_PROMPT_FIELDS
+        }
+        return {
+            "row": row,
+            "manual": {field: manual.get(field, "") for field in manual_script.FIELDNAMES},
+            "evidenceByField": evidence_by_field,
+            "modulePaths": evidence.get("module_paths", []),
+        }
+
+    def _review_ui_save(self, data: dict[str, Any], args: argparse.Namespace) -> dict[str, Any]:
+        iri = str(data.get("iri", "")).strip()
+        annotations = data.get("annotations", {})
+        if not iri or not isinstance(annotations, dict):
+            raise ValueError("Save request needs iri and annotations.")
+        rows, manual_by_iri = self._review_ui_rows_and_manual(args)
+        row = next((item for item in rows if item.get("class_iri") == iri), None)
+        if not row:
+            raise ValueError(f"Class not found in current review export rows: {iri}")
+
+        updated = dict(manual_by_iri.get(iri, {}))
+        updated["class_iri"] = iri
+        updated["term"] = row.get("term", "")
+        updated["preferred_label"] = row.get("preferred_label", "")
+        updated["source_ontology_ids"] = row.get("source_ontology_ids", "")
+        for field in manual_script.FIELDNAMES:
+            if field in annotations:
+                updated[field] = str(annotations.get(field, "") or "")
+
+        manual_by_iri[iri] = updated
+        self._write_manual_annotations(rows, manual_by_iri)
+        exported = False
+        if bool(data.get("export", True)) and not args.no_export_after_review:
+            self.export_review_ontology(args)
+            exported = True
+        return {
+            "ok": True,
+            "iri": iri,
+            "exported": exported,
+            "manualCsv": str(self.config.manual_csv),
+            "reviewOntologyTtl": str(self.config.review_ontology_ttl),
+        }
+
+    @staticmethod
+    def _review_ui_html() -> str:
+        return r"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disease Ontology Review</title>
+  <style>
+    :root {
+      --bg: #f6f5f1;
+      --panel: #ffffff;
+      --ink: #22252b;
+      --muted: #6f7480;
+      --line: #d9d8d2;
+      --accent: #1f6f63;
+      --accent-strong: #14574d;
+      --warn: #a66b20;
+      --soft: #eef4f1;
+      --soft-warm: #f7efe3;
+      --focus: #6b8cff;
+      --danger: #9b3333;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input, select, textarea { font: inherit; }
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 330px minmax(0, 1fr);
+    }
+    aside {
+      border-right: 1px solid var(--line);
+      background: #fbfaf7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .subtle { color: var(--muted); font-size: 12px; }
+    .filters {
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    .search-row {
+      display: grid;
+      grid-template-columns: 1fr 112px;
+      gap: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      padding: 9px 10px;
+      min-height: 38px;
+    }
+    textarea {
+      min-height: 76px;
+      resize: vertical;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid color-mix(in srgb, var(--focus) 42%, transparent);
+      border-color: var(--focus);
+    }
+    .class-list {
+      overflow: auto;
+      padding: 8px;
+    }
+    .class-item {
+      width: 100%;
+      text-align: left;
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 2px 0;
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .class-item:hover { background: var(--soft); }
+    .class-item.active {
+      background: #e6f0ec;
+      border-color: #b9d3cb;
+    }
+    .class-label {
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    .class-meta {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #ecebe6;
+      color: #4f545d;
+    }
+    .tag.reviewed { background: #e4f0dc; color: #355d2d; }
+    .tag.excluded { background: #f3dddd; color: var(--danger); }
+    main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(246,245,241,.96);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+    .title-block h2 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+    .source-line {
+      color: var(--muted);
+      margin-top: 4px;
+      overflow-wrap: anywhere;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    button.primary, button.secondary {
+      min-height: 38px;
+      border-radius: 7px;
+      padding: 8px 12px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-weight: 650;
+    }
+    button.primary {
+      background: var(--accent);
+      color: white;
+    }
+    button.primary:hover { background: var(--accent-strong); }
+    button.secondary {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+    button.secondary:hover { background: var(--soft-warm); }
+    button:disabled { opacity: .55; cursor: not-allowed; }
+    .export-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .export-toggle input {
+      width: 16px;
+      min-height: 16px;
+      padding: 0;
+    }
+    .content {
+      padding: 18px 22px 42px;
+      max-width: 1180px;
+      width: 100%;
+    }
+    .empty {
+      margin: 40px auto;
+      max-width: 520px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .identity {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .identity div {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      min-width: 0;
+    }
+    .identity b {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 4px;
+    }
+    .identity span { overflow-wrap: anywhere; }
+    .section {
+      margin-top: 16px;
+      border-top: 2px solid #c9d9d3;
+      padding-top: 10px;
+    }
+    .section h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      color: #243b36;
+    }
+    .field {
+      display: grid;
+      grid-template-columns: minmax(235px, .72fr) minmax(360px, 1.28fr);
+      gap: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      margin: 10px 0;
+    }
+    .question label {
+      display: block;
+      font-weight: 750;
+      margin-bottom: 6px;
+      overflow-wrap: anywhere;
+    }
+    .guidance {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .answer {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      min-width: 0;
+    }
+    .evidence {
+      background: #f8faf8;
+      border: 1px solid #dfe7e2;
+      border-radius: 8px;
+      padding: 10px 12px;
+      min-width: 0;
+    }
+    .evidence-title {
+      font-size: 11px;
+      color: #547168;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .evidence ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 5px;
+    }
+    .evidence li {
+      overflow-wrap: anywhere;
+      color: #343941;
+    }
+    .statusbar {
+      min-height: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      padding-top: 3px;
+    }
+    .statusbar.error { color: var(--danger); }
+    @media (max-width: 900px) {
+      .app { grid-template-columns: 1fr; }
+      aside { min-height: auto; max-height: 44vh; border-right: 0; border-bottom: 1px solid var(--line); }
+      .topbar { grid-template-columns: 1fr; }
+      .actions { justify-content: flex-start; }
+      .field, .identity { grid-template-columns: 1fr; }
+      .content { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <header>
+        <h1>Class Review</h1>
+        <div class="subtle" id="class-count">Loading classes...</div>
+      </header>
+      <div class="filters">
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Search term, class, ontology">
+          <select id="status-filter">
+            <option value="todo">To review</option>
+            <option value="reviewed">Reviewed</option>
+            <option value="excluded">Excluded</option>
+            <option value="all">All</option>
+          </select>
+        </div>
+      </div>
+      <div class="class-list" id="class-list"></div>
+    </aside>
+    <main>
+      <div class="topbar">
+        <div class="title-block">
+          <h2 id="class-title">Choose a class</h2>
+          <div class="source-line" id="class-source">The review form will appear here.</div>
+        </div>
+        <div class="actions">
+          <label class="export-toggle"><input id="export-after-save" type="checkbox" checked> regenerate TTL</label>
+          <button class="secondary" id="save">Save</button>
+          <button class="primary" id="save-next">Save + next</button>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="empty">Select a class from the left list.</div>
+      </div>
+    </main>
+  </div>
+  <script>
+    let config = null;
+    let classList = [];
+    let selectedIri = "";
+    let currentPayload = null;
+    let pendingSearchTimer = null;
+
+    const $ = (id) => document.getElementById(id);
+
+    async function requestJson(url, options = {}) {
+      const response = await fetch(url, options);
+      const payload = await response.json();
+      if (!response.ok || payload.error) throw new Error(payload.error || response.statusText);
+      return payload;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"
+      }[char]));
+    }
+
+    function shortIri(iri) {
+      if (!iri) return "";
+      const parts = iri.split(/[\/#]/).filter(Boolean);
+      return parts[parts.length - 1] || iri;
+    }
+
+    function statusTag(item) {
+      const cls = item.excluded ? "excluded" : item.reviewed ? "reviewed" : "";
+      return `<span class="tag ${cls}">${escapeHtml(item.status || "unreviewed")}</span>`;
+    }
+
+    async function loadClasses(keepSelection = true) {
+      const search = encodeURIComponent($("search").value.trim());
+      const status = encodeURIComponent($("status-filter").value);
+      const payload = await requestJson(`/api/classes?search=${search}&status=${status}`);
+      classList = payload.classes || [];
+      $("class-count").textContent = `${payload.count} class${payload.count === 1 ? "" : "es"}`;
+      renderClassList();
+      if (!classList.length) {
+        selectedIri = "";
+        currentPayload = null;
+        renderEmpty("No classes match the current filter.");
+        return;
+      }
+      if (!keepSelection || !classList.some((item) => item.iri === selectedIri)) {
+        await loadClass(classList[0].iri);
+      }
+    }
+
+    function renderClassList() {
+      $("class-list").innerHTML = classList.map((item) => `
+        <button class="class-item ${item.iri === selectedIri ? "active" : ""}" data-iri="${escapeHtml(item.iri)}">
+          <div class="class-label">${escapeHtml(item.label || shortIri(item.iri))}</div>
+          <div class="class-meta">
+            <span class="tag">${escapeHtml(item.term || "no term")}</span>
+            <span class="tag">${escapeHtml(item.ontology || "no ontology")}</span>
+            ${statusTag(item)}
+          </div>
+        </button>
+      `).join("");
+      document.querySelectorAll(".class-item").forEach((button) => {
+        button.addEventListener("click", () => loadClass(button.dataset.iri));
+      });
+    }
+
+    async function loadClass(iri) {
+      selectedIri = iri;
+      currentPayload = await requestJson(`/api/class?iri=${encodeURIComponent(iri)}`);
+      renderClassList();
+      renderClass(currentPayload);
+    }
+
+    function renderEmpty(message) {
+      $("class-title").textContent = "Choose a class";
+      $("class-source").textContent = "";
+      $("content").innerHTML = `<div class="empty">${escapeHtml(message)}</div>`;
+    }
+
+    function renderClass(payload) {
+      const row = payload.row || {};
+      const manual = payload.manual || {};
+      $("class-title").textContent = row.preferred_label || shortIri(row.class_iri);
+      $("class-source").textContent = `${row.term || ""} · ${row.ontology || ""} · ${row.ontology_title || ""}`;
+
+      const identity = `
+        <div class="identity">
+          <div><b>Search term</b><span>${escapeHtml(row.term || "")}</span></div>
+          <div><b>Ontology</b><span>${escapeHtml(row.ontology || "")}</span></div>
+          <div><b>Native guess</b><span>${escapeHtml((row.native_ontology_guess || "") + " / " + (row.native_term_status || ""))}</span></div>
+        </div>
+      `;
+      const sections = config.promptSections.map((section) => `
+        <section class="section">
+          <h3>${escapeHtml(section.title)}</h3>
+          ${section.fields.map((field) => renderField(field, manual[field] || "", payload.evidenceByField[field] || [])).join("")}
+        </section>
+      `).join("");
+      $("content").innerHTML = identity + sections + `<div class="statusbar" id="statusbar"></div>`;
+    }
+
+    function renderField(field, value, evidence) {
+      const label = (config.fieldLabels && config.fieldLabels[field]) || field;
+      return `
+        <div class="field" data-field="${escapeHtml(field)}">
+          <div class="question">
+            <label for="field-${escapeHtml(field)}">${escapeHtml(label)}</label>
+            <div class="subtle">${escapeHtml(field)}</div>
+            <div class="guidance">${escapeHtml(config.promptGuidance[field] || "")}</div>
+          </div>
+          <div class="answer">
+            ${renderEvidence(evidence)}
+            ${renderControl(field, value)}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderEvidence(lines) {
+      if (!lines || !lines.length) return "";
+      return `
+        <div class="evidence">
+          <div class="evidence-title">Evidence for this question</div>
+          <ul>${lines.slice(0, 8).map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>
+        </div>
+      `;
+    }
+
+    function renderControl(field, value) {
+      const controlled = config.controlledValues[field];
+      if (controlled) {
+        const options = ["", ...controlled.filter((item) => item !== "")];
+        return `<select id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}">
+          ${options.map((option) => `<option value="${escapeHtml(option)}" ${option === value ? "selected" : ""}>${escapeHtml(option || "(blank)")}</option>`).join("")}
+        </select>`;
+      }
+      if (field === "review_date") {
+        return `<input id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}" type="date" value="${escapeHtml(value || config.today)}">`;
+      }
+      if (field === "reviewer") {
+        return `<input id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}" value="${escapeHtml(value || config.defaultReviewer || "")}">`;
+      }
+      return `<textarea id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}">${escapeHtml(value || "")}</textarea>`;
+    }
+
+    function collectAnnotations() {
+      const annotations = {};
+      document.querySelectorAll("[data-field]").forEach((control) => {
+        if (control.matches("select,input,textarea")) annotations[control.dataset.field] = control.value;
+      });
+      return annotations;
+    }
+
+    function setStatus(message, isError = false) {
+      const node = $("statusbar");
+      if (!node) return;
+      node.textContent = message;
+      node.className = `statusbar${isError ? " error" : ""}`;
+    }
+
+    async function saveReview(goNext = false) {
+      if (!selectedIri) return;
+      const savedIri = selectedIri;
+      $("save").disabled = true;
+      $("save-next").disabled = true;
+      setStatus("Saving...");
+      try {
+        const payload = await requestJson("/api/save", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({
+            iri: selectedIri,
+            annotations: collectAnnotations(),
+            export: $("export-after-save").checked
+          })
+        });
+        setStatus(payload.exported ? "Saved and regenerated TTL." : "Saved manual annotations.");
+        await loadClasses(true);
+        if (goNext && classList.length) {
+          const savedIndex = classList.findIndex((item) => item.iri === savedIri);
+          const next = classList[savedIndex + 1] || classList[0];
+          if (next) await loadClass(next.iri);
+        } else if (classList.some((item) => item.iri === savedIri)) {
+          await loadClass(savedIri);
+        }
+      } catch (error) {
+        setStatus(error.message, true);
+      } finally {
+        $("save").disabled = false;
+        $("save-next").disabled = false;
+      }
+    }
+
+    $("search").addEventListener("input", () => {
+      clearTimeout(pendingSearchTimer);
+      pendingSearchTimer = setTimeout(() => loadClasses(false).catch((error) => renderEmpty(error.message)), 180);
+    });
+    $("status-filter").addEventListener("change", () => loadClasses(false).catch((error) => renderEmpty(error.message)));
+    $("save").addEventListener("click", () => saveReview(false));
+    $("save-next").addEventListener("click", () => saveReview(true));
+
+    (async function init() {
+      try {
+        config = await requestJson("/api/config");
+        await loadClasses(false);
+      } catch (error) {
+        renderEmpty(error.message);
+      }
+    })();
+  </script>
+</body>
+</html>
+"""
 
     def export_source_appearance_report(self, args: argparse.Namespace) -> None:
         rows = self._review_export_rows(read_csv_rows(self.config.enriched_csv))
@@ -1169,21 +2094,114 @@ class ReviewExtractionPipeline:
         return None
 
     def _load_modelling_citations(self) -> dict[str, dict[str, str]]:
+        citations: dict[str, dict[str, str]] = {}
         workbook_path = self._citation_workbook_path()
         if workbook_path:
             try:
                 manual_decisions = workbook_path == self.config.preferred_citation_workbook
-                return self._load_modelling_citations_from_workbook(workbook_path, manual_decisions=manual_decisions)
+                citations.update(self._load_modelling_citations_from_workbook(workbook_path, manual_decisions=manual_decisions))
             except Exception as exc:
                 print(f"  [warn] could not read citation workbook {workbook_path}: {exc}", file=sys.stderr)
-        if self.config.citation_lookup_json.exists():
+        if not citations and self.config.citation_lookup_json.exists():
             try:
                 data = json.loads(self.config.citation_lookup_json.read_text(encoding="utf-8"))
                 rows = data.get("merged_best_rows", [])
-                return self._citation_lookup_from_rows(rows, source_label=str(self.config.citation_lookup_json), manual_decisions=False)
+                citations.update(self._citation_lookup_from_rows(rows, source_label=str(self.config.citation_lookup_json), manual_decisions=False))
             except Exception as exc:
                 print(f"  [warn] could not read citation lookup JSON {self.config.citation_lookup_json}: {exc}", file=sys.stderr)
-        return {}
+        citations.update(self._load_citation_review_overrides())
+        return citations
+
+    def _load_citation_review_overrides(self) -> dict[str, dict[str, str]]:
+        if not self.config.citation_review_workbook.exists():
+            return {}
+        try:
+            from openpyxl import load_workbook
+
+            workbook = load_workbook(self.config.citation_review_workbook, read_only=True, data_only=True)
+            if "Ontologies needing citation" not in workbook.sheetnames:
+                return {}
+            worksheet = workbook["Ontologies needing citation"]
+            rows = worksheet.iter_rows(values_only=True)
+            headers = [clean_cell(value) for value in next(rows)]
+            records = [
+                {headers[index]: clean_cell(value) for index, value in enumerate(row) if index < len(headers)}
+                for row in rows
+            ]
+        except Exception as exc:
+            print(f"  [warn] could not read citation review workbook {self.config.citation_review_workbook}: {exc}", file=sys.stderr)
+            return {}
+
+        citations: dict[str, dict[str, str]] = {}
+        for row in records:
+            ontology_id = row.get("Ontology ID", "")
+            if not ontology_id:
+                continue
+            citation = self._normalise_review_citation_row(row, source_label=str(self.config.citation_review_workbook))
+            if citation:
+                citations[citation_lookup_key(ontology_id)] = citation
+        if citations:
+            print(f"Loaded {len(citations)} citation override(s) from {self.config.citation_review_workbook}", file=sys.stderr)
+        return citations
+
+    def _normalise_review_citation_row(self, row: dict[str, str], *, source_label: str) -> dict[str, str] | None:
+        decision = clean_cell(row.get("Certainty assessment", ""))
+        decision_key = decision.lower()
+        if not decision or decision_key in REJECTED_CITATION_CONFIDENCES:
+            return None
+
+        suggested_title = row.get("Suggested paper title", "")
+        suggested_doi = self._clean_doi(row.get("Suggested DOI", ""))
+        suggested_pmid = row.get("Suggested PMID", "")
+        suggested_pmcid = row.get("Suggested PMCID", "")
+        suggested_url = row.get("Suggested URL", "")
+
+        if decision_key in MANUAL_ACCEPTED_CITATION_CONFIDENCES or decision_key == "good":
+            doi = suggested_doi
+            pmid = suggested_pmid
+            pmcid = suggested_pmcid
+            url = suggested_url or (f"https://doi.org/{doi}" if doi else "")
+            citation_text = self._format_review_citation(row, title=suggested_title, doi=doi, pmid=pmid)
+            title = suggested_title
+        else:
+            doi = self._doi_from_text(decision)
+            pmid = self._pmid_from_text(decision)
+            pmcid = self._pmcid_from_text(decision)
+            url = self._url_from_text(decision) or (f"https://doi.org/{doi}" if doi else "")
+            title = "" if (doi or pmid or url) else decision
+            citation_text = decision
+            if doi and not citation_text.lower().startswith(("doi", "http")):
+                citation_text = f"doi:{doi}"
+
+        if not citation_text and not doi and not pmid and not url and not title:
+            return None
+        return {
+            "ontology_id": row.get("Ontology ID", ""),
+            "confidence": decision,
+            "doi": doi,
+            "pmid": pmid,
+            "pmcid": pmcid,
+            "url": url,
+            "title": title or suggested_title,
+            "bibliographic_citation": citation_text or title or suggested_title,
+            "lookup_source": "manual citation-needed workbook",
+            "citation_source": source_label,
+        }
+
+    @staticmethod
+    def _format_review_citation(row: dict[str, str], *, title: str, doi: str, pmid: str) -> str:
+        parts = []
+        if title:
+            parts.append(title.rstrip(".") + ".")
+        if row.get("Suggested year"):
+            parts.append(f"({row['Suggested year']})")
+        if row.get("Suggested venue"):
+            parts.append(row["Suggested venue"].rstrip(".") + ".")
+        if doi:
+            parts.append(f"doi:{doi}")
+        elif pmid:
+            parts.append(f"PMID:{pmid}")
+        return " ".join(parts).strip()
 
     def _load_modelling_citations_from_workbook(self, path: Path, *, manual_decisions: bool) -> dict[str, dict[str, str]]:
         from openpyxl import load_workbook
@@ -1293,6 +2311,11 @@ class ReviewExtractionPipeline:
             return ""
         value = match.group(1)
         return value if value.upper().startswith("PMC") else f"PMC{value}"
+
+    @staticmethod
+    def _url_from_text(value: str) -> str:
+        match = re.search(r"https?://\S+", value)
+        return match.group(0).rstrip(".,;)") if match else ""
 
     @staticmethod
     def _format_bibliographic_citation(row: dict[str, str], *, doi: str) -> str:
@@ -1419,10 +2442,14 @@ class ReviewExtractionPipeline:
         filtered = []
         skipped_mesh_duplicates = 0
         webprotege_excluded_rows = []
+        valueset_excluded_rows = []
         title_by_ontology = self._ontology_title_index(rows)
         for row in rows:
             if row.get("ontology", "").upper() in DUPLICATE_MESH_ONTOLOGIES:
                 skipped_mesh_duplicates += 1
+                continue
+            if self._is_excluded_valueset_row(row):
+                valueset_excluded_rows.append(dict(row))
                 continue
             if self._is_excluded_webprotege_row(row):
                 webprotege_excluded_rows.append(dict(row))
@@ -1433,7 +2460,7 @@ class ReviewExtractionPipeline:
                 f"Skipped {skipped_mesh_duplicates} duplicate MeSH mirror rows; kept canonical {CANONICAL_MESH_ONTOLOGY}.",
                 file=sys.stderr,
             )
-        self._write_exclusion_figure_reports(webprotege_excluded_rows, title_by_ontology)
+        self._write_exclusion_figure_reports(webprotege_excluded_rows, valueset_excluded_rows, title_by_ontology)
         sources_by_iri = self._source_ontologies_by_class_iri(filtered)
         for row in filtered:
             native_guess, basis = self._resolve_native_ontology_guess(row, sources_by_iri)
@@ -1449,28 +2476,36 @@ class ReviewExtractionPipeline:
     def _is_excluded_webprotege_row(row: dict[str, str]) -> bool:
         return EXCLUDED_WEBPROTEGE_IRI_HOST in row.get("class_iri", "").lower()
 
-    def _write_exclusion_figure_reports(self, rows: list[dict[str, str]], title_by_ontology: dict[str, str]) -> None:
+    @staticmethod
+    def _is_excluded_valueset_row(row: dict[str, str]) -> bool:
+        ontologies = {row.get("ontology", "").upper()}
+        for record in parse_source_records(row):
+            ontologies.add(str(record.get("ontology", "")).upper())
+        return bool(ontologies & EXCLUDED_VALUESET_ONTOLOGIES)
+
+    def _write_exclusion_figure_reports(
+        self,
+        webprotege_rows: list[dict[str, str]],
+        valueset_rows: list[dict[str, str]],
+        title_by_ontology: dict[str, str],
+    ) -> None:
         detail_rows: list[dict[str, str]] = []
-        for row in rows:
-            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
-            for record in records:
-                ontology = str(record.get("ontology", "")).strip()
-                source = str(record.get("source", "")).strip()
-                if not ontology:
-                    continue
-                detail_rows.append(
-                    {
-                        "exclusion_stage": "source_ontology_provenance_screen",
-                        "exclusion_reason_code": WEBPROTEGE_EXCLUSION_REASON,
-                        "exclusion_reason": "Discarded because the matched class IRI is a WebProtege-hosted random/local identifier; provenance is unstable for independent ontology-review counting.",
-                        "source_database": source,
-                        "source_ontology_id": ontology,
-                        "source_ontology_title": title_by_ontology.get(ontology.upper(), row.get("ontology_title", "")),
-                        "term": row.get("term", ""),
-                        "preferred_label": row.get("preferred_label", ""),
-                        "class_iri": row.get("class_iri", ""),
-                    }
-                )
+        exclusion_groups = [
+            (
+                webprotege_rows,
+                "source_ontology_provenance_screen",
+                WEBPROTEGE_EXCLUSION_REASON,
+                "Discarded because the matched class IRI is a WebProtege-hosted random/local identifier; provenance is unstable for independent ontology-review counting.",
+            ),
+            (
+                valueset_rows,
+                "source_ontology_type_screen",
+                VALUESET_EXCLUSION_REASON,
+                "Discarded because VALUESETS is a value-set collection rather than an independent ontology implementation for disease modelling review.",
+            ),
+        ]
+        for rows, stage, reason_code, reason in exclusion_groups:
+            self._add_exclusion_detail_rows(detail_rows, rows, title_by_ontology, stage, reason_code, reason)
 
         detail_fieldnames = [
             "exclusion_stage",
@@ -1483,19 +2518,22 @@ class ReviewExtractionPipeline:
             "preferred_label",
             "class_iri",
         ]
-        write_csv_rows(self.config.exclusion_detail_csv, sorted(detail_rows, key=lambda r: (r["source_ontology_id"], r["term"], r["class_iri"])), detail_fieldnames)
+        write_csv_rows(self.config.exclusion_detail_csv, sorted(detail_rows, key=lambda r: (r["exclusion_reason_code"], r["source_ontology_id"], r["term"], r["class_iri"])), detail_fieldnames)
 
-        unique_ontologies = {row["source_ontology_id"] for row in detail_rows if row.get("source_ontology_id")}
-        unique_class_iris = {row["class_iri"] for row in detail_rows if row.get("class_iri")}
-        summary_rows = [
-            {
-                "exclusion_stage": "source_ontology_provenance_screen",
-                "exclusion_reason_code": WEBPROTEGE_EXCLUSION_REASON,
-                "excluded_source_ontology_appearances": len(detail_rows),
-                "excluded_unique_source_ontologies": len(unique_ontologies),
-                "excluded_unique_class_iris": len(unique_class_iris),
-            }
-        ]
+        summary_rows = []
+        for _, stage, reason_code, _ in exclusion_groups:
+            reason_rows = [row for row in detail_rows if row["exclusion_reason_code"] == reason_code]
+            unique_ontologies = {row["source_ontology_id"] for row in reason_rows if row.get("source_ontology_id")}
+            unique_class_iris = {row["class_iri"] for row in reason_rows if row.get("class_iri")}
+            summary_rows.append(
+                {
+                    "exclusion_stage": stage,
+                    "exclusion_reason_code": reason_code,
+                    "excluded_source_ontology_appearances": len(reason_rows),
+                    "excluded_unique_source_ontologies": len(unique_ontologies),
+                    "excluded_unique_class_iris": len(unique_class_iris),
+                }
+            )
         write_csv_rows(
             self.config.exclusion_summary_csv,
             summary_rows,
@@ -1509,9 +2547,39 @@ class ReviewExtractionPipeline:
         )
         if detail_rows:
             print(
-                f"Excluded {len(unique_ontologies)} source ontologies with WebProtege class IRIs; wrote flow-figure log -> {self.config.exclusion_detail_csv}",
+                f"Excluded {len({row['source_ontology_id'] for row in detail_rows if row.get('source_ontology_id')})} source ontologies; wrote flow-figure log -> {self.config.exclusion_detail_csv}",
                 file=sys.stderr,
             )
+
+    def _add_exclusion_detail_rows(
+        self,
+        detail_rows: list[dict[str, str]],
+        rows: list[dict[str, str]],
+        title_by_ontology: dict[str, str],
+        stage: str,
+        reason_code: str,
+        reason: str,
+    ) -> None:
+        for row in rows:
+            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
+            for record in records:
+                ontology = str(record.get("ontology", "")).strip()
+                source = str(record.get("source", "")).strip()
+                if not ontology:
+                    continue
+                detail_rows.append(
+                    {
+                        "exclusion_stage": stage,
+                        "exclusion_reason_code": reason_code,
+                        "exclusion_reason": reason,
+                        "source_database": source,
+                        "source_ontology_id": ontology,
+                        "source_ontology_title": title_by_ontology.get(ontology.upper(), row.get("ontology_title", "")),
+                        "term": row.get("term", ""),
+                        "preferred_label": row.get("preferred_label", ""),
+                        "class_iri": row.get("class_iri", ""),
+                    }
+                )
 
     def export_smoke_ontology(self, args: argparse.Namespace) -> None:
         rows = read_csv_rows(self.config.enriched_csv)
@@ -2084,6 +3152,7 @@ def build_parser() -> argparse.ArgumentParser:
             "enrich",
             "prefill-manual",
             "review-class",
+            "review-ui",
             "export-appearance-report",
             "export-review-ontology",
             "export-smoke-ontology",
@@ -2107,10 +3176,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--refresh-class-annotations", action="store_true", help="For --chunk enrich.")
     parser.add_argument("--merge-manual", action=argparse.BooleanOptionalAction, default=True, help="For --chunk prefill-manual.")
     parser.add_argument("--class-iri", default="", help="For --chunk review-class: review this exact class IRI.")
-    parser.add_argument("--search-text", default="", help="For --chunk review-class: search label, IRI, ontology, or definition before selecting.")
+    parser.add_argument("--search-text", default="", help="For --chunk review-class: filter by label, IRI, ontology, or definition before selecting. Omit to review all extracted terms.")
     parser.add_argument("--reviewer", default=os.environ.get("USER", ""), help="For --chunk review-class: default reviewer name/id.")
     parser.add_argument("--review-date", default="", help="For --chunk review-class: default ISO review date.")
     parser.add_argument("--no-export-after-review", action="store_true", help="For --chunk review-class: update manual CSV only.")
+    parser.add_argument("--host", default="127.0.0.1", help="For --chunk review-ui: local server host.")
+    parser.add_argument("--port", type=int, default=8765, help="For --chunk review-ui: local server port.")
+    parser.add_argument("--no-browser", action="store_true", help="For --chunk review-ui: do not open the browser automatically.")
     parser.add_argument("--repositories", default="bioportal", help="For --chunk download: bioportal,ols,obo.")
     parser.add_argument("--source-mode", choices=["all-source-records", "row-ontology"], default="all-source-records")
     parser.add_argument("--dry-run", action="store_true", help="For --chunk download.")

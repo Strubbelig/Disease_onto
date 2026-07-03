@@ -56,12 +56,12 @@ BFO_UPPER_LEVEL: dict[str, str] = {
     "BFO_0000015": "subclass of process",
 }
 
-# BFO IRI → disease model category (only where mapping is unambiguous)
+# BFO IRI -> reviewed entity model category (only where mapping is unambiguous)
 BFO_DISEASE_MODEL: dict[str, str] = {
-    "BFO_0000016": "disease_as_disposition",
-    "BFO_0000017": "disease_as_disposition",   # realizable entity subsumes disposition
-    "BFO_0000007": "disease_as_process",
-    "BFO_0000015": "disease_as_process",
+    "BFO_0000016": "entity_as_disposition",
+    "BFO_0000017": "entity_as_realizable_entity",
+    "BFO_0000007": "entity_as_process",
+    "BFO_0000015": "entity_as_process",
 }
 
 # Ontology IDs that are unambiguously clinical terminologies regardless of scope category
@@ -258,17 +258,17 @@ def rule_disease_model_category(row: dict) -> str:
         row.get("parent_labels", ""),
     )
     if "disposition" in text:
-        return "disease_as_disposition"
+        return "entity_as_disposition"
 
     parent_text = row.get("parent_labels", "").lower()
     if "process" in parent_text:
-        return "disease_as_process"
+        return "entity_as_process"
     if "finding" in parent_text:
-        return "disease_as_finding"
+        return "entity_as_finding"
     if "syndrome" in parent_text:
-        return "disease_as_syndrome"
+        return "entity_as_syndrome"
     if "disorder" in parent_text:
-        return "disease_as_disorder"
+        return "entity_as_disorder"
 
     return ""
 

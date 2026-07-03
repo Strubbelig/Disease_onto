@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ontonephro_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for ONTONEPHRO; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=2.0, released=2025-09-02T00:00:00.000+00:00, creationDate=2025-09-02T00:00:00.000+00:00, submissionId=2; BioPortal: version=1.0, released=2025-10-22T00:00:00.000+00:00, creationDate=2025-10-22T00:00:00.000+00:00, submissionId=1; BioPortal: version=2.0, released=2025-09-02T00:00:00.000+00:00, creationDate=2025-09-02T00:00:00.000+00:00, submissionId=2" ;
+    dcterms:created "2026-07-03T12:17:37-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.limics.fr/ontologies/ontoDOME#Maladie> <http://purl.org/dc/terms/source> "generated review target module for ONTONEPHRO from disease_terms_review_enriched.csv" .
+<http://www.limics.fr/ontologies/ontoDOME#Maladie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontoDOME#Maladie> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.limics.fr/ontologies/ontoDOME#Maladie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontoDOME#ProblemeDeSante> .
+<http://www.limics.fr/ontologies/ontoDOME#ProblemeDeSante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontoDOME#ProblemeDeSante> <http://www.w3.org/2000/01/rdf-schema#label> "health problem" .
+<http://www.limics.fr/ontologies/ontoDOME#Syndrome> <http://purl.obolibrary.org/obo/IAO_0000115> "Un syndrome est un ensemble de signes cliniques formant un motif fréquemment reconnu." .
+<http://www.limics.fr/ontologies/ontoDOME#Syndrome> <http://purl.org/dc/terms/source> "generated review target module for ONTONEPHRO from disease_terms_review_enriched.csv" .
+<http://www.limics.fr/ontologies/ontoDOME#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontoDOME#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://www.limics.fr/ontologies/ontoDOME#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontoPOF#JeuDEnonces> .
+<http://www.limics.fr/ontologies/ontoPOF#JeuDEnonces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontoPOF#JeuDEnonces> <http://www.w3.org/2000/01/rdf-schema#label> "set of statements" .
+<http://www.limics.fr/ontologies/ontonephro#Syndrome> <http://purl.org/dc/terms/source> "generated review target module for ONTONEPHRO from disease_terms_review_enriched.csv" .
+<http://www.limics.fr/ontologies/ontonephro#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontonephro#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://www.limics.fr/ontologies/ontonephro#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontoDOME#Syndrome> .
+<http://www.limics.fr/ontologies/ontonephro#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "syndrome" .

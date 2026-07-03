@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/osdi_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for OSDI; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=1.0, released=2026-01-16T00:00:00.000+00:00, creationDate=2026-01-16T00:00:00.000+00:00, submissionId=2" ;
-    dcterms:created "2026-07-02T21:50:45-04:00" ;
+    dcterms:created "2026-07-03T12:41:43-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <https://w3id.org/ontologies-ULL/OSDi#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Any type of disease or health condition that a person may suffer. Since diseases may have or not costs, utilities... all of these properties has been explicitly defined with cardinality 'min 0' as an hint for the ontology users" .

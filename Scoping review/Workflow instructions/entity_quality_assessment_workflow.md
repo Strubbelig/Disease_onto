@@ -87,15 +87,19 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
 ### `disease_model_category`
 
-- `disease_as_disposition` — disease modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
-- `disease_as_disorder` — disease modelled as a structural or functional disorder of a bodily entity (e.g. OGMS disorder).
-- `disease_as_process` — disease modelled as a pathological process or course of events unfolding over time (e.g. BFO process).
-- `disease_as_finding` — disease modelled as a clinical observation or finding recorded about a patient (e.g. SNOMED clinical finding).
-- `disease_as_condition` — disease modelled as a patient condition without further upper-ontological commitment.
-- `disease_as_pathology` — disease modelled as a pathological state or tissue-level change (e.g. morphological abnormality).
-- `disease_as_syndrome` — disease modelled as a named cluster of co-occurring signs and symptoms without a single unifying cause.
+- Optional synthesis bucket. Use only after writing the free-text `upper_level_interpretation`; leave blank if the source's own model is more precise than the available buckets.
+- `entity_as_realizable_entity` — the reviewed entity is modelled at the broader level of realizable entity, without enough evidence to narrow it to disposition.
+- `entity_as_disposition` — the reviewed entity is modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
+- `entity_as_situation` — the reviewed entity is modelled as a situation, state of affairs, or configuration of circumstances.
+- `entity_as_disorder` — the reviewed entity is modelled as a structural or functional disorder of a bodily entity (e.g. OGMS disorder).
+- `entity_as_process` — the reviewed entity is modelled as a pathological process or course of events unfolding over time (e.g. BFO process).
+- `entity_as_finding` — the reviewed entity is modelled as a clinical observation or finding recorded about a patient (e.g. SNOMED clinical finding).
+- `entity_as_condition` — the reviewed entity is modelled as a patient condition without further upper-ontological commitment.
+- `entity_as_state` — the reviewed entity is modelled as a state or state-like condition.
+- `entity_as_pathology` — the reviewed entity is modelled as a pathological state or tissue-level change (e.g. morphological abnormality).
+- `entity_as_syndrome` — the reviewed entity is modelled as a named cluster of co-occurring signs and symptoms without a single unifying cause.
 - `mixed_or_unclear` — the class combines multiple views or the evidence is insufficient to assign one category.
-- `not_applicable` — the class is not a disease class proper (e.g. a process or quality encountered through hierarchy traversal).
+- `not_applicable` — the class is not a disease-like entity proper (e.g. a process or quality encountered through hierarchy traversal).
 
 ### Quality fields (`definition_quality`, `comment_quality`, `parentage_quality`, `provenance_quality`)
 
@@ -163,7 +167,7 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
    Use the asserted and imported superclass hierarchy visible in Protege, plus extracted helper annotations such as `parent_iris`, `parent_labels`, and `bfo_anchor` when present.
 
-   Record `upper_level_interpretation` in plain language, for example `subclass of disposition`, `subclass of process`, `clinical finding`, `quality or state`, or `unclear`.
+   Record `upper_level_interpretation` in plain language first. Use the ontology's own wording where possible, for example `subclass of realizable entity`, `subclass of disposition`, `situation`, `process/course`, `clinical finding`, `state`, `quality`, or `unclear`. Do not force a controlled category at this stage.
 
    Set `parentage_quality`:
 
@@ -179,9 +183,9 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
    - `poor`: only minimal provenance available (e.g. retrieval date only, no version).
    - `absent`: no provenance metadata recorded.
 
-7. Assign disease model category.
+7. Optionally assign a synthesis category.
 
-   Choose the best-fitting `disease_model_category` from the controlled list. If the class mixes several views or the evidence is insufficient, use `mixed_or_unclear`.
+   Choose `disease_model_category` only if a controlled bucket is already clear. The values are review synthesis aids, not a claim that every bucket corresponds to a named philosophical position. If the source model is specific, unusual, or not yet confidently categorizable, leave this blank and rely on `upper_level_interpretation`.
 
 8. Score entity quality.
 
