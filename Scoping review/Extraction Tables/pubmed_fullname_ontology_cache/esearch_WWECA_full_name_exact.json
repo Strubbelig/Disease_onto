@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "38637746"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"womans\"[All Fields] OR \"women\"[MeSH Terms] OR \"women\"[All Fields] OR \"woman\"[All Fields] OR \"women s\"[All Fields] OR \"womens\"[All Fields]) AND (\"epilepsie\"[All Fields] OR \"epilepsy\"[MeSH Terms] OR \"epilepsy\"[All Fields] OR \"epilepsies\"[All Fields] OR \"epilepsy s\"[All Fields]) AND \"child bearing\"[All Fields] AND (\"agrosyst geosci environ\"[Journal] OR \"age\"[Journal] OR \"age omaha\"[Journal] OR \"age dordr\"[Journal] OR \"adv genet eng\"[Journal] OR \"age\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Women with Epilepsy of Child-bearing Age Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

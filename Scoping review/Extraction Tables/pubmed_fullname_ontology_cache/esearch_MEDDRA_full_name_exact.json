@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "31551780",
+      "18998828",
+      "36732862",
+      "29058218",
+      "25157320",
+      "27369567",
+      "16185681"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"medic\"[All Fields] OR \"medical\"[All Fields] OR \"medicalization\"[MeSH Terms] OR \"medicalization\"[All Fields] OR \"medicalizations\"[All Fields] OR \"medicalize\"[All Fields] OR \"medicalized\"[All Fields] OR \"medicalizes\"[All Fields] OR \"medicalizing\"[All Fields] OR \"medically\"[All Fields] OR \"medicals\"[All Fields] OR \"medicated\"[All Fields] OR \"medication s\"[All Fields] OR \"medics\"[All Fields] OR \"pharmaceutical preparations\"[Supplementary Concept] OR \"pharmaceutical preparations\"[All Fields] OR \"medication\"[All Fields] OR \"pharmaceutical preparations\"[MeSH Terms] OR (\"pharmaceutical\"[All Fields] AND \"preparations\"[All Fields]) OR \"medications\"[All Fields]) AND (\"dictionary\"[Publication Type] OR \"dictionaries as topic\"[MeSH Terms] OR \"dictionary\"[All Fields]) AND \"regulatory\"[All Fields] AND (\"activable\"[All Fields] OR \"activate\"[All Fields] OR \"activated\"[All Fields] OR \"activates\"[All Fields] OR \"activating\"[All Fields] OR \"activation\"[All Fields] OR \"activations\"[All Fields] OR \"activator\"[All Fields] OR \"activator s\"[All Fields] OR \"activators\"[All Fields] OR \"active\"[All Fields] OR \"actived\"[All Fields] OR \"actively\"[All Fields] OR \"actives\"[All Fields] OR \"activities\"[All Fields] OR \"activity s\"[All Fields] OR \"activitys\"[All Fields] OR \"exercise\"[MeSH Terms] OR \"exercise\"[All Fields] OR \"activity\"[All Fields]) AND (\"terminologies\"[All Fields] OR \"terminology\"[All Fields]) AND \"meddra\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Medical Dictionary for Regulatory Activities Terminology (MedDRA)\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "70",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "27310713",
+      "38221941",
+      "34471502",
+      "39362459",
+      "37123417",
+      "35832625",
+      "38127899",
+      "40253353",
+      "18999108",
+      "38495206"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"breast neoplasms\"[MeSH Terms] OR (\"breast\"[All Fields] AND \"neoplasms\"[All Fields]) OR \"breast neoplasms\"[All Fields] OR (\"breast\"[All Fields] AND \"cancer\"[All Fields]) OR \"breast cancer\"[All Fields]) AND (\"grade\"[All Fields] OR \"graded\"[All Fields] OR \"grades\"[All Fields] OR \"grading\"[All Fields] OR \"gradings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Breast Cancer Grading Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

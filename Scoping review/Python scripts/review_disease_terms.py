@@ -1086,6 +1086,11 @@ ENRICHMENT_FIELDNAMES = [
     "ontology_exclusion_reason",
     "native_ontology_guess",
     "native_term_status",
+    "native_source_ontology_ids",
+    "dependent_source_ontology_ids",
+    "dependency_on_ontology_ids",
+    "source_appearance_summary",
+    "review_route",
     "manual_screening_hint",
 ]
 
@@ -1261,6 +1266,76 @@ def infer_native_term_status(row: dict[str, Any]) -> tuple[str, str]:
     return native_guess, "likely_imported_or_reused_term"
 
 
+def normalise_ontology_id_for_dependency(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", str(value or "").lower()).strip("_")
+
+
+def classify_source_appearances(row: dict[str, Any]) -> dict[str, str]:
+    """Separate native class definitions from imported/reused source appearances.
+
+    The review unit is the class IRI. Registry source records often include many
+    ontologies that merely import the same IRI. Those should be counted as reuse
+    evidence, not as independent disease-modelling implementations.
+    """
+    native_guess = infer_native_ontology_guess(row.get("class_iri", ""))
+    native_key = normalise_ontology_id_for_dependency(native_guess)
+    native_sources: list[str] = []
+    dependent_sources: list[str] = []
+    unknown_sources: list[str] = []
+
+    records = source_records(row)
+    if not records and row.get("ontology"):
+        records = [{"source": "", "ontology": row.get("ontology", "")}]
+
+    for record in records:
+        source = str(record.get("source", "")).strip()
+        ontology = str(record.get("ontology", "")).strip()
+        if not ontology:
+            continue
+        source_id = f"{source}: {ontology}" if source else ontology
+        ontology_key = normalise_ontology_id_for_dependency(ontology)
+        if not native_key:
+            unknown_sources.append(source_id)
+        elif ontology_key == native_key:
+            native_sources.append(source_id)
+        else:
+            dependent_sources.append(source_id)
+
+    native_sources = list(dict.fromkeys(native_sources))
+    dependent_sources = list(dict.fromkeys(dependent_sources))
+    unknown_sources = list(dict.fromkeys(unknown_sources))
+    dependencies = [native_guess] if native_guess and dependent_sources else []
+
+    if native_sources and dependent_sources:
+        route = "independent_class_review_with_dependency_appearances"
+    elif native_sources:
+        route = "independent_class_review"
+    elif dependent_sources and native_guess:
+        route = "dependency_only_no_independent_analysis"
+    else:
+        route = "unknown_namespace_needs_manual_check"
+
+    summary_bits = []
+    if native_sources:
+        summary_bits.append(f"native in {', '.join(native_sources[:8])}{' ...' if len(native_sources) > 8 else ''}")
+    if dependent_sources:
+        summary_bits.append(
+            f"imported/reused in {len(dependent_sources)} source ontology appearance(s); depends on {native_guess}"
+            if native_guess
+            else f"appears in {len(dependent_sources)} source ontology appearance(s); native source unknown"
+        )
+    if unknown_sources:
+        summary_bits.append(f"unknown namespace in {len(unknown_sources)} source ontology appearance(s)")
+
+    return {
+        "native_source_ontology_ids": "; ".join(native_sources),
+        "dependent_source_ontology_ids": "; ".join(dependent_sources),
+        "dependency_on_ontology_ids": "; ".join(dependencies),
+        "source_appearance_summary": "; ".join(summary_bits),
+        "review_route": route,
+    }
+
+
 def manual_screening_hint(row: dict[str, Any]) -> str:
     hints = []
     if row.get("ontology_exclusion_status") == "excluded_preasserted":
@@ -1306,6 +1381,7 @@ def enrich_rows(rows: list[dict[str, Any]], *, apikey: str | None = None) -> lis
         native_guess, native_status = infer_native_term_status(row)
         row["native_ontology_guess"] = native_guess
         row["native_term_status"] = native_status
+        row.update(classify_source_appearances(row))
         row["manual_screening_hint"] = manual_screening_hint(row)
         enriched.append(row)
     return enriched

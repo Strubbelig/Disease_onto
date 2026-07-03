@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "25600302",
+      "31950976",
+      "23426257"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"planarians\"[MeSH Terms] OR \"planarians\"[All Fields] OR \"planarian\"[All Fields]) AND (\"phenotype\"[MeSH Terms] OR \"phenotype\"[All Fields] OR \"phenotypes\"[All Fields] OR \"phenotyped\"[All Fields] OR \"phenotypic\"[All Fields] OR \"phenotypical\"[All Fields] OR \"phenotypically\"[All Fields] OR \"phenotyping\"[All Fields] OR \"phenotypings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Planarian Phenotype Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

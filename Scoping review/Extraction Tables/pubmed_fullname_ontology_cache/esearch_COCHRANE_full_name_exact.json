@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"cochran\"[All Fields] OR \"cochran s\"[All Fields] OR \"cochrane\"[All Fields] OR \"cochrane s\"[All Fields]) AND \"core\"[All Fields] AND (\"vocabulary\"[MeSH Terms] OR \"vocabulary\"[All Fields] OR \"vocabularies\"[All Fields] OR \"vocabulary s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Cochrane Core Vocabulary Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

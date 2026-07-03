@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "16",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "41052288",
+      "36149471",
+      "41697974",
+      "38857186",
+      "37963467",
+      "40621601",
+      "41092581",
+      "37503136",
+      "36823605",
+      "39910609"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Mondo Disease Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

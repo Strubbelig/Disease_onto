@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "454",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38236918",
+      "34275487",
+      "40714690",
+      "36271389",
+      "33106757",
+      "33682875",
+      "38778394",
+      "33076825",
+      "38362295",
+      "34147086"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"virology\"[MeSH Subheading] OR \"virology\"[All Fields] OR \"viruses\"[All Fields] OR \"viruses\"[MeSH Terms] OR \"virus s\"[All Fields] OR \"viruse\"[All Fields] OR \"virus\"[All Fields]) AND (\"communicable diseases\"[MeSH Terms] OR (\"communicable\"[All Fields] AND \"diseases\"[All Fields]) OR \"communicable diseases\"[All Fields] OR (\"infectious\"[All Fields] AND \"disease\"[All Fields]) OR \"infectious disease\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Virus Infectious Disease Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

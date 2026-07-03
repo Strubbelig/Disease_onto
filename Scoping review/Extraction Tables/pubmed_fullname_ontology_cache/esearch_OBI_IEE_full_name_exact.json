@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "31626635"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"biomedical\"[All Fields] OR \"biomedically\"[All Fields]) AND (\"investigated\"[All Fields] OR \"investigates\"[All Fields] OR \"investigating\"[All Fields] OR \"investigation\"[All Fields] OR \"investigations\"[All Fields] OR \"investigative\"[All Fields] OR \"investigator s\"[All Fields] OR \"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"investigator\"[All Fields] OR \"investigators\"[All Fields]) AND (\"based\"[All Fields] OR \"basing\"[All Fields]) AND (\"ear, inner\"[MeSH Terms] OR (\"ear\"[All Fields] AND \"inner\"[All Fields]) OR \"inner ear\"[All Fields] OR (\"inner\"[All Fields] AND \"ear\"[All Fields])) AND (\"electrophysiology\"[MeSH Terms] OR \"electrophysiology\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"The Ontology for Biomedical Investigation based Inner Ear Electrophysiology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Healthcare",
+        "to": "\"delivery of health care\"[MeSH Terms] OR (\"delivery\"[All Fields] AND \"health\"[All Fields] AND \"care\"[All Fields]) OR \"delivery of health care\"[All Fields] OR \"healthcare\"[All Fields] OR \"healthcare's\"[All Fields] OR \"healthcares\"[All Fields]"
+      },
+      {
+        "from": "Monitoring",
+        "to": "\"monitor\"[All Fields] OR \"monitor's\"[All Fields] OR \"monitorable\"[All Fields] OR \"monitored\"[All Fields] OR \"monitoring\"[All Fields] OR \"monitoring's\"[All Fields] OR \"monitorings\"[All Fields] OR \"monitorization\"[All Fields] OR \"monitorize\"[All Fields] OR \"monitorized\"[All Fields] OR \"monitors\"[All Fields]"
+      },
+      {
+        "from": "Emergency",
+        "to": "\"emerge\"[All Fields] OR \"emerged\"[All Fields] OR \"emergence\"[All Fields] OR \"emergences\"[All Fields] OR \"emergencies\"[MeSH Terms] OR \"emergencies\"[All Fields] OR \"emergency\"[All Fields] OR \"emergent\"[All Fields] OR \"emergently\"[All Fields] OR \"emergents\"[All Fields] OR \"emerges\"[All Fields] OR \"emerging\"[All Fields]"
+      },
+      {
+        "from": "Response",
+        "to": "\"response\"[All Fields] OR \"responses\"[All Fields] OR \"responsive\"[All Fields] OR \"responsiveness\"[All Fields] OR \"responsivenesses\"[All Fields] OR \"responsives\"[All Fields] OR \"responsivities\"[All Fields] OR \"responsivity\"[All Fields]"
+      },
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"delivery of health care\"[MeSH Terms] OR (\"delivery\"[All Fields] AND \"health\"[All Fields] AND \"care\"[All Fields]) OR \"delivery of health care\"[All Fields] OR \"healthcare\"[All Fields] OR \"healthcare s\"[All Fields] OR \"healthcares\"[All Fields]) AND (\"monitor\"[All Fields] OR \"monitor s\"[All Fields] OR \"monitorable\"[All Fields] OR \"monitored\"[All Fields] OR \"monitoring\"[All Fields] OR \"monitoring s\"[All Fields] OR \"monitorings\"[All Fields] OR \"monitorization\"[All Fields] OR \"monitorize\"[All Fields] OR \"monitorized\"[All Fields] OR \"monitors\"[All Fields]) AND (\"emerge\"[All Fields] OR \"emerged\"[All Fields] OR \"emergence\"[All Fields] OR \"emergences\"[All Fields] OR \"emergencies\"[MeSH Terms] OR \"emergencies\"[All Fields] OR \"emergency\"[All Fields] OR \"emergent\"[All Fields] OR \"emergently\"[All Fields] OR \"emergents\"[All Fields] OR \"emerges\"[All Fields] OR \"emerging\"[All Fields]) AND (\"response\"[All Fields] OR \"responses\"[All Fields] OR \"responsive\"[All Fields] OR \"responsiveness\"[All Fields] OR \"responsivenesses\"[All Fields] OR \"responsives\"[All Fields] OR \"responsivities\"[All Fields] OR \"responsivity\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

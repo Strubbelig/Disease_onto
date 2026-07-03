@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "9",
+    "retmax": "9",
+    "retstart": "0",
+    "idlist": [
+      "41131528",
+      "36525430",
+      "35916719",
+      "36877554",
+      "34604710",
+      "40979439",
+      "25149871",
+      "31774830",
+      "34943290"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"adherance\"[All Fields] OR \"adhere\"[All Fields] OR \"adhered\"[All Fields] OR \"adherence\"[All Fields] OR \"adherences\"[All Fields] OR \"adherent\"[All Fields] OR \"adherents\"[All Fields] OR \"adherer\"[All Fields] OR \"adherers\"[All Fields] OR \"adheres\"[All Fields] OR \"adhering\"[All Fields]) AND (\"int j integr care\"[Journal] OR (\"integrated\"[All Fields] AND \"care\"[All Fields]) OR \"integrated care\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Adherence and Integrated Care\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

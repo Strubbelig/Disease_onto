@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "34448178",
+      "39446823"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"persian people\"[Supplementary Concept] OR \"persian people\"[All Fields] OR \"persian\"[All Fields] OR \"persians\"[All Fields]) AND (\"medicin\"[All Fields] OR \"medicinal\"[All Fields] OR \"medicinally\"[All Fields] OR \"medicinals\"[All Fields] OR \"medicine\"[MeSH Terms] OR \"medicine\"[All Fields] OR \"medicine s\"[All Fields] OR \"medicines\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Persian Medicine Diseases Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

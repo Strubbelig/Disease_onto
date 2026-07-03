@@ -1,0 +1,23 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "29496629",
+      "34710644",
+      "18693819"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Relations Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

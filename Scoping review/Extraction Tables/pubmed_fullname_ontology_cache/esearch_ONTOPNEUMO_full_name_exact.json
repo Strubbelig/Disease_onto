@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "865",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37929582",
+      "32166015",
+      "38811033",
+      "31888755",
+      "35860315",
+      "39439801",
+      "37666859",
+      "39810158",
+      "38110868",
+      "38370408"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"pneumologie\"[All Fields] OR \"pulmonary medicine\"[MeSH Terms] OR (\"pulmonary\"[All Fields] AND \"medicine\"[All Fields]) OR \"pulmonary medicine\"[All Fields] OR \"pneumology\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Pneumology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

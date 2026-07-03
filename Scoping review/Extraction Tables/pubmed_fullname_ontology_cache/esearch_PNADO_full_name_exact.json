@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "125",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35377253",
+      "40997588",
+      "34789243",
+      "40887575",
+      "37197797",
+      "39396941",
+      "41068301",
+      "38373644",
+      "40822624",
+      "36081516"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"pneumonia\"[MeSH Terms] OR \"pneumonia\"[All Fields] OR \"pneumonias\"[All Fields] OR \"pneumoniae\"[All Fields] OR \"pneumoniae s\"[All Fields]) AND (\"diagnosable\"[All Fields] OR \"diagnosi\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"diagnosis\"[All Fields] OR \"diagnose\"[All Fields] OR \"diagnosed\"[All Fields] OR \"diagnoses\"[All Fields] OR \"diagnosing\"[All Fields] OR \"diagnosis\"[MeSH Subheading]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Pneumonia Diagnosis Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

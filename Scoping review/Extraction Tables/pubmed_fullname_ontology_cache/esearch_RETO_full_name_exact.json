@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13855",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33231677",
+      "29281840",
+      "28733419",
+      "32016446",
+      "39578795",
+      "39285198",
+      "27873103",
+      "38673910",
+      "25896902",
+      "26636336"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"legislation and jurisprudence\"[MeSH Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation s\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator s\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields]) AND (\"transcript\"[All Fields] OR \"transcript s\"[All Fields] OR \"transcripted\"[All Fields] OR \"transcription, genetic\"[MeSH Terms] OR (\"transcription\"[All Fields] AND \"genetic\"[All Fields]) OR \"genetic transcription\"[All Fields] OR \"transcription\"[All Fields] OR \"transcriptional\"[All Fields] OR \"transcriptions\"[All Fields] OR \"transcriptive\"[All Fields] OR \"transcripts\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Regulation of Transcription Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

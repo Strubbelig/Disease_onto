@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Allotrope",
+        "to": "\"allotrope\"[All Fields] OR \"allotropes\"[All Fields] OR \"allotropic\"[All Fields]"
+      },
+      {
+        "from": "Merged",
+        "to": "\"merge\"[All Fields] OR \"merged\"[All Fields] OR \"merges\"[All Fields] OR \"merging\"[All Fields] OR \"mergings\"[All Fields]"
+      },
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "Suite",
+        "to": "\"suite\"[All Fields] OR \"suited\"[All Fields] OR \"suites\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"allotrope\"[All Fields] OR \"allotropes\"[All Fields] OR \"allotropic\"[All Fields]) AND (\"merge\"[All Fields] OR \"merged\"[All Fields] OR \"merges\"[All Fields] OR \"merging\"[All Fields] OR \"mergings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"suite\"[All Fields] OR \"suited\"[All Fields] OR \"suites\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

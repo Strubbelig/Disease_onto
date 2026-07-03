@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"research design\"[MeSH Terms] OR (\"research\"[All Fields] AND \"design\"[All Fields]) OR \"research design\"[All Fields] OR \"test\"[All Fields]) AND \"nxdx\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Test NXDX\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

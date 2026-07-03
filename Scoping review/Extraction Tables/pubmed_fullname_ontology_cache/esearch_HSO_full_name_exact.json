@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1230",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34753471",
+      "31115344",
+      "39325530",
+      "30935504",
+      "24699371",
+      "38548265",
+      "26918107",
+      "41052288",
+      "39575792",
+      "36996094"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health s\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]) AND (\"epidemiology\"[MeSH Subheading] OR \"epidemiology\"[All Fields] OR \"surveillance\"[All Fields] OR \"epidemiology\"[MeSH Terms] OR \"surveilance\"[All Fields] OR \"surveillances\"[All Fields] OR \"surveilled\"[All Fields] OR \"surveillence\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Health Surveillance Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

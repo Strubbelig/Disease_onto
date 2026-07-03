@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "176",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34831777",
+      "38701256",
+      "32126522",
+      "40544735",
+      "36277473",
+      "38013284",
+      "38428661",
+      "36043445",
+      "37532072",
+      "37986356"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"prescriptions\"[MeSH Terms] OR \"prescriptions\"[All Fields] OR \"prescription\"[All Fields] OR \"prescription of\"[All Fields]) AND (\"drug s\"[All Fields] OR \"pharmaceutical preparations\"[Supplementary Concept] OR \"pharmaceutical preparations\"[All Fields] OR \"drugs\"[All Fields] OR \"pharmaceutical preparations\"[MeSH Terms] OR (\"pharmaceutical\"[All Fields] AND \"preparations\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"The Prescription of Drugs Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

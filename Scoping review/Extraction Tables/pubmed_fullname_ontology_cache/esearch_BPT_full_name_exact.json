@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1280",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39656775",
+      "17204041",
+      "40517620",
+      "34506537",
+      "36551266",
+      "25951454",
+      "37868056",
+      "39248272",
+      "40534874",
+      "31962244"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biological products\"[Supplementary Concept] OR \"biological products\"[All Fields] OR \"biologic\"[All Fields] OR \"biological products\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"products\"[All Fields]) OR \"biological\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biologicals\"[All Fields] OR \"biological factors\"[Supplementary Concept] OR \"biological factors\"[All Fields] OR \"biological factors\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"factors\"[All Fields]) OR \"biologics\"[All Fields] OR \"biologically\"[All Fields]) AND (\"pathway\"[All Fields] OR \"pathway s\"[All Fields] OR \"pathways\"[All Fields]) AND (\"classification\"[MeSH Terms] OR \"classification\"[All Fields] OR \"taxonomies\"[All Fields] OR \"classification\"[MeSH Subheading] OR \"taxonomy\"[All Fields] OR \"taxonomy s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Biological Pathway Taxonomy\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

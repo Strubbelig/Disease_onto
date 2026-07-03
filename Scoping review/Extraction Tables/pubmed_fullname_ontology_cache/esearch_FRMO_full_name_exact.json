@@ -1,0 +1,32 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "38662184",
+      "25693419",
+      "25542073",
+      "40117725",
+      "37817774"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"fall\"[All Fields] AND (\"risk management\"[MeSH Terms] OR (\"risk\"[All Fields] AND \"management\"[All Fields]) OR \"risk management\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Fall Risk Management Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

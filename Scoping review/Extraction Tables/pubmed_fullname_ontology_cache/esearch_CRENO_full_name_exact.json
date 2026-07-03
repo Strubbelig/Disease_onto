@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "37350894",
+      "20942847",
+      "28171816",
+      "19225562"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"culturabilities\"[All Fields] OR \"culturability\"[All Fields] OR \"culturable\"[All Fields] OR \"culturalism\"[All Fields] OR \"culture\"[MeSH Terms] OR \"culture\"[All Fields] OR \"cultural\"[All Fields] OR \"culturally\"[All Fields] OR \"cultures\"[All Fields] OR \"culture s\"[All Fields] OR \"cultured\"[All Fields] OR \"culturing\"[All Fields] OR \"culturings\"[All Fields] OR \"ethnology\"[MeSH Subheading] OR \"ethnology\"[All Fields]) AND (\"racial groups\"[MeSH Terms] OR (\"racial\"[All Fields] AND \"groups\"[All Fields]) OR \"racial groups\"[All Fields] OR \"race\"[All Fields]) AND (\"ethnic\"[All Fields] OR \"ethnical\"[All Fields] OR \"ethnically\"[All Fields] OR \"ethnicities\"[All Fields] OR \"ethnics\"[All Fields] OR \"ethnology\"[MeSH Subheading] OR \"ethnology\"[All Fields] OR \"ethnicity\"[All Fields] OR \"ethnology\"[MeSH Terms] OR \"ethnicity\"[MeSH Terms]) AND (\"ethnicity\"[MeSH Terms] OR \"ethnicity\"[All Fields] OR \"nationalities\"[All Fields] OR \"nationality\"[All Fields] OR \"federal government\"[MeSH Terms] OR (\"federal\"[All Fields] AND \"government\"[All Fields]) OR \"federal government\"[All Fields] OR \"national\"[All Fields] OR \"nation\"[All Fields] OR \"nation s\"[All Fields] OR \"nationalism\"[All Fields] OR \"nationalisms\"[All Fields] OR \"nationalization\"[All Fields] OR \"nationalized\"[All Fields] OR \"nationally\"[All Fields] OR \"nationals\"[All Fields] OR \"nations\"[All Fields] OR \"nations s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Culture, Race, Ethnicity and Nationality Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

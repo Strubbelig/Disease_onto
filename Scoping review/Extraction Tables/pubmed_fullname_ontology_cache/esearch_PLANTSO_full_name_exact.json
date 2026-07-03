@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2799",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "26947550",
+      "38172302",
+      "34073070",
+      "36351196",
+      "30683860",
+      "30192796",
+      "36253558",
+      "39339640",
+      "38256758",
+      "41068586"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"plant stress\"[Journal] OR (\"plant\"[All Fields] AND \"stress\"[All Fields]) OR \"plant stress\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Plant Stress Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

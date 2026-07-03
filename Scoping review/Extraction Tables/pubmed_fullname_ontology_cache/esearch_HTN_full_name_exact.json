@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "533",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40418901",
+      "32166015",
+      "37929582",
+      "39542509",
+      "38199208",
+      "38110868",
+      "32450155",
+      "30342690",
+      "41086427",
+      "40708706"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"hypertense\"[All Fields] OR \"hypertension\"[MeSH Terms] OR \"hypertension\"[All Fields] OR \"hypertension s\"[All Fields] OR \"hypertensions\"[All Fields] OR \"hypertensive\"[All Fields] OR \"hypertensive s\"[All Fields] OR \"hypertensives\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Hypertension Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

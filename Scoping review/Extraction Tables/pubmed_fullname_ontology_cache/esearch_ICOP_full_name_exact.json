@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "26212927",
+      "21848527",
+      "20374436",
+      "26257252"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"internation\"[All Fields] OR \"international\"[All Fields] OR \"international s\"[All Fields] OR \"internationals\"[All Fields]) AND (\"classification\"[MeSH Terms] OR \"classification\"[All Fields] OR \"classifications\"[All Fields] OR \"classification\"[MeSH Subheading] OR \"classification s\"[All Fields] OR \"classificator\"[All Fields] OR \"classificators\"[All Fields]) AND (\"facial pain\"[MeSH Terms] OR (\"facial\"[All Fields] AND \"pain\"[All Fields]) OR \"facial pain\"[All Fields] OR (\"orofacial\"[All Fields] AND \"pain\"[All Fields]) OR \"orofacial pain\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"International Classification of Orofacial Pain Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "235",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "27148435",
+      "38710337",
+      "24713663",
+      "40108257",
+      "38093316",
+      "40473955",
+      "38548265",
+      "31383942",
+      "40393460",
+      "35773868"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"biobank s\"[All Fields] OR \"biobanked\"[All Fields] OR \"biobankers\"[All Fields] OR \"biobanking\"[All Fields] OR \"biological specimen banks\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"specimen\"[All Fields] AND \"banks\"[All Fields]) OR \"biological specimen banks\"[All Fields] OR \"biobank\"[All Fields] OR \"biobanks\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Biobanking\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

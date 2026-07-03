@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "29295236",
+      "25991135"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"ontopsychia\"[All Fields] AND (\"social behavior\"[MeSH Terms] OR (\"social\"[All Fields] AND \"behavior\"[All Fields]) OR \"social behavior\"[All Fields] OR \"sociality\"[All Fields] OR \"social\"[All Fields] OR \"socialisation\"[All Fields] OR \"socialization\"[MeSH Terms] OR \"socialization\"[All Fields] OR \"socialise\"[All Fields] OR \"socialised\"[All Fields] OR \"socialising\"[All Fields] OR \"socialities\"[All Fields] OR \"socializations\"[All Fields] OR \"socialize\"[All Fields] OR \"socialized\"[All Fields] OR \"socializers\"[All Fields] OR \"socializes\"[All Fields] OR \"socializing\"[All Fields] OR \"socially\"[All Fields] OR \"socials\"[All Fields]) AND (\"module\"[All Fields] OR \"module s\"[All Fields] OR \"modules\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"OntoPsychia, social module\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "83",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36683508",
+      "38741190",
+      "40696469",
+      "41009659",
+      "37086959",
+      "40320792",
+      "41449232",
+      "26116273",
+      "41034919",
+      "40631882"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"neurodegenerative diseases\"[MeSH Terms] OR (\"neurodegenerative\"[All Fields] AND \"diseases\"[All Fields]) OR \"neurodegenerative diseases\"[All Fields] OR (\"neurodegenerative\"[All Fields] AND \"disease\"[All Fields]) OR \"neurodegenerative disease\"[All Fields]) AND (\"risk factors\"[MeSH Terms] OR (\"risk\"[All Fields] AND \"factors\"[All Fields]) OR \"risk factors\"[All Fields] OR (\"risk\"[All Fields] AND \"factor\"[All Fields]) OR \"risk factor\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neurodegenerative Disease Risk Factor Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

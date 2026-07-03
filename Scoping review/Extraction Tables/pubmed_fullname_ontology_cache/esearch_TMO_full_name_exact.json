@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1732",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30304648",
+      "31830756",
+      "40598243",
+      "29363432",
+      "31383942",
+      "31171447",
+      "33886080",
+      "38550940",
+      "41052288",
+      "21624155"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"translational science, biomedical\"[MeSH Terms] OR (\"translational\"[All Fields] AND \"science\"[All Fields] AND \"biomedical\"[All Fields]) OR \"biomedical translational science\"[All Fields] OR (\"translational\"[All Fields] AND \"medicine\"[All Fields]) OR \"translational medicine\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Translational Medicine Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "247",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39798237",
+      "38585273",
+      "40341241",
+      "33901445",
+      "37071460",
+      "28684686",
+      "41716297",
+      "26395080",
+      "41177129",
+      "28104774"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"context\"[All Fields] OR \"contexts\"[All Fields]) AND (\"measurability\"[All Fields] OR \"measurable\"[All Fields] OR \"measurably\"[All Fields] OR \"measure s\"[All Fields] OR \"measureable\"[All Fields] OR \"measured\"[All Fields] OR \"measurement\"[All Fields] OR \"measurement s\"[All Fields] OR \"measurements\"[All Fields] OR \"measurer\"[All Fields] OR \"measurers\"[All Fields] OR \"measuring\"[All Fields] OR \"measurings\"[All Fields] OR \"measurment\"[All Fields] OR \"measurments\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"measure\"[All Fields] OR \"measures\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Context and Measurement Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

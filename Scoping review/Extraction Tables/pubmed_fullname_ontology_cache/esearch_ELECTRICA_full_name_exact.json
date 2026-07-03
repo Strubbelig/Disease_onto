@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"electronical\"[All Fields] OR \"electronically\"[All Fields] OR \"electronics\"[MeSH Terms] OR \"electronics\"[All Fields] OR \"electronic\"[All Fields]) AND \"tool\"[All Fields] AND (\"clinician\"[All Fields] OR \"clinician s\"[All Fields] OR \"clinicians\"[All Fields]) AND (\"trainer\"[All Fields] OR \"trainer s\"[All Fields] OR \"trainers\"[All Fields]) AND (\"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"researcher\"[All Fields] OR \"researchers\"[All Fields] OR \"research\"[MeSH Terms] OR \"research\"[All Fields] OR \"research s\"[All Fields] OR \"researchable\"[All Fields] OR \"researche\"[All Fields] OR \"researched\"[All Fields] OR \"researcher s\"[All Fields] OR \"researches\"[All Fields] OR \"researching\"[All Fields] OR \"researchs\"[All Fields]) AND (\"child abuse\"[MeSH Terms] OR (\"child\"[All Fields] AND \"abuse\"[All Fields]) OR \"child abuse\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for ELEctronic tool for Clinicians, Trainers and Researchers In Child Abuse\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

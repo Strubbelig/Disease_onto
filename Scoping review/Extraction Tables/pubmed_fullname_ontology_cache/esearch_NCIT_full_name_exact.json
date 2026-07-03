@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "23",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38857186",
+      "41052288",
+      "29295222",
+      "34272855",
+      "27577410",
+      "30652600",
+      "33319709",
+      "29852316",
+      "39506842",
+      "30854243"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"National Cancer Institute Thesaurus\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

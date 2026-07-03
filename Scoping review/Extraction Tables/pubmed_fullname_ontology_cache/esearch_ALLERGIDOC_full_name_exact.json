@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "641",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38686385",
+      "32362324",
+      "29545365",
+      "37629154",
+      "41413728",
+      "40832256",
+      "39439801",
+      "40028723",
+      "38797240",
+      "27128319"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"allergie\"[All Fields] OR \"hypersensitivity\"[MeSH Terms] OR \"hypersensitivity\"[All Fields] OR \"allergies\"[All Fields] OR \"allergy\"[All Fields] OR \"allergy and immunology\"[MeSH Terms] OR (\"allergy\"[All Fields] AND \"immunology\"[All Fields]) OR \"allergy and immunology\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Allergy Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

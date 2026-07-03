@@ -1,0 +1,47 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "collection",
+        "to": "\"collect\"[All Fields] OR \"collectable\"[All Fields] OR \"collected\"[All Fields] OR \"collecting\"[All Fields] OR \"collection\"[All Fields] OR \"collections\"[All Fields] OR \"collects\"[All Fields]"
+      },
+      {
+        "from": "analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      },
+      {
+        "from": "COviD-19",
+        "to": "(\"COVID-19\" OR \"COVID19\" OR \"COVID-19\"[MeSH Terms] OR \"COVID-19 Vaccines\" OR \"COVID-19 Vaccines\"[MeSH Terms] OR \"COVID-19 serotherapy\" OR \"COVID-19 serotherapy\"[MeSH Terms] OR \"COVID-19 Nucleic Acid Testing\" OR \"covid-19 nucleic acid testing\"[MeSH Terms] OR \"COVID-19 Serological Testing\" OR \"covid-19 serological testing\"[MeSH Terms] OR \"COVID-19 Testing\" OR \"covid-19 testing\"[MeSH Terms] OR \"SARS-CoV-2\" OR \"SARSCoV2\" OR \"SARSCoV-2\" OR \"SARS-CoV2\" OR \"sars-cov-2\"[MeSH Terms] OR \"Severe Acute Respiratory Syndrome Coronavirus 2\" OR \"2019 NCOV\" OR ((\"coronavirus\"[MeSH Terms] OR \"coronavirus\" OR \"COV\" OR \"NCOV\") AND 2019/11/01[PDAT] : 3000/12/31[PDAT]))"
+      },
+      {
+        "from": "data",
+        "to": "\"Data (Basel)\"[Journal:__jid101699766] OR \"Brown Univ Dig Addict Theory Appl\"[Journal:__jid8904655] OR \"data\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"CODO\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"collect\"[All Fields] OR \"collectable\"[All Fields] OR \"collected\"[All Fields] OR \"collecting\"[All Fields] OR \"collection\"[All Fields] OR \"collections\"[All Fields] OR \"collects\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields]) AND (\"covid 19\"[All Fields] OR \"covid19\"[All Fields] OR \"covid 19\"[MeSH Terms] OR \"covid 19 vaccines\"[All Fields] OR \"covid 19 vaccines\"[MeSH Terms] OR \"covid 19 serotherapy\"[All Fields] OR \"covid 19 serotherapy\"[MeSH Terms] OR \"covid 19 nucleic acid testing\"[All Fields] OR \"covid 19 nucleic acid testing\"[MeSH Terms] OR \"covid 19 serological testing\"[All Fields] OR \"covid 19 serological testing\"[MeSH Terms] OR \"covid 19 testing\"[All Fields] OR \"covid 19 testing\"[MeSH Terms] OR \"sars cov 2\"[All Fields] OR \"sarscov2\"[All Fields] OR \"sarscov 2\"[All Fields] OR \"sars cov2\"[All Fields] OR \"sars cov 2\"[MeSH Terms] OR \"severe acute respiratory syndrome coronavirus 2\"[All Fields] OR \"2019 ncov\"[All Fields] OR ((\"coronavirus\"[MeSH Terms] OR \"coronavirus\"[All Fields] OR \"cov\"[All Fields] OR \"ncov\"[All Fields]) AND 2019/11/01:3000/12/31[Date - Publication])) AND (\"data basel\"[Journal] OR \"brown univ dig addict theory appl\"[Journal] OR \"data\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "an",
+        "for",
+        "and",
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

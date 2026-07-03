@@ -9,7 +9,7 @@
 <https://example.org/disease-review/review-core>
     rdf:type owl:Ontology ;
     rdfs:label "Disease Ontology Scoping Review — Core Annotation Properties"@en ;
-    dcterms:description "Declares the annotation properties used in the ontology-based manual review layer of the disease-ontology scoping review. These properties are asserted as rev:* annotations on reviewed OWL classes in disease_terms_review.ttl. CSV files are optional generated views for batch editing, QA, or reporting."@en ;
+    dcterms:description "Declares the annotation properties used in the ontology-based manual review layer of the disease-ontology scoping review. These properties are asserted as rev:* annotations on reviewed OWL classes in disease_terms_review.ttl. Source-ontology appearances and dependency/reuse routes are reported in CSV tables rather than copied onto the reviewed class IRIs."@en ;
     owl:versionInfo "2026-07-01" .
 
 #################################################################
@@ -26,109 +26,14 @@ rev:preferred_label
     rdfs:label "preferred label"@en ;
     iao:0000115 "The preferred label of the class as returned by the source database at retrieval time. Copied from the extraction for reviewer orientation."@en .
 
-rev:source_ontology_ids
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "source ontology IDs"@en ;
-    iao:0000115 "Semicolon-separated list of source-database–qualified ontology identifiers (e.g. 'BioPortal: DOID; OLS: doid') in which this class was found. Copied from the extraction for cross-database orientation."@en .
-
-rev:source_databases
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "source databases"@en ;
-    iao:0000115 "Semicolon-separated list of source databases in which this class was found during the extraction, such as BioPortal, OLS, or OBO Foundry Direct."@en .
-
-rev:retrieved_at_by_database
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "retrieved at by database"@en ;
-    iao:0000115 "Retrieval timestamps grouped by source database for the extracted class record."@en .
-
-rev:ontology_versions
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology versions"@en ;
-    iao:0000115 "Version information for the source ontology submissions or files observed at extraction time."@en .
-
-rev:source_urls
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "source URLs"@en ;
-    iao:0000115 "Source API or download URLs from which the class or ontology metadata was retrieved."@en .
-
 rev:bfo_anchor
     rdf:type owl:AnnotationProperty ;
     rdfs:label "BFO anchor"@en ;
     iao:0000115 "Nearest BFO parent or anchor detected during extraction, when available."@en .
 
-rev:mapping_count
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "mapping count"@en ;
-    iao:0000115 "Number of BioPortal mappings returned for the extracted class at retrieval time, when requested."@en .
-
 #################################################################
-#  Extraction-level ontology metadata
+#  Extraction-level class provenance
 #################################################################
-
-rev:ontology_title
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology title"@en ;
-    iao:0000115 "Title or display name of the ontology containing the extracted class."@en .
-
-rev:ontology_description
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology description"@en ;
-    iao:0000115 "Source metadata description of the ontology containing the extracted class."@en .
-
-rev:ontology_domain
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology domain"@en ;
-    iao:0000115 "Domain, group, or category metadata associated with the source ontology."@en .
-
-rev:ontology_homepage
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology homepage"@en ;
-    iao:0000115 "Homepage metadata associated with the source ontology."@en .
-
-rev:ontology_repository
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology repository"@en ;
-    iao:0000115 "Repository metadata associated with the source ontology."@en .
-
-rev:ontology_license
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology license"@en ;
-    iao:0000115 "License metadata associated with the source ontology."@en .
-
-rev:ontology_status
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology status"@en ;
-    iao:0000115 "Status metadata associated with the source ontology, such as active, inactive, obsolete, or restricted."@en .
-
-rev:ontology_metadata_source
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology metadata source"@en ;
-    iao:0000115 "Database or registry from which the ontology-level metadata was retrieved."@en .
-
-rev:ontology_metadata_retrieved_at
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology metadata retrieved at"@en ;
-    iao:0000115 "Timestamp at which ontology-level metadata was retrieved."@en .
-
-rev:ontology_scope_category
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology scope category"@en ;
-    iao:0000115 "Machine-inferred resource-scope category used to pre-screen ontology-level eligibility before manual review."@en .
-
-rev:ontology_exclusion_status
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology exclusion status"@en ;
-    iao:0000115 "Machine pre-screening status indicating whether the ontology was retained as a candidate or preasserted as an ontology-level exclusion."@en .
-
-rev:ontology_exclusion_rule
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology exclusion rule"@en ;
-    iao:0000115 "Machine rule code that produced an ontology-level pre-exclusion, if any."@en .
-
-rev:ontology_exclusion_reason
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "ontology exclusion reason"@en ;
-    iao:0000115 "Machine-readable explanation of the ontology-level pre-exclusion rule, if any."@en .
 
 rev:native_ontology_guess
     rdf:type owl:AnnotationProperty ;
@@ -140,10 +45,34 @@ rev:native_term_status
     rdfs:label "native term status"@en ;
     iao:0000115 "Machine pre-screening status estimating whether the class is native to the source ontology or imported/reused from another ontology."@en .
 
-rev:manual_screening_hint
+#################################################################
+#  Modelling-paper citation
+#################################################################
+
+rev:modelling_citation_source_ontology_id
     rdf:type owl:AnnotationProperty ;
-    rdfs:label "manual screening hint"@en ;
-    iao:0000115 "Machine-generated hint to help prioritize or interpret manual review."@en .
+    rdfs:label "modelling citation source ontology ID"@en ;
+    iao:0000115 "Ontology identifier whose native disease, injury, or condition class is being cited. Imported or dependent appearances are not cited independently."@en .
+
+rev:modelling_citation_doi
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation DOI"@en ;
+    iao:0000115 "DOI of the selected ontology modelling paper, when available."@en .
+
+rev:modelling_citation_pmid
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation PMID"@en ;
+    iao:0000115 "PubMed identifier of the selected ontology modelling paper, when available."@en .
+
+rev:modelling_citation_pmcid
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation PMCID"@en ;
+    iao:0000115 "PubMed Central identifier of the selected ontology modelling paper, when available."@en .
+
+rev:modelling_citation_url
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation URL"@en ;
+    iao:0000115 "URL for the selected ontology modelling paper, preferring a DOI URL when available."@en .
 
 #################################################################
 #  Ontology-level eligibility

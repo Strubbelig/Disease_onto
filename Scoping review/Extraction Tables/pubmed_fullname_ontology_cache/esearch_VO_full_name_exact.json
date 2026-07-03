@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "51",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "29058218",
+      "33238868",
+      "26918107",
+      "40832256",
+      "24909153",
+      "42062309",
+      "39583065",
+      "39123237",
+      "37841880",
+      "21772787"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Vaccine Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

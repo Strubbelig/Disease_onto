@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"mfo\"[All Fields] AND (\"mental disorders\"[MeSH Terms] OR (\"mental\"[All Fields] AND \"disorders\"[All Fields]) OR \"mental disorders\"[All Fields] OR (\"mental\"[All Fields] AND \"disease\"[All Fields]) OR \"mental disease\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"MFO Mental Disease Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

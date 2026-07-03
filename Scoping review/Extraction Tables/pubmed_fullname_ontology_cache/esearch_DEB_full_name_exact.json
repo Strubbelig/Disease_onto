@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "34020430"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"device s\"[All Fields] OR \"equipment and supplies\"[MeSH Terms] OR (\"equipment\"[All Fields] AND \"supplies\"[All Fields]) OR \"equipment and supplies\"[All Fields] OR \"device\"[All Fields] OR \"instrumentation\"[MeSH Subheading] OR \"instrumentation\"[All Fields] OR \"devices\"[All Fields]) AND (\"experimental\"[All Fields] OR \"experimentally\"[All Fields] OR \"experimentals\"[All Fields] OR \"experimentation\"[All Fields] OR \"experimentations\"[All Fields] OR \"experimenter\"[All Fields] OR \"experimenter s\"[All Fields] OR \"experimenters\"[All Fields]) AND (\"scaffold\"[All Fields] OR \"scaffold s\"[All Fields] OR \"scaffolded\"[All Fields] OR \"scaffolder\"[All Fields] OR \"scaffolders\"[All Fields] OR \"scaffolding\"[All Fields] OR \"scaffoldings\"[All Fields] OR \"scaffolds\"[All Fields]) AND (\"biocompatible materials\"[Pharmacological Action] OR \"biocompatible materials\"[Supplementary Concept] OR \"biocompatible materials\"[All Fields] OR \"biomaterial\"[All Fields] OR \"biocompatible materials\"[MeSH Terms] OR (\"biocompatible\"[All Fields] AND \"materials\"[All Fields]) OR \"biomaterials\"[All Fields] OR \"biomaterial s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Devices, Experimental scaffolds and Biomaterials Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

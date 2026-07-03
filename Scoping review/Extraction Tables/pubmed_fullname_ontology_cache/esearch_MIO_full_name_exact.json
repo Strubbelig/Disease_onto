@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "291",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33951921",
+      "34085589",
+      "35757636",
+      "38199208",
+      "40513321",
+      "30949047",
+      "41068967",
+      "40174503",
+      "40630623",
+      "40619072"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"myocardial infarction\"[MeSH Terms] OR (\"myocardial\"[All Fields] AND \"infarction\"[All Fields]) OR \"myocardial infarction\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Myocardial Infarction Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

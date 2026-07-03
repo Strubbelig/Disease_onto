@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "99",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34207119",
+      "24445411",
+      "31411675",
+      "41380014",
+      "29460289",
+      "37730667",
+      "40341164",
+      "31969096",
+      "37318081",
+      "36869404"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"vital signs\"[MeSH Terms] OR (\"vital\"[All Fields] AND \"signs\"[All Fields]) OR \"vital signs\"[All Fields] OR (\"vital\"[All Fields] AND \"sign\"[All Fields]) OR \"vital sign\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Vital Sign Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

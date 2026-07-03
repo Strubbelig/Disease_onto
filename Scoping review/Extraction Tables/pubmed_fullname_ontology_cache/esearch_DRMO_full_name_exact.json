@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "12",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34144789",
+      "36526084",
+      "41992354",
+      "39826846",
+      "39494528",
+      "38720551",
+      "26487704",
+      "33977388",
+      "37129094",
+      "41714036"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"dental health services\"[MeSH Terms] OR (\"dental\"[All Fields] AND \"health\"[All Fields] AND \"services\"[All Fields]) OR \"dental health services\"[All Fields] OR \"dental\"[All Fields] OR \"dentally\"[All Fields] OR \"dentals\"[All Fields]) AND (\"restorability\"[All Fields] OR \"restorable\"[All Fields] OR \"restorated\"[All Fields] OR \"restoration\"[All Fields] OR \"restoration s\"[All Fields] OR \"restorations\"[All Fields] OR \"restorative\"[All Fields] OR \"restoratives\"[All Fields] OR \"restore\"[All Fields] OR \"restored\"[All Fields] OR \"restores\"[All Fields] OR \"restoring\"[All Fields]) AND (\"material\"[All Fields] OR \"material s\"[All Fields] OR \"materials\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Dental Restorative Material Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

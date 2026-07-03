@@ -1,0 +1,41 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Nephrology",
+        "to": "\"nephrology\"[MeSH Terms] OR \"nephrology\"[All Fields] OR \"nephrology's\"[All Fields]"
+      },
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "order",
+        "to": "\"order\"[All Fields] OR \"ordered\"[All Fields] OR \"ordering\"[All Fields] OR \"orderings\"[All Fields] OR \"orders\"[All Fields]"
+      },
+      {
+        "from": "index",
+        "to": "\"abstracting and indexing\"[MeSH Terms] OR (\"abstracting\"[All Fields] AND \"indexing\"[All Fields]) OR \"abstracting and indexing\"[All Fields] OR \"index\"[All Fields] OR \"indexed\"[All Fields] OR \"indexes\"[All Fields] OR \"indexing\"[All Fields] OR \"indexation\"[All Fields] OR \"indexations\"[All Fields] OR \"indexe\"[All Fields] OR \"indexer\"[All Fields] OR \"indexers\"[All Fields] OR \"indexs\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"nephrology\"[MeSH Terms] OR \"nephrology\"[All Fields] OR \"nephrology s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"order\"[All Fields] OR \"ordered\"[All Fields] OR \"ordering\"[All Fields] OR \"orderings\"[All Fields] OR \"orders\"[All Fields]) AND (\"abstracting and indexing\"[MeSH Terms] OR (\"abstracting\"[All Fields] AND \"indexing\"[All Fields]) OR \"abstracting and indexing\"[All Fields] OR \"index\"[All Fields] OR \"indexed\"[All Fields] OR \"indexes\"[All Fields] OR \"indexing\"[All Fields] OR \"indexation\"[All Fields] OR \"indexations\"[All Fields] OR \"indexe\"[All Fields] OR \"indexer\"[All Fields] OR \"indexers\"[All Fields] OR \"indexs\"[All Fields]) AND \"MOOC\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "in",
+        "to"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "524",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35094435",
+      "40355913",
+      "37553569",
+      "29784049",
+      "37542312",
+      "38743588",
+      "37735671",
+      "38598053",
+      "38041858",
+      "29455577"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"neurodegenerative diseases\"[MeSH Terms] OR (\"neurodegenerative\"[All Fields] AND \"diseases\"[All Fields]) OR \"neurodegenerative diseases\"[All Fields] OR (\"neurodegenerative\"[All Fields] AND \"disease\"[All Fields]) OR \"neurodegenerative disease\"[All Fields]) AND (\"data basel\"[Journal] OR \"brown univ dig addict theory appl\"[Journal] OR \"data\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neurodegenerative Disease Data Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

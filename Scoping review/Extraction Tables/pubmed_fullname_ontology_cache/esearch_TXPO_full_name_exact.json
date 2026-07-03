@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "993",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40022828",
+      "40359556",
+      "39736229",
+      "40367801",
+      "40945017",
+      "40192506",
+      "40925315",
+      "32883995",
+      "39167857",
+      "38754198"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"toxic\"[All Fields] OR \"toxical\"[All Fields] OR \"toxically\"[All Fields] OR \"toxicant\"[All Fields] OR \"toxicant s\"[All Fields] OR \"toxicants\"[All Fields] OR \"toxicated\"[All Fields] OR \"toxication\"[All Fields] OR \"toxicities\"[All Fields] OR \"toxicity\"[MeSH Subheading] OR \"toxicity\"[All Fields] OR \"toxicity s\"[All Fields] OR \"toxics\"[All Fields]) AND (\"process\"[All Fields] OR \"processe\"[All Fields] OR \"processed\"[All Fields] OR \"processes\"[All Fields] OR \"processing\"[All Fields] OR \"processings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Toxic Process Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

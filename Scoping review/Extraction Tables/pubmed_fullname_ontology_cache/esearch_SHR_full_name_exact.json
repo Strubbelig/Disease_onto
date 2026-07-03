@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "19",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40245863",
+      "37131278",
+      "36639928",
+      "41045375",
+      "39088817",
+      "39176716",
+      "25160170",
+      "35371617",
+      "32039089",
+      "38553162"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"student s\"[All Fields] OR \"students\"[MeSH Terms] OR \"students\"[All Fields] OR \"student\"[All Fields] OR \"students s\"[All Fields]) AND (\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health s\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]) AND (\"record s\"[All Fields] OR \"recordability\"[All Fields] OR \"recordable\"[All Fields] OR \"recordables\"[All Fields] OR \"recorded\"[All Fields] OR \"recorder\"[All Fields] OR \"recorders\"[All Fields] OR \"recording\"[All Fields] OR \"recordings\"[All Fields] OR \"records\"[MeSH Terms] OR \"records\"[All Fields] OR \"record\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Student Health Record Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

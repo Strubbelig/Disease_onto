@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "25",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37870215",
+      "40369875",
+      "26870952",
+      "36555412",
+      "35048967",
+      "39336712",
+      "41376220",
+      "21742777",
+      "39094502",
+      "34837429"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"mammalians\"[All Fields] OR \"mammals\"[MeSH Terms] OR \"mammals\"[All Fields] OR \"mammalian\"[All Fields]) AND (\"feeding\"[All Fields] OR \"feedings\"[All Fields] OR \"feeds\"[All Fields]) AND (\"muscle s\"[All Fields] OR \"muscles\"[MeSH Terms] OR \"muscles\"[All Fields] OR \"muscle\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Mammalian Feeding Muscle Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

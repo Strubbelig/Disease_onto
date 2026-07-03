@@ -1,0 +1,26 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "32050401",
+      "36823605",
+      "25093069",
+      "22324457",
+      "25977145",
+      "19602574"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Exposure Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

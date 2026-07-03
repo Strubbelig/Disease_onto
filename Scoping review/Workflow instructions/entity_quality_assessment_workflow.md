@@ -28,6 +28,24 @@ The review ontology should contain only the MIREOT-style stubs and review annota
 
 If a reviewed class does not resolve through an imported module, that is a pipeline error or source limitation that must be handled explicitly before review. Either import the missing module or create a documented fallback module for that class. Do not silently review unresolved stubs as if hierarchy evidence were present.
 
+## Native Classes vs Dependency Appearances
+
+The review separates two things that registries often mix together:
+
+- **Class-level disease model:** the ontology that natively defines the disease/disorder class IRI. This is the unit that may receive independent quality assessment and disease-model annotations.
+- **Source ontology appearance:** another ontology in which the same class IRI appears because it was imported, reused, or indexed through a dependency. This is useful evidence of reuse, but it is not an independent disease model.
+
+Example: if an application ontology contains `http://purl.obolibrary.org/obo/OGMS_0000031` only by importing OGMS, the application ontology should be listed as an appearance/dependency, but the disease-model analysis and citation belong to OGMS. Do not search for a separate disease-modelling paper for every ontology that merely imports OGMS.
+
+Use the generated fields:
+
+- `native_source_ontology_ids`: sources where the class appears native.
+- `dependent_source_ontology_ids`: sources where the class appears imported/reused.
+- `dependency_on_ontology_ids`: the native ontology to cite/analyze for dependent appearances.
+- `review_route`: whether the class goes through independent review or dependency-only listing.
+
+Dependency-only source ontologies should remain visible in the source-appearance report, but they should not receive independent class-quality annotations unless they add a native disease/disorder/pathological-process class of their own.
+
 ## Controlled Values
 
 Use these values where possible. Full definitions are in `review_core.ttl`.
@@ -119,6 +137,8 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
    Compare the reviewed class IRI, source ontology identifiers, imported module, namespace, and `native_ontology_guess`.
 
    If the IRI namespace points to a different ontology than the reporting source, set `native_or_imported_manual` to `imported` or `reused_unclear`. Imported terms may remain in the ontology to document reuse, but they should not be counted as independent disease-modelling implementations unless the analysis explicitly studies reuse/import behaviour.
+
+   If `review_route` is `dependency_only_no_independent_analysis`, do not complete the full quality-assessment route for that source ontology. List the source as a dependency appearance and analyze the native ontology named in `dependency_on_ontology_ids` instead.
 
 4. Assess entity relevance.
 

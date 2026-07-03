@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"neomark\"[All Fields] AND (\"mouth neoplasms\"[MeSH Terms] OR (\"mouth\"[All Fields] AND \"neoplasms\"[All Fields]) OR \"mouth neoplasms\"[All Fields] OR (\"oral\"[All Fields] AND \"cancer\"[All Fields]) OR \"oral cancer\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"version\"[All Fields] OR \"version s\"[All Fields] OR \"versions\"[All Fields]) AND \"4\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neomark Oral Cancer Ontology, version 4\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

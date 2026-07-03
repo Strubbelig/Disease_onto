@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "59",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37195738",
+      "37953324",
+      "40495042",
+      "35993182",
+      "33282335",
+      "37532000",
+      "36011531",
+      "40731221",
+      "36703185",
+      "37697839"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"mental health\"[MeSH Terms] OR (\"mental\"[All Fields] AND \"health\"[All Fields]) OR \"mental health\"[All Fields]) AND (\"manage\"[All Fields] OR \"managed\"[All Fields] OR \"management s\"[All Fields] OR \"managements\"[All Fields] OR \"manager\"[All Fields] OR \"manager s\"[All Fields] OR \"managers\"[All Fields] OR \"manages\"[All Fields] OR \"managing\"[All Fields] OR \"managment\"[All Fields] OR \"organization and administration\"[MeSH Terms] OR (\"organization\"[All Fields] AND \"administration\"[All Fields]) OR \"organization and administration\"[All Fields] OR \"management\"[All Fields] OR \"disease management\"[MeSH Terms] OR (\"disease\"[All Fields] AND \"management\"[All Fields]) OR \"disease management\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Mental Health Management Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

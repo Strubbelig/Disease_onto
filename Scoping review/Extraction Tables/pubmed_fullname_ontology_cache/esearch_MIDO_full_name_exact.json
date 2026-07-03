@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "862",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "27528121",
+      "38763990",
+      "34964701",
+      "39580967",
+      "36163284",
+      "39620965",
+      "40473955",
+      "17582506",
+      "35868725",
+      "38360565"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"radiography\"[MeSH Terms] OR \"radiography\"[All Fields] OR (\"medical\"[All Fields] AND \"imaging\"[All Fields]) OR \"medical imaging\"[All Fields] OR \"diagnostic imaging\"[MeSH Terms] OR (\"diagnostic\"[All Fields] AND \"imaging\"[All Fields]) OR \"diagnostic imaging\"[All Fields]) AND (\"diagnosis\"[MeSH Terms] OR \"diagnosis\"[All Fields] OR \"diagnostic\"[All Fields] OR \"diagnostical\"[All Fields] OR \"diagnostically\"[All Fields] OR \"diagnostics\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Medical Imaging and Diagnostic Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

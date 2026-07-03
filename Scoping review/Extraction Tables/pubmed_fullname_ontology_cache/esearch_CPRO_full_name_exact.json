@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "726",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36149471",
+      "16160331",
+      "31383942",
+      "32570642",
+      "22395637",
+      "32131804",
+      "32783631",
+      "39575810",
+      "31438026",
+      "40119723"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"electronic health records\"[MeSH Terms] OR (\"electronic\"[All Fields] AND \"health\"[All Fields] AND \"records\"[All Fields]) OR \"electronic health records\"[All Fields] OR (\"computer\"[All Fields] AND \"based\"[All Fields] AND \"patient\"[All Fields] AND \"record\"[All Fields]) OR \"computer based patient record\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Computer-Based Patient Record Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

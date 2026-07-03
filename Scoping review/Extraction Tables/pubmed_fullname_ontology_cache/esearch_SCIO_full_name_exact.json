@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "247",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39799354",
+      "39545839",
+      "37692100",
+      "38519735",
+      "37449639",
+      "34928232",
+      "36018187",
+      "38463490",
+      "40659785",
+      "40345018"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"spinal cord injuries\"[MeSH Terms] OR (\"spinal\"[All Fields] AND \"cord\"[All Fields] AND \"injuries\"[All Fields]) OR \"spinal cord injuries\"[All Fields] OR (\"spinal\"[All Fields] AND \"cord\"[All Fields] AND \"injury\"[All Fields]) OR \"spinal cord injury\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Spinal Cord Injury Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

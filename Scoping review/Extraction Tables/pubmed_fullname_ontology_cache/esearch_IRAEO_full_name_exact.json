@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38915743",
+      "39251231",
+      "40721801",
+      "38489696",
+      "39324142",
+      "41380014",
+      "39277735",
+      "40996982",
+      "36268014",
+      "32264717"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"immune related\"[All Fields] AND (\"adverse\"[All Fields] OR \"adversely\"[All Fields] OR \"adverses\"[All Fields]) AND (\"event\"[All Fields] OR \"event s\"[All Fields] OR \"events\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Immune-Related Adverse Event Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

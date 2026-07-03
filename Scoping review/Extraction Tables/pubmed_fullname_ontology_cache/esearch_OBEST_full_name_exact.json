@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34702804",
+      "10927965",
+      "39748091",
+      "35178824",
+      "42107257",
+      "28900884",
+      "40016672",
+      "38393632",
+      "40301638",
+      "24081578"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"bioethical\"[All Fields] OR \"bioethics\"[MeSH Terms] OR \"bioethics\"[All Fields] OR \"bioethic\"[All Fields]) AND (\"ethic s\"[All Fields] OR \"ethical\"[All Fields] OR \"ethicality\"[All Fields] OR \"ethically\"[All Fields] OR \"ethics\"[MeSH Terms] OR \"ethics\"[All Fields] OR \"ethic\"[All Fields] OR \"ethics\"[MeSH Subheading]) AND (\"science\"[MeSH Terms] OR \"science\"[All Fields] OR \"sciences\"[All Fields] OR \"science s\"[All Fields] OR \"sciencing\"[All Fields]) AND (\"technology\"[MeSH Terms] OR \"technology\"[All Fields] OR \"technologies\"[All Fields] OR \"technology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Bioethics and Ethics of Science &amp; Technology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

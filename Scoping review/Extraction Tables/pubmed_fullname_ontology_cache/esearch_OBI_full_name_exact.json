@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "25",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34244718",
+      "27128319",
+      "40909476",
+      "19374479",
+      "24314207",
+      "23429179",
+      "39160586",
+      "20460173",
+      "23734660",
+      "20626927"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Ontology for Biomedical Investigations\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

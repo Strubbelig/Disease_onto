@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "35194992",
+      "33151297",
+      "28228413",
+      "23537663"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"physiologically based\"[All Fields] AND (\"pharmacokinetic\"[All Fields] OR \"pharmacokinetical\"[All Fields] OR \"pharmacokinetically\"[All Fields] OR \"pharmacokinetics\"[MeSH Subheading] OR \"pharmacokinetics\"[All Fields] OR \"pharmacokinetics\"[MeSH Terms]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Physiologically-Based Pharmacokinetic ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

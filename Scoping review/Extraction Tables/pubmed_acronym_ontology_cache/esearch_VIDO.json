@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "9",
+    "retmax": "9",
+    "retstart": "0",
+    "idlist": [
+      "38236918",
+      "40635066",
+      "34275487",
+      "40313667",
+      "39423453",
+      "34860232",
+      "39071778",
+      "29497848",
+      "34975852"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"VIDO\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

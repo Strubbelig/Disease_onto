@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "22",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30407590",
+      "29069413",
+      "16873508",
+      "15350621",
+      "35055616",
+      "18440282",
+      "38041858",
+      "18975148",
+      "10384440",
+      "26112029"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"computability\"[All Fields] OR \"computable\"[All Fields] OR \"computating\"[All Fields] OR \"computation\"[All Fields] OR \"computational\"[All Fields] OR \"computations\"[All Fields] OR \"compute\"[All Fields] OR \"computed\"[All Fields] OR \"computer s\"[All Fields] OR \"computers\"[MeSH Terms] OR \"computers\"[All Fields] OR \"computer\"[All Fields] OR \"computes\"[All Fields] OR \"computing\"[All Fields] OR \"computional\"[All Fields]) AND (\"retrievability\"[All Fields] OR \"retrievable\"[All Fields] OR \"retrieval\"[All Fields] OR \"retrievals\"[All Fields] OR \"retrieve\"[All Fields] OR \"retrieved\"[All Fields] OR \"retrieves\"[All Fields] OR \"retrieving\"[All Fields]) AND (\"inform\"[All Fields] OR \"informal\"[All Fields] OR \"informality\"[All Fields] OR \"informally\"[All Fields] OR \"informant\"[All Fields] OR \"informant s\"[All Fields] OR \"informants\"[All Fields] OR \"information\"[All Fields] OR \"information s\"[All Fields] OR \"informational\"[All Fields] OR \"informations\"[All Fields] OR \"informative\"[All Fields] OR \"informatively\"[All Fields] OR \"informativeness\"[All Fields] OR \"informativity\"[All Fields] OR \"informed\"[All Fields] OR \"informer\"[All Fields] OR \"informers\"[All Fields] OR \"informing\"[All Fields] OR \"informs\"[All Fields]) AND (\"science\"[MeSH Terms] OR \"science\"[All Fields] OR \"scientific\"[All Fields] OR \"scientifical\"[All Fields] OR \"scientifically\"[All Fields] OR \"scientification\"[All Fields] OR \"scientificity\"[All Fields] OR \"scientifics\"[All Fields]) AND (\"project\"[All Fields] OR \"project s\"[All Fields] OR \"projects\"[All Fields]) AND (\"vocabulary, controlled\"[MeSH Terms] OR (\"vocabulary\"[All Fields] AND \"controlled\"[All Fields]) OR \"controlled vocabulary\"[All Fields] OR \"thesaurus\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Computer Retrieval of Information on Scientific Projects Thesaurus\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

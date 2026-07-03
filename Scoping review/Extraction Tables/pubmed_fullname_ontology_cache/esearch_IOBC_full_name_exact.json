@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "37165363",
+      "37359724",
+      "25875762",
+      "36879493",
+      "35773868",
+      "41805818",
+      "15550481"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"interlink\"[All Fields] OR \"interlinked\"[All Fields] OR \"interlinking\"[All Fields] OR \"interlinks\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"biological products\"[Supplementary Concept] OR \"biological products\"[All Fields] OR \"biologic\"[All Fields] OR \"biological products\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"products\"[All Fields]) OR \"biological\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biologicals\"[All Fields] OR \"biological factors\"[Supplementary Concept] OR \"biological factors\"[All Fields] OR \"biological factors\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"factors\"[All Fields]) OR \"biologics\"[All Fields] OR \"biologically\"[All Fields]) AND (\"concept\"[All Fields] OR \"concept s\"[All Fields] OR \"concepts\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Interlinking Ontology for Biological Concepts\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

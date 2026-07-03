@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "23686934",
+      "27573308",
+      "23304396",
+      "36371527",
+      "37350927",
+      "40311258",
+      "25954436",
+      "23304354",
+      "23920671",
+      "24973735"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Epilepsy and Seizure Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

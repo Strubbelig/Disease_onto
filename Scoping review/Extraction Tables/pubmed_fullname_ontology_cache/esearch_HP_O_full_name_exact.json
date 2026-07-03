@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "9",
+    "retmax": "9",
+    "retstart": "0",
+    "idlist": [
+      "39396941",
+      "40997588",
+      "34724391",
+      "37800807",
+      "41802591",
+      "34805219",
+      "28057004",
+      "33750466",
+      "20194811"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"alveolitis, extrinsic allergic\"[MeSH Terms] OR (\"alveolitis\"[All Fields] AND \"extrinsic\"[All Fields] AND \"allergic\"[All Fields]) OR \"extrinsic allergic alveolitis\"[All Fields] OR (\"hypersensitivity\"[All Fields] AND \"pneumonitis\"[All Fields]) OR \"hypersensitivity pneumonitis\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Hypersensitivity pneumonitis ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

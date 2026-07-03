@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "184",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38593806",
+      "34850110",
+      "38548265",
+      "40417354",
+      "40045550",
+      "21995952",
+      "10869020",
+      "19649320",
+      "25403527",
+      "39401100"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Molecular Interactions\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

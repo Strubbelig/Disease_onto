@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"caroli disease\"[MeSH Terms] OR (\"caroli\"[All Fields] AND \"disease\"[All Fields]) OR \"caroli disease\"[All Fields] OR (\"caroli s\"[All Fields] AND \"disease\"[All Fields]) OR \"caroli s disease\"[All Fields]) AND (\"syndrom\"[All Fields] OR \"syndromal\"[All Fields] OR \"syndromally\"[All Fields] OR \"syndrome\"[MeSH Terms] OR \"syndrome\"[All Fields] OR \"syndromes\"[All Fields] OR \"syndrome s\"[All Fields] OR \"syndromic\"[All Fields] OR \"syndroms\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Caroli's Disease and Syndrome Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

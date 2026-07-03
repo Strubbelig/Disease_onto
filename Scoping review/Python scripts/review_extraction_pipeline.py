@@ -9,9 +9,10 @@ main chunks:
     python3 "Scoping review/Python scripts/review_extraction_pipeline.py" --chunk search --sources bioportal,ols
     python3 "Scoping review/Python scripts/review_extraction_pipeline.py" --chunk bioportal-hierarchy --limit-rows 10
 
-The review ontology export is intentionally table-free at the point of use: it
-turns the enriched extraction CSV and manual annotation CSV into annotation
-triples on the extracted OWL classes.
+The review ontology export is intentionally lean: it turns the enriched
+extraction CSV and manual annotation CSV into class-review annotations on the
+extracted OWL classes. Source-ontology appearances and dependency/reuse routes
+are exported as CSV review reports instead of being copied onto each class.
 """
 
 from __future__ import annotations
@@ -62,33 +63,59 @@ IAO_DEFINITION = "http://purl.obolibrary.org/obo/IAO_0000115"
 DCTERMS_CREATED = "http://purl.org/dc/terms/created"
 DCTERMS_SOURCE = "http://purl.org/dc/terms/source"
 DCTERMS_DESCRIPTION = "http://purl.org/dc/terms/description"
+DCTERMS_BIBLIOGRAPHIC_CITATION = "http://purl.org/dc/terms/bibliographicCitation"
 REV = "https://example.org/disease-review/ap/"
 CANONICAL_MESH_ONTOLOGY = "MESH"
 DUPLICATE_MESH_ONTOLOGIES = {"MDM", "RH-MESH"}
+EXCLUDED_WEBPROTEGE_IRI_HOST = "webprotege.stanford.edu"
+WEBPROTEGE_EXCLUSION_REASON = "webprotege_random_or_local_iri_unstable_provenance"
+CITATION_REVIEW_TERMS = {"condition", "disease", "injury"}
+ACCEPTED_CITATION_CONFIDENCES = {"correct", "high", "medium"}
+MANUAL_ACCEPTED_CITATION_CONFIDENCES = {"correct"}
+REJECTED_CITATION_CONFIDENCES = {
+    "not_good",
+    "not good",
+    "no paper there",
+    "no paper yet",
+    "no_candidate",
+    "very_low",
+    "low_screen",
+}
+CITATION_DECISION_COLUMNS = [
+    "certainty of correctness",
+    "certainty_of_correctness",
+    "correctness_certainty",
+    "best_fit_confidence",
+]
+BIOPORTAL_NAMESPACE_ALIASES = {
+    "CSP": "CRISP",
+    "CST": "COSTART",
+    "HL7": "HL7",
+    "ICPC2P": "ICPC2P",
+    "LNC": "LOINC",
+    "MEDDRA": "MEDDRA",
+    "MESH": "MESH",
+    "SNOMEDCT": "SNOMEDCT",
+}
+NATIVE_NAMESPACE_PATTERNS = [
+    (r"ncicb\.nci\.nih\.gov/.+#C\d+", "NCIT", "known NCIT namespace"),
+    (r"purl\.obolibrary\.org/obo/NCIT_", "NCIT", "known NCIT namespace"),
+    (r"opendata\.inra\.fr/AHOL/", "AHOL", "known AHOL namespace"),
+    (r"purl\.org/biotop/", "BIOTOP", "known BioTop namespace"),
+    (r"www\.co-ode\.org/ontologies/galen", "GALEN", "known GALEN namespace"),
+    (r"purl\.org/cpr/", "CPRO", "known CPRO namespace"),
+    (r"semanticweb\.org/rjyy/ontologies/2015/5/ESSO", "ESSO", "known ESSO namespace"),
+    (r"semanticweb\.org/ontologies/2009/3/EpilepsyOntology", "EPILONT", "known Epilepsy Ontology namespace"),
+    (r"www\.case\.edu/EpSO", "EPSO", "known EpSO namespace"),
+    (r"semanticweb\.org/ontologies/2010/2/MiRNA-Ontology", "PVONTO", "known MiRNA ontology namespace"),
+    (r"semanticweb\.org/ontologies/Prostate_cancer", "PCALION", "known prostate cancer ontology namespace"),
+    (r"limics\.fr/ontologies/ontoDOME", "ONTODOME", "known ontoDOME namespace"),
+]
 
 EXTRACTION_REVIEW_COLUMNS = [
-    "source_databases",
-    "retrieved_at_by_database",
-    "ontology_versions",
-    "source_urls",
-    "ontology_title",
-    "ontology_description",
-    "ontology_domain",
-    "ontology_homepage",
-    "ontology_repository",
-    "ontology_license",
-    "ontology_status",
-    "ontology_metadata_source",
-    "ontology_metadata_retrieved_at",
-    "ontology_scope_category",
-    "ontology_exclusion_status",
-    "ontology_exclusion_rule",
-    "ontology_exclusion_reason",
     "native_ontology_guess",
     "native_term_status",
-    "manual_screening_hint",
     "bfo_anchor",
-    "mapping_count",
 ]
 
 HIERARCHY_DEFINITION_KEYS = {
@@ -179,6 +206,12 @@ REVIEW_PROMPT_FIELDS = [
     "review_notes",
 ]
 
+MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY = [
+    column
+    for column in manual_script.FIELDNAMES
+    if column not in {"class_iri", "term", "preferred_label", "source_ontology_ids"}
+]
+
 
 @dataclass
 class ReviewPipelineConfig:
@@ -190,6 +223,12 @@ class ReviewPipelineConfig:
     review_core_ttl: Path = ONTOLOGY_DIR / "review_core.ttl"
     review_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_review.ttl"
     smoke_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_bioportal_hierarchy_smoke.ttl"
+    preferred_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs_changed by MM.xlsx"
+    generated_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs.xlsx"
+    citation_lookup_json: Path = TABLE_DIR / "ontology_merged_best_fit_lookup.json"
+    citation_coverage_csv: Path = TABLE_DIR / "native_class_citation_coverage.csv"
+    exclusion_detail_csv: Path = TABLE_DIR / "ontology_source_exclusions_for_flow_figure.csv"
+    exclusion_summary_csv: Path = TABLE_DIR / "ontology_source_exclusion_counts_for_flow_figure.csv"
     fallback_module_dir: Path = ONTOLOGY_DIR / "review_target_fallback_modules"
     bioportal_module_dir: Path = ONTOLOGY_DIR / "bioportal_hierarchy_modules"
     bioportal_merged_ttl: Path = ONTOLOGY_DIR / "disease_terms_bioportal_hierarchy.ttl"
@@ -224,6 +263,18 @@ def join_values(values: Any) -> str:
 
 def split_semicolon(value: str) -> list[str]:
     return [part.strip() for part in str(value or "").split(";") if part.strip()]
+
+
+def citation_lookup_key(value: str) -> str:
+    return terms_script.normalise_ontology_id_for_dependency(value)
+
+
+def clean_cell(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, float) and value.is_integer():
+        return str(int(value))
+    return str(value).replace("\xa0", " ").strip()
 
 
 def ttl_literal(value: str) -> str:
@@ -535,6 +586,7 @@ class ReviewExtractionPipeline:
             "enrich": self.enrich,
             "prefill-manual": self.prefill_manual,
             "review-class": self.review_class_interactive,
+            "export-appearance-report": self.export_source_appearance_report,
             "export-review-ontology": self.export_review_ontology,
             "export-smoke-ontology": self.export_smoke_ontology,
             "download": self.download_source_ontologies,
@@ -856,6 +908,502 @@ class ReviewExtractionPipeline:
         answer = input(f"\n{field} [{current or 'blank'}]: ").strip()
         return current if answer == "" else answer
 
+    def export_source_appearance_report(self, args: argparse.Namespace) -> None:
+        rows = self._review_export_rows(read_csv_rows(self.config.enriched_csv))
+        detail_rows: list[dict[str, str]] = []
+        summary: dict[tuple[str, str], dict[str, Any]] = {}
+
+        title_by_ontology = self._ontology_title_index(rows)
+
+        for row in rows:
+            class_iri = row.get("class_iri", "")
+            native_guess = row.get("native_ontology_guess") or terms_script.infer_native_ontology_guess(class_iri)
+            native_key = terms_script.normalise_ontology_id_for_dependency(native_guess)
+            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
+            for record in records:
+                source = str(record.get("source", "")).strip()
+                ontology = str(record.get("ontology", "")).strip()
+                if not ontology:
+                    continue
+                ontology_key = terms_script.normalise_ontology_id_for_dependency(ontology)
+                if not native_key:
+                    route = "unknown_namespace_needs_manual_check"
+                    depends_on = ""
+                    class_taken_from = ""
+                    independent_analysis = "check"
+                elif ontology_key == native_key:
+                    route = "native_independent_class_definition"
+                    depends_on = ""
+                    class_taken_from = ontology
+                    independent_analysis = "yes"
+                else:
+                    route = "imported_dependency_no_independent_analysis"
+                    depends_on = native_guess
+                    class_taken_from = native_guess
+                    independent_analysis = "no"
+
+                detail = {
+                    "source_database": source,
+                    "source_ontology_id": ontology,
+                    "source_ontology_title": title_by_ontology.get(ontology.upper(), ""),
+                    "term": row.get("term", ""),
+                    "class_iri": class_iri,
+                    "preferred_label": row.get("preferred_label", ""),
+                    "native_ontology_guess": native_guess,
+                    "native_ontology_resolution_basis": row.get("native_ontology_resolution_basis", ""),
+                    "appearance_route": route,
+                    "class_taken_from_ontology_id": class_taken_from,
+                    "depends_on_ontology_id": depends_on,
+                    "independent_analysis_required": independent_analysis,
+                    "source_url": str(record.get("source_url", "")),
+                    "ontology_version": str(record.get("ontology_version", "")),
+                    "recommendation": self._appearance_recommendation(route, depends_on),
+                }
+                detail_rows.append(detail)
+
+                key = (source, ontology)
+                item = summary.setdefault(
+                    key,
+                    {
+                        "source_database": source,
+                        "source_ontology_id": ontology,
+                        "source_ontology_title": title_by_ontology.get(ontology.upper(), ""),
+                        "terms_seen": set(),
+                        "class_iris": set(),
+                        "native_class_iris": set(),
+                        "imported_class_iris": set(),
+                        "unknown_class_iris": set(),
+                        "depends_on_ontology_ids": set(),
+                    },
+                )
+                item["terms_seen"].add(row.get("term", ""))
+                item["class_iris"].add(class_iri)
+                if route == "native_independent_class_definition":
+                    item["native_class_iris"].add(class_iri)
+                elif route == "imported_dependency_no_independent_analysis":
+                    item["imported_class_iris"].add(class_iri)
+                    if depends_on:
+                        item["depends_on_ontology_ids"].add(depends_on)
+                else:
+                    item["unknown_class_iris"].add(class_iri)
+
+        summary_rows = []
+        for item in summary.values():
+            native_n = len(item["native_class_iris"])
+            imported_n = len(item["imported_class_iris"])
+            unknown_n = len(item["unknown_class_iris"])
+            depends_on = "; ".join(sorted(item["depends_on_ontology_ids"]))
+            if native_n and imported_n:
+                route = "mixed_independent_and_dependency_appearances"
+            elif native_n:
+                route = "independent_analysis_route"
+            elif imported_n and not unknown_n:
+                route = "dependency_only_no_independent_analysis"
+            else:
+                route = "unknown_namespace_needs_manual_check"
+            summary_rows.append(
+                {
+                    "source_database": item["source_database"],
+                    "source_ontology_id": item["source_ontology_id"],
+                    "source_ontology_title": item["source_ontology_title"],
+                    "terms_seen": "; ".join(sorted(x for x in item["terms_seen"] if x)),
+                    "class_count": len(item["class_iris"]),
+                    "native_class_count": native_n,
+                    "imported_dependency_class_count": imported_n,
+                    "unknown_namespace_class_count": unknown_n,
+                    "depends_on_ontology_ids": depends_on,
+                    "ontology_review_route": route,
+                    "recommendation": self._appearance_recommendation(route, depends_on),
+                    "class_iris": "; ".join(sorted(item["class_iris"])),
+                }
+            )
+
+        detail_path = self.config.table_dir / "ontology_source_appearance_routes_detail.csv"
+        summary_path = self.config.table_dir / "ontology_source_appearance_routes_summary.csv"
+        review_table_path = self.config.table_dir / "ontology_term_appearance_review_table.csv"
+        detail_fieldnames = [
+            "source_database",
+            "source_ontology_id",
+            "source_ontology_title",
+            "term",
+            "class_iri",
+            "preferred_label",
+            "native_ontology_guess",
+            "native_ontology_resolution_basis",
+            "appearance_route",
+            "class_taken_from_ontology_id",
+            "depends_on_ontology_id",
+            "independent_analysis_required",
+            "source_url",
+            "ontology_version",
+            "recommendation",
+        ]
+        sorted_detail_rows = sorted(detail_rows, key=lambda r: (r["source_ontology_id"], r["term"], r["preferred_label"], r["class_iri"]))
+        write_csv_rows(
+            detail_path,
+            sorted_detail_rows,
+            detail_fieldnames,
+        )
+        write_csv_rows(
+            review_table_path,
+            sorted_detail_rows,
+            [
+                "source_ontology_id",
+                "source_ontology_title",
+                "term",
+                "preferred_label",
+                "class_iri",
+                "class_taken_from_ontology_id",
+                "independent_analysis_required",
+                "appearance_route",
+                "recommendation",
+            ],
+        )
+        write_csv_rows(
+            summary_path,
+            sorted(summary_rows, key=lambda r: (r["ontology_review_route"], r["source_ontology_id"])),
+            [
+                "source_database",
+                "source_ontology_id",
+                "source_ontology_title",
+                "terms_seen",
+                "class_count",
+                "native_class_count",
+                "imported_dependency_class_count",
+                "unknown_namespace_class_count",
+                "depends_on_ontology_ids",
+                "ontology_review_route",
+                "recommendation",
+                "class_iris",
+            ],
+        )
+        print(f"Wrote source appearance summary -> {summary_path}")
+        print(f"Wrote source appearance detail -> {detail_path}")
+        print(f"Wrote ontology-term review table -> {review_table_path}")
+
+    def _ontology_title_index(self, rows: list[dict[str, str]]) -> dict[str, str]:
+        title_by_id: dict[str, str] = {}
+        for row in rows:
+            ontology = row.get("ontology", "").upper()
+            if ontology and row.get("ontology_title"):
+                title_by_id.setdefault(ontology, row["ontology_title"])
+        doi_lookup = self.config.table_dir / "ontology_modelling_paper_doi_lookup.json"
+        if doi_lookup.exists():
+            try:
+                data = json.loads(doi_lookup.read_text(encoding="utf-8"))
+                for row in data.get("best_rows", []):
+                    if row.get("ontology_id") and row.get("ontology_title"):
+                        title_by_id.setdefault(str(row["ontology_id"]).upper(), str(row["ontology_title"]))
+            except json.JSONDecodeError:
+                pass
+        return title_by_id
+
+    def _source_ontologies_by_class_iri(self, rows: list[dict[str, str]]) -> dict[str, set[str]]:
+        sources_by_iri: dict[str, set[str]] = defaultdict(set)
+        for row in rows:
+            iri = row.get("class_iri", "")
+            if not iri:
+                continue
+            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
+            for record in records:
+                ontology = str(record.get("ontology", "")).strip()
+                if ontology:
+                    sources_by_iri[iri].add(ontology)
+        return sources_by_iri
+
+    def _resolve_native_ontology_guess(
+        self,
+        row: dict[str, str],
+        sources_by_iri: dict[str, set[str]],
+    ) -> tuple[str, str]:
+        iri = row.get("class_iri", "")
+        existing = terms_script.infer_native_ontology_guess(iri)
+        if existing:
+            return existing, "standard IRI prefix rule"
+
+        bioportal_match = re.search(r"purl\.bioontology\.org/ontology/([^/]+)/", iri, flags=re.IGNORECASE)
+        if bioportal_match:
+            namespace = bioportal_match.group(1).upper()
+            return BIOPORTAL_NAMESPACE_ALIASES.get(namespace, namespace), "BioPortal ontology namespace"
+
+        for pattern, ontology_id, basis in NATIVE_NAMESPACE_PATTERNS:
+            if re.search(pattern, iri, flags=re.IGNORECASE):
+                return ontology_id, basis
+
+        source_ontologies = sources_by_iri.get(iri, set())
+        normalised_iri = citation_lookup_key(iri)
+        for ontology in sorted(source_ontologies, key=lambda value: (-len(value), value.lower())):
+            ontology_key = citation_lookup_key(ontology)
+            if ontology_key and ontology_key in normalised_iri:
+                return ontology, "source ontology ID appears in class IRI"
+
+        if len(source_ontologies) == 1:
+            return next(iter(source_ontologies)), "single-source local namespace"
+
+        return "", "ambiguous reused unknown namespace"
+
+    @staticmethod
+    def _native_term_status_for_source_set(native_guess: str, source_ontologies: set[str]) -> str:
+        if not native_guess:
+            return "unknown_native_ontology"
+        native_key = citation_lookup_key(native_guess)
+        source_keys = {citation_lookup_key(ontology) for ontology in source_ontologies}
+        if native_key in source_keys:
+            return "native_source_seen_with_imports" if len(source_keys) > 1 else "native_source_seen"
+        return "likely_imported_or_reused_term"
+
+    @staticmethod
+    def _appearance_recommendation(route: str, depends_on: str) -> str:
+        if route in {"dependency_only_no_independent_analysis", "imported_dependency_no_independent_analysis"}:
+            return f"List as ontology appearance/reuse only; analyze and cite {depends_on or 'the native source ontology'} instead; do not annotate independently."
+        if route == "mixed_independent_and_dependency_appearances":
+            return "Review only native disease-model classes independently; treat imported classes as reuse/dependency evidence."
+        if route == "independent_analysis_route" or route == "native_independent_class_definition":
+            return "Eligible for independent class-level review if otherwise in scope."
+        return "Needs manual namespace/provenance check before deciding review route."
+
+    def _citation_workbook_path(self) -> Path | None:
+        for path in [self.config.preferred_citation_workbook, self.config.generated_citation_workbook]:
+            if path.exists():
+                return path
+        return None
+
+    def _load_modelling_citations(self) -> dict[str, dict[str, str]]:
+        workbook_path = self._citation_workbook_path()
+        if workbook_path:
+            try:
+                manual_decisions = workbook_path == self.config.preferred_citation_workbook
+                return self._load_modelling_citations_from_workbook(workbook_path, manual_decisions=manual_decisions)
+            except Exception as exc:
+                print(f"  [warn] could not read citation workbook {workbook_path}: {exc}", file=sys.stderr)
+        if self.config.citation_lookup_json.exists():
+            try:
+                data = json.loads(self.config.citation_lookup_json.read_text(encoding="utf-8"))
+                rows = data.get("merged_best_rows", [])
+                return self._citation_lookup_from_rows(rows, source_label=str(self.config.citation_lookup_json), manual_decisions=False)
+            except Exception as exc:
+                print(f"  [warn] could not read citation lookup JSON {self.config.citation_lookup_json}: {exc}", file=sys.stderr)
+        return {}
+
+    def _load_modelling_citations_from_workbook(self, path: Path, *, manual_decisions: bool) -> dict[str, dict[str, str]]:
+        from openpyxl import load_workbook
+
+        workbook = load_workbook(path, read_only=True, data_only=True)
+        if "Merged Best Fit" not in workbook.sheetnames:
+            raise ValueError("sheet 'Merged Best Fit' not found")
+        worksheet = workbook["Merged Best Fit"]
+        rows = worksheet.iter_rows(values_only=True)
+        headers = [clean_cell(value) for value in next(rows)]
+        records = [
+            {headers[index]: clean_cell(value) for index, value in enumerate(row) if index < len(headers)}
+            for row in rows
+        ]
+        return self._citation_lookup_from_rows(records, source_label=str(path), manual_decisions=manual_decisions)
+
+    def _citation_lookup_from_rows(self, rows: list[dict[str, Any]], *, source_label: str, manual_decisions: bool) -> dict[str, dict[str, str]]:
+        citations: dict[str, dict[str, str]] = {}
+        for raw_row in rows:
+            row = {str(key): clean_cell(value) for key, value in raw_row.items()}
+            ontology_id = row.get("ontology_id", "")
+            if not ontology_id:
+                continue
+            citation = self._normalise_citation_row(row, source_label=source_label, manual_decisions=manual_decisions)
+            if citation:
+                citations[citation_lookup_key(ontology_id)] = citation
+        return citations
+
+    def _normalise_citation_row(self, row: dict[str, str], *, source_label: str, manual_decisions: bool) -> dict[str, str] | None:
+        confidence = self._citation_decision_value(row)
+        confidence_key = confidence.strip().lower()
+        manual_citation = self._manual_citation_override(confidence)
+        accepted_values = MANUAL_ACCEPTED_CITATION_CONFIDENCES if manual_decisions else ACCEPTED_CITATION_CONFIDENCES
+        accepted = confidence_key in accepted_values or bool(manual_citation)
+        if confidence_key in REJECTED_CITATION_CONFIDENCES and not manual_citation:
+            accepted = False
+        if not accepted:
+            return None
+
+        title = row.get("publication_title", "")
+        doi = self._clean_doi(row.get("doi", ""))
+        pmid = row.get("pmid", "")
+        pmcid = row.get("pmcid", "")
+        if manual_citation:
+            doi = self._doi_from_text(manual_citation)
+            pmid = self._pmid_from_text(manual_citation)
+            pmcid = self._pmcid_from_text(manual_citation)
+            title = manual_citation
+        doi_url = f"https://doi.org/{doi}" if manual_citation and doi else row.get("doi_url", "") or (f"https://doi.org/{doi}" if doi else "")
+        url = doi_url or row.get("url", "")
+        if manual_citation and not doi:
+            url = ""
+        bibliographic_citation = manual_citation or self._format_bibliographic_citation(row, doi=doi)
+        if not bibliographic_citation and not doi and not url:
+            return None
+        return {
+            "ontology_id": row.get("ontology_id", ""),
+            "confidence": confidence,
+            "doi": doi,
+            "pmid": pmid,
+            "pmcid": pmcid,
+            "url": url,
+            "title": title,
+            "bibliographic_citation": bibliographic_citation,
+            "lookup_source": row.get("lookup_source", ""),
+            "citation_source": source_label,
+        }
+
+    @staticmethod
+    def _citation_decision_value(row: dict[str, str]) -> str:
+        for column in CITATION_DECISION_COLUMNS:
+            if row.get(column):
+                return row[column]
+        return ""
+
+    @staticmethod
+    def _manual_citation_override(value: str) -> str:
+        text = clean_cell(value)
+        lowered = text.lower()
+        if not text or lowered in ACCEPTED_CITATION_CONFIDENCES or lowered in REJECTED_CITATION_CONFIDENCES:
+            return ""
+        if len(text) > 40 and (re.search(r"\b(19|20)\d{2}\b", text) or "doi" in lowered or "pmid" in lowered):
+            return text
+        return ""
+
+    @staticmethod
+    def _clean_doi(value: str) -> str:
+        doi = clean_cell(value)
+        doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
+        doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
+        return doi.strip()
+
+    @staticmethod
+    def _doi_from_text(value: str) -> str:
+        match = re.search(r"(?:doi:\s*|https?://(?:dx\.)?doi\.org/)(10\.\S+)", value, flags=re.IGNORECASE)
+        return match.group(1).rstrip(".,;)") if match else ""
+
+    @staticmethod
+    def _pmid_from_text(value: str) -> str:
+        match = re.search(r"PMID:?\s*(\d+)", value, flags=re.IGNORECASE)
+        return match.group(1) if match else ""
+
+    @staticmethod
+    def _pmcid_from_text(value: str) -> str:
+        match = re.search(r"PMC(?:ID)?:?\s*(PMC\d+|\d+)", value, flags=re.IGNORECASE)
+        if not match:
+            return ""
+        value = match.group(1)
+        return value if value.upper().startswith("PMC") else f"PMC{value}"
+
+    @staticmethod
+    def _format_bibliographic_citation(row: dict[str, str], *, doi: str) -> str:
+        parts = []
+        authors = row.get("authors", "")
+        year = row.get("year", "")
+        title = row.get("publication_title", "")
+        venue = row.get("venue", "")
+        if authors:
+            parts.append(authors)
+        if year:
+            parts.append(f"({year})")
+        if title:
+            parts.append(title.rstrip(".") + ".")
+        if venue:
+            parts.append(venue.rstrip(".") + ".")
+        if doi:
+            parts.append(f"doi:{doi}")
+        elif row.get("pmid"):
+            parts.append(f"PMID:{row['pmid']}")
+        return " ".join(parts).strip()
+
+    def _native_citation_sources_by_iri(self, rows: list[dict[str, str]]) -> dict[str, list[str]]:
+        sources_by_iri: dict[str, set[str]] = defaultdict(set)
+        for row in rows:
+            term = row.get("term", "").strip().lower()
+            iri = row.get("class_iri", "").strip()
+            if term not in CITATION_REVIEW_TERMS or not iri:
+                continue
+            native_guess = row.get("native_ontology_guess") or terms_script.infer_native_ontology_guess(iri)
+            native_key = citation_lookup_key(native_guess)
+            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
+            for record in records:
+                ontology = str(record.get("ontology", "")).strip()
+                if ontology and native_key and citation_lookup_key(ontology) == native_key:
+                    sources_by_iri[iri].add(ontology)
+            if not sources_by_iri.get(iri) and native_guess and row.get("native_term_status") in {"native_source_seen", "native_source_seen_with_imports"}:
+                sources_by_iri[iri].add(native_guess)
+        return {iri: sorted(values, key=lambda value: (citation_lookup_key(value), value)) for iri, values in sources_by_iri.items()}
+
+    def _add_modelling_citation_annotations(
+        self,
+        triples: set[tuple[str, str, str, bool]],
+        subject_iri: str,
+        source_ids: list[str],
+        citations_by_source: dict[str, dict[str, str]],
+    ) -> dict[str, str] | None:
+        for source_id in source_ids:
+            citation = citations_by_source.get(citation_lookup_key(source_id))
+            if not citation:
+                continue
+            self._add_literal(triples, subject_iri, REV + "modelling_citation_source_ontology_id", source_id)
+            self._add_literal(triples, subject_iri, DCTERMS_BIBLIOGRAPHIC_CITATION, citation.get("bibliographic_citation", ""))
+            self._add_literal(triples, subject_iri, REV + "modelling_citation_doi", citation.get("doi", ""))
+            self._add_literal(triples, subject_iri, REV + "modelling_citation_pmid", citation.get("pmid", ""))
+            self._add_literal(triples, subject_iri, REV + "modelling_citation_pmcid", citation.get("pmcid", ""))
+            self._add_literal(triples, subject_iri, REV + "modelling_citation_url", citation.get("url", ""))
+            return {"source_id": source_id, **citation}
+        return None
+
+    def _write_citation_coverage_report(self, rows: list[dict[str, str]], citation_sources_by_iri: dict[str, list[str]], citations_by_source: dict[str, dict[str, str]]) -> None:
+        report_rows = []
+        seen: set[tuple[str, str, str]] = set()
+        for row in rows:
+            iri = row.get("class_iri", "")
+            term = row.get("term", "").strip().lower()
+            if term not in CITATION_REVIEW_TERMS or iri not in citation_sources_by_iri:
+                continue
+            for source_id in citation_sources_by_iri[iri]:
+                key = (iri, term, source_id)
+                if key in seen:
+                    continue
+                seen.add(key)
+                citation = citations_by_source.get(citation_lookup_key(source_id), {})
+                report_rows.append(
+                    {
+                        "class_iri": iri,
+                        "term": term,
+                        "preferred_label": row.get("preferred_label", ""),
+                        "native_source_ontology_id": source_id,
+                        "citation_added_to_review_ttl": "yes" if citation else "no",
+                        "doi": citation.get("doi", ""),
+                        "pmid": citation.get("pmid", ""),
+                        "pmcid": citation.get("pmcid", ""),
+                        "publication_title": citation.get("title", ""),
+                        "citation_url": citation.get("url", ""),
+                        "citation_confidence_or_manual_note": citation.get("confidence", ""),
+                        "citation_source": citation.get("citation_source", ""),
+                    }
+                )
+        write_csv_rows(
+            self.config.citation_coverage_csv,
+            sorted(report_rows, key=lambda r: (r["native_source_ontology_id"].lower(), r["term"], r["class_iri"])),
+            [
+                "class_iri",
+                "term",
+                "preferred_label",
+                "native_source_ontology_id",
+                "citation_added_to_review_ttl",
+                "doi",
+                "pmid",
+                "pmcid",
+                "publication_title",
+                "citation_url",
+                "citation_confidence_or_manual_note",
+                "citation_source",
+            ],
+        )
+        added = sum(1 for row in report_rows if row["citation_added_to_review_ttl"] == "yes")
+        print(f"Wrote native citation coverage ({added}/{len(report_rows)} cited rows) -> {self.config.citation_coverage_csv}")
+
     def export_review_ontology(self, args: argparse.Namespace) -> None:
         rows = self._review_export_rows(read_csv_rows(self.config.enriched_csv))
         self._export_review_ontology(
@@ -870,17 +1418,100 @@ class ReviewExtractionPipeline:
     def _review_export_rows(self, rows: list[dict[str, str]]) -> list[dict[str, str]]:
         filtered = []
         skipped_mesh_duplicates = 0
+        webprotege_excluded_rows = []
+        title_by_ontology = self._ontology_title_index(rows)
         for row in rows:
             if row.get("ontology", "").upper() in DUPLICATE_MESH_ONTOLOGIES:
                 skipped_mesh_duplicates += 1
                 continue
-            filtered.append(row)
+            if self._is_excluded_webprotege_row(row):
+                webprotege_excluded_rows.append(dict(row))
+                continue
+            filtered.append(dict(row))
         if skipped_mesh_duplicates:
             print(
                 f"Skipped {skipped_mesh_duplicates} duplicate MeSH mirror rows; kept canonical {CANONICAL_MESH_ONTOLOGY}.",
                 file=sys.stderr,
             )
+        self._write_exclusion_figure_reports(webprotege_excluded_rows, title_by_ontology)
+        sources_by_iri = self._source_ontologies_by_class_iri(filtered)
+        for row in filtered:
+            native_guess, basis = self._resolve_native_ontology_guess(row, sources_by_iri)
+            row["native_ontology_guess"] = native_guess
+            row["native_ontology_resolution_basis"] = basis
+            row["native_term_status"] = self._native_term_status_for_source_set(
+                native_guess,
+                sources_by_iri.get(row.get("class_iri", ""), set()),
+            )
         return filtered
+
+    @staticmethod
+    def _is_excluded_webprotege_row(row: dict[str, str]) -> bool:
+        return EXCLUDED_WEBPROTEGE_IRI_HOST in row.get("class_iri", "").lower()
+
+    def _write_exclusion_figure_reports(self, rows: list[dict[str, str]], title_by_ontology: dict[str, str]) -> None:
+        detail_rows: list[dict[str, str]] = []
+        for row in rows:
+            records = parse_source_records(row) or [{"source": "", "ontology": row.get("ontology", "")}]
+            for record in records:
+                ontology = str(record.get("ontology", "")).strip()
+                source = str(record.get("source", "")).strip()
+                if not ontology:
+                    continue
+                detail_rows.append(
+                    {
+                        "exclusion_stage": "source_ontology_provenance_screen",
+                        "exclusion_reason_code": WEBPROTEGE_EXCLUSION_REASON,
+                        "exclusion_reason": "Discarded because the matched class IRI is a WebProtege-hosted random/local identifier; provenance is unstable for independent ontology-review counting.",
+                        "source_database": source,
+                        "source_ontology_id": ontology,
+                        "source_ontology_title": title_by_ontology.get(ontology.upper(), row.get("ontology_title", "")),
+                        "term": row.get("term", ""),
+                        "preferred_label": row.get("preferred_label", ""),
+                        "class_iri": row.get("class_iri", ""),
+                    }
+                )
+
+        detail_fieldnames = [
+            "exclusion_stage",
+            "exclusion_reason_code",
+            "exclusion_reason",
+            "source_database",
+            "source_ontology_id",
+            "source_ontology_title",
+            "term",
+            "preferred_label",
+            "class_iri",
+        ]
+        write_csv_rows(self.config.exclusion_detail_csv, sorted(detail_rows, key=lambda r: (r["source_ontology_id"], r["term"], r["class_iri"])), detail_fieldnames)
+
+        unique_ontologies = {row["source_ontology_id"] for row in detail_rows if row.get("source_ontology_id")}
+        unique_class_iris = {row["class_iri"] for row in detail_rows if row.get("class_iri")}
+        summary_rows = [
+            {
+                "exclusion_stage": "source_ontology_provenance_screen",
+                "exclusion_reason_code": WEBPROTEGE_EXCLUSION_REASON,
+                "excluded_source_ontology_appearances": len(detail_rows),
+                "excluded_unique_source_ontologies": len(unique_ontologies),
+                "excluded_unique_class_iris": len(unique_class_iris),
+            }
+        ]
+        write_csv_rows(
+            self.config.exclusion_summary_csv,
+            summary_rows,
+            [
+                "exclusion_stage",
+                "exclusion_reason_code",
+                "excluded_source_ontology_appearances",
+                "excluded_unique_source_ontologies",
+                "excluded_unique_class_iris",
+            ],
+        )
+        if detail_rows:
+            print(
+                f"Excluded {len(unique_ontologies)} source ontologies with WebProtege class IRIs; wrote flow-figure log -> {self.config.exclusion_detail_csv}",
+                file=sys.stderr,
+            )
 
     def export_smoke_ontology(self, args: argparse.Namespace) -> None:
         rows = read_csv_rows(self.config.enriched_csv)
@@ -915,9 +1546,12 @@ class ReviewExtractionPipeline:
         include_hierarchy_module_imports: bool = False,
     ) -> None:
         manual_by_iri = {row["class_iri"]: row for row in manual_rows if row.get("class_iri")}
+        citations_by_source = self._load_modelling_citations()
+        citation_sources_by_iri = self._native_citation_sources_by_iri(rows)
         triples: set[tuple[str, str, str, bool]] = set()
         parent_labels_by_iri: dict[str, str] = {}
         include_source_axioms = not include_hierarchy_module_imports
+        cited_iris: set[str] = set()
 
         for row in rows:
             iri = row.get("class_iri", "").strip()
@@ -926,7 +1560,6 @@ class ReviewExtractionPipeline:
             triples.add((iri, RDF_TYPE, OWL_CLASS, True))
             self._add_literal(triples, iri, REV + "term", row.get("term", ""))
             self._add_literal(triples, iri, REV + "preferred_label", row.get("preferred_label", ""))
-            self._add_literal(triples, iri, REV + "source_ontology_ids", row.get("source_ontology_ids", ""))
 
             if include_source_axioms:
                 self._add_literal(triples, iri, RDFS_LABEL, row.get("preferred_label", ""))
@@ -948,13 +1581,24 @@ class ReviewExtractionPipeline:
             for column in EXTRACTION_REVIEW_COLUMNS:
                 self._add_literal(triples, iri, REV + column, row.get(column, ""))
 
-            for column in manual_script.FIELDNAMES:
-                if column == "class_iri":
-                    continue
+            for column in MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY:
                 self._add_literal(triples, iri, REV + column, manual_by_iri.get(iri, {}).get(column, ""))
+
+            if iri not in cited_iris:
+                citation_added = self._add_modelling_citation_annotations(
+                    triples,
+                    iri,
+                    citation_sources_by_iri.get(iri, []),
+                    citations_by_source,
+                )
+                if citation_added:
+                    cited_iris.add(iri)
 
         for parent_iri, parent_label in parent_labels_by_iri.items():
             self._add_literal(triples, parent_iri, RDFS_LABEL, parent_label)
+
+        if include_hierarchy_module_imports:
+            self._write_citation_coverage_report(rows, citation_sources_by_iri, citations_by_source)
 
         import_iris = [self.config.review_core_ttl.resolve().as_uri()]
         if include_hierarchy_module_imports:
@@ -1440,6 +2084,7 @@ def build_parser() -> argparse.ArgumentParser:
             "enrich",
             "prefill-manual",
             "review-class",
+            "export-appearance-report",
             "export-review-ontology",
             "export-smoke-ontology",
             "download",

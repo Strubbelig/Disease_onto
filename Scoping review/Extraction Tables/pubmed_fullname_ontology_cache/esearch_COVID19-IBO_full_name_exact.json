@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "34667368"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"covid 19\"[MeSH Terms] OR \"covid 19\"[All Fields] OR \"covid19\"[All Fields]) AND (\"impact\"[All Fields] OR \"impactful\"[All Fields] OR \"impacting\"[All Fields] OR \"impacts\"[All Fields] OR \"tooth, impacted\"[MeSH Terms] OR (\"tooth\"[All Fields] AND \"impacted\"[All Fields]) OR \"impacted tooth\"[All Fields] OR \"impacted\"[All Fields]) AND (\"bank s\"[All Fields] OR \"banked\"[All Fields] OR \"banking\"[All Fields] OR \"banks\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Covid19 Impact on Banking Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

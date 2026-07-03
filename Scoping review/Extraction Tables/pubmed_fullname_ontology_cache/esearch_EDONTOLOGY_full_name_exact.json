@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "664",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35673159",
+      "31189204",
+      "35550528",
+      "39367086",
+      "37985432",
+      "40086567",
+      "31605881",
+      "39286211",
+      "39732886",
+      "31379841"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"emergency service, hospital\"[MeSH Terms] OR (\"emergency\"[All Fields] AND \"service\"[All Fields] AND \"hospital\"[All Fields]) OR \"hospital emergency service\"[All Fields] OR (\"emergency\"[All Fields] AND \"department\"[All Fields]) OR \"emergency department\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Emergency Department Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

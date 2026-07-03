@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Controlled Vocabulary",
+        "to": "\"vocabulary, controlled\"[MeSH Terms] OR (\"vocabulary\"[All Fields] AND \"controlled\"[All Fields]) OR \"controlled vocabulary\"[All Fields] OR (\"controlled\"[All Fields] AND \"vocabulary\"[All Fields])"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"LTER\"[All Fields] AND (\"vocabulary, controlled\"[MeSH Terms] OR (\"vocabulary\"[All Fields] AND \"controlled\"[All Fields]) OR \"controlled vocabulary\"[All Fields] OR (\"controlled\"[All Fields] AND \"vocabulary\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

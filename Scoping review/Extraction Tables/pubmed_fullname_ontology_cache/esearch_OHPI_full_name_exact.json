@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "921",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31888755",
+      "36342167",
+      "40929771",
+      "21772787",
+      "29176882",
+      "29288450",
+      "32444871",
+      "28446150",
+      "29028886",
+      "33648561"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"host pathogen interactions\"[MeSH Terms] OR (\"host pathogen\"[All Fields] AND \"interactions\"[All Fields]) OR \"host pathogen interactions\"[All Fields] OR (\"host\"[All Fields] AND \"pathogen\"[All Fields] AND \"interactions\"[All Fields]) OR \"host pathogen interactions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Host-Pathogen Interactions\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

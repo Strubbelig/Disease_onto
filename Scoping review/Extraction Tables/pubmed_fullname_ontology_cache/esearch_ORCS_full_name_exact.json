@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "37774908",
+      "36884279",
+      "29866954"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"represent\"[All Fields] OR \"representative\"[All Fields] OR \"representatively\"[All Fields] OR \"representativeness\"[All Fields] OR \"representatives\"[All Fields] OR \"representativity\"[All Fields] OR \"represented\"[All Fields] OR \"representing\"[All Fields] OR \"represents\"[All Fields]) AND (\"cardiovasc dis med\"[Journal] OR \"cdm\"[All Fields]) AND (\"semantical\"[All Fields] OR \"semantically\"[All Fields] OR \"semanticity\"[All Fields] OR \"semantics\"[MeSH Terms] OR \"semantics\"[All Fields] OR \"semantic\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Representing CDM Semantics\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

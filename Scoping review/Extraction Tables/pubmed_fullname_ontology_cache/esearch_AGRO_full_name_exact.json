@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4189",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30683860",
+      "41377845",
+      "27899562",
+      "36858137",
+      "25887779",
+      "34034755",
+      "30022098",
+      "39415214",
+      "39222110",
+      "37971715"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"agriculture\"[MeSH Terms] OR \"agriculture\"[All Fields] OR \"agronomy\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"AGRonomy Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

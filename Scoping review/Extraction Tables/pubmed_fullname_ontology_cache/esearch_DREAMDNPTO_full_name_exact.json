@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "38253678"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"dementia related\"[All Fields] AND (\"emoting\"[All Fields] OR \"emotion s\"[All Fields] OR \"emotions\"[MeSH Terms] OR \"emotions\"[All Fields] OR \"emotion\"[All Fields] OR \"emotional\"[All Fields] OR \"emotive\"[All Fields]) AND (\"affect\"[MeSH Terms] OR \"affect\"[All Fields] OR \"mood\"[All Fields]) AND (\"disturb\"[All Fields] OR \"disturbance\"[All Fields] OR \"disturbances\"[All Fields] OR \"disturbancies\"[All Fields] OR \"disturbed\"[All Fields] OR \"disturbing\"[All Fields] OR \"disturbs\"[All Fields]) AND \"non pharmacological\"[All Fields] AND (\"therapeutics\"[MeSH Terms] OR \"therapeutics\"[All Fields] OR \"treatments\"[All Fields] OR \"therapy\"[MeSH Subheading] OR \"therapy\"[All Fields] OR \"treatment\"[All Fields] OR \"treatment s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Dementia-Related Emotional And Mood Disturbance Non-Pharmacological Treatment Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

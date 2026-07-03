@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "415",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38686385",
+      "35550528",
+      "37575231",
+      "39004032",
+      "39439801",
+      "40884939",
+      "37884352",
+      "40865347",
+      "37291580",
+      "40990645"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"combinable\"[All Fields] OR \"combinated\"[All Fields] OR \"combination\"[All Fields] OR \"combinational\"[All Fields] OR \"combinations\"[All Fields] OR \"combinative\"[All Fields] OR \"combine\"[All Fields] OR \"combined\"[All Fields] OR \"combines\"[All Fields] OR \"combining\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"inflammatories\"[All Fields] OR \"inflammatory\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Combined Ontology for Inflammatory Diseases\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

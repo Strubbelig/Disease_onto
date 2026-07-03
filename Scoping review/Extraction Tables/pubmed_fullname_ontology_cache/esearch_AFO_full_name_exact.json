@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"allotrope\"[All Fields] OR \"allotropes\"[All Fields] OR \"allotropic\"[All Fields]) AND (\"merge\"[All Fields] OR \"merged\"[All Fields] OR \"merges\"[All Fields] OR \"merging\"[All Fields] OR \"mergings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"suite\"[All Fields] OR \"suited\"[All Fields] OR \"suites\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Allotrope Merged Ontology Suite\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

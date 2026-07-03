@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "317",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35054979",
+      "35685361",
+      "40885114",
+      "41383633",
+      "39739311",
+      "38755629",
+      "36923530",
+      "34471502",
+      "37114076",
+      "40226614"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"melanoma\"[MeSH Terms] OR \"melanoma\"[All Fields] OR \"melanomas\"[All Fields] OR \"melanoma s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Melanoma Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

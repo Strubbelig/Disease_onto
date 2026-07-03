@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "17",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "22195180",
+      "35244317",
+      "35030631",
+      "35390008",
+      "33240831",
+      "26048076",
+      "24194869",
+      "41086427",
+      "40289222",
+      "38699649"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"sleep\"[MeSH Terms] OR \"sleep\"[All Fields] OR \"sleeping\"[All Fields] OR \"sleeps\"[All Fields] OR \"sleep s\"[All Fields]) AND (\"domain s\"[All Fields] OR \"domains\"[All Fields] OR \"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"domain\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Sleep Domain Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

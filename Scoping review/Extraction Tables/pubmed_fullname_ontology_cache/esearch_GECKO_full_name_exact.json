@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "57",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32573726",
+      "30293904",
+      "38915743",
+      "41064807",
+      "36808136",
+      "40513989",
+      "40189157",
+      "37248747",
+      "41384025",
+      "37228113"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"genome\"[MeSH Terms] OR \"genome\"[All Fields] OR \"genomes\"[All Fields] OR \"genome s\"[All Fields] OR \"genomically\"[All Fields] OR \"genomics\"[MeSH Terms] OR \"genomics\"[All Fields] OR \"genomic\"[All Fields]) AND (\"cohort\"[All Fields] OR \"cohort s\"[All Fields] OR \"cohorte\"[All Fields] OR \"cohorts\"[All Fields]) AND (\"knowledge\"[MeSH Terms] OR \"knowledge\"[All Fields] OR \"knowledge s\"[All Fields] OR \"knowledgeability\"[All Fields] OR \"knowledgeable\"[All Fields] OR \"knowledgeably\"[All Fields] OR \"knowledges\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Genomics Cohorts Knowledge Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

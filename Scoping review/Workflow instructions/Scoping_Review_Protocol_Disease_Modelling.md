@@ -97,6 +97,15 @@ Tables may be generated from the ontology for QA and reporting, but the durable 
 
 For ontology artifacts, class-level annotations should be attached directly to the reviewed class using `rev:*` properties from `review_core.ttl`. For papers, standards, or documentation that describe a disease model without one class IRI, create or reference a source-level record separately and link it to the affected class or modelling approach in the review notes.
 
+### Native definition vs imported dependency
+
+Ontology registries frequently report the same disease class IRI in many ontologies because the class is imported or reused. These appearances are not counted as independent disease-modelling commitments. For example, an application ontology that contains OGMS `disease` only through import is listed as an ontology appearance, but the disease model is charted and cited once under OGMS.
+
+Therefore the artifact track reports two counts:
+
+- native class implementations that can enter the independent analysis route;
+- dependent/imported appearances that document reuse but do not receive independent class-quality assessment.
+
 ## 9. Candidate seed set to screen (known-item set)
 
 *Formal-model proposals & critiques:* Scheuermann/Ceusters/Smith 2009 (OGMS); Goldfain et al. 2010 (IDO dispositions); Arp/Smith/Spear 2015 (BFO); Hoehndorf/Dumontier/Gkoutos 2011 (Scalable representations / BioTop pattern); Schulz et al. 2009 (strengths & limitations); Schulz & Jansen 2013; Röhl & Jansen 2014 (realizables); Jansen 2007 (tendencies); Mizoguchi et al. 2011 (River Flow); Rovetto & Mizoguchi 2015 (causality); Yamagata et al. 2013, 2014 (abnormal states); Mizoguchi & Borgo 2022 (YAMATO); Ceusters & Smith 2010 (mental disease); Smith/Munn/Papakin 2004 (bodily systems); Hucklenbroich 2014 (disease entity, bridge); Smart 2016 / Tsou 2016 (causal & natural-kind bridge).

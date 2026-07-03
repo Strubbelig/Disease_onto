@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34740862",
+      "39820483",
+      "35145012",
+      "37091794",
+      "16381901",
+      "20864545",
+      "37779906",
+      "30507966",
+      "31570425",
+      "23082790"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Gene Expression Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

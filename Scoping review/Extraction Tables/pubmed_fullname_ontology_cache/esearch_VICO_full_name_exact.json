@@ -1,0 +1,33 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "39974098",
+      "27099700",
+      "40502263",
+      "39630311",
+      "41315935",
+      "29566761"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"vaccin\"[Supplementary Concept] OR \"vaccin\"[All Fields] OR \"vaccination\"[MeSH Terms] OR \"vaccination\"[All Fields] OR \"vaccinable\"[All Fields] OR \"vaccinal\"[All Fields] OR \"vaccinate\"[All Fields] OR \"vaccinated\"[All Fields] OR \"vaccinates\"[All Fields] OR \"vaccinating\"[All Fields] OR \"vaccinations\"[All Fields] OR \"vaccination s\"[All Fields] OR \"vaccinator\"[All Fields] OR \"vaccinators\"[All Fields] OR \"vaccine s\"[All Fields] OR \"vaccined\"[All Fields] OR \"vaccines\"[Supplementary Concept] OR \"vaccines\"[All Fields] OR \"vaccine\"[All Fields] OR \"vaccines\"[MeSH Terms] OR \"vaccins\"[All Fields]) AND (\"informed consent\"[MeSH Terms] OR (\"informed\"[All Fields] AND \"consent\"[All Fields]) OR \"informed consent\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Vaccination Informed Consent Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

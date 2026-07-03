@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "85",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32939051",
+      "34471502",
+      "40417545",
+      "39838394",
+      "35832625",
+      "36513738",
+      "38617362",
+      "40640365",
+      "41376629",
+      "40530118"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"kidney\"[MeSH Terms] OR \"kidney\"[All Fields] OR \"kidneys\"[All Fields] OR \"kidney s\"[All Fields]) AND (\"tissue s\"[All Fields] OR \"tissues\"[MeSH Terms] OR \"tissues\"[All Fields] OR \"tissue\"[All Fields]) AND (\"atlas\"[All Fields] OR \"atlas s\"[All Fields] OR \"atlases\"[All Fields] OR \"atlasing\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Kidney Tissue Atlas Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

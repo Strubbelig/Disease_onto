@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4681",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "27959697",
+      "39806429",
+      "35297766",
+      "36149471",
+      "37507620",
+      "37329613",
+      "30306935",
+      "40711380",
+      "40417545"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"laboratories, clinical\"[MeSH Terms] OR (\"laboratories\"[All Fields] AND \"clinical\"[All Fields]) OR \"clinical laboratories\"[All Fields] OR (\"clinical\"[All Fields] AND \"laboratory\"[All Fields]) OR \"clinical laboratory\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"clinical LABoratory Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "11",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "29274386",
+      "36539234",
+      "37161566",
+      "36776766",
+      "29854262",
+      "35291311",
+      "33936515",
+      "32918476",
+      "26305513",
+      "32477697"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"systematized nomenclature of medicine\"[MeSH Terms] OR (\"systematized\"[All Fields] AND \"nomenclature\"[All Fields] AND \"medicine\"[All Fields]) OR \"systematized nomenclature of medicine\"[All Fields] OR (\"snomed\"[All Fields] AND \"ct\"[All Fields]) OR \"snomed ct\"[All Fields]) AND \"us\"[All Fields] AND (\"edition\"[All Fields] OR \"edition s\"[All Fields] OR \"editions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"SNOMED CT, US Edition\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

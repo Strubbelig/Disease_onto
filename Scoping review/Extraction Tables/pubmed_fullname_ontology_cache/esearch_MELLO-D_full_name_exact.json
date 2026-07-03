@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"medic\"[All Fields] OR \"medical\"[All Fields] OR \"medicalization\"[MeSH Terms] OR \"medicalization\"[All Fields] OR \"medicalizations\"[All Fields] OR \"medicalize\"[All Fields] OR \"medicalized\"[All Fields] OR \"medicalizes\"[All Fields] OR \"medicalizing\"[All Fields] OR \"medically\"[All Fields] OR \"medicals\"[All Fields] OR \"medicated\"[All Fields] OR \"medication s\"[All Fields] OR \"medics\"[All Fields] OR \"pharmaceutical preparations\"[Supplementary Concept] OR \"pharmaceutical preparations\"[All Fields] OR \"medication\"[All Fields] OR \"pharmaceutical preparations\"[MeSH Terms] OR (\"pharmaceutical\"[All Fields] AND \"preparations\"[All Fields]) OR \"medications\"[All Fields]) AND (\"lifelog\"[All Fields] OR \"lifelogging\"[All Fields] OR \"lifelogs\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"persons with disabilities\"[MeSH Terms] OR (\"persons\"[All Fields] AND \"disabilities\"[All Fields]) OR \"persons with disabilities\"[All Fields] OR (\"people\"[All Fields] AND \"disability\"[All Fields]) OR \"people with disability\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"MEdical LifeLog Ontology for people with Disability\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

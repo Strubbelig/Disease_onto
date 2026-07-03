@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "Newborn Screening",
+        "to": "\"neonatal screening\"[MeSH Terms] OR (\"neonatal\"[All Fields] AND \"screening\"[All Fields]) OR \"neonatal screening\"[All Fields] OR (\"newborn\"[All Fields] AND \"screening\"[All Fields]) OR \"newborn screening\"[All Fields]"
+      },
+      {
+        "from": "Translational Research",
+        "to": "\"translational research, biomedical\"[MeSH Terms] OR (\"translational\"[All Fields] AND \"research\"[All Fields] AND \"biomedical\"[All Fields]) OR \"biomedical translational research\"[All Fields] OR (\"translational\"[All Fields] AND \"research\"[All Fields]) OR \"translational research\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"neonatal screening\"[MeSH Terms] OR (\"neonatal\"[All Fields] AND \"screening\"[All Fields]) OR \"neonatal screening\"[All Fields] OR (\"newborn\"[All Fields] AND \"screening\"[All Fields]) OR \"newborn screening\"[All Fields]) AND \"Follow-up\"[All Fields] AND (\"translational research, biomedical\"[MeSH Terms] OR (\"translational\"[All Fields] AND \"research\"[All Fields] AND \"biomedical\"[All Fields]) OR \"biomedical translational research\"[All Fields] OR (\"translational\"[All Fields] AND \"research\"[All Fields]) OR \"translational research\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "for",
+        "and"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

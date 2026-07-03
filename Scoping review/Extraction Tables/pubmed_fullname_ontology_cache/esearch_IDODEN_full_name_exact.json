@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "57",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "25646954",
+      "35685361",
+      "38797030",
+      "30868055",
+      "18524685",
+      "40573396",
+      "41219276",
+      "28934431",
+      "39084787",
+      "34347790"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"dengue\"[MeSH Terms] OR \"dengue\"[All Fields] OR (\"dengue\"[All Fields] AND \"fever\"[All Fields]) OR \"dengue fever\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Dengue Fever Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

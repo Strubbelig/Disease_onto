@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "28",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35190816",
+      "40311258",
+      "40217412",
+      "37645600",
+      "32224446",
+      "36502462",
+      "40183601",
+      "24743020",
+      "29518120",
+      "33207017"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"epileptic syndromes\"[MeSH Terms] OR (\"epileptic\"[All Fields] AND \"syndromes\"[All Fields]) OR \"epileptic syndromes\"[All Fields] OR (\"epilepsy\"[All Fields] AND \"syndrome\"[All Fields]) OR \"epilepsy syndrome\"[All Fields]) AND (\"seizural\"[All Fields] OR \"seizure s\"[All Fields] OR \"seizured\"[All Fields] OR \"seizures\"[MeSH Terms] OR \"seizures\"[All Fields] OR \"seizure\"[All Fields] OR \"seizuring\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Epilepsy Syndrome Seizure Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

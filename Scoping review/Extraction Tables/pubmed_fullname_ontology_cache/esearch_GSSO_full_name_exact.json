@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "32548638",
+      "31437915",
+      "31774381",
+      "34649111",
+      "32018152",
+      "31703616",
+      "32283058"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"gender identity\"[MeSH Terms] OR (\"gender\"[All Fields] AND \"identity\"[All Fields]) OR \"gender identity\"[All Fields] OR \"gender\"[All Fields] OR \"gendered\"[All Fields] OR \"gender s\"[All Fields] OR \"gendering\"[All Fields] OR \"genderized\"[All Fields] OR \"genders\"[All Fields]) AND (\"sex\"[MeSH Terms] OR \"sex\"[All Fields]) AND (\"sexual behavior\"[MeSH Terms] OR (\"sexual\"[All Fields] AND \"behavior\"[All Fields]) OR \"sexual behavior\"[All Fields] OR (\"sexual\"[All Fields] AND \"orientation\"[All Fields]) OR \"sexual orientation\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Gender, Sex, and Sexual Orientation Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

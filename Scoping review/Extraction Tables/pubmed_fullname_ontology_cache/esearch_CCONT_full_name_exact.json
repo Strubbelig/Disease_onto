@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1034",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35013146",
+      "31830756",
+      "33951921",
+      "34249906",
+      "40750428",
+      "31973233",
+      "23144907",
+      "29322916",
+      "28281648",
+      "37840103"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"cell culture techniques\"[MeSH Terms] OR (\"cell\"[All Fields] AND \"culture\"[All Fields] AND \"techniques\"[All Fields]) OR \"cell culture techniques\"[All Fields] OR (\"cell\"[All Fields] AND \"culture\"[All Fields]) OR \"cell culture\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Cell Culture Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/uniprot_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for UNIPROT; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=v2012-10-03, released=2012-10-02T00:00:00.000+00:00, creationDate=2026-01-22T00:00:00.000+00:00, submissionId=1" ;
-    dcterms:created "2026-07-02T14:58:37-04:00" ;
+    dcterms:created "2026-07-02T21:50:45-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://purl.uniprot.org/core/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

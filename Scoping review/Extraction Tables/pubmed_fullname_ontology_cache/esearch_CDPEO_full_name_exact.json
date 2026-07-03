@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "22212368",
+      "32308904"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"chronic disease\"[MeSH Terms] OR (\"chronic\"[All Fields] AND \"disease\"[All Fields]) OR \"chronic disease\"[All Fields]) AND (\"patient education handout\"[Publication Type] OR \"patient education as topic\"[MeSH Terms] OR \"patient education\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Chronic Disease Patient Education Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

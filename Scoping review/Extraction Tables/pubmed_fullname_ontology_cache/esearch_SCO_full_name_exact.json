@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1928",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30859559",
+      "38774864",
+      "29642940",
+      "38238236",
+      "34697108",
+      "30293904",
+      "41343108",
+      "30306935",
+      "40369875",
+      "37464259"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]) AND (\"cohort\"[All Fields] OR \"cohort s\"[All Fields] OR \"cohorte\"[All Fields] OR \"cohorts\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Study Cohort Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "588",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38659717",
+      "40463637",
+      "37251912",
+      "35094435",
+      "32041611",
+      "37544966",
+      "39123237",
+      "37841880",
+      "36762645",
+      "27310713"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"clinical trial\"[Publication Type] OR \"clinical trials as topic\"[MeSH Terms] OR \"clinical trials\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Clinical Trials Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

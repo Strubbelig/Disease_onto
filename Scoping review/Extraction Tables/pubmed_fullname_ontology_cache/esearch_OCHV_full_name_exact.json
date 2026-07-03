@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "39",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31124461",
+      "38125584",
+      "28359728",
+      "24872907",
+      "21586386",
+      "26918107",
+      "29332530",
+      "34918130",
+      "36847566",
+      "42174836"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"consumable\"[All Fields] OR \"consumables\"[All Fields] OR \"consume\"[All Fields] OR \"consumed\"[All Fields] OR \"consumer\"[All Fields] OR \"consumer s\"[All Fields] OR \"consumers\"[All Fields] OR \"consumes\"[All Fields] OR \"consuming\"[All Fields]) AND (\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health s\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]) AND (\"vocabulary\"[MeSH Terms] OR \"vocabulary\"[All Fields] OR \"vocabularies\"[All Fields] OR \"vocabulary s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Consumer Health Vocabulary\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "86",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39222110",
+      "37232302",
+      "35580043",
+      "37260375",
+      "41120833",
+      "34716709",
+      "39222107",
+      "37939841",
+      "33189279",
+      "40413720"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"animals\"[MeSH Terms:noexp] OR \"animal\"[All Fields]) AND (\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health s\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"livestock\"[MeSH Terms] OR \"livestock\"[All Fields] OR \"livestocks\"[All Fields] OR \"livestock s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Animal Health Ontology for Livestock\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

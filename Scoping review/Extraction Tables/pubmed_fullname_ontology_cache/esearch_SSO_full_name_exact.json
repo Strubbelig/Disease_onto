@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "19",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "17928273",
+      "20819870",
+      "30935504",
+      "33112762",
+      "25216545",
+      "36166435",
+      "33306032",
+      "35605170",
+      "20841733",
+      "35861678"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"sentinel surveillance\"[MeSH Terms] OR (\"sentinel\"[All Fields] AND \"surveillance\"[All Fields]) OR \"sentinel surveillance\"[All Fields] OR (\"syndromic\"[All Fields] AND \"surveillance\"[All Fields]) OR \"syndromic surveillance\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Syndromic Surveillance Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

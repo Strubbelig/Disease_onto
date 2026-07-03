@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "27538448",
+      "24551417"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"apollo\"[All Fields] AND (\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure s\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]) AND (\"vocabulary\"[MeSH Terms] OR \"vocabulary\"[All Fields] OR \"vocabularies\"[All Fields] OR \"vocabulary s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Apollo Structured Vocabulary\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

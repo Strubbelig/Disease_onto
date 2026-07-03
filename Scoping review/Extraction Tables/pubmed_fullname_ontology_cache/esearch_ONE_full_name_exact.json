@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "91",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32573726",
+      "31181762",
+      "28916566",
+      "34753474",
+      "29736190",
+      "37923895",
+      "40581728",
+      "40653100",
+      "39033024",
+      "33181283"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"nutrition s\"[All Fields] OR \"nutritional status\"[MeSH Terms] OR (\"nutritional\"[All Fields] AND \"status\"[All Fields]) OR \"nutritional status\"[All Fields] OR \"nutrition\"[All Fields] OR \"nutritional sciences\"[MeSH Terms] OR (\"nutritional\"[All Fields] AND \"sciences\"[All Fields]) OR \"nutritional sciences\"[All Fields] OR \"nutritional\"[All Fields] OR \"nutritionals\"[All Fields] OR \"nutritions\"[All Fields] OR \"nutritive\"[All Fields]) AND (\"epidemiologies\"[All Fields] OR \"epidemiology\"[MeSH Subheading] OR \"epidemiology\"[All Fields] OR \"epidemiology\"[MeSH Terms] OR \"epidemiology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Nutritional Epidemiology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}
