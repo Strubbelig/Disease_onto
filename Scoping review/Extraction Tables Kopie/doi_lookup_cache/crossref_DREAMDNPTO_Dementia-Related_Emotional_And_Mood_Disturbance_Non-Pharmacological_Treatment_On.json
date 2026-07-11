@@ -1,0 +1,2086 @@
+{
+  "facets": {},
+  "total-results": 209908,
+  "items": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2026-05-01T18:00:36Z",
+        "timestamp": 1777658436493,
+        "version": "3.51.4"
+      },
+      "reference-count": 72,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                22
+              ]
+            ],
+            "date-time": "2024-01-22T00:00:00Z",
+            "timestamp": 1705881600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                22
+              ]
+            ],
+            "date-time": "2024-01-22T00:00:00Z",
+            "timestamp": 1705881600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Sci Rep"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Emotional and mood disturbances are common in people with dementia. Non-pharmacological interventions are beneficial for managing these disturbances. However, effectively applying these interventions, particularly in the person-centred approach, is a complex and knowledge-intensive task. Healthcare professionals need the assistance of tools to obtain all relevant information that is often buried in a vast amount of clinical data to form a holistic understanding of the person for successfully applying non-pharmacological interventions. A machine-readable knowledge model, e.g., ontology, can codify the research evidence to underpin these tools. For the first time, this study aims to develop an ontology entitled Dementia-Related Emotional And Mood Disturbance Non-Pharmacological Treatment Ontology (DREAMDNPTO). DREAMDNPTO consists of 1258 unique classes (concepts) and 70 object properties that represent relationships between these classes. It meets the requirements and quality standards for biomedical ontology. As DREAMDNPTO provides a computerisable semantic representation of knowledge specific to non-pharmacological treatment for emotional and mood disturbances in dementia, it will facilitate the application of machine learning to this particular and important health domain of emotional and mood disturbance management for people with dementia.</jats:p>",
+      "DOI": "10.1038/s41598-023-46226-5",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ],
+        "date-time": "2024-01-22T19:02:26Z",
+        "timestamp": 1705950146000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Developing an ontology of non-pharmacological treatment for emotional and mood disturbances in dementia"
+      ],
+      "prefix": "10.1038",
+      "volume": "14",
+      "author": [
+        {
+          "given": "Zhenyu",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ping",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mengyang",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hui Chen",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Susan J.",
+          "family": "Thomas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wenxi",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ting",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Deng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "46226_CR1",
+          "unstructured": "World Health Organization. Dementia. In: World Health Organization (2021). https://www.who.int/news-room/fact-sheets/detail/dementia. Accessed 5 May 2022."
+        },
+        {
+          "key": "46226_CR2",
+          "unstructured": "Alzheimer’s Society. The later stage of dementia. In: Alzheimer’s Society (2021). https://www.alzheimers.org.uk/about-dementia/symptoms-and-diagnosis/how-dementia-progresses/later-stages-dementia. Accessed 5 May 2022."
+        },
+        {
+          "key": "46226_CR3",
+          "doi-asserted-by": "publisher",
+          "first-page": "1749",
+          "DOI": "10.1017/S0033291717003257",
+          "volume": "48",
+          "author": "MH Connors",
+          "year": "2018",
+          "unstructured": "Connors, M. H. et al. Non-pharmacological interventions for Lewy body dementia: A systematic review. Psychol. Med. 48, 1749–1758 (2018).",
+          "journal-title": "Psychol. Med."
+        },
+        {
+          "key": "46226_CR4",
+          "first-page": "18",
+          "volume": "37",
+          "author": "RR Tampi",
+          "year": "2020",
+          "unstructured": "Tampi, R. R. & Tampi, D. J. Managing behavioral and psychological symptoms of dementia. Psychiatr. Times 37, 18–19 (2020).",
+          "journal-title": "Psychiatr. Times"
+        },
+        {
+          "key": "46226_CR5",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jbi.2020.103520",
+          "volume": "109",
+          "author": "J Favela",
+          "year": "2020",
+          "unstructured": "Favela, J., Cruz-Sandoval, D., Morales-Tellez, A. & Lopez-Nava, I. H. Monitoring behavioral symptoms of dementia using activity trackers. J. Biomed. Inform. 109, 103520 (2020).",
+          "journal-title": "J. Biomed. Inform."
+        },
+        {
+          "key": "46226_CR6",
+          "volume-title": "Behavioral and psychological symptoms of dementia",
+          "author": "A Walaszek",
+          "year": "2020",
+          "unstructured": "Walaszek, A. Behavioral and psychological symptoms of dementia 1st edn. (American Psychiatric Association Publishing, 2020).",
+          "edition": "1"
+        },
+        {
+          "key": "46226_CR7",
+          "doi-asserted-by": "publisher",
+          "first-page": "12",
+          "DOI": "10.1186/s13195-015-0096-3",
+          "volume": "7",
+          "author": "MA Nowrangi",
+          "year": "2015",
+          "unstructured": "Nowrangi, M. A., Lyketsos, C. G. & Rosenberg, P. B. Principles and management of neuropsychiatric symptoms in Alzheimer’s dementia. Alzheimers Res. Therapy 7, 12 (2015).",
+          "journal-title": "Alzheimers Res. Therapy"
+        },
+        {
+          "key": "46226_CR8",
+          "volume-title": "A Clinician’s field guide to good practice: Managing behavioural and psychological symptoms of dementia",
+          "author": "K Burns",
+          "year": "2014",
+          "unstructured": "Burns, K., Jayasinha, R. & Brodaty, H. A Clinician’s field guide to good practice: Managing behavioural and psychological symptoms of dementia (University of New South Wales, 2014)."
+        },
+        {
+          "key": "46226_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "2612",
+          "DOI": "10.1111/jan.13026",
+          "volume": "72",
+          "author": "ED Goris",
+          "year": "2016",
+          "unstructured": "Goris, E. D., Ansel, K. N. & Schutte, D. L. Quantitative systematic review of the effects of non-pharmacological interventions on reducing apathy in persons with dementia. J. Adv. Nurs. 72, 2612–2628 (2016).",
+          "journal-title": "J. Adv. Nurs."
+        },
+        {
+          "key": "46226_CR10",
+          "first-page": "447",
+          "volume": "114",
+          "author": "T Kratz",
+          "year": "2017",
+          "unstructured": "Kratz, T. The diagnosis and treatment of behavioral disorders in dementia. Dtsch. Arztebl. Int. 114, 447–454 (2017).",
+          "journal-title": "Dtsch. Arztebl. Int."
+        },
+        {
+          "key": "46226_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "325",
+          "DOI": "10.30773/pi.2019.02.11.2",
+          "volume": "16",
+          "author": "R Na",
+          "year": "2019",
+          "unstructured": "Na, R. et al. A systematic review and meta-analysis of nonpharmacological interventions for moderate to severe dementia. Psychiatry Investig. 16, 325–335 (2019).",
+          "journal-title": "Psychiatry Investig."
+        },
+        {
+          "key": "46226_CR12",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/14651858.CD009125.pub2",
+          "author": "V Orgeta",
+          "year": "2014",
+          "unstructured": "Orgeta, V., Qazi, A., Spector, A. E. & Orrell, M. Psychological treatments for depression and anxiety in dementia and mild cognitive impairment. Cochrane Database Syst. Rev. https://doi.org/10.1002/14651858.CD009125.pub2 (2014).",
+          "journal-title": "Cochrane Database Syst. Rev."
+        },
+        {
+          "key": "46226_CR13",
+          "doi-asserted-by": "publisher",
+          "first-page": "545",
+          "DOI": "10.1016/j.ecl.2013.05.006",
+          "volume": "42",
+          "author": "C Deng",
+          "year": "2013",
+          "unstructured": "Deng, C. Effects of anti-psychotic medications on appetite, weight, and insulin resistance. Endocrinol. Metab. Clin. N. Am. 42, 545–563 (2013).",
+          "journal-title": "Endocrinol. Metab. Clin. N. Am."
+        },
+        {
+          "key": "46226_CR14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fnins.2020.00021",
+          "author": "C Deng",
+          "year": "2020",
+          "unstructured": "Deng, C. & Yao, J. K. Editorial: Metabolic disturbances in mental illness: Neuropathogenetic mechanisms and therapeutic implications. Front. Neurosci. https://doi.org/10.3389/fnins.2020.00021 (2020).",
+          "journal-title": "Front. Neurosci."
+        },
+        {
+          "key": "46226_CR15",
+          "first-page": "1",
+          "volume": "12",
+          "author": "S Ranjbar",
+          "year": "2013",
+          "unstructured": "Ranjbar, S., Pai, N. & Deng, C. The association of antidepressant medication and body weight gain. Online J. Health Allied Sci. 12, 1–9 (2013).",
+          "journal-title": "Online J. Health Allied Sci."
+        },
+        {
+          "key": "46226_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "674",
+          "DOI": "10.1111/jgs.15767",
+          "volume": "67",
+          "author": "American Geriatrics Society Beers Criteria® Update Expert Panel",
+          "year": "2019",
+          "unstructured": "American Geriatrics Society Beers Criteria® Update Expert Panel. American Geriatrics Society 2019 updated AGS beers criteria® for potentially inappropriate medication use in older adults: 2019 AGS beers criteria® update expert panel. J. Am. Geriatr. Soc. 67, 674–694 (2019).",
+          "journal-title": "J. Am. Geriatr. Soc."
+        },
+        {
+          "key": "46226_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "182",
+          "DOI": "10.1016/j.gerinurse.2015.01.001",
+          "volume": "36",
+          "author": "JM Daly",
+          "year": "2015",
+          "unstructured": "Daly, J. M., Bay, C. P., Levy, B. T. & Carnahan, R. M. Caring for people with dementia and challenging behaviors in nursing homes: A needs assessment geriatric nursing. Geriatr. Nurs. 36, 182–191 (2015).",
+          "journal-title": "Geriatr. Nurs."
+        },
+        {
+          "key": "46226_CR18",
+          "unstructured": "National Institute for Health and Care Excellence (Great Britain). Dementia: assessment, management and support for people living with dementia and their careers (2018)."
+        },
+        {
+          "key": "46226_CR19",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1176/pn.43.14.0001",
+          "author": "J Yan",
+          "year": "2008",
+          "unstructured": "Yan, J. FDA extends black-box warning to all antipsychotics. Psychiatr. News https://doi.org/10.1176/pn.43.14.0001 (2008).",
+          "journal-title": "Psychiatr. News"
+        },
+        {
+          "key": "46226_CR20",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fpsyt.2021.652254",
+          "volume": "12",
+          "author": "S Macfarlane",
+          "year": "2021",
+          "unstructured": "Macfarlane, S. et al. Evaluating the clinical impact of national dementia behaviour support programs on neuropsychiatric outcomes in Australia. Front Psychiatry 12, 652254 (2021).",
+          "journal-title": "Front Psychiatry"
+        },
+        {
+          "key": "46226_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "252",
+          "DOI": "10.1176/appi.ajp.2015.15010130",
+          "volume": "173",
+          "author": "C Ballard",
+          "year": "2016",
+          "unstructured": "Ballard, C. et al. Impact of antipsychotic review and nonpharmacological intervention on antipsychotic use, neuropsychiatric symptoms, and mortality in people with dementia living in nursing homes: A factorial cluster-randomized controlled trial by the well-being and health for people with dementia (WHELD) program. Am. J. Psychiatry 173, 252–262 (2016).",
+          "journal-title": "Am. J. Psychiatry"
+        },
+        {
+          "key": "46226_CR22",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0212686",
+          "volume": "14",
+          "author": "L Chenoweth",
+          "year": "2019",
+          "unstructured": "Chenoweth, L. et al. Effects of person-centered care at the organisational-level for people with dementia. A systematic review. PLoS ONE 14, e0212686 (2019).",
+          "journal-title": "PLoS ONE"
+        },
+        {
+          "key": "46226_CR23",
+          "doi-asserted-by": "publisher",
+          "first-page": "329",
+          "DOI": "10.1007/s13218-020-00686-3",
+          "volume": "34",
+          "author": "T Schneider",
+          "year": "2020",
+          "unstructured": "Schneider, T. & Šimkus, M. Ontologies and data management: A brief survey. Künstl. Intell. 34, 329–353 (2020).",
+          "journal-title": "Künstl. Intell."
+        },
+        {
+          "key": "46226_CR24",
+          "doi-asserted-by": "publisher",
+          "first-page": "39",
+          "DOI": "10.1007/s10823-010-9133-7",
+          "volume": "26",
+          "author": "S Fukui",
+          "year": "2011",
+          "unstructured": "Fukui, S., Okada, S., Nishimoto, Y. & Nelson-Becker, H. B. The repeated appeal to return home in older adults with dementia: developing a model for practice. J. Cross Cult. Gerontol. 26, 39–54 (2011).",
+          "journal-title": "J. Cross Cult. Gerontol."
+        },
+        {
+          "key": "46226_CR25",
+          "first-page": "1",
+          "volume": "2015",
+          "author": "AM de Oliveira",
+          "year": "2015",
+          "unstructured": "de Oliveira, A. M. et al. Nonpharmacological interventions to reduce behavioral and psychological symptoms of dementia: A systematic review. BioMed. Res. Int. 2015, 1–9 (2015).",
+          "journal-title": "BioMed. Res. Int."
+        },
+        {
+          "key": "46226_CR26",
+          "volume-title": "Knowledge graphs: New directions for knowledge representation on the semantic web (Dagstuhl Seminar 18371)",
+          "author": "A Hogan",
+          "year": "2019",
+          "unstructured": "Hogan, A., Brickley, D., Gutierrez, C., Polleres, A. & Zimmermann, A. (Re)Defining knowledge graphs. In Knowledge graphs: New directions for knowledge representation on the semantic web (Dagstuhl Seminar 18371) (eds Bonatti, P. et al.) (Schloss Dagstuhl - Leibniz-Zentrum fuer Informatik GmbH, 2019)."
+        },
+        {
+          "key": "46226_CR27",
+          "unstructured": "Aasman, J. & Mirhaji, P. Knowledge graph solutions in healthcare for improved clinical outcomes (2018). In Proceedings of the ISWC 2018 Posters & Demonstrations, Industry and Blue Sky Ideas Tracks co-located with 17th International Semantic Web Conference (ISWC 2018). https://ceur-ws.org/Vol-2180/paper-78.pdf. Accessed 22 June 2021."
+        },
+        {
+          "key": "46226_CR28",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Wang, C., Yu, H. & Wan, F. Information retrieval technology based on knowledge graph. In Proceedings of the 2018 3rd International Conference on Advances in Materials, Mechatronics and Civil Engineering (ICAMMCE 2018). https://doi.org/10.2991/icammce-18.2018.65 (2018).",
+          "DOI": "10.2991/icammce-18.2018.65"
+        },
+        {
+          "key": "46226_CR29",
+          "volume-title": "Knowledge graphs: New directions for knowledge representation on the semantic web (Dagstuhl Seminar 18371)",
+          "author": "A Harth",
+          "year": "2019",
+          "unstructured": "Harth, A., Navigli, R., Nuzzolese, A. & Vidal, M.-E. Knowledge integration at scale. In Knowledge graphs: New directions for knowledge representation on the semantic web (Dagstuhl Seminar 18371) (eds Bonatti, P. et al.) (Schloss Dagstuhl - Leibniz-Zentrum fuer Informatik GmbH, Wadern, 2019)."
+        },
+        {
+          "key": "46226_CR30",
+          "unstructured": "ontotext. Knowledge graphs in the enterprise. Part one: The story behind the hype (2022)."
+        },
+        {
+          "key": "46226_CR31",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Gruber, T. R. Toward principles for the design of ontologies used for knowledge sharing. In International Journal of Human–Computer Studies, 907–928 (Kluwer Academic Publishers, 1993).",
+          "DOI": "10.1006/ijhc.1995.1081"
+        },
+        {
+          "key": "46226_CR32",
+          "unstructured": "W3C. OWL: Semantic Web Standards (2013). https://www.w3.org/OWL/. Accessed 29 Apr 2019."
+        },
+        {
+          "key": "46226_CR33",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5772/intechopen.74042",
+          "author": "L Globa",
+          "year": "2018",
+          "unstructured": "Globa, L., Novogrudska, R., Koval, A. & Senchenko, V. Ontology for application development. Ontol. Inf. Sci. https://doi.org/10.5772/intechopen.74042 (2018).",
+          "journal-title": "Ontol. Inf. Sci."
+        },
+        {
+          "key": "46226_CR34",
+          "doi-asserted-by": "publisher",
+          "first-page": "3672",
+          "DOI": "10.1038/s41598-022-07615-4",
+          "volume": "12",
+          "author": "G Lan",
+          "year": "2022",
+          "unstructured": "Lan, G., Liu, T., Wang, X., Pan, X. & Huang, Z. A semantic web technology index. Sci. Rep. 12, 3672 (2022).",
+          "journal-title": "Sci. Rep."
+        },
+        {
+          "key": "46226_CR35",
+          "volume-title": "Towards the semantic web: Ontology-driven knowledge management",
+          "year": "2003",
+          "unstructured": "Davies, J. et al. (eds) Towards the semantic web: Ontology-driven knowledge management (Wiley, 2003)."
+        },
+        {
+          "key": "46226_CR36",
+          "unstructured": "SNOMED International. SNOMED CT: 5-Step briefing. In: SNOMED International (2020). https://www.snomed.org/snomed-ct/five-step-briefing. Accessed 13 Jan 2021."
+        },
+        {
+          "key": "46226_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "25",
+          "DOI": "10.1038/75556",
+          "volume": "25",
+          "author": "M Ashburner",
+          "year": "2000",
+          "unstructured": "Ashburner, M. et al. Gene ontology: Tool for the unification of biology. The gene ontology consortium. Nat. Genet. 25, 25–29 (2000).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "46226_CR38",
+          "unstructured": "World Health Organization. ICD-11 Fact Sheet (2019)."
+        },
+        {
+          "key": "46226_CR39",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/trc2.12061",
+          "author": "Z Zhang",
+          "year": "2020",
+          "unstructured": "Zhang, Z., Yu, P., Chang, H. C. & LauTaoWangYinDeng, S. K. C. N. M. C. Developing an ontology for representing the domain knowledge specific to non-pharmacological treatment for agitation in dementia. Alzheimer’s Dement. Transl. Res. Clin. Interv. https://doi.org/10.1002/trc2.12061 (2020).",
+          "journal-title": "Alzheimer’s Dement. Transl. Res. Clin. Interv."
+        },
+        {
+          "key": "46226_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "49",
+          "DOI": "10.3928/00989134-20220308-02",
+          "volume": "48",
+          "author": "Z Zhang",
+          "year": "2022",
+          "unstructured": "Zhang, Z., Yu, P., Pai, N., Chang, H. C. & ChenYinSongLauDeng, S. M. T. S. K. C. Developing an intuitive graph representation of knowledge for nonpharmacological treatment of psychotic symptoms in dementia. J. Gerontol. Nurs. 48, 49–55 (2022).",
+          "journal-title": "J. Gerontol. Nurs."
+        },
+        {
+          "key": "46226_CR41",
+          "doi-asserted-by": "publisher",
+          "first-page": "170",
+          "DOI": "10.22266/ijies2019.0430.17",
+          "volume": "12",
+          "author": "A Abdelghany",
+          "year": "2019",
+          "unstructured": "Abdelghany, A., Darwish, N. & Hefni, H. An agile methodology for ontology development. IJIES 12, 170–181 (2019).",
+          "journal-title": "IJIES"
+        },
+        {
+          "key": "46226_CR42",
+          "first-page": "26",
+          "volume": "16",
+          "author": "S Staab",
+          "year": "2001",
+          "unstructured": "Staab, S., Studer, R., Schnurr, H.-P. & Sure, Y. Knowledge processes and ontologies. Knowl. proIEEE Intell. Syst. Spec. Issue Knowl. Manag. 16, 26–34 (2001).",
+          "journal-title": "Knowl. proIEEE Intell. Syst. Spec. Issue Knowl. Manag."
+        },
+        {
+          "key": "46226_CR43",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Guarino, N. & Welty, C. An overview of OntoClean. Handbook on Ontologies (2004).",
+          "DOI": "10.1007/978-3-540-24750-0_8"
+        },
+        {
+          "key": "46226_CR44",
+          "unstructured": "Fernandez, M., Gomez-Pearez, A. & Juristo, N. Methontology: From ontological art towards ontological engineering. In Symposium on Ontological Engineering of AAAI, Stanford, California (1997)."
+        },
+        {
+          "key": "46226_CR45",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Suárez-Figueroa, M. C., Gómez-Pérez, A. & Fernández-López, M. The NeOn methodology for ontology engineering. Ontology Engineering in a Networked World (2012).",
+          "DOI": "10.1007/978-3-642-24794-1"
+        },
+        {
+          "key": "46226_CR46",
+          "first-page": "43",
+          "volume-title": "Development of Patient-Practitioner Assistive Communications (PPAC) Ontology for Type 2 Diabetes Management",
+          "author": "D Forbes",
+          "year": "2012",
+          "unstructured": "Forbes, D., Wongthongtham, P. & Singh, J. Development of Patient-Practitioner Assistive Communications (PPAC) Ontology for Type 2 Diabetes Management 43–54 (CEUR-WS, 2012)."
+        },
+        {
+          "key": "46226_CR47",
+          "doi-asserted-by": "publisher",
+          "first-page": "47",
+          "DOI": "10.3233/AIS-150359",
+          "volume": "8",
+          "author": "Q Ni",
+          "year": "2016",
+          "unstructured": "Ni, Q., Pau de la Cruz, I. & García Hernando, A. B. A foundational ontology-based model for human activity representation in smart homes. AIS 8, 47–61 (2016).",
+          "journal-title": "AIS"
+        },
+        {
+          "key": "46226_CR48",
+          "doi-asserted-by": "publisher",
+          "first-page": "966",
+          "DOI": "10.1007/978-3-642-05151-7_16",
+          "volume-title": "On the Move to Meaningful Internet Systems: OTM 2009",
+          "author": "MC Suárez-Figueroa",
+          "year": "2009",
+          "unstructured": "Suárez-Figueroa, M. C., Gómez-Pérez, A. & Villazón-Terrazas, B. How to write and use the ontology requirements specification document. In On the Move to Meaningful Internet Systems: OTM 2009 (eds Meersman, R. et al.) 966–982 (Springer, 2009)."
+        },
+        {
+          "key": "46226_CR49",
+          "unstructured": "World Health Organization. WHO | International Classification of Diseases, 11th Revision (ICD-11). In WHO (2019). http://www.who.int/classifications/icd/en/. Accessed 20 Apr 2019."
+        },
+        {
+          "key": "46226_CR50",
+          "doi-asserted-by": "publisher",
+          "first-page": "g7647",
+          "DOI": "10.1136/bmj.g7647",
+          "volume": "349",
+          "author": "L Shamseer",
+          "year": "2015",
+          "unstructured": "Shamseer, L. et al. Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: Elaboration and explanation. BMJ 349, g7647–g7647 (2015).",
+          "journal-title": "BMJ"
+        },
+        {
+          "key": "46226_CR51",
+          "unstructured": "QSR International Pty Ltd. NVivo (2020). https://lumivero.com/products/nvivo/."
+        },
+        {
+          "key": "46226_CR52",
+          "unstructured": "Python Software Foundation. Python (2021). https://www.python.org/."
+        },
+        {
+          "key": "46226_CR53",
+          "unstructured": "The pandas development team (2021) pandas. https://pandas.pydata.org."
+        },
+        {
+          "key": "46226_CR54",
+          "unstructured": "Jupyter Community. Jupyter Notebook (2014). https://jupyter.org."
+        },
+        {
+          "key": "46226_CR55",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0232076",
+          "volume": "15",
+          "author": "G Guest",
+          "year": "2020",
+          "unstructured": "Guest, G., Namey, E. & Chen, M. A simple method to assess and report thematic saturation in qualitative research. PLoS ONE 15, e0232076 (2020).",
+          "journal-title": "PLoS ONE"
+        },
+        {
+          "key": "46226_CR56",
+          "doi-asserted-by": "publisher",
+          "first-page": "4",
+          "DOI": "10.1145/2757001.2757003",
+          "volume": "1",
+          "author": "MA Musen",
+          "year": "2015",
+          "unstructured": "Musen, M. A., the Protégé Team. The protégé project: A look back and a look forward. AI Matters 1, 4–12 (2015).",
+          "journal-title": "AI Matters"
+        },
+        {
+          "key": "46226_CR57",
+          "doi-asserted-by": "publisher",
+          "first-page": "4",
+          "DOI": "10.15256/joc.2013.3.22",
+          "volume": "3",
+          "author": "J Almirall",
+          "year": "2013",
+          "unstructured": "Almirall, J. & Fortin, M. The coexistence of terms to describe the presence of multiple concurrent diseases. J. Comorb. 3, 4–9 (2013).",
+          "journal-title": "J. Comorb."
+        },
+        {
+          "key": "46226_CR58",
+          "doi-asserted-by": "publisher",
+          "first-page": "267D",
+          "DOI": "10.1093/nar/gkh061",
+          "volume": "32",
+          "author": "O Bodenreider",
+          "year": "2004",
+          "unstructured": "Bodenreider, O. The unified medical language system (UMLS): Integrating biomedical terminology. Nucleic Acids Res. 32, 267D – 270 (2004).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "46226_CR59",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1016/j.jbi.2018.02.010",
+          "volume": "80",
+          "author": "M Amith",
+          "year": "2018",
+          "unstructured": "Amith, M., He, Z., Bian, J., Lossio-Ventura, J. A. & Tao, C. Assessing the practice of biomedical ontology evaluation: Gaps and opportunities. J. Biomed. Inform. 80, 1–13 (2018).",
+          "journal-title": "J. Biomed. Inform."
+        },
+        {
+          "key": "46226_CR60",
+          "doi-asserted-by": "publisher",
+          "first-page": "51",
+          "DOI": "10.1016/j.websem.2007.03.004",
+          "volume": "5",
+          "author": "E Sirin",
+          "year": "2007",
+          "unstructured": "Sirin, E., Parsia, B., Grau, B. C., Kalyanpur, A. & Katz, Y. Pellet: A practical OWL-DL reasoner. Softw. Eng. Semant. Web Web Semant. Sci. Serv. Agents World Wide Web 5, 51–52 (2007).",
+          "journal-title": "Softw. Eng. Semant. Web Web Semant. Sci. Serv. Agents World Wide Web"
+        },
+        {
+          "key": "46226_CR61",
+          "doi-asserted-by": "publisher",
+          "first-page": "7",
+          "DOI": "10.4018/ijswis.2014040102",
+          "volume": "10",
+          "author": "M Poveda-Villalón",
+          "year": "2014",
+          "unstructured": "Poveda-Villalón, M., Gómez-Pérez, A. & Suárez-Figueroa, M. C. OOPS! (OntOlogy Pitfall Scanner!): An on-line tool for ontology evaluation. Int. J. Semant. Web Inf. Syst. 10, 7–34 (2014).",
+          "journal-title": "Int. J. Semant. Web Inf. Syst."
+        },
+        {
+          "key": "46226_CR62",
+          "unstructured": "Prud’hommeaux, E. & Seaborne, A. SPARQL Query Language for RDF (2008). https://www.w3.org/TR/rdf-sparql-query/. Accessed 4 May 2019."
+        },
+        {
+          "key": "46226_CR63",
+          "unstructured": "Horrocks, I., Patel-Schneider, P. F., Boley, H., Tabet, S., Grosof, B. & Dean, M. SWRL: A semantic web rule language combining OWL and RuleML. In: W3C member Submission (2004). https://www.w3.org/Submission/SWRL/."
+        },
+        {
+          "key": "46226_CR64",
+          "unstructured": "Zhang, Z. & Yu, P. Dementia-related emotional and mood disturbances non-pharmacological treatment ontology. In BioPortal (2022). https://bioportal.bioontology.org/ontologies/DREAMDNPTO. Accessed 13 Jun 2022."
+        },
+        {
+          "key": "46226_CR65",
+          "volume-title": "Nursing Intervention Classification (NIC)",
+          "author": "H Butcher",
+          "year": "2018",
+          "unstructured": "Butcher, H., Bulecheck, G., Dochterman, J. & Wagner, C. Nursing Intervention Classification (NIC) 7th edn. (Elsevier, 2018).",
+          "edition": "7"
+        },
+        {
+          "key": "46226_CR66",
+          "volume-title": "WebVOWL: Web-based Visualization of Ontologies",
+          "author": "S Lohmann",
+          "year": "2014",
+          "unstructured": "Lohmann, S., Link, V., Marbach, E. & Negru, S. WebVOWL: Web-based Visualization of Ontologies (EKAW, 2014)."
+        },
+        {
+          "key": "46226_CR67",
+          "unstructured": "World Health Organization. Global action plan on the public health response to dementia 2017–2025. Geneva (2017)."
+        },
+        {
+          "key": "46226_CR68",
+          "doi-asserted-by": "publisher",
+          "first-page": "S10",
+          "DOI": "10.1093/geront/gnx122",
+          "volume": "58",
+          "author": "S Fazio",
+          "year": "2018",
+          "unstructured": "Fazio, S., Pace, D., Flinner, J. & Kallmyer, B. The fundamentals of person-centered care for individuals with dementia. The Gerontologist 58, S10–S19 (2018).",
+          "journal-title": "The Gerontologist"
+        },
+        {
+          "key": "46226_CR69",
+          "doi-asserted-by": "publisher",
+          "first-page": "237",
+          "DOI": "10.1177/1943862112457947",
+          "volume": "4",
+          "author": "E Götell",
+          "year": "2012",
+          "unstructured": "Götell, E., Thunborg, C., Söderlund, A. & Wågert, P. H. Can caregiver singing improve person transfer situations in dementia care?. Music Med. 4, 237–244 (2012).",
+          "journal-title": "Music Med."
+        },
+        {
+          "key": "46226_CR70",
+          "volume-title": "ReBOC: Reducing behaviours of concern: A hands on guide: A resource to assist those caring for people living with dementia",
+          "author": "T Wallace",
+          "year": "2012",
+          "unstructured": "Wallace, T. et al. ReBOC: Reducing behaviours of concern: A hands on guide: A resource to assist those caring for people living with dementia (Alzheimer’s Association (SA) Inc, 2012)."
+        },
+        {
+          "key": "46226_CR71",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ijmedinf.2019.08.003",
+          "volume": "130",
+          "author": "X Zhou",
+          "year": "2019",
+          "unstructured": "Zhou, X. et al. Automatic extraction and assessment of lifestyle exposures for Alzheimer’s disease using natural language processing. Int. J. Med. Inform. 130, 103943 (2019).",
+          "journal-title": "Int. J. Med. Inform."
+        },
+        {
+          "key": "46226_CR72",
+          "doi-asserted-by": "publisher",
+          "first-page": "57",
+          "DOI": "10.3928/00989134-20220309-01",
+          "volume": "48",
+          "author": "Y Zhu",
+          "year": "2022",
+          "unstructured": "Zhu, Y. et al. Agitation prevalence in people with dementia in Australian residential aged care facilities: Findings from machine learning of electronic health records. J. Gerontol. Nurs. 48, 57–64 (2022).",
+          "journal-title": "J. Gerontol. Nurs."
+        }
+      ],
+      "container-title": [
+        "Scientific Reports"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41598-023-46226-5.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-023-46226-5",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-023-46226-5.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ],
+        "date-time": "2024-01-22T20:03:57Z",
+        "timestamp": 1705953837000
+      },
+      "score": 49.66572,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41598-023-46226-5"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ]
+      },
+      "references-count": 72,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "46226"
+      ],
+      "URL": "https://doi.org/10.1038/s41598-023-46226-5",
+      "ISSN": [
+        "2045-2322"
+      ],
+      "issn-type": [
+        {
+          "value": "2045-2322",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "23 June 2022",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "30 October 2023",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "22 January 2024",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "The authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        },
+        {
+          "value": "The research received ethical approval from the Human Research Ethics Committee at the University of Wollongong with reference number: 2019/159.",
+          "order": 2,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Ethical approval"
+          }
+        },
+        {
+          "value": "Informed consent was obtained from all individual participants included in the study.",
+          "order": 3,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Informed Consent"
+          }
+        }
+      ],
+      "article-number": "1937"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2024-09-19T04:12:26Z",
+        "timestamp": 1726719146998
+      },
+      "reference-count": 1,
+      "publisher": "Qeios",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.32388/45nuwm",
+      "type": "reference-entry",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2024-09-18T08:41:27Z",
+        "timestamp": 1726648887000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Depressed mood"
+      ],
+      "prefix": "10.32388",
+      "author": [
+        {
+          "name": "Behaviour Change Intervention Ontology (BCIO)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "17262",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "unstructured": "Behaviour Change Intervention Ontology (BCIO) [/terms/BCIO:050626]"
+        }
+      ],
+      "container-title": [
+        "Definitions"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.qeios.com/read/45NUWM/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "unspecified"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2024-09-18T08:41:28Z",
+        "timestamp": 1726648888000
+      },
+      "score": 34.64013,
+      "resource": {
+        "primary": {
+          "URL": "https://www.qeios.com/read/45NUWM"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      },
+      "references-count": 1,
+      "URL": "https://doi.org/10.32388/45nuwm",
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2026-02-28T09:05:00Z",
+        "timestamp": 1772269500048,
+        "version": "3.50.1"
+      },
+      "reference-count": 0,
+      "publisher": "PeerJ",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.7717/peerj.3811/table-5",
+      "type": "component",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            15
+          ]
+        ],
+        "date-time": "2017-09-15T04:06:53Z",
+        "timestamp": 1505448413000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Table 5: Differences between Fish Ontology with other related ontology and database."
+      ],
+      "prefix": "10.7717",
+      "member": "4443",
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            15
+          ]
+        ],
+        "date-time": "2017-09-15T04:07:01Z",
+        "timestamp": 1505448421000
+      },
+      "score": 33.658066,
+      "resource": {
+        "primary": {
+          "URL": "https://peerj.com/articles/3811/table-5"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.7717/peerj.3811/table-5",
+      "relation": {
+        "is-component-of": [
+          {
+            "id-type": "doi",
+            "id": "10.7717/peerj.3811",
+            "asserted-by": "object"
+          }
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2026-05-01T18:03:47Z",
+        "timestamp": 1777658627461,
+        "version": "3.51.4"
+      },
+      "reference-count": 95,
+      "publisher": "Wiley",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2020-09-01T00:00:00Z",
+            "timestamp": 1598918400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 244,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "alz-journals.onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "A&amp;D Transl Res &amp; Clin Interv"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            1
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Introduction</jats:title>\n                    <jats:p>A large volume of clinical care data has been generated for managing agitation in dementia. However, the valuable information in these data has not been used effectively to generate insights for improving the quality of care. Application of artificial intelligence technologies offers us enormous opportunities to reuse these data. For health data science to achieve this, this study focuses on using ontology to coding clinical knowledge for non‐pharmacological treatment of agitation in a machine‐readable format.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>The resultant ontology—Dementia‐Related Agitation Non‐Pharmacological Treatment Ontology (DRANPTO)—was developed using a method adopted from the NeOn methodology.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>DRANPTO consisted of 569 concepts and 48 object properties. It meets the standards for biomedical ontology.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Discussion</jats:title>\n                    <jats:p>DRANPTO is the first comprehensive semantic representation of non‐pharmacological management for agitation in dementia in the long‐term care setting. As a knowledge base, it will play a vital role to facilitate the development of intelligent systems for managing agitation in dementia.</jats:p>\n                  </jats:sec>",
+      "DOI": "10.1002/trc2.12061",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2020-09-01T16:25:58Z",
+        "timestamp": 1598977558000
+      },
+      "update-policy": "https://doi.org/10.1002/crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 13,
+      "title": [
+        "Developing an ontology for representing the domain knowledge specific to non‐pharmacological treatment for agitation in dementia"
+      ],
+      "prefix": "10.1002",
+      "volume": "6",
+      "author": [
+        {
+          "given": "Zhenyu",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre for Digital Transformation School of Computing and Information Technology University of Wollongong  Wollongong New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ping",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for Digital Transformation School of Computing and Information Technology University of Wollongong  Wollongong New South Wales Australia"
+            },
+            {
+              "name": "Illawarra Health and Medical Research Institute  Wollongong New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hui Chen (Rita)",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Illawarra Health and Medical Research Institute  Wollongong New South Wales Australia"
+            },
+            {
+              "name": "School of Nursing University of Wollongong  Wollongong New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sim Kim",
+          "family": "Lau",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for Digital Transformation School of Computing and Information Technology University of Wollongong  Wollongong New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Cui",
+          "family": "Tao",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Biomedical Informatics University of Texas Health Science Center  Houston Texas USA"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ning",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PR China Southern Centre for Evidence Based Nursing and Midwifery Practice School of Nursing Southern Medical University  Guangzhou City PR China"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Mengyang",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Systems and Reporting Residential Care Catholic Healthcare Ltd  Macquarie Park New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chao",
+          "family": "Deng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Illawarra Health and Medical Research Institute  Wollongong New South Wales Australia"
+            },
+            {
+              "name": "School of Medicine University of Wollongong  Wollongong New South Wales Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "311",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            9
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "e_1_2_8_2_1",
+          "unstructured": "World Health Organization.Global Action Plan on the Public Health Response to Dementia 2017‐2025;2017."
+        },
+        {
+          "key": "e_1_2_8_3_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1017/S104161021700237X"
+        },
+        {
+          "key": "e_1_2_8_4_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fneur.2012.00073"
+        },
+        {
+          "key": "e_1_2_8_5_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/tp.2017.199"
+        },
+        {
+          "key": "e_1_2_8_6_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/geronj/44.3.M77"
+        },
+        {
+          "key": "e_1_2_8_7_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/j.1741-6612.2007.00217.x"
+        },
+        {
+          "key": "e_1_2_8_8_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1192/bjp.bp.114.153684"
+        },
+        {
+          "key": "e_1_2_8_9_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/01634372.2014.882466"
+        },
+        {
+          "key": "e_1_2_8_10_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3928/0098-9134-19990401-05"
+        },
+        {
+          "key": "e_1_2_8_11_1",
+          "unstructured": "International Psychogeriatric Association.The IPA complete guides to behavioral and psychological symptoms of dementia: specialists guide. Published online2015."
+        },
+        {
+          "key": "e_1_2_8_12_1",
+          "volume-title": "ReBOC: Reducing Behaviours of Concern: A Hands on Guide: A Resource to Assist Those Caring for People Living with Dementia",
+          "author": "Wallace T",
+          "year": "2012"
+        },
+        {
+          "key": "e_1_2_8_13_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/1756285617712979"
+        },
+        {
+          "key": "e_1_2_8_14_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.gerinurse.2015.01.001"
+        },
+        {
+          "key": "e_1_2_8_15_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1176/pn.43.14.0001"
+        },
+        {
+          "key": "e_1_2_8_16_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.colegn.2012.02.003"
+        },
+        {
+          "key": "e_1_2_8_17_1",
+          "volume-title": "Behaviour Management: A Guide to Good Practice, Managing Behavioural and Psychological Symptoms of Dementia.",
+          "author": "Burns K",
+          "year": "2012"
+        },
+        {
+          "issue": "3",
+          "key": "e_1_2_8_18_1",
+          "first-page": "143",
+          "article-title": "Non‐pharmacological interventions for agitation/aggressive behaviour in patients with dementia: a randomized controlled crossover trial",
+          "volume": "33",
+          "author": "Dimitriou T‐D",
+          "year": "2018",
+          "journal-title": "Funct Neurol"
+        },
+        {
+          "key": "e_1_2_8_19_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1046/j.1532-5415.2003.51415.x"
+        },
+        {
+          "key": "e_1_2_8_20_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1192/apt.10.3.171"
+        },
+        {
+          "key": "e_1_2_8_21_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1024/1661-8157/a001547"
+        },
+        {
+          "key": "e_1_2_8_22_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5694/j.1326-5377.2003.tb05169.x"
+        },
+        {
+          "key": "e_1_2_8_23_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.colegn.2013.04.002"
+        },
+        {
+          "key": "e_1_2_8_24_1",
+          "first-page": "227",
+          "article-title": "Behavioural and psychological symptoms of dementia in primary care: a survey of general practitioners in Ireland",
+          "volume": "8",
+          "author": "Buhagiar K",
+          "year": "2011",
+          "journal-title": "Ment Health Fam Med"
+        },
+        {
+          "key": "e_1_2_8_25_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1097/JGP.0b013e31817c6abe"
+        },
+        {
+          "key": "e_1_2_8_26_1",
+          "volume-title": "What Is Person‐Centred Health Care? A Literature Review",
+          "author": "Department of Health and Human Services",
+          "year": "2011"
+        },
+        {
+          "key": "e_1_2_8_27_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fmed.2018.00013"
+        },
+        {
+          "key": "e_1_2_8_28_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1136/bmjspcare-2015-000994"
+        },
+        {
+          "key": "e_1_2_8_29_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ijmedinf.2016.09.010"
+        },
+        {
+          "key": "e_1_2_8_30_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1006/ijhc.1996.0091"
+        },
+        {
+          "key": "e_1_2_8_31_1",
+          "first-page": "907",
+          "volume-title": "International Journal of Human‐Computer Studies",
+          "author": "Gruber TR.",
+          "year": "1993"
+        },
+        {
+          "key": "e_1_2_8_32_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1145/2757001.2757003"
+        },
+        {
+          "key": "e_1_2_8_33_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.20533/jitst.2046.3723.2012.0014"
+        },
+        {
+          "key": "e_1_2_8_34_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5772/intechopen.74042"
+        },
+        {
+          "key": "e_1_2_8_35_1",
+          "volume-title": "SNOMED: 5‐Step Briefing",
+          "author": "SNOMED International",
+          "year": "2019"
+        },
+        {
+          "key": "e_1_2_8_36_1",
+          "unstructured": "LOINC.LOINC ‐ The international standard for identifying health measurements observations and documents. LOINC.2019.https://loinc.org. Accessed November 19 2019"
+        },
+        {
+          "key": "e_1_2_8_37_1",
+          "volume-title": "WHO | International Classification of Diseases, 11th Revision (ICD‐11)",
+          "author": "World Health Organization",
+          "year": "2019"
+        },
+        {
+          "key": "e_1_2_8_38_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cmpb.2013.12.023"
+        },
+        {
+          "key": "e_1_2_8_39_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/1460458214564092"
+        },
+        {
+          "key": "e_1_2_8_40_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1109/BIBM.2015.7359814"
+        },
+        {
+          "key": "e_1_2_8_41_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.29085/9781783303403.008"
+        },
+        {
+          "key": "e_1_2_8_42_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jalz.2012.05.2115"
+        },
+        {
+          "key": "e_1_2_8_43_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/978-3-642-24794-1_2"
+        },
+        {
+          "key": "e_1_2_8_44_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13326-017-0158-5"
+        },
+        {
+          "key": "e_1_2_8_45_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13326-016-0104-y"
+        },
+        {
+          "key": "e_1_2_8_46_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/nar/gkr469"
+        },
+        {
+          "key": "e_1_2_8_47_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nbt1346"
+        },
+        {
+          "key": "e_1_2_8_48_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1136/bmj.b2535"
+        },
+        {
+          "key": "e_1_2_8_49_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1097/01.JGP.0000249388.37080.b4"
+        },
+        {
+          "key": "e_1_2_8_50_1",
+          "unstructured": "QSR International.NVivo Qualitative Data Analysis Software;1999.https://www.qsrinternational.com/nvivo/home. Accessed January 7 2018"
+        },
+        {
+          "key": "e_1_2_8_51_1",
+          "unstructured": "W3C. OWL ‐ Semantic Web Standards.2013.https://www.w3.org/OWL/. Accessed April 29 2019"
+        },
+        {
+          "key": "e_1_2_8_52_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.websem.2007.03.004"
+        },
+        {
+          "issue": "17",
+          "key": "e_1_2_8_53_1",
+          "first-page": "33",
+          "article-title": "A survey on ontology reasoners and comparison",
+          "volume": "57",
+          "author": "Abburu S.",
+          "year": "2012",
+          "journal-title": "Int J Comput Appl"
+        },
+        {
+          "key": "e_1_2_8_54_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s10817-017-9406-8"
+        },
+        {
+          "key": "e_1_2_8_55_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.4018/ijswis.2014040102"
+        },
+        {
+          "key": "e_1_2_8_56_1",
+          "unstructured": "PovedaM.OOPS! ‐ OntOlogy Pitfall Scanner! ‐ Pitfall Catalogue.2016.http://oops.linkeddata.es/catalogue.jsp. Accessed May 4 2019"
+        },
+        {
+          "key": "e_1_2_8_57_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Poveda VillalónM.Ontology Evaluation: a pitfall‐based approach to ontology diagnosis. Published online2016.https://doi.org/10.20868/UPM.thesis.39448",
+          "DOI": "10.20868/UPM.thesis.39448"
+        },
+        {
+          "key": "e_1_2_8_58_1",
+          "unstructured": "Prud'hommeauxE SeaborneA.SPARQL Query Language for RDF.2008.https://www.w3.org/TR/rdf-sparql-query/. Accessed May 4 2019"
+        },
+        {
+          "key": "e_1_2_8_59_1",
+          "unstructured": "W3C. SPARQL 1.1 Query Language. W3C Recommendation.2013.https://www.w3.org/TR/sparql11-query/. Accessed April 12 2019"
+        },
+        {
+          "key": "e_1_2_8_60_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jbi.2018.02.010"
+        },
+        {
+          "key": "e_1_2_8_61_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/gps.1208"
+        },
+        {
+          "key": "e_1_2_8_62_1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "ZhangZ.Dementia‐Related Agitation Non‐Pharmacological Treatment Ontology.2020.https://bioportal.bioontology.org/ontologies/DRANPTO. Accessed June 6 2020",
+          "DOI": "10.1002/trc2.12061"
+        },
+        {
+          "key": "e_1_2_8_63_1",
+          "first-page": "470",
+          "article-title": "How sustainable are biomedical ontologies?",
+          "volume": "2018",
+          "author": "Geller J",
+          "year": "2018",
+          "journal-title": "AMIA Annu Symp Proc"
+        },
+        {
+          "key": "e_1_2_8_64_1",
+          "unstructured": "Merriam‐Webster. hunger. Merriam‐Webster.2019.https://www.merriam-webster.com/dictionary/hunger. Accessed November 20 2019"
+        },
+        {
+          "key": "e_1_2_8_65_1",
+          "unstructured": "Merriam‐Webster. thirst. Merriam‐Webster.2019.https://www.merriam-webster.com/dictionary/thirst. Accessed November 20 2019."
+        },
+        {
+          "key": "e_1_2_8_66_1",
+          "unstructured": "U.S. National Library of Medicine.Delusions. U.S. National Library of Medicine MeSH.2015.https://meshb.nlm.nih.gov/record/ui?ui=D003702. Accessed November 20 2019."
+        },
+        {
+          "key": "e_1_2_8_67_1",
+          "unstructured": "U.S. National Library of Medicine.Hallucinations. U.S. National Library of Medicine MeSH.1999.https://meshb.nlm.nih.gov/record/ui?ui=D006212. Accessed November 20 2019."
+        },
+        {
+          "key": "e_1_2_8_68_1",
+          "volume-title": "Creative Commons Attribution‐NonCommercial‐ShareAlike 4.0 International",
+          "author": "Creative Commons",
+          "year": "2019"
+        },
+        {
+          "key": "e_1_2_8_69_1",
+          "unstructured": "VrandečićD.Ontology Evaluation. Published online2010.http://simia.net/download/ontology_evaluation.pdf. Accessed May 27 2019"
+        },
+        {
+          "key": "e_1_2_8_70_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/j.1532-5415.1986.tb04302.x"
+        },
+        {
+          "key": "e_1_2_8_71_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/1533317507300514"
+        },
+        {
+          "key": "e_1_2_8_72_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1097/01.pra.0000271667.53717.9f"
+        },
+        {
+          "key": "e_1_2_8_73_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jalz.2013.02.009"
+        },
+        {
+          "key": "e_1_2_8_74_1",
+          "unstructured": "BioPortal.International Classification of Diseases Version 10 ‐ Summary | NCBO BioPortal.2018.https://bioportal.bioontology.org/ontologies/ICD10. Accessed April 20 2019."
+        },
+        {
+          "key": "e_1_2_8_75_1",
+          "unstructured": "U.S. National Library of Medicine.Medical Subject Headings ‐ Summary|NCBO BioPortal. BioPortal.2019.https://bioportal.bioontology.org/ontologies/MESH. Accessed June 4 2020."
+        },
+        {
+          "key": "e_1_2_8_76_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jamda.2017.10.008"
+        },
+        {
+          "key": "e_1_2_8_77_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jamda.2015.05.002"
+        },
+        {
+          "key": "e_1_2_8_78_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jamda.2018.02.014"
+        },
+        {
+          "key": "e_1_2_8_79_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s12859-018-2429-2"
+        },
+        {
+          "key": "e_1_2_8_80_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1109/EMBC.2018.8512965"
+        },
+        {
+          "key": "e_1_2_8_81_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.compbiomed.2019.05.010"
+        },
+        {
+          "key": "e_1_2_8_82_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3233/JAD-170105"
+        },
+        {
+          "key": "e_1_2_8_83_1",
+          "unstructured": "International Psychogeriatric Association.The IPA complete guides to behavioral and psychological symptoms of dementia: nurses guide. Published online2012."
+        },
+        {
+          "key": "e_1_2_8_84_1",
+          "unstructured": "BurnsK JayasinhaR BrodatyH.Managing Behavioural and Psychological Symptoms of Dementia:A Clinician's Field Guide to Good Practice. Published online2014.https://www.dementia.com.au/getattachment/b6bd72cf-d2e4-48ee-868c-8db3f8a11362/Clinician%E2%80%99s-Field-Guide-to-Good-Practice -Managing.aspx. Accessed April 19 2019."
+        },
+        {
+          "key": "e_1_2_8_85_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.procs.2018.07.229"
+        },
+        {
+          "key": "e_1_2_8_86_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/978-3-540-78624-5_3"
+        },
+        {
+          "key": "e_1_2_8_87_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s13198-015-0403-1"
+        },
+        {
+          "key": "e_1_2_8_88_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5220/0005591001790186"
+        },
+        {
+          "key": "e_1_2_8_89_1",
+          "unstructured": "SekandarK.A quality measure for automatic ontology evaluation and improvement. Published online2018."
+        },
+        {
+          "key": "e_1_2_8_90_1",
+          "first-page": "502",
+          "article-title": "Design and evaluation of a bacterial clinical infectious diseases ontology",
+          "volume": "2013",
+          "author": "Gordon CL",
+          "year": "2013",
+          "journal-title": "AMIA Annu Symp Proc"
+        },
+        {
+          "key": "e_1_2_8_91_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jbi.2011.10.001"
+        },
+        {
+          "key": "e_1_2_8_92_1",
+          "first-page": "665",
+          "volume-title": "Encyclopedia of Language and Linguistics",
+          "author": "Fellbaum C",
+          "year": "2005"
+        },
+        {
+          "key": "e_1_2_8_93_1",
+          "unstructured": "WordNet. Word to search for: thirst. WordNet Search ‐ 3.1.2019.http://wordnetweb.princeton.edu/perl/webwn?s=thirst&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=00000. Accessed November 27 2019."
+        },
+        {
+          "key": "e_1_2_8_94_1",
+          "unstructured": "American Psychiatric Association.What is Electroconvulsive therapy (ECT)? American Psychiatric Association.2019.https://www.psychiatry.org/patients-families/ect"
+        },
+        {
+          "key": "e_1_2_8_95_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1017/S1041610216002258"
+        },
+        {
+          "key": "e_1_2_8_96_1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1097/JGP.0b013e3182051bbc"
+        }
+      ],
+      "container-title": [
+        "Alzheimer's &amp; Dementia: Translational Research &amp; Clinical Interventions"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/trc2.12061",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/trc2.12061",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://alz-journals.onlinelibrary.wiley.com/doi/pdf/10.1002/trc2.12061",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            26
+          ]
+        ],
+        "date-time": "2025-10-26T11:18:06Z",
+        "timestamp": 1761477486000
+      },
+      "score": 32.864075,
+      "resource": {
+        "primary": {
+          "URL": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/trc2.12061"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            1
+          ]
+        ]
+      },
+      "references-count": 95,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1002/trc2.12061"
+      ],
+      "URL": "https://doi.org/10.1002/trc2.12061",
+      "archive": [
+        "Portico"
+      ],
+      "ISSN": [
+        "2352-8737",
+        "2352-8737"
+      ],
+      "issn-type": [
+        {
+          "value": "2352-8737",
+          "type": "print"
+        },
+        {
+          "value": "2352-8737",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            1
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "2020-02-24",
+          "order": 0,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2020-07-09",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2020-09-01",
+          "order": 3,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ],
+      "article-number": "e12061"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2026-02-28T02:01:59Z",
+        "timestamp": 1772244119890,
+        "version": "3.50.1"
+      },
+      "reference-count": 1,
+      "publisher": "Qeios",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.32388/eya6yk",
+      "type": "reference-entry",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2024-09-18T04:38:14Z",
+        "timestamp": 1726634294000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Emotional behaviour"
+      ],
+      "prefix": "10.32388",
+      "author": [
+        {
+          "name": "Behaviour Change Intervention Ontology (BCIO)",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "17262",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "unstructured": "Behaviour Change Intervention Ontology (BCIO) [/terms/BCIO:050813]"
+        }
+      ],
+      "container-title": [
+        "Definitions"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.qeios.com/read/EYA6YK/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "unspecified"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2024-09-18T04:38:16Z",
+        "timestamp": 1726634296000
+      },
+      "score": 32.581707,
+      "resource": {
+        "primary": {
+          "URL": "https://www.qeios.com/read/EYA6YK"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      },
+      "references-count": 1,
+      "URL": "https://doi.org/10.32388/eya6yk",
+      "relation": {
+        "has-version": [
+          {
+            "id-type": "doi",
+            "id": "10.32388/EYA6YK.2",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            18
+          ]
+        ]
+      }
+    }
+  ],
+  "items-per-page": 5,
+  "query": {
+    "start-index": 0,
+    "search-terms": null
+  }
+}

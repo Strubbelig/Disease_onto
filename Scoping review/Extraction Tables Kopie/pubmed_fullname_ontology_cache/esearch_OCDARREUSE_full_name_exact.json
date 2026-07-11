@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"areej\"[All Fields] AND \"ocd\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"reuse\"[All Fields] OR \"reused\"[All Fields] OR \"reuses\"[All Fields] OR \"reusing\"[All Fields]) AND (\"version\"[All Fields] OR \"version s\"[All Fields] OR \"versions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Areej OCD Ontology Reuse Version\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

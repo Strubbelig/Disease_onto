@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/hp_o_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for HP_O; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2018-07-17T00:00:00.000+00:00, creationDate=2018-07-17T01:06:43.000-07:00, submissionId=1" ;
+    dcterms:created "2026-07-10T19:36:51-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease> <http://purl.org/dc/terms/source> "generated review target module for HP_O from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#organic_dust_induced_disease> .
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#organic_dust_induced_disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#organic_dust_induced_disease> <http://www.w3.org/2000/01/rdf-schema#label> "organic_dust_induced_disease" .

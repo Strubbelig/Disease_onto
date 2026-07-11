@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"digitalisation\"[All Fields] OR \"digitalised\"[All Fields] OR \"digitalization\"[All Fields] OR \"digitalize\"[All Fields] OR \"digitalized\"[All Fields] OR \"digitalizer\"[All Fields] OR \"digitalizing\"[All Fields] OR \"digitally\"[All Fields] OR \"digitals\"[All Fields] OR \"digitization\"[All Fields] OR \"digitizations\"[All Fields] OR \"digitize\"[All Fields] OR \"digitized\"[All Fields] OR \"digitizer\"[All Fields] OR \"digitizers\"[All Fields] OR \"digitizes\"[All Fields] OR \"digitizing\"[All Fields] OR \"radiographic image enhancement\"[MeSH Terms] OR (\"radiographic\"[All Fields] AND \"image\"[All Fields] AND \"enhancement\"[All Fields]) OR \"radiographic image enhancement\"[All Fields] OR \"digital\"[All Fields]) AND \"e health\"[All Fields] AND (\"startup\"[All Fields] OR \"startups\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Digital e-health startup Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

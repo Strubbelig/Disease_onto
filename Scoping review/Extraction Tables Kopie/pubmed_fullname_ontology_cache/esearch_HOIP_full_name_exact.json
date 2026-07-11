@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "20",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38778394",
+      "40747669",
+      "36269775",
+      "38729991",
+      "36080280",
+      "40645299",
+      "28665992",
+      "37047689",
+      "36993501",
+      "35204186"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"homoeostasis\"[All Fields] OR \"homeostasis\"[MeSH Terms] OR \"homeostasis\"[All Fields]) AND (\"imbalance\"[All Fields] OR \"imbalances\"[All Fields]) AND (\"process\"[All Fields] OR \"processe\"[All Fields] OR \"processed\"[All Fields] OR \"processes\"[All Fields] OR \"processing\"[All Fields] OR \"processings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Homeostasis imbalance process ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

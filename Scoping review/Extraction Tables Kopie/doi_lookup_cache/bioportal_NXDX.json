@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/60d92560-dbd0-0139-55ee-005056010074",
+      "name": "zinzingzin",
+      "email": "2277162907@qq.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/zinzingzin"
+    ],
+    "acronym": "NXDX",
+    "name": "Test NXDX",
+    "@id": "https://data.bioontology.org/ontologies/NXDX",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/NXDX/submissions",
+      "properties": "https://data.bioontology.org/ontologies/NXDX/properties",
+      "classes": "https://data.bioontology.org/ontologies/NXDX/classes",
+      "single_class": "https://data.bioontology.org/ontologies/NXDX/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/NXDX/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/NXDX/schemes",
+      "collections": "https://data.bioontology.org/ontologies/NXDX/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/NXDX/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/NXDX/instances",
+      "metrics": "https://data.bioontology.org/ontologies/NXDX/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/NXDX/reviews",
+      "notes": "https://data.bioontology.org/ontologies/NXDX/notes",
+      "groups": "https://data.bioontology.org/ontologies/NXDX/groups",
+      "categories": "https://data.bioontology.org/ontologies/NXDX/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/NXDX/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/NXDX/projects",
+      "download": "https://data.bioontology.org/ontologies/NXDX/download",
+      "views": "https://data.bioontology.org/ontologies/NXDX/views",
+      "analytics": "https://data.bioontology.org/ontologies/NXDX/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/NXDX",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2021-08-09T00:00:00.000+00:00",
+  "creationDate": "2021-08-09T23:16:09.000-07:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "2021/8/10",
+  "description": "A test for ontology submission",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/NXDX/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/NXDX/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

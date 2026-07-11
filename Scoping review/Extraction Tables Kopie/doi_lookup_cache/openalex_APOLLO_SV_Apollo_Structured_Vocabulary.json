@@ -1,0 +1,5524 @@
+{
+  "meta": {
+    "count": 4,
+    "db_response_time_ms": 85,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Apollo Structured Vocabulary APOLLO_SV ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Apollo Structured Vocabulary APOLLO_SV ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Apollo Structured Vocabulary APOLLO_SV ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2511855896",
+      "doi": "https://doi.org/10.1186/s13326-016-0092-y",
+      "title": "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation",
+      "display_name": "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation",
+      "relevance_score": 170.32823,
+      "publication_year": 2016,
+      "publication_date": "2016-08-18",
+      "ids": {
+        "openalex": "https://openalex.org/W2511855896",
+        "doi": "https://doi.org/10.1186/s13326-016-0092-y",
+        "mag": "2511855896",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/27538448"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s13326-016-0092-y",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-016-0092-y",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/track/pdf/10.1186/s13326-016-0092-y",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jbiomedsem.biomedcentral.com/track/pdf/10.1186/s13326-016-0092-y",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5076610873",
+            "display_name": "William R. Hogan",
+            "orcid": "https://orcid.org/0000-0002-9881-1017"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I33213144",
+              "display_name": "University of Florida",
+              "ror": "https://ror.org/02y3ad647",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I33213144"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "William R. Hogan",
+          "raw_affiliation_strings": [
+            "University of Florida, P.O. Box 100219, 2004 Mowry Rd, Gainesville, FL, 32610-0219, USA. hoganwr@ufl.edu",
+            "University of Florida, P.O. Box 100219, 2004 Mowry Rd, Gainesville, FL, 32610-0219, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Florida, P.O. Box 100219, 2004 Mowry Rd, Gainesville, FL, 32610-0219, USA. hoganwr@ufl.edu",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "University of Florida, P.O. Box 100219, 2004 Mowry Rd, Gainesville, FL, 32610-0219, USA",
+              "institution_ids": [
+                "https://openalex.org/I33213144"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075316416",
+            "display_name": "Michael M. Wagner",
+            "orcid": "https://orcid.org/0000-0002-4437-7016"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I170201317",
+              "display_name": "University of Pittsburgh",
+              "ror": "https://ror.org/01an3r305",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Michael M. Wagner",
+          "raw_affiliation_strings": [
+            "University of Pittsburgh, 5607 Baum Boulevard, Room 434, Pittsburgh, PA, 15206, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Pittsburgh, 5607 Baum Boulevard, Room 434, Pittsburgh, PA, 15206, USA",
+              "institution_ids": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5047229883",
+            "display_name": "Mathias Brochhausen",
+            "orcid": "https://orcid.org/0000-0003-1834-3856"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I79620101",
+              "display_name": "University of Arkansas for Medical Sciences",
+              "ror": "https://ror.org/00xcryt71",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I79620101"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mathias Brochhausen",
+          "raw_affiliation_strings": [
+            "University of Arkansas for Medical Sciences, 4301 W. Markham St. Slot #782, Little Rock, AR, 72205, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Arkansas for Medical Sciences, 4301 W. Markham St. Slot #782, Little Rock, AR, 72205, USA",
+              "institution_ids": [
+                "https://openalex.org/I79620101"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5017781669",
+            "display_name": "John Levander",
+            "orcid": "https://orcid.org/0000-0002-4475-896X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I170201317",
+              "display_name": "University of Pittsburgh",
+              "ror": "https://ror.org/01an3r305",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "John Levander",
+          "raw_affiliation_strings": [
+            "University of Pittsburgh, 5607 Baum Boulevard, Room 434G, Pittsburgh, PA, 15206, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Pittsburgh, 5607 Baum Boulevard, Room 434G, Pittsburgh, PA, 15206, USA",
+              "institution_ids": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5068134371",
+            "display_name": "Shawn T. Brown",
+            "orcid": "https://orcid.org/0000-0001-6980-8372"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I35765314",
+              "display_name": "Pittsburgh Supercomputing Center",
+              "ror": "https://ror.org/04tac1482",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I35765314"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shawn T. Brown",
+          "raw_affiliation_strings": [
+            "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA, 15213, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA, 15213, USA",
+              "institution_ids": [
+                "https://openalex.org/I35765314"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5080257945",
+            "display_name": "Nicholas Millett",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I170201317",
+              "display_name": "University of Pittsburgh",
+              "ror": "https://ror.org/01an3r305",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nicholas Millett",
+          "raw_affiliation_strings": [
+            "University of Pittsburgh, 5607 Baum Boulevard, Room 435 J, Pittsburgh, PA, 15206, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Pittsburgh, 5607 Baum Boulevard, Room 435 J, Pittsburgh, PA, 15206, USA",
+              "institution_ids": [
+                "https://openalex.org/I170201317"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5033737089",
+            "display_name": "Jay V. DePasse",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I35765314",
+              "display_name": "Pittsburgh Supercomputing Center",
+              "ror": "https://ror.org/04tac1482",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I35765314"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jay DePasse",
+          "raw_affiliation_strings": [
+            "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA, 15213, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA, 15213, USA",
+              "institution_ids": [
+                "https://openalex.org/I35765314"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5007705764",
+            "display_name": "Josh Hanna",
+            "orcid": "https://orcid.org/0000-0002-4600-1258"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I33213144",
+              "display_name": "University of Florida",
+              "ror": "https://ror.org/02y3ad647",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I33213144"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Josh Hanna",
+          "raw_affiliation_strings": [
+            "University of Florida, P.O. Box 100212, Gainesville, FL, 32610-0212, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Florida, P.O. Box 100212, Gainesville, FL, 32610-0212, USA",
+              "institution_ids": [
+                "https://openalex.org/I33213144"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 8,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5076610873"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I33213144"
+      ],
+      "apc_list": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "apc_paid": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "fwci": 0.6171,
+      "has_fulltext": true,
+      "cited_by_count": 18,
+      "citation_normalized_percentile": {
+        "value": 0.78458855,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 98
+      },
+      "biblio": {
+        "volume": "7",
+        "issue": "1",
+        "first_page": "50",
+        "last_page": "50"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12492",
+        "display_name": "Zoonotic diseases and public health",
+        "score": 0.20749999582767487,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2739",
+          "display_name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12492",
+          "display_name": "Zoonotic diseases and public health",
+          "score": 0.20749999582767487,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10410",
+          "display_name": "COVID-19 epidemiological studies",
+          "score": 0.08950000256299973,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2611",
+            "display_name": "Modeling and Simulation"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/26",
+            "display_name": "Mathematics"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12090",
+          "display_name": "Language and cultural evolution",
+          "score": 0.05860000103712082,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3316",
+            "display_name": "Cultural Studies"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/apollo",
+          "display_name": "Apollo",
+          "score": 0.6943734884262085
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6243505477905273
+        },
+        {
+          "id": "https://openalex.org/keywords/population",
+          "display_name": "Population",
+          "score": 0.6148794293403625
+        },
+        {
+          "id": "https://openalex.org/keywords/infectious-disease",
+          "display_name": "Infectious disease (medical specialty)",
+          "score": 0.6133973598480225
+        },
+        {
+          "id": "https://openalex.org/keywords/terminology",
+          "display_name": "Terminology",
+          "score": 0.4915560185909271
+        },
+        {
+          "id": "https://openalex.org/keywords/vocabulary",
+          "display_name": "Vocabulary",
+          "score": 0.4672683775424957
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.3696463406085968
+        },
+        {
+          "id": "https://openalex.org/keywords/disease",
+          "display_name": "Disease",
+          "score": 0.36151444911956787
+        },
+        {
+          "id": "https://openalex.org/keywords/ecology",
+          "display_name": "Ecology",
+          "score": 0.25311875343322754
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.19402262568473816
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.17781323194503784
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-health",
+          "display_name": "Environmental health",
+          "score": 0.16549602150917053
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779821442",
+          "wikidata": "https://www.wikidata.org/wiki/Q41633",
+          "display_name": "Apollo",
+          "level": 2,
+          "score": 0.6943734884262085
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6243505477905273
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.6148794293403625
+        },
+        {
+          "id": "https://openalex.org/C524204448",
+          "wikidata": "https://www.wikidata.org/wiki/Q788926",
+          "display_name": "Infectious disease (medical specialty)",
+          "level": 3,
+          "score": 0.6133973598480225
+        },
+        {
+          "id": "https://openalex.org/C547195049",
+          "wikidata": "https://www.wikidata.org/wiki/Q1725664",
+          "display_name": "Terminology",
+          "level": 2,
+          "score": 0.4915560185909271
+        },
+        {
+          "id": "https://openalex.org/C2777601683",
+          "wikidata": "https://www.wikidata.org/wiki/Q6499736",
+          "display_name": "Vocabulary",
+          "level": 2,
+          "score": 0.4672683775424957
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3696463406085968
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.36151444911956787
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.25311875343322754
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.19402262568473816
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.17781323194503784
+        },
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.16549602150917053
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D003141",
+          "descriptor_name": "Communicable Diseases",
+          "qualifier_ui": "Q000453",
+          "qualifier_name": "epidemiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003141",
+          "descriptor_name": "Communicable Diseases",
+          "qualifier_ui": "Q000453",
+          "qualifier_name": "epidemiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003141",
+          "descriptor_name": "Communicable Diseases",
+          "qualifier_ui": "Q000453",
+          "qualifier_name": "epidemiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012984",
+          "descriptor_name": "Software",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012984",
+          "descriptor_name": "Software",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012984",
+          "descriptor_name": "Software",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015233",
+          "descriptor_name": "Models, Statistical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015233",
+          "descriptor_name": "Models, Statistical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015233",
+          "descriptor_name": "Models, Statistical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058872",
+          "descriptor_name": "Epidemics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058872",
+          "descriptor_name": "Epidemics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058872",
+          "descriptor_name": "Epidemics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1186/s13326-016-0092-y",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s13326-016-0092-y",
+          "pdf_url": "https://jbiomedsem.biomedcentral.com/track/pdf/10.1186/s13326-016-0092-y",
+          "source": {
+            "id": "https://openalex.org/S172276550",
+            "display_name": "Journal of Biomedical Semantics",
+            "issn_l": "2041-1480",
+            "issn": [
+              "2041-1480"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Biomedical Semantics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:27538448",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/27538448",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of biomedical semantics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:UFDC:AA00052673_00001",
+          "is_oa": true,
+          "landing_page_url": "http://ufdc.ufl.edu/AA00052673/00001",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400471",
+            "display_name": "University of Florida Digital Collections (University of Florida)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I33213144",
+            "host_organization_name": "University of Florida",
+            "host_organization_lineage": [
+              "https://openalex.org/I33213144"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "mixed material"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:3949479",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4989460",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s13326-016-0092-y",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-016-0092-y",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/track/pdf/10.1186/s13326-016-0092-y",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/3",
+          "display_name": "Good health and well-being",
+          "score": 0.8199999928474426
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2707742091",
+          "display_name": null,
+          "funder_award_id": "UL1 TR000064",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        },
+        {
+          "id": "https://openalex.org/G4082557964",
+          "display_name": null,
+          "funder_award_id": "GM10331601",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G4193654915",
+          "display_name": null,
+          "funder_award_id": "R01 GM101151",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G4251098122",
+          "display_name": null,
+          "funder_award_id": "UL1TR001427",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        },
+        {
+          "id": "https://openalex.org/G5500374692",
+          "display_name": null,
+          "funder_award_id": "TR000064",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        },
+        {
+          "id": "https://openalex.org/G6281091285",
+          "display_name": null,
+          "funder_award_id": "U24 GM110707",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G7599130707",
+          "display_name": null,
+          "funder_award_id": "R01GM101151",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G7612683197",
+          "display_name": null,
+          "funder_award_id": "UL1 TR001427",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320337354",
+          "display_name": "National Institute of General Medical Sciences",
+          "ror": "https://ror.org/04q48ey07"
+        },
+        {
+          "id": "https://openalex.org/F4320337472",
+          "display_name": "National Center for Advancing Translational Sciences",
+          "ror": "https://ror.org/04pw6fb54"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2511855896.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2511855896.grobid-xml"
+      },
+      "referenced_works_count": 29,
+      "referenced_works": [
+        "https://openalex.org/W202214938",
+        "https://openalex.org/W214843544",
+        "https://openalex.org/W1501546233",
+        "https://openalex.org/W1527927437",
+        "https://openalex.org/W1597538863",
+        "https://openalex.org/W1965045549",
+        "https://openalex.org/W1993904284",
+        "https://openalex.org/W1995395876",
+        "https://openalex.org/W1999773781",
+        "https://openalex.org/W2013283798",
+        "https://openalex.org/W2103017472",
+        "https://openalex.org/W2107324390",
+        "https://openalex.org/W2107712133",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2135140530",
+        "https://openalex.org/W2142675451",
+        "https://openalex.org/W2145615996",
+        "https://openalex.org/W2146831689",
+        "https://openalex.org/W2153595771",
+        "https://openalex.org/W2165477001",
+        "https://openalex.org/W2178026535",
+        "https://openalex.org/W2345275877",
+        "https://openalex.org/W2395648879",
+        "https://openalex.org/W2476383448",
+        "https://openalex.org/W2972019038",
+        "https://openalex.org/W4229926333",
+        "https://openalex.org/W4246066782",
+        "https://openalex.org/W6601446412",
+        "https://openalex.org/W6675471023"
+      ],
+      "related_works": [
+        "https://openalex.org/W2054178368",
+        "https://openalex.org/W2001637022",
+        "https://openalex.org/W2749643947",
+        "https://openalex.org/W2921637885",
+        "https://openalex.org/W4244081656",
+        "https://openalex.org/W2981806746",
+        "https://openalex.org/W4400809088",
+        "https://openalex.org/W2148601393",
+        "https://openalex.org/W2937293962",
+        "https://openalex.org/W2935892485"
+      ],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "We": [
+          1,
+          265
+        ],
+        "developed": [
+          2
+        ],
+        "the": [
+          3,
+          28,
+          48,
+          55,
+          65,
+          79,
+          169,
+          180,
+          191,
+          197,
+          200,
+          221,
+          234,
+          244,
+          259,
+          334,
+          349,
+          353
+        ],
+        "Apollo": [
+          4
+        ],
+        "Structured": [
+          5
+        ],
+        "Vocabulary": [
+          6
+        ],
+        "(Apollo-SV)-an": [
+          7
+        ],
+        "OWL2": [
+          8
+        ],
+        "ontology": [
+          9
+        ],
+        "of": [
+          10,
+          20,
+          30,
+          50,
+          54,
+          57,
+          69,
+          83,
+          85,
+          105,
+          115,
+          156,
+          161,
+          199,
+          224,
+          233,
+          248,
+          292,
+          319,
+          336,
+          340,
+          348
+        ],
+        "phenomena": [
+          11,
+          295,
+          350
+        ],
+        "in": [
+          12,
+          33,
+          43,
+          270,
+          310,
+          314
+        ],
+        "infectious": [
+          13,
+          58,
+          108,
+          153,
+          164,
+          182,
+          207,
+          262,
+          276,
+          298,
+          320
+        ],
+        "disease": [
+          14,
+          59,
+          109,
+          165,
+          183,
+          208,
+          263,
+          299,
+          321
+        ],
+        "epidemiology": [
+          15,
+          300
+        ],
+        "and": [
+          16,
+          67,
+          81,
+          91,
+          152,
+          163,
+          194,
+          219,
+          279,
+          301
+        ],
+        "population": [
+          17,
+          135,
+          302
+        ],
+        "biology-as": [
+          18
+        ],
+        "part": [
+          19
+        ],
+        "a": [
+          21,
+          39,
+          113,
+          137,
+          316,
+          341
+        ],
+        "project": [
+          22
+        ],
+        "whose": [
+          23
+        ],
+        "goal": [
+          24
+        ],
+        "is": [
+          25,
+          47,
+          107,
+          112,
+          239,
+          356
+        ],
+        "to": [
+          26,
+          64,
+          185,
+          204,
+          243,
+          288,
+          343
+        ],
+        "increase": [
+          27
+        ],
+        "use": [
+          29,
+          42
+        ],
+        "epidemic": [
+          31,
+          329
+        ],
+        "simulators": [
+          32,
+          106,
+          213,
+          238
+        ],
+        "public": [
+          34
+        ],
+        "health": [
+          35
+        ],
+        "practice.": [
+          36
+        ],
+        "Apollo-SV": [
+          37,
+          46,
+          73,
+          101,
+          188,
+          225,
+          271,
+          311,
+          355
+        ],
+        "defines": [
+          38
+        ],
+        "terminology": [
+          40,
+          193
+        ],
+        "for": [
+          41,
+          77,
+          103,
+          214,
+          261,
+          272
+        ],
+        "simulator": [
+          44,
+          119
+        ],
+        "configuration.": [
+          45
+        ],
+        "product": [
+          49
+        ],
+        "an": [
+          51,
+          116,
+          174,
+          206
+        ],
+        "ontological": [
+          52,
+          285,
+          306,
+          338
+        ],
+        "analysis": [
+          53,
+          286,
+          307,
+          339
+        ],
+        "domain": [
+          56,
+          342
+        ],
+        "epidemiology,": [
+          60
+        ],
+        "with": [
+          61
+        ],
+        "particular": [
+          62
+        ],
+        "attention": [
+          63
+        ],
+        "inputs": [
+          66,
+          80
+        ],
+        "outputs": [
+          68,
+          82
+        ],
+        "nine": [
+          70
+        ],
+        "simulators.": [
+          71,
+          330
+        ],
+        "RESULTS:": [
+          72
+        ],
+        "contains": [
+          74
+        ],
+        "802": [
+          75
+        ],
+        "classes": [
+          76,
+          141,
+          223,
+          257,
+          269
+        ],
+        "representing": [
+          78
+        ],
+        "simulators,": [
+          84,
+          187
+        ],
+        "which": [
+          86,
+          111,
+          172
+        ],
+        "approximately": [
+          87
+        ],
+        "half": [
+          88,
+          92
+        ],
+        "are": [
+          89,
+          93
+        ],
+        "new": [
+          90,
+          268
+        ],
+        "imported": [
+          94
+        ],
+        "from": [
+          95
+        ],
+        "existing": [
+          96,
+          289,
+          345
+        ],
+        "ontologies.": [
+          97
+        ],
+        "The": [
+          98
+        ],
+        "most": [
+          99
+        ],
+        "important": [
+          100,
+          140
+        ],
+        "class": [
+          102
+        ],
+        "users": [
+          104
+        ],
+        "scenario,": [
+          110
+        ],
+        "representation": [
+          114,
+          318
+        ],
+        "ecosystem": [
+          117,
+          143,
+          147,
+          157
+        ],
+        "at": [
+          118,
+          124,
+          132
+        ],
+        "time": [
+          120
+        ],
+        "zero": [
+          121
+        ],
+        "that": [
+          122,
+          177,
+          230,
+          323
+        ],
+        "has": [
+          123
+        ],
+        "least": [
+          125,
+          133
+        ],
+        "one": [
+          126,
+          134
+        ],
+        "infection": [
+          127,
+          150,
+          280
+        ],
+        "process": [
+          128
+        ],
+        "(a": [
+          129
+        ],
+        "class)": [
+          130
+        ],
+        "affecting": [
+          131
+        ],
+        "(also": [
+          136
+        ],
+        "class).": [
+          138
+        ],
+        "Other": [
+          139
+        ],
+        "represent": [
+          142,
+          205
+        ],
+        "elements": [
+          144,
+          158
+        ],
+        "(e.g.,": [
+          145,
+          149,
+          159,
+          217
+        ],
+        "households),": [
+          146
+        ],
+        "processes": [
+          148
+        ],
+        "acquisition": [
+          151
+        ],
+        "disease),": [
+          154
+        ],
+        "censuses": [
+          155,
+          160
+        ],
+        "populations),": [
+          162
+        ],
+        "control": [
+          166
+        ],
+        "measures.": [
+          167
+        ],
+        "In": [
+          168
+        ],
+        "larger": [
+          170
+        ],
+        "project,": [
+          171
+        ],
+        "created": [
+          173
+        ],
+        "end-user": [
+          175
+        ],
+        "application": [
+          176
+        ],
+        "can": [
+          178,
+          324
+        ],
+        "send": [
+          179
+        ],
+        "same": [
+          181
+        ],
+        "scenario": [
+          184
+        ],
+        "multiple": [
+          186,
+          328
+        ],
+        "serves": [
+          189
+        ],
+        "as": [
+          190,
+          258,
+          308
+        ],
+        "controlled": [
+          192
+        ],
+        "strongly": [
+          195
+        ],
+        "influences": [
+          196
+        ],
+        "design": [
+          198
+        ],
+        "message": [
+          201
+        ],
+        "syntax": [
+          202
+        ],
+        "used": [
+          203
+        ],
+        "scenario.": [
+          209
+        ],
+        "As": [
+          210
+        ],
+        "we": [
+          211,
+          250
+        ],
+        "added": [
+          212
+        ],
+        "different": [
+          215
+        ],
+        "pathogens": [
+          216
+        ],
+        "malaria": [
+          218
+        ],
+        "dengue),": [
+          220
+        ],
+        "core": [
+          222
+        ],
+        "have": [
+          226
+        ],
+        "remained": [
+          227
+        ],
+        "stable,": [
+          228
+        ],
+        "suggesting": [
+          229
+        ],
+        "our": [
+          231,
+          284
+        ],
+        "conceptualization": [
+          232
+        ],
+        "information": [
+          235
+        ],
+        "required": [
+          236
+        ],
+        "by": [
+          237,
+          297,
+          352
+        ],
+        "sound.": [
+          240
+        ],
+        "Despite": [
+          241
+        ],
+        "adhering": [
+          242
+        ],
+        "OBO": [
+          245
+        ],
+        "Foundry": [
+          246
+        ],
+        "principle": [
+          247
+        ],
+        "orthogonality,": [
+          249
+        ],
+        "could": [
+          251
+        ],
+        "not": [
+          252
+        ],
+        "reuse": [
+          253
+        ],
+        "Infectious": [
+          254
+        ],
+        "Disease": [
+          255
+        ],
+        "Ontology": [
+          256
+        ],
+        "basis": [
+          260
+        ],
+        "scenarios.": [
+          264
+        ],
+        "thus": [
+          266
+        ],
+        "defined": [
+          267
+        ],
+        "host,": [
+          273
+        ],
+        "pathogen,": [
+          274
+        ],
+        "infection,": [
+          275
+        ],
+        "disease,": [
+          277
+        ],
+        "colonization,": [
+          278
+        ],
+        "acquisition.": [
+          281
+        ],
+        "Unlike": [
+          282
+        ],
+        "IDO,": [
+          283
+        ],
+        "extended": [
+          287
+        ],
+        "mathematical": [
+          290,
+          346
+        ],
+        "models": [
+          291,
+          347
+        ],
+        "key": [
+          293
+        ],
+        "biological": [
+          294
+        ],
+        "studied": [
+          296,
+          351
+        ],
+        "biology.": [
+          303
+        ],
+        "CONCLUSION:": [
+          304
+        ],
+        "Our": [
+          305,
+          331
+        ],
+        "expressed": [
+          309
+        ],
+        "was": [
+          312
+        ],
+        "instrumental": [
+          313
+        ],
+        "developing": [
+          315
+        ],
+        "simulator-independent": [
+          317
+        ],
+        "scenarios": [
+          322
+        ],
+        "be": [
+          325
+        ],
+        "run": [
+          326
+        ],
+        "on": [
+          327
+        ],
+        "experience": [
+          332
+        ],
+        "suggests": [
+          333
+        ],
+        "importance": [
+          335
+        ],
+        "extending": [
+          337
+        ],
+        "include": [
+          344
+        ],
+        "domain.": [
+          354
+        ],
+        "freely": [
+          357
+        ],
+        "available": [
+          358
+        ],
+        "at:": [
+          359
+        ],
+        "http://purl.obolibrary.org/obo/apollo_sv.owl": [
+          360
+        ],
+        ".": [
+          361
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-24T13:16:06.693445",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W3092442756",
+      "doi": "https://doi.org/10.1186/s12911-020-01273-0",
+      "title": "A realism-based approach to an ontological representation of symbiotic interactions",
+      "display_name": "A realism-based approach to an ontological representation of symbiotic interactions",
+      "relevance_score": 39.87478,
+      "publication_year": 2020,
+      "publication_date": "2020-10-08",
+      "ids": {
+        "openalex": "https://openalex.org/W3092442756",
+        "doi": "https://doi.org/10.1186/s12911-020-01273-0",
+        "mag": "3092442756",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/33032576"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s12911-020-01273-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s12911-020-01273-0",
+        "pdf_url": "https://bmcmedinformdecismak.biomedcentral.com/track/pdf/10.1186/s12911-020-01273-0",
+        "source": {
+          "id": "https://openalex.org/S107516304",
+          "display_name": "BMC Medical Informatics and Decision Making",
+          "issn_l": "1472-6947",
+          "issn": [
+            "1472-6947"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "BMC Medical Informatics and Decision Making",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://bmcmedinformdecismak.biomedcentral.com/track/pdf/10.1186/s12911-020-01273-0",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5030579890",
+            "display_name": "Matthew Diller",
+            "orcid": "https://orcid.org/0000-0001-6378-1703"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800717037",
+              "display_name": "University of Florida Health",
+              "ror": "https://ror.org/04tk2gy88",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2800717037"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I61515104",
+              "display_name": "University of Florida Health Science Center",
+              "ror": "https://ror.org/0419bgt07",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I61515104"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Matthew Diller",
+          "raw_affiliation_strings": [
+            "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA. diller17@ufl.edu",
+            "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6378-1703",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA. diller17@ufl.edu",
+              "institution_ids": [
+                "https://openalex.org/I2800717037",
+                "https://openalex.org/I61515104"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I2800717037"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Evan Johnson",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800717037",
+              "display_name": "University of Florida Health",
+              "ror": "https://ror.org/04tk2gy88",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2800717037"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Evan Johnson",
+          "raw_affiliation_strings": [
+            "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I2800717037"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083035733",
+            "display_name": "Amanda Hicks",
+            "orcid": "https://orcid.org/0000-0002-3496-1745"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802946424",
+              "display_name": "Johns Hopkins University Applied Physics Laboratory",
+              "ror": "https://ror.org/029pp9z10",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I145311948",
+                "https://openalex.org/I2802946424"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Amanda Hicks",
+          "raw_affiliation_strings": [
+            "Applied Physics Laboratory, Johns Hopkins University, Baltimore, MD, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Applied Physics Laboratory, Johns Hopkins University, Baltimore, MD, USA",
+              "institution_ids": [
+                "https://openalex.org/I2802946424"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5076610873",
+            "display_name": "William R. Hogan",
+            "orcid": "https://orcid.org/0000-0002-9881-1017"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800717037",
+              "display_name": "University of Florida Health",
+              "ror": "https://ror.org/04tk2gy88",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2800717037"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "William R. Hogan",
+          "raw_affiliation_strings": [
+            "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, USA",
+              "institution_ids": [
+                "https://openalex.org/I2800717037"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 4,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5030579890"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I2800717037",
+        "https://openalex.org/I61515104"
+      ],
+      "apc_list": {
+        "value": 1570,
+        "currency": "GBP",
+        "value_usd": 1925
+      },
+      "apc_paid": {
+        "value": 1570,
+        "currency": "GBP",
+        "value_usd": 1925
+      },
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.0962601,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "20",
+        "issue": "1",
+        "first_page": "258",
+        "last_page": "258"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.3874000012874603,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.3874000012874603,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12492",
+          "display_name": "Zoonotic diseases and public health",
+          "score": 0.10899999737739563,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2739",
+            "display_name": "Public Health, Environmental and Occupational Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10887",
+          "display_name": "Bioinformatics and Genomic Networks",
+          "score": 0.04280000180006027,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7005950212478638
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.592825174331665
+        },
+        {
+          "id": "https://openalex.org/keywords/representation",
+          "display_name": "Representation (politics)",
+          "score": 0.4910750389099121
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.48982498049736023
+        },
+        {
+          "id": "https://openalex.org/keywords/microbiome",
+          "display_name": "Microbiome",
+          "score": 0.46342647075653076
+        },
+        {
+          "id": "https://openalex.org/keywords/ecology",
+          "display_name": "Ecology",
+          "score": 0.37880396842956543
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.2956503629684448
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.2348044514656067
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.16188955307006836
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7005950212478638
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.592825174331665
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.4910750389099121
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.48982498049736023
+        },
+        {
+          "id": "https://openalex.org/C143121216",
+          "wikidata": "https://www.wikidata.org/wiki/Q1330402",
+          "display_name": "Microbiome",
+          "level": 2,
+          "score": 0.46342647075653076
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.37880396842956543
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.2956503629684448
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.2348044514656067
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.16188955307006836
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013559",
+          "descriptor_name": "Symbiosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013559",
+          "descriptor_name": "Symbiosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013559",
+          "descriptor_name": "Symbiosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013559",
+          "descriptor_name": "Symbiosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1186/s12911-020-01273-0",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s12911-020-01273-0",
+          "pdf_url": "https://bmcmedinformdecismak.biomedcentral.com/track/pdf/10.1186/s12911-020-01273-0",
+          "source": {
+            "id": "https://openalex.org/S107516304",
+            "display_name": "BMC Medical Informatics and Decision Making",
+            "issn_l": "1472-6947",
+            "issn": [
+              "1472-6947"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "BMC Medical Informatics and Decision Making",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:33032576",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33032576",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "BMC medical informatics and decision making",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:af06d80b003f4c199d58fa66bab78827",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/af06d80b003f4c199d58fa66bab78827",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "BMC Medical Informatics and Decision Making, Vol 20, Iss 1, Pp 1-15 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7542735",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7542735",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "BMC Med Inform Decis Mak",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s12911-020-01273-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s12911-020-01273-0",
+        "pdf_url": "https://bmcmedinformdecismak.biomedcentral.com/track/pdf/10.1186/s12911-020-01273-0",
+        "source": {
+          "id": "https://openalex.org/S107516304",
+          "display_name": "BMC Medical Informatics and Decision Making",
+          "issn_l": "1472-6947",
+          "issn": [
+            "1472-6947"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "BMC Medical Informatics and Decision Making",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2025276222",
+          "display_name": null,
+          "funder_award_id": "UL1TR00001427",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        },
+        {
+          "id": "https://openalex.org/G3644296431",
+          "display_name": null,
+          "funder_award_id": "GM10331601",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G4082557964",
+          "display_name": null,
+          "funder_award_id": "GM10331601",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G4170413836",
+          "display_name": null,
+          "funder_award_id": "U24GM110707",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G4193654915",
+          "display_name": null,
+          "funder_award_id": "R01 GM101151",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G5752070840",
+          "display_name": null,
+          "funder_award_id": "U24GM110707",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G6281091285",
+          "display_name": null,
+          "funder_award_id": "U24 GM110707",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G7599130707",
+          "display_name": null,
+          "funder_award_id": "R01GM101151",
+          "funder_id": "https://openalex.org/F4320337354",
+          "funder_display_name": "National Institute of General Medical Sciences"
+        },
+        {
+          "id": "https://openalex.org/G7612683197",
+          "display_name": null,
+          "funder_award_id": "UL1 TR001427",
+          "funder_id": "https://openalex.org/F4320337472",
+          "funder_display_name": "National Center for Advancing Translational Sciences"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320337354",
+          "display_name": "National Institute of General Medical Sciences",
+          "ror": "https://ror.org/04q48ey07"
+        },
+        {
+          "id": "https://openalex.org/F4320337472",
+          "display_name": "National Center for Advancing Translational Sciences",
+          "ror": "https://ror.org/04pw6fb54"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3092442756.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3092442756.grobid-xml"
+      },
+      "referenced_works_count": 31,
+      "referenced_works": [
+        "https://openalex.org/W358535584",
+        "https://openalex.org/W622729771",
+        "https://openalex.org/W1495344490",
+        "https://openalex.org/W1628054318",
+        "https://openalex.org/W1802346448",
+        "https://openalex.org/W1981732549",
+        "https://openalex.org/W2015560632",
+        "https://openalex.org/W2018041819",
+        "https://openalex.org/W2079676595",
+        "https://openalex.org/W2099133687",
+        "https://openalex.org/W2103017472",
+        "https://openalex.org/W2105783830",
+        "https://openalex.org/W2113440438",
+        "https://openalex.org/W2123152121",
+        "https://openalex.org/W2135140530",
+        "https://openalex.org/W2156239742",
+        "https://openalex.org/W2213587026",
+        "https://openalex.org/W2257876130",
+        "https://openalex.org/W2395648879",
+        "https://openalex.org/W2493696020",
+        "https://openalex.org/W2511855896",
+        "https://openalex.org/W2520939394",
+        "https://openalex.org/W2531883117",
+        "https://openalex.org/W2802296577",
+        "https://openalex.org/W2807059208",
+        "https://openalex.org/W2914146056",
+        "https://openalex.org/W2950595506",
+        "https://openalex.org/W2964184462",
+        "https://openalex.org/W2985505473",
+        "https://openalex.org/W3134547798",
+        "https://openalex.org/W6819153226"
+      ],
+      "related_works": [
+        "https://openalex.org/W2604155846",
+        "https://openalex.org/W3121185202",
+        "https://openalex.org/W4390658901",
+        "https://openalex.org/W2900546243",
+        "https://openalex.org/W3035180550",
+        "https://openalex.org/W2790850565",
+        "https://openalex.org/W4388834263",
+        "https://openalex.org/W1983943311",
+        "https://openalex.org/W4206185765",
+        "https://openalex.org/W3088497233"
+      ],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "The": [
+          1
+        ],
+        "symbiotic": [
+          2,
+          65,
+          109,
+          140,
+          198,
+          270,
+          330
+        ],
+        "interactions": [
+          3,
+          55,
+          66,
+          199,
+          271,
+          331
+        ],
+        "that": [
+          4,
+          63,
+          78,
+          105,
+          147,
+          213,
+          228,
+          248,
+          264
+        ],
+        "occur": [
+          5,
+          69
+        ],
+        "between": [
+          6,
+          33
+        ],
+        "humans": [
+          7
+        ],
+        "and": [
+          8,
+          36,
+          39,
+          50,
+          56,
+          84,
+          90,
+          93,
+          103,
+          118,
+          156,
+          173,
+          177,
+          192,
+          225,
+          239
+        ],
+        "organisms": [
+          9,
+          291
+        ],
+        "in": [
+          10,
+          26,
+          28,
+          70,
+          87,
+          209,
+          223,
+          289,
+          296,
+          306,
+          340
+        ],
+        "our": [
+          11,
+          18,
+          237,
+          320
+        ],
+        "environment": [
+          12
+        ],
+        "have": [
+          13,
+          250,
+          324
+        ],
+        "a": [
+          14,
+          24,
+          188,
+          245,
+          312,
+          317,
+          326,
+          333,
+          338
+        ],
+        "tremendous": [
+          15
+        ],
+        "impact": [
+          16
+        ],
+        "on": [
+          17,
+          182
+        ],
+        "health.": [
+          19
+        ],
+        "Recently,": [
+          20
+        ],
+        "there": [
+          21
+        ],
+        "has": [
+          22
+        ],
+        "been": [
+          23
+        ],
+        "surge": [
+          25
+        ],
+        "interest": [
+          27
+        ],
+        "understanding": [
+          29
+        ],
+        "the": [
+          30,
+          34,
+          80,
+          88,
+          129,
+          133,
+          145,
+          170,
+          217,
+          234,
+          273,
+          276,
+          281,
+          286
+        ],
+        "complex": [
+          31,
+          287
+        ],
+        "relationships": [
+          32
+        ],
+        "microbiome": [
+          35
+        ],
+        "human": [
+          37
+        ],
+        "health": [
+          38
+        ],
+        "host": [
+          40
+        ],
+        "immunity": [
+          41
+        ],
+        "against": [
+          42
+        ],
+        "microbial": [
+          43
+        ],
+        "pathogens,": [
+          44
+        ],
+        "among": [
+          45,
+          200
+        ],
+        "other": [
+          46
+        ],
+        "things.": [
+          47
+        ],
+        "To": [
+          48,
+          164
+        ],
+        "collect": [
+          49
+        ],
+        "manage": [
+          51
+        ],
+        "data": [
+          52
+        ],
+        "about": [
+          53
+        ],
+        "these": [
+          54
+        ],
+        "their": [
+          57
+        ],
+        "complexity,": [
+          58
+        ],
+        "scientists": [
+          59
+        ],
+        "will": [
+          60
+        ],
+        "need": [
+          61
+        ],
+        "ontologies": [
+          62,
+          104
+        ],
+        "represent": [
+          64
+        ],
+        "as": [
+          67,
+          126,
+          142,
+          144
+        ],
+        "they": [
+          68,
+          114
+        ],
+        "reality.": [
+          71
+        ],
+        "METHODS:": [
+          72
+        ],
+        "We": [
+          73,
+          96,
+          203,
+          243,
+          252
+        ],
+        "began": [
+          74
+        ],
+        "with": [
+          75,
+          216,
+          301,
+          311
+        ],
+        "two": [
+          76
+        ],
+        "papers": [
+          77
+        ],
+        "reviewed": [
+          79
+        ],
+        "usage": [
+          81,
+          125,
+          222
+        ],
+        "of": [
+          82,
+          108,
+          139,
+          162,
+          194,
+          207,
+          220,
+          236,
+          257,
+          275,
+          299,
+          309,
+          319,
+          329
+        ],
+        "'symbiosis'": [
+          83,
+          117,
+          208
+        ],
+        "related": [
+          85,
+          119
+        ],
+        "terms": [
+          86,
+          120
+        ],
+        "biology": [
+          89,
+          224
+        ],
+        "ecology": [
+          91
+        ],
+        "literature": [
+          92
+        ],
+        "prominent": [
+          94,
+          100
+        ],
+        "textbooks.": [
+          95
+        ],
+        "then": [
+          97
+        ],
+        "analyzed": [
+          98
+        ],
+        "several": [
+          99,
+          137
+        ],
+        "standard": [
+          101
+        ],
+        "terminologies": [
+          102
+        ],
+        "contain": [
+          106
+        ],
+        "representations": [
+          107,
+          172
+        ],
+        "interactions,": [
+          110,
+          141
+        ],
+        "to": [
+          111,
+          122,
+          153,
+          168,
+          268,
+          285,
+          304
+        ],
+        "determine": [
+          112
+        ],
+        "if": [
+          113
+        ],
+        "appropriately": [
+          115
+        ],
+        "defined": [
+          116
+        ],
+        "according": [
+          121
+        ],
+        "current": [
+          123
+        ],
+        "scientific": [
+          124,
+          221
+        ],
+        "identified": [
+          127,
+          136
+        ],
+        "by": [
+          128
+        ],
+        "review": [
+          130
+        ],
+        "papers.": [
+          131
+        ],
+        "In": [
+          132
+        ],
+        "process,": [
+          134
+        ],
+        "we": [
+          135,
+          151,
+          175,
+          185,
+          249,
+          323
+        ],
+        "subtypes": [
+          138,
+          256
+        ],
+        "well": [
+          143
+        ],
+        "characteristics": [
+          146
+        ],
+        "differentiate": [
+          148
+        ],
+        "them,": [
+          149
+        ],
+        "which": [
+          150,
+          290,
+          336
+        ],
+        "used": [
+          152
+        ],
+        "propose": [
+          154
+        ],
+        "textual": [
+          155
+        ],
+        "axiomatic": [
+          157
+        ],
+        "definitions": [
+          158,
+          174
+        ],
+        "for": [
+          159
+        ],
+        "each": [
+          160
+        ],
+        "subtype": [
+          161
+        ],
+        "interaction.": [
+          163
+        ],
+        "both": [
+          165
+        ],
+        "illustrate": [
+          166
+        ],
+        "how": [
+          167
+        ],
+        "use": [
+          169
+        ],
+        "ontological": [
+          171
+        ],
+        "created": [
+          176
+        ],
+        "provide": [
+          178
+        ],
+        "additional": [
+          179
+        ],
+        "quality": [
+          180
+        ],
+        "assurance": [
+          181
+        ],
+        "key": [
+          183
+        ],
+        "definitions,": [
+          184
+        ],
+        "carried": [
+          186
+        ],
+        "out": [
+          187
+        ],
+        "referent": [
+          189,
+          260
+        ],
+        "tracking": [
+          190,
+          261
+        ],
+        "analysis": [
+          191,
+          262
+        ],
+        "representation": [
+          193,
+          328
+        ],
+        "three": [
+          195
+        ],
+        "scenarios": [
+          196
+        ],
+        "involving": [
+          197
+        ],
+        "organisms.": [
+          201
+        ],
+        "RESULTS:": [
+          202
+        ],
+        "found": [
+          204
+        ],
+        "one": [
+          205,
+          297,
+          302
+        ],
+        "definition": [
+          206,
+          232,
+          247
+        ],
+        "an": [
+          210
+        ],
+        "existing": [
+          211,
+          341
+        ],
+        "ontology": [
+          212,
+          229
+        ],
+        "was": [
+          214
+        ],
+        "consistent": [
+          215
+        ],
+        "vast": [
+          218
+        ],
+        "preponderance": [
+          219
+        ],
+        "ecology.": [
+          226
+        ],
+        "However,": [
+          227
+        ],
+        "changed": [
+          230
+        ],
+        "its": [
+          231
+        ],
+        "during": [
+          233
+        ],
+        "course": [
+          235
+        ],
+        "work,": [
+          238
+        ],
+        "discussions": [
+          240
+        ],
+        "are": [
+          241
+        ],
+        "ongoing.": [
+          242
+        ],
+        "present": [
+          244
+        ],
+        "new": [
+          246
+        ],
+        "proposed.": [
+          251
+        ],
+        "also": [
+          253
+        ],
+        "define": [
+          254,
+          269
+        ],
+        "34": [
+          255
+        ],
+        "symbiosis.": [
+          258
+        ],
+        "Our": [
+          259
+        ],
+        "showed": [
+          263
+        ],
+        "it": [
+          265
+        ],
+        "is": [
+          266
+        ],
+        "necessary": [
+          267
+        ],
+        "at": [
+          272,
+          280
+        ],
+        "level": [
+          274
+        ],
+        "individual,": [
+          277
+        ],
+        "rather": [
+          278
+        ],
+        "than": [
+          279
+        ],
+        "species": [
+          282
+        ],
+        "level,": [
+          283
+        ],
+        "due": [
+          284
+        ],
+        "nature": [
+          288
+        ],
+        "can": [
+          292
+        ],
+        "go": [
+          293
+        ],
+        "from": [
+          294
+        ],
+        "participating": [
+          295,
+          305
+        ],
+        "type": [
+          298,
+          308
+        ],
+        "symbiosis": [
+          300,
+          310
+        ],
+        "organism": [
+          303
+        ],
+        "another": [
+          307
+        ],
+        "different": [
+          313
+        ],
+        "organism.": [
+          314
+        ],
+        "CONCLUSION:": [
+          315
+        ],
+        "As": [
+          316
+        ],
+        "result": [
+          318
+        ],
+        "efforts": [
+          321
+        ],
+        "here,": [
+          322
+        ],
+        "developed": [
+          325
+        ],
+        "robust": [
+          327
+        ],
+        "using": [
+          332
+        ],
+        "realism-based": [
+          334
+        ],
+        "approach,": [
+          335
+        ],
+        "fills": [
+          337
+        ],
+        "gap": [
+          339
+        ],
+        "biomedical": [
+          342
+        ],
+        "ontologies.": [
+          343
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-24T13:16:06.693445",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W3209925103",
+      "doi": "https://doi.org/10.37044/osf.io/n6tcz",
+      "title": "The COVID-19 epidemiology and monitoring ontology",
+      "display_name": "The COVID-19 epidemiology and monitoring ontology",
+      "relevance_score": 37.859188,
+      "publication_year": 2021,
+      "publication_date": "2021-08-11",
+      "ids": {
+        "openalex": "https://openalex.org/W3209925103",
+        "doi": "https://doi.org/10.37044/osf.io/n6tcz",
+        "mag": "3209925103"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.37044/osf.io/n6tcz",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.37044/osf.io/n6tcz",
+        "pdf_url": "https://osf.io/n6tcz/download",
+        "source": null,
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://osf.io/n6tcz/download",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5080481806",
+            "display_name": "Núria Queralt-Rosiñach",
+            "orcid": "https://orcid.org/0000-0003-0169-8159"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Núria Queralt-Rosinach",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center, The Netherlands"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0169-8159",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5059588755",
+            "display_name": "Paul N. Schofield",
+            "orcid": "https://orcid.org/0000-0002-5111-7263"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Paul Schofield",
+          "raw_affiliation_strings": [
+            "University of Cambridge. United Kingdom"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5111-7263",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Cambridge. United Kingdom",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043808311",
+            "display_name": "Robert Hoehndorf",
+            "orcid": "https://orcid.org/0000-0001-8149-5890"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Robert Hoehndorf",
+          "raw_affiliation_strings": [
+            "King Abdullah University of Science and Technology, Saudi Arabia"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8149-5890",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "King Abdullah University of Science and Technology, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060220259",
+            "display_name": "Claus Weiland",
+            "orcid": "https://orcid.org/0000-0003-0351-6523"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112860",
+              "display_name": "Senckenberg Biodiversity and Climate Research Centre",
+              "ror": "https://ror.org/01amp2a31",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2802697327",
+                "https://openalex.org/I315704651",
+                "https://openalex.org/I4210112860"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Claus Weiland",
+          "raw_affiliation_strings": [
+            "Senckenberg Biodiversity and Climate Research Center, Germany"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0351-6523",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Senckenberg Biodiversity and Climate Research Center, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210112860"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043231938",
+            "display_name": "Erik Schultes",
+            "orcid": "https://orcid.org/0000-0001-8888-635X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4387154494",
+              "display_name": "GO FAIR Foundation",
+              "ror": "https://ror.org/056j50v04",
+              "country_code": null,
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4387154494"
+              ]
+            }
+          ],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Erik Anthony Schultes",
+          "raw_affiliation_strings": [
+            "GO FAIR Foundation"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8888-635X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "GO FAIR Foundation",
+              "institution_ids": [
+                "https://openalex.org/I4387154494"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083059200",
+            "display_name": "César H. Bernabé",
+            "orcid": "https://orcid.org/0000-0003-1795-5930"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "César Henrique Bernabé",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5021179422",
+            "display_name": "Marco Roos",
+            "orcid": "https://orcid.org/0000-0002-8691-772X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marco Roos",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center, The Netherlands"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-8691-772X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 4,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5080481806"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I2800006345"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.1584,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": {
+        "value": 0.48733491,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 94
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9994000196456909,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9994000196456909,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10887",
+          "display_name": "Bioinformatics and Genomic Networks",
+          "score": 0.9840999841690063,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.974399983882904,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/epidemiology",
+          "display_name": "Epidemiology",
+          "score": 0.7174371480941772
+        },
+        {
+          "id": "https://openalex.org/keywords/pandemic",
+          "display_name": "Pandemic",
+          "score": 0.7143303751945496
+        },
+        {
+          "id": "https://openalex.org/keywords/outbreak",
+          "display_name": "Outbreak",
+          "score": 0.6120907068252563
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.5769056081771851
+        },
+        {
+          "id": "https://openalex.org/keywords/coronavirus-disease-2019",
+          "display_name": "Coronavirus disease 2019 (COVID-19)",
+          "score": 0.5670236945152283
+        },
+        {
+          "id": "https://openalex.org/keywords/infectious-disease",
+          "display_name": "Infectious disease (medical specialty)",
+          "score": 0.5181435346603394
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.512320876121521
+        },
+        {
+          "id": "https://openalex.org/keywords/disease",
+          "display_name": "Disease",
+          "score": 0.4709140956401825
+        },
+        {
+          "id": "https://openalex.org/keywords/psychological-intervention",
+          "display_name": "Psychological intervention",
+          "score": 0.4380662441253662
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.37011802196502686
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.367291122674942
+        },
+        {
+          "id": "https://openalex.org/keywords/virology",
+          "display_name": "Virology",
+          "score": 0.22159570455551147
+        },
+        {
+          "id": "https://openalex.org/keywords/pathology",
+          "display_name": "Pathology",
+          "score": 0.12655866146087646
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C107130276",
+          "wikidata": "https://www.wikidata.org/wiki/Q133805",
+          "display_name": "Epidemiology",
+          "level": 2,
+          "score": 0.7174371480941772
+        },
+        {
+          "id": "https://openalex.org/C89623803",
+          "wikidata": "https://www.wikidata.org/wiki/Q12184",
+          "display_name": "Pandemic",
+          "level": 5,
+          "score": 0.7143303751945496
+        },
+        {
+          "id": "https://openalex.org/C116675565",
+          "wikidata": "https://www.wikidata.org/wiki/Q3241045",
+          "display_name": "Outbreak",
+          "level": 2,
+          "score": 0.6120907068252563
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.5769056081771851
+        },
+        {
+          "id": "https://openalex.org/C3008058167",
+          "wikidata": "https://www.wikidata.org/wiki/Q84263196",
+          "display_name": "Coronavirus disease 2019 (COVID-19)",
+          "level": 4,
+          "score": 0.5670236945152283
+        },
+        {
+          "id": "https://openalex.org/C524204448",
+          "wikidata": "https://www.wikidata.org/wiki/Q788926",
+          "display_name": "Infectious disease (medical specialty)",
+          "level": 3,
+          "score": 0.5181435346603394
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.512320876121521
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.4709140956401825
+        },
+        {
+          "id": "https://openalex.org/C27415008",
+          "wikidata": "https://www.wikidata.org/wiki/Q7256382",
+          "display_name": "Psychological intervention",
+          "level": 2,
+          "score": 0.4380662441253662
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.37011802196502686
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.367291122674942
+        },
+        {
+          "id": "https://openalex.org/C159047783",
+          "wikidata": "https://www.wikidata.org/wiki/Q7215",
+          "display_name": "Virology",
+          "level": 1,
+          "score": 0.22159570455551147
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.12655866146087646
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.37044/osf.io/n6tcz",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.37044/osf.io/n6tcz",
+          "pdf_url": "https://osf.io/n6tcz/download",
+          "source": null,
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmh:oai:repository.kaust.edu.sa:10754/670637",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10754/670637",
+          "pdf_url": "http://hdl.handle.net/10754/670637",
+          "source": {
+            "id": "https://openalex.org/S4306401596",
+            "display_name": "King Abdullah University of Science and Technology Repository (King Abdullah University of Science and Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I71920554",
+            "host_organization_name": "King Abdullah University of Science and Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I71920554"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Preprint"
+        },
+        {
+          "id": "pmh:oai:share.osf.io:3eae93e5-6ce3-485b-94e4-ec126ba47a05",
+          "is_oa": true,
+          "landing_page_url": "https://osf.io/n6tcz",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402587",
+            "display_name": "BioHackrXiv (OSF Preprints)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_name": "Center for Open Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Preprint"
+        },
+        {
+          "id": "pmh:oai:share.osf.io:E0010-0B9-E48",
+          "is_oa": false,
+          "landing_page_url": "http://biohackrxiv.org/n6tcz/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402587",
+            "display_name": "BioHackrXiv (OSF Preprints)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_name": "Center for Open Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "preprint"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.37044/osf.io/n6tcz",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.37044/osf.io/n6tcz",
+        "pdf_url": "https://osf.io/n6tcz/download",
+        "source": null,
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/3",
+          "display_name": "Good health and well-being",
+          "score": 0.8600000143051147
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G7842005466",
+          "display_name": null,
+          "funder_award_id": "Horizon 2020",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        },
+        {
+          "id": "https://openalex.org/G8285986087",
+          "display_name": "European Joint Programme on Rare Diseases",
+          "funder_award_id": "825575",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320300",
+          "display_name": "European Commission",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3209925103.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3209925103.grobid-xml"
+      },
+      "referenced_works_count": 17,
+      "referenced_works": [
+        "https://openalex.org/W1209531849",
+        "https://openalex.org/W1561585380",
+        "https://openalex.org/W2072640685",
+        "https://openalex.org/W2162385209",
+        "https://openalex.org/W2165291673",
+        "https://openalex.org/W2302501749",
+        "https://openalex.org/W2398557131",
+        "https://openalex.org/W2979488251",
+        "https://openalex.org/W3035434194",
+        "https://openalex.org/W3111324399",
+        "https://openalex.org/W3133630228",
+        "https://openalex.org/W3204352594",
+        "https://openalex.org/W3210260088",
+        "https://openalex.org/W4205326640",
+        "https://openalex.org/W4205569004",
+        "https://openalex.org/W4233346830",
+        "https://openalex.org/W4248381229"
+      ],
+      "related_works": [
+        "https://openalex.org/W2373635223",
+        "https://openalex.org/W2412355096",
+        "https://openalex.org/W1990012352",
+        "https://openalex.org/W2431766951",
+        "https://openalex.org/W4385969441",
+        "https://openalex.org/W127458931",
+        "https://openalex.org/W2378327072",
+        "https://openalex.org/W326517241",
+        "https://openalex.org/W1498190388",
+        "https://openalex.org/W3121372691"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0
+        ],
+        "novel": [
+          1
+        ],
+        "COVID-19": [
+          2
+        ],
+        "infectious": [
+          3
+        ],
+        "disease": [
+          4,
+          63
+        ],
+        "emerged": [
+          5
+        ],
+        "and": [
+          6,
+          11,
+          28,
+          34,
+          48,
+          70,
+          83
+        ],
+        "spread,": [
+          7
+        ],
+        "causing": [
+          8
+        ],
+        "high": [
+          9
+        ],
+        "mortality": [
+          10
+        ],
+        "morbidity": [
+          12
+        ],
+        "rates": [
+          13
+        ],
+        "worldwide.": [
+          14
+        ],
+        "In": [
+          15,
+          76
+        ],
+        "the": [
+          16,
+          60,
+          65,
+          86
+        ],
+        "OBO": [
+          17
+        ],
+        "Foundry,": [
+          18
+        ],
+        "there": [
+          19
+        ],
+        "are": [
+          20
+        ],
+        "more": [
+          21
+        ],
+        "than": [
+          22
+        ],
+        "one": [
+          23
+        ],
+        "hundred": [
+          24
+        ],
+        "ontologies": [
+          25
+        ],
+        "to": [
+          26,
+          58,
+          71
+        ],
+        "share": [
+          27
+        ],
+        "analyse": [
+          29
+        ],
+        "large-scale": [
+          30
+        ],
+        "datasets": [
+          31
+        ],
+        "for": [
+          32,
+          45,
+          85
+        ],
+        "biological": [
+          33
+        ],
+        "biomedical": [
+          35
+        ],
+        "sciences.": [
+          36
+        ],
+        "However,": [
+          37
+        ],
+        "this": [
+          38,
+          52,
+          77
+        ],
+        "pandemic": [
+          39
+        ],
+        "revealed": [
+          40
+        ],
+        "that": [
+          41
+        ],
+        "we": [
+          42,
+          79
+        ],
+        "lack": [
+          43
+        ],
+        "tools": [
+          44
+        ],
+        "an": [
+          46
+        ],
+        "efficient": [
+          47
+        ],
+        "timely": [
+          49
+        ],
+        "exchange": [
+          50
+        ],
+        "of": [
+          51,
+          62,
+          67
+        ],
+        "epidemiological": [
+          53
+        ],
+        "data": [
+          54
+        ],
+        "which": [
+          55
+        ],
+        "is": [
+          56
+        ],
+        "necessary": [
+          57
+        ],
+        "assess": [
+          59
+        ],
+        "impact": [
+          61
+        ],
+        "outbreaks,": [
+          64
+        ],
+        "efficacy": [
+          66
+        ],
+        "mitigating": [
+          68
+        ],
+        "interventions": [
+          69
+        ],
+        "provide": [
+          72
+        ],
+        "a": [
+          73
+        ],
+        "rapid": [
+          74
+        ],
+        "response.": [
+          75
+        ],
+        "study": [
+          78
+        ],
+        "present": [
+          80
+        ],
+        "our": [
+          81
+        ],
+        "findings": [
+          82
+        ],
+        "contributions": [
+          84
+        ],
+        "bio-ontologies": [
+          87
+        ],
+        "community.": [
+          88
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2021-11-08T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4205879676",
+      "doi": "https://doi.org/10.5281/zenodo.5752959",
+      "title": "The COVID-19 epidemiology and monitoring ontology",
+      "display_name": "The COVID-19 epidemiology and monitoring ontology",
+      "relevance_score": 7.7177596,
+      "publication_year": 2021,
+      "publication_date": "2021-12-03",
+      "ids": {
+        "openalex": "https://openalex.org/W4205879676",
+        "doi": "https://doi.org/10.5281/zenodo.5752959"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:zenodo.org:5752959",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/5752959",
+        "pdf_url": "https://zenodo.org/record/5752959",
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "info:eu-repo/semantics/conferencePaper"
+      },
+      "type": "paratext",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/record/5752959",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5080481806",
+            "display_name": "Núria Queralt-Rosiñach",
+            "orcid": "https://orcid.org/0000-0003-0169-8159"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Queralt-Rosinach, Núria",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0169-8159",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5059588755",
+            "display_name": "Paul N. Schofield",
+            "orcid": "https://orcid.org/0000-0002-5111-7263"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I241749",
+              "display_name": "University of Cambridge",
+              "ror": "https://ror.org/013meh722",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Schofield, Paul N.",
+          "raw_affiliation_strings": [
+            "University of Cambridge"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5111-7263",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Cambridge",
+              "institution_ids": [
+                "https://openalex.org/I241749"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043808311",
+            "display_name": "Robert Hoehndorf",
+            "orcid": "https://orcid.org/0000-0001-8149-5890"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hoehndorf, Robert",
+          "raw_affiliation_strings": [
+            "King Abdullah University of Science and Technology"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8149-5890",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "King Abdullah University of Science and Technology",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060220259",
+            "display_name": "Claus Weiland",
+            "orcid": "https://orcid.org/0000-0003-0351-6523"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210112860",
+              "display_name": "Senckenberg Biodiversity and Climate Research Centre",
+              "ror": "https://ror.org/01amp2a31",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I2802697327",
+                "https://openalex.org/I315704651",
+                "https://openalex.org/I4210112860"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Weiland, Claus",
+          "raw_affiliation_strings": [
+            "Senckenberg Biodiversity and Climate Research Center"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-0351-6523",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Senckenberg Biodiversity and Climate Research Center",
+              "institution_ids": [
+                "https://openalex.org/I4210112860"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043231938",
+            "display_name": "Erik Schultes",
+            "orcid": "https://orcid.org/0000-0001-8888-635X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4387154494",
+              "display_name": "GO FAIR Foundation",
+              "ror": "https://ror.org/056j50v04",
+              "country_code": null,
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4387154494"
+              ]
+            }
+          ],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Schultes, Erik",
+          "raw_affiliation_strings": [
+            "GO FAIR Foundation"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8888-635X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "GO FAIR Foundation",
+              "institution_ids": [
+                "https://openalex.org/I4387154494"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083059200",
+            "display_name": "César H. Bernabé",
+            "orcid": "https://orcid.org/0000-0003-1795-5930"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bernabé, César H.",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1795-5930",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5021179422",
+            "display_name": "Marco Roos",
+            "orcid": "https://orcid.org/0000-0002-8691-772X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800006345",
+              "display_name": "Leiden University Medical Center",
+              "ror": "https://ror.org/05xvt9f17",
+              "country_code": "NL",
+              "type": "funder",
+              "lineage": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Roos, Marco",
+          "raw_affiliation_strings": [
+            "Leiden University Medical Center"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-8691-772X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leiden University Medical Center",
+              "institution_ids": [
+                "https://openalex.org/I2800006345"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 4,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": true,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11819",
+        "display_name": "Data-Driven Disease Surveillance",
+        "score": 0.3700000047683716,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2713",
+          "display_name": "Epidemiology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11819",
+          "display_name": "Data-Driven Disease Surveillance",
+          "score": 0.3700000047683716,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2713",
+            "display_name": "Epidemiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/coronavirus-disease-2019",
+          "display_name": "Coronavirus disease 2019 (COVID-19)",
+          "score": 0.6664202213287354
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6636257171630859
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6093336939811707
+        },
+        {
+          "id": "https://openalex.org/keywords/epidemiology",
+          "display_name": "Epidemiology",
+          "score": 0.5074865221977234
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.32952550053596497
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.30401283502578735
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.07915335893630981
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C3008058167",
+          "wikidata": "https://www.wikidata.org/wiki/Q84263196",
+          "display_name": "Coronavirus disease 2019 (COVID-19)",
+          "level": 4,
+          "score": 0.6664202213287354
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6636257171630859
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6093336939811707
+        },
+        {
+          "id": "https://openalex.org/C107130276",
+          "wikidata": "https://www.wikidata.org/wiki/Q133805",
+          "display_name": "Epidemiology",
+          "level": 2,
+          "score": 0.5074865221977234
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.32952550053596497
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.30401283502578735
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.07915335893630981
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2779134260",
+          "wikidata": "https://www.wikidata.org/wiki/Q12136",
+          "display_name": "Disease",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C524204448",
+          "wikidata": "https://www.wikidata.org/wiki/Q788926",
+          "display_name": "Infectious disease (medical specialty)",
+          "level": 3,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "pmh:oai:zenodo.org:5752959",
+          "is_oa": true,
+          "landing_page_url": "https://zenodo.org/record/5752959",
+          "pdf_url": "https://zenodo.org/record/5752959",
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/conferencePaper"
+        },
+        {
+          "id": "doi:10.5281/zenodo.5752959",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.5752959",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "ConferencePaper"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:zenodo.org:5752959",
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/5752959",
+        "pdf_url": "https://zenodo.org/record/5752959",
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "info:eu-repo/semantics/conferencePaper"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/3",
+          "display_name": "Good health and well-being",
+          "score": 0.7099999785423279
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G7842005466",
+          "display_name": null,
+          "funder_award_id": "Horizon 2020",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        },
+        {
+          "id": "https://openalex.org/G8285986087",
+          "display_name": "European Joint Programme on Rare Diseases",
+          "funder_award_id": "825575",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320300",
+          "display_name": "European Commission",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4205879676.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4205879676.grobid-xml"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W3031052312",
+        "https://openalex.org/W4389568370",
+        "https://openalex.org/W3032375762",
+        "https://openalex.org/W1995515455",
+        "https://openalex.org/W2080531066",
+        "https://openalex.org/W2586801360",
+        "https://openalex.org/W3108674512",
+        "https://openalex.org/W1506200166",
+        "https://openalex.org/W1489783725"
+      ],
+      "abstract_inverted_index": {
+        "One": [
+          0
+        ],
+        "year": [
+          1
+        ],
+        "ago,": [
+          2
+        ],
+        "the": [
+          3,
+          19,
+          63,
+          68,
+          88,
+          153
+        ],
+        "novel": [
+          4
+        ],
+        "COVID-19": [
+          5,
+          82,
+          119
+        ],
+        "infectious": [
+          6
+        ],
+        "disease": [
+          7,
+          66
+        ],
+        "emerged": [
+          8
+        ],
+        "and": [
+          9,
+          14,
+          31,
+          37,
+          51,
+          73,
+          122,
+          138,
+          150
+        ],
+        "spread,": [
+          10
+        ],
+        "causing": [
+          11
+        ],
+        "high": [
+          12
+        ],
+        "mortality": [
+          13
+        ],
+        "morbidity": [
+          15
+        ],
+        "rates": [
+          16
+        ],
+        "worldwide.": [
+          17
+        ],
+        "In": [
+          18,
+          143
+        ],
+        "OBO": [
+          20,
+          111
+        ],
+        "Foundry,": [
+          21
+        ],
+        "there": [
+          22,
+          101
+        ],
+        "are": [
+          23
+        ],
+        "more": [
+          24
+        ],
+        "than": [
+          25
+        ],
+        "one": [
+          26
+        ],
+        "hundred": [
+          27
+        ],
+        "ontologies": [
+          28,
+          83,
+          130
+        ],
+        "to": [
+          29,
+          61,
+          74,
+          98,
+          116,
+          128,
+          132
+        ],
+        "share": [
+          30
+        ],
+        "analyse": [
+          32
+        ],
+        "large-scale": [
+          33
+        ],
+        "datasets": [
+          34
+        ],
+        "for": [
+          35,
+          48,
+          126,
+          152
+        ],
+        "biological": [
+          36
+        ],
+        "biomedical": [
+          38
+        ],
+        "sciences.": [
+          39
+        ],
+        "However,": [
+          40
+        ],
+        "this": [
+          41,
+          55,
+          144
+        ],
+        "pandemic": [
+          42
+        ],
+        "revealed": [
+          43
+        ],
+        "that": [
+          44
+        ],
+        "we": [
+          45,
+          146
+        ],
+        "lack": [
+          46
+        ],
+        "tools": [
+          47
+        ],
+        "an": [
+          49
+        ],
+        "efficient": [
+          50
+        ],
+        "timely": [
+          52
+        ],
+        "exchange": [
+          53
+        ],
+        "of": [
+          54,
+          65,
+          70,
+          106
+        ],
+        "epidemiological": [
+          56,
+          107,
+          120
+        ],
+        "data": [
+          57
+        ],
+        "which": [
+          58
+        ],
+        "is": [
+          59
+        ],
+        "necessary": [
+          60
+        ],
+        "assess": [
+          62
+        ],
+        "impact": [
+          64
+        ],
+        "outbreaks,": [
+          67
+        ],
+        "efficacy": [
+          69
+        ],
+        "mitigating": [
+          71
+        ],
+        "interventions": [
+          72
+        ],
+        "provide": [
+          75
+        ],
+        "a": [
+          76,
+          103,
+          134
+        ],
+        "rapid": [
+          77
+        ],
+        "response.": [
+          78
+        ],
+        "Recently,": [
+          79
+        ],
+        "several": [
+          80
+        ],
+        "new": [
+          81
+        ],
+        "have": [
+          84
+        ],
+        "developed": [
+          85
+        ],
+        "such": [
+          86
+        ],
+        "as": [
+          87
+        ],
+        "IDO": [
+          89
+        ],
+        "extension": [
+          90
+        ],
+        "or": [
+          91,
+          131
+        ],
+        "CIDO.": [
+          92
+        ],
+        "Hence,": [
+          93
+        ],
+        "our": [
+          94,
+          148
+        ],
+        "research": [
+          95
+        ],
+        "question": [
+          96
+        ],
+        "was": [
+          97,
+          102
+        ],
+        "determine": [
+          99
+        ],
+        "if": [
+          100
+        ],
+        "good": [
+          104
+        ],
+        "representation": [
+          105
+        ],
+        "quantitative": [
+          108
+        ],
+        "concepts": [
+          109
+        ],
+        "in": [
+          110,
+          141
+        ],
+        "ontologies.": [
+          112
+        ],
+        "Our": [
+          113
+        ],
+        "objectives": [
+          114
+        ],
+        "were": [
+          115
+        ],
+        "identify": [
+          117
+        ],
+        "missing": [
+          118
+        ],
+        "terms": [
+          121
+        ],
+        "implement": [
+          123
+        ],
+        "axiom": [
+          124
+        ],
+        "patterns": [
+          125
+        ],
+        "extensions": [
+          127
+        ],
+        "existing": [
+          129
+        ],
+        "build": [
+          133
+        ],
+        "new,": [
+          135
+        ],
+        "logically": [
+          136
+        ],
+        "well-formed,": [
+          137
+        ],
+        "accurate": [
+          139
+        ],
+        "ontology": [
+          140
+        ],
+        "OBO.": [
+          142
+        ],
+        "study": [
+          145
+        ],
+        "present": [
+          147
+        ],
+        "findings": [
+          149
+        ],
+        "contributions": [
+          151
+        ],
+        "bio-ontologies": [
+          154
+        ],
+        "community.": [
+          155
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

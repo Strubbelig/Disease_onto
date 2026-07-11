@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "23",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32131804",
+      "36778102",
+      "26257252",
+      "26212927",
+      "26200973",
+      "29197095",
+      "33853401",
+      "20374436",
+      "26846282",
+      "35257843"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"neurologic examination\"[MeSH Terms] OR (\"neurologic\"[All Fields] AND \"examination\"[All Fields]) OR \"neurologic examination\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neurologic Examination Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

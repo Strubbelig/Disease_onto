@@ -1,0 +1,68 @@
+{
+  "languages": [
+    "en"
+  ],
+  "lang": "en",
+  "ontologyId": "covoc",
+  "loaded": "2026-06-26T09:02:15.687547699",
+  "updated": "2026-06-26T09:02:15.687547699",
+  "status": "LOADED",
+  "message": "",
+  "version": "2022-10-26",
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 563,
+  "numberOfProperties": 652,
+  "numberOfIndividuals": 0,
+  "config": {
+    "id": "covoc",
+    "versionIri": "http://purl.obolibrary.org/obo/covoc/releases/2022-10-26/covoc.owl",
+    "namespace": "covoc",
+    "preferredPrefix": "COVOC",
+    "title": "CoVoc Coronavirus Vocabulary",
+    "description": "The COVID-19 Vocabulary (COVoc) is an ontology containing terms related to the research of the COVID-19 pandemic. This includes host organisms, pathogenicity, gene and gene products, barrier gestures, treatments and more.",
+    "homepage": "https://github.com/EBISPOT/covoc",
+    "version": "2022-10-26",
+    "mailingList": null,
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000115"
+    ],
+    "synonymProperties": [
+      "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+    ],
+    "hierarchicalProperties": [
+      "http://purl.obolibrary.org/obo/BFO_0000050"
+    ],
+    "baseUris": [
+      "http://purl.obolibrary.org/obo/COVOC_"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "http://purl.obolibrary.org/obo/COVOC_"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/covoc?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/covoc/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/covoc/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/covoc/individuals"
+    }
+  }
+}

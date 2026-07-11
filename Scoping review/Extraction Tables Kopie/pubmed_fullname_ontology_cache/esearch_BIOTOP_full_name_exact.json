@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "14",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "17911910",
+      "18586729",
+      "28423831",
+      "19283317",
+      "19478019",
+      "23046561",
+      "21685092",
+      "18487840",
+      "23865855",
+      "21624161"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"BioTop\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

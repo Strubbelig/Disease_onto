@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "298",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34758253",
+      "30744660",
+      "36762645",
+      "35190816",
+      "30208311",
+      "37474567",
+      "37467750",
+      "40393460",
+      "40311258",
+      "33264411"
+    ],
+    "translationset": [
+      {
+        "from": "AURA",
+        "to": "\"epilepsy\"[MeSH Terms] OR \"epilepsy\"[All Fields] OR \"aura\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"epilepsy\"[MeSH Terms] OR \"epilepsy\"[All Fields] OR \"aura\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

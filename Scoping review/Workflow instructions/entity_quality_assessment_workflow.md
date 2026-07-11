@@ -61,17 +61,17 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
 - `demo_or_training_resource` — the ontology is a demo, tutorial, student thesis, or training exercise.
 - `value_set_or_collection` — the resource is a value-set collection or coding catalogue, not a formal ontology.
-- `not_disease_modelling_relevant` — the class is not conceptually relevant to disease modelling (e.g. a document field, administrative category, or generic label).
+- `out_of_scope` — the class is out of scope for the review: not conceptually relevant to disease modelling (e.g. a document field, administrative category, or generic label), or otherwise outside scope; elaboration may be given in `manual_exclusion_detail`.
 - `terminology_not_ontology` — the resource is a clinical terminology or code system without formal ontological structure adequate for the review purpose.
 - `duplicate_imported_term` — the class IRI belongs to another ontology; this occurrence is an import, not an independent implementation.
 - `obsolete_or_noncurrent` — the ontology or class is marked deprecated, inactive, retired, or otherwise non-current.
 - `insufficient_metadata` — too little metadata (definition, parents, provenance) to assess relevance or quality.
-- `out_of_scope_other` — excluded for a reason not covered above; elaboration required in `manual_exclusion_detail`.
 
 ### `ontology_type_manual`
 
 - `curated_ontology` — formally maintained, logically structured ontology intended for community reuse.
-- `clinical_terminology` — terminological resource primarily for clinical coding (e.g. SNOMED CT, LOINC, MeSH); may lack formal ontological structure.
+- `clinical_terminology` — terminological resource primarily for clinical coding (e.g. SNOMED CT, LOINC); may lack formal ontological structure.
+- `thesaurus` — controlled vocabulary/thesaurus organized primarily for term lookup, indexing, or synonym management, including NCIT, MeSH, and UMLS Metathesaurus for this review. Selecting this source type excludes the row from independent class-level modelling review; set `manual_include_status` to `exclude` and `manual_exclusion_reason` to `terminology_not_ontology`. Do not exclude an otherwise eligible ontology only because it cites, maps to, or exact-matches a thesaurus class.
 - `value_set` — collection of terms assembled for a specific coding context; not a standalone ontology.
 - `application_ontology` — ontology built for a single application domain or system; limited general reusability.
 - `demo_or_training_resource` — resource created for teaching, demonstration, or student exercise.
@@ -89,16 +89,18 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
 - Optional synthesis bucket. Use only after writing the free-text `upper_level_interpretation`; leave blank if the source's own model is more precise than the available buckets.
 - `entity_as_realizable_entity` — the reviewed entity is modelled at the broader level of realizable entity, without enough evidence to narrow it to disposition.
-- `entity_as_disposition` — the reviewed entity is modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
+- `entity_as_bfo:disposition` — the reviewed entity is modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
 - `entity_as_situation` — the reviewed entity is modelled as a situation, state of affairs, or configuration of circumstances.
+- `no_grounded_model` — the reviewed entity is modelled as a terminology/classification category without a clear commitment to what kind of biomedical entity disease is.
 - `entity_as_disorder` — the reviewed entity is modelled as a structural or functional disorder of a bodily entity (e.g. OGMS disorder).
 - `entity_as_process` — the reviewed entity is modelled as a pathological process or course of events unfolding over time (e.g. BFO process).
 - `entity_as_finding` — the reviewed entity is modelled as a clinical observation or finding recorded about a patient (e.g. SNOMED clinical finding).
-- `entity_as_condition` — the reviewed entity is modelled as a patient condition without further upper-ontological commitment.
-- `entity_as_state` — the reviewed entity is modelled as a state or state-like condition.
+- `entity_as_biotop:condition` — the reviewed entity is modelled as a BioTop-style condition (or reuses BioTop's condition): a patient condition without further upper-ontological commitment.
+- `entity_as_kantian_state` — the reviewed entity is modelled as a state in the Kantian sense: a way a substance/bearer is determined, rather than an independent entity.
 - `entity_as_pathology` — the reviewed entity is modelled as a pathological state or tissue-level change (e.g. morphological abnormality).
 - `entity_as_syndrome` — the reviewed entity is modelled as a named cluster of co-occurring signs and symptoms without a single unifying cause.
-- `mixed_or_unclear` — the class combines multiple views or the evidence is insufficient to assign one category.
+- `mixed_model` — the class intentionally combines more than one modelling perspective.
+- `unclear_model` — the available evidence is insufficient to assign a philosophical/modelling synthesis category.
 - `not_applicable` — the class is not a disease-like entity proper (e.g. a process or quality encountered through hierarchy traversal).
 
 ### Quality fields (`definition_quality`, `comment_quality`, `parentage_quality`, `provenance_quality`)
@@ -109,12 +111,9 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 - `absent` — the field is entirely missing.
 - `not_applicable` — the field is not a meaningful evidence type for this class or source (used for `comment_quality` only).
 
-### `quality_decision`
+### `quality_decision` legacy field
 
-- `high_confidence_include` — definition, parentage, and relevance are all adequate; no reservation.
-- `include_with_caveat` — usable but with a noted limitation (e.g. missing definition, imported term, shallow parentage) that should be acknowledged in reporting.
-- `exclude` — not used in substantive synthesis.
-- `uncertain_second_review` — confidence is insufficient for a unilateral decision; requires an independent second reviewer.
+This field is retained for compatibility with earlier exports, but it is no longer part of the active review workflow. Use `manual_include_status`, `upper_level_interpretation`, `disease_model_category`, the quality fields, `entity_quality_score`, and `review_notes` instead.
 
 ## Assessment Steps
 
@@ -130,11 +129,11 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
    The reviewer prints the evidence packet for one class, asks for the controlled-value annotations, writes the manual review annotations, and regenerates `disease_terms_review.ttl`.
 
-2. Check ontology-level eligibility.
+2. Record source context.
 
    Review the source context annotations on the class: `ontology_exclusion_status`, `ontology_exclusion_rule`, `ontology_scope_category`, `ontology_title`, `ontology_status`, `ontology_homepage`, `ontology_license`, `source_ontology_ids`, and `source_databases`.
 
-   Assign `ontology_type_manual` from its controlled list. If the source is clearly a demo, training resource, value-set collection, obsolete resource, or generated local artifact, keep the class in the review ontology for auditability but set `manual_include_status` to `exclude` and `manual_exclusion_reason` accordingly.
+   Assign `ontology_type_manual` from its controlled list. If the source is a `thesaurus`, exclude it from independent class-level modelling review and do not complete the downstream quality-assessment fields. Otherwise, do not decide final inclusion yet unless the source is obviously out of scope and no class-level evidence is needed.
 
 3. Decide whether the class is native or imported/reused.
 
@@ -144,13 +143,7 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
    If `review_route` is `dependency_only_no_independent_analysis`, do not complete the full quality-assessment route for that source ontology. List the source as a dependency appearance and analyze the native ontology named in `dependency_on_ontology_ids` instead.
 
-4. Assess entity relevance.
-
-   Ask whether the class is genuinely relevant to disease modelling, not merely a clinical data field, value-set category, document field, or generic label.
-
-   If it is not conceptually relevant, set `manual_include_status` to `exclude` and `manual_exclusion_reason` to `not_disease_modelling_relevant` or another matching value.
-
-5. Assess definition quality.
+4. Assess definition quality.
 
    Use the class annotations shown through the imported module: definitions, comments, synonyms, editorial notes, and provenance annotations.
 
@@ -163,7 +156,7 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
    Set `comment_quality` using the same scale (substitute `not_applicable` if comments are not a meaningful evidence type for this source).
 
-6. Assess parentage and upper-level modelling.
+5. Assess parentage and upper-level modelling.
 
    Use the asserted and imported superclass hierarchy visible in Protege, plus extracted helper annotations such as `parent_iris`, `parent_labels`, and `bfo_anchor` when present.
 
@@ -183,35 +176,32 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
    - `poor`: only minimal provenance available (e.g. retrieval date only, no version).
    - `absent`: no provenance metadata recorded.
 
-7. Optionally assign a synthesis category.
+6. Optionally assign a synthesis category.
 
    Choose `disease_model_category` only if a controlled bucket is already clear. The values are review synthesis aids, not a claim that every bucket corresponds to a named philosophical position. If the source model is specific, unusual, or not yet confidently categorizable, leave this blank and rely on `upper_level_interpretation`.
 
-8. Score entity quality.
+7. Score entity quality.
 
    Set `entity_quality_score` as a small integer:
 
    - `3`: clear, relevant, well-defined, and structurally interpretable.
    - `2`: relevant but incomplete or partially underspecified.
    - `1`: weak, vague, mostly terminological, or poorly grounded.
-   - `0`: exclude from substantive analysis.
+   - `0`: use only when the class is excluded at the final scope step.
 
-9. Decide inclusion.
+   Prefill rule: if definition, comment, and superclass/parent evidence are all absent, set `entity_quality_score` to `1`.
 
-   Set `quality_decision`:
+8. Decide final scope inclusion.
 
-   - `high_confidence_include`: suitable for analysis without reservation.
-   - `include_with_caveat`: usable, but note limitation in `review_notes`.
-   - `exclude`: not used in substantive synthesis.
-   - `uncertain_second_review`: needs an independent second pass.
+   Only after checking definition, comment, superclass/parentage, source context, and modelling interpretation, set `manual_include_status`.
 
-   Align `manual_include_status` with this decision: `include` or `maybe` for the first two, `exclude` for the third, `needs_second_review` for the fourth.
+   If the class is not conceptually relevant, set `manual_include_status` to `exclude` and `manual_exclusion_reason` to `out_of_scope` or another matching value. If the source is clearly a demo, training resource, value-set collection, obsolete resource, or generated local artifact, set the matching exclusion reason. For included, maybe, or second-review cases, leave `manual_exclusion_reason` and `manual_exclusion_detail` blank.
 
-10. Preserve auditability.
+9. Preserve auditability.
 
     Fill `reviewer`, `review_date`, and `review_notes`. Use ISO dates such as `2026-06-29`.
 
-    If a second reviewer checks the class, fill `second_reviewer`, `second_review_date`, `disagreement_flag` (`true` if decisions differ), and `adjudication_decision` (uses the same values as `quality_decision`).
+    If a second reviewer checks the class, fill `second_reviewer`, `second_review_date`, `disagreement_flag` (`true` if decisions differ), and `adjudication_decision`.
 
 ## Suggested Counting Rules
 

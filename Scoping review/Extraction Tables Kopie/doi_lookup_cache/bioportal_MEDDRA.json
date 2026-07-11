@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/a1c28ce0-0556-0137-4ba7-005056010073",
+      "name": "MedDRA MSSO",
+      "email": "mssohelp@meddra.org"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/admin"
+    ],
+    "acronym": "MEDDRA",
+    "name": "Medical Dictionary for Regulatory Activities Terminology (MedDRA)",
+    "@id": "https://data.bioontology.org/ontologies/MEDDRA",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/MEDDRA/submissions",
+      "properties": "https://data.bioontology.org/ontologies/MEDDRA/properties",
+      "classes": "https://data.bioontology.org/ontologies/MEDDRA/classes",
+      "single_class": "https://data.bioontology.org/ontologies/MEDDRA/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/MEDDRA/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/MEDDRA/schemes",
+      "collections": "https://data.bioontology.org/ontologies/MEDDRA/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/MEDDRA/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/MEDDRA/instances",
+      "metrics": "https://data.bioontology.org/ontologies/MEDDRA/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/MEDDRA/reviews",
+      "notes": "https://data.bioontology.org/ontologies/MEDDRA/notes",
+      "groups": "https://data.bioontology.org/ontologies/MEDDRA/groups",
+      "categories": "https://data.bioontology.org/ontologies/MEDDRA/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/MEDDRA/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/MEDDRA/projects",
+      "download": "https://data.bioontology.org/ontologies/MEDDRA/download",
+      "views": "https://data.bioontology.org/ontologies/MEDDRA/views",
+      "analytics": "https://data.bioontology.org/ontologies/MEDDRA/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/MEDDRA",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "UMLS",
+  "released": "2025-11-03T00:00:00.000+00:00",
+  "creationDate": "2026-03-22T00:00:00.000+00:00",
+  "homepage": "https://www.meddra.org/",
+  "publication": [
+    "https://www.meddra.org/msso-presentations"
+  ],
+  "documentation": "https://www.meddra.org/how-to-use/support-documentation",
+  "version": "28.0",
+  "description": "MedDRA is an international medical terminology with an emphasis on use for data entry, retrieval, analysis, and display. It applies to all phases of drug development, excluding animal toxicology, and to the health effects and malfunction of devices. An appendix includes concept descriptions which describe how a medical concept is interpreted, used, and classified within the MedDRA terminology. It is not intended as a medical definition. The concept descriptions are intended to aid the consistent and accurate use of MedDRA in coding, retrieval, and analysis.",
+  "status": "production",
+  "submissionId": 27,
+  "@id": "https://data.bioontology.org/ontologies/MEDDRA/submissions/27",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/MEDDRA/submissions/27/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

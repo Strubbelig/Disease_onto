@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/fns-h_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.3, released=2023-11-02T12:00:45.000-07:00, creationDate=2023-11-02T12:01:08.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/DOID_225> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease characterized by a group of signs and symptoms that occur together and characterize a particular abnormality." .
+<http://purl.obolibrary.org/obo/DOID_225> <http://purl.org/dc/terms/source> "review target in FNS-H from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/DOID_225> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_225> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://purl.obolibrary.org/obo/DOID_225> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/DOID_4> .
+<http://purl.obolibrary.org/obo/DOID_225> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#label> "DOID:disease" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.fns-cloud.eu/microbiome/FNS-H_0000000089> .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000026> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000089> <http://www.w3.org/2000/01/rdf-schema#label> "host_sample_attribute" .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000089> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.fns-cloud.eu/microbiome/FNS-H_0000000026> .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> <http://purl.obolibrary.org/obo/IAO_0000115> "List of diseases with which the host has been diagnosed; can include multiple diagnoses." .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> <http://purl.obolibrary.org/obo/IAO_0000115> "the pity here is that I could not find DO in Ontobee or OLS, but seems equivalent to the DOID ontology that is in ontobee or OLS. Here the aim is to specify the class above" .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> <http://www.w3.org/2000/01/rdf-schema#label> "host_disease_status" .
+<https://www.fns-cloud.eu/microbiome/FNS-H_0000000091> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.fns-cloud.eu/microbiome/FNS-H_0000000089> .

@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "39446823"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"case base\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"gastrics\"[All Fields] OR \"stomach\"[MeSH Terms] OR \"stomach\"[All Fields] OR \"gastric\"[All Fields]) AND \"dystemperament\"[All Fields] AND (\"persian people\"[Supplementary Concept] OR \"persian people\"[All Fields] OR \"persian\"[All Fields] OR \"persians\"[All Fields]) AND (\"medicin\"[All Fields] OR \"medicinal\"[All Fields] OR \"medicinally\"[All Fields] OR \"medicinals\"[All Fields] OR \"medicine\"[MeSH Terms] OR \"medicine\"[All Fields] OR \"medicine s\"[All Fields] OR \"medicines\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Case-base ontology for gastric dystemperament in Persian medicine\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

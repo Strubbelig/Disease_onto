@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/80b98360-ea50-0131-44fd-005056010074",
+      "name": "Dr. Sam Ansari ",
+      "email": "sam.ansari@pmi.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/erfan"
+    ],
+    "acronym": "CSEO",
+    "name": "Cigarette Smoke Exposure Ontology",
+    "@id": "https://data.bioontology.org/ontologies/CSEO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CSEO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CSEO/properties",
+      "classes": "https://data.bioontology.org/ontologies/CSEO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CSEO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CSEO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CSEO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CSEO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CSEO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CSEO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CSEO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CSEO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CSEO/notes",
+      "groups": "https://data.bioontology.org/ontologies/CSEO/groups",
+      "categories": "https://data.bioontology.org/ontologies/CSEO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CSEO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CSEO/projects",
+      "download": "https://data.bioontology.org/ontologies/CSEO/download",
+      "views": "https://data.bioontology.org/ontologies/CSEO/views",
+      "analytics": "https://data.bioontology.org/ontologies/CSEO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CSEO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2014-07-10T00:00:00.000+00:00",
+  "creationDate": "2014-07-10T11:38:44.000-07:00",
+  "homepage": "https://publicwiki-01.fraunhofer.de/CSEO-Wiki/index.php/Main_Page",
+  "publication": [
+    "http://www.jbiomedsem.com/content/5/1/31/abstract"
+  ],
+  "documentation": null,
+  "version": "1.0",
+  "description": "The CSEO has potential to become a widely used standard within the academic and industrial community. Mainly because of the emerging need of systems toxicology to controlled vocabularies and also the lack of suitable ontologies for this domain, the CSEO prepares the ground for integrative systems-based research in the exposure science.",
+  "status": "beta",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/CSEO/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CSEO/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

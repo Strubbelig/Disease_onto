@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3",
+    "retmax": "3",
+    "retstart": "0",
+    "idlist": [
+      "23665300",
+      "26347806",
+      "31737663"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"classification\"[MeSH Terms] OR \"classification\"[All Fields] OR \"taxonomies\"[All Fields] OR \"classification\"[MeSH Subheading] OR \"taxonomy\"[All Fields] OR \"taxonomy s\"[All Fields]) AND (\"rehabilitant\"[All Fields] OR \"rehabilitants\"[All Fields] OR \"rehabilitate\"[All Fields] OR \"rehabilitated\"[All Fields] OR \"rehabilitates\"[All Fields] OR \"rehabilitating\"[All Fields] OR \"rehabilitation\"[MeSH Terms] OR \"rehabilitation\"[All Fields] OR \"rehabilitations\"[All Fields] OR \"rehabilitative\"[All Fields] OR \"rehabilitation\"[MeSH Subheading] OR \"rehabilitation s\"[All Fields] OR \"rehabilitational\"[All Fields] OR \"rehabilitator\"[All Fields] OR \"rehabilitators\"[All Fields]) AND (\"knee\"[MeSH Terms] OR \"knee\"[All Fields] OR \"knee joint\"[MeSH Terms] OR (\"knee\"[All Fields] AND \"joint\"[All Fields]) OR \"knee joint\"[All Fields]) AND (\"condition s\"[All Fields] OR \"conditions\"[All Fields] OR \"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"condition\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Taxonomy for Rehabilitation of Knee Conditions\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

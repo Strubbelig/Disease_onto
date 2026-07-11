@@ -1,0 +1,62 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/genepio_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2026-04-13, released=2026-04-13T18:05:37.000-07:00, creationDate=2026-04-13T00:00:00.000+00:00, submissionId=3" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://purl.obolibrary.org/obo/IAO_0000115> "A group of signs, symptoms, and clinicopathological characteristics that may or may not have a genetic basis and collectively define an abnormal condition." .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/2004/02/skos/core#altLabel> "Syndrome" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/2004/02/skos/core#altLabel> "syndrome" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Trauma" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Traumatic Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Wound" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://purl.org/dc/terms/source> "review target in GENEPIO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .

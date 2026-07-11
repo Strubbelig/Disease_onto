@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "101",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31766582",
+      "37467750",
+      "40277584",
+      "39874809",
+      "31646703",
+      "41503685",
+      "38534090",
+      "41874070",
+      "39567494",
+      "42157291"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"hearing loss\"[MeSH Terms] OR (\"hearing\"[All Fields] AND \"loss\"[All Fields]) OR \"hearing loss\"[All Fields] OR (\"hearing\"[All Fields] AND \"impairment\"[All Fields]) OR \"hearing impairment\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Hearing Impairment Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

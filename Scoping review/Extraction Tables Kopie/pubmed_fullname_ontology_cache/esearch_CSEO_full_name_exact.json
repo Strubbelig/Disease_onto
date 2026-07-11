@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "30",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31861112",
+      "28692419",
+      "39182076",
+      "25093069",
+      "38333774",
+      "34519792",
+      "28704797",
+      "29299995",
+      "33981222",
+      "41181120"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"cigarett\"[All Fields] OR \"cigarette s\"[All Fields] OR \"cigaretts\"[All Fields] OR \"tobacco products\"[MeSH Terms] OR (\"tobacco\"[All Fields] AND \"products\"[All Fields]) OR \"tobacco products\"[All Fields] OR \"cigarette\"[All Fields] OR \"cigarettes\"[All Fields]) AND (\"smoke\"[Supplementary Concept] OR \"smoke\"[All Fields] OR \"smoke\"[MeSH Terms] OR \"smoke s\"[All Fields] OR \"smoked\"[All Fields] OR \"smokes\"[All Fields] OR \"smoking\"[MeSH Terms] OR \"smoking\"[All Fields] OR \"smokings\"[All Fields] OR \"smoking s\"[All Fields]) AND (\"exposure\"[All Fields] OR \"exposure s\"[All Fields] OR \"exposured\"[All Fields] OR \"exposures\"[All Fields] OR \"exposuring\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Cigarette Smoke Exposure Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

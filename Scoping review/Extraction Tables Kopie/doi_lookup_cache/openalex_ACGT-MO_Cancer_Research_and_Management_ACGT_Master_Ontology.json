@@ -1,0 +1,5751 @@
+{
+  "meta": {
+    "count": 18,
+    "db_response_time_ms": 206,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Cancer Research \"and\" Management ACGT Master Ontology ACGT-MO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Cancer Research and Management ACGT Master Ontology ACGT-MO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Cancer Research and Management ACGT Master Ontology ACGT-MO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W1964979998",
+      "doi": "https://doi.org/10.1016/j.jbi.2010.04.008",
+      "title": "The ACGT Master Ontology and its applications – Towards an ontology-driven cancer research and management system",
+      "display_name": "The ACGT Master Ontology and its applications – Towards an ontology-driven cancer research and management system",
+      "relevance_score": 874.45844,
+      "publication_year": 2010,
+      "publication_date": "2010-05-03",
+      "ids": {
+        "openalex": "https://openalex.org/W1964979998",
+        "doi": "https://doi.org/10.1016/j.jbi.2010.04.008",
+        "mag": "1964979998",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/20438862"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1016/j.jbi.2010.04.008",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1016/j.jbi.2010.04.008",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S11622463",
+          "display_name": "Journal of Biomedical Informatics",
+          "issn_l": "1532-0464",
+          "issn": [
+            "1532-0464",
+            "1532-0480"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Informatics",
+        "raw_type": "journal-article"
+      },
+      "type": "review",
+      "indexed_in": [
+        "crossref",
+        "datacite",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5755590",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5047229883",
+            "display_name": "Mathias Brochhausen",
+            "orcid": "https://orcid.org/0000-0003-1834-3856"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Mathias Brochhausen",
+          "raw_affiliation_strings": [
+            "Institute of Formal Ontology and Medical, Information Science, Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany. mathias.brochhausen@ifomis.uni-saarland.de",
+            "Institute of Formal Ontology and Medical, Information Science (IFOMIS), Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Formal Ontology and Medical, Information Science, Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany. mathias.brochhausen@ifomis.uni-saarland.de",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Formal Ontology and Medical, Information Science (IFOMIS), Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008305820",
+            "display_name": "Andrew D. Spear",
+            "orcid": "https://orcid.org/0000-0002-2745-3646"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I8606887",
+              "display_name": "Grand Valley State University",
+              "ror": "https://ror.org/001m1hv61",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I8606887"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew D. Spear",
+          "raw_affiliation_strings": [
+            "Grand Valley State University, 1 Campus Drive, Allendale, MI 49401, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Grand Valley State University, 1 Campus Drive, Allendale, MI 49401, USA",
+              "institution_ids": [
+                "https://openalex.org/I8606887"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5011293811",
+            "display_name": "Cristian Cocos",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I197191942",
+              "display_name": "St. Francis Xavier University",
+              "ror": "https://ror.org/01wcaxs37",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I197191942"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Cristian Cocos",
+          "raw_affiliation_strings": [
+            "Centre for Logic and Information, St. Francis Xavier University, Nova Scotia, Canada"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Centre for Logic and Information, St. Francis Xavier University, Nova Scotia, Canada",
+              "institution_ids": [
+                "https://openalex.org/I197191942"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075463666",
+            "display_name": "Gabriele Weiler",
+            "orcid": "https://orcid.org/0000-0002-3052-8776"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210152467",
+              "display_name": "Fraunhofer Institute for Biomedical Engineering",
+              "ror": "https://ror.org/05tpsgh61",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210152467",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gabriele Weiler",
+          "raw_affiliation_strings": [
+            "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210152467"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102462154",
+            "display_name": "Luis Martín",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I88060688",
+              "display_name": "Universidad Politécnica de Madrid",
+              "ror": "https://ror.org/03n6nwv02",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Luis Martín",
+          "raw_affiliation_strings": [
+            "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain",
+              "institution_ids": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5038412698",
+            "display_name": "Alberto Anguita",
+            "orcid": "https://orcid.org/0000-0002-1607-8465"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I88060688",
+              "display_name": "Universidad Politécnica de Madrid",
+              "ror": "https://ror.org/03n6nwv02",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Alberto Anguita",
+          "raw_affiliation_strings": [
+            "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain",
+              "institution_ids": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054197674",
+            "display_name": "Holger Stenzhorn",
+            "orcid": "https://orcid.org/0000-0001-9744-174X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Holger Stenzhorn",
+          "raw_affiliation_strings": [
+            "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102945442",
+            "display_name": "Evangelia Daskalaki",
+            "orcid": "https://orcid.org/0000-0002-0313-3226"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210121775",
+              "display_name": "FORTH Institute of Computer Science",
+              "ror": "https://ror.org/02tf48g55",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210121775",
+                "https://openalex.org/I8901234"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Evangelia Daskalaki",
+          "raw_affiliation_strings": [
+            "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234",
+                "https://openalex.org/I4210121775"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5091783417",
+            "display_name": "Fatima Schera",
+            "orcid": "https://orcid.org/0000-0001-8506-406X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210152467",
+              "display_name": "Fraunhofer Institute for Biomedical Engineering",
+              "ror": "https://ror.org/05tpsgh61",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210152467",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Fatima Schera",
+          "raw_affiliation_strings": [
+            "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210152467"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016775435",
+            "display_name": "Ulf Schwarz",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ulf Schwarz",
+          "raw_affiliation_strings": [
+            "Institute of Formal Ontology and Medical, Information Science (IFOMIS), Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany",
+            "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Formal Ontology and Medical, Information Science (IFOMIS), Saarland University, P.O. Box 15 11 50, 66041 Saarbrücken, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012956979",
+            "display_name": "Stelios Sfakianakis",
+            "orcid": "https://orcid.org/0000-0001-8424-4157"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210121775",
+              "display_name": "FORTH Institute of Computer Science",
+              "ror": "https://ror.org/02tf48g55",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210121775",
+                "https://openalex.org/I8901234"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stelios Sfakianakis",
+          "raw_affiliation_strings": [
+            "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234",
+                "https://openalex.org/I4210121775"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5009660597",
+            "display_name": "Stephan Kiefer",
+            "orcid": "https://orcid.org/0000-0001-6840-6240"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210152467",
+              "display_name": "Fraunhofer Institute for Biomedical Engineering",
+              "ror": "https://ror.org/05tpsgh61",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210152467",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stephan Kiefer",
+          "raw_affiliation_strings": [
+            "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210152467"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053610589",
+            "display_name": "Martin Dörr",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210121775",
+              "display_name": "FORTH Institute of Computer Science",
+              "ror": "https://ror.org/02tf48g55",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210121775",
+                "https://openalex.org/I8901234"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martin Dörr",
+          "raw_affiliation_strings": [
+            "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234",
+                "https://openalex.org/I4210121775"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5029830172",
+            "display_name": "Norbert Graf",
+            "orcid": "https://orcid.org/0000-0002-2248-323X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Norbert Graf",
+          "raw_affiliation_strings": [
+            "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5087123353",
+            "display_name": "Manolis Tsiknakis",
+            "orcid": "https://orcid.org/0000-0001-8454-1450"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210121775",
+              "display_name": "FORTH Institute of Computer Science",
+              "ror": "https://ror.org/02tf48g55",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210121775",
+                "https://openalex.org/I8901234"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Manolis Tsiknakis",
+          "raw_affiliation_strings": [
+            "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Foundation for Research and Technology Hellas (FORTH), Institute of Computer Science, Heraklion, Crete, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234",
+                "https://openalex.org/I4210121775"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 5,
+      "institutions_distinct_count": 7,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5047229883"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I91712215"
+      ],
+      "apc_list": {
+        "value": 2980,
+        "currency": "USD",
+        "value_usd": 2980
+      },
+      "apc_paid": null,
+      "fwci": 4.2033,
+      "has_fulltext": false,
+      "cited_by_count": 57,
+      "citation_normalized_percentile": {
+        "value": 0.94695041,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "44",
+        "issue": "1",
+        "first_page": "8",
+        "last_page": "25"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.45399999618530273,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.45399999618530273,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.4251999855041504,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11986",
+          "display_name": "Scientific Computing and Data Management",
+          "score": 0.020800000056624413,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1802",
+            "display_name": "Information Systems and Management"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/18",
+            "display_name": "Decision Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.769721508026123
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.752444863319397
+        },
+        {
+          "id": "https://openalex.org/keywords/workflow",
+          "display_name": "Workflow",
+          "score": 0.6059693694114685
+        },
+        {
+          "id": "https://openalex.org/keywords/context",
+          "display_name": "Context (archaeology)",
+          "score": 0.5211289525032043
+        },
+        {
+          "id": "https://openalex.org/keywords/software-engineering",
+          "display_name": "Software engineering",
+          "score": 0.5052946209907532
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.49039125442504883
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.4187370836734772
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.24957796931266785
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.2019444704055786
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.769721508026123
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.752444863319397
+        },
+        {
+          "id": "https://openalex.org/C177212765",
+          "wikidata": "https://www.wikidata.org/wiki/Q627335",
+          "display_name": "Workflow",
+          "level": 2,
+          "score": 0.6059693694114685
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.5211289525032043
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.5052946209907532
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.49039125442504883
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.4187370836734772
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.24957796931266785
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.2019444704055786
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C151730666",
+          "wikidata": "https://www.wikidata.org/wiki/Q7205",
+          "display_name": "Paleontology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003628",
+          "descriptor_name": "Database Management Systems",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D003628",
+          "descriptor_name": "Database Management Systems",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D003628",
+          "descriptor_name": "Database Management Systems",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D003628",
+          "descriptor_name": "Database Management Systems",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D003628",
+          "descriptor_name": "Database Management Systems",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008490",
+          "descriptor_name": "Medical Informatics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008490",
+          "descriptor_name": "Medical Informatics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008490",
+          "descriptor_name": "Medical Informatics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008490",
+          "descriptor_name": "Medical Informatics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008490",
+          "descriptor_name": "Medical Informatics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008495",
+          "descriptor_name": "Medical Oncology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008495",
+          "descriptor_name": "Medical Oncology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008495",
+          "descriptor_name": "Medical Oncology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008495",
+          "descriptor_name": "Medical Oncology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008495",
+          "descriptor_name": "Medical Oncology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009369",
+          "descriptor_name": "Neoplasms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009369",
+          "descriptor_name": "Neoplasms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009369",
+          "descriptor_name": "Neoplasms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009369",
+          "descriptor_name": "Neoplasms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009369",
+          "descriptor_name": "Neoplasms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016208",
+          "descriptor_name": "Databases, Factual",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016208",
+          "descriptor_name": "Databases, Factual",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016208",
+          "descriptor_name": "Databases, Factual",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016208",
+          "descriptor_name": "Databases, Factual",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016208",
+          "descriptor_name": "Databases, Factual",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D018875",
+          "descriptor_name": "Vocabulary, Controlled",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D018875",
+          "descriptor_name": "Vocabulary, Controlled",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D018875",
+          "descriptor_name": "Vocabulary, Controlled",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D018875",
+          "descriptor_name": "Vocabulary, Controlled",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D018875",
+          "descriptor_name": "Vocabulary, Controlled",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019295",
+          "descriptor_name": "Computational Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019295",
+          "descriptor_name": "Computational Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019295",
+          "descriptor_name": "Computational Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019295",
+          "descriptor_name": "Computational Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019295",
+          "descriptor_name": "Computational Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "doi:10.1016/j.jbi.2010.04.008",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1016/j.jbi.2010.04.008",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S11622463",
+            "display_name": "Journal of Biomedical Informatics",
+            "issn_l": "1532-0464",
+            "issn": [
+              "1532-0464",
+              "1532-0480"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Biomedical Informatics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:20438862",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20438862",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of biomedical informatics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:publica.fraunhofer.de:publica/224312",
+          "is_oa": false,
+          "landing_page_url": "https://publica.fraunhofer.de/handle/publica/224312",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400318",
+            "display_name": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4923324",
+            "host_organization_name": "Fraunhofer-Gesellschaft",
+            "host_organization_lineage": [
+              "https://openalex.org/I4923324"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "journal article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:5755590",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5755590",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Biomed Inform",
+          "raw_type": "Text"
+        },
+        {
+          "id": "doi:10.25504/fairsharing.frp1rm",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.25504/fairsharing.frp1rm",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407053452",
+            "display_name": "FAIRsharing.org",
+            "issn_l": null,
+            "issn": [],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:pubmedcentral.nih.gov:5755590",
+        "is_oa": true,
+        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5755590",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764455111",
+          "display_name": "PubMed Central",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1299303238",
+          "host_organization_name": "National Institutes of Health",
+          "host_organization_lineage": [
+            "https://openalex.org/I1299303238"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "J Biomed Inform",
+        "raw_type": "Text"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.6200000047683716,
+          "id": "https://metadata.un.org/sdg/9"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2225135173",
+          "display_name": null,
+          "funder_award_id": "U54 HG004028",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320306217",
+          "display_name": "Alliance for Cancer Gene Therapy",
+          "ror": "https://ror.org/00mms0j12"
+        },
+        {
+          "id": "https://openalex.org/F4320337348",
+          "display_name": "National Human Genome Research Institute",
+          "ror": "https://ror.org/00baak391"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 66,
+      "referenced_works": [
+        "https://openalex.org/W54109194",
+        "https://openalex.org/W157320947",
+        "https://openalex.org/W196922333",
+        "https://openalex.org/W1482102309",
+        "https://openalex.org/W1482253003",
+        "https://openalex.org/W1483046884",
+        "https://openalex.org/W1487672899",
+        "https://openalex.org/W1488389372",
+        "https://openalex.org/W1494598016",
+        "https://openalex.org/W1516728702",
+        "https://openalex.org/W1525293890",
+        "https://openalex.org/W1528558419",
+        "https://openalex.org/W1555643513",
+        "https://openalex.org/W1579546193",
+        "https://openalex.org/W1586305293",
+        "https://openalex.org/W1588552501",
+        "https://openalex.org/W1600475986",
+        "https://openalex.org/W1623284047",
+        "https://openalex.org/W1964979998",
+        "https://openalex.org/W1993996301",
+        "https://openalex.org/W1998923621",
+        "https://openalex.org/W2005379079",
+        "https://openalex.org/W2015196869",
+        "https://openalex.org/W2026836010",
+        "https://openalex.org/W2029596088",
+        "https://openalex.org/W2054541484",
+        "https://openalex.org/W2057613070",
+        "https://openalex.org/W2083198561",
+        "https://openalex.org/W2093993994",
+        "https://openalex.org/W2096906994",
+        "https://openalex.org/W2103260426",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2135060646",
+        "https://openalex.org/W2136803152",
+        "https://openalex.org/W2140004302",
+        "https://openalex.org/W2142613416",
+        "https://openalex.org/W2146871965",
+        "https://openalex.org/W2152787182",
+        "https://openalex.org/W2152844712",
+        "https://openalex.org/W2160674432",
+        "https://openalex.org/W2162124237",
+        "https://openalex.org/W2163670493",
+        "https://openalex.org/W2164085333",
+        "https://openalex.org/W2164346871",
+        "https://openalex.org/W2170419021",
+        "https://openalex.org/W2189069183",
+        "https://openalex.org/W2289173919",
+        "https://openalex.org/W2402984354",
+        "https://openalex.org/W2481787462",
+        "https://openalex.org/W2496357092",
+        "https://openalex.org/W2918103525",
+        "https://openalex.org/W3121883364",
+        "https://openalex.org/W3129697073",
+        "https://openalex.org/W4240557755",
+        "https://openalex.org/W4254369996",
+        "https://openalex.org/W6629024728",
+        "https://openalex.org/W6629496183",
+        "https://openalex.org/W6631009788",
+        "https://openalex.org/W6636039812",
+        "https://openalex.org/W6648855059",
+        "https://openalex.org/W6674744788",
+        "https://openalex.org/W6685050351",
+        "https://openalex.org/W6696551047",
+        "https://openalex.org/W6713336929",
+        "https://openalex.org/W7019178364",
+        "https://openalex.org/W7062583962"
+      ],
+      "related_works": [
+        "https://openalex.org/W2093262417",
+        "https://openalex.org/W2123131699",
+        "https://openalex.org/W650116260",
+        "https://openalex.org/W2378329187",
+        "https://openalex.org/W4390790060",
+        "https://openalex.org/W2134191509",
+        "https://openalex.org/W3209454962",
+        "https://openalex.org/W79697243",
+        "https://openalex.org/W2314257840",
+        "https://openalex.org/W2365800294"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 9
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 7
+        }
+      ],
+      "updated_date": "2026-07-01T08:55:40.977307",
+      "created_date": "2016-06-24T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W1503515907",
+      "doi": "https://doi.org/10.1007/978-3-540-88875-8_132",
+      "title": "Applications of the ACGT Master Ontology on Cancer",
+      "display_name": "Applications of the ACGT Master Ontology on Cancer",
+      "relevance_score": 279.01938,
+      "publication_year": 2008,
+      "publication_date": "2008-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W1503515907",
+        "doi": "https://doi.org/10.1007/978-3-540-88875-8_132",
+        "mag": "1503515907"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/978-3-540-88875-8_132",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/978-3-540-88875-8_132",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S106296714",
+          "display_name": "Lecture notes in computer science",
+          "issn_l": "0302-9743",
+          "issn": [
+            "0302-9743",
+            "1611-3349"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "book series"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Lecture Notes in Computer Science",
+        "raw_type": "book-chapter"
+      },
+      "type": "book-chapter",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://philpapers.org/archive/BROAOT-18.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5047229883",
+            "display_name": "Mathias Brochhausen",
+            "orcid": "https://orcid.org/0000-0003-1834-3856"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mathias Brochhausen",
+          "raw_affiliation_strings": [
+            "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075463666",
+            "display_name": "Gabriele Weiler",
+            "orcid": "https://orcid.org/0000-0002-3052-8776"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210152467",
+              "display_name": "Fraunhofer Institute for Biomedical Engineering",
+              "ror": "https://ror.org/05tpsgh61",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210152467",
+                "https://openalex.org/I4923324"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gabriele Weiler",
+          "raw_affiliation_strings": [
+            "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer Institute for Biomedical Engineering, St. Ingbert, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210152467"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102462154",
+            "display_name": "Luis Martín",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I88060688",
+              "display_name": "Universidad Politécnica de Madrid",
+              "ror": "https://ror.org/03n6nwv02",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Luis Martín",
+          "raw_affiliation_strings": [
+            "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biomedical Informatics Group, Artificial Intelligence Laboratory, School of Computer Science, Universidad Politécnica de Madrid, Madrid, Spain",
+              "institution_ids": [
+                "https://openalex.org/I88060688"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5011293811",
+            "display_name": "Cristian Cocos",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Cristian Cocos",
+          "raw_affiliation_strings": [
+            "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054197674",
+            "display_name": "Holger Stenzhorn",
+            "orcid": "https://orcid.org/0000-0001-9744-174X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801240073",
+              "display_name": "University Medical Center Freiburg",
+              "ror": "https://ror.org/03vzbgh69",
+              "country_code": "DE",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I2801240073"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Holger Stenzhorn",
+          "raw_affiliation_strings": [
+            "Institute of Medical Biometry and Medical Informatics, University Medical Center, Freiburg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Medical Biometry and Medical Informatics, University Medical Center, Freiburg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I2801240073"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5029830172",
+            "display_name": "Norbert Graf",
+            "orcid": "https://orcid.org/0000-0002-2248-323X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Norbert Graf",
+          "raw_affiliation_strings": [
+            "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Paediatric Haematology and Oncology, Saarland University Hospital, Homburg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053610589",
+            "display_name": "Martin Dörr",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martin Dörr",
+          "raw_affiliation_strings": [
+            "Institute of Computer Science, Foundation for Research and Technology-Hellas (FORTH), Heraklion, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Computer Science, Foundation for Research and Technology-Hellas (FORTH), Heraklion, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5087123353",
+            "display_name": "Manolis Tsiknakis",
+            "orcid": "https://orcid.org/0000-0001-8454-1450"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I8901234",
+              "display_name": "Foundation for Research and Technology Hellas",
+              "ror": "https://ror.org/052rphn09",
+              "country_code": "GR",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ],
+          "countries": [
+            "GR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Manolis Tsiknakis",
+          "raw_affiliation_strings": [
+            "Institute of Computer Science, Foundation for Research and Technology-Hellas (FORTH), Heraklion, Greece"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Computer Science, Foundation for Research and Technology-Hellas (FORTH), Heraklion, Greece",
+              "institution_ids": [
+                "https://openalex.org/I8901234"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5051216244",
+            "display_name": "Barry Smith",
+            "orcid": "https://orcid.org/0000-0003-1384-116X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91712215",
+              "display_name": "Saarland University",
+              "ror": "https://ror.org/01jdpyv68",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Barry Smith",
+          "raw_affiliation_strings": [
+            "Department of Philosophy and New York State Center of Excellence in Bioinformatics and Life Sciences, University at Buffalo, USA",
+            "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Philosophy and New York State Center of Excellence in Bioinformatics and Life Sciences, University at Buffalo, USA",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "IFOMIS, Saarland University, P.O.15 11 50, 66041, Saarbrücken, Germany",
+              "institution_ids": [
+                "https://openalex.org/I91712215"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 5000,
+        "currency": "EUR",
+        "value_usd": 5392
+      },
+      "apc_paid": null,
+      "fwci": 2.7604,
+      "has_fulltext": true,
+      "cited_by_count": 5,
+      "citation_normalized_percentile": {
+        "value": 0.89954732,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 94
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "1046",
+        "last_page": "1055"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9998000264167786,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9998000264167786,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.993399977684021,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.9343000054359436,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.825727105140686
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7623634338378906
+        },
+        {
+          "id": "https://openalex.org/keywords/terminology",
+          "display_name": "Terminology",
+          "score": 0.7065500020980835
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.5466471314430237
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.5395784378051758
+        },
+        {
+          "id": "https://openalex.org/keywords/data-exchange",
+          "display_name": "Data exchange",
+          "score": 0.4732666015625
+        },
+        {
+          "id": "https://openalex.org/keywords/resource",
+          "display_name": "Resource (disambiguation)",
+          "score": 0.46025407314300537
+        },
+        {
+          "id": "https://openalex.org/keywords/software-engineering",
+          "display_name": "Software engineering",
+          "score": 0.379225492477417
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.36401376128196716
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.2349528670310974
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.21284076571464539
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.825727105140686
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7623634338378906
+        },
+        {
+          "id": "https://openalex.org/C547195049",
+          "wikidata": "https://www.wikidata.org/wiki/Q1725664",
+          "display_name": "Terminology",
+          "level": 2,
+          "score": 0.7065500020980835
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.5466471314430237
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.5395784378051758
+        },
+        {
+          "id": "https://openalex.org/C15845906",
+          "wikidata": "https://www.wikidata.org/wiki/Q1172338",
+          "display_name": "Data exchange",
+          "level": 2,
+          "score": 0.4732666015625
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.46025407314300537
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.379225492477417
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.36401376128196716
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.2349528670310974
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.21284076571464539
+        },
+        {
+          "id": "https://openalex.org/C31258907",
+          "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+          "display_name": "Computer network",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "doi:10.1007/978-3-540-88875-8_132",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1007/978-3-540-88875-8_132",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S106296714",
+            "display_name": "Lecture notes in computer science",
+            "issn_l": "0302-9743",
+            "issn": [
+              "0302-9743",
+              "1611-3349"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "book series"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Lecture Notes in Computer Science",
+          "raw_type": "book-chapter"
+        },
+        {
+          "id": "pmh:oai:philarchive.org/rec/BROAOT-18",
+          "is_oa": true,
+          "landing_page_url": "https://philarchive.org/rec/BROAOT-18",
+          "pdf_url": "https://philpapers.org/archive/BROAOT-18.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402130",
+            "display_name": "PhilPapers (PhilPapers Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.145.2530",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.145.2530",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://ontology.buffalo.edu/medo/ACGT.pdf",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:oa.upm.es:4182",
+          "is_oa": true,
+          "landing_page_url": "http://oa.upm.es/4182/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196323",
+            "display_name": "UPM Digital Archive (Technical University of Madrid)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I88060688",
+            "host_organization_name": "Universidad Politécnica de Madrid",
+            "host_organization_lineage": [
+              "https://openalex.org/I88060688"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "On the Move to Meaningful Internet Systems: OTM 2008 Workshops OTM Confederated International Workshops and Posters, ADI, AWeSoMe, COMBEK, EI2N, IWSSA, MONET, OnToContent + QSI, ORM, PerSys, RDDS, SEMELS, and SWWS 2008 | OTM Confederated international Workshops and Posters on on the Move To Meaningful internet Systems: 2008 Workshops: Adi, Awesome, Combek, Ei2n, Iwssa, Monet, ontocontent + Qsi, Orm, Persys, Rdds, Semels, and SWWS | 09/11/2008-14/11/2008 | Monterrey, Mexico",
+          "raw_type": "info:eu-repo/semantics/conferenceObject"
+        },
+        {
+          "id": "pmh:oai:philpapers.org/rec/BROAOT-18",
+          "is_oa": false,
+          "landing_page_url": "https://philpapers.org/rec/BROAOT-18",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402131",
+            "display_name": "PhilPapers (PhilPapers Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:philarchive.org/rec/BROAOT-18",
+        "is_oa": true,
+        "landing_page_url": "https://philarchive.org/rec/BROAOT-18",
+        "pdf_url": "https://philpapers.org/archive/BROAOT-18.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402130",
+          "display_name": "PhilPapers (PhilPapers Foundation)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Partnerships for the goals",
+          "score": 0.550000011920929,
+          "id": "https://metadata.un.org/sdg/17"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W1503515907.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W1503515907.grobid-xml"
+      },
+      "referenced_works_count": 28,
+      "referenced_works": [
+        "https://openalex.org/W26772505",
+        "https://openalex.org/W54109194",
+        "https://openalex.org/W196922333",
+        "https://openalex.org/W236490734",
+        "https://openalex.org/W638789088",
+        "https://openalex.org/W1482253003",
+        "https://openalex.org/W1494598016",
+        "https://openalex.org/W1501546233",
+        "https://openalex.org/W1555520648",
+        "https://openalex.org/W1579641819",
+        "https://openalex.org/W1586305293",
+        "https://openalex.org/W1623284047",
+        "https://openalex.org/W2096679230",
+        "https://openalex.org/W2103260426",
+        "https://openalex.org/W2132722663",
+        "https://openalex.org/W2159151673",
+        "https://openalex.org/W2164085333",
+        "https://openalex.org/W2164346871",
+        "https://openalex.org/W2170419021",
+        "https://openalex.org/W2481787462",
+        "https://openalex.org/W2495460329",
+        "https://openalex.org/W2585897761",
+        "https://openalex.org/W2914007910",
+        "https://openalex.org/W4240557755",
+        "https://openalex.org/W4247376166",
+        "https://openalex.org/W4254369996",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W4300059635"
+      ],
+      "related_works": [
+        "https://openalex.org/W2114954739",
+        "https://openalex.org/W2159818280",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W2889792096",
+        "https://openalex.org/W1794266373",
+        "https://openalex.org/W4251889114",
+        "https://openalex.org/W2363188691",
+        "https://openalex.org/W1953363106",
+        "https://openalex.org/W176267515",
+        "https://openalex.org/W4255991504"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2012,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2168595932",
+      "doi": "https://doi.org/10.2390/biecoll-jib-2010-126",
+      "title": "An Ontology for Description of Drug Discovery Investigations",
+      "display_name": "An Ontology for Description of Drug Discovery Investigations",
+      "relevance_score": 193.03085,
+      "publication_year": 2010,
+      "publication_date": "2010-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2168595932",
+        "doi": "https://doi.org/10.2390/biecoll-jib-2010-126",
+        "mag": "2168595932",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/20375446"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmid:20375446",
+        "is_oa": false,
+        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20375446",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306525036",
+          "display_name": "PubMed",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1299303238",
+          "host_organization_name": "National Institutes of Health",
+          "host_organization_lineage": [
+            "https://openalex.org/I1299303238"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of integrative bioinformatics",
+        "raw_type": null
+      },
+      "type": "article",
+      "indexed_in": [
+        "datacite",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.research.manchester.ac.uk/portal/en/publications/an-ontology-for-description-of-drug-discovery-investigations(42d39c45-fa84-43b7-9315-1c77e96b390a).html",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102925600",
+            "display_name": "Da Qi",
+            "orcid": "https://orcid.org/0000-0001-6079-9764"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I16038530",
+              "display_name": "Aberystwyth University",
+              "ror": "https://ror.org/015m2p889",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Qi, Da",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Aberystwyth University,UK#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Aberystwyth University,UK#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5020822487",
+            "display_name": "Ross D. King",
+            "orcid": "https://orcid.org/0000-0001-7208-4387"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "King, Ross D.",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5076759117",
+            "display_name": "Andrew L. Hopkins",
+            "orcid": "https://orcid.org/0000-0003-1977-018X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Hopkins, Andrew L.",
+          "raw_affiliation_strings": [
+            "Aberystwyth University ,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Aberystwyth University ,",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008865110",
+            "display_name": "G. Richard Bickerton",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bickerton, G. Richard J.",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5022052915",
+            "display_name": "Larisa Soldatova",
+            "orcid": "https://orcid.org/0000-0001-6489-3029"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Soldatova, Larisa N.",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 1.3424,
+      "has_fulltext": true,
+      "cited_by_count": 28,
+      "citation_normalized_percentile": {
+        "value": 0.80187227,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "7",
+        "issue": "3",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13937",
+          "display_name": "Genetics, Bioinformatics, and Biomedical Research",
+          "score": 0.994700014591217,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.9677000045776367,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.8465396761894226
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6894303560256958
+        },
+        {
+          "id": "https://openalex.org/keywords/pipeline",
+          "display_name": "Pipeline (software)",
+          "score": 0.6048359274864197
+        },
+        {
+          "id": "https://openalex.org/keywords/drug-discovery",
+          "display_name": "Drug discovery",
+          "score": 0.48753854632377625
+        },
+        {
+          "id": "https://openalex.org/keywords/open-biomedical-ontologies",
+          "display_name": "Open Biomedical Ontologies",
+          "score": 0.42373186349868774
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.41001346707344055
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.393070787191391
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.34602510929107666
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.27895814180374146
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-alignment",
+          "display_name": "Ontology alignment",
+          "score": 0.23655259609222412
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.20159226655960083
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.1795395314693451
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.8465396761894226
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6894303560256958
+        },
+        {
+          "id": "https://openalex.org/C43521106",
+          "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+          "display_name": "Pipeline (software)",
+          "level": 2,
+          "score": 0.6048359274864197
+        },
+        {
+          "id": "https://openalex.org/C74187038",
+          "wikidata": "https://www.wikidata.org/wiki/Q1418791",
+          "display_name": "Drug discovery",
+          "level": 2,
+          "score": 0.48753854632377625
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.42373186349868774
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.41001346707344055
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.393070787191391
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.34602510929107666
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.27895814180374146
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.23655259609222412
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.20159226655960083
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.1795395314693451
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D012371",
+          "descriptor_name": "Robotics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012371",
+          "descriptor_name": "Robotics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012371",
+          "descriptor_name": "Robotics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019451",
+          "descriptor_name": "Information Management",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019451",
+          "descriptor_name": "Information Management",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019451",
+          "descriptor_name": "Information Management",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D055808",
+          "descriptor_name": "Drug Discovery",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D055808",
+          "descriptor_name": "Drug Discovery",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D055808",
+          "descriptor_name": "Drug Discovery",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "pmid:20375446",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20375446",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of integrative bioinformatics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:discovery.dundee.ac.uk:openaire_cris_publications/f07fc3ca-d4d5-43c9-84d1-a5db62567ebb",
+          "is_oa": false,
+          "landing_page_url": "https://discovery.dundee.ac.uk/en/publications/f07fc3ca-d4d5-43c9-84d1-a5db62567ebb",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400523",
+            "display_name": "Discovery Research Portal (University of Dundee)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I177639307",
+            "host_organization_name": "University of Dundee",
+            "host_organization_lineage": [
+              "https://openalex.org/I177639307"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Qi, D, King, R D, Hopkins, A L, Bickerton, G R J & Soldatova, L N 2010, 'An ontology for description of drug discovery investigations', Journal of Integrative Bioinformatics, vol. 7, no. 3, 126. https://doi.org/10.2390/biecoll-jib-2010-126",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:pure.atira.dk:publications/42d39c45-fa84-43b7-9315-1c77e96b390a",
+          "is_oa": true,
+          "landing_page_url": "https://research.manchester.ac.uk/en/publications/42d39c45-fa84-43b7-9315-1c77e96b390a",
+          "pdf_url": "https://www.research.manchester.ac.uk/portal/en/publications/an-ontology-for-description-of-drug-discovery-investigations(42d39c45-fa84-43b7-9315-1c77e96b390a).html",
+          "source": {
+            "id": "https://openalex.org/S4306400662",
+            "display_name": "Research Explorer (The University of Manchester)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I28407311",
+            "host_organization_name": "University of Manchester",
+            "host_organization_lineage": [
+              "https://openalex.org/I28407311"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Qi, D, King, R D, Hopkins, A L, Bickerton, G R J & Soldatova, L N 2010, 'An ontology for description of drug discovery investigations.', Journal of integrative bioinformatics, vol. 7, no. 3. https://doi.org/10.2390/biecoll-jib-2010-126",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:biecoll.ub.uni-bielefeld.de:5026",
+          "is_oa": false,
+          "landing_page_url": "http://biecoll.ub.uni-bielefeld.de/volltexte/2010/5026/",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://journal.imbio.de/article.php?aid=126",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "doi:10.2390/biecoll-jib-2010-126",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2390/biecoll-jib-2010-126",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401670",
+            "display_name": "PUB – Publications at Bielefeld University (Bielefeld University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I20121455",
+            "host_organization_name": "Bielefeld University",
+            "host_organization_lineage": [
+              "https://openalex.org/I20121455"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:pure.atira.dk:publications/42d39c45-fa84-43b7-9315-1c77e96b390a",
+        "is_oa": true,
+        "landing_page_url": "https://research.manchester.ac.uk/en/publications/42d39c45-fa84-43b7-9315-1c77e96b390a",
+        "pdf_url": "https://www.research.manchester.ac.uk/portal/en/publications/an-ontology-for-description-of-drug-discovery-investigations(42d39c45-fa84-43b7-9315-1c77e96b390a).html",
+        "source": {
+          "id": "https://openalex.org/S4306400662",
+          "display_name": "Research Explorer (The University of Manchester)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I28407311",
+          "host_organization_name": "University of Manchester",
+          "host_organization_lineage": [
+            "https://openalex.org/I28407311"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Qi, D, King, R D, Hopkins, A L, Bickerton, G R J & Soldatova, L N 2010, 'An ontology for description of drug discovery investigations.', Journal of integrative bioinformatics, vol. 7, no. 3. https://doi.org/10.2390/biecoll-jib-2010-126",
+        "raw_type": "info:eu-repo/semantics/article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G1488556959",
+          "display_name": "Development of an Ontology for Drug Screening and Design",
+          "funder_award_id": "BB/E018025/1",
+          "funder_id": "https://openalex.org/F4320334629",
+          "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+        },
+        {
+          "id": "https://openalex.org/G280826915",
+          "display_name": null,
+          "funder_award_id": "BB/E018025/1",
+          "funder_id": "https://openalex.org/F4320334629",
+          "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+        },
+        {
+          "id": "https://openalex.org/G4110220073",
+          "display_name": null,
+          "funder_award_id": "BB/FOF/PF/13/09",
+          "funder_id": "https://openalex.org/F4320334629",
+          "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320032",
+          "display_name": "Aberystwyth University",
+          "ror": "https://ror.org/015m2p889"
+        },
+        {
+          "id": "https://openalex.org/F4320334629",
+          "display_name": "Biotechnology and Biological Sciences Research Council",
+          "ror": "https://ror.org/00cwqg982"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2168595932.pdf"
+      },
+      "referenced_works_count": 15,
+      "referenced_works": [
+        "https://openalex.org/W1972821149",
+        "https://openalex.org/W2005718191",
+        "https://openalex.org/W2012268371",
+        "https://openalex.org/W2042721486",
+        "https://openalex.org/W2050355460",
+        "https://openalex.org/W2061843861",
+        "https://openalex.org/W2091223191",
+        "https://openalex.org/W2103017472",
+        "https://openalex.org/W2103260426",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2114804859",
+        "https://openalex.org/W2125904022",
+        "https://openalex.org/W2136636278",
+        "https://openalex.org/W2178026535",
+        "https://openalex.org/W2520240897"
+      ],
+      "related_works": [
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2103017472",
+        "https://openalex.org/W46109541",
+        "https://openalex.org/W2124850752",
+        "https://openalex.org/W1964298951",
+        "https://openalex.org/W2402441198",
+        "https://openalex.org/W2106537457",
+        "https://openalex.org/W145466531",
+        "https://openalex.org/W2400146846",
+        "https://openalex.org/W2128982045",
+        "https://openalex.org/W2123152121",
+        "https://openalex.org/W2114804859",
+        "https://openalex.org/W2108414747",
+        "https://openalex.org/W2103260426",
+        "https://openalex.org/W89564465",
+        "https://openalex.org/W2143094087",
+        "https://openalex.org/W2078161054",
+        "https://openalex.org/W1975062706",
+        "https://openalex.org/W184690596",
+        "https://openalex.org/W1483357098"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0
+        ],
+        "paper": [
+          1
+        ],
+        "presents": [
+          2
+        ],
+        "an": [
+          3
+        ],
+        "ontology": [
+          4,
+          67
+        ],
+        "for": [
+          5
+        ],
+        "the": [
+          6,
+          17,
+          33,
+          37,
+          40,
+          46,
+          80,
+          83
+        ],
+        "description": [
+          7
+        ],
+        "of": [
+          8,
+          19,
+          45
+        ],
+        "Drug": [
+          9
+        ],
+        "Discovery": [
+          10
+        ],
+        "Investigation": [
+          11
+        ],
+        "(DDI).This": [
+          12
+        ],
+        "has": [
+          13
+        ],
+        "been": [
+          14
+        ],
+        "developed": [
+          15
+        ],
+        "through": [
+          16
+        ],
+        "use": [
+          18
+        ],
+        "a": [
+          20
+        ],
+        "Robot": [
+          21
+        ],
+        "Scientist": [
+          22
+        ],
+        "\"Eve\",": [
+          23
+        ],
+        "and": [
+          24,
+          36,
+          42,
+          54,
+          63
+        ],
+        "in": [
+          25,
+          39
+        ],
+        "consultation": [
+          26
+        ],
+        "with": [
+          27,
+          65,
+          75
+        ],
+        "industry.": [
+          28
+        ],
+        "DDI": [
+          29,
+          50,
+          71,
+          92
+        ],
+        "aims": [
+          30
+        ],
+        "to": [
+          31,
+          57,
+          60,
+          72
+        ],
+        "define": [
+          32
+        ],
+        "principle": [
+          34
+        ],
+        "entities": [
+          35
+        ],
+        "relations": [
+          38
+        ],
+        "research": [
+          41
+        ],
+        "development": [
+          43
+        ],
+        "phase": [
+          44
+        ],
+        "drug": [
+          47
+        ],
+        "discovery": [
+          48
+        ],
+        "pipeline.": [
+          49
+        ],
+        "is": [
+          51,
+          93
+        ],
+        "highly": [
+          52
+        ],
+        "transferable": [
+          53
+        ],
+        "extendable": [
+          55
+        ],
+        "due": [
+          56
+        ],
+        "its": [
+          58
+        ],
+        "adherence": [
+          59
+        ],
+        "accepted": [
+          61
+        ],
+        "standards,": [
+          62
+        ],
+        "compliance": [
+          64
+        ],
+        "existing": [
+          66
+        ],
+        "resources.": [
+          68
+        ],
+        "This": [
+          69
+        ],
+        "enables": [
+          70
+        ],
+        "be": [
+          73
+        ],
+        "integrated": [
+          74
+        ],
+        "such": [
+          76
+        ],
+        "related": [
+          77
+        ],
+        "ontologies": [
+          78
+        ],
+        "as": [
+          79
+        ],
+        "Vaccine": [
+          81
+        ],
+        "Ontology,": [
+          82,
+          90
+        ],
+        "Advancing": [
+          84
+        ],
+        "Clinico-Genomic": [
+          85
+        ],
+        "Trials": [
+          86
+        ],
+        "on": [
+          87
+        ],
+        "Cancer": [
+          88
+        ],
+        "Master": [
+          89
+        ],
+        "etc.": [
+          91
+        ],
+        "available": [
+          94
+        ],
+        "at": [
+          95
+        ],
+        "http://purl.org/ddi/wikipedia": [
+          96
+        ],
+        "or": [
+          97
+        ],
+        "http://purl.org/ddi/home.": [
+          98
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W3001513985",
+      "doi": "https://doi.org/10.3390/info11020066",
+      "title": "Formal Ontologies in Information Systems Development: A Systematic Review",
+      "display_name": "Formal Ontologies in Information Systems Development: A Systematic Review",
+      "relevance_score": 186.79263,
+      "publication_year": 2020,
+      "publication_date": "2020-01-27",
+      "ids": {
+        "openalex": "https://openalex.org/W3001513985",
+        "doi": "https://doi.org/10.3390/info11020066",
+        "mag": "3001513985"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3390/info11020066",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/info11020066",
+        "pdf_url": "https://www.mdpi.com/2078-2489/11/2/66/pdf?version=1582952056",
+        "source": {
+          "id": "https://openalex.org/S4210219776",
+          "display_name": "Information",
+          "issn_l": "2078-2489",
+          "issn": [
+            "2078-2489"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Information",
+        "raw_type": "journal-article"
+      },
+      "type": "review",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2078-2489/11/2/66/pdf?version=1582952056",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5061937786",
+            "display_name": "Martina Husáková",
+            "orcid": "https://orcid.org/0000-0003-1116-4556"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I75092371",
+              "display_name": "University of Hradec Králové",
+              "ror": "https://ror.org/05k238v14",
+              "country_code": "CZ",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I75092371"
+              ]
+            }
+          ],
+          "countries": [
+            "CZ"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martina Husáková",
+          "raw_affiliation_strings": [
+            "Faculty of Informatics and Management, Department of Information Technologies, University of Hradec Králové, 500 03 Hradec Králové, Czech Republic"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1116-4556",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculty of Informatics and Management, Department of Information Technologies, University of Hradec Králové, 500 03 Hradec Králové, Czech Republic",
+              "institution_ids": [
+                "https://openalex.org/I75092371"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5057565806",
+            "display_name": "Vladimír Bureš",
+            "orcid": "https://orcid.org/0000-0001-7788-7445"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I75092371",
+              "display_name": "University of Hradec Králové",
+              "ror": "https://ror.org/05k238v14",
+              "country_code": "CZ",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I75092371"
+              ]
+            }
+          ],
+          "countries": [
+            "CZ"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Vladimír Bureš",
+          "raw_affiliation_strings": [
+            "Faculty of Informatics and Management, Department of Information Technologies, University of Hradec Králové, 500 03 Hradec Králové, Czech Republic"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7788-7445",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculty of Informatics and Management, Department of Information Technologies, University of Hradec Králové, 500 03 Hradec Králové, Czech Republic",
+              "institution_ids": [
+                "https://openalex.org/I75092371"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5057565806"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I75092371"
+      ],
+      "apc_list": {
+        "value": 1400,
+        "currency": "CHF",
+        "value_usd": 1515
+      },
+      "apc_paid": {
+        "value": 1400,
+        "currency": "CHF",
+        "value_usd": 1515
+      },
+      "fwci": 2.7319,
+      "has_fulltext": true,
+      "cited_by_count": 35,
+      "citation_normalized_percentile": {
+        "value": 0.92024409,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": "2",
+        "first_page": "66",
+        "last_page": "66"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.9991999864578247,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9991999864578247,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10703",
+          "display_name": "Business Process Modeling and Analysis",
+          "score": 0.9962999820709229,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1404",
+            "display_name": "Management Information Systems"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/14",
+            "display_name": "Business, Management and Accounting"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10679",
+          "display_name": "Service-Oriented Architecture and Web Services",
+          "score": 0.9955000281333923,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1710",
+            "display_name": "Information Systems"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7442942261695862
+        },
+        {
+          "id": "https://openalex.org/keywords/idef5",
+          "display_name": "IDEF5",
+          "score": 0.570927619934082
+        },
+        {
+          "id": "https://openalex.org/keywords/information-system",
+          "display_name": "Information system",
+          "score": 0.549755334854126
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.51971435546875
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-representation-and-reasoning",
+          "display_name": "Knowledge representation and reasoning",
+          "score": 0.46797874569892883
+        },
+        {
+          "id": "https://openalex.org/keywords/interoperability",
+          "display_name": "Interoperability",
+          "score": 0.46795380115509033
+        },
+        {
+          "id": "https://openalex.org/keywords/unified-modeling-language",
+          "display_name": "Unified Modeling Language",
+          "score": 0.4558717906475067
+        },
+        {
+          "id": "https://openalex.org/keywords/software-engineering",
+          "display_name": "Software engineering",
+          "score": 0.4288836121559143
+        },
+        {
+          "id": "https://openalex.org/keywords/semantics",
+          "display_name": "Semantics (computer science)",
+          "score": 0.4258440136909485
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.3959304094314575
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.3782854676246643
+        },
+        {
+          "id": "https://openalex.org/keywords/programming-language",
+          "display_name": "Programming language",
+          "score": 0.24656206369400024
+        },
+        {
+          "id": "https://openalex.org/keywords/domain-knowledge",
+          "display_name": "Domain knowledge",
+          "score": 0.22057324647903442
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.20409470796585083
+        },
+        {
+          "id": "https://openalex.org/keywords/upper-ontology",
+          "display_name": "Upper ontology",
+          "score": 0.18946516513824463
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.16772380471229553
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7442942261695862
+        },
+        {
+          "id": "https://openalex.org/C118248724",
+          "wikidata": "https://www.wikidata.org/wiki/Q5969997",
+          "display_name": "IDEF5",
+          "level": 4,
+          "score": 0.570927619934082
+        },
+        {
+          "id": "https://openalex.org/C180198813",
+          "wikidata": "https://www.wikidata.org/wiki/Q121182",
+          "display_name": "Information system",
+          "level": 2,
+          "score": 0.549755334854126
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.51971435546875
+        },
+        {
+          "id": "https://openalex.org/C161301231",
+          "wikidata": "https://www.wikidata.org/wiki/Q3478658",
+          "display_name": "Knowledge representation and reasoning",
+          "level": 2,
+          "score": 0.46797874569892883
+        },
+        {
+          "id": "https://openalex.org/C20136886",
+          "wikidata": "https://www.wikidata.org/wiki/Q749647",
+          "display_name": "Interoperability",
+          "level": 2,
+          "score": 0.46795380115509033
+        },
+        {
+          "id": "https://openalex.org/C145644426",
+          "wikidata": "https://www.wikidata.org/wiki/Q169411",
+          "display_name": "Unified Modeling Language",
+          "level": 3,
+          "score": 0.4558717906475067
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.4288836121559143
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.4258440136909485
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3959304094314575
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.3782854676246643
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.24656206369400024
+        },
+        {
+          "id": "https://openalex.org/C207685749",
+          "wikidata": "https://www.wikidata.org/wiki/Q2088941",
+          "display_name": "Domain knowledge",
+          "level": 2,
+          "score": 0.22057324647903442
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.20409470796585083
+        },
+        {
+          "id": "https://openalex.org/C78726541",
+          "wikidata": "https://www.wikidata.org/wiki/Q3882785",
+          "display_name": "Upper ontology",
+          "level": 3,
+          "score": 0.18946516513824463
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.16772380471229553
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C119599485",
+          "wikidata": "https://www.wikidata.org/wiki/Q43035",
+          "display_name": "Electrical engineering",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2777904410",
+          "wikidata": "https://www.wikidata.org/wiki/Q7397",
+          "display_name": "Software",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 3,
+      "locations": [
+        {
+          "id": "doi:10.3390/info11020066",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/info11020066",
+          "pdf_url": "https://www.mdpi.com/2078-2489/11/2/66/pdf?version=1582952056",
+          "source": {
+            "id": "https://openalex.org/S4210219776",
+            "display_name": "Information",
+            "issn_l": "2078-2489",
+            "issn": [
+              "2078-2489"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Information",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:ad773923bc2849fa927ddde72e8d817e",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/ad773923bc2849fa927ddde72e8d817e",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Information, Vol 11, Iss 2, p 66 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:mdpi.com:/2078-2489/11/2/66/",
+          "is_oa": true,
+          "landing_page_url": "http://dx.doi.org/10.3390/info11020066",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400947",
+            "display_name": "MDPI (MDPI AG)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210097602",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute (Switzerland)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210097602"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Information",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3390/info11020066",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/info11020066",
+        "pdf_url": "https://www.mdpi.com/2078-2489/11/2/66/pdf?version=1582952056",
+        "source": {
+          "id": "https://openalex.org/S4210219776",
+          "display_name": "Information",
+          "issn_l": "2078-2489",
+          "issn": [
+            "2078-2489"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Information",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Peace, Justice and strong institutions",
+          "score": 0.47999998927116394,
+          "id": "https://metadata.un.org/sdg/16"
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321006",
+          "display_name": "Grantová Agentura České Republiky",
+          "ror": "https://ror.org/01pv73b02"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W3001513985.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W3001513985.grobid-xml"
+      },
+      "referenced_works_count": 84,
+      "referenced_works": [
+        "https://openalex.org/W24403393",
+        "https://openalex.org/W26282494",
+        "https://openalex.org/W120522366",
+        "https://openalex.org/W125959602",
+        "https://openalex.org/W130350855",
+        "https://openalex.org/W137218315",
+        "https://openalex.org/W161745761",
+        "https://openalex.org/W288863610",
+        "https://openalex.org/W635282872",
+        "https://openalex.org/W785828304",
+        "https://openalex.org/W834685531",
+        "https://openalex.org/W903044527",
+        "https://openalex.org/W1230845094",
+        "https://openalex.org/W1486528716",
+        "https://openalex.org/W1509108483",
+        "https://openalex.org/W1540644880",
+        "https://openalex.org/W1562149087",
+        "https://openalex.org/W1566009915",
+        "https://openalex.org/W1574061230",
+        "https://openalex.org/W1603550197",
+        "https://openalex.org/W1655306493",
+        "https://openalex.org/W1811055346",
+        "https://openalex.org/W1898192448",
+        "https://openalex.org/W1964979998",
+        "https://openalex.org/W1974379025",
+        "https://openalex.org/W1976081865",
+        "https://openalex.org/W1985538608",
+        "https://openalex.org/W1986198967",
+        "https://openalex.org/W1991718988",
+        "https://openalex.org/W1995491609",
+        "https://openalex.org/W2014264886",
+        "https://openalex.org/W2024583628",
+        "https://openalex.org/W2028368146",
+        "https://openalex.org/W2039856183",
+        "https://openalex.org/W2066412242",
+        "https://openalex.org/W2075021940",
+        "https://openalex.org/W2083348224",
+        "https://openalex.org/W2091923770",
+        "https://openalex.org/W2103017472",
+        "https://openalex.org/W2103422137",
+        "https://openalex.org/W2121012401",
+        "https://openalex.org/W2121154231",
+        "https://openalex.org/W2122801122",
+        "https://openalex.org/W2124957697",
+        "https://openalex.org/W2129182836",
+        "https://openalex.org/W2130252997",
+        "https://openalex.org/W2136117679",
+        "https://openalex.org/W2137079713",
+        "https://openalex.org/W2139564137",
+        "https://openalex.org/W2140923664",
+        "https://openalex.org/W2143587628",
+        "https://openalex.org/W2161910638",
+        "https://openalex.org/W2163708920",
+        "https://openalex.org/W2168120333",
+        "https://openalex.org/W2175849758",
+        "https://openalex.org/W2183971003",
+        "https://openalex.org/W2222179264",
+        "https://openalex.org/W2274895364",
+        "https://openalex.org/W2276719630",
+        "https://openalex.org/W2295155453",
+        "https://openalex.org/W2332878946",
+        "https://openalex.org/W2476711429",
+        "https://openalex.org/W2482055006",
+        "https://openalex.org/W2530516247",
+        "https://openalex.org/W2725475482",
+        "https://openalex.org/W2742362814",
+        "https://openalex.org/W2752716327",
+        "https://openalex.org/W2762472790",
+        "https://openalex.org/W2780912412",
+        "https://openalex.org/W2782015289",
+        "https://openalex.org/W2783075565",
+        "https://openalex.org/W2890160335",
+        "https://openalex.org/W2898707203",
+        "https://openalex.org/W2920672104",
+        "https://openalex.org/W2953805581",
+        "https://openalex.org/W2969791240",
+        "https://openalex.org/W2980704448",
+        "https://openalex.org/W3135768530",
+        "https://openalex.org/W6632358804",
+        "https://openalex.org/W6646980449",
+        "https://openalex.org/W6671331536",
+        "https://openalex.org/W6678381467",
+        "https://openalex.org/W6679412695",
+        "https://openalex.org/W6696898443"
+      ],
+      "related_works": [
+        "https://openalex.org/W1982540051",
+        "https://openalex.org/W2045726866",
+        "https://openalex.org/W2354320020",
+        "https://openalex.org/W4247277368",
+        "https://openalex.org/W1998044538",
+        "https://openalex.org/W2057110953",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W2161180681",
+        "https://openalex.org/W2726617685",
+        "https://openalex.org/W4253621135"
+      ],
+      "abstract_inverted_index": {
+        "Computational": [
+          0
+        ],
+        "ontologies": [
+          1,
+          42,
+          77,
+          128,
+          134
+        ],
+        "are": [
+          2,
+          135
+        ],
+        "machine-processable": [
+          3
+        ],
+        "structures": [
+          4,
+          51
+        ],
+        "which": [
+          5,
+          14
+        ],
+        "represent": [
+          6
+        ],
+        "particular": [
+          7
+        ],
+        "domains": [
+          8
+        ],
+        "of": [
+          9,
+          31,
+          40,
+          60,
+          90,
+          100,
+          126,
+          141,
+          152,
+          163
+        ],
+        "interest.": [
+          10
+        ],
+        "They": [
+          11
+        ],
+        "integrate": [
+          12
+        ],
+        "knowledge": [
+          13,
+          148
+        ],
+        "can": [
+          15,
+          52
+        ],
+        "be": [
+          16,
+          53
+        ],
+        "used": [
+          17,
+          68,
+          137
+        ],
+        "by": [
+          18
+        ],
+        "humans": [
+          19
+        ],
+        "or": [
+          20
+        ],
+        "machines": [
+          21
+        ],
+        "for": [
+          22
+        ],
+        "decision": [
+          23
+        ],
+        "making": [
+          24
+        ],
+        "and": [
+          25,
+          58,
+          78,
+          102,
+          115,
+          160,
+          166,
+          177
+        ],
+        "problem": [
+          26
+        ],
+        "solving.": [
+          27
+        ],
+        "The": [
+          28
+        ],
+        "main": [
+          29,
+          124,
+          171
+        ],
+        "aim": [
+          30
+        ],
+        "this": [
+          32,
+          182
+        ],
+        "systematic": [
+          33
+        ],
+        "review": [
+          34
+        ],
+        "is": [
+          35
+        ],
+        "to": [
+          36,
+          69,
+          181
+        ],
+        "investigate": [
+          37
+        ],
+        "the": [
+          38,
+          56,
+          61,
+          74,
+          87,
+          91,
+          98,
+          112,
+          123,
+          139,
+          150,
+          161,
+          170,
+          174
+        ],
+        "role": [
+          39
+        ],
+        "formal": [
+          41,
+          127
+        ],
+        "in": [
+          43,
+          110,
+          116,
+          129,
+          138,
+          154,
+          173
+        ],
+        "information": [
+          44,
+          62,
+          130,
+          142
+        ],
+        "systems": [
+          45,
+          79,
+          131
+        ],
+        "development,": [
+          46
+        ],
+        "i.e.,": [
+          47
+        ],
+        "how": [
+          48
+        ],
+        "these": [
+          49
+        ],
+        "graphs-based": [
+          50
+        ],
+        "beneficial": [
+          54
+        ],
+        "during": [
+          55,
+          86
+        ],
+        "analysis": [
+          57
+        ],
+        "design": [
+          59
+        ],
+        "systems.": [
+          63
+        ],
+        "Specific": [
+          64
+        ],
+        "online": [
+          65
+        ],
+        "databases": [
+          66
+        ],
+        "were": [
+          67,
+          84,
+          95
+        ],
+        "identify": [
+          70
+        ],
+        "studies": [
+          71,
+          83,
+          94,
+          176
+        ],
+        "focused": [
+          72
+        ],
+        "on": [
+          73
+        ],
+        "interconnections": [
+          75
+        ],
+        "between": [
+          76
+        ],
+        "engineering.": [
+          80
+        ],
+        "One-hundred": [
+          81
+        ],
+        "eighty-seven": [
+          82
+        ],
+        "found": [
+          85
+        ],
+        "first": [
+          88
+        ],
+        "phase": [
+          89
+        ],
+        "investigation.": [
+          92
+        ],
+        "Twenty-seven": [
+          93
+        ],
+        "examined": [
+          96
+        ],
+        "after": [
+          97
+        ],
+        "elimination": [
+          99
+        ],
+        "duplicate": [
+          101
+        ],
+        "irrelevant": [
+          103
+        ],
+        "documents.": [
+          104
+        ],
+        "Mind": [
+          105
+        ],
+        "mapping": [
+          106
+        ],
+        "was": [
+          107
+        ],
+        "substantially": [
+          108
+        ],
+        "helpful": [
+          109
+        ],
+        "organising": [
+          111
+        ],
+        "basic": [
+          113
+        ],
+        "ideas": [
+          114,
+          172
+        ],
+        "identifying": [
+          117
+        ],
+        "five": [
+          118
+        ],
+        "thematic": [
+          119
+        ],
+        "groups": [
+          120
+        ],
+        "that": [
+          121
+        ],
+        "show": [
+          122
+        ],
+        "roles": [
+          125
+        ],
+        "development.": [
+          132
+        ],
+        "Formal": [
+          133
+        ],
+        "mainly": [
+          136
+        ],
+        "interoperability": [
+          140
+        ],
+        "systems,": [
+          143
+        ],
+        "human": [
+          144
+        ],
+        "resource": [
+          145
+        ],
+        "management,": [
+          146
+        ],
+        "domain": [
+          147
+        ],
+        "representation,": [
+          149
+        ],
+        "involvement": [
+          151
+        ],
+        "semantics": [
+          153
+        ],
+        "unified": [
+          155
+        ],
+        "modelling": [
+          156
+        ],
+        "language": [
+          157
+        ],
+        "(UML)-based": [
+          158
+        ],
+        "modelling,": [
+          159
+        ],
+        "management": [
+          162
+        ],
+        "programming": [
+          164
+        ],
+        "code": [
+          165
+        ],
+        "documentation.": [
+          167
+        ],
+        "We": [
+          168
+        ],
+        "explain": [
+          169
+        ],
+        "reviewed": [
+          175
+        ],
+        "suggest": [
+          178
+        ],
+        "possible": [
+          179
+        ],
+        "extensions": [
+          180
+        ],
+        "research.": [
+          183
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2020-01-30T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4243150586",
+      "doi": "https://doi.org/10.1515/jib-2010-126",
+      "title": "An Ontology for Description of Drug Discovery Investigations",
+      "display_name": "An Ontology for Description of Drug Discovery Investigations",
+      "relevance_score": 185.40868,
+      "publication_year": 2010,
+      "publication_date": "2010-12-01",
+      "ids": {
+        "openalex": "https://openalex.org/W4243150586",
+        "doi": "https://doi.org/10.1515/jib-2010-126"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1515/jib-2010-126",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1515/jib-2010-126",
+        "pdf_url": "https://www.degruyter.com/document/doi/10.1515/jib-2010-126/pdf",
+        "source": {
+          "id": "https://openalex.org/S4393917359",
+          "display_name": "Berichte aus der medizinischen Informatik und Bioinformatik/Journal of integrative bioinformatics",
+          "issn_l": "1432-4385",
+          "issn": [
+            "1432-4385",
+            "1613-4516"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Integrative Bioinformatics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://www.degruyter.com/document/doi/10.1515/jib-2010-126/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102925600",
+            "display_name": "Da Qi",
+            "orcid": "https://orcid.org/0000-0001-6079-9764"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I16038530",
+              "display_name": "Aberystwyth University",
+              "ror": "https://ror.org/015m2p889",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Da Qi",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland",
+              "institution_ids": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5020822487",
+            "display_name": "Ross D. King",
+            "orcid": "https://orcid.org/0000-0001-7208-4387"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I16038530",
+              "display_name": "Aberystwyth University",
+              "ror": "https://ror.org/015m2p889",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ross D. King",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland",
+              "institution_ids": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5076759117",
+            "display_name": "Andrew L. Hopkins",
+            "orcid": "https://orcid.org/0000-0003-1977-018X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I177639307",
+              "display_name": "University of Dundee",
+              "ror": "https://ror.org/03h2bxq36",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I177639307"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew L. Hopkins",
+          "raw_affiliation_strings": [
+            "Division of Biological Chemistry and Drug Discovery, University of Dundee, DD1 5EH, United Kingdom of Great Britain and Northern Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Biological Chemistry and Drug Discovery, University of Dundee, DD1 5EH, United Kingdom of Great Britain and Northern Ireland",
+              "institution_ids": [
+                "https://openalex.org/I177639307"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008865110",
+            "display_name": "G. Richard Bickerton",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I177639307",
+              "display_name": "University of Dundee",
+              "ror": "https://ror.org/03h2bxq36",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I177639307"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "G. Richard J. Bickerton",
+          "raw_affiliation_strings": [
+            "Division of Biological Chemistry and Drug Discovery, University of Dundee, DD1 5EH, United Kingdom of Great Britain and Northern Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Biological Chemistry and Drug Discovery, University of Dundee, DD1 5EH, United Kingdom of Great Britain and Northern Ireland",
+              "institution_ids": [
+                "https://openalex.org/I177639307"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5022052915",
+            "display_name": "Larisa Soldatova",
+            "orcid": "https://orcid.org/0000-0001-6489-3029"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I16038530",
+              "display_name": "Aberystwyth University",
+              "ror": "https://ror.org/015m2p889",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Larisa N. Soldatova",
+          "raw_affiliation_strings": [
+            "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science, Aberystwyth University, SY23 3DB, United Kingdom of Great Britain and Northern Ireland",
+              "institution_ids": [
+                "https://openalex.org/I16038530"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5022052915"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I16038530"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.8166,
+      "has_fulltext": true,
+      "cited_by_count": 25,
+      "citation_normalized_percentile": {
+        "value": 0.72919607,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 98
+      },
+      "biblio": {
+        "volume": "7",
+        "issue": "3",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T13937",
+        "display_name": "Genetics, Bioinformatics, and Biomedical Research",
+        "score": 0.9824000000953674,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T13937",
+          "display_name": "Genetics, Bioinformatics, and Biomedical Research",
+          "score": 0.9824000000953674,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.982200026512146,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.8614987134933472
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.7071537375450134
+        },
+        {
+          "id": "https://openalex.org/keywords/pipeline",
+          "display_name": "Pipeline (software)",
+          "score": 0.6244449615478516
+        },
+        {
+          "id": "https://openalex.org/keywords/drug-discovery",
+          "display_name": "Drug discovery",
+          "score": 0.4393399953842163
+        },
+        {
+          "id": "https://openalex.org/keywords/open-biomedical-ontologies",
+          "display_name": "Open Biomedical Ontologies",
+          "score": 0.4240935444831848
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.4157343804836273
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.4088994562625885
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.3501800298690796
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-based-data-integration",
+          "display_name": "Ontology-based data integration",
+          "score": 0.28990209102630615
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology-alignment",
+          "display_name": "Ontology alignment",
+          "score": 0.23803454637527466
+        },
+        {
+          "id": "https://openalex.org/keywords/bioinformatics",
+          "display_name": "Bioinformatics",
+          "score": 0.20307433605194092
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-web",
+          "display_name": "Semantic Web",
+          "score": 0.18639206886291504
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.8614987134933472
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7071537375450134
+        },
+        {
+          "id": "https://openalex.org/C43521106",
+          "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+          "display_name": "Pipeline (software)",
+          "level": 2,
+          "score": 0.6244449615478516
+        },
+        {
+          "id": "https://openalex.org/C74187038",
+          "wikidata": "https://www.wikidata.org/wiki/Q1418791",
+          "display_name": "Drug discovery",
+          "level": 2,
+          "score": 0.4393399953842163
+        },
+        {
+          "id": "https://openalex.org/C137982476",
+          "wikidata": "https://www.wikidata.org/wiki/Q7072326",
+          "display_name": "Open Biomedical Ontologies",
+          "level": 5,
+          "score": 0.4240935444831848
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.4157343804836273
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.4088994562625885
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.3501800298690796
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.28990209102630615
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.23803454637527466
+        },
+        {
+          "id": "https://openalex.org/C60644358",
+          "wikidata": "https://www.wikidata.org/wiki/Q128570",
+          "display_name": "Bioinformatics",
+          "level": 1,
+          "score": 0.20307433605194092
+        },
+        {
+          "id": "https://openalex.org/C2129575",
+          "wikidata": "https://www.wikidata.org/wiki/Q54837",
+          "display_name": "Semantic Web",
+          "level": 2,
+          "score": 0.18639206886291504
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1515/jib-2010-126",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1515/jib-2010-126",
+          "pdf_url": "https://www.degruyter.com/document/doi/10.1515/jib-2010-126/pdf",
+          "source": {
+            "id": "https://openalex.org/S4393917359",
+            "display_name": "Berichte aus der medizinischen Informatik und Bioinformatik/Journal of integrative bioinformatics",
+            "issn_l": "1432-4385",
+            "issn": [
+              "1432-4385",
+              "1613-4516"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Integrative Bioinformatics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:aber.ac.uk:publications/3700465c-fc52-4d3e-af5c-f3d9047b010b",
+          "is_oa": true,
+          "landing_page_url": "https://pure.aber.ac.uk/portal/en/publications/an-ontology-for-description-of-drug-discovery-investigations(3700465c-fc52-4d3e-af5c-f3d9047b010b).html",
+          "pdf_url": "http://pure.aber.ac.uk/ws/files/152470/dq_jib-126-2010.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401660",
+            "display_name": "Aberystwyth Research portal (Aberystwyth University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16038530",
+            "host_organization_name": "Aberystwyth University",
+            "host_organization_lineage": [
+              "https://openalex.org/I16038530"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": ""
+        },
+        {
+          "id": "pmh:oai:pure.atira.dk:publications/42d39c45-fa84-43b7-9315-1c77e96b390a",
+          "is_oa": true,
+          "landing_page_url": null,
+          "pdf_url": "https://www.research.manchester.ac.uk/portal/en/publications/an-ontology-for-description-of-drug-discovery-investigations(42d39c45-fa84-43b7-9315-1c77e96b390a).html",
+          "source": {
+            "id": "https://openalex.org/S4306400662",
+            "display_name": "Research Explorer (The University of Manchester)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I28407311",
+            "host_organization_name": "University of Manchester",
+            "host_organization_lineage": [
+              "https://openalex.org/I28407311"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": ""
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:4b2c0bed931a4794a6072a7fa371ceb4",
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/4b2c0bed931a4794a6072a7fa371ceb4",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Integrative Bioinformatics, Vol 7, Iss 3, Pp 156-168 (2010)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1515/jib-2010-126",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1515/jib-2010-126",
+        "pdf_url": "https://www.degruyter.com/document/doi/10.1515/jib-2010-126/pdf",
+        "source": {
+          "id": "https://openalex.org/S4393917359",
+          "display_name": "Berichte aus der medizinischen Informatik und Bioinformatik/Journal of integrative bioinformatics",
+          "issn_l": "1432-4385",
+          "issn": [
+            "1432-4385",
+            "1613-4516"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Integrative Bioinformatics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G1488556959",
+          "display_name": "Development of an Ontology for Drug Screening and Design",
+          "funder_award_id": "BB/E018025/1",
+          "funder_id": "https://openalex.org/F4320334629",
+          "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320032",
+          "display_name": "Aberystwyth University",
+          "ror": "https://ror.org/015m2p889"
+        },
+        {
+          "id": "https://openalex.org/F4320334629",
+          "display_name": "Biotechnology and Biological Sciences Research Council",
+          "ror": "https://ror.org/00cwqg982"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4243150586.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4243150586.grobid-xml"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2127299687",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W2532736362",
+        "https://openalex.org/W2726617685",
+        "https://openalex.org/W1562796463",
+        "https://openalex.org/W1530162452",
+        "https://openalex.org/W2008629522",
+        "https://openalex.org/W2399880385",
+        "https://openalex.org/W2370212190",
+        "https://openalex.org/W3135477004"
+      ],
+      "abstract_inverted_index": {
+        "Summary": [
+          0
+        ],
+        "The": [
+          1
+        ],
+        "paper": [
+          2
+        ],
+        "presents": [
+          3
+        ],
+        "an": [
+          4
+        ],
+        "ontology": [
+          5,
+          69
+        ],
+        "for": [
+          6
+        ],
+        "the": [
+          7,
+          19,
+          35,
+          39,
+          42,
+          48,
+          82,
+          85
+        ],
+        "description": [
+          8
+        ],
+        "of": [
+          9,
+          21,
+          47
+        ],
+        "Drug": [
+          10
+        ],
+        "Discovery": [
+          11
+        ],
+        "Investigation": [
+          12
+        ],
+        "(DDI).": [
+          13
+        ],
+        "This": [
+          14,
+          71
+        ],
+        "has": [
+          15
+        ],
+        "been": [
+          16
+        ],
+        "developed": [
+          17
+        ],
+        "through": [
+          18
+        ],
+        "use": [
+          20
+        ],
+        "a": [
+          22
+        ],
+        "Robot": [
+          23
+        ],
+        "Scientist": [
+          24
+        ],
+        "“Eve”,": [
+          25
+        ],
+        "and": [
+          26,
+          38,
+          44,
+          56,
+          65
+        ],
+        "in": [
+          27,
+          41
+        ],
+        "consultation": [
+          28
+        ],
+        "with": [
+          29,
+          67,
+          77
+        ],
+        "industry.": [
+          30
+        ],
+        "DDI": [
+          31,
+          52,
+          73,
+          94
+        ],
+        "aims": [
+          32
+        ],
+        "to": [
+          33,
+          59,
+          62,
+          74
+        ],
+        "define": [
+          34
+        ],
+        "principle": [
+          36
+        ],
+        "entities": [
+          37
+        ],
+        "relations": [
+          40
+        ],
+        "research": [
+          43
+        ],
+        "development": [
+          45
+        ],
+        "phase": [
+          46
+        ],
+        "drug": [
+          49
+        ],
+        "discovery": [
+          50
+        ],
+        "pipeline.": [
+          51
+        ],
+        "is": [
+          53,
+          95
+        ],
+        "highly": [
+          54
+        ],
+        "transferable": [
+          55
+        ],
+        "extendable": [
+          57
+        ],
+        "due": [
+          58
+        ],
+        "its": [
+          60
+        ],
+        "adherence": [
+          61
+        ],
+        "accepted": [
+          63
+        ],
+        "standards,": [
+          64
+        ],
+        "compliance": [
+          66
+        ],
+        "existing": [
+          68
+        ],
+        "resources.": [
+          70
+        ],
+        "enables": [
+          72
+        ],
+        "be": [
+          75
+        ],
+        "integrated": [
+          76
+        ],
+        "such": [
+          78
+        ],
+        "related": [
+          79
+        ],
+        "ontologies": [
+          80
+        ],
+        "as": [
+          81
+        ],
+        "Vaccine": [
+          83
+        ],
+        "Ontology,": [
+          84,
+          92
+        ],
+        "Advancing": [
+          86
+        ],
+        "Clinico-Genomic": [
+          87
+        ],
+        "Trials": [
+          88
+        ],
+        "on": [
+          89
+        ],
+        "Cancer": [
+          90
+        ],
+        "Master": [
+          91
+        ],
+        "etc.": [
+          93
+        ],
+        "available": [
+          96
+        ],
+        "at": [
+          97
+        ],
+        "http://purl.org/ddi/wikipedia": [
+          98
+        ],
+        "or": [
+          99
+        ],
+        "http://purl.org/ddi/home": [
+          100
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 3
+        }
+      ],
+      "updated_date": "2026-05-21T06:26:12.895304",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

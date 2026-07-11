@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "32169670",
+      "30774580"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"eligibilities\"[All Fields] OR \"eligibility\"[All Fields] OR \"eligible\"[All Fields] OR \"eligibles\"[All Fields]) AND (\"feature s\"[All Fields] OR \"featured\"[All Fields] OR \"features\"[All Fields] OR \"featuring\"[All Fields] OR \"protein domains\"[MeSH Terms] OR (\"protein\"[All Fields] AND \"domains\"[All Fields]) OR \"protein domains\"[All Fields] OR \"feature\"[All Fields]) AND (\"classification\"[MeSH Subheading] OR \"classification\"[All Fields] OR \"hierarchies\"[All Fields] OR \"classification\"[MeSH Terms] OR \"hierarchy\"[All Fields] OR \"hierarchial\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Eligibility Feature Hierarchy\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

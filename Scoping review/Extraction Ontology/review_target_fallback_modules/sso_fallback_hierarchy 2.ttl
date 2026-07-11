@@ -7,9 +7,12 @@
 <https://example.org/disease-review/modules/sso_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for SSO; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=1, released=2009-09-18T00:00:00.000-07:00, creationDate=2009-09-18T20:17:07.000-07:00, submissionId=1" ;
-    dcterms:created "2026-07-03T12:17:37-04:00" ;
+    dcterms:created "2026-07-10T19:36:51-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
+<http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition> <http://purl.org/dc/terms/source> "generated review target module for SSO from disease_terms_review_enriched.csv" .
+<http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Condition" .
 <http://surveillance.mcgill.ca/sso/syndromes.owl#Syndrome> <http://purl.org/dc/terms/source> "generated review target module for SSO from disease_terms_review_enriched.csv" .
 <http://surveillance.mcgill.ca/sso/syndromes.owl#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://surveillance.mcgill.ca/sso/syndromes.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .

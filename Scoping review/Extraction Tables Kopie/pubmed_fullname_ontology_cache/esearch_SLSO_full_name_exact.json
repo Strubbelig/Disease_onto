@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "73",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30964621",
+      "29579141",
+      "37887314",
+      "35468687",
+      "35845367",
+      "29316968",
+      "35073996",
+      "37579152",
+      "35758241",
+      "33869353"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"space life sci\"[Journal] OR (\"space\"[All Fields] AND \"life\"[All Fields] AND \"sciences\"[All Fields]) OR \"space life sciences\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Space Life Sciences Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

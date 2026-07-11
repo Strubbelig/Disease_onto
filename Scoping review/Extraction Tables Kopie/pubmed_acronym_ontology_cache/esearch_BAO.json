@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "660",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36928764",
+      "22553882",
+      "25093074",
+      "39806429",
+      "36598105",
+      "40301114",
+      "37584546",
+      "21702939",
+      "39695140",
+      "37654142"
+    ],
+    "translationset": [
+      {
+        "from": "BAO",
+        "to": "\"Bull Am Odonatol\"[Journal:__jid9918502786806676] OR \"bao\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"bao\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

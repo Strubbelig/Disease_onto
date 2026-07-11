@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"vocabulary, controlled\"[MeSH Terms] OR (\"vocabulary\"[All Fields] AND \"controlled\"[All Fields]) OR \"controlled vocabulary\"[All Fields] OR \"thesaurus\"[All Fields]) AND \"long term\"[All Fields] AND (\"ecol res\"[Journal] OR (\"ecological\"[All Fields] AND \"research\"[All Fields]) OR \"ecological research\"[All Fields]) AND (\"monitor\"[All Fields] OR \"monitor s\"[All Fields] OR \"monitorable\"[All Fields] OR \"monitored\"[All Fields] OR \"monitoring\"[All Fields] OR \"monitoring s\"[All Fields] OR \"monitorings\"[All Fields] OR \"monitorization\"[All Fields] OR \"monitorize\"[All Fields] OR \"monitorized\"[All Fields] OR \"monitors\"[All Fields]) AND (\"experiment\"[All Fields] OR \"experiment s\"[All Fields] OR \"experiments\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Thesaurus for long-term ecological research, monitoring, experiments\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

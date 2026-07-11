@@ -1,0 +1,73 @@
+{
+  "languages": [
+    "be",
+    "bg",
+    "da",
+    "de",
+    "en",
+    "fr",
+    "sq",
+    "tr"
+  ],
+  "lang": "en",
+  "ontologyId": "pride",
+  "loaded": "2026-06-26T09:02:28.690816599",
+  "updated": "2026-06-26T09:02:28.690816599",
+  "status": "LOADED",
+  "message": "",
+  "version": null,
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 97644,
+  "numberOfProperties": 523,
+  "numberOfIndividuals": 150,
+  "config": {
+    "id": "pride",
+    "versionIri": "http://purl.obolibrary.org/obo/pride/releases/2026-06-01/pride.owl",
+    "namespace": "pride",
+    "preferredPrefix": "PRIDE",
+    "title": "Proteomics Identification Database Ontology",
+    "description": "Proteomics Identification Database Ontology, terms describing proteomics data and experimental metadata",
+    "homepage": "https://github.com/PRIDE-Utilities/pride-ontology",
+    "version": null,
+    "mailingList": "https://github.com/PRIDE-Utilities/pride-ontology/issues",
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/def"
+    ],
+    "synonymProperties": [
+      "http://www.geneontology.org/formats/oboInOWL#hasExactSynonym"
+    ],
+    "hierarchicalProperties": [],
+    "baseUris": [
+      "http://purl.obolibrary.org/obo/PRIDE_"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "http://purl.obolibrary.org/obo/PRIDE_"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pride?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pride/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pride/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pride/individuals"
+    }
+  }
+}

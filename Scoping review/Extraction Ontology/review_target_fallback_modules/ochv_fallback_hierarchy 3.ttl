@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ochv_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for OCHV; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1, released=2016-01-21T00:00:00.000+00:00, creationDate=2019-09-25T18:59:09.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-10T19:41:00-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://purl.org/dc/terms/source> "generated review target module for OCHV from disease_terms_review_enriched.csv" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sbmi.uth.tmc.edu/ontology/ochv#CHV_Concept> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disease disorder" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disease disorders" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases disorder" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases disorders" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder disease" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder nos" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disordered" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#4014> <http://www.w3.org/2004/02/skos/core#altLabel> "nos disorder" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0012634> <http://purl.org/dc/terms/source> "generated review target module for OCHV from disease_terms_review_enriched.csv" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0012634> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0012634> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0012634> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sbmi.uth.tmc.edu/ontology/ochv#UMLS_Concept> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0221423> <http://purl.org/dc/terms/source> "generated review target module for OCHV from disease_terms_review_enriched.csv" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0221423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0221423> <http://www.w3.org/2000/01/rdf-schema#label> "illness" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#C0221423> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sbmi.uth.tmc.edu/ontology/ochv#UMLS_Concept> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#CHV_Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#CHV_Concept> <http://www.w3.org/2000/01/rdf-schema#label> "CHV_Concept" .
+<http://sbmi.uth.tmc.edu/ontology/ochv#UMLS_Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sbmi.uth.tmc.edu/ontology/ochv#UMLS_Concept> <http://www.w3.org/2000/01/rdf-schema#label> "UMLS_Concept" .

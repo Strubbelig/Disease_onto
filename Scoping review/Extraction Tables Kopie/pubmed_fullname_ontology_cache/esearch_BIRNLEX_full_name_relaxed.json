@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Biomedical Informatics",
+        "to": "\"J Biomed Inform\"[Journal:__jid100970413] OR (\"biomedical\"[All Fields] AND \"informatics\"[All Fields]) OR \"biomedical informatics\"[All Fields]"
+      },
+      {
+        "from": "Research Network",
+        "to": "Network, Research[Full Author Name] OR research network[Author]"
+      },
+      {
+        "from": "Project",
+        "to": "\"project\"[All Fields] OR \"project's\"[All Fields] OR \"projects\"[All Fields]"
+      },
+      {
+        "from": "Lexicon",
+        "to": "\"lexicon\"[All Fields] OR \"lexicons\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"j biomed inform\"[Journal] OR (\"biomedical\"[All Fields] AND \"informatics\"[All Fields]) OR \"biomedical informatics\"[All Fields]) AND (network, research[Author] OR research network[Author]) AND (\"project\"[All Fields] OR \"project s\"[All Fields] OR \"projects\"[All Fields]) AND (\"lexicon\"[All Fields] OR \"lexicons\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

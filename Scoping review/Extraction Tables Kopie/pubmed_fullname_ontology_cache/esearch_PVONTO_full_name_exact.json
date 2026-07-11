@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "48",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39193326",
+      "40385473",
+      "20841741",
+      "16185681",
+      "40820458",
+      "41726515",
+      "35579806",
+      "27458549",
+      "20841835",
+      "35391615"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"pharmacovigilance\"[MeSH Terms] OR \"pharmacovigilance\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Pharmacovigilance Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/b8bbda20-21b8-0139-bc4d-005056010073",
+      "name": "Jiao Li",
+      "email": "li.jiao@imicams.ac.cn"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/02ea66d0-21a0-0139-2e92-005056010088",
+      "name": "Meng Wu",
+      "email": "wu.meng@imicams.ac.cn"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/b8cbbd90-21b8-0139-bc4d-005056010073",
+      "name": "Li Hou",
+      "email": "hou.li@imicams.ac.cn"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/hemien"
+    ],
+    "acronym": "PMAPP-PMO",
+    "name": "PMO Precision Medicine Ontology",
+    "@id": "https://data.bioontology.org/ontologies/PMAPP-PMO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/PMAPP-PMO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/PMAPP-PMO/properties",
+      "classes": "https://data.bioontology.org/ontologies/PMAPP-PMO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/PMAPP-PMO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/PMAPP-PMO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/PMAPP-PMO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/PMAPP-PMO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/PMAPP-PMO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/PMAPP-PMO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/PMAPP-PMO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/PMAPP-PMO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/PMAPP-PMO/notes",
+      "groups": "https://data.bioontology.org/ontologies/PMAPP-PMO/groups",
+      "categories": "https://data.bioontology.org/ontologies/PMAPP-PMO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/PMAPP-PMO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/PMAPP-PMO/projects",
+      "download": "https://data.bioontology.org/ontologies/PMAPP-PMO/download",
+      "views": "https://data.bioontology.org/ontologies/PMAPP-PMO/views",
+      "analytics": "https://data.bioontology.org/ontologies/PMAPP-PMO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/PMAPP-PMO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2020-12-16T00:00:00.000+00:00",
+  "creationDate": "2020-12-16T18:38:23.000-08:00",
+  "homepage": "http://www.phoc.org.cn/pmo/",
+  "publication": [
+    "https://www.aimspress.com/article/10.3934/mbe.2020227/fulltext.html"
+  ],
+  "documentation": null,
+  "version": "4.0",
+  "description": "The Precision Medicine Ontology (PMO) has been developed as a standardized ontology for human precision medicine with consistent, reusable and sustainable descriptions of human disease terms, genomic molecular, phenotype characteristics and related medical vocabulary disease concepts through collaborative efforts of researchers at Institute of Medical Information, Chinese Academy of Medical Sciences. The Precision Medicine Ontology focuses on the development of a high level patients-centric ontology for the academic research, thus, it systematically integrates biomedicine vocabularies from GO, NCBI Gene, DrugBank, HPO, MeSH, SNOMED CT, etc. This work is supported by the National Key Research and Development Program of China (Precision Medicine Knowledge Base, Grant No. 2016YFC0901901).",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/PMAPP-PMO/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/PMAPP-PMO/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

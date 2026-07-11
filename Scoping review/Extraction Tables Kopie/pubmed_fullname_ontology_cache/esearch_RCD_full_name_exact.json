@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"reading\"[MeSH Terms] OR \"reading\"[All Fields] OR \"read\"[All Fields]) AND (\"clinical coding\"[MeSH Terms] OR (\"clinical\"[All Fields] AND \"coding\"[All Fields]) OR \"clinical coding\"[All Fields] OR \"coding\"[All Fields] OR \"coded\"[All Fields] OR \"codes\"[All Fields] OR \"codings\"[All Fields]) AND (\"ambulatory care facilities\"[MeSH Terms] OR (\"ambulatory\"[All Fields] AND \"care\"[All Fields] AND \"facilities\"[All Fields]) OR \"ambulatory care facilities\"[All Fields] OR \"clinic\"[All Fields] OR \"clinic s\"[All Fields] OR \"clinical\"[All Fields] OR \"clinically\"[All Fields] OR \"clinicals\"[All Fields] OR \"clinics\"[All Fields]) AND \"terms\"[All Fields] AND (\"version\"[All Fields] OR \"version s\"[All Fields] OR \"versions\"[All Fields]) AND \"3\"[All Fields] AND \"ctv3\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Read Codes, Clinical Terms Version 3 (CTV3)\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

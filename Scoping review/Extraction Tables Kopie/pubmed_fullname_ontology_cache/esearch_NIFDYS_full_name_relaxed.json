@@ -1,0 +1,42 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Neuroscience",
+        "to": "\"neuroscience's\"[All Fields] OR \"neurosciences\"[MeSH Terms] OR \"neurosciences\"[All Fields] OR \"neuroscience\"[All Fields]"
+      },
+      {
+        "from": "Information",
+        "to": "\"inform\"[All Fields] OR \"informal\"[All Fields] OR \"informality\"[All Fields] OR \"informally\"[All Fields] OR \"informant\"[All Fields] OR \"informant's\"[All Fields] OR \"informants\"[All Fields] OR \"information\"[All Fields] OR \"information's\"[All Fields] OR \"informational\"[All Fields] OR \"informations\"[All Fields] OR \"informative\"[All Fields] OR \"informatively\"[All Fields] OR \"informativeness\"[All Fields] OR \"informativity\"[All Fields] OR \"informed\"[All Fields] OR \"informer\"[All Fields] OR \"informers\"[All Fields] OR \"informing\"[All Fields] OR \"informs\"[All Fields]"
+      },
+      {
+        "from": "Framework",
+        "to": "\"framework\"[All Fields] OR \"framework's\"[All Fields] OR \"frameworks\"[All Fields]"
+      },
+      {
+        "from": "Dysfunction",
+        "to": "\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"neuroscience s\"[All Fields] OR \"neurosciences\"[MeSH Terms] OR \"neurosciences\"[All Fields] OR \"neuroscience\"[All Fields]) AND (\"inform\"[All Fields] OR \"informal\"[All Fields] OR \"informality\"[All Fields] OR \"informally\"[All Fields] OR \"informant\"[All Fields] OR \"informant s\"[All Fields] OR \"informants\"[All Fields] OR \"information\"[All Fields] OR \"information s\"[All Fields] OR \"informational\"[All Fields] OR \"informations\"[All Fields] OR \"informative\"[All Fields] OR \"informatively\"[All Fields] OR \"informativeness\"[All Fields] OR \"informativity\"[All Fields] OR \"informed\"[All Fields] OR \"informer\"[All Fields] OR \"informers\"[All Fields] OR \"informing\"[All Fields] OR \"informs\"[All Fields]) AND (\"framework\"[All Fields] OR \"framework s\"[All Fields] OR \"frameworks\"[All Fields]) AND \"NIF\"[All Fields] AND (\"dysfunctional\"[All Fields] OR \"dysfunctionals\"[All Fields] OR \"dysfunctioning\"[All Fields] OR \"dysfunctions\"[All Fields] OR \"physiopathology\"[MeSH Subheading] OR \"physiopathology\"[All Fields] OR \"dysfunction\"[All Fields]) AND \"Ontlogy\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

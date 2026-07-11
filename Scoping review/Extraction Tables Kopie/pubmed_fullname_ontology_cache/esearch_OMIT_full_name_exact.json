@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4131",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31504780",
+      "25025130",
+      "24862384",
+      "35893067",
+      "25031224",
+      "27175225",
+      "30666640",
+      "21435384",
+      "19534746",
+      "30635407"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"microrna s\"[All Fields] OR \"micrornas\"[Supplementary Concept] OR \"micrornas\"[All Fields] OR \"microrna\"[All Fields] OR \"micrornas\"[MeSH Terms]) AND (\"target\"[All Fields] OR \"targetability\"[All Fields] OR \"targetable\"[All Fields] OR \"targeted\"[All Fields] OR \"targeting\"[All Fields] OR \"targetings\"[All Fields] OR \"targets\"[All Fields] OR \"targetted\"[All Fields] OR \"targetting\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for MicroRNA Target\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

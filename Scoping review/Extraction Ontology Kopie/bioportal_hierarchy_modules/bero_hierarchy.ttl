@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/bero_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2022-12-23, released=2022-12-23T00:00:00.000+00:00, creationDate=2022-12-23T00:03:39.000-08:00, submissionId=3" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://purl.obolibrary.org/obo/IAO_0000115> "A group of signs, symptoms, and clinicopathological characteristics that may or may not have a genetic basis and collectively define an abnormal condition." .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://purl.org/dc/terms/source> "review target in BERO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://purl.obolibrary.org/obo/NCIT_C28193> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C2991> .
+<http://purl.obolibrary.org/obo/NCIT_C2991> <http://purl.obolibrary.org/obo/IAO_0000115> "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function." .
+<http://purl.obolibrary.org/obo/NCIT_C2991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C2991> <http://www.w3.org/2000/01/rdf-schema#label> "Disease or Disorder" .
+<http://purl.obolibrary.org/obo/NCIT_C2991> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C7057> .
+<http://purl.obolibrary.org/obo/NCIT_C3367> <http://purl.obolibrary.org/obo/IAO_0000115> "Clinical, laboratory or molecular evidence, or absence of evidence of disease." .
+<http://purl.obolibrary.org/obo/NCIT_C3367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C3367> <http://www.w3.org/2000/01/rdf-schema#label> "Finding" .
+<http://purl.obolibrary.org/obo/NCIT_C3367> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C7057> .
+<http://purl.obolibrary.org/obo/NCIT_C36291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C36291> <http://www.w3.org/2000/01/rdf-schema#label> "Finding by Cause" .
+<http://purl.obolibrary.org/obo/NCIT_C36291> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C3367> .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://purl.org/dc/terms/source> "review target in BERO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C36291> .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://purl.obolibrary.org/obo/IAO_0000115> "A condition that is relevant to human neoplasms and non-neoplastic disorders.  This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions." .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://www.w3.org/2000/01/rdf-schema#label> "Disease, Disorder or Finding" .

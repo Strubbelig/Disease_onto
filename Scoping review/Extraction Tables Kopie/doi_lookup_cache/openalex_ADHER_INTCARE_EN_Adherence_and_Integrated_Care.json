@@ -1,0 +1,2125 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 45,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Adherence \"and\" Integrated Care ADHER_INTCARE_EN ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Adherence and Integrated Care ADHER_INTCARE_EN ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Adherence and Integrated Care ADHER_INTCARE_EN ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3037603330",
+      "doi": "https://doi.org/10.2196/18150",
+      "title": "The Need to Develop Standard Measures of Patient Adherence for Big Data: Viewpoint",
+      "display_name": "The Need to Develop Standard Measures of Patient Adherence for Big Data: Viewpoint",
+      "relevance_score": 82.31901,
+      "publication_year": 2020,
+      "publication_date": "2020-06-22",
+      "ids": {
+        "openalex": "https://openalex.org/W3037603330",
+        "doi": "https://doi.org/10.2196/18150",
+        "mag": "3037603330",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/32663138"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.2196/18150",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/18150",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S17147534",
+          "display_name": "Journal of Medical Internet Research",
+          "issn_l": "1438-8871",
+          "issn": [
+            "1438-8871",
+            "1439-4456"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Medical Internet Research",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.2196/18150",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5034056266",
+            "display_name": "Przemysław Kardas",
+            "orcid": "https://orcid.org/0000-0002-6078-2628"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210122071",
+              "display_name": "Medical University of Lodz",
+              "ror": "https://ror.org/02t4ekc95",
+              "country_code": "PL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210122071"
+              ]
+            }
+          ],
+          "countries": [
+            "PL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Przemyslaw Kardas",
+          "raw_affiliation_strings": [
+            "Department of Family Medicine, Medical University of Lodz, Lodz, Poland"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6078-2628",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Family Medicine, Medical University of Lodz, Lodz, Poland",
+              "institution_ids": [
+                "https://openalex.org/I4210122071"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030373099",
+            "display_name": "Isabel Aguilar‐Palacio",
+            "orcid": "https://orcid.org/0000-0001-7293-701X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I255234318",
+              "display_name": "Universidad de Zaragoza",
+              "ror": "https://ror.org/012a91z28",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I255234318"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210136512",
+              "display_name": "Instituto de Investigación Sanitaria Aragón",
+              "ror": "https://ror.org/03njn4610",
+              "country_code": "ES",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I4210136512"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Isabel Aguilar-Palacio",
+          "raw_affiliation_strings": [
+            "Fundación Instituto de Investigación Sanitaria de Aragón (IIS Aragón), Zaragoza, Spain",
+            "Preventive Medicine and Public Health Department, Zaragoza University, Zaragoza, Spain"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7293-701X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fundación Instituto de Investigación Sanitaria de Aragón (IIS Aragón), Zaragoza, Spain",
+              "institution_ids": [
+                "https://openalex.org/I4210136512"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Preventive Medicine and Public Health Department, Zaragoza University, Zaragoza, Spain",
+              "institution_ids": [
+                "https://openalex.org/I255234318"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050483291",
+            "display_name": "Marta Almada",
+            "orcid": "https://orcid.org/0000-0001-6575-1698"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I182534213",
+              "display_name": "Universidade do Porto",
+              "ror": "https://ror.org/043pwc612",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I182534213"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210138594",
+              "display_name": "Rede de Química e Tecnologia",
+              "ror": "https://ror.org/04j14t006",
+              "country_code": "PT",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marta Almada",
+          "raw_affiliation_strings": [
+            "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6575-1698",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal",
+              "institution_ids": [
+                "https://openalex.org/I182534213",
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5023760246",
+            "display_name": "Caitríona Cahir",
+            "orcid": "https://orcid.org/0000-0002-7137-5737"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I142762351",
+              "display_name": "Royal College of Surgeons in Ireland",
+              "ror": "https://ror.org/01hxy9878",
+              "country_code": "IE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I142762351"
+              ]
+            }
+          ],
+          "countries": [
+            "IE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Caitriona Cahir",
+          "raw_affiliation_strings": [
+            "Division of Population Health Sciences, Royal College of Surgeons in Ireland, Dublin, Ireland"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7137-5737",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Population Health Sciences, Royal College of Surgeons in Ireland, Dublin, Ireland",
+              "institution_ids": [
+                "https://openalex.org/I142762351"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030749892",
+            "display_name": "Elı́sio Costa",
+            "orcid": "https://orcid.org/0000-0003-1158-1480"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I182534213",
+              "display_name": "Universidade do Porto",
+              "ror": "https://ror.org/043pwc612",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I182534213"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210138594",
+              "display_name": "Rede de Química e Tecnologia",
+              "ror": "https://ror.org/04j14t006",
+              "country_code": "PT",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Elisio Costa",
+          "raw_affiliation_strings": [
+            "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1158-1480",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal",
+              "institution_ids": [
+                "https://openalex.org/I182534213",
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072875726",
+            "display_name": "Anna Giardini",
+            "orcid": "https://orcid.org/0000-0002-2845-347X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210091499",
+              "display_name": "Istituti Clinici Scientifici Maugeri",
+              "ror": "https://ror.org/00mc77d93",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210091499",
+                "https://openalex.org/I4210105320",
+                "https://openalex.org/I4210153126"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anna Giardini",
+          "raw_affiliation_strings": [
+            "IT Department, Istituti Clinici Scientifici Maugeri IRCCS, Pavia, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-2845-347X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "IT Department, Istituti Clinici Scientifici Maugeri IRCCS, Pavia, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210091499"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5011460020",
+            "display_name": "Sara Malo",
+            "orcid": "https://orcid.org/0000-0002-7194-8275"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I255234318",
+              "display_name": "Universidad de Zaragoza",
+              "ror": "https://ror.org/012a91z28",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I255234318"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210136512",
+              "display_name": "Instituto de Investigación Sanitaria Aragón",
+              "ror": "https://ror.org/03njn4610",
+              "country_code": "ES",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I4210136512"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sara Malo",
+          "raw_affiliation_strings": [
+            "Fundación Instituto de Investigación Sanitaria de Aragón (IIS Aragón), Zaragoza, Spain",
+            "Preventive Medicine and Public Health Department, Zaragoza University, Zaragoza, Spain"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7194-8275",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fundación Instituto de Investigación Sanitaria de Aragón (IIS Aragón), Zaragoza, Spain",
+              "institution_ids": [
+                "https://openalex.org/I4210136512"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Preventive Medicine and Public Health Department, Zaragoza University, Zaragoza, Spain",
+              "institution_ids": [
+                "https://openalex.org/I255234318"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5081346813",
+            "display_name": "Mireia Massot Mesquida",
+            "orcid": "https://orcid.org/0000-0003-3649-5167"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210153292",
+              "display_name": "Institut Català de la Salut",
+              "ror": "https://ror.org/04wkdwp52",
+              "country_code": "ES",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I157913058",
+                "https://openalex.org/I4210153292"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mireia Massot Mesquida",
+          "raw_affiliation_strings": [
+            "Servei d'Atenció Primària Vallès Occidental, Institut Català de la Salut, Barcelona, Spain"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3649-5167",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Servei d'Atenció Primària Vallès Occidental, Institut Català de la Salut, Barcelona, Spain",
+              "institution_ids": [
+                "https://openalex.org/I4210153292"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057328932",
+            "display_name": "Enrica Menditto",
+            "orcid": "https://orcid.org/0000-0001-8633-5650"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71267560",
+              "display_name": "University of Naples Federico II",
+              "ror": "https://ror.org/05290cv24",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71267560"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Enrica Menditto",
+          "raw_affiliation_strings": [
+            "CIRFF, Center of Pharmacoeconomics, University of Naples Federico II, Naples, Italy",
+            "Department of Pharmacy, University of Naples Federico II, Naples, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8633-5650",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CIRFF, Center of Pharmacoeconomics, University of Naples Federico II, Naples, Italy",
+              "institution_ids": [
+                "https://openalex.org/I71267560"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Pharmacy, University of Naples Federico II, Naples, Italy",
+              "institution_ids": [
+                "https://openalex.org/I71267560"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5067880917",
+            "display_name": "Luís Midão",
+            "orcid": "https://orcid.org/0000-0003-1981-2554"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I182534213",
+              "display_name": "Universidade do Porto",
+              "ror": "https://ror.org/043pwc612",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I182534213"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210138594",
+              "display_name": "Rede de Química e Tecnologia",
+              "ror": "https://ror.org/04j14t006",
+              "country_code": "PT",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Luís Midão",
+          "raw_affiliation_strings": [
+            "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1981-2554",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UCIBIO REQUIMTE, ICBAS, Porto4Ageing - Competences Center on Active and Healthy Ageing, Faculty of Pharmacy, University of Porto, Porto, Portugal",
+              "institution_ids": [
+                "https://openalex.org/I182534213",
+                "https://openalex.org/I4210138594"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5031426344",
+            "display_name": "Carlos Luís Parra-Calderón",
+            "orcid": "https://orcid.org/0000-0003-2609-575X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210133602",
+              "display_name": "Instituto de Biomedicina de Sevilla",
+              "ror": "https://ror.org/031zwx660",
+              "country_code": "ES",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I134820265",
+                "https://openalex.org/I158283456",
+                "https://openalex.org/I4210133602",
+                "https://openalex.org/I79238269",
+                "https://openalex.org/I918821925"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210153139",
+              "display_name": "Hospital Universitario Virgen del Rocío",
+              "ror": "https://ror.org/04vfhnm78",
+              "country_code": "ES",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210153139"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I79238269",
+              "display_name": "Universidad de Sevilla",
+              "ror": "https://ror.org/03yxnpp24",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I79238269"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Carlos Luis Parra-Calderón",
+          "raw_affiliation_strings": [
+            "Group of Research and Innovation in Biomedical Informatics, Biomedical Engineering and Health Economy, Institute of Biomedicine of Seville, IBiS / Virgen del Rocío University Hospital / CSIC / University of Seville, Seville, Spain"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2609-575X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Group of Research and Innovation in Biomedical Informatics, Biomedical Engineering and Health Economy, Institute of Biomedicine of Seville, IBiS / Virgen del Rocío University Hospital / CSIC / University of Seville, Seville, Spain",
+              "institution_ids": [
+                "https://openalex.org/I4210133602",
+                "https://openalex.org/I79238269",
+                "https://openalex.org/I4210153139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056252003",
+            "display_name": "Enrique Pepiol Salom",
+            "orcid": "https://orcid.org/0000-0003-2289-5776"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210089961",
+              "display_name": "Laboratorios Farmaceúticos Rovi (Spain)",
+              "ror": "https://ror.org/00fc1yz57",
+              "country_code": "ES",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210089961"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Enrique Pepiol Salom",
+          "raw_affiliation_strings": [
+            "International Commitee, Muy Ilustre Colegio Oficial de Farmacéuticos, Valencia, Spain"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2289-5776",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "International Commitee, Muy Ilustre Colegio Oficial de Farmacéuticos, Valencia, Spain",
+              "institution_ids": [
+                "https://openalex.org/I4210089961"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5051918490",
+            "display_name": "Bernard Vrijens",
+            "orcid": "https://orcid.org/0000-0002-9090-1253"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I157674565",
+              "display_name": "University of Liège",
+              "ror": "https://ror.org/00afp2z80",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I157674565"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bernard Vrijens",
+          "raw_affiliation_strings": [
+            "AARDEX Group, Seraing, Belgium",
+            "Liège University, Liège, Belgium"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9090-1253",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "AARDEX Group, Seraing, Belgium",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Liège University, Liège, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I157674565"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 6,
+      "institutions_distinct_count": 14,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 2950,
+        "currency": "USD",
+        "value_usd": 2950
+      },
+      "apc_paid": {
+        "value": 2950,
+        "currency": "USD",
+        "value_usd": 2950
+      },
+      "fwci": 4.0907,
+      "has_fulltext": true,
+      "cited_by_count": 32,
+      "citation_normalized_percentile": {
+        "value": 0.94287807,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "22",
+        "issue": "8",
+        "first_page": "e18150",
+        "last_page": "e18150"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11620",
+        "display_name": "Medication Adherence and Compliance",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2714",
+          "display_name": "Family Practice"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11620",
+          "display_name": "Medication Adherence and Compliance",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2714",
+            "display_name": "Family Practice"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11446",
+          "display_name": "Mobile Health and mHealth Applications",
+          "score": 0.9574999809265137,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3600",
+            "display_name": "General Health Professions"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/36",
+            "display_name": "Health Professions"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10854",
+          "display_name": "Bipolar Disorder and Treatment",
+          "score": 0.9473999738693237,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2738",
+            "display_name": "Psychiatry and Mental health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/big-data",
+          "display_name": "Big data",
+          "score": 0.5450151562690735
+        },
+        {
+          "id": "https://openalex.org/keywords/benchmarking",
+          "display_name": "Benchmarking",
+          "score": 0.5447210073471069
+        },
+        {
+          "id": "https://openalex.org/keywords/health-care",
+          "display_name": "Health care",
+          "score": 0.5388341546058655
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.5262386202812195
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacy",
+          "display_name": "Pharmacy",
+          "score": 0.4771411120891571
+        },
+        {
+          "id": "https://openalex.org/keywords/public-health",
+          "display_name": "Public health",
+          "score": 0.47048237919807434
+        },
+        {
+          "id": "https://openalex.org/keywords/psychological-intervention",
+          "display_name": "Psychological intervention",
+          "score": 0.46717768907546997
+        },
+        {
+          "id": "https://openalex.org/keywords/population",
+          "display_name": "Population",
+          "score": 0.4334947466850281
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.35560399293899536
+        },
+        {
+          "id": "https://openalex.org/keywords/internet-privacy",
+          "display_name": "Internet privacy",
+          "score": 0.34884464740753174
+        },
+        {
+          "id": "https://openalex.org/keywords/family-medicine",
+          "display_name": "Family medicine",
+          "score": 0.271663635969162
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.2555435299873352
+        },
+        {
+          "id": "https://openalex.org/keywords/business",
+          "display_name": "Business",
+          "score": 0.25375914573669434
+        },
+        {
+          "id": "https://openalex.org/keywords/nursing",
+          "display_name": "Nursing",
+          "score": 0.17058095335960388
+        },
+        {
+          "id": "https://openalex.org/keywords/environmental-health",
+          "display_name": "Environmental health",
+          "score": 0.14169692993164062
+        },
+        {
+          "id": "https://openalex.org/keywords/political-science",
+          "display_name": "Political science",
+          "score": 0.13877081871032715
+        },
+        {
+          "id": "https://openalex.org/keywords/data-mining",
+          "display_name": "Data mining",
+          "score": 0.13486090302467346
+        },
+        {
+          "id": "https://openalex.org/keywords/marketing",
+          "display_name": "Marketing",
+          "score": 0.12831488251686096
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C75684735",
+          "wikidata": "https://www.wikidata.org/wiki/Q858810",
+          "display_name": "Big data",
+          "level": 2,
+          "score": 0.5450151562690735
+        },
+        {
+          "id": "https://openalex.org/C86251818",
+          "wikidata": "https://www.wikidata.org/wiki/Q816754",
+          "display_name": "Benchmarking",
+          "level": 2,
+          "score": 0.5447210073471069
+        },
+        {
+          "id": "https://openalex.org/C160735492",
+          "wikidata": "https://www.wikidata.org/wiki/Q31207",
+          "display_name": "Health care",
+          "level": 2,
+          "score": 0.5388341546058655
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.5262386202812195
+        },
+        {
+          "id": "https://openalex.org/C104863432",
+          "wikidata": "https://www.wikidata.org/wiki/Q614304",
+          "display_name": "Pharmacy",
+          "level": 2,
+          "score": 0.4771411120891571
+        },
+        {
+          "id": "https://openalex.org/C138816342",
+          "wikidata": "https://www.wikidata.org/wiki/Q189603",
+          "display_name": "Public health",
+          "level": 2,
+          "score": 0.47048237919807434
+        },
+        {
+          "id": "https://openalex.org/C27415008",
+          "wikidata": "https://www.wikidata.org/wiki/Q7256382",
+          "display_name": "Psychological intervention",
+          "level": 2,
+          "score": 0.46717768907546997
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.4334947466850281
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.35560399293899536
+        },
+        {
+          "id": "https://openalex.org/C108827166",
+          "wikidata": "https://www.wikidata.org/wiki/Q175975",
+          "display_name": "Internet privacy",
+          "level": 1,
+          "score": 0.34884464740753174
+        },
+        {
+          "id": "https://openalex.org/C512399662",
+          "wikidata": "https://www.wikidata.org/wiki/Q3505712",
+          "display_name": "Family medicine",
+          "level": 1,
+          "score": 0.271663635969162
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.2555435299873352
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.25375914573669434
+        },
+        {
+          "id": "https://openalex.org/C159110408",
+          "wikidata": "https://www.wikidata.org/wiki/Q121176",
+          "display_name": "Nursing",
+          "level": 1,
+          "score": 0.17058095335960388
+        },
+        {
+          "id": "https://openalex.org/C99454951",
+          "wikidata": "https://www.wikidata.org/wiki/Q932068",
+          "display_name": "Environmental health",
+          "level": 1,
+          "score": 0.14169692993164062
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.13877081871032715
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.13486090302467346
+        },
+        {
+          "id": "https://openalex.org/C162853370",
+          "wikidata": "https://www.wikidata.org/wiki/Q39809",
+          "display_name": "Marketing",
+          "level": 1,
+          "score": 0.12831488251686096
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000077558",
+          "descriptor_name": "Big Data",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000077558",
+          "descriptor_name": "Big Data",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000077558",
+          "descriptor_name": "Big Data",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010349",
+          "descriptor_name": "Patient Compliance",
+          "qualifier_ui": "Q000706",
+          "qualifier_name": "statistics & numerical data",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010349",
+          "descriptor_name": "Patient Compliance",
+          "qualifier_ui": "Q000706",
+          "qualifier_name": "statistics & numerical data",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010349",
+          "descriptor_name": "Patient Compliance",
+          "qualifier_ui": "Q000706",
+          "qualifier_name": "statistics & numerical data",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 8,
+      "locations": [
+        {
+          "id": "doi:10.2196/18150",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/18150",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S17147534",
+            "display_name": "Journal of Medical Internet Research",
+            "issn_l": "1438-8871",
+            "issn": [
+              "1438-8871",
+              "1439-4456"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Medical Internet Research",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:32663138",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32663138",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of medical Internet research",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:www.repositoriosalud.es:10668/15932",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10668/15932",
+          "pdf_url": "https://www.jmir.org/2020/8/e18150/PDF",
+          "source": {
+            "id": "https://openalex.org/S4377196114",
+            "display_name": "RISalud Institutional Health Repository of Andalucía",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "research article"
+        },
+        {
+          "id": "pmh:oai:zaguan.unizar.es:95051",
+          "is_oa": true,
+          "landing_page_url": "http://zaguan.unizar.es/record/95051",
+          "pdf_url": "http://zaguan.unizar.es/record/95051",
+          "source": {
+            "id": "https://openalex.org/S4306401812",
+            "display_name": "Zaguan (University of Zaragoza Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I255234318",
+            "host_organization_name": "Universidad de Zaragoza",
+            "host_organization_lineage": [
+              "https://openalex.org/I255234318"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:digital.csic.es:10261/234340",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10261/234340",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400616",
+            "display_name": "DIGITAL.CSIC (Spanish National Research Council (CSIC))",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I134820265",
+            "host_organization_name": "Consejo Superior de Investigaciones Científicas",
+            "host_organization_lineage": [
+              "https://openalex.org/I134820265"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "artículo"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:b577f3b6b1604677aabdb5074b424cf6",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/b577f3b6b1604677aabdb5074b424cf6",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Medical Internet Research, Vol 22, Iss 8, p e18150 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7484771",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7484771",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Med Internet Res",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:www.repositoriosalud.es:10668/4559",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10668/4559",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196114",
+            "display_name": "RISalud Institutional Health Repository of Andalucía",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "review article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/18150",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/18150",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S17147534",
+          "display_name": "Journal of Medical Internet Research",
+          "issn_l": "1438-8871",
+          "issn": [
+            "1438-8871",
+            "1439-4456"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Medical Internet Research",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 46,
+      "referenced_works": [
+        "https://openalex.org/W119203632",
+        "https://openalex.org/W1544105263",
+        "https://openalex.org/W1594567624",
+        "https://openalex.org/W1741567663",
+        "https://openalex.org/W2001414373",
+        "https://openalex.org/W2014390724",
+        "https://openalex.org/W2033250946",
+        "https://openalex.org/W2036404617",
+        "https://openalex.org/W2071573356",
+        "https://openalex.org/W2071940113",
+        "https://openalex.org/W2127134070",
+        "https://openalex.org/W2136950115",
+        "https://openalex.org/W2152053661",
+        "https://openalex.org/W2285902090",
+        "https://openalex.org/W2397791882",
+        "https://openalex.org/W2442490445",
+        "https://openalex.org/W2473046424",
+        "https://openalex.org/W2549346488",
+        "https://openalex.org/W2590410822",
+        "https://openalex.org/W2600319772",
+        "https://openalex.org/W2604581019",
+        "https://openalex.org/W2606896290",
+        "https://openalex.org/W2607252531",
+        "https://openalex.org/W2666236121",
+        "https://openalex.org/W2766017377",
+        "https://openalex.org/W2771633143",
+        "https://openalex.org/W2774550125",
+        "https://openalex.org/W2790318238",
+        "https://openalex.org/W2811496043",
+        "https://openalex.org/W2890229003",
+        "https://openalex.org/W2895681116",
+        "https://openalex.org/W2898344102",
+        "https://openalex.org/W2901418399",
+        "https://openalex.org/W2903186039",
+        "https://openalex.org/W2905449663",
+        "https://openalex.org/W2922251226",
+        "https://openalex.org/W2943491685",
+        "https://openalex.org/W2944192529",
+        "https://openalex.org/W2951920438",
+        "https://openalex.org/W2968456916",
+        "https://openalex.org/W2971628050",
+        "https://openalex.org/W2976208691",
+        "https://openalex.org/W2991397221",
+        "https://openalex.org/W3010557998",
+        "https://openalex.org/W3014820621",
+        "https://openalex.org/W3022052802"
+      ],
+      "related_works": [
+        "https://openalex.org/W4238897586",
+        "https://openalex.org/W435179959",
+        "https://openalex.org/W2619091065",
+        "https://openalex.org/W2059640416",
+        "https://openalex.org/W1490753184",
+        "https://openalex.org/W2284465472",
+        "https://openalex.org/W2291782699",
+        "https://openalex.org/W1993948687",
+        "https://openalex.org/W2011676020",
+        "https://openalex.org/W2329895846"
+      ],
+      "abstract_inverted_index": {
+        "Despite": [
+          0
+        ],
+        "half": [
+          1
+        ],
+        "a": [
+          2,
+          62,
+          71,
+          76,
+          121,
+          152,
+          184,
+          228
+        ],
+        "century": [
+          3
+        ],
+        "of": [
+          4,
+          24,
+          32,
+          48,
+          92,
+          147,
+          158,
+          187,
+          200,
+          205,
+          221,
+          243,
+          260,
+          267
+        ],
+        "dedicated": [
+          5
+        ],
+        "studies,": [
+          6
+        ],
+        "medication": [
+          7,
+          261
+        ],
+        "adherence": [
+          8,
+          126,
+          191,
+          235,
+          262,
+          272
+        ],
+        "remains": [
+          9
+        ],
+        "far": [
+          10
+        ],
+        "from": [
+          11
+        ],
+        "perfect,": [
+          12
+        ],
+        "with": [
+          13,
+          236
+        ],
+        "many": [
+          14
+        ],
+        "patients": [
+          15
+        ],
+        "not": [
+          16
+        ],
+        "taking": [
+          17
+        ],
+        "their": [
+          18
+        ],
+        "medications": [
+          19
+        ],
+        "as": [
+          20,
+          135,
+          137
+        ],
+        "prescribed.": [
+          21
+        ],
+        "The": [
+          22
+        ],
+        "magnitude": [
+          23
+        ],
+        "this": [
+          25,
+          39,
+          68,
+          80,
+          148,
+          210,
+          222
+        ],
+        "problem": [
+          26
+        ],
+        "is": [
+          27,
+          40,
+          70,
+          98,
+          151,
+          224
+        ],
+        "rising,": [
+          28
+        ],
+        "jeopardizing": [
+          29
+        ],
+        "the": [
+          30,
+          41,
+          46,
+          49,
+          85,
+          90,
+          132,
+          188,
+          201,
+          219
+        ],
+        "effectiveness": [
+          31,
+          202
+        ],
+        "evidence-based": [
+          33
+        ],
+        "therapies.": [
+          34
+        ],
+        "An": [
+          35
+        ],
+        "important": [
+          36
+        ],
+        "reason": [
+          37
+        ],
+        "for": [
+          38,
+          65,
+          197,
+          227,
+          233
+        ],
+        "unprecedented": [
+          42
+        ],
+        "demographic": [
+          43
+        ],
+        "change": [
+          44
+        ],
+        "at": [
+          45,
+          131
+        ],
+        "beginning": [
+          47
+        ],
+        "21st": [
+          50
+        ],
+        "century.": [
+          51
+        ],
+        "Aging": [
+          52
+        ],
+        "leads": [
+          53
+        ],
+        "to": [
+          54,
+          124,
+          143,
+          154,
+          165,
+          225,
+          253
+        ],
+        "multimorbidity": [
+          55
+        ],
+        "and": [
+          56,
+          111,
+          129,
+          168,
+          175,
+          192,
+          195,
+          203,
+          245,
+          257,
+          273,
+          280
+        ],
+        "complex": [
+          57
+        ],
+        "therapeutic": [
+          58
+        ],
+        "regimens": [
+          59
+        ],
+        "that": [
+          60
+        ],
+        "create": [
+          61
+        ],
+        "fertile": [
+          63
+        ],
+        "ground": [
+          64
+        ],
+        "nonadherence.": [
+          66
+        ],
+        "As": [
+          67
+        ],
+        "scenario": [
+          69
+        ],
+        "global": [
+          72,
+          231
+        ],
+        "problem,": [
+          73
+        ],
+        "it": [
+          74
+        ],
+        "needs": [
+          75
+        ],
+        "worldwide": [
+          77
+        ],
+        "answer.": [
+          78
+        ],
+        "Could": [
+          79
+        ],
+        "answer": [
+          81
+        ],
+        "be": [
+          82,
+          162
+        ],
+        "provided,": [
+          83
+        ],
+        "given": [
+          84
+        ],
+        "new": [
+          86
+        ],
+        "opportunities": [
+          87
+        ],
+        "created": [
+          88
+        ],
+        "by": [
+          89
+        ],
+        "digitization": [
+          91
+        ],
+        "health": [
+          93,
+          103,
+          108,
+          113,
+          275
+        ],
+        "care?": [
+          94
+        ],
+        "Daily,": [
+          95
+        ],
+        "health-related": [
+          96
+        ],
+        "information": [
+          97
+        ],
+        "being": [
+          99
+        ],
+        "collected": [
+          100
+        ],
+        "in": [
+          101,
+          251
+        ],
+        "electronic": [
+          102
+        ],
+        "records,": [
+          104
+        ],
+        "pharmacy": [
+          105
+        ],
+        "dispensing": [
+          106
+        ],
+        "databases,": [
+          107
+        ],
+        "insurance": [
+          109
+        ],
+        "systems,": [
+          110
+        ],
+        "national": [
+          112
+        ],
+        "system": [
+          114
+        ],
+        "records.": [
+          115
+        ],
+        "These": [
+          116,
+          178
+        ],
+        "big": [
+          117,
+          166,
+          237,
+          247
+        ],
+        "data": [
+          118,
+          167,
+          248
+        ],
+        "repositories": [
+          119
+        ],
+        "offer": [
+          120
+        ],
+        "unique": [
+          122
+        ],
+        "chance": [
+          123
+        ],
+        "study": [
+          125
+        ],
+        "both": [
+          127
+        ],
+        "retrospectively": [
+          128
+        ],
+        "prospectively": [
+          130
+        ],
+        "population": [
+          133
+        ],
+        "level,": [
+          134
+        ],
+        "well": [
+          136
+        ],
+        "its": [
+          138
+        ],
+        "related": [
+          139
+        ],
+        "factors.": [
+          140
+        ],
+        "In": [
+          141
+        ],
+        "order": [
+          142,
+          252
+        ],
+        "make": [
+          144,
+          274
+        ],
+        "full": [
+          145
+        ],
+        "use": [
+          146,
+          266
+        ],
+        "opportunity,": [
+          149
+        ],
+        "there": [
+          150
+        ],
+        "need": [
+          153
+        ],
+        "develop": [
+          155
+        ],
+        "standardized": [
+          156,
+          179
+        ],
+        "measures": [
+          157,
+          180
+        ],
+        "adherence,": [
+          159
+        ],
+        "which": [
+          160
+        ],
+        "can": [
+          161
+        ],
+        "applied": [
+          163
+        ],
+        "globally": [
+          164
+        ],
+        "will": [
+          169
+        ],
+        "inform": [
+          170
+        ],
+        "scientific": [
+          171
+        ],
+        "research,": [
+          172
+        ],
+        "clinical": [
+          173,
+          193
+        ],
+        "practice,": [
+          174
+        ],
+        "public": [
+          176
+        ],
+        "health.": [
+          177
+        ],
+        "may": [
+          181,
+          270
+        ],
+        "also": [
+          182
+        ],
+        "enable": [
+          183
+        ],
+        "better": [
+          185
+        ],
+        "understanding": [
+          186
+        ],
+        "relationship": [
+          189
+        ],
+        "between": [
+          190
+        ],
+        "outcomes,": [
+          194
+        ],
+        "allow": [
+          196
+        ],
+        "fair": [
+          198
+        ],
+        "benchmarking": [
+          199
+        ],
+        "cost-effectiveness": [
+          204
+        ],
+        "adherence-targeting": [
+          206
+        ],
+        "interventions.": [
+          207
+        ],
+        "Unfortunately,": [
+          208
+        ],
+        "despite": [
+          209
+        ],
+        "obvious": [
+          211
+        ],
+        "need,": [
+          212
+        ],
+        "such": [
+          213
+        ],
+        "standards": [
+          214,
+          232,
+          242,
+          269
+        ],
+        "are": [
+          215,
+          249
+        ],
+        "still": [
+          216
+        ],
+        "lacking.": [
+          217
+        ],
+        "Therefore,": [
+          218
+        ],
+        "aim": [
+          220
+        ],
+        "paper": [
+          223
+        ],
+        "call": [
+          226
+        ],
+        "consensus": [
+          229
+        ],
+        "on": [
+          230
+        ],
+        "measuring": [
+          234
+        ],
+        "data.": [
+          238
+        ],
+        "More": [
+          239
+        ],
+        "specifically,": [
+          240
+        ],
+        "sound": [
+          241
+        ],
+        "formatting": [
+          244
+        ],
+        "analyzing": [
+          246
+        ],
+        "needed": [
+          250
+        ],
+        "assess,": [
+          254
+        ],
+        "uniformly": [
+          255
+        ],
+        "present,": [
+          256
+        ],
+        "compare": [
+          258
+        ],
+        "patterns": [
+          259
+        ],
+        "across": [
+          263
+        ],
+        "studies.": [
+          264
+        ],
+        "Wide": [
+          265
+        ],
+        "these": [
+          268
+        ],
+        "improve": [
+          271
+        ],
+        "care": [
+          276
+        ],
+        "systems": [
+          277
+        ],
+        "more": [
+          278
+        ],
+        "effective": [
+          279
+        ],
+        "sustainable.": [
+          281
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

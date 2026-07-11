@@ -1,0 +1,32 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "38557678",
+      "33186790",
+      "41450167",
+      "39636451",
+      "30367117"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"prostatic neoplasms\"[MeSH Terms] OR (\"prostatic\"[All Fields] AND \"neoplasms\"[All Fields]) OR \"prostatic neoplasms\"[All Fields] OR (\"prostate\"[All Fields] AND \"cancer\"[All Fields]) OR \"prostate cancer\"[All Fields]) AND (\"life style\"[MeSH Terms] OR (\"life\"[All Fields] AND \"style\"[All Fields]) OR \"life style\"[All Fields] OR \"lifestyle\"[All Fields] OR \"lifestyles\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Prostate Cancer Lifestyle Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

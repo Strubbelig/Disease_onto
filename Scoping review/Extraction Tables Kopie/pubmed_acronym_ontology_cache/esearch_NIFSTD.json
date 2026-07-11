@@ -1,0 +1,26 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "22080554",
+      "21789500",
+      "24093723",
+      "22737162",
+      "18975148",
+      "18958629"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"NIFSTD\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

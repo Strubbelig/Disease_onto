@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "32527280"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"databases, pharmaceutical\"[MeSH Terms] OR (\"databases\"[All Fields] AND \"pharmaceutical\"[All Fields]) OR \"pharmaceutical databases\"[All Fields] OR (\"drug\"[All Fields] AND \"database\"[All Fields]) OR \"drug database\"[All Fields]) AND (\"metabolism, inborn errors\"[MeSH Terms] OR (\"metabolism\"[All Fields] AND \"inborn\"[All Fields] AND \"errors\"[All Fields]) OR \"inborn errors metabolism\"[All Fields] OR (\"inborn\"[All Fields] AND \"errors\"[All Fields] AND \"metabolism\"[All Fields]) OR \"inborn errors of metabolism\"[All Fields]) AND \"ddiem\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Drug Database for Inborn Errors of Metabolism (DDIEM) Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "26",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35392252",
+      "36161343",
+      "41331486",
+      "37942414",
+      "30928329",
+      "35804753",
+      "23590400",
+      "18570683",
+      "29277900",
+      "38491830"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"pathway\"[All Fields] OR \"pathway s\"[All Fields] OR \"pathways\"[All Fields]) AND (\"terminologies\"[All Fields] OR \"terminology\"[All Fields]) AND (\"system\"[All Fields] OR \"system s\"[All Fields] OR \"systems\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Pathway Terminology System\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

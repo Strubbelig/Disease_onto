@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "123",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40059391",
+      "26306236",
+      "41052288",
+      "34966903",
+      "36283581",
+      "35511428",
+      "17140269",
+      "25133803",
+      "23429179",
+      "15262796"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Medical Subject Headings\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

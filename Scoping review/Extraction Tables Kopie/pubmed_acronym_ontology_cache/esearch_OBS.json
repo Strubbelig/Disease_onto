@@ -1,0 +1,32 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "8",
+    "retmax": "8",
+    "retstart": "0",
+    "idlist": [
+      "40487082",
+      "41372273",
+      "28522862",
+      "39128570",
+      "41663534",
+      "19466376",
+      "22590565",
+      "20494848"
+    ],
+    "translationset": [
+      {
+        "from": "OBS",
+        "to": "\"Obs Stud\"[Journal:__jid101656496] OR \"obs\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"obs stud\"[Journal] OR \"obs\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "226",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "1538853",
+      "31113279",
+      "34758253",
+      "25324557",
+      "35976383",
+      "37953324",
+      "34609017",
+      "33539567",
+      "36639928",
+      "20841855"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"nursing care\"[MeSH Terms] OR (\"nursing\"[All Fields] AND \"care\"[All Fields]) OR \"nursing care\"[All Fields] OR (\"nursing\"[All Fields] AND \"care\"[All Fields] AND \"coordination\"[All Fields]) OR \"nursing care coordination\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Nursing Care Coordination Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"comprehensibility\"[All Fields] OR \"comprehensible\"[All Fields] OR \"comprehension\"[MeSH Terms] OR \"comprehension\"[All Fields] OR \"comprehensions\"[All Fields] OR \"comprehensive\"[All Fields] OR \"comprehensively\"[All Fields] OR \"comprehensiveness\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"flap s\"[All Fields] OR \"surgical flaps\"[MeSH Terms] OR (\"surgical\"[All Fields] AND \"flaps\"[All Fields]) OR \"surgical flaps\"[All Fields] OR \"flaps\"[All Fields]) AND (\"surgery, plastic\"[MeSH Terms] OR (\"surgery\"[All Fields] AND \"plastic\"[All Fields]) OR \"plastic surgery\"[All Fields] OR (\"reconstructive\"[All Fields] AND \"surgery\"[All Fields]) OR \"reconstructive surgery\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"A comprehensive ontology of flaps in reconstructive surgery\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

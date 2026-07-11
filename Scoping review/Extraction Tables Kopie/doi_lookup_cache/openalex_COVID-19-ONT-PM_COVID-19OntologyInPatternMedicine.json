@@ -1,0 +1,956 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 93,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (COVID-19OntologyInPatternMedicine COVID-19-ONT-PM ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "COVID-19OntologyInPatternMedicine COVID-19-ONT-PM ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:COVID-19OntologyInPatternMedicine COVID-19-ONT-PM ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4388092380",
+      "doi": "https://doi.org/10.48550/arxiv.2310.18315",
+      "title": "Systematic Analysis of COVID-19 Ontologies",
+      "display_name": "Systematic Analysis of COVID-19 Ontologies",
+      "relevance_score": 19.344803,
+      "publication_year": 2023,
+      "publication_date": "2023-09-15",
+      "ids": {
+        "openalex": "https://openalex.org/W4388092380",
+        "doi": "https://doi.org/10.48550/arxiv.2310.18315"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:arXiv.org:2310.18315",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2310.18315",
+        "pdf_url": "https://arxiv.org/pdf/2310.18315",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "text"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "arxiv",
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/2310.18315",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5083617695",
+            "display_name": "D J Bain",
+            "orcid": "https://orcid.org/0000-0002-2811-6692"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Bain, Debanjali",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5030223469",
+            "display_name": "Biswanath Dutta",
+            "orcid": "https://orcid.org/0000-0003-3059-8202"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Dutta, Biswanath",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 0,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.9266999959945679,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9266999959945679,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.716538667678833
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7000576257705688
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.5493324995040894
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.458874374628067
+        },
+        {
+          "id": "https://openalex.org/keywords/domain",
+          "display_name": "Domain (mathematical analysis)",
+          "score": 0.43740713596343994
+        },
+        {
+          "id": "https://openalex.org/keywords/vocabulary",
+          "display_name": "Vocabulary",
+          "score": 0.4179631471633911
+        },
+        {
+          "id": "https://openalex.org/keywords/knowledge-management",
+          "display_name": "Knowledge management",
+          "score": 0.3408122956752777
+        },
+        {
+          "id": "https://openalex.org/keywords/domain-knowledge",
+          "display_name": "Domain knowledge",
+          "score": 0.29098305106163025
+        },
+        {
+          "id": "https://openalex.org/keywords/linguistics",
+          "display_name": "Linguistics",
+          "score": 0.08913910388946533
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.716538667678833
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7000576257705688
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.5493324995040894
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.458874374628067
+        },
+        {
+          "id": "https://openalex.org/C36503486",
+          "wikidata": "https://www.wikidata.org/wiki/Q11235244",
+          "display_name": "Domain (mathematical analysis)",
+          "level": 2,
+          "score": 0.43740713596343994
+        },
+        {
+          "id": "https://openalex.org/C2777601683",
+          "wikidata": "https://www.wikidata.org/wiki/Q6499736",
+          "display_name": "Vocabulary",
+          "level": 2,
+          "score": 0.4179631471633911
+        },
+        {
+          "id": "https://openalex.org/C56739046",
+          "wikidata": "https://www.wikidata.org/wiki/Q192060",
+          "display_name": "Knowledge management",
+          "level": 1,
+          "score": 0.3408122956752777
+        },
+        {
+          "id": "https://openalex.org/C207685749",
+          "wikidata": "https://www.wikidata.org/wiki/Q2088941",
+          "display_name": "Domain knowledge",
+          "level": 2,
+          "score": 0.29098305106163025
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.08913910388946533
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C134306372",
+          "wikidata": "https://www.wikidata.org/wiki/Q7754",
+          "display_name": "Mathematical analysis",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "pmh:oai:arXiv.org:2310.18315",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2310.18315",
+          "pdf_url": "https://arxiv.org/pdf/2310.18315",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "text"
+        },
+        {
+          "id": "doi:10.48550/arxiv.2310.18315",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.48550/arxiv.2310.18315",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Preprint"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:arXiv.org:2310.18315",
+        "is_oa": true,
+        "landing_page_url": "http://arxiv.org/abs/2310.18315",
+        "pdf_url": "https://arxiv.org/pdf/2310.18315",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "",
+        "raw_type": "text"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4388092380.pdf"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2804669904",
+        "https://openalex.org/W2363188691",
+        "https://openalex.org/W2223008607",
+        "https://openalex.org/W2726617685",
+        "https://openalex.org/W1953363106",
+        "https://openalex.org/W2114954739",
+        "https://openalex.org/W2889792096",
+        "https://openalex.org/W2589434863",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W2357775360"
+      ],
+      "abstract_inverted_index": {
+        "This": [
+          0
+        ],
+        "comprehensive": [
+          1,
+          155
+        ],
+        "study": [
+          2,
+          22,
+          141,
+          182
+        ],
+        "conducts": [
+          3
+        ],
+        "an": [
+          4,
+          40
+        ],
+        "in-depth": [
+          5
+        ],
+        "analysis": [
+          6,
+          79,
+          195
+        ],
+        "of": [
+          7,
+          34,
+          67,
+          75,
+          83,
+          113,
+          186,
+          211
+        ],
+        "existing": [
+          8
+        ],
+        "COVID-19": [
+          9,
+          52,
+          150,
+          163
+        ],
+        "ontologies,": [
+          10
+        ],
+        "scrutinizing": [
+          11
+        ],
+        "their": [
+          12
+        ],
+        "objectives,": [
+          13
+        ],
+        "classifications,": [
+          14
+        ],
+        "design": [
+          15,
+          130
+        ],
+        "methodologies,": [
+          16
+        ],
+        "and": [
+          17,
+          37,
+          57,
+          73,
+          98,
+          149,
+          161,
+          196,
+          204
+        ],
+        "domain": [
+          18,
+          76,
+          205
+        ],
+        "focal": [
+          19
+        ],
+        "points.": [
+          20
+        ],
+        "The": [
+          21,
+          59,
+          78,
+          123,
+          180
+        ],
+        "is": [
+          23,
+          109
+        ],
+        "conducted": [
+          24
+        ],
+        "through": [
+          25
+        ],
+        "a": [
+          26,
+          31,
+          44,
+          88,
+          128,
+          170,
+          190
+        ],
+        "dual-stage": [
+          27
+        ],
+        "approach,": [
+          28
+        ],
+        "commencing": [
+          29
+        ],
+        "with": [
+          30,
+          134
+        ],
+        "systematic": [
+          32
+        ],
+        "review": [
+          33
+        ],
+        "relevant": [
+          35
+        ],
+        "literature": [
+          36
+        ],
+        "followed": [
+          38
+        ],
+        "by": [
+          39,
+          154
+        ],
+        "ontological": [
+          41,
+          165,
+          213
+        ],
+        "assessment": [
+          42
+        ],
+        "utilizing": [
+          43,
+          92
+        ],
+        "parametric": [
+          45
+        ],
+        "methodology.": [
+          46
+        ],
+        "Through": [
+          47
+        ],
+        "this": [
+          48,
+          167
+        ],
+        "meticulous": [
+          49
+        ],
+        "process,": [
+          50
+        ],
+        "twenty-four": [
+          51
+        ],
+        "Ontologies": [
+          53
+        ],
+        "(CovOs)": [
+          54
+        ],
+        "are": [
+          55
+        ],
+        "selected": [
+          56
+        ],
+        "examined.": [
+          58
+        ],
+        "findings": [
+          60
+        ],
+        "highlight": [
+          61
+        ],
+        "the": [
+          62,
+          95,
+          106,
+          110,
+          146,
+          209
+        ],
+        "scope,": [
+          63
+        ],
+        "intended": [
+          64
+        ],
+        "purpose,": [
+          65
+        ],
+        "granularity": [
+          66
+        ],
+        "ontology,": [
+          68
+        ],
+        "modularity,": [
+          69
+        ],
+        "formalism,": [
+          70
+        ],
+        "vocabulary": [
+          71
+        ],
+        "reuse,": [
+          72
+        ],
+        "extent": [
+          74
+        ],
+        "coverage.": [
+          77
+        ],
+        "reveals": [
+          80
+        ],
+        "varying": [
+          81
+        ],
+        "levels": [
+          82
+        ],
+        "formality": [
+          84
+        ],
+        "in": [
+          85
+        ],
+        "ontology": [
+          86,
+          151,
+          156
+        ],
+        "development,": [
+          87,
+          198
+        ],
+        "prevalent": [
+          89
+        ],
+        "preference": [
+          90
+        ],
+        "for": [
+          91,
+          145,
+          193
+        ],
+        "OWL": [
+          93
+        ],
+        "as": [
+          94,
+          127,
+          189
+        ],
+        "representational": [
+          96
+        ],
+        "language,": [
+          97
+        ],
+        "diverse": [
+          99
+        ],
+        "approaches": [
+          100
+        ],
+        "to": [
+          101
+        ],
+        "constructing": [
+          102
+        ],
+        "class": [
+          103
+        ],
+        "hierarchies": [
+          104
+        ],
+        "within": [
+          105
+        ],
+        "models.": [
+          107
+        ],
+        "Noteworthy": [
+          108
+        ],
+        "recurrent": [
+          111
+        ],
+        "reuse": [
+          112
+        ],
+        "ontologies": [
+          114
+        ],
+        "like": [
+          115
+        ],
+        "OBO": [
+          116
+        ],
+        "models": [
+          117
+        ],
+        "(CIDO,": [
+          118
+        ],
+        "GO,": [
+          119
+        ],
+        "etc.)": [
+          120
+        ],
+        "alongside": [
+          121
+        ],
+        "CODO.": [
+          122
+        ],
+        "METHONTOLOGY": [
+          124
+        ],
+        "approach": [
+          125
+        ],
+        "emerges": [
+          126
+        ],
+        "favored": [
+          129
+        ],
+        "methodology,": [
+          131
+        ],
+        "often": [
+          132
+        ],
+        "coupled": [
+          133
+        ],
+        "application-based": [
+          135
+        ],
+        "or": [
+          136
+        ],
+        "data-centric": [
+          137
+        ],
+        "evaluation": [
+          138
+        ],
+        "methods.": [
+          139
+        ],
+        "Our": [
+          140
+        ],
+        "provides": [
+          142
+        ],
+        "valuable": [
+          143
+        ],
+        "insights": [
+          144
+        ],
+        "scientific": [
+          147
+        ],
+        "community": [
+          148
+        ],
+        "developers,": [
+          152
+        ],
+        "supplemented": [
+          153
+        ],
+        "metrics.": [
+          157
+        ],
+        "By": [
+          158
+        ],
+        "meticulously": [
+          159
+        ],
+        "evaluating": [
+          160
+        ],
+        "documenting": [
+          162
+        ],
+        "information-driven": [
+          164
+        ],
+        "models,": [
+          166
+        ],
+        "research": [
+          168,
+          202
+        ],
+        "offers": [
+          169
+        ],
+        "comparative": [
+          171,
+          194
+        ],
+        "cross-domain": [
+          172
+        ],
+        "perspective,": [
+          173
+        ],
+        "shedding": [
+          174
+        ],
+        "light": [
+          175
+        ],
+        "on": [
+          176
+        ],
+        "knowledge": [
+          177
+        ],
+        "representation": [
+          178
+        ],
+        "variations.": [
+          179
+        ],
+        "present": [
+          181
+        ],
+        "significantly": [
+          183
+        ],
+        "enhances": [
+          184
+        ],
+        "understanding": [
+          185
+        ],
+        "CovOs,": [
+          187
+        ],
+        "serving": [
+          188
+        ],
+        "consolidated": [
+          191
+        ],
+        "resource": [
+          192
+        ],
+        "future": [
+          197,
+          212
+        ],
+        "while": [
+          199
+        ],
+        "also": [
+          200
+        ],
+        "pinpointing": [
+          201
+        ],
+        "gaps": [
+          203
+        ],
+        "emphases,": [
+          206
+        ],
+        "thereby": [
+          207
+        ],
+        "guiding": [
+          208
+        ],
+        "trajectory": [
+          210
+        ],
+        "advancements.": [
+          214
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-01T06:00:48.157686",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

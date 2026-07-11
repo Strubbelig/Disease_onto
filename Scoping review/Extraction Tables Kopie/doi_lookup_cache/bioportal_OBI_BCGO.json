@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/e0cd6ce0-0349-0131-abbd-001ec9b0ea92",
+      "name": "Jie Zheng",
+      "email": "jiezheng@upenn.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/jzheng"
+    ],
+    "acronym": "OBI_BCGO",
+    "name": "Beta Cell Genomics Ontology",
+    "@id": "https://data.bioontology.org/ontologies/OBI_BCGO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/OBI_BCGO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/OBI_BCGO/properties",
+      "classes": "https://data.bioontology.org/ontologies/OBI_BCGO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/OBI_BCGO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/OBI_BCGO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/OBI_BCGO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/OBI_BCGO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/OBI_BCGO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/OBI_BCGO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/OBI_BCGO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/OBI_BCGO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/OBI_BCGO/notes",
+      "groups": "https://data.bioontology.org/ontologies/OBI_BCGO/groups",
+      "categories": "https://data.bioontology.org/ontologies/OBI_BCGO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/OBI_BCGO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/OBI_BCGO/projects",
+      "download": "https://data.bioontology.org/ontologies/OBI_BCGO/download",
+      "views": "https://data.bioontology.org/ontologies/OBI_BCGO/views",
+      "analytics": "https://data.bioontology.org/ontologies/OBI_BCGO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/OBI_BCGO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2015-08-20T00:00:00.000+00:00",
+  "creationDate": "2015-08-20T18:07:04.000-07:00",
+  "homepage": "https://github.com/obi-bcgo/bcgo",
+  "publication": [],
+  "documentation": null,
+  "version": "2015-07-08",
+  "description": "Beta Cell Genomics Ontology (BCGO) is an application ontology built for the Beta Cell Genomics database (http://genomics.betacell.org/gbco/) aiming to support database annotation, complicated semantic queries, and automated cell type classification. The ontology is developed using Basic Formal Ontology (BFO) as upper ontology, Ontology for Biomedical Investigations (OBI) as ontology framework and integrated subsets of multiple OBO Foundry (candidate) ontologies. Current the BCGO contains 2383 classes including terms referencing to 24 various OBO Foundry ontologies including CL, CLO, UBERON, GO, PRO, UO, etc.",
+  "status": "retired",
+  "submissionId": 14,
+  "@id": "https://data.bioontology.org/ontologies/OBI_BCGO/submissions/14",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/OBI_BCGO/submissions/14/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

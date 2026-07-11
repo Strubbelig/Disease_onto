@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"dental health services\"[MeSH Terms] OR (\"dental\"[All Fields] AND \"health\"[All Fields] AND \"services\"[All Fields]) OR \"dental health services\"[All Fields] OR \"dental\"[All Fields] OR \"dentally\"[All Fields] OR \"dentals\"[All Fields]) AND \"care related\"[All Fields] AND (\"fear\"[MeSH Terms] OR \"fear\"[All Fields]) AND (\"anxiety\"[MeSH Terms] OR \"anxiety\"[All Fields] OR \"anxieties\"[All Fields] OR \"anxiety s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Dental Care-Related Fear and Anxiety\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

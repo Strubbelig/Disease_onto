@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"data science\"[MeSH Terms] OR (\"data\"[All Fields] AND \"science\"[All Fields]) OR \"data science\"[All Fields]) AND (\"j allergy clin immunol pract\"[Journal] OR \"in pract\"[Journal] OR (\"in\"[All Fields] AND \"practice\"[All Fields]) OR \"in practice\"[All Fields]) AND (\"clinical trials as topic\"[MeSH Terms] OR (\"clinical\"[All Fields] AND \"trials\"[All Fields] AND \"topic\"[All Fields]) OR \"clinical trials as topic\"[All Fields] OR \"trial\"[All Fields] OR \"trial s\"[All Fields] OR \"trialed\"[All Fields] OR \"trialing\"[All Fields] OR \"trials\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Data Science in Practice (trial)\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/c6a992c0-81e4-0135-b681-005056010074",
+      "name": "Bill Duncan",
+      "email": "wdduncan@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/wdduncan",
+      "https://data.bioontology.org/users/wdduncan%40gmail.com"
+    ],
+    "acronym": "ICOP",
+    "name": "International Classification of Orofacial Pain Ontology",
+    "@id": "https://data.bioontology.org/ontologies/ICOP",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ICOP/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ICOP/properties",
+      "classes": "https://data.bioontology.org/ontologies/ICOP/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ICOP/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ICOP/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ICOP/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ICOP/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ICOP/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ICOP/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ICOP/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ICOP/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ICOP/notes",
+      "groups": "https://data.bioontology.org/ontologies/ICOP/groups",
+      "categories": "https://data.bioontology.org/ontologies/ICOP/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ICOP/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ICOP/projects",
+      "download": "https://data.bioontology.org/ontologies/ICOP/download",
+      "views": "https://data.bioontology.org/ontologies/ICOP/views",
+      "analytics": "https://data.bioontology.org/ontologies/ICOP/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ICOP",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-04-18T00:00:00.000+00:00",
+  "creationDate": "2026-04-18T00:00:00.000+00:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "2026-04-03",
+  "description": "The International Classification of Orofacial Pain Ontology (ICOP) contains terms for defining and classifying orofacial pain. The ICOP’s classes and relations facilitate the development of tools and resources capable of enhancing our understanding of orofacial pain.\r\n\r\nThe ICOP is developed as a subset of the Oral Health and Disease Ontology (http://purl.obolibrary.org/obo/ohd.owl). Issues and new term requests can be submitted at https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues., The International Classification of Orofacial Pain Ontology (ICOP) contains terms for defining and classifying Orofacial Pain types. The ICOP’s concepts and relations facilitate the development of tools and resources capable of enhancing our understanding of orofacial pain.\n\nThe ICOP is developed as a subset of the Oral Health and Disease Ontology (http://purl.obolibrary.org/obo/ohd.owl). Issues and new term requests can be submitted at https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues.",
+  "status": "production",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/ICOP/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ICOP/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

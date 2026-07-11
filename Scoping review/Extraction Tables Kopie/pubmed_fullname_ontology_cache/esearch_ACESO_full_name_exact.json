@@ -1,0 +1,33 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "42320230",
+      "31115344",
+      "30942708",
+      "33146623",
+      "37062770",
+      "30351206"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"adverse childhood experiences\"[MeSH Terms] OR (\"adverse\"[All Fields] AND \"childhood\"[All Fields] AND \"experiences\"[All Fields]) OR \"adverse childhood experiences\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Adverse Childhood Experiences Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

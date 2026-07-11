@@ -1,0 +1,38 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1959",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37781041",
+      "37480090",
+      "35757636",
+      "40425748",
+      "35966552",
+      "25949529",
+      "40879186",
+      "38926732",
+      "40598243",
+      "34459390"
+    ],
+    "translationset": [
+      {
+        "from": "Disorders",
+        "to": "\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"disorder\"[All Fields] OR \"disorders\"[All Fields] OR \"disorder's\"[All Fields] OR \"disordes\"[All Fields]"
+      },
+      {
+        "from": "cluster",
+        "to": "\"cluster analysis\"[MeSH Terms] OR (\"cluster\"[All Fields] AND \"analysis\"[All Fields]) OR \"cluster analysis\"[All Fields] OR \"clustering\"[All Fields] OR \"clusterings\"[All Fields] OR \"cluster\"[All Fields] OR \"cluster's\"[All Fields] OR \"clustered\"[All Fields] OR \"clusterization\"[All Fields] OR \"clusters\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"disorder\"[All Fields] OR \"disorders\"[All Fields] OR \"disorder s\"[All Fields] OR \"disordes\"[All Fields]) AND (\"cluster analysis\"[MeSH Terms] OR (\"cluster\"[All Fields] AND \"analysis\"[All Fields]) OR \"cluster analysis\"[All Fields] OR \"clustering\"[All Fields] OR \"clusterings\"[All Fields] OR \"cluster\"[All Fields] OR \"cluster s\"[All Fields] OR \"clustered\"[All Fields] OR \"clusterization\"[All Fields] OR \"clusters\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

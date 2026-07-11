@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "3087",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "39930981",
+      "40509575",
+      "39326815",
+      "38252647",
+      "40544735",
+      "40045550",
+      "40513321",
+      "37923895",
+      "41052288"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"animals, laboratory\"[MeSH Terms] OR (\"animals\"[All Fields] AND \"laboratory\"[All Fields]) OR \"laboratory animals\"[All Fields] OR (\"laboratory\"[All Fields] AND \"animal\"[All Fields]) OR \"laboratory animal\"[All Fields]) AND (\"medicin\"[All Fields] OR \"medicinal\"[All Fields] OR \"medicinally\"[All Fields] OR \"medicinals\"[All Fields] OR \"medicine\"[MeSH Terms] OR \"medicine\"[All Fields] OR \"medicine s\"[All Fields] OR \"medicines\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Laboratory Animal Medicine\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

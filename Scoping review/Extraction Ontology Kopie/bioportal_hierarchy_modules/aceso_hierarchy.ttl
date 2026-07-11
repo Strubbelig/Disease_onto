@@ -1,0 +1,60 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/aceso_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=Light, released=2018-12-21T00:00:00.000+00:00, creationDate=2019-01-25T12:16:23.000-08:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3367> <http://www.w3.org/2000/01/rdf-schema#label> "Finding" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3367> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C36291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C36291> <http://www.w3.org/2000/01/rdf-schema#label> "Finding by cause" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C36291> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3367> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671> <http://purl.org/dc/terms/source> "review target in ACESO from disease_terms_review_enriched.csv" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C36291> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> <http://www.w3.org/2000/01/rdf-schema#label> "Disease, Disorder or Finding" .
+<http://purl.bioontology.org/ontology/RCD/XaBVJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/XaBVJ> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical findings" .
+<http://purl.bioontology.org/ontology/SNOMEDCT/404684003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/404684003> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical finding" .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://purl.org/dc/terms/source> "review target in ACESO from disease_terms_review_enriched.csv" .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/RCD/XaBVJ> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/404684003> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://purl.bioontology.org/ontology/SNOMEDCT/64572001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#Negative_Health_Outcomes> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000017> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000020> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "specifically dependent continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.org/dc/terms/source> "review target in ACESO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C7057> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/RCD/XaBVJ> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/404684003> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#Negative_Health_Outcomes> .
+<http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#Negative_Health_Outcomes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cbmi/ontologies/2018/10/aceso#Negative_Health_Outcomes> <http://www.w3.org/2000/01/rdf-schema#label> "Negative_Health_Outcomes" .

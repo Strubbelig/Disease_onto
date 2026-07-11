@@ -1,0 +1,36 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "59399",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34275487",
+      "19213131",
+      "22562487",
+      "37324543",
+      "34934805",
+      "30417324",
+      "27896720",
+      "27259807",
+      "34224898",
+      "27812931"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]",
+    "errorlist": {
+      "phrasesnotfound": [
+        "COVID-19OntologyInPatternMedicine"
+      ],
+      "fieldsnotfound": []
+    }
+  }
+}

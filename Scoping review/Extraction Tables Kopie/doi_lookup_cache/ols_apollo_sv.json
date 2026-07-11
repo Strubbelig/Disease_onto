@@ -1,0 +1,60 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "en-us"
+  ],
+  "lang": "en",
+  "ontologyId": "apollo_sv",
+  "loaded": "2026-06-26T09:01:42.766091404",
+  "updated": "2026-06-26T09:01:42.766091404",
+  "status": "LOADED",
+  "message": "",
+  "version": "2026-03-13",
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 1716,
+  "numberOfProperties": 389,
+  "numberOfIndividuals": 27,
+  "config": {
+    "id": "apollo_sv",
+    "versionIri": "http://purl.obolibrary.org/obo/apollo_sv/releases/2026-03-13/apollo_sv.owl",
+    "namespace": "apollo_sv",
+    "preferredPrefix": "APOLLO_SV",
+    "title": "Apollo Structured Vocabulary",
+    "description": "An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.",
+    "homepage": "https://github.com/ApolloDev/apollo-sv",
+    "version": "2026-03-13",
+    "mailingList": null,
+    "tracker": "https://github.com/ApolloDev/apollo-sv/issues",
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "http://purl.obolibrary.org/obo/apollo_sv.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [],
+    "synonymProperties": [],
+    "hierarchicalProperties": [],
+    "baseUris": [],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/apollo_sv?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/apollo_sv/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/apollo_sv/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/apollo_sv/individuals"
+    }
+  }
+}

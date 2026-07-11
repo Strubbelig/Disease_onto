@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/2042fb20-b17f-0137-f36d-005056010074",
+      "name": "Amanda Hicks",
+      "email": "aellenhicks@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/vendetti"
+    ],
+    "acronym": "HTN",
+    "name": "Hypertension Ontology",
+    "@id": "https://data.bioontology.org/ontologies/HTN",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/HTN/submissions",
+      "properties": "https://data.bioontology.org/ontologies/HTN/properties",
+      "classes": "https://data.bioontology.org/ontologies/HTN/classes",
+      "single_class": "https://data.bioontology.org/ontologies/HTN/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/HTN/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/HTN/schemes",
+      "collections": "https://data.bioontology.org/ontologies/HTN/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/HTN/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/HTN/instances",
+      "metrics": "https://data.bioontology.org/ontologies/HTN/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/HTN/reviews",
+      "notes": "https://data.bioontology.org/ontologies/HTN/notes",
+      "groups": "https://data.bioontology.org/ontologies/HTN/groups",
+      "categories": "https://data.bioontology.org/ontologies/HTN/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/HTN/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/HTN/projects",
+      "download": "https://data.bioontology.org/ontologies/HTN/download",
+      "views": "https://data.bioontology.org/ontologies/HTN/views",
+      "analytics": "https://data.bioontology.org/ontologies/HTN/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/HTN",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2019-05-20T00:00:00.000+00:00",
+  "creationDate": "2019-09-04T13:18:48.000-07:00",
+  "homepage": "https://github.com/aellenhicks/htn_owl",
+  "publication": [],
+  "documentation": null,
+  "version": null,
+  "description": "The Hypertension Ontology is a realism-based reference ontology for semantically managing clinical data about hypertension. Definitions of hypertension and elevated blood pressure are highly sensitive to context. Thresholds may vary according to population, guidelines, or clinical context. Variations in the clinical interpretation of blood pressure pose challenges to using blood pressure data for cohort identification, semantic data integration across data sets, and semantically enriching clinical data for clinical decision support applications. The Hypertension Ontology provides a framework for connecting clinical data to context-sensitive definitions of elevated blood pressure and hypertension.",
+  "status": "production",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/HTN/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/HTN/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

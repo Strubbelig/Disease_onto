@@ -1,0 +1,131 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/ef5a4900-45af-013c-a76c-005056010088",
+      "name": "Stefano Marchesin",
+      "email": "stefano.marchesin@unipd.it "
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/277f9910-45b0-013c-62bd-005056010074",
+      "name": "Giorgio Maria Di Nunzio",
+      "email": "dinunzio@dei.unipd.it"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/786a7b20-45a9-013c-a76c-005056010088",
+      "name": "Guglielmo Faggioli",
+      "email": "guglielmo.faggioli@unipd.it"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/279471d0-45b0-013c-62bd-005056010074",
+      "name": "Gianmaria Silvello",
+      "email": "silvello@dei.unipd.it"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/bbab0dd0-45b0-013c-a76c-005056010088",
+      "name": "Laura Menotti",
+      "email": "laura.menotti@phd.unipd.it"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/278ad970-45b0-013c-62bd-005056010074",
+      "name": "Nicola Ferro",
+      "email": "ferro@dei.unipd.it"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/gfaggioli"
+    ],
+    "acronym": "BT-ONTOLOGY",
+    "name": "BrainTeaser Ontology (BTO)",
+    "@id": "https://data.bioontology.org/ontologies/BT-ONTOLOGY",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/submissions",
+      "properties": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/properties",
+      "classes": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/classes",
+      "single_class": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/schemes",
+      "collections": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/instances",
+      "metrics": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/reviews",
+      "notes": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/notes",
+      "groups": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/groups",
+      "categories": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/projects",
+      "download": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/download",
+      "views": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/views",
+      "analytics": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/BT-ONTOLOGY",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2024-07-21T18:00:44.000-07:00",
+  "creationDate": "2024-07-21T18:00:48.000-07:00",
+  "homepage": "https://brainteaser.dei.unipd.it/ontology/",
+  "publication": [],
+  "documentation": "https://brainteaser.dei.unipd.it/ontology/",
+  "version": "2.0",
+  "description": "BrainTeaser Ontology (BTO) whose purpose is to jointly model both Amyotrophic Lateral Sclerosis (ALS) and Multiple Sclerosis (MS).\r\n\r\nThe BTO serves multiple purposes:\r\n\r\n- to provide a unified and comprehensive conceptual view about ALS and MS, which are typically dealt with separately, allowing us to coherently integrate the data coming from the different medical partners in the project;\r\n- to seamlessly represent both retrospective data and prospective data, produced during the lifetime of BRAINTEASER\r\n- to allow for sharing and re-using the BRAINTEASER datasets according to Open Science and FAIR principles.\r\n\r\nFor more details, visit the BTO documentation page: https://brainteaser.dei.unipd.it/ontology/",
+  "status": "alpha",
+  "submissionId": 3,
+  "@id": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/submissions/3",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/BT-ONTOLOGY/submissions/3/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

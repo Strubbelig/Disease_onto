@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/trak_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for TRAK; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=unknown, released=2015-09-14T00:00:00.000+00:00, creationDate=2015-09-14T03:39:19.000-07:00, submissionId=5" ;
+    dcterms:created "2026-07-10T19:41:00-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/2000/01/rdf-schema#label> "material entity" .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://www.w3.org/2000/01/rdf-schema#label> "pathological condition" .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://purl.org/dc/terms/source> "generated review target module for TRAK from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000204> .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000607> .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://purl.org/dc/terms/source> "generated review target module for TRAK from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000086> .

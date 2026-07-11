@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1807",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35297766",
+      "37553569",
+      "39517866",
+      "30964621",
+      "38701887",
+      "28592275",
+      "36884279",
+      "26911824",
+      "26688709",
+      "20139945"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"new\"[All Fields] AND (\"approach\"[All Fields] OR \"approach s\"[All Fields] OR \"approachability\"[All Fields] OR \"approachable\"[All Fields] OR \"approache\"[All Fields] OR \"approached\"[All Fields] OR \"approaches\"[All Fields] OR \"approaching\"[All Fields] OR \"approachs\"[All Fields]) AND (\"methodologies\"[All Fields] OR \"methodology s\"[All Fields] OR \"methods\"[MeSH Subheading] OR \"methods\"[All Fields] OR \"methodology\"[All Fields] OR \"methods\"[MeSH Terms]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"New Approach Methodology Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

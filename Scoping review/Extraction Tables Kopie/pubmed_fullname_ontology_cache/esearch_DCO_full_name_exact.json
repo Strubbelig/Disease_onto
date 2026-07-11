@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4119",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "10802651",
+      "39125368",
+      "35297766",
+      "39695140",
+      "28873455",
+      "17991679",
+      "39173695",
+      "40549784",
+      "38617291",
+      "17954221"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"core\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Dispedia Core Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

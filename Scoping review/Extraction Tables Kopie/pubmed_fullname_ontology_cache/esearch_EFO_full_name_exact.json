@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "24",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "20200009",
+      "38857186",
+      "29322916",
+      "33231677",
+      "29063556",
+      "35990650",
+      "29322915",
+      "37010521",
+      "38812329",
+      "37953384"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Experimental Factor Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "35538831",
+      "37661059",
+      "38213171",
+      "33777952",
+      "34194312",
+      "28137310",
+      "21156070"
+    ],
+    "translationset": [
+      {
+        "from": "Neuropathologic",
+        "to": "\"neuropathologic\"[All Fields] OR \"neuropathological\"[All Fields] OR \"neuropathologically\"[All Fields]"
+      },
+      {
+        "from": "Diagnoses",
+        "to": "\"diagnosable\"[All Fields] OR \"diagnosi\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"diagnosis\"[All Fields] OR \"diagnose\"[All Fields] OR \"diagnosed\"[All Fields] OR \"diagnoses\"[All Fields] OR \"diagnosing\"[All Fields] OR \"diagnosis\"[Subheading]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"neuropathologic\"[All Fields] OR \"neuropathological\"[All Fields] OR \"neuropathologically\"[All Fields]) AND (\"diagnosable\"[All Fields] OR \"diagnosi\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"diagnosis\"[All Fields] OR \"diagnose\"[All Fields] OR \"diagnosed\"[All Fields] OR \"diagnoses\"[All Fields] OR \"diagnosing\"[All Fields] OR \"diagnosis\"[MeSH Subheading]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

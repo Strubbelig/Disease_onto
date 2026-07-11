@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2711",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34718710",
+      "36449542",
+      "38199208",
+      "24129700",
+      "39588755",
+      "26918107",
+      "40192032",
+      "30170633",
+      "33969520",
+      "25428369"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biological products\"[Supplementary Concept] OR \"biological products\"[All Fields] OR \"natural products\"[All Fields] OR \"biological products\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"products\"[All Fields]) OR (\"natural\"[All Fields] AND \"products\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Natural Products Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

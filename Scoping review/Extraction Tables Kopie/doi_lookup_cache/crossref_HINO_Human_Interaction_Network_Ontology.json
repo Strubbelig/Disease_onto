@@ -1,0 +1,580 @@
+{
+  "facets": {},
+  "total-results": 5006343,
+  "items": [
+    {
+      "institution": [
+        {
+          "name": "bioRxiv"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            15
+          ]
+        ],
+        "date-time": "2026-01-15T09:35:37Z",
+        "timestamp": 1768469737388,
+        "version": "3.49.0"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            8
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "openRxiv",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "accepted": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            14
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Gene Ontology (GO) classification of statistically significant over/under expressed genes is a commonly used to interpret transcriptomics data in functional genomic analysis. In this approach, all significant genes contribute equally to the final GO classification regardless of their actual expression levels. However, the original level of gene expression can significantly affect protein production and consequently GO term enrichment, and genes with low expression levels can participate in the final GO enrichment through cumulative effects. In addition, GO terms have regulatory relationships that allow the construction of a regulatory network that incorporates gene expression levels to better study biological mechanisms. In this report, we have used gene expression levels in bacteria to determine GO term enrichments. This approach provided the opportunity to enrich GO terms across the entire transcriptome (instead of a subset of differentially expressed genes). In the second part, we show a dynamically developed enriched interaction network between Biological Process GO terms for any gene samples. This type of network presents regulatory relationships between GO terms and their genes. We then demonstrate the efficiency of these methods using public data from two important bacterial pathogens as models. We also explain how these methods help us understand potential pathogenesis mechanisms employed by these bacteria.</jats:p>",
+      "DOI": "10.1101/004911",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2014-05-09T01:29:59Z",
+        "timestamp": 1399598999000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": [
+        "Application of Global Transcriptome Data in Gene Ontology Classification and Construction of a Gene Ontology Interaction Network"
+      ],
+      "prefix": "10.64898",
+      "author": [
+        {
+          "given": "Mario",
+          "family": "Fruzangohar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Esmaeil",
+          "family": "Ebrahimie",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "David L",
+          "family": "Adelson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "54368",
+      "link": [
+        {
+          "URL": "https://syndication.highwire.org/content/doi/10.1101/004911",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            14
+          ]
+        ],
+        "date-time": "2026-01-14T21:38:33Z",
+        "timestamp": 1768426713000
+      },
+      "score": 34.800247,
+      "resource": {
+        "primary": {
+          "URL": "http://biorxiv.org/lookup/doi/10.1101/004911"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            8
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.1101/004911",
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            8
+          ]
+        ]
+      },
+      "subtype": "preprint"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2026-06-10T15:51:16Z",
+        "timestamp": 1781106676416,
+        "version": "3.54.1"
+      },
+      "reference-count": 0,
+      "publisher": "IGI Global",
+      "isbn-type": [
+        {
+          "value": "9781605660523",
+          "type": "print"
+        },
+        {
+          "value": "9781605660530",
+          "type": "print"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.4018/9781878289919.ch058",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2011,
+            1,
+            18
+          ]
+        ],
+        "date-time": "2011-01-18T10:31:18Z",
+        "timestamp": 1295346678000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Task Ontology-Based Human-Computer Interaction"
+      ],
+      "prefix": "10.4018",
+      "author": [
+        {
+          "given": "Kazuhisa",
+          "family": "Seta",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "2432",
+      "container-title": [
+        "Human Computer Interaction"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2011,
+            1,
+            18
+          ]
+        ],
+        "date-time": "2011-01-18T10:34:08Z",
+        "timestamp": 1295346848000
+      },
+      "score": 34.711674,
+      "resource": {
+        "primary": {
+          "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/9781878289919.ch058"
+        }
+      },
+      "subtitle": [
+        ""
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781605660523",
+        "9781605660530"
+      ],
+      "references-count": 0,
+      "URL": "https://doi.org/10.4018/9781878289919.ch058"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2026-06-10T16:00:19Z",
+        "timestamp": 1781107219106,
+        "version": "3.54.1"
+      },
+      "reference-count": 0,
+      "publisher": "IGI Global",
+      "isbn-type": [
+        {
+          "value": "9781591405627",
+          "type": "print"
+        },
+        {
+          "value": "9781591407980",
+          "type": "electronic"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      },
+      "abstract": "<jats:p>In ontological engineering research field, the concept of “task ontology” is well-known as a useful technology to systemize and accumulate the knowledge to perform problem-solving tasks (e.g., diagnosis, design, scheduling, and so on). A task ontology refers to a system of a vocabulary/concepts used as building blocks to perform a problem-solving task in a machine readable manner, so that the system and humans can collaboratively solve a problem based on it. The concept of task ontology was proposed by Mizoguchi (Mizoguchi, Tijerino, &amp; Ikeda, 1992, 1995) and its validity is substantiated by development of many practical knowledge-based systems (Hori &amp; Yoshida, 1998; Ikeda, Seta, &amp; Mizoguchi, 1997; Izumi &amp;Yamaguchi, 2002; Schreiber et al., 2000; Seta, Ikeda, Kakusho, &amp; Mizoguchi, 1997). He stated: …task ontology characterizes the computational architecture of a knowledge-based system which performs a task. The idea of task ontology which serves as a system of the vocabulary/concepts used as building blocks for knowledge-based systems might provide an effective methodology and vocabulary for both analyzing and synthesizing knowledge-based systems. It is useful for describing inherent problem-solving structure of the existing tasks domain-independently. It is obtained by analyzing task structures of real world problem. ... The ultimate goal of task ontology research is to provide a theory of all the vocabulary/concepts necessary for building a model of human problem solving processes. (Mizoguchi, 2003) We can also recognize task ontology as a static user model (Seta et al., 1997), which captures the meaning of problem-solving processes, that is, the input/output relation of each activity in a problem-solving task and its effects on the real world as well as on the humans’ mind.</jats:p>",
+      "DOI": "10.4018/978-1-59140-562-7.ch087",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2011,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2011-05-24T12:34:27Z",
+        "timestamp": 1306240467000
+      },
+      "page": "588-596",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Task Ontology-Based Human-Computer Interaction"
+      ],
+      "prefix": "10.4018",
+      "author": [
+        {
+          "given": "Kazuhisa",
+          "family": "Seta",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Osaka Prefecture University, Japan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "2432",
+      "container-title": [
+        "Encyclopedia of Human Computer Interaction"
+      ],
+      "link": [
+        {
+          "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=13178",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            15
+          ]
+        ],
+        "date-time": "2021-09-15T17:38:38Z",
+        "timestamp": 1631727518000
+      },
+      "score": 34.609173,
+      "resource": {
+        "primary": {
+          "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-59140-562-7.ch087"
+        }
+      },
+      "subtitle": [
+        ""
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      },
+      "ISBN": [
+        "9781591405627",
+        "9781591407980"
+      ],
+      "references-count": 0,
+      "URL": "https://doi.org/10.4018/978-1-59140-562-7.ch087",
+      "published": {
+        "date-parts": [
+          [
+            2006
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2026-02-28T08:41:19Z",
+        "timestamp": 1772268079664,
+        "version": "3.50.1"
+      },
+      "reference-count": 0,
+      "publisher": "PeerJ",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.7717/peerj.10963/fig-9",
+      "type": "component",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            2
+          ]
+        ],
+        "date-time": "2021-03-02T03:20:11Z",
+        "timestamp": 1614655211000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Figure 9: Gene ontology annotation and protein interaction network of\n                      <i>TaARF</i>\n                      genes."
+      ],
+      "prefix": "10.7717",
+      "member": "4443",
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            2
+          ]
+        ],
+        "date-time": "2021-03-02T03:20:20Z",
+        "timestamp": 1614655220000
+      },
+      "score": 34.553757,
+      "resource": {
+        "primary": {
+          "URL": "https://peerj.com/articles/10963/fig-9"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.7717/peerj.10963/fig-9",
+      "relation": {
+        "is-component-of": [
+          {
+            "id-type": "doi",
+            "id": "10.7717/peerj.10963",
+            "asserted-by": "object"
+          }
+        ]
+      }
+    },
+    {
+      "institution": [
+        {
+          "name": "Université de Toulouse (2023-2025)"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            28
+          ]
+        ],
+        "date-time": "2026-05-28T02:07:02Z",
+        "timestamp": 1779934022924,
+        "version": "3.53.1"
+      },
+      "reference-count": 0,
+      "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "abstract": "<jats:title>Modélisation ontologique et raisonnement sur les affordances pour l'interaction humain-robot</jats:title>\n                <jats:p xml:lang=\"fr\">Pour interagir efficacement avec son environnement, un robot doit maintenir une base de connaissances structurée, modélisant les entités et leurs relations, mise à jour en continu pour fournir une représentation cohérente et évolutive du monde. Dans notre travail, cette base de connaissance est fondée sur de la logique formelle et prend la forme d'une ontologie permettant de capturer les connaissances implicites: les informations qui ne sont pas explicitement énoncées mais qui peuvent être dérivées par le raisonnement. Cette denière peut ensuite être interrogée pour fournir des justifications pour chaque conclusion déduite.Un aspect central de cette base de connaissance est la modélisation des actions possibles offertes par les objets ou l'environnement, appelées affordances. Ces interactions dépendent des capacités du robot et des propriétés des objets (par exemple, saisir une tasse, pousser une porte). Elles s'étendent également à la présence d'autres agents, appelées affordances sociales, résultants de leur interaction (par exemple, soulever une table à deux). La prise en compte des affordances intrapersonnelles et interpersonnelles permet d'envisager des actions coopératives dans des environnements multi-agents.Cette thèse propose un modèle ontologique décrivant un agent via ses composants et permettant l'inférence automatique de ses capacités. Ce modèle est étendu à la description des objets en tenant compte de leurs sous-parties, permettant l'inférence de leur dispositions. Les affordances intrapersonnelles émergent alors comme des relations entre les capacités d'agents et les dispositions des objets, permettant de déduire les actions possibles envers les objets individuels mais également les paires d'objets compatibles via le concept de dispositions réciproques. Nous introduisons également un modèle d'affordances interpersonnelles, représentant la collaboration entre agents aux capacités complémentaires, donnant lieu à de nouvelles possibilités d'action via leur interaction.Par ailleurs, si les ontologies permettent un raisonnement explicable via des justifications formelles, celles-ci restent difficiles à comprendre pour les non-experts. Les textit{Large Language Models} (LLM) pourraient en offrir une traduction en langage naturel, mais leur aptitude à préserver les structures logiques reste limitée, comme le montrent plusieurs travaux. Pour évaluer cela, nous avons évalué six LLM sur un jeu de données d'inférences avec variations contrôlées (complexité, ordre, concepts utilisés). Les résultats confirment une sensibilité marquée à ces variations et soulignent la nécessité d'un contexte supplémentaire, tel que la règle d'inférence, pour produire des justifications précises.En résumé, ce travail permet une représentation dynamique et explicable des affordances dans une base de connaissances, pouvant être utile à la planification de tâches en fournissant des abstractions pertinentes et inférées automatiquement. De plus, les justifications générées via le raisonnement peuvent être utilisées pour améliorer l'interaction naturelle avec un utilisateur humain, en lui permettant de comprendre pourquoi le robot peut effectuer une certaine action.</jats:p>",
+      "DOI": "10.70675/d420a20czb408z4d02z9136ze7ab9425cd0d",
+      "type": "dissertation",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            28
+          ]
+        ],
+        "date-time": "2026-04-28T07:36:11Z",
+        "timestamp": 1777361771000
+      },
+      "approved": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            29
+          ]
+        ]
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Ontology-driven affordance modeling and reasoning for human-robot interaction"
+      ],
+      "prefix": "10.70675",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-8800-8853",
+          "authenticated-orcid": false,
+          "given": "Bastien",
+          "family": "Dussard",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Université de Toulouse (2023-2025)"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "51494",
+      "contributor": [
+        {
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            null
+          ]
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            28
+          ]
+        ],
+        "date-time": "2026-05-28T01:32:36Z",
+        "timestamp": 1779931956000
+      },
+      "score": 34.546356,
+      "degree": [
+        "Doctorat ès Informatique et Télécommunications",
+        "PhD"
+      ],
+      "resource": {
+        "primary": {
+          "URL": "https://theses.fr/2025TLSES233"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "2025TLSES233"
+      ],
+      "URL": "https://doi.org/10.70675/d420a20czb408z4d02z9136ze7ab9425cd0d"
+    }
+  ],
+  "items-per-page": 5,
+  "query": {
+    "start-index": 0,
+    "search-terms": null
+  }
+}

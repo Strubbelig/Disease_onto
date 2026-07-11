@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1167",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38898508",
+      "40909476",
+      "37075753",
+      "36872359",
+      "28901190",
+      "35511773",
+      "38181427",
+      "35394695",
+      "38683123",
+      "30892947"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"insulin secreting cells\"[MeSH Terms] OR (\"insulin secreting\"[All Fields] AND \"cells\"[All Fields]) OR \"insulin secreting cells\"[All Fields] OR (\"beta\"[All Fields] AND \"cell\"[All Fields]) OR \"beta cell\"[All Fields]) AND (\"genome\"[MeSH Terms] OR \"genome\"[All Fields] OR \"genomes\"[All Fields] OR \"genome s\"[All Fields] OR \"genomically\"[All Fields] OR \"genomics\"[MeSH Terms] OR \"genomics\"[All Fields] OR \"genomic\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Beta Cell Genomics Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

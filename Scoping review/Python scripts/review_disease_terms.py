@@ -7,8 +7,8 @@ Foundry scans are additive: when they return the same class IRI, the row is
 merged and the extra source is recorded in provenance rather than duplicated.
 
 Terms searched (exact preferred label/name match):
-    disease, disorder, injury, illness, condition, syndrome,
-    pathological process, pathological disposition, dysfunction, predisposition
+    disease, disorder, illness, condition, health condition, syndrome,
+    pathological process, pathological disposition, dysfunction
 
 Usage:
     python3 review_disease_terms.py
@@ -64,14 +64,48 @@ CACHE_DIR = Path("/tmp/disease_terms_review_cache")
 DEFAULT_TERMS = [
     "disease",
     "disorder",
-    "injury",
+    "disorders",
+    "Disorders",
     "illness",
     "condition",
+    "health condition",
+    "ClinicalCondition",
+    "Clinical Condition",
     "syndrome",
     "pathological process",
     "pathological disposition",
     "dysfunction",
-    "predisposition",
+]
+
+PRIMARY_DISCOVERY_TIER = "primary_exact_label"
+SECONDARY_DISCOVERY_TIER = "secondary_compound_label_sensitivity"
+MULTILINGUAL_DISCOVERY_TIER = "multilingual_label_sensitivity"
+NON_DISEASE_CONTEXT_TERMS = {"predisposition", "disease course", "disease_course"}
+SUPPLEMENTARY_SENSITIVITY_TERMS = [
+    "pathological condition",
+    "pathological state",
+    "abnormal state",
+    "disease state",
+    "pathologic process",
+    "morbid condition",
+    "nosological entity",
+]
+COMPOUND_LABEL_SENSITIVITY_TERMS = [
+    "Disease, finding or disorder",
+    "DiseaseDisorderOrFinding",
+    "Disease or disorder",
+    "Disease or syndrome",
+    "Disorder or finding",
+    "Clinical finding or disorder",
+]
+SECONDARY_SENSITIVITY_TERMS = SUPPLEMENTARY_SENSITIVITY_TERMS + COMPOUND_LABEL_SENSITIVITY_TERMS
+MULTILINGUAL_SENSITIVITY_TERMS = [
+    "maladie",
+    "trouble",
+    "condition pathologique",
+    "Krankheit",
+    "Erkrankung",
+    "Störung",
 ]
 
 BFO_PREFIX = "http://purl.obolibrary.org/obo/BFO_"
@@ -103,7 +137,31 @@ COMMENT_KEYS = {
     "http://www.w3.org/2004/02/skos/core#scopeNote",
     "http://purl.obolibrary.org/obo/iao_0000116",
 }
+EXACT_MATCH_KEYS = {
+    "exactMatch",
+    "skos:exactMatch",
+    "http://www.w3.org/2004/02/skos/core#exactMatch",
+}
+DEFINED_BY_KEYS = {
+    "isDefinedBy",
+    "rdfs:isDefinedBy",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+}
+CONFORMS_TO_KEYS = {
+    "conformsTo",
+    "dcterms:conformsTo",
+    "http://purl.org/dc/terms/conformsTo",
+}
 VALUE_KEYS = {"value", "values", "text", "literal", "label"}
+
+THESAURUS_ONTOLOGY_IDS = {"mesh", "rh-mesh", "mdm", "mstde", "umls", "ncit"}
+THESAURUS_METADATA_PHRASES = {
+    "thesaurus",
+    "medical subject headings",
+    "national cancer institute thesaurus",
+    "umls metathesaurus",
+    "metathesaurus",
+}
 
 
 # -- Generic helpers -----------------------------------------------------------
@@ -235,7 +293,8 @@ def obo_curie_to_iri(curie: str) -> str:
 def annotation_key_matches(key: str, wanted_keys: set[str]) -> bool:
     lowered = key.strip().lower()
     local = lowered.rsplit("#", 1)[-1].rsplit("/", 1)[-1]
-    return lowered in wanted_keys or local in wanted_keys
+    wanted = {wanted_key.strip().lower() for wanted_key in wanted_keys}
+    return lowered in wanted or local in wanted
 
 
 def clean_annotation_value(value: Any) -> list[str]:
@@ -296,12 +355,17 @@ def make_row(
     parent_iris: str = "",
     bfo_anchor_value: str = "",
     mapping_count: str | int = "",
+    exact_match_iris: str = "",
+    defined_by_iris: str = "",
+    conforms_to_iris: str = "",
     source_url: str = "",
     retrieved_at: str | None = None,
+    discovery_tier: str = PRIMARY_DISCOVERY_TIER,
 ) -> dict[str, Any]:
     retrieved_at = retrieved_at or now_iso()
     row = {
         "term": term,
+        "discovery_tier": discovery_tier,
         "ontology": ontology,
         "preferred_label": preferred_label,
         "class_iri": class_iri,
@@ -312,6 +376,9 @@ def make_row(
         "parent_iris": parent_iris,
         "bfo_anchor": bfo_anchor_value,
         "mapping_count": mapping_count,
+        "exact_match_iris": exact_match_iris,
+        "defined_by_iris": defined_by_iris,
+        "conforms_to_iris": conforms_to_iris,
         "source_databases": source,
         "retrieved_at_by_database": f"{source}: {retrieved_at}",
         "ontology_versions": f"{source}: {ontology_version}" if ontology_version else "",
@@ -325,6 +392,8 @@ def make_row(
                     "ontology": ontology,
                     "ontology_version": ontology_version,
                     "source_url": source_url,
+                    "term": term,
+                    "discovery_tier": discovery_tier,
                 }
             ],
             ensure_ascii=False,
@@ -357,16 +426,20 @@ def merge_row(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
         "parent_iris",
         "bfo_anchor",
         "mapping_count",
+        "exact_match_iris",
+        "defined_by_iris",
+        "conforms_to_iris",
     ]
     for field in fill_if_blank:
         if not existing.get(field) and incoming.get(field) not in (None, ""):
             existing[field] = incoming[field]
 
-    for field in ["definition", "comments"]:
+    for field in ["definition", "comments", "exact_match_iris", "defined_by_iris", "conforms_to_iris"]:
         for part in clean_list(str(incoming.get(field, "")).split(";")):
             existing[field] = append_unique(str(existing.get(field, "")), part)
 
     for field in [
+        "discovery_tier",
         "source_databases",
         "retrieved_at_by_database",
         "ontology_versions",
@@ -388,6 +461,49 @@ def merge_row(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
         existing["source_records"] = json.dumps(existing_records, ensure_ascii=False)
     except json.JSONDecodeError:
         existing["source_records"] = incoming.get("source_records", existing.get("source_records", ""))
+
+
+def normalise_compound_label(text: str) -> str:
+    text = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", str(text or ""))
+    text = re.sub(r"[^A-Za-z0-9]+", " ", text)
+    return " ".join(text.casefold().split())
+
+
+def label_matches_search_term(label: str, term: str) -> bool:
+    return normalise_compound_label(label) == normalise_compound_label(term)
+
+
+def primary_covered_ontology_ids(rows: list[dict[str, Any]]) -> set[str]:
+    secondary_terms = {normalise_compound_label(term) for term in SECONDARY_SENSITIVITY_TERMS}
+    covered: set[str] = set()
+    for row in rows:
+        tiers = {part.strip() for part in str(row.get("discovery_tier", "")).split(";") if part.strip()}
+        term_key = normalise_compound_label(row.get("term", ""))
+        if SECONDARY_DISCOVERY_TIER in tiers or term_key in secondary_terms or term_key in NON_DISEASE_CONTEXT_TERMS:
+            continue
+        covered.update(row_source_ontology_ids(row))
+    return {ontology.casefold() for ontology in covered if ontology}
+
+
+def filter_secondary_rows_to_uncovered_ontologies(
+    rows: list[dict[str, Any]],
+    covered_ontology_ids: set[str],
+) -> list[dict[str, Any]]:
+    covered = {ontology.casefold() for ontology in covered_ontology_ids}
+    compound_terms = {normalise_compound_label(term) for term in COMPOUND_LABEL_SENSITIVITY_TERMS}
+    filtered = []
+    for row in rows:
+        # Compound labels such as "Disease, finding or disorder" are specific
+        # disease/disorder-root candidates, so keep them even when the ontology
+        # was already captured by a generic term such as "condition".
+        if normalise_compound_label(row.get("term", "")) in compound_terms:
+            filtered.append(row)
+            continue
+        ontology_ids = {ontology.casefold() for ontology in row_source_ontology_ids(row)}
+        if ontology_ids and ontology_ids & covered:
+            continue
+        filtered.append(row)
+    return filtered
 
 
 def merge_rows(rows_by_key: dict[tuple[str, str], dict[str, Any]], rows: list[dict[str, Any]]) -> None:
@@ -494,6 +610,7 @@ def bioportal_rows(
     fetch_parents: bool,
     fetch_mappings: bool,
     exact_label_only: bool,
+    discovery_tier: str = PRIMARY_DISCOVERY_TIER,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     version_cache: dict[str, str] = {}
@@ -503,8 +620,7 @@ def bioportal_rows(
         hits = search_bioportal_exact(term, apikey)
         raw_count = len(hits)
         if exact_label_only:
-            term_lower = term.casefold()
-            hits = [hit for hit in hits if str(hit.get("prefLabel", "")).casefold() == term_lower]
+            hits = [hit for hit in hits if label_matches_search_term(str(hit.get("prefLabel", "")), term)]
         if exact_label_only:
             print(f"   {len(hits)} exact-label hits ({raw_count} raw BioPortal hits)", file=sys.stderr)
         else:
@@ -524,6 +640,18 @@ def bioportal_rows(
             )
             comments = join_values(extract_annotation_values(hit, COMMENT_KEYS) + extract_annotation_values(detail, COMMENT_KEYS))
             synonyms = join_values(clean_list(hit.get("synonym")) + clean_list(detail.get("synonym")))
+            exact_match_iris = join_values(
+                extract_annotation_values(hit, EXACT_MATCH_KEYS)
+                + extract_annotation_values(detail, EXACT_MATCH_KEYS)
+            )
+            defined_by_iris = join_values(
+                extract_annotation_values(hit, DEFINED_BY_KEYS)
+                + extract_annotation_values(detail, DEFINED_BY_KEYS)
+            )
+            conforms_to_iris = join_values(
+                extract_annotation_values(hit, CONFORMS_TO_KEYS)
+                + extract_annotation_values(detail, CONFORMS_TO_KEYS)
+            )
 
             parent_labels = parent_iris = anchor = ""
             mapping_count: str | int = ""
@@ -554,8 +682,12 @@ def bioportal_rows(
                     parent_iris=parent_iris,
                     bfo_anchor_value=anchor,
                     mapping_count=mapping_count,
+                    exact_match_iris=exact_match_iris,
+                    defined_by_iris=defined_by_iris,
+                    conforms_to_iris=conforms_to_iris,
                     source_url=f"{BIOPORTAL_BASE_URL}/ontologies/{ontology}/classes/{urllib.parse.quote(iri, safe='')}" if ontology and iri else "",
                     retrieved_at=retrieved_at,
+                    discovery_tier=discovery_tier,
                 )
             )
             note = f" [BFO: {anchor}]" if anchor else ""
@@ -612,8 +744,7 @@ def search_ols_exact(term: str, base_url: str) -> list[dict[str, Any]]:
         if start >= num_found or not batch:
             break
 
-    term_lower = term.casefold()
-    return [doc for doc in docs if str(doc.get("label", "")).casefold() == term_lower]
+    return [doc for doc in docs if label_matches_search_term(str(doc.get("label", "")), term)]
 
 
 def fetch_ols_ontology_version(ontology: str, base_url: str) -> str:
@@ -673,6 +804,7 @@ def ols_rows(
     *,
     base_url: str,
     fetch_parents: bool,
+    discovery_tier: str = PRIMARY_DISCOVERY_TIER,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     version_cache: dict[str, str] = {}
@@ -728,6 +860,7 @@ def ols_rows(
                     bfo_anchor_value=anchor,
                     source_url=f"{base_url}/api/ontologies/{ontology}/terms/{ols_iri_variants(iri)[0]}" if ontology and iri else f"{base_url}/api/search",
                     retrieved_at=retrieved_at,
+                    discovery_tier=discovery_tier,
                 )
             )
             print(f"   {ontology:15s} {label}", file=sys.stderr)
@@ -838,7 +971,7 @@ def parse_obo_stanza(stanza: dict[str, list[str]], terms_lower: set[str]) -> dic
     if not names:
         return None
     name = names[0]
-    if name.casefold() not in terms_lower:
+    if normalise_compound_label(name) not in terms_lower:
         return None
     if first_clean(stanza.get("is_obsolete")).lower() == "true":
         return None
@@ -878,7 +1011,7 @@ def parse_obo_stanza(stanza: dict[str, list[str]], terms_lower: set[str]) -> dic
 def scan_obo_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, Any]]]:
     header = parse_obo_header(text)
     version = header.get("data-version") or header.get("date") or header.get("format-version") or ""
-    terms_lower = {term.casefold() for term in terms}
+    terms_lower = {normalise_compound_label(term) for term in terms}
 
     rows: list[dict[str, Any]] = []
     current_kind = ""
@@ -930,7 +1063,7 @@ def scan_owl_xml_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, 
     rdf_resource = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
     owl_version_iri = "{http://www.w3.org/2002/07/owl#}versionIRI"
     owl_version_info = "{http://www.w3.org/2002/07/owl#}versionInfo"
-    terms_lower = {term.casefold() for term in terms}
+    terms_lower = {normalise_compound_label(term) for term in terms}
 
     version = ""
     for ontology in root.iter("{http://www.w3.org/2002/07/owl#}Ontology"):
@@ -951,7 +1084,7 @@ def scan_owl_xml_text(text: str, terms: list[str]) -> tuple[str, list[dict[str, 
         if not iri:
             continue
         label = first_clean(child_texts(element, {"label"}))
-        if not label or label.casefold() not in terms_lower:
+        if not label or normalise_compound_label(label) not in terms_lower:
             continue
 
         definitions = child_texts(element, {"IAO_0000115", "definition"})
@@ -1013,6 +1146,7 @@ def obo_rows(
     *,
     max_ontologies: int | None,
     skip_ids: set[str] | None = None,
+    discovery_tier: str = PRIMARY_DISCOVERY_TIER,
 ) -> list[dict[str, Any]]:
     print("\n-- OBO Foundry: loading registry --", file=sys.stderr)
     registry = fetch_obo_registry()
@@ -1063,6 +1197,7 @@ def obo_rows(
                     bfo_anchor_value=parsed["bfo_anchor"],
                     source_url=url,
                     retrieved_at=retrieved_at,
+                    discovery_tier=discovery_tier,
                 )
             )
     return rows
@@ -1196,6 +1331,12 @@ def ontology_text(row: dict[str, Any]) -> str:
     return " ".join(str(part) for part in parts if part).lower()
 
 
+def is_thesaurus_resource(row: dict[str, Any]) -> bool:
+    ontology = str(row.get("ontology", "") or row.get("source_ontology_id", "")).lower().strip()
+    text = ontology_text(row)
+    return ontology in THESAURUS_ONTOLOGY_IDS or any(phrase in text for phrase in THESAURUS_METADATA_PHRASES)
+
+
 def infer_ontology_scope_category(row: dict[str, Any]) -> str:
     text = ontology_text(row)
     ontology = row.get("ontology", "").lower()
@@ -1205,7 +1346,9 @@ def infer_ontology_scope_category(row: dict[str, Any]) -> str:
         return "generated_or_local_ontology"
     if "value set" in text or ontology in {"valuesets"}:
         return "value_set_or_collection"
-    if ontology in {"snomedct", "loinc", "mesh", "rh-mesh", "icd10", "icd9cm", "icpc2p", "ndfrt", "medgen"}:
+    if is_thesaurus_resource(row):
+        return "thesaurus"
+    if ontology in {"snomedct", "loinc", "icd10", "icd9cm", "icpc2p", "ndfrt", "medgen"}:
         return "clinical_or_biomedical_terminology"
     if ontology in {"ncit", "doid", "mondo", "efo", "ogms", "obi", "sio"}:
         return "curated_biomedical_ontology"
@@ -1233,6 +1376,8 @@ def preassert_exclusion(row: dict[str, Any]) -> tuple[str, str, str]:
         return ("excluded_preasserted", "E3_generated_local_ontology", "Ontology appears to be generated/local rather than a reusable published ontology.")
     if "value set" in text or ontology in {"valuesets"}:
         return ("excluded_preasserted", "E4_value_set_collection", "Resource appears to be a value-set collection rather than an ontology implementation.")
+    if is_thesaurus_resource(row):
+        return ("excluded_preasserted", "E5_thesaurus_title", "Ontology ID or metadata indicates a thesaurus or controlled vocabulary rather than an independent ontology implementation.")
     return ("candidate", "", "")
 
 
@@ -1404,12 +1549,18 @@ def refresh_row_class_annotations(row: dict[str, Any], *, apikey: str, ols_base_
     definitions = clean_list(str(row.get("definition", "")).split(";"))
     comments = clean_list(str(row.get("comments", "")).split(";"))
     synonyms = clean_list(str(row.get("synonyms", "")).split(";"))
+    exact_match_iris = clean_list(str(row.get("exact_match_iris", "")).split(";"))
+    defined_by_iris = clean_list(str(row.get("defined_by_iris", "")).split(";"))
+    conforms_to_iris = clean_list(str(row.get("conforms_to_iris", "")).split(";"))
 
     for ontology in bioportal_ontologies:
         detail = fetch_bioportal_class_details(ontology, class_iri, apikey)
         definitions.extend(clean_list(detail.get("definition")) + extract_annotation_values(detail, DEFINITION_KEYS))
         comments.extend(extract_annotation_values(detail, COMMENT_KEYS))
         synonyms.extend(clean_list(detail.get("synonym")))
+        exact_match_iris.extend(extract_annotation_values(detail, EXACT_MATCH_KEYS))
+        defined_by_iris.extend(extract_annotation_values(detail, DEFINED_BY_KEYS))
+        conforms_to_iris.extend(extract_annotation_values(detail, CONFORMS_TO_KEYS))
 
     for record in source_records(row):
         if record.get("source") != "OLS" or not record.get("ontology"):
@@ -1418,10 +1569,16 @@ def refresh_row_class_annotations(row: dict[str, Any], *, apikey: str, ols_base_
         definitions.extend(clean_list(detail.get("description")) + extract_annotation_values(detail, DEFINITION_KEYS))
         comments.extend(clean_list(detail.get("comment")) + extract_annotation_values(detail, COMMENT_KEYS))
         synonyms.extend(clean_list(detail.get("synonym")) + clean_list(detail.get("exact_synonyms")))
+        exact_match_iris.extend(extract_annotation_values(detail, EXACT_MATCH_KEYS))
+        defined_by_iris.extend(extract_annotation_values(detail, DEFINED_BY_KEYS))
+        conforms_to_iris.extend(extract_annotation_values(detail, CONFORMS_TO_KEYS))
 
     row["definition"] = join_values(definitions)
     row["comments"] = join_values(comments)
     row["synonyms"] = join_values(synonyms)
+    row["exact_match_iris"] = join_values(exact_match_iris)
+    row["defined_by_iris"] = join_values(defined_by_iris)
+    row["conforms_to_iris"] = join_values(conforms_to_iris)
     return row
 
 
@@ -1463,6 +1620,7 @@ def enrich_existing_csv(in_path: Path, out_path: Path, *, refresh_annotations: b
 
 FIELDNAMES = [
     "term",
+    "discovery_tier",
     "ontology",
     "preferred_label",
     "class_iri",
@@ -1473,6 +1631,9 @@ FIELDNAMES = [
     "parent_iris",
     "bfo_anchor",
     "mapping_count",
+    "exact_match_iris",
+    "defined_by_iris",
+    "conforms_to_iris",
     "source_databases",
     "retrieved_at_by_database",
     "ontology_versions",

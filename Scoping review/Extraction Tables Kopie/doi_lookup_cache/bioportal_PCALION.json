@@ -1,0 +1,118 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/9b4fed00-68bd-0137-f36d-005056010074",
+      "name": "Chunjiang Yu",
+      "email": "743434289@qq.com"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/9b5cfbe0-68bd-0137-f36d-005056010074",
+      "name": "Bairong Shen",
+      "email": "bairong.shen@scu.edu.cn"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/b28a7d20-14f4-0139-178a-005056010074",
+      "name": "Yalan Chen",
+      "email": "yucj@siso.edu.cn"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/scu_shen"
+    ],
+    "acronym": "PCALION",
+    "name": "Prostate Cancer Lifestyle Ontology",
+    "@id": "https://data.bioontology.org/ontologies/PCALION",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/PCALION/submissions",
+      "properties": "https://data.bioontology.org/ontologies/PCALION/properties",
+      "classes": "https://data.bioontology.org/ontologies/PCALION/classes",
+      "single_class": "https://data.bioontology.org/ontologies/PCALION/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/PCALION/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/PCALION/schemes",
+      "collections": "https://data.bioontology.org/ontologies/PCALION/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/PCALION/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/PCALION/instances",
+      "metrics": "https://data.bioontology.org/ontologies/PCALION/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/PCALION/reviews",
+      "notes": "https://data.bioontology.org/ontologies/PCALION/notes",
+      "groups": "https://data.bioontology.org/ontologies/PCALION/groups",
+      "categories": "https://data.bioontology.org/ontologies/PCALION/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/PCALION/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/PCALION/projects",
+      "download": "https://data.bioontology.org/ontologies/PCALION/download",
+      "views": "https://data.bioontology.org/ontologies/PCALION/views",
+      "analytics": "https://data.bioontology.org/ontologies/PCALION/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/PCALION",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2020-10-28T00:00:00.000+00:00",
+  "creationDate": "2020-10-29T00:56:09.000-07:00",
+  "homepage": "http://pcaontology.net/PCaLifeStyleDefault.aspx",
+  "publication": [
+    "http://pcaontology.net/PCaLifeStyleDefault.aspx"
+  ],
+  "documentation": "http://pcaontology.net/PCaLifeStyleDefault.aspx",
+  "version": "3.0",
+  "description": "PCLiON:Prostate Cancer Lifestyle Ontology",
+  "status": "production",
+  "submissionId": 6,
+  "@id": "https://data.bioontology.org/ontologies/PCALION/submissions/6",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/PCALION/submissions/6/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "32614833",
+      "40547394",
+      "37416308",
+      "21821150",
+      "28729606",
+      "25632945"
+    ],
+    "translationset": [
+      {
+        "from": "TARA",
+        "to": "\"triobp protein, human\"[Supplementary Concept] OR \"triobp protein, human\"[All Fields] OR \"tara\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"triobp protein human\"[Supplementary Concept] OR \"triobp protein human\"[All Fields] OR \"tara\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

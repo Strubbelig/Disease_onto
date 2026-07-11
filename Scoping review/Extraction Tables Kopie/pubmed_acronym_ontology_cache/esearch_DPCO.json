@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "DPCO",
+        "to": "\"3',4'-deoxypsorospermin-4'-chloro-3'-ol\"[Supplementary Concept] OR \"3',4'-deoxypsorospermin-4'-chloro-3'-ol\"[All Fields] OR \"dpco\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"3 4 deoxypsorospermin 4 chloro 3 ol\"[Supplementary Concept] OR \"3 4 deoxypsorospermin 4 chloro 3 ol\"[All Fields] OR \"dpco\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

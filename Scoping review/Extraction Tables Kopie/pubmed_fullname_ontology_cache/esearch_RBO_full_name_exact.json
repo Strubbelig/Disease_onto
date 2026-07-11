@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "391",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36879254",
+      "34174788",
+      "37402769",
+      "31504780",
+      "31911677",
+      "39177583",
+      "30144092",
+      "39256796",
+      "27562671",
+      "29077811"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"radiobiology\"[MeSH Terms] OR \"radiobiology\"[All Fields] OR (\"radiation\"[All Fields] AND \"biology\"[All Fields]) OR \"radiation biology\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Radiation Biology Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

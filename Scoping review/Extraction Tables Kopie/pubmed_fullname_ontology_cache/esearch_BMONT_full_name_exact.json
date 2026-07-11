@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10328",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35734177",
+      "40641371",
+      "36683508",
+      "34548483",
+      "36804624",
+      "36746103",
+      "38397401",
+      "36292736",
+      "36750200",
+      "38829108"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biomarker s\"[All Fields] OR \"biomarkers\"[Supplementary Concept] OR \"biomarkers\"[All Fields] OR \"biomarker\"[All Fields] OR \"biomarkers\"[MeSH Terms]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"The Biomarker Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

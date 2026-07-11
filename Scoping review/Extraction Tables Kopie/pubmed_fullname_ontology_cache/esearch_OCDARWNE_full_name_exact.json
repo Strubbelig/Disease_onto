@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"areej\"[All Fields] AND \"ocd\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND \"wordnet\"[All Fields] AND (\"embedded\"[All Fields] OR \"embedding\"[All Fields] OR \"embeddings\"[All Fields] OR \"embeded\"[All Fields] OR \"embedment\"[All Fields] OR \"embedments\"[All Fields]) AND (\"enrich\"[All Fields] OR \"enriched\"[All Fields] OR \"enriches\"[All Fields] OR \"enriching\"[All Fields] OR \"enrichment\"[All Fields] OR \"enrichments\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Areej OCD Ontology WordNet Embedding Enriched\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

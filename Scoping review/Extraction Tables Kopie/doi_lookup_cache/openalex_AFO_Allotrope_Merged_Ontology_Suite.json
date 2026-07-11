@@ -1,0 +1,2958 @@
+{
+  "meta": {
+    "count": 3,
+    "db_response_time_ms": 143,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Allotrope Merged Ontology Suite AFO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Allotrope Merged Ontology Suite AFO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Allotrope Merged Ontology Suite AFO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4405376785",
+      "doi": "https://doi.org/10.3233/faia241293",
+      "title": "Representing Energy in the Midlevel Energy Ontology (MENO)",
+      "display_name": "Representing Energy in the Midlevel Energy Ontology (MENO)",
+      "relevance_score": 69.819534,
+      "publication_year": 2024,
+      "publication_date": "2024-12-11",
+      "ids": {
+        "openalex": "https://openalex.org/W4405376785",
+        "doi": "https://doi.org/10.3233/faia241293"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3233/faia241293",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3233/faia241293",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210201731",
+          "display_name": "Frontiers in artificial intelligence and applications",
+          "issn_l": "0922-6389",
+          "issn": [
+            "0922-6389",
+            "1879-8314"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+        "raw_type": "book-chapter"
+      },
+      "type": "book-chapter",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.3233/faia241293",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5084351725",
+            "display_name": "Mirjam Stappel",
+            "orcid": "https://orcid.org/0000-0003-3722-5564"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210159473",
+              "display_name": "Fraunhofer Institute for Energy Economics and Energy System Technology",
+              "ror": "https://ror.org/05ptp9d64",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210159473",
+                "https://openalex.org/I4923324"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95793202",
+              "display_name": "Otto-von-Guericke-Universität Magdeburg",
+              "ror": "https://ror.org/00ggpsq73",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95793202"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mirjam Stappel",
+          "raw_affiliation_strings": [
+            "Fraunhofer Institute for Energy Economics and Energy System Technology",
+            "Otto-von-Guericke-University Magdeburg"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3722-5564",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fraunhofer Institute for Energy Economics and Energy System Technology",
+              "institution_ids": [
+                "https://openalex.org/I4210159473"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Otto-von-Guericke-University Magdeburg",
+              "institution_ids": [
+                "https://openalex.org/I95793202"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5080272127",
+            "display_name": "Fabian Neuhaus",
+            "orcid": "https://orcid.org/0000-0002-1058-3102"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95793202",
+              "display_name": "Otto-von-Guericke-Universität Magdeburg",
+              "ror": "https://ror.org/00ggpsq73",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95793202"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Fabian Neuhaus",
+          "raw_affiliation_strings": [
+            "Otto-von-Guericke-University Magdeburg"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1058-3102",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Otto-von-Guericke-University Magdeburg",
+              "institution_ids": [
+                "https://openalex.org/I95793202"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 2.0838,
+      "has_fulltext": true,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.89459375,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 91,
+        "max": 98
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10215",
+        "display_name": "Semantic Web and Ontologies",
+        "score": 0.9965000152587891,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.9965000152587891,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9063000082969666,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.8675020933151245
+        },
+        {
+          "id": "https://openalex.org/keywords/representation",
+          "display_name": "Representation (politics)",
+          "score": 0.673399806022644
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6081843972206116
+        },
+        {
+          "id": "https://openalex.org/keywords/energy",
+          "display_name": "Energy (signal processing)",
+          "score": 0.5757776498794556
+        },
+        {
+          "id": "https://openalex.org/keywords/quality",
+          "display_name": "Quality (philosophy)",
+          "score": 0.5042639970779419
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.45696917176246643
+        },
+        {
+          "id": "https://openalex.org/keywords/subject",
+          "display_name": "Subject (documents)",
+          "score": 0.42768242955207825
+        },
+        {
+          "id": "https://openalex.org/keywords/realisation",
+          "display_name": "Realisation",
+          "score": 0.41481736302375793
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.2596067190170288
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.22856435179710388
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.16159191727638245
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.1583804488182068
+        },
+        {
+          "id": "https://openalex.org/keywords/political-science",
+          "display_name": "Political science",
+          "score": 0.09517115354537964
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.08507892489433289
+        },
+        {
+          "id": "https://openalex.org/keywords/domain-knowledge",
+          "display_name": "Domain knowledge",
+          "score": 0.083071768283844
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.8675020933151245
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.673399806022644
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6081843972206116
+        },
+        {
+          "id": "https://openalex.org/C186370098",
+          "wikidata": "https://www.wikidata.org/wiki/Q442787",
+          "display_name": "Energy (signal processing)",
+          "level": 2,
+          "score": 0.5757776498794556
+        },
+        {
+          "id": "https://openalex.org/C2779530757",
+          "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+          "display_name": "Quality (philosophy)",
+          "level": 2,
+          "score": 0.5042639970779419
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.45696917176246643
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.42768242955207825
+        },
+        {
+          "id": "https://openalex.org/C2779462738",
+          "wikidata": "https://www.wikidata.org/wiki/Q17146409",
+          "display_name": "Realisation",
+          "level": 2,
+          "score": 0.41481736302375793
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.2596067190170288
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.22856435179710388
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.16159191727638245
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.1583804488182068
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.09517115354537964
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08507892489433289
+        },
+        {
+          "id": "https://openalex.org/C207685749",
+          "wikidata": "https://www.wikidata.org/wiki/Q2088941",
+          "display_name": "Domain knowledge",
+          "level": 2,
+          "score": 0.083071768283844
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.3233/faia241293",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3233/faia241293",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210201731",
+            "display_name": "Frontiers in artificial intelligence and applications",
+            "issn_l": "0922-6389",
+            "issn": [
+              "0922-6389",
+              "1879-8314"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+          "raw_type": "book-chapter"
+        },
+        {
+          "id": "pmh:oai:publica.fraunhofer.de:publica/487340",
+          "is_oa": false,
+          "landing_page_url": "https://publica.fraunhofer.de/handle/publica/487340",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400318",
+            "display_name": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4923324",
+            "host_organization_name": "Fraunhofer-Gesellschaft",
+            "host_organization_lineage": [
+              "https://openalex.org/I4923324"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "conference paper"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3233/faia241293",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3233/faia241293",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210201731",
+          "display_name": "Frontiers in artificial intelligence and applications",
+          "issn_l": "0922-6389",
+          "issn": [
+            "0922-6389",
+            "1879-8314"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Artificial Intelligence and Applications",
+        "raw_type": "book-chapter"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy",
+          "score": 0.8799999952316284
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 9,
+      "referenced_works": [
+        "https://openalex.org/W1802346448",
+        "https://openalex.org/W2002507929",
+        "https://openalex.org/W2024741923",
+        "https://openalex.org/W2087779040",
+        "https://openalex.org/W2129826770",
+        "https://openalex.org/W2521644033",
+        "https://openalex.org/W3149937957",
+        "https://openalex.org/W3159515793",
+        "https://openalex.org/W4206325157"
+      ],
+      "related_works": [
+        "https://openalex.org/W2804669904",
+        "https://openalex.org/W2363188691",
+        "https://openalex.org/W2726617685",
+        "https://openalex.org/W1953363106",
+        "https://openalex.org/W2114954739",
+        "https://openalex.org/W2223008607",
+        "https://openalex.org/W2889792096",
+        "https://openalex.org/W2589434863",
+        "https://openalex.org/W1506177826",
+        "https://openalex.org/W2357775360"
+      ],
+      "abstract_inverted_index": {
+        "Energy": [
+          0
+        ],
+        "is": [
+          1,
+          30,
+          47
+        ],
+        "a": [
+          2,
+          56,
+          78,
+          92
+        ],
+        "fundamental": [
+          3
+        ],
+        "phenomenon": [
+          4
+        ],
+        "of": [
+          5,
+          17,
+          76,
+          89,
+          101
+        ],
+        "physics,": [
+          6
+        ],
+        "but": [
+          7
+        ],
+        "energy": [
+          8,
+          24,
+          29,
+          46,
+          77,
+          90
+        ],
+        "also": [
+          9
+        ],
+        "plays": [
+          10
+        ],
+        "an": [
+          11,
+          86
+        ],
+        "important": [
+          12
+        ],
+        "role": [
+          13
+        ],
+        "in": [
+          14,
+          34,
+          38,
+          62,
+          91,
+          112
+        ],
+        "the": [
+          15,
+          63,
+          73,
+          98
+        ],
+        "representation": [
+          16,
+          75
+        ],
+        "many": [
+          18,
+          21
+        ],
+        "domains,": [
+          19
+        ],
+        "since": [
+          20
+        ],
+        "processes": [
+          22
+        ],
+        "involve": [
+          23
+        ],
+        "transformation": [
+          25
+        ],
+        "or": [
+          26
+        ],
+        "transfer.": [
+          27
+        ],
+        "However,": [
+          28
+        ],
+        "represented": [
+          31
+        ],
+        "very": [
+          32
+        ],
+        "differently": [
+          33
+        ],
+        "existing": [
+          35
+        ],
+        "ontologies.": [
+          36
+        ],
+        "Even": [
+          37
+        ],
+        "ontologies": [
+          39
+        ],
+        "that": [
+          40
+        ],
+        "share": [
+          41
+        ],
+        "BFO": [
+          42
+        ],
+        "as": [
+          43,
+          50,
+          52,
+          55,
+          107,
+          109
+        ],
+        "top-level": [
+          44
+        ],
+        "ontology,": [
+          45
+        ],
+        "sometimes": [
+          48
+        ],
+        "treated": [
+          49
+        ],
+        "disposition,": [
+          51
+        ],
+        "quality,": [
+          53
+        ],
+        "and": [
+          54
+        ],
+        "material": [
+          57
+        ],
+        "entity.": [
+          58
+        ],
+        "As": [
+          59
+        ],
+        "we": [
+          60,
+          84
+        ],
+        "discuss": [
+          61
+        ],
+        "paper,": [
+          64
+        ],
+        "there": [
+          65
+        ],
+        "are": [
+          66
+        ],
+        "reasons": [
+          67
+        ],
+        "for": [
+          68
+        ],
+        "each": [
+          69
+        ],
+        "choice,": [
+          70
+        ],
+        "which": [
+          71
+        ],
+        "makes": [
+          72
+        ],
+        "ontological": [
+          74,
+          87
+        ],
+        "challenging": [
+          79
+        ],
+        "subject.": [
+          80
+        ],
+        "In": [
+          81
+        ],
+        "this": [
+          82
+        ],
+        "paper": [
+          83
+        ],
+        "present": [
+          85
+        ],
+        "analysis": [
+          88
+        ],
+        "BFO-based": [
+          93
+        ],
+        "mid-level": [
+          94
+        ],
+        "ontology": [
+          95
+        ],
+        "(MENO),": [
+          96
+        ],
+        "including": [
+          97
+        ],
+        "different": [
+          99
+        ],
+        "kinds": [
+          100
+        ],
+        "energy,": [
+          102
+        ],
+        "their": [
+          103,
+          110
+        ],
+        "relations": [
+          104
+        ],
+        "to": [
+          105
+        ],
+        "dispositions": [
+          106
+        ],
+        "well": [
+          108
+        ],
+        "realisation": [
+          111
+        ],
+        "processes.": [
+          113
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4410826068",
+      "doi": "https://doi.org/10.26434/chemrxiv-2025-0q2mt",
+      "title": "Open and FAIR Raman spectroscopy. Paving the way for artificial intelligence",
+      "display_name": "Open and FAIR Raman spectroscopy. Paving the way for artificial intelligence",
+      "relevance_score": 13.56222,
+      "publication_year": 2025,
+      "publication_date": "2025-05-28",
+      "ids": {
+        "openalex": "https://openalex.org/W4410826068",
+        "doi": "https://doi.org/10.26434/chemrxiv-2025-0q2mt"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.26434/chemrxiv-2025-0q2mt",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26434/chemrxiv-2025-0q2mt",
+        "pdf_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6830ee783ba0887c338c5e36/original/open-and-fair-raman-spectroscopy-paving-the-way-for-artificial-intelligence.pdf",
+        "source": {
+          "id": "https://openalex.org/S4393918830",
+          "display_name": "ChemRxiv",
+          "issn_l": "2573-2293",
+          "issn": [
+            "2573-2293"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6830ee783ba0887c338c5e36/original/open-and-fair-raman-spectroscopy-paving-the-way-for-artificial-intelligence.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5071376371",
+            "display_name": "Nicolás Coca-López",
+            "orcid": "https://orcid.org/0000-0002-8678-5034"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210085921",
+              "display_name": "Instituto de Catálisis y Petroleoquímica",
+              "ror": "https://ror.org/004swtw80",
+              "country_code": "ES",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I134820265",
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nicolas Coca-Lopez",
+          "raw_affiliation_strings": [
+            "Instituto de Catalisis y Petroleoquimica (ICP), CSIC"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-8678-5034",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Instituto de Catalisis y Petroleoquimica (ICP), CSIC",
+              "institution_ids": [
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010590929",
+            "display_name": "Víctor Alcolea-Rodriguez",
+            "orcid": "https://orcid.org/0000-0002-2392-0817"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210143067",
+              "display_name": "Center for Biomolecular Nanotechnologies",
+              "ror": "https://ror.org/05bykpb13",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I30771326",
+                "https://openalex.org/I4210143067"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Victor Alcolea-Rodriguez",
+          "raw_affiliation_strings": [
+            "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)",
+              "institution_ids": [
+                "https://openalex.org/I4210143067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5055639504",
+            "display_name": "Miguel Á. Bañares",
+            "orcid": "https://orcid.org/0000-0003-3875-4468"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210085921",
+              "display_name": "Instituto de Catálisis y Petroleoquímica",
+              "ror": "https://ror.org/004swtw80",
+              "country_code": "ES",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I134820265",
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Miguel A. Bañares",
+          "raw_affiliation_strings": [
+            "Instituto de Catalisis y Petroleoquimica (ICP), CSIC"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3875-4468",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Instituto de Catalisis y Petroleoquimica (ICP), CSIC",
+              "institution_ids": [
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085520614",
+            "display_name": "Sándor Brockhauser",
+            "orcid": "https://orcid.org/0000-0002-9700-4803"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I39343248",
+              "display_name": "Humboldt-Universität zu Berlin",
+              "ror": "https://ror.org/01hcx6992",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I39343248"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sandor Brockhauser",
+          "raw_affiliation_strings": [
+            "Humboldt-Universität zu Berlin"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9700-4803",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Humboldt-Universität zu Berlin",
+              "institution_ids": [
+                "https://openalex.org/I39343248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5065826130",
+            "display_name": "Julien Gorenflot",
+            "orcid": "https://orcid.org/0000-0002-0533-3205"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Julien Gorenflot",
+          "raw_affiliation_strings": [
+            "Physical Sciences and Engineering Division (PSE), King Abdullah University of Science and Technology (KAUST)"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0533-3205",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Physical Sciences and Engineering Division (PSE), King Abdullah University of Science and Technology (KAUST)",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5036518282",
+            "display_name": "Alex Henderson",
+            "orcid": "https://orcid.org/0000-0002-5791-8555"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I28407311",
+              "display_name": "University of Manchester",
+              "ror": "https://ror.org/027m9bs27",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I28407311"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210099114",
+              "display_name": "Czech Academy of Sciences, Institute of Biotechnology",
+              "ror": "https://ror.org/00wzqmx94",
+              "country_code": "CZ",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I202391551",
+                "https://openalex.org/I4210099114"
+              ]
+            }
+          ],
+          "countries": [
+            "CZ",
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Alex Henderson",
+          "raw_affiliation_strings": [
+            "Manchester Institute of Biotechnology, The University of Manchester"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5791-8555",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Manchester Institute of Biotechnology, The University of Manchester",
+              "institution_ids": [
+                "https://openalex.org/I28407311",
+                "https://openalex.org/I4210099114"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088314094",
+            "display_name": "Ron Hildebrandt",
+            "orcid": "https://orcid.org/0000-0001-6932-604X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802635041",
+              "display_name": "Technische Informationsbibliothek (TIB)",
+              "ror": "https://ror.org/04aj4c181",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I2802635041",
+                "https://openalex.org/I315704651"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I39343248",
+              "display_name": "Humboldt-Universität zu Berlin",
+              "ror": "https://ror.org/01hcx6992",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I39343248"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ron Hildebrandt",
+          "raw_affiliation_strings": [
+            "German National Library of Science and Technology (TIB) - Leibniz Information Centre for Science and Technology",
+            "Humboldt-Universität zu Berlin"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "German National Library of Science and Technology (TIB) - Leibniz Information Centre for Science and Technology",
+              "institution_ids": [
+                "https://openalex.org/I2802635041"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Humboldt-Universität zu Berlin",
+              "institution_ids": [
+                "https://openalex.org/I39343248"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056989071",
+            "display_name": "Nina Jeliazkova",
+            "orcid": "https://orcid.org/0000-0002-4322-6179"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210145716",
+              "display_name": "IDEAconsult",
+              "ror": "https://ror.org/043r2f182",
+              "country_code": "BG",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I4210145716"
+              ]
+            }
+          ],
+          "countries": [
+            "BG"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nina Jeliazkova",
+          "raw_affiliation_strings": [
+            "Ideaconsult Ltd"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4322-6179",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Ideaconsult Ltd",
+              "institution_ids": [
+                "https://openalex.org/I4210145716"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5071256145",
+            "display_name": "Nikolay Kochev",
+            "orcid": "https://orcid.org/0000-0001-6547-3675"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210145716",
+              "display_name": "IDEAconsult",
+              "ror": "https://ror.org/043r2f182",
+              "country_code": "BG",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I4210145716"
+              ]
+            }
+          ],
+          "countries": [
+            "BG"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nikolay Kochev",
+          "raw_affiliation_strings": [
+            "Department of Analytical Chemistry and Computer Chemistry, University Plovdiv",
+            "Ideaconsult Ltd"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Analytical Chemistry and Computer Chemistry, University Plovdiv",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Ideaconsult Ltd",
+              "institution_ids": [
+                "https://openalex.org/I4210145716"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054752691",
+            "display_name": "Enrique Lozano-Diz",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I92039331",
+              "display_name": "Theodor Bilharz Research Institute",
+              "ror": "https://ror.org/04d4dr544",
+              "country_code": "EG",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I92039331"
+              ]
+            }
+          ],
+          "countries": [
+            "EG"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Enrique Lozano-Diz",
+          "raw_affiliation_strings": [
+            "ELODIZ Ltd"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ELODIZ Ltd",
+              "institution_ids": [
+                "https://openalex.org/I92039331"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5055065133",
+            "display_name": "Zdeněk Pilát",
+            "orcid": "https://orcid.org/0000-0001-9259-8393"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210124512",
+              "display_name": "Czech Academy of Sciences, Institute of Scientific Instruments",
+              "ror": "https://ror.org/027taah18",
+              "country_code": "CZ",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I202391551",
+                "https://openalex.org/I4210124512"
+              ]
+            }
+          ],
+          "countries": [
+            "CZ"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zdenek Pilat",
+          "raw_affiliation_strings": [
+            "Institute of Scientific Instruments of the Czech Academy of Sciences"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Scientific Instruments of the Czech Academy of Sciences",
+              "institution_ids": [
+                "https://openalex.org/I4210124512"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5039440957",
+            "display_name": "Dario Polli",
+            "orcid": "https://orcid.org/0000-0002-6960-5708"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210143067",
+              "display_name": "Center for Biomolecular Nanotechnologies",
+              "ror": "https://ror.org/05bykpb13",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I30771326",
+                "https://openalex.org/I4210143067"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I93860229",
+              "display_name": "Politecnico di Milano",
+              "ror": "https://ror.org/01nffqt88",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I93860229"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dario Polli",
+          "raw_affiliation_strings": [
+            "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)",
+            "Department of Physics, Politecnico di Milano"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6960-5708",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)",
+              "institution_ids": [
+                "https://openalex.org/I4210143067"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Politecnico di Milano",
+              "institution_ids": [
+                "https://openalex.org/I93860229"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000443662",
+            "display_name": "Philip Strömert",
+            "orcid": "https://orcid.org/0000-0002-1595-3213"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802635041",
+              "display_name": "Technische Informationsbibliothek (TIB)",
+              "ror": "https://ror.org/04aj4c181",
+              "country_code": "DE",
+              "type": "archive",
+              "lineage": [
+                "https://openalex.org/I2802635041",
+                "https://openalex.org/I315704651"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Philip Strömert",
+          "raw_affiliation_strings": [
+            "German National Library of Science and Technology (TIB) - Leibniz Information Centre for Science and Technology - University Library"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1595-3213",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "German National Library of Science and Technology (TIB) - Leibniz Information Centre for Science and Technology - University Library",
+              "institution_ids": [
+                "https://openalex.org/I2802635041"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034937534",
+            "display_name": "Chris Sturm",
+            "orcid": "https://orcid.org/0000-0001-8664-236X"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Chris Sturm",
+          "raw_affiliation_strings": [
+            "Felix Bloch Institute for Solid State Physics, University Leipzig"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8664-236X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Felix Bloch Institute for Solid State Physics, University Leipzig",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075259650",
+            "display_name": "Renzo Vanna",
+            "orcid": "https://orcid.org/0000-0001-6218-8393"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210143067",
+              "display_name": "Center for Biomolecular Nanotechnologies",
+              "ror": "https://ror.org/05bykpb13",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I30771326",
+                "https://openalex.org/I4210143067"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Renzo Vanna",
+          "raw_affiliation_strings": [
+            "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6218-8393",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CNR-Institute for Photonics and Nanotechnologies (CNR-IFN)",
+              "institution_ids": [
+                "https://openalex.org/I4210143067"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5023452924",
+            "display_name": "Raquel Portela",
+            "orcid": "https://orcid.org/0000-0002-1882-4759"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210085921",
+              "display_name": "Instituto de Catálisis y Petroleoquímica",
+              "ror": "https://ror.org/004swtw80",
+              "country_code": "ES",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I134820265",
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Raquel Portela",
+          "raw_affiliation_strings": [
+            "Instituto de Catalisis y Petroleoquimica (ICP), CSIC"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1882-4759",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Instituto de Catalisis y Petroleoquimica (ICP), CSIC",
+              "institution_ids": [
+                "https://openalex.org/I4210085921"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 8,
+      "institutions_distinct_count": 11,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11324",
+        "display_name": "Spectroscopy Techniques in Biomedical and Chemical Research",
+        "score": 0.9789000153541565,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1304",
+          "display_name": "Biophysics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11324",
+          "display_name": "Spectroscopy Techniques in Biomedical and Chemical Research",
+          "score": 0.9789000153541565,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1304",
+            "display_name": "Biophysics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/raman-spectroscopy",
+          "display_name": "Raman spectroscopy",
+          "score": 0.6421909928321838
+        },
+        {
+          "id": "https://openalex.org/keywords/artificial-intelligence",
+          "display_name": "Artificial intelligence",
+          "score": 0.4506911039352417
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.4458174407482147
+        },
+        {
+          "id": "https://openalex.org/keywords/spectroscopy",
+          "display_name": "Spectroscopy",
+          "score": 0.42676717042922974
+        },
+        {
+          "id": "https://openalex.org/keywords/nanotechnology",
+          "display_name": "Nanotechnology",
+          "score": 0.34687742590904236
+        },
+        {
+          "id": "https://openalex.org/keywords/materials-science",
+          "display_name": "Materials science",
+          "score": 0.3372159004211426
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.23554998636245728
+        },
+        {
+          "id": "https://openalex.org/keywords/optics",
+          "display_name": "Optics",
+          "score": 0.21213531494140625
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C40003534",
+          "wikidata": "https://www.wikidata.org/wiki/Q862228",
+          "display_name": "Raman spectroscopy",
+          "level": 2,
+          "score": 0.6421909928321838
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.4506911039352417
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.4458174407482147
+        },
+        {
+          "id": "https://openalex.org/C32891209",
+          "wikidata": "https://www.wikidata.org/wiki/Q483666",
+          "display_name": "Spectroscopy",
+          "level": 2,
+          "score": 0.42676717042922974
+        },
+        {
+          "id": "https://openalex.org/C171250308",
+          "wikidata": "https://www.wikidata.org/wiki/Q11468",
+          "display_name": "Nanotechnology",
+          "level": 1,
+          "score": 0.34687742590904236
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.3372159004211426
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.23554998636245728
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.21213531494140625
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.26434/chemrxiv-2025-0q2mt",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26434/chemrxiv-2025-0q2mt",
+          "pdf_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6830ee783ba0887c338c5e36/original/open-and-fair-raman-spectroscopy-paving-the-way-for-artificial-intelligence.pdf",
+          "source": {
+            "id": "https://openalex.org/S4393918830",
+            "display_name": "ChemRxiv",
+            "issn_l": "2573-2293",
+            "issn": [
+              "2573-2293"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.26434/chemrxiv-2025-0q2mt",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26434/chemrxiv-2025-0q2mt",
+        "pdf_url": "https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/6830ee783ba0887c338c5e36/original/open-and-fair-raman-spectroscopy-paving-the-way-for-artificial-intelligence.pdf",
+        "source": {
+          "id": "https://openalex.org/S4393918830",
+          "display_name": "ChemRxiv",
+          "issn_l": "2573-2293",
+          "issn": [
+            "2573-2293"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2931761144",
+          "display_name": "FAIRmat – FAIRe Dateninfrastruktur für die Physik der kondensierten Materie und die chemische Physik fester Stoffe",
+          "funder_award_id": "460197019",
+          "funder_id": "https://openalex.org/F4320320879",
+          "funder_display_name": "Deutsche Forschungsgemeinschaft"
+        },
+        {
+          "id": "https://openalex.org/G6449220041",
+          "display_name": null,
+          "funder_award_id": "NFDI4Chem",
+          "funder_id": "https://openalex.org/F4320320879",
+          "funder_display_name": "Deutsche Forschungsgemeinschaft"
+        },
+        {
+          "id": "https://openalex.org/G7331901853",
+          "display_name": null,
+          "funder_award_id": "EU H2020",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        },
+        {
+          "id": "https://openalex.org/G7611810336",
+          "display_name": "NFDI4Chem – Fachkonsortium Chemie in der NFDI",
+          "funder_award_id": "441958208",
+          "funder_id": "https://openalex.org/F4320320879",
+          "funder_display_name": "Deutsche Forschungsgemeinschaft"
+        },
+        {
+          "id": "https://openalex.org/G950128653",
+          "display_name": null,
+          "funder_award_id": "952921",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320879",
+          "display_name": "Deutsche Forschungsgemeinschaft",
+          "ror": "https://ror.org/018mejw64"
+        },
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4410826068.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4410826068.grobid-xml"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2058864804",
+        "https://openalex.org/W4404995717",
+        "https://openalex.org/W960385439",
+        "https://openalex.org/W2016187641",
+        "https://openalex.org/W4404725684",
+        "https://openalex.org/W2138878738",
+        "https://openalex.org/W4391262445",
+        "https://openalex.org/W4246450666",
+        "https://openalex.org/W4388998267"
+      ],
+      "abstract_inverted_index": {
+        "Raman": [
+          0,
+          26,
+          99,
+          108,
+          126,
+          144,
+          225
+        ],
+        "spectroscopy": [
+          1,
+          100,
+          109,
+          145
+        ],
+        "is": [
+          2,
+          47,
+          83
+        ],
+        "an": [
+          3,
+          219
+        ],
+        "increasingly": [
+          4
+        ],
+        "powerful": [
+          5
+        ],
+        "and": [
+          6,
+          16,
+          20,
+          28,
+          36,
+          58,
+          75,
+          81,
+          87,
+          91,
+          101,
+          122,
+          147,
+          158,
+          171,
+          186,
+          192,
+          211,
+          221,
+          235
+        ],
+        "fast-growing": [
+          7
+        ],
+        "analytical": [
+          8
+        ],
+        "technique": [
+          9,
+          46
+        ],
+        "across": [
+          10
+        ],
+        "diverse": [
+          11
+        ],
+        "disciplines,": [
+          12
+        ],
+        "from": [
+          13
+        ],
+        "materials": [
+          14
+        ],
+        "science": [
+          15
+        ],
+        "chemistry": [
+          17
+        ],
+        "to": [
+          18,
+          23,
+          53,
+          85,
+          188,
+          197
+        ],
+        "biology": [
+          19
+        ],
+        "medicine,": [
+          21
+        ],
+        "thanks": [
+          22
+        ],
+        "advances": [
+          24
+        ],
+        "in": [
+          25,
+          95,
+          110,
+          125,
+          143,
+          161
+        ],
+        "instrumentation": [
+          27
+        ],
+        "greatly": [
+          29
+        ],
+        "supported": [
+          30
+        ],
+        "by": [
+          31,
+          50
+        ],
+        "the": [
+          32,
+          41,
+          96,
+          104,
+          116,
+          141,
+          153,
+          178,
+          228
+        ],
+        "flourishing": [
+          33
+        ],
+        "of": [
+          34,
+          44,
+          72,
+          98,
+          107,
+          119,
+          155,
+          180,
+          205
+        ],
+        "chemometrics": [
+          35
+        ],
+        "artificial": [
+          37,
+          156
+        ],
+        "intelligence": [
+          38,
+          157
+        ],
+        "(AI).": [
+          39
+        ],
+        "However,": [
+          40
+        ],
+        "full": [
+          42,
+          105
+        ],
+        "potential": [
+          43
+        ],
+        "this": [
+          45,
+          137
+        ],
+        "often": [
+          48
+        ],
+        "hampered": [
+          49
+        ],
+        "challenges": [
+          51
+        ],
+        "related": [
+          52
+        ],
+        "data": [
+          54,
+          77,
+          163,
+          166,
+          182
+        ],
+        "acquisition,": [
+          55
+        ],
+        "processing,": [
+          56
+        ],
+        "interpretation,": [
+          57
+        ],
+        "sharing.": [
+          59
+        ],
+        "This": [
+          60
+        ],
+        "review": [
+          61
+        ],
+        "paper": [
+          62
+        ],
+        "addresses": [
+          63
+        ],
+        "how": [
+          64
+        ],
+        "a": [
+          65,
+          216
+        ],
+        "concerted": [
+          66
+        ],
+        "effort": [
+          67
+        ],
+        "towards": [
+          68
+        ],
+        "digitalization,": [
+          69
+        ],
+        "incorporating": [
+          70
+        ],
+        "principles": [
+          71
+        ],
+        "Open": [
+          73
+        ],
+        "Science": [
+          74
+        ],
+        "FAIR": [
+          76,
+          222
+        ],
+        "(Findable,": [
+          78
+        ],
+        "Accessible,": [
+          79
+        ],
+        "Interoperable,": [
+          80
+        ],
+        "Reusable),": [
+          82
+        ],
+        "essential": [
+          84
+        ],
+        "develop": [
+          86
+        ],
+        "implement": [
+          88
+        ],
+        "robust,": [
+          89
+        ],
+        "standardized,": [
+          90
+        ],
+        "accessible": [
+          92
+        ],
+        "digital": [
+          93,
+          120
+        ],
+        "workflows": [
+          94
+        ],
+        "field": [
+          97
+        ],
+        "thereby": [
+          102
+        ],
+        "unlock": [
+          103
+        ],
+        "power": [
+          106
+        ],
+        "combination": [
+          111
+        ],
+        "with": [
+          112
+        ],
+        "AI.": [
+          113
+        ],
+        "We": [
+          114,
+          201
+        ],
+        "explore": [
+          115
+        ],
+        "current": [
+          117
+        ],
+        "landscape": [
+          118
+        ],
+        "tools": [
+          121
+        ],
+        "open": [
+          123,
+          207,
+          209,
+          220
+        ],
+        "resources": [
+          124
+        ],
+        "spectroscopy,": [
+          127,
+          226
+        ],
+        "highlight": [
+          128
+        ],
+        "existing": [
+          129,
+          206
+        ],
+        "solutions": [
+          130
+        ],
+        "as": [
+          131,
+          133,
+          150,
+          152,
+          194,
+          196
+        ],
+        "well": [
+          132,
+          151,
+          195
+        ],
+        "critical": [
+          134
+        ],
+        "gaps.": [
+          135
+        ],
+        "In": [
+          136
+        ],
+        "regard,": [
+          138
+        ],
+        "we": [
+          139,
+          176,
+          214
+        ],
+        "assess": [
+          140
+        ],
+        "trends": [
+          142
+        ],
+        "hardware": [
+          146
+        ],
+        "control": [
+          148
+        ],
+        "software": [
+          149
+        ],
+        "role": [
+          154
+        ],
+        "machine": [
+          159
+        ],
+        "learning": [
+          160
+        ],
+        "improving": [
+          162
+        ],
+        "collection,": [
+          164
+        ],
+        "automating": [
+          165
+        ],
+        "analysis,": [
+          167
+        ],
+        "extracting": [
+          168
+        ],
+        "meaningful": [
+          169
+        ],
+        "insights,": [
+          170
+        ],
+        "enabling": [
+          172
+        ],
+        "predictive": [
+          173
+        ],
+        "modelling.": [
+          174
+        ],
+        "Furthermore,": [
+          175
+        ],
+        "discuss": [
+          177
+        ],
+        "importance": [
+          179
+        ],
+        "standardized": [
+          181
+        ],
+        "formats,": [
+          183
+        ],
+        "metadata": [
+          184
+        ],
+        "schemas,": [
+          185
+        ],
+        "ontologies": [
+          187
+        ],
+        "ensure": [
+          189
+        ],
+        "database": [
+          190
+        ],
+        "federation": [
+          191
+        ],
+        "interoperability": [
+          193
+        ],
+        "facilitate": [
+          198
+        ],
+        "collaborative": [
+          199,
+          233
+        ],
+        "research.": [
+          200
+        ],
+        "also": [
+          202
+        ],
+        "provide": [
+          203
+        ],
+        "lists": [
+          204
+        ],
+        "hardware,": [
+          208
+        ],
+        "databases": [
+          210
+        ],
+        "standards.": [
+          212
+        ],
+        "Finally,": [
+          213
+        ],
+        "propose": [
+          215
+        ],
+        "roadmap": [
+          217
+        ],
+        "toward": [
+          218
+        ],
+        "ecosystem": [
+          223
+        ],
+        "for": [
+          224,
+          230
+        ],
+        "emphasizing": [
+          227
+        ],
+        "need": [
+          229
+        ],
+        "sustainable": [
+          231
+        ],
+        "infrastructure,": [
+          232
+        ],
+        "development,": [
+          234
+        ],
+        "community": [
+          236
+        ],
+        "involvement.": [
+          237
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4225081127",
+      "doi": "https://doi.org/10.5281/zenodo.6504440",
+      "title": "OntoCommons D2.2 - TLOMLO Landscape Analysis Report",
+      "display_name": "OntoCommons D2.2 - TLOMLO Landscape Analysis Report",
+      "relevance_score": 4.5168533,
+      "publication_year": 2022,
+      "publication_date": "2022-01-12",
+      "ids": {
+        "openalex": "https://openalex.org/W4225081127",
+        "doi": "https://doi.org/10.5281/zenodo.6504440"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.6504440",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.6504440",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "type": "report",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.6504440",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5071620884",
+            "display_name": "Laura Ann Slaughter",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Slaughter, Laura Ann",
+          "raw_affiliation_strings": [
+            "UiO"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6908-4906",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UiO",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5074019384",
+            "display_name": "Jens Otten",
+            "orcid": "https://orcid.org/0000-0002-4331-8698"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Otten, Jens",
+          "raw_affiliation_strings": [
+            "UiO"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UiO",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.04622546,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10226",
+        "display_name": "Land Use and Ecosystem Services",
+        "score": 0.4918000102043152,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2306",
+          "display_name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10226",
+          "display_name": "Land Use and Ecosystem Services",
+          "score": 0.4918000102043152,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2306",
+            "display_name": "Global and Planetary Change"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T14009",
+          "display_name": "Ecology and Conservation Studies",
+          "score": 0.43160000443458557,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1110",
+            "display_name": "Plant Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/11",
+            "display_name": "Agricultural and Biological Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13438",
+          "display_name": "Environmental Conservation and Management",
+          "score": 0.4068000018596649,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2308",
+            "display_name": "Management, Monitoring, Policy and Law"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/geography",
+          "display_name": "Geography",
+          "score": 0.4357277750968933
+        },
+        {
+          "id": "https://openalex.org/keywords/forestry",
+          "display_name": "Forestry",
+          "score": 0.3459860682487488
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.4357277750968933
+        },
+        {
+          "id": "https://openalex.org/C97137747",
+          "wikidata": "https://www.wikidata.org/wiki/Q38112",
+          "display_name": "Forestry",
+          "level": 1,
+          "score": 0.3459860682487488
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.6504440",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.6504440",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.6504440",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.6504440",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "article-journal"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/13",
+          "display_name": "Climate action",
+          "score": 0.4399999976158142
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2383882895",
+        "https://openalex.org/W3111098267",
+        "https://openalex.org/W264709706",
+        "https://openalex.org/W2370206093",
+        "https://openalex.org/W2375009411",
+        "https://openalex.org/W2371019958",
+        "https://openalex.org/W3150437343",
+        "https://openalex.org/W2148262767",
+        "https://openalex.org/W1572020504"
+      ],
+      "abstract_inverted_index": {
+        "This": [
+          0
+        ],
+        "report": [
+          1,
+          22,
+          72
+        ],
+        "summarizes": [
+          2
+        ],
+        "the": [
+          3,
+          14,
+          28,
+          34,
+          42,
+          51,
+          63,
+          77,
+          84
+        ],
+        "existing": [
+          4
+        ],
+        "Top-Level": [
+          5
+        ],
+        "Ontologies": [
+          6,
+          10,
+          38
+        ],
+        "(TLOs)": [
+          7
+        ],
+        "and": [
+          8,
+          30,
+          36,
+          57,
+          69,
+          81,
+          87
+        ],
+        "Mid-Level": [
+          9,
+          37
+        ],
+        "(MLOs)": [
+          11
+        ],
+        "used": [
+          12
+        ],
+        "in": [
+          13,
+          33
+        ],
+        "NMBP": [
+          15,
+          91
+        ],
+        "work": [
+          16
+        ],
+        "programme": [
+          17
+        ],
+        "domains": [
+          18,
+          92
+        ],
+        "of": [
+          19,
+          41,
+          54,
+          67,
+          76,
+          93
+        ],
+        "interest.": [
+          20,
+          94
+        ],
+        "The": [
+          21,
+          71
+        ],
+        "expands": [
+          23
+        ],
+        "what": [
+          24
+        ],
+        "is": [
+          25
+        ],
+        "known": [
+          26
+        ],
+        "about": [
+          27,
+          50
+        ],
+        "TLOs": [
+          29,
+          68,
+          86
+        ],
+        "MLOs": [
+          31,
+          88
+        ],
+        "presented": [
+          32
+        ],
+        "“Top-Level": [
+          35
+        ],
+        "Multidisciplinary": [
+          39
+        ],
+        "Workshop”": [
+          40
+        ],
+        "OntoCommons": [
+          43
+        ],
+        "project.": [
+          44
+        ],
+        "In": [
+          45
+        ],
+        "addition,": [
+          46
+        ],
+        "it": [
+          47
+        ],
+        "provides": [
+          48,
+          73
+        ],
+        "information": [
+          49
+        ],
+        "perspectives": [
+          52
+        ],
+        "<br>": [
+          53
+        ],
+        "targeted": [
+          55
+        ],
+        "communities": [
+          56
+        ],
+        "their": [
+          58
+        ],
+        "methodological": [
+          59
+        ],
+        "choices": [
+          60
+        ],
+        "related": [
+          61
+        ],
+        "to": [
+          62
+        ],
+        "use": [
+          64
+        ],
+        "or": [
+          65
+        ],
+        "development": [
+          66
+        ],
+        "MLOs.": [
+          70
+        ],
+        "an": [
+          74
+        ],
+        "analysis": [
+          75
+        ],
+        "main": [
+          78
+        ],
+        "correspondences,": [
+          79
+        ],
+        "similarities": [
+          80
+        ],
+        "differences": [
+          82
+        ],
+        "between": [
+          83
+        ],
+        "identified": [
+          85
+        ],
+        "addressing": [
+          89
+        ],
+        "potential": [
+          90
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

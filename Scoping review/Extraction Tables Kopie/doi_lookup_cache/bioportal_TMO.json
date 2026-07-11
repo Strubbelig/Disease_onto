@@ -1,0 +1,109 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/6d38def0-0340-0131-abbd-001ec9b0ea92",
+      "name": "TMO task in W3C's HCLS IG",
+      "email": "tmo-administration@googlegroups.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/TMO+Consortium",
+      "https://data.bioontology.org/users/micheldumontier"
+    ],
+    "acronym": "TMO",
+    "name": "Translational Medicine Ontology",
+    "@id": "https://data.bioontology.org/ontologies/TMO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/TMO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/TMO/properties",
+      "classes": "https://data.bioontology.org/ontologies/TMO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/TMO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/TMO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/TMO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/TMO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/TMO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/TMO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/TMO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/TMO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/TMO/notes",
+      "groups": "https://data.bioontology.org/ontologies/TMO/groups",
+      "categories": "https://data.bioontology.org/ontologies/TMO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/TMO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/TMO/projects",
+      "download": "https://data.bioontology.org/ontologies/TMO/download",
+      "views": "https://data.bioontology.org/ontologies/TMO/views",
+      "analytics": "https://data.bioontology.org/ontologies/TMO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/TMO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2016-05-16T18:27:01.000-07:00",
+  "creationDate": "2016-05-16T18:27:01.000-07:00",
+  "homepage": "http://esw.w3.org/HCLSIG/PharmaOntology",
+  "publication": [
+    "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3102889/"
+  ],
+  "documentation": "https://github.com/micheldumontier/translationalmedicineontology",
+  "version": "1.0.2",
+  "description": "This project focuses on the development of a high level patient-centric ontology for the pharmaceutical industry. The ontology should enable silos in discovery research, hypothesis management, experimental studies, compounds, formulation, drug development, market size, competitive data, population data, etc. to be brought together. This would enable scientists to answer new questions, and to answer existing scientific questions more quickly. This will help pharmaceutical companies to model patient-centric information, which is essential for the tailoring of drugs, and for early detection of compounds that may have sub-optimal safety profiles. The ontology should link to existing publicly available domain ontologies.",
+  "status": "production",
+  "submissionId": 13,
+  "@id": "https://data.bioontology.org/ontologies/TMO/submissions/13",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/TMO/submissions/13/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

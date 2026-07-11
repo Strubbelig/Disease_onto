@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "285",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35175820",
+      "33932580",
+      "30208311",
+      "37291580",
+      "37467750",
+      "31171447",
+      "35468861",
+      "37366052",
+      "37807632",
+      "40393460"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"autism s\"[All Fields] OR \"autisms\"[All Fields] OR \"autistic disorder\"[MeSH Terms] OR (\"autistic\"[All Fields] AND \"disorder\"[All Fields]) OR \"autistic disorder\"[All Fields] OR \"autism\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Autism DSM-ADI-R ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

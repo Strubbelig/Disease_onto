@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"semantic web\"[MeSH Terms] OR (\"semantic\"[All Fields] AND \"web\"[All Fields]) OR \"semantic web\"[All Fields]) AND (\"nat rev earth environ\"[Journal] OR (\"earth\"[All Fields] AND \"and\"[All Fields] AND \"environment\"[All Fields]) OR \"earth and environment\"[All Fields]) AND (\"technology\"[MeSH Terms] OR \"technology\"[All Fields] OR \"technologies\"[All Fields] OR \"technology s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Semantic Web for Earth and Environment Technology Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

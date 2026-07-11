@@ -1,0 +1,43 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/cido_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2024-02-16, released=2024-02-16T18:02:33.000-08:00, creationDate=2024-02-16T18:02:53.000-08:00, submissionId=42" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000017> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/IAO_0000115> "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://purl.obolibrary.org/obo/BFO_0000017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000020> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/IAO_0000115> "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#label> "specifically dependent continuant" .
+<http://purl.obolibrary.org/obo/BFO_0000020> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/DOID_4> <http://purl.org/dc/terms/source> "review target in CIDO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/DOID_4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OGMS_0000031> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://purl.org/dc/terms/source> "review target in CIDO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/OGMS_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .

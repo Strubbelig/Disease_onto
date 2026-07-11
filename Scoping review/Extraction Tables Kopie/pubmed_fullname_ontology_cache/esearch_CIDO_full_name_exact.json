@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "17",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34275487",
+      "36271389",
+      "38236918",
+      "32533075",
+      "34454610",
+      "36591248",
+      "40635066",
+      "40313667",
+      "38252647",
+      "35155491"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Coronavirus Infectious Disease Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

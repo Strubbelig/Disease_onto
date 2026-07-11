@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "894",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38664790",
+      "28733419",
+      "37366052",
+      "40702134",
+      "36506326",
+      "39155390",
+      "37434394",
+      "38173877",
+      "40762533",
+      "37885030"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"chromatin\"[Supplementary Concept] OR \"chromatin\"[All Fields] OR \"chromatin\"[MeSH Terms] OR \"chromatins\"[All Fields] OR \"chromatin s\"[All Fields] OR \"chromatine\"[All Fields] OR \"chromatinization\"[All Fields] OR \"chromatinized\"[All Fields]) AND (\"legislation and jurisprudence\"[MeSH Subheading] OR (\"legislation\"[All Fields] AND \"jurisprudence\"[All Fields]) OR \"legislation and jurisprudence\"[All Fields] OR \"regulations\"[All Fields] OR \"social control, formal\"[MeSH Terms] OR (\"social\"[All Fields] AND \"control\"[All Fields] AND \"formal\"[All Fields]) OR \"formal social control\"[All Fields] OR \"regulate\"[All Fields] OR \"regulates\"[All Fields] OR \"regulating\"[All Fields] OR \"regulation s\"[All Fields] OR \"regulative\"[All Fields] OR \"regulator\"[All Fields] OR \"regulator s\"[All Fields] OR \"regulators\"[All Fields] OR \"regulated\"[All Fields] OR \"regulation\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Chromatin Regulator Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

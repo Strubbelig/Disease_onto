@@ -1,0 +1,111 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/f6e92e40-b04d-013e-ef9f-005056010128",
+      "name": "Abid Ali Fareedi",
+      "email": "abid.fareedi@gmail.com"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/d4490280-b04e-013e-a33c-005056010127",
+      "name": "Abid Ali Fareedi",
+      "email": "abid.ali@hh.se"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/Abid_Ali_Fareedi"
+    ],
+    "acronym": "EDONTOLOGY",
+    "name": "Emergency Department Ontology",
+    "@id": "https://data.bioontology.org/ontologies/EDONTOLOGY",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/EDONTOLOGY/submissions",
+      "properties": "https://data.bioontology.org/ontologies/EDONTOLOGY/properties",
+      "classes": "https://data.bioontology.org/ontologies/EDONTOLOGY/classes",
+      "single_class": "https://data.bioontology.org/ontologies/EDONTOLOGY/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/EDONTOLOGY/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/EDONTOLOGY/schemes",
+      "collections": "https://data.bioontology.org/ontologies/EDONTOLOGY/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/EDONTOLOGY/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/EDONTOLOGY/instances",
+      "metrics": "https://data.bioontology.org/ontologies/EDONTOLOGY/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/EDONTOLOGY/reviews",
+      "notes": "https://data.bioontology.org/ontologies/EDONTOLOGY/notes",
+      "groups": "https://data.bioontology.org/ontologies/EDONTOLOGY/groups",
+      "categories": "https://data.bioontology.org/ontologies/EDONTOLOGY/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/EDONTOLOGY/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/EDONTOLOGY/projects",
+      "download": "https://data.bioontology.org/ontologies/EDONTOLOGY/download",
+      "views": "https://data.bioontology.org/ontologies/EDONTOLOGY/views",
+      "analytics": "https://data.bioontology.org/ontologies/EDONTOLOGY/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/EDONTOLOGY",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2025-12-13T00:00:00.000+00:00",
+  "creationDate": "2025-12-13T00:00:00.000+00:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": null,
+  "description": "This research work contributes in the field of Information logistics and ontology development in healthcare. An ontology based model that can fix information flow problems in the ward-round process of hospital unit. The ontology based model can be used to provide relevant information to the domain users according to their needs and demands. The ontology based model projects domain users profiling and describes their roles, information demands with competencies: skills, qualifications and experiences. The ontology based model will be implemented in OWL language that can be used in an application to support ward-round activities for achieving effective patient’s treatment process. For ontology development is concerned, different ontology development methodologies have been reviewed from literature review by the author to analyze the existing problems in the ward-round. This thesis incorporates Hybrid Methodology (HM) that helps to develop ontology based model that addresses information flow problems in ward-round. The proposed ontology based model is developed in web Ontology Language (OWL) supported tool protégé 4.0.2 that can be considered as foundation to develop a software product with the help of IT practitioners and developers to fulfill medical practitioner’s demands in ward-round’s context.",
+  "status": "production",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/EDONTOLOGY/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/EDONTOLOGY/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

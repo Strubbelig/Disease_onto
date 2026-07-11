@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "324",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35175820",
+      "35297766",
+      "40880396",
+      "40070857",
+      "25479131",
+      "35872606",
+      "34603391",
+      "37170506",
+      "35580043",
+      "35476278"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"early pregnancy\"[Journal] OR \"early pregnancy cherry hill\"[Journal] OR \"am j reprod immunol\"[Journal] OR (\"early\"[All Fields] AND \"pregnancy\"[All Fields]) OR \"early pregnancy\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Early Pregnancy Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

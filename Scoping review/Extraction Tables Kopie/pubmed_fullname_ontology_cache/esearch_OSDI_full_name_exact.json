@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1558",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39952201",
+      "40705527",
+      "38169205",
+      "40102635",
+      "39125368",
+      "39615059",
+      "40192506",
+      "37713995",
+      "34824300",
+      "38199208"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"computer simulation\"[MeSH Terms] OR (\"computer\"[All Fields] AND \"simulation\"[All Fields]) OR \"computer simulation\"[All Fields] OR \"simulation\"[All Fields] OR \"simul\"[All Fields] OR \"simulate composite resin\"[Supplementary Concept] OR \"simulate composite resin\"[All Fields] OR \"simulate\"[All Fields] OR \"simulated\"[All Fields] OR \"simulating\"[All Fields] OR \"simulates\"[All Fields] OR \"simulation s\"[All Fields] OR \"simulational\"[All Fields] OR \"simulations\"[All Fields] OR \"simulative\"[All Fields] OR \"simulator\"[All Fields] OR \"simulator s\"[All Fields] OR \"simulators\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for the Simulation of Diseases\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/epilont_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=V1, released=2011-07-18T00:00:00.000-07:00, creationDate=2011-07-18T09:54:20.000-07:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#General_Concepts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#General_Concepts> <http://www.w3.org/2000/01/rdf-schema#label> "General_Concepts" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://purl.obolibrary.org/obo/IAO_0000115> "A group of signs and symptoms that collectively deﬁne or characterize a disease or disorder; signs are objective ﬁndings such as weakness, and symptoms are subjective ﬁndings such as a feeling of fear." .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://purl.org/dc/terms/source> "review target in EPILONT from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of signs and symptoms that collectively deﬁne or characterize a disease or disorder; signs are objective ﬁndings such as weakness, and symptoms are subjective ﬁndings such as a feeling of fear." .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#General_Concepts> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .

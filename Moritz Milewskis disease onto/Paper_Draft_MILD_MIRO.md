@@ -40,9 +40,17 @@ OGMS distinguishes disorders, diseases, pathological processes, and disease cour
 
 The ontology does not try to reduce pathologicity to statistical normality, dysfunction, harm, or treatment availability. Following the disease-entity tradition associated with Hucklenbroich, pathologicity is treated as a primitive but documented commitment. The ontology states that pathologicity is asserted rather than inferred, with criteria such as threat to life, pain or suffering, and loss of ability or fertility serving as explanatory anchors.
 
+MILD also reuses the ExO-style species-comparative intuition as a secondary anchor for pathologicity. ExO defines disease in terms of abnormal functioning, abnormal localization of normal functioning, or abnormal localization of constituents compared with other members of the species. In MILD, this comparison helps document why a material organization counts as pathological: normal constituents can become pathological when they are abnormally located, organized, or functioning relative to relevant conspecific reference cases. This is not adopted as the full definition of disease, because rare variation is not automatically pathological and because species comparison still has to be interpreted together with harm, impairment, persistence, life-stage, and context.
+
+Two further anchors should guide this judgement. First, the impairment should not be merely voluntary, transient, and immediately reversible. Holding one's breath can impair oxygenation and bodily function, but it can normally be ended by resuming breathing and does not by itself imply a pathological substrate. Easy reversibility is therefore defeasible evidence against classifying a state as disease. It is not an absolute exclusion, because many acute diseases are reversible or treatable; the point is to distinguish ordinary reversible physiology or behaviour from a pathological disorder or self-maintaining disease process.
+
+Second, disease matters not only because internal biological function is altered, but because pathological disorder can impair expected participation in human life. Relevant participation anchors include being able to work, earn a living, form and sustain family and friendship relations, take part in social life, and live out a normal lifespan rather than dying prematurely. These anchors help document why a disorder is clinically and humanly significant, but they should not be encoded as universal axioms: social participation is context-sensitive, and its role belongs mainly in the pathologicity and relevance judgement rather than in a rigid disease definition.
+
 ### 2.3 Tendencies and predispositions
 
 Risk and predisposition are not modelled as material diseases. MILD uses a tendency pattern informed by Jansen and by Röhl and Jansen's analysis of realizables. A disease predisposition is a tendency inhering in a person and grounded in a material basis, such as a pathogenic genetic variant or an existing pathological disorder. The base predisposition class does not require an actual realization process. Realized cases can be represented separately by `realized disease predisposition`.
+
+The ontology also adopts a non-vacuity constraint on realization. A realizable entity is informative only when it contributes causal or counterfactual content beyond a restatement of the process it is said to realize. This means that a tendency or disposition should identify a bearer, a material basis, a manifestation type, and the internal or external conditions under which the manifestation occurs. Both internal and external influences can participate in realization: a burn susceptibility can be realized through heat exposure, and a genetic predisposition can be realized through an internally initiated disorder-development process. What is excluded is the circular pattern in which a process is explained only by nominalizing it as a disposition. Saying that existing realizes a disposition to exist, or that dying realizes a generic human disposition to die, does not explain the existence or the dying process. The relevant question is which material basis, injury, exposure, internal pathological event, or disorder lineage initiated and structured the process.
 
 ### 2.4 Ontology versus clinical defaults
 
@@ -136,6 +144,14 @@ Diagnostic categories, thresholds, stages, and candidate/confirmed diagnostic re
 ### 4.5 Predispositions are tendencies, not diseases
 
 Disease predispositions are tendencies inhering in a person and grounded in a material basis. A pathogenic genetic variant can ground a genetic predisposition without being identical to the target disease. A realized predisposition is represented by a narrower class linked to a realization process.
+
+### 4.6 Realization assertions must be non-vacuous
+
+MILD does not treat disease courses as realizations of diseases merely because diseases have courses. This would add little explanatory content, just as modelling a dying process as the realization of a generic disposition to die does not explain why the person is dying. Realization assertions are reserved for cases where the realizable entity has an identifiable bearer and material basis and where its realization depends on causally specific internal or external conditions. A disease predisposition may be realized in a disorder-development process; a material disease entity is instead a continuant grounded in pathological disorder and historically-causally continuous disorder lineage.
+
+### 4.7 Reversibility and participation are modelling constraints, not class definitions
+
+MILD treats non-trivial persistence and participation impairment as constraints on pathologicity judgement rather than as formal necessary-and-sufficient conditions. A candidate disease should not be just an easily reversible functional deviation, and its relevance is partly explained by its effect on the person's ordinary biological and social participation. However, neither criterion should be formalized as a universal axiom for all disease classes, because some diseases are acute, some are reversible with treatment, and participation effects vary with environment and support.
 
 ## 5. Axiom patterns
 
@@ -274,6 +290,10 @@ MILD is best understood as a mid-level pattern for disease ontology design. Its 
 
 The pattern also gives a principled place to risk. A predisposition can exist before the target disorder exists, because the base tendency is separated from realized predisposition. This avoids a common modelling mistake in which an existential realization axiom entails an anonymous future disorder too early.
 
+The same point explains why MILD does not identify disease itself with disposition. Humans have a general susceptibility to death, and many dying processes could be described as realizations of broad mortal fragility. Such a statement is too general to be explanatory. The model instead asks what initiated and sustained the relevant process: for example trauma, infection, toxic exposure, somatic mutation, autoimmune activation, thrombosis, a genetic variant, or an already existing pathological disorder. The disease course is therefore not the realization of the disease as such, but the processual unfolding, maintenance, or transformation of a material disorder lineage.
+
+Substance use disorder is an important edge case for this pattern because the same expression can be used at different layers. As a DSM/ICD-style term, substance use disorder often denotes a diagnostic category or diagnostic result: an epistemic grouping by criteria such as impaired control, craving, tolerance, withdrawal, continued use despite harm, and social impairment. A particular patient case may nevertheless correspond to a material disease entity if there is a relatively stable pathological organization of neurobiological, psychological, and behavioural tendencies that impairs control, persists beyond immediately reversible choice, and damages biological or social participation. The ontology should therefore not model substance use disorder as the substance itself, a single use event, a legal category, or a moral defect. Individual intoxication, use, craving, tolerance, and withdrawal episodes are better represented as processes, states, or realizations in the disease course; the diagnostic category and thresholds remain in the epistemic layer.
+
 The remaining work is mostly packaging rather than core modelling: regenerate derived artefacts, decide whether to publish a merged TTL alongside the merged OWL, add a concise mentor/reviewer summary, and document repository-level governance.
 
 ## 12. Conclusion
@@ -350,3 +370,4 @@ This checklist follows the MIRO sections and item labels from Matentzoglu et al.
 - Schulz et al. on ontological axioms versus clinical default knowledge.
 - Mizoguchi / River Flow Model on causal continuity and persistence through change.
 - DOID and Mondo references for pragmatic disease classification.
+- ExO `ExO_0000079` disease definition as a species-comparative abnormality anchor.

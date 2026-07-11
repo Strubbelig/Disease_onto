@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1747",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "37801050",
+      "22850636",
+      "41449799",
+      "26918107",
+      "40832256",
+      "41526409",
+      "35401219",
+      "40485328",
+      "33264411"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"laboratory animal science\"[MeSH Terms] OR (\"laboratory\"[All Fields] AND \"animal\"[All Fields] AND \"science\"[All Fields]) OR \"laboratory animal science\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Laboratory Animal Science\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

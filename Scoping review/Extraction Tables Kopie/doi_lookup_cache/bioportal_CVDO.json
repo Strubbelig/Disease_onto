@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/b4a52800-8077-0135-d459-005056010073",
+      "name": "Adrien Barton",
+      "email": "adrien.barton@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/vendetti"
+    ],
+    "acronym": "CVDO",
+    "name": "Cardiovascular Disease Ontology",
+    "@id": "https://data.bioontology.org/ontologies/CVDO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/CVDO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/CVDO/properties",
+      "classes": "https://data.bioontology.org/ontologies/CVDO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/CVDO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/CVDO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/CVDO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/CVDO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/CVDO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/CVDO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/CVDO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/CVDO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/CVDO/notes",
+      "groups": "https://data.bioontology.org/ontologies/CVDO/groups",
+      "categories": "https://data.bioontology.org/ontologies/CVDO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/CVDO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/CVDO/projects",
+      "download": "https://data.bioontology.org/ontologies/CVDO/download",
+      "views": "https://data.bioontology.org/ontologies/CVDO/views",
+      "analytics": "https://data.bioontology.org/ontologies/CVDO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/CVDO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2024-06-17T18:03:20.000+00:00",
+  "creationDate": "2024-06-17T18:03:23.000+00:00",
+  "homepage": "https://github.com/OpenLHS/CVDO",
+  "publication": [],
+  "documentation": null,
+  "version": "2024-05-17",
+  "description": "CVDO is an ontology based on the OGMS model of disease, designed to describe entities related to cardiovascular diseases (including the diseases themselves, the underlying disorders, and the related pathological processes). It is being developed at Sherbrooke University (Canada) and the INSERM research institute (Institut National de la Santé et de la Recherche Médicale).",
+  "status": "production",
+  "submissionId": 5,
+  "@id": "https://data.bioontology.org/ontologies/CVDO/submissions/5",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/CVDO/submissions/5/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

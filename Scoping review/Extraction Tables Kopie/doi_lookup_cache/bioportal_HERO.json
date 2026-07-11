@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/1d5923a0-4f46-013d-2984-005056010126",
+      "name": "Mahmoud Ahmed Othman",
+      "email": "mahmodahmed18pg@fci.s-mu.edu.eg"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/Mahmoud+A+Othman"
+    ],
+    "acronym": "HERO",
+    "name": "Healthcare Monitoring and Emergency Response Ontology",
+    "@id": "https://data.bioontology.org/ontologies/HERO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/HERO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/HERO/properties",
+      "classes": "https://data.bioontology.org/ontologies/HERO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/HERO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/HERO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/HERO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/HERO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/HERO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/HERO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/HERO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/HERO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/HERO/notes",
+      "groups": "https://data.bioontology.org/ontologies/HERO/groups",
+      "categories": "https://data.bioontology.org/ontologies/HERO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/HERO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/HERO/projects",
+      "download": "https://data.bioontology.org/ontologies/HERO/download",
+      "views": "https://data.bioontology.org/ontologies/HERO/views",
+      "analytics": "https://data.bioontology.org/ontologies/HERO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/HERO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2024-09-07T00:00:00.000+00:00",
+  "creationDate": "2024-09-07T05:53:33.000-07:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "FHIR W5 categorization (Preliminary)",
+  "description": "This ontology is designed to support a healthcare monitoring system that leverages wearable devices and Semantic Web technologies to continuously monitor patient vital signs, assess their medical conditions, and provide timely alerts and interventions in case of abnormalities or emergencies. It aims to enhance patient care, safety, and decision-making by integrating ontology-based reasoning, SWRL rules, and real-time data from various sources.\r\n\r\nMain Features:\r\n- Integration of Diverse Data Sources: The ontology integrates different data models like FHIR (for electronic health records and medical data), SOSA (for sensor data and vital signs), and FOAF (for patient profile management). This integration allows for a comprehensive representation of both static and dynamic patient data, supporting more accurate monitoring and decision-making.\r\n\r\n- Vital Sign Monitoring: It includes classes and properties for representing vital signs such as Temperature, Blood Pressure, Heart Rate, Respiratory Rate, and Oxygen Saturation. Each vital sign is associated with corresponding observations and results, following the SOSA ontology pattern.\r\n\r\n- Health Condition Assessment: The ontology defines multiple classes to represent different health conditions:\r\n  1- Normal Situation: Represents a state where all monitored vital signs fall within their normal ranges.\r\n   2- Abnormal Situation: Represents a state where one or more vital signs fall outside their normal range, but there is no indication of device \r\n       malfunction.\r\n  3- Wrong Situation: Represents a condition where at least one vital sign is classified as \"wrong,\" indicating a possible malfunction of the wearable \r\n      device. This triggers alerts to the patient to check or repair the device.\r\n- Emergency and Critical Emergency Handling: In abnormal situations, SWRL rules are used to infer whether the situation is an emergency or a critical emergency:\r\n  Emergency Situation: Requires additional evaluation by healthcare providers. If the situation matches a previously stored case, the system \r\n  retrieves and recommends the previous prescription. Otherwise, a \"risky alarm\" is generated, and the patient's current and historical data are \r\n  reviewed to make clinical decisions.\r\n Critical Emergency Situation: In such cases, the system immediately alerts the emergency center, dispatches the nearest ambulance, and informs \r\n  the hospital of the patient's condition and estimated arrival time.\r\n  SWRL Rules for Decision Making: The ontology utilizes SWRL rules to automate reasoning processes for determining the patient's condition based on real-time data. These rules help classify patient situations into normal, abnormal, or critical states, enhancing the responsiveness of the healthcare system.\r\n\r\nEmergency Response Workflow: The ontology supports a detailed emergency response workflow, which involves identifying the nearest hospital, dispatching an ambulance, informing the ambulance crew, alerting the receiving hospital, and continuously updating the patient with the ambulance's status.\r\n\r\nRange and Classification Definitions: The ontology defines ranges for normal, and wrong values for each vital sign across various age groups, ensuring that the system provides age-appropriate assessments.\r\n\r\nData Provenance and History Tracking: The ontology captures data provenance, tracking the source and history of observations, which is crucial for clinical decision-making and system transparency., The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.",
+  "status": "alpha",
+  "submissionId": 1,
+  "@id": "https://data.bioontology.org/ontologies/HERO/submissions/1",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/HERO/submissions/1/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

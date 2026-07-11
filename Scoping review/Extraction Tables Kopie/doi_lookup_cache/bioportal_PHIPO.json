@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/ff13ef10-b185-0137-960d-005056010073",
+      "name": "Alayne Cuzick",
+      "email": "alayne.cuzick@rothamsted.ac.uk"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/vendetti"
+    ],
+    "acronym": "PHIPO",
+    "name": "Pathogen Host Interaction Phenotype Ontology",
+    "@id": "https://data.bioontology.org/ontologies/PHIPO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/PHIPO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/PHIPO/properties",
+      "classes": "https://data.bioontology.org/ontologies/PHIPO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/PHIPO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/PHIPO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/PHIPO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/PHIPO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/PHIPO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/PHIPO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/PHIPO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/PHIPO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/PHIPO/notes",
+      "groups": "https://data.bioontology.org/ontologies/PHIPO/groups",
+      "categories": "https://data.bioontology.org/ontologies/PHIPO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/PHIPO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/PHIPO/projects",
+      "download": "https://data.bioontology.org/ontologies/PHIPO/download",
+      "views": "https://data.bioontology.org/ontologies/PHIPO/views",
+      "analytics": "https://data.bioontology.org/ontologies/PHIPO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/PHIPO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-03-14T13:47:05.000-07:00",
+  "creationDate": "2026-03-14T00:00:00.000+00:00",
+  "homepage": "https://github.com/PHI-base/phipo",
+  "publication": [],
+  "documentation": null,
+  "version": "2026-03-12",
+  "description": "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions. PHIPO is being developed to support the comprehensive and detailed representation of phenotypes in PHI-base, the multi-species Pathogen-Host Interactions database available online at http://www.phi-base.org. PHIPO is pre-composed and logically defined., Ontology of species-neutral phenotypes observed in pathogen-host interactions.",
+  "status": "production",
+  "submissionId": 33,
+  "@id": "https://data.bioontology.org/ontologies/PHIPO/submissions/33",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/PHIPO/submissions/33/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

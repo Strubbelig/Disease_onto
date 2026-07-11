@@ -1,0 +1,111 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/c10eec00-7c35-013e-7d6c-005056010127",
+      "name": "Nico Franke",
+      "email": "nico.fra97@icloud.com"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/6d7b3810-6b8f-013d-efe4-005056010128",
+      "name": "Moritz Milewski",
+      "email": "moritz.milewski1@web.de"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/Strubbelig"
+    ],
+    "acronym": "OFL",
+    "name": "A comprehensive ontology of flaps in reconstructive surgery",
+    "@id": "https://data.bioontology.org/ontologies/OFL",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/OFL/submissions",
+      "properties": "https://data.bioontology.org/ontologies/OFL/properties",
+      "classes": "https://data.bioontology.org/ontologies/OFL/classes",
+      "single_class": "https://data.bioontology.org/ontologies/OFL/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/OFL/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/OFL/schemes",
+      "collections": "https://data.bioontology.org/ontologies/OFL/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/OFL/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/OFL/instances",
+      "metrics": "https://data.bioontology.org/ontologies/OFL/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/OFL/reviews",
+      "notes": "https://data.bioontology.org/ontologies/OFL/notes",
+      "groups": "https://data.bioontology.org/ontologies/OFL/groups",
+      "categories": "https://data.bioontology.org/ontologies/OFL/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/OFL/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/OFL/projects",
+      "download": "https://data.bioontology.org/ontologies/OFL/download",
+      "views": "https://data.bioontology.org/ontologies/OFL/views",
+      "analytics": "https://data.bioontology.org/ontologies/OFL/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/OFL",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-05-12T00:00:00.000+00:00",
+  "creationDate": "2026-05-12T00:00:00.000+00:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": "https://github.com/Strubbelig/Flap-ontology-project",
+  "version": "2.1.0",
+  "description": "Introduction:\r\nThe diversity of flap types in plastic surgery has led to multiple classification systems based on factors such as blood supply, tissue composition and distance between donor and recipient site. However, no comprehensive framework exists that systematically integrates all relevant aspects. Capturing the full range of surgical flaps in a structured manner could facilitate future research, improve interoperability, and even optimize billing processes. Ontologies could address this gap. They offer a structured approach to organizing and formalizing knowledge by defining a hierarchical tree of classes and individuals linked logically to other entities. \r\nMaterials and Methods:\r\nWe applied principles of ontology engineering, integrating knowledge from surgical literature and clinical expertise to model a wide variety of flaps. These are linked to the Foundational Model of Anatomy (FMA) ontology to describe their tissue components. The reasoner Hermit was employed to ensure logical consistency.\r\nResults:\r\nStructured hierarchically, the ontology links flaps to relevant anatomical structures and applies logical constraints to define necessary and sufficient conditions for each flap type. This enables precise representation of flap variations, each uniquely identified by an Ontology of Flaps in Reconstructive Surgery Identifier (OFLID). The developed ontology encompasses a wide range of local, pedicled, and free flaps. Simple local random-pattern V-Y flaps to complex chimeric and supercharged free flaps can be modelled and automatically classified. \r\nConclusions:\r\nThis ontology of surgical flaps could facilitate interoperability, multicentric research and artificial intelligence applications. Future work will focus on validation with larger datasets and expanding the ontology’s functionality.\r\n",
+  "status": "beta",
+  "submissionId": 3,
+  "@id": "https://data.bioontology.org/ontologies/OFL/submissions/3",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/OFL/submissions/3/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

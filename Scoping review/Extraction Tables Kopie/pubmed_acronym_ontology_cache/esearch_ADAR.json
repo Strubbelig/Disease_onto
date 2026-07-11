@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "23",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38052548",
+      "28968662",
+      "39340957",
+      "40769572",
+      "37981664",
+      "41615660",
+      "41164819",
+      "18950506",
+      "34874587",
+      "39247551"
+    ],
+    "translationset": [
+      {
+        "from": "ADAR",
+        "to": "\"Adv Drug Alcohol Res\"[Journal:__jid9918335075006676] OR \"adar\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"adv drug alcohol res\"[Journal] OR \"adar\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

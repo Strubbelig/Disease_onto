@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "240",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37499457",
+      "35372585",
+      "37467750",
+      "38243204",
+      "38699234",
+      "41444904",
+      "40446578",
+      "39682726",
+      "40943141",
+      "40950408"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"common\"[All Fields] OR \"commonalities\"[All Fields] OR \"commonality\"[All Fields] OR \"commoner\"[All Fields] OR \"commoners\"[All Fields] OR \"commons\"[All Fields]) AND (\"diabete\"[All Fields] OR \"diabetes mellitus\"[MeSH Terms] OR (\"diabetes\"[All Fields] AND \"mellitus\"[All Fields]) OR \"diabetes mellitus\"[All Fields] OR \"diabetes\"[All Fields] OR \"diabetes insipidus\"[MeSH Terms] OR (\"diabetes\"[All Fields] AND \"insipidus\"[All Fields]) OR \"diabetes insipidus\"[All Fields] OR \"diabetic\"[All Fields] OR \"diabetics\"[All Fields] OR \"diabets\"[All Fields]) AND (\"medic\"[All Fields] OR \"medical\"[All Fields] OR \"medicalization\"[MeSH Terms] OR \"medicalization\"[All Fields] OR \"medicalizations\"[All Fields] OR \"medicalize\"[All Fields] OR \"medicalized\"[All Fields] OR \"medicalizes\"[All Fields] OR \"medicalizing\"[All Fields] OR \"medically\"[All Fields] OR \"medicals\"[All Fields] OR \"medicated\"[All Fields] OR \"medication s\"[All Fields] OR \"medics\"[All Fields] OR \"pharmaceutical preparations\"[Supplementary Concept] OR \"pharmaceutical preparations\"[All Fields] OR \"medication\"[All Fields] OR \"pharmaceutical preparations\"[MeSH Terms] OR (\"pharmaceutical\"[All Fields] AND \"preparations\"[All Fields]) OR \"medications\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Common Diabetes Medications Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

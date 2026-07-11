@@ -1,0 +1,29 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "36002210",
+      "23646114"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"risk\"[MeSH Terms] OR \"risk\"[All Fields]) AND (\"stratification\"[All Fields] OR \"stratifications\"[All Fields]) AND (\"mental health\"[MeSH Terms] OR (\"mental\"[All Fields] AND \"health\"[All Fields]) OR \"mental health\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Risk Stratification in Mental Health\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

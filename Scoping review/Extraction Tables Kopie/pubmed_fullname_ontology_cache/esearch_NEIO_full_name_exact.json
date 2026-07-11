@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "40198015",
+      "33668412",
+      "27274563",
+      "25484345"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]) AND (\"electronical\"[All Fields] OR \"electronically\"[All Fields] OR \"electronics\"[MeSH Terms] OR \"electronics\"[All Fields] OR \"electronic\"[All Fields]) AND (\"interface\"[All Fields] OR \"interface s\"[All Fields] OR \"interfaced\"[All Fields] OR \"interfaces\"[All Fields] OR \"interfacing\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neural Electronic Interface Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/c6a992c0-81e4-0135-b681-005056010074",
+      "name": "Bill Duncan",
+      "email": "wdduncan@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/wdduncan%40gmail.com"
+    ],
+    "acronym": "ODFA",
+    "name": "Ontology of Dental Care-Related Fear and Anxiety",
+    "@id": "https://data.bioontology.org/ontologies/ODFA",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ODFA/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ODFA/properties",
+      "classes": "https://data.bioontology.org/ontologies/ODFA/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ODFA/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ODFA/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ODFA/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ODFA/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ODFA/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ODFA/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ODFA/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ODFA/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ODFA/notes",
+      "groups": "https://data.bioontology.org/ontologies/ODFA/groups",
+      "categories": "https://data.bioontology.org/ontologies/ODFA/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ODFA/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ODFA/projects",
+      "download": "https://data.bioontology.org/ontologies/ODFA/download",
+      "views": "https://data.bioontology.org/ontologies/ODFA/views",
+      "analytics": "https://data.bioontology.org/ontologies/ODFA/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ODFA",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-04-09T18:16:30.000-07:00",
+  "creationDate": "2026-04-09T00:00:00.000+00:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "2026-04-03",
+  "description": "The Ontology of Dental care-related Fear, Anxiety, and/or Phobia (ODFA) contains terms for defining and classifying dental-care related fear, anxiety, and/or phobia (DFA). The ODFA’s concepts and relations facilitate the development of tools and resources capable of enhancing our understanding of the impacts of DFA, and when applied to study data, the ODFA enables the integration and interoperability of data from multiple studies.\r\n\r\nThe ODFA is developed as a subset of the Oral Health and Disease Ontology (http://purl.obolibrary.org/obo/ohd.owl). Issues and new term requests can be submitted at https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues., the ODFA enables the integration and interoperability of data from multiple studies.\n\nThe ODFA is developed as a subset of the Oral Health and Disease Ontology (http://purl.obolibrary.org/obo/ohd.owl). Issues and new term requests can be submitted at https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues.",
+  "status": "production",
+  "submissionId": 6,
+  "@id": "https://data.bioontology.org/ontologies/ODFA/submissions/6",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ODFA/submissions/6/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

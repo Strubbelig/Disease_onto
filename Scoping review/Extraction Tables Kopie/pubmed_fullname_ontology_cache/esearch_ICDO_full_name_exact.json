@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "165",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34753471",
+      "33340416",
+      "33947203",
+      "34663204",
+      "39559493",
+      "28129712",
+      "29970176",
+      "38793127",
+      "39826846",
+      "39931027"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"international classification of diseases\"[MeSH Terms] OR (\"international\"[All Fields] AND \"classification\"[All Fields] AND \"diseases\"[All Fields]) OR \"international classification of diseases\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"International Classification of Diseases Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

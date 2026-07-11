@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7",
+    "retmax": "7",
+    "retstart": "0",
+    "idlist": [
+      "36090221",
+      "36751806",
+      "36317259",
+      "31227672",
+      "24308531",
+      "38647358",
+      "24146847"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"neural\"[All Fields] OR \"neuralization\"[All Fields] OR \"neuralize\"[All Fields] OR \"neuralized\"[All Fields] OR \"neuralizes\"[All Fields] OR \"neuralizing\"[All Fields] OR \"neurally\"[All Fields]) AND (\"motor\"[All Fields] OR \"motor s\"[All Fields] OR \"motoric\"[All Fields] OR \"motorically\"[All Fields] OR \"motorics\"[All Fields] OR \"motoring\"[All Fields] OR \"motorisation\"[All Fields] OR \"motorised\"[All Fields] OR \"motorization\"[All Fields] OR \"motorized\"[All Fields] OR \"motors\"[All Fields]) AND (\"recoveries\"[All Fields] OR \"recovery\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Neural Motor Recovery Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

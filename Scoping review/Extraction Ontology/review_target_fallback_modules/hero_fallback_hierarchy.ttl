@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/hero_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for HERO; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=FHIR W5 categorization (Preliminary), released=2024-09-07T00:00:00.000+00:00, creationDate=2024-09-07T05:53:33.000-07:00, submissionId=1" ;
-    dcterms:created "2026-07-03T12:41:43-04:00" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://hl7.org/fhir/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern." .

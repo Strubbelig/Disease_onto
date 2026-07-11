@@ -1,0 +1,5964 @@
+{
+  "meta": {
+    "count": 6,
+    "db_response_time_ms": 94,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Exercise Medicine Ontology EXMO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Exercise Medicine Ontology EXMO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Exercise Medicine Ontology EXMO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4405524644",
+      "doi": "https://doi.org/10.1038/s41597-024-04217-9",
+      "title": "Core reference ontology for individualized exercise prescription",
+      "display_name": "Core reference ontology for individualized exercise prescription",
+      "relevance_score": 159.52669,
+      "publication_year": 2024,
+      "publication_date": "2024-12-18",
+      "ids": {
+        "openalex": "https://openalex.org/W4405524644",
+        "doi": "https://doi.org/10.1038/s41597-024-04217-9",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/39695140"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1038/s41597-024-04217-9",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41597-024-04217-9",
+        "pdf_url": "https://www.nature.com/articles/s41597-024-04217-9.pdf",
+        "source": {
+          "id": "https://openalex.org/S2607323502",
+          "display_name": "Scientific Data",
+          "issn_l": "2052-4463",
+          "issn": [
+            "2052-4463"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Data",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.nature.com/articles/s41597-024-04217-9.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5101674648",
+            "display_name": "Xingyun Liu",
+            "orcid": "https://orcid.org/0000-0002-9295-2767"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11019714",
+              "display_name": "Universidade da Coruña",
+              "ror": "https://ror.org/01qckj285",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xingyun Liu",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9295-2767",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+              "institution_ids": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034022345",
+            "display_name": "Yin Yang",
+            "orcid": "https://orcid.org/0000-0002-0549-3882"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yin Yang",
+          "raw_affiliation_strings": [
+            "Department of Clinical Research Management, West China Hospital, Sichuan University, Chengdu, China",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Clinical Research Management, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5040755577",
+            "display_name": "Hui Zong",
+            "orcid": "https://orcid.org/0000-0002-9142-5017"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hui Zong",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9142-5017",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5115596197",
+            "display_name": "Ke Zhang",
+            "orcid": "https://orcid.org/0000-0002-6527-3427"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ke Zhang",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5021853076",
+            "display_name": "Min Jiang",
+            "orcid": "https://orcid.org/0000-0003-4935-315X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Min Jiang",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102954004",
+            "display_name": "Chunjiang Yu",
+            "orcid": "https://orcid.org/0000-0002-4646-3081"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210159685",
+              "display_name": "Suzhou Industrial Park Institute of Services Outsourcing",
+              "ror": "https://ror.org/05xwtrp65",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210159685"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chunjiang Yu",
+          "raw_affiliation_strings": [
+            "School of Artificial Intelligence, Suzhou Industrial Park Institute of Services Outsourcing, Suzhou, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Artificial Intelligence, Suzhou Industrial Park Institute of Services Outsourcing, Suzhou, China",
+              "institution_ids": [
+                "https://openalex.org/I4210159685"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002067192",
+            "display_name": "Yalan Chen",
+            "orcid": "https://orcid.org/0000-0001-8228-0787"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I199305430",
+              "display_name": "Nantong University",
+              "ror": "https://ror.org/02afcvw97",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I199305430"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yalan Chen",
+          "raw_affiliation_strings": [
+            "Department of Medical Informatics, School of Medicine, Nantong University, Nantong, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Medical Informatics, School of Medicine, Nantong University, Nantong, China",
+              "institution_ids": [
+                "https://openalex.org/I199305430"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5106302288",
+            "display_name": "Ting Bao",
+            "orcid": "https://orcid.org/0000-0003-3543-7344"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800091995",
+              "display_name": "West China Medical Center of Sichuan University",
+              "ror": "https://ror.org/040nggs60",
+              "country_code": "CN",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I24185976",
+                "https://openalex.org/I2800091995"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ting Bao",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I2800091995"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007739056",
+            "display_name": "Danting Li",
+            "orcid": "https://orcid.org/0000-0002-3510-8236"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2800091995",
+              "display_name": "West China Medical Center of Sichuan University",
+              "ror": "https://ror.org/040nggs60",
+              "country_code": "CN",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I24185976",
+                "https://openalex.org/I2800091995"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Danting Li",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I2800091995"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100444935",
+            "display_name": "Jiao Wang",
+            "orcid": "https://orcid.org/0000-0001-7640-3947"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11019714",
+              "display_name": "Universidade da Coruña",
+              "ror": "https://ror.org/01qckj285",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jiao Wang",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+              "institution_ids": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034034713",
+            "display_name": "Tong Boon Tang",
+            "orcid": "https://orcid.org/0000-0002-5721-6828"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11019714",
+              "display_name": "Universidade da Coruña",
+              "ror": "https://ror.org/01qckj285",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Tong Tang",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+              "institution_ids": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010999391",
+            "display_name": "Shumin Ren",
+            "orcid": "https://orcid.org/0000-0002-1376-1891"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11019714",
+              "display_name": "Universidade da Coruña",
+              "ror": "https://ror.org/01qckj285",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ],
+          "countries": [
+            "CN",
+            "ES"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shumin Ren",
+          "raw_affiliation_strings": [
+            "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Computer Science and Information Technology, University of A Coruña, A Coruña, Spain",
+              "institution_ids": [
+                "https://openalex.org/I11019714"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5087904828",
+            "display_name": "Juan M. Ruso",
+            "orcid": "https://orcid.org/0000-0001-5909-6754"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I200284239",
+              "display_name": "Universidade de Santiago de Compostela",
+              "ror": "https://ror.org/030eybx10",
+              "country_code": "ES",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I200284239"
+              ]
+            }
+          ],
+          "countries": [
+            "ES"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Juan M. Ruso",
+          "raw_affiliation_strings": [
+            "Soft Matter and Molecular Biophysics Group, Department of Applied Physics and Institute of Materials (iMATUS), University of Santiago de Compostela, Santiago de Compostela, Spain. juanm.ruso@usc.es",
+            "Soft Matter and Molecular Biophysics Group, Department of Applied Physics and Institute of Materials (iMATUS), University of Santiago de Compostela, Santiago de Compostela, Spain"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Soft Matter and Molecular Biophysics Group, Department of Applied Physics and Institute of Materials (iMATUS), University of Santiago de Compostela, Santiago de Compostela, Spain. juanm.ruso@usc.es",
+              "institution_ids": [
+                "https://openalex.org/I200284239"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Soft Matter and Molecular Biophysics Group, Department of Applied Physics and Institute of Materials (iMATUS), University of Santiago de Compostela, Santiago de Compostela, Spain",
+              "institution_ids": [
+                "https://openalex.org/I200284239"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5081095213",
+            "display_name": "Bairong Shen",
+            "orcid": "https://orcid.org/0000-0003-2899-1531"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I24185976",
+              "display_name": "Sichuan University",
+              "ror": "https://ror.org/011ashp19",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I24185976"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210089761",
+              "display_name": "West China Hospital of Sichuan University",
+              "ror": "https://ror.org/007mrxy13",
+              "country_code": "CN",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210089761"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Bairong Shen",
+          "raw_affiliation_strings": [
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China. bairong.shen@scu.edu.cn",
+            "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2899-1531",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China. bairong.shen@scu.edu.cn",
+              "institution_ids": [
+                "https://openalex.org/I24185976",
+                "https://openalex.org/I4210089761"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Health Management Center, General Practice Medical Center and Institutes for Systems Genetics, Frontiers Science Center for Disease-related Molecular Network, West China Hospital, Sichuan University, Chengdu, China",
+              "institution_ids": [
+                "https://openalex.org/I24185976"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 14,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5081095213",
+        "https://openalex.org/A5087904828"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I200284239",
+        "https://openalex.org/I24185976",
+        "https://openalex.org/I4210089761"
+      ],
+      "apc_list": {
+        "value": 1990,
+        "currency": "USD",
+        "value_usd": 1990
+      },
+      "apc_paid": {
+        "value": 1990,
+        "currency": "USD",
+        "value_usd": 1990
+      },
+      "fwci": 0.8663,
+      "has_fulltext": true,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.76324032,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 91,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": "1",
+        "first_page": "1349",
+        "last_page": "1349"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10352",
+        "display_name": "Physical Activity and Health",
+        "score": 0.9490000009536743,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2737",
+          "display_name": "Physiology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10352",
+          "display_name": "Physical Activity and Health",
+          "score": 0.9490000009536743,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2737",
+            "display_name": "Physiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11446",
+          "display_name": "Mobile Health and mHealth Applications",
+          "score": 0.9395999908447266,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3600",
+            "display_name": "General Health Professions"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/36",
+            "display_name": "Health Professions"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/core",
+          "display_name": "Core (optical fiber)",
+          "score": 0.710183322429657
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6032367944717407
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.5301110744476318
+        },
+        {
+          "id": "https://openalex.org/keywords/medical-prescription",
+          "display_name": "Medical prescription",
+          "score": 0.49764254689216614
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.48857149481773376
+        },
+        {
+          "id": "https://openalex.org/keywords/exercise-prescription",
+          "display_name": "Exercise prescription",
+          "score": 0.43243739008903503
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.36875393986701965
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.3657059669494629
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.32894235849380493
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.13818827271461487
+        },
+        {
+          "id": "https://openalex.org/keywords/pharmacology",
+          "display_name": "Pharmacology",
+          "score": 0.11379793286323547
+        },
+        {
+          "id": "https://openalex.org/keywords/physical-therapy",
+          "display_name": "Physical therapy",
+          "score": 0.10853636264801025
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.08450102806091309
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2164484",
+          "wikidata": "https://www.wikidata.org/wiki/Q5170150",
+          "display_name": "Core (optical fiber)",
+          "level": 2,
+          "score": 0.710183322429657
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6032367944717407
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.5301110744476318
+        },
+        {
+          "id": "https://openalex.org/C2426938",
+          "wikidata": "https://www.wikidata.org/wiki/Q3355478",
+          "display_name": "Medical prescription",
+          "level": 2,
+          "score": 0.49764254689216614
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.48857149481773376
+        },
+        {
+          "id": "https://openalex.org/C2779673892",
+          "wikidata": "https://www.wikidata.org/wiki/Q5420061",
+          "display_name": "Exercise prescription",
+          "level": 2,
+          "score": 0.43243739008903503
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.36875393986701965
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3657059669494629
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.32894235849380493
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.13818827271461487
+        },
+        {
+          "id": "https://openalex.org/C98274493",
+          "wikidata": "https://www.wikidata.org/wiki/Q128406",
+          "display_name": "Pharmacology",
+          "level": 1,
+          "score": 0.11379793286323547
+        },
+        {
+          "id": "https://openalex.org/C1862650",
+          "wikidata": "https://www.wikidata.org/wiki/Q186005",
+          "display_name": "Physical therapy",
+          "level": 1,
+          "score": 0.10853636264801025
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08450102806091309
+        },
+        {
+          "id": "https://openalex.org/C76155785",
+          "wikidata": "https://www.wikidata.org/wiki/Q418",
+          "display_name": "Telecommunications",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005081",
+          "descriptor_name": "Exercise Therapy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015444",
+          "descriptor_name": "Exercise",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D057285",
+          "descriptor_name": "Precision Medicine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1038/s41597-024-04217-9",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1038/s41597-024-04217-9",
+          "pdf_url": "https://www.nature.com/articles/s41597-024-04217-9.pdf",
+          "source": {
+            "id": "https://openalex.org/S2607323502",
+            "display_name": "Scientific Data",
+            "issn_l": "2052-4463",
+            "issn": [
+              "2052-4463"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_name": "Nature Portfolio",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Scientific Data",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:39695140",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39695140",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Scientific data",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11655637",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11655637",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11655637/pdf/41597_2024_Article_4217.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Sci Data",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:9cba528dc09b46e1b421cc68f5ff0e35",
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/9cba528dc09b46e1b421cc68f5ff0e35",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Scientific Data, Vol 11, Iss 1, Pp 1-8 (2024)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1038/s41597-024-04217-9",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41597-024-04217-9",
+        "pdf_url": "https://www.nature.com/articles/s41597-024-04217-9.pdf",
+        "source": {
+          "id": "https://openalex.org/S2607323502",
+          "display_name": "Scientific Data",
+          "issn_l": "2052-4463",
+          "issn": [
+            "2052-4463"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Data",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/5",
+          "score": 0.5199999809265137,
+          "display_name": "Gender equality"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G4001830326",
+          "display_name": null,
+          "funder_award_id": "32070671",
+          "funder_id": "https://openalex.org/F4320321001",
+          "funder_display_name": "National Natural Science Foundation of China"
+        },
+        {
+          "id": "https://openalex.org/G4808893844",
+          "display_name": null,
+          "funder_award_id": "32270690",
+          "funder_id": "https://openalex.org/F4320321001",
+          "funder_display_name": "National Natural Science Foundation of China"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321001",
+          "display_name": "National Natural Science Foundation of China",
+          "ror": "https://ror.org/01h0zpd94"
+        },
+        {
+          "id": "https://openalex.org/F4320322990",
+          "display_name": "Sichuan University",
+          "ror": "https://ror.org/011ashp19"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4405524644.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4405524644.grobid-xml"
+      },
+      "referenced_works_count": 49,
+      "referenced_works": [
+        "https://openalex.org/W1802346448",
+        "https://openalex.org/W1979997212",
+        "https://openalex.org/W1984378629",
+        "https://openalex.org/W2002377677",
+        "https://openalex.org/W2040686964",
+        "https://openalex.org/W2086915817",
+        "https://openalex.org/W2109963633",
+        "https://openalex.org/W2125132961",
+        "https://openalex.org/W2135393491",
+        "https://openalex.org/W2255503816",
+        "https://openalex.org/W2261812172",
+        "https://openalex.org/W2531081995",
+        "https://openalex.org/W2727101894",
+        "https://openalex.org/W2755824024",
+        "https://openalex.org/W2765400080",
+        "https://openalex.org/W2900726805",
+        "https://openalex.org/W2900833749",
+        "https://openalex.org/W2920304288",
+        "https://openalex.org/W2945994995",
+        "https://openalex.org/W2947927871",
+        "https://openalex.org/W2954844010",
+        "https://openalex.org/W2965518110",
+        "https://openalex.org/W3005680437",
+        "https://openalex.org/W3012757844",
+        "https://openalex.org/W3138499637",
+        "https://openalex.org/W3153565604",
+        "https://openalex.org/W3157222814",
+        "https://openalex.org/W3159561288",
+        "https://openalex.org/W3170771812",
+        "https://openalex.org/W3198387891",
+        "https://openalex.org/W3214608846",
+        "https://openalex.org/W4206615934",
+        "https://openalex.org/W4213069711",
+        "https://openalex.org/W4220682241",
+        "https://openalex.org/W4220813503",
+        "https://openalex.org/W4223614111",
+        "https://openalex.org/W4232749380",
+        "https://openalex.org/W4283836702",
+        "https://openalex.org/W4285740400",
+        "https://openalex.org/W4297183943",
+        "https://openalex.org/W4303685003",
+        "https://openalex.org/W4309670933",
+        "https://openalex.org/W4323981420",
+        "https://openalex.org/W4379780271",
+        "https://openalex.org/W4385330225",
+        "https://openalex.org/W4392651776",
+        "https://openalex.org/W4399358135",
+        "https://openalex.org/W4399388617",
+        "https://openalex.org/W4402603713"
+      ],
+      "related_works": [
+        "https://openalex.org/W2361820086",
+        "https://openalex.org/W4388487825",
+        "https://openalex.org/W2368224867",
+        "https://openalex.org/W3029903131",
+        "https://openalex.org/W3111030087",
+        "https://openalex.org/W2341334583",
+        "https://openalex.org/W2385685139",
+        "https://openalex.org/W2358949696",
+        "https://openalex.org/W3032266754",
+        "https://openalex.org/W2038092528"
+      ],
+      "abstract_inverted_index": {
+        "\"Exercise": [
+          0
+        ],
+        "is": [
+          1
+        ],
+        "medicine\"": [
+          2
+        ],
+        "emphasizes": [
+          3
+        ],
+        "personalized": [
+          4,
+          15,
+          45
+        ],
+        "prescriptions": [
+          5
+        ],
+        "for": [
+          6,
+          14,
+          44,
+          111,
+          125,
+          141
+        ],
+        "better": [
+          7
+        ],
+        "efficacy.": [
+          8
+        ],
+        "Current": [
+          9
+        ],
+        "guidelines": [
+          10
+        ],
+        "need": [
+          11
+        ],
+        "more": [
+          12
+        ],
+        "support": [
+          13,
+          43
+        ],
+        "prescriptions,": [
+          16
+        ],
+        "posing": [
+          17
+        ],
+        "scientific": [
+          18
+        ],
+        "challenges.": [
+          19
+        ],
+        "Facing": [
+          20
+        ],
+        "those": [
+          21
+        ],
+        "challenges,": [
+          22
+        ],
+        "we": [
+          23
+        ],
+        "gathered": [
+          24
+        ],
+        "data": [
+          25
+        ],
+        "from": [
+          26
+        ],
+        "established": [
+          27
+        ],
+        "guidelines,": [
+          28
+        ],
+        "databases,": [
+          29
+        ],
+        "and": [
+          30,
+          60,
+          70,
+          83,
+          93,
+          99,
+          128,
+          144
+        ],
+        "articles": [
+          31
+        ],
+        "to": [
+          32,
+          40,
+          106
+        ],
+        "develop": [
+          33
+        ],
+        "the": [
+          34,
+          52,
+          97,
+          104,
+          132,
+          146
+        ],
+        "Exercise": [
+          35
+        ],
+        "Medicine": [
+          36
+        ],
+        "Ontology": [
+          37,
+          53,
+          62
+        ],
+        "(EXMO),": [
+          38
+        ],
+        "intending": [
+          39
+        ],
+        "offer": [
+          41
+        ],
+        "comprehensive": [
+          42
+        ],
+        "exercise": [
+          46,
+          80,
+          113
+        ],
+        "prescriptions.": [
+          47
+        ],
+        "EXMO": [
+          48,
+          65,
+          102,
+          118
+        ],
+        "was": [
+          49
+        ],
+        "constructed": [
+          50
+        ],
+        "using": [
+          51,
+          96
+        ],
+        "Development": [
+          54
+        ],
+        "101": [
+          55
+        ],
+        "methodology,": [
+          56
+        ],
+        "incorporating": [
+          57
+        ],
+        "Open": [
+          58
+        ],
+        "Biological": [
+          59
+        ],
+        "Biomedical": [
+          61
+        ],
+        "Foundry": [
+          63
+        ],
+        "principles.": [
+          64
+        ],
+        "v1.0": [
+          66
+        ],
+        "comprises": [
+          67
+        ],
+        "434": [
+          68
+        ],
+        "classes": [
+          69
+        ],
+        "9,732": [
+          71
+        ],
+        "axioms,": [
+          72
+        ],
+        "encompassing": [
+          73
+        ],
+        "physical": [
+          74
+        ],
+        "activity": [
+          75
+        ],
+        "terms,": [
+          76,
+          79,
+          82
+        ],
+        "health": [
+          77
+        ],
+        "status": [
+          78
+        ],
+        "prescription": [
+          81,
+          116
+        ],
+        "other": [
+          84
+        ],
+        "related": [
+          85
+        ],
+        "concepts.": [
+          86
+        ],
+        "It": [
+          87
+        ],
+        "has": [
+          88,
+          103
+        ],
+        "successfully": [
+          89
+        ],
+        "undergone": [
+          90
+        ],
+        "expert": [
+          91
+        ],
+        "evaluation": [
+          92
+        ],
+        "consistency": [
+          94
+        ],
+        "validation": [
+          95
+        ],
+        "ELK": [
+          98
+        ],
+        "JFact": [
+          100
+        ],
+        "reasoners.": [
+          101
+        ],
+        "potential": [
+          105
+        ],
+        "provide": [
+          107
+        ],
+        "a": [
+          108,
+          138
+        ],
+        "much-needed": [
+          109
+        ],
+        "standard": [
+          110
+        ],
+        "individualized": [
+          112
+        ],
+        "prescription.": [
+          114
+        ],
+        "Beyond": [
+          115
+        ],
+        "standardization,": [
+          117
+        ],
+        "can": [
+          119
+        ],
+        "also": [
+          120
+        ],
+        "be": [
+          121
+        ],
+        "an": [
+          122,
+          149
+        ],
+        "excellent": [
+          123
+        ],
+        "tool": [
+          124
+        ],
+        "supporting": [
+          126
+        ],
+        "databases": [
+          127
+        ],
+        "recommendation": [
+          129
+        ],
+        "systems.": [
+          130
+        ],
+        "In": [
+          131
+        ],
+        "future,": [
+          133
+        ],
+        "it": [
+          134
+        ],
+        "could": [
+          135
+        ],
+        "serve": [
+          136
+        ],
+        "as": [
+          137
+        ],
+        "valuable": [
+          139
+        ],
+        "reference": [
+          140
+        ],
+        "developing": [
+          142
+        ],
+        "sub-ontologies": [
+          143
+        ],
+        "facilitating": [
+          145
+        ],
+        "formation": [
+          147
+        ],
+        "of": [
+          148
+        ],
+        "ontology": [
+          150
+        ],
+        "network.": [
+          151
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-06-13T06:13:01.061226",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7134138311",
+      "doi": "https://doi.org/10.1038/s41597-026-06984-z",
+      "title": "Kinetic Human Movement Ontology: a semantic terminology model to symbolically represent physiological movement",
+      "display_name": "Kinetic Human Movement Ontology: a semantic terminology model to symbolically represent physiological movement",
+      "relevance_score": 10.153681,
+      "publication_year": 2026,
+      "publication_date": "2026-03-07",
+      "ids": {
+        "openalex": "https://openalex.org/W7134138311",
+        "doi": "https://doi.org/10.1038/s41597-026-06984-z",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/41794846"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1038/s41597-026-06984-z",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41597-026-06984-z",
+        "pdf_url": "https://www.nature.com/articles/s41597-026-06984-z_reference.pdf",
+        "source": {
+          "id": "https://openalex.org/S2607323502",
+          "display_name": "Scientific Data",
+          "issn_l": "2052-4463",
+          "issn": [
+            "2052-4463"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Data",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.nature.com/articles/s41597-026-06984-z_reference.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5082839085",
+            "display_name": "Muhammad Amith",
+            "orcid": "https://orcid.org/0000-0003-4333-1857"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I55302922",
+              "display_name": "The University of Texas Medical Branch at Galveston",
+              "ror": "https://ror.org/016tfm930",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I55302922"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Muhammad Amith",
+          "raw_affiliation_strings": [
+            "Department of Biostatistics and Data Science, University of Texas Medical Branch, 301 University Blvd, Galveston, 77555, Texas, USA. muamith@utmb.edu",
+            "Department of Internal Medicine, University of Texas Medical Branch, 301 University Blvd, Galveston, 77555, Texas, USA. muamith@utmb.edu"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4333-1857",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biostatistics and Data Science, University of Texas Medical Branch, 301 University Blvd, Galveston, 77555, Texas, USA. muamith@utmb.edu",
+              "institution_ids": [
+                "https://openalex.org/I55302922"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Internal Medicine, University of Texas Medical Branch, 301 University Blvd, Galveston, 77555, Texas, USA. muamith@utmb.edu",
+              "institution_ids": [
+                "https://openalex.org/I55302922"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5128310318",
+            "display_name": "Vivian Ha",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74775410",
+              "display_name": "Rice University",
+              "ror": "https://ror.org/008zs3103",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74775410"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vivian Ha",
+          "raw_affiliation_strings": [
+            "Wiess School of Natural Sciences & Department of Kinesiology, Rice University, 6100 Main Street, Houston, 77005-1827, Texas, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Wiess School of Natural Sciences & Department of Kinesiology, Rice University, 6100 Main Street, Houston, 77005-1827, Texas, USA",
+              "institution_ids": [
+                "https://openalex.org/I74775410"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5092240916",
+            "display_name": "Eloisa Nguyen",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11317958",
+              "display_name": "Seattle Pacific University",
+              "ror": "https://ror.org/02gzbg991",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11317958"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Eloisa Nguyen",
+          "raw_affiliation_strings": [
+            "Seattle Pacific University, 3307 3rd Ave West, Seattle, 98119-1997, WA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Seattle Pacific University, 3307 3rd Ave West, Seattle, 98119-1997, WA, USA",
+              "institution_ids": [
+                "https://openalex.org/I11317958"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5128289460",
+            "display_name": "Yang Gong",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210159031",
+              "display_name": "The University of Texas Health Science Center",
+              "ror": "https://ror.org/05cwbxa29",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210159031"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yang Gong",
+          "raw_affiliation_strings": [
+            "McWilliams School of Biomedical Informatics, University of Texas Health Science Center at Houston, 7000 Fannin Street, Suite 600, Houston, 77033, Texas, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "McWilliams School of Biomedical Informatics, University of Texas Health Science Center at Houston, 7000 Fannin Street, Suite 600, Houston, 77033, Texas, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210159031",
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5128301412",
+            "display_name": "Ahsiya Lin",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210107404",
+              "display_name": "Clinical Research Solutions",
+              "ror": "https://ror.org/01m2t4z13",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210107404"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ahsiya Lin",
+          "raw_affiliation_strings": [
+            "OntoData Research and Solutions LLC, Bethesda, Maryland, 20817, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2620-0345",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "OntoData Research and Solutions LLC, Bethesda, Maryland, 20817, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210107404"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5128314568",
+            "display_name": "Cui Tao",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801572250",
+              "display_name": "Jacksonville College",
+              "ror": "https://ror.org/03a9t7g49",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2801572250"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210146710",
+              "display_name": "Mayo Clinic in Florida",
+              "ror": "https://ror.org/03zzw1w08",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I1330342723",
+                "https://openalex.org/I4210146710"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Cui Tao",
+          "raw_affiliation_strings": [
+            "Department of Artificial Intelligence and Informatics, Mayo Clinic, Jacksonville, 32224, Florida, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Artificial Intelligence and Informatics, Mayo Clinic, Jacksonville, 32224, Florida, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210146710",
+                "https://openalex.org/I2801572250"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5128282802",
+            "display_name": "Licong Cui",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210159031",
+              "display_name": "The University of Texas Health Science Center",
+              "ror": "https://ror.org/05cwbxa29",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210159031"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I919571938",
+              "display_name": "The University of Texas Health Science Center at Houston",
+              "ror": "https://ror.org/03gds6c39",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Licong Cui",
+          "raw_affiliation_strings": [
+            "McWilliams School of Biomedical Informatics, University of Texas Health Science Center at Houston, 7000 Fannin Street, Suite 600, Houston, 77033, Texas, USA. licong.cui@uth.tmc.edu"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "McWilliams School of Biomedical Informatics, University of Texas Health Science Center at Houston, 7000 Fannin Street, Suite 600, Houston, 77033, Texas, USA. licong.cui@uth.tmc.edu",
+              "institution_ids": [
+                "https://openalex.org/I4210159031",
+                "https://openalex.org/I919571938"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 8,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5082839085"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I55302922"
+      ],
+      "apc_list": {
+        "value": 1990,
+        "currency": "USD",
+        "value_usd": 1990
+      },
+      "apc_paid": {
+        "value": 1990,
+        "currency": "USD",
+        "value_usd": 1990
+      },
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.24546067,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": "13",
+        "issue": "1",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11431",
+        "display_name": "Action Observation and Synchronization",
+        "score": 0.4772999882698059,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3207",
+          "display_name": "Social Psychology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/32",
+          "display_name": "Psychology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11431",
+          "display_name": "Action Observation and Synchronization",
+          "score": 0.4772999882698059,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3207",
+            "display_name": "Social Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11883",
+          "display_name": "Embodied and Extended Cognition",
+          "score": 0.03139999881386757,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2805",
+            "display_name": "Cognitive Neuroscience"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/28",
+            "display_name": "Neuroscience"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11148",
+          "display_name": "Language, Metaphor, and Cognition",
+          "score": 0.024299999698996544,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3205",
+            "display_name": "Experimental and Cognitive Psychology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/32",
+            "display_name": "Psychology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/movement",
+          "display_name": "Movement (music)",
+          "score": 0.8273000121116638
+        },
+        {
+          "id": "https://openalex.org/keywords/terminology",
+          "display_name": "Terminology",
+          "score": 0.4999000132083893
+        },
+        {
+          "id": "https://openalex.org/keywords/semantics",
+          "display_name": "Semantics (computer science)",
+          "score": 0.3555000126361847
+        },
+        {
+          "id": "https://openalex.org/keywords/semantic-memory",
+          "display_name": "Semantic memory",
+          "score": 0.25839999318122864
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780226923",
+          "wikidata": "https://www.wikidata.org/wiki/Q929848",
+          "display_name": "Movement (music)",
+          "level": 2,
+          "score": 0.8273000121116638
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5694000124931335
+        },
+        {
+          "id": "https://openalex.org/C547195049",
+          "wikidata": "https://www.wikidata.org/wiki/Q1725664",
+          "display_name": "Terminology",
+          "level": 2,
+          "score": 0.4999000132083893
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.42559999227523804
+        },
+        {
+          "id": "https://openalex.org/C188147891",
+          "wikidata": "https://www.wikidata.org/wiki/Q147638",
+          "display_name": "Cognitive science",
+          "level": 1,
+          "score": 0.4097999930381775
+        },
+        {
+          "id": "https://openalex.org/C46312422",
+          "wikidata": "https://www.wikidata.org/wiki/Q11024",
+          "display_name": "Communication",
+          "level": 1,
+          "score": 0.4004000127315521
+        },
+        {
+          "id": "https://openalex.org/C204321447",
+          "wikidata": "https://www.wikidata.org/wiki/Q30642",
+          "display_name": "Natural language processing",
+          "level": 1,
+          "score": 0.3718999922275543
+        },
+        {
+          "id": "https://openalex.org/C184337299",
+          "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+          "display_name": "Semantics (computer science)",
+          "level": 2,
+          "score": 0.3555000126361847
+        },
+        {
+          "id": "https://openalex.org/C197914299",
+          "wikidata": "https://www.wikidata.org/wiki/Q18650",
+          "display_name": "Semantic memory",
+          "level": 3,
+          "score": 0.25839999318122864
+        },
+        {
+          "id": "https://openalex.org/C130318100",
+          "wikidata": "https://www.wikidata.org/wiki/Q2268914",
+          "display_name": "Semantic similarity",
+          "level": 2,
+          "score": 0.25609999895095825
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.251800000667572
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009068",
+          "descriptor_name": "Movement",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D011187",
+          "descriptor_name": "Posture",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011187",
+          "descriptor_name": "Posture",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011187",
+          "descriptor_name": "Posture",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011187",
+          "descriptor_name": "Posture",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011187",
+          "descriptor_name": "Posture",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1038/s41597-026-06984-z",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1038/s41597-026-06984-z",
+          "pdf_url": "https://www.nature.com/articles/s41597-026-06984-z_reference.pdf",
+          "source": {
+            "id": "https://openalex.org/S2607323502",
+            "display_name": "Scientific Data",
+            "issn_l": "2052-4463",
+            "issn": [
+              "2052-4463"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_name": "Nature Portfolio",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Scientific Data",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:41794846",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41794846",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Scientific data",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:ca522e3ab2974ab8bd2225558c4b4e32",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/ca522e3ab2974ab8bd2225558c4b4e32",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Scientific Data, Vol 13, Iss 1 (2026)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:13144411",
+          "is_oa": true,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13144411/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Sci Data",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1038/s41597-026-06984-z",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41597-026-06984-z",
+        "pdf_url": "https://www.nature.com/articles/s41597-026-06984-z_reference.pdf",
+        "source": {
+          "id": "https://openalex.org/S2607323502",
+          "display_name": "Scientific Data",
+          "issn_l": "2052-4463",
+          "issn": [
+            "2052-4463"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Data",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/10",
+          "score": 0.5223140120506287,
+          "display_name": "Reduced inequalities"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G17345580",
+          "display_name": null,
+          "funder_award_id": "U01AG088076",
+          "funder_id": "https://openalex.org/F4320337337",
+          "funder_display_name": "National Institute on Aging"
+        },
+        {
+          "id": "https://openalex.org/G2655394322",
+          "display_name": "Collaborative Training of a New Cadre of Innovative Cancer Prevention Researchers",
+          "funder_award_id": "RP210042",
+          "funder_id": "https://openalex.org/F4320308129",
+          "funder_display_name": "Cancer Prevention and Research Institute of Texas"
+        },
+        {
+          "id": "https://openalex.org/G6056677011",
+          "display_name": "AI-based conversational agent for facilitating education and communication about HPV vaccination in children and adolescents",
+          "funder_award_id": "RP220244",
+          "funder_id": "https://openalex.org/F4320308129",
+          "funder_display_name": "Cancer Prevention and Research Institute of Texas"
+        },
+        {
+          "id": "https://openalex.org/G7532855783",
+          "display_name": null,
+          "funder_award_id": "R01HS027846",
+          "funder_id": "https://openalex.org/F4320332177",
+          "funder_display_name": "Agency for Healthcare Research and Quality"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320308129",
+          "display_name": "Cancer Prevention and Research Institute of Texas",
+          "ror": "https://ror.org/0003xa228"
+        },
+        {
+          "id": "https://openalex.org/F4320313675",
+          "display_name": "University of Texas Health Science Center at Houston",
+          "ror": "https://ror.org/03gds6c39"
+        },
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320332177",
+          "display_name": "Agency for Healthcare Research and Quality",
+          "ror": "https://ror.org/03jmfdf59"
+        },
+        {
+          "id": "https://openalex.org/F4320337337",
+          "display_name": "National Institute on Aging",
+          "ror": "https://ror.org/049v75w11"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W7134138311.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W7134138311.grobid-xml"
+      },
+      "referenced_works_count": 34,
+      "referenced_works": [
+        "https://openalex.org/W1482585805",
+        "https://openalex.org/W1802346448",
+        "https://openalex.org/W1928797397",
+        "https://openalex.org/W1975231226",
+        "https://openalex.org/W1995381409",
+        "https://openalex.org/W2025341751",
+        "https://openalex.org/W2045872081",
+        "https://openalex.org/W2062558911",
+        "https://openalex.org/W2086858668",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2149040964",
+        "https://openalex.org/W2163670493",
+        "https://openalex.org/W2168120333",
+        "https://openalex.org/W2252448679",
+        "https://openalex.org/W2261812172",
+        "https://openalex.org/W2402756356",
+        "https://openalex.org/W2473034500",
+        "https://openalex.org/W2610469329",
+        "https://openalex.org/W2765400080",
+        "https://openalex.org/W2905771699",
+        "https://openalex.org/W2947927871",
+        "https://openalex.org/W2968051021",
+        "https://openalex.org/W2997642180",
+        "https://openalex.org/W3165215189",
+        "https://openalex.org/W4213286107",
+        "https://openalex.org/W4220666269",
+        "https://openalex.org/W4220889554",
+        "https://openalex.org/W4237072542",
+        "https://openalex.org/W4283836702",
+        "https://openalex.org/W4291021049",
+        "https://openalex.org/W4307306490",
+        "https://openalex.org/W4312799843",
+        "https://openalex.org/W4316039477",
+        "https://openalex.org/W7131385420"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "Cataloging": [
+          0
+        ],
+        "physiological": [
+          1,
+          45,
+          91
+        ],
+        "and": [
+          2,
+          17,
+          44,
+          100,
+          104,
+          108,
+          137,
+          162,
+          166
+        ],
+        "anatomical": [
+          3,
+          43,
+          89
+        ],
+        "terminologies": [
+          4,
+          83
+        ],
+        "may": [
+          5
+        ],
+        "provide": [
+          6,
+          139
+        ],
+        "a": [
+          7,
+          35,
+          62
+        ],
+        "fundamental": [
+          8
+        ],
+        "basis": [
+          9
+        ],
+        "for": [
+          10,
+          141,
+          163
+        ],
+        "bridging": [
+          11
+        ],
+        "the": [
+          12,
+          54,
+          76,
+          151
+        ],
+        "involvement": [
+          13
+        ],
+        "of": [
+          14,
+          144,
+          153
+        ],
+        "muscles,": [
+          15
+        ],
+        "skeletal,": [
+          16
+        ],
+        "other": [
+          18
+        ],
+        "essential": [
+          19
+        ],
+        "parts": [
+          20
+        ],
+        "in": [
+          21,
+          24,
+          85
+        ],
+        "human": [
+          22,
+          31,
+          51,
+          66,
+          70,
+          86,
+          159
+        ],
+        "movement,": [
+          23,
+          52
+        ],
+        "addition": [
+          25
+        ],
+        "to": [
+          26,
+          64,
+          78,
+          112,
+          156
+        ],
+        "understanding": [
+          27
+        ],
+        "their": [
+          28
+        ],
+        "role": [
+          29
+        ],
+        "on": [
+          30,
+          42,
+          133
+        ],
+        "morbidity.": [
+          32
+        ],
+        "We": [
+          33,
+          60,
+          74,
+          148
+        ],
+        "present": [
+          34
+        ],
+        "general": [
+          36
+        ],
+        "formalized": [
+          37
+        ],
+        "ontology": [
+          38,
+          146
+        ],
+        "model": [
+          39,
+          63,
+          77
+        ],
+        "that": [
+          40,
+          47,
+          68
+        ],
+        "focuses": [
+          41
+        ],
+        "entities": [
+          46
+        ],
+        "are": [
+          48
+        ],
+        "active": [
+          49
+        ],
+        "during": [
+          50
+        ],
+        "called": [
+          53
+        ],
+        "Kinetic": [
+          55
+        ],
+        "Human": [
+          56
+        ],
+        "Movement": [
+          57
+        ],
+        "Ontology": [
+          58
+        ],
+        "(KHMO).": [
+          59
+        ],
+        "developed": [
+          61
+        ],
+        "represent": [
+          65
+        ],
+        "movement": [
+          67,
+          87,
+          161
+        ],
+        "links": [
+          69
+        ],
+        "postures": [
+          71
+        ],
+        "using": [
+          72
+        ],
+        "OWL2.": [
+          73
+        ],
+        "used": [
+          75
+        ],
+        "assemble": [
+          79
+        ],
+        "various": [
+          80
+        ],
+        "open-sourced": [
+          81
+        ],
+        "controlled": [
+          82
+        ],
+        "involved": [
+          84
+        ],
+        "-": [
+          88
+        ],
+        "entities,": [
+          90
+        ],
+        "terms,": [
+          92
+        ],
+        "etc.": [
+          93
+        ],
+        "KHMO": [
+          94,
+          116,
+          125
+        ],
+        "presents": [
+          95
+        ],
+        "1954": [
+          96
+        ],
+        "classes,": [
+          97
+        ],
+        "42": [
+          98
+        ],
+        "properties,": [
+          99
+        ],
+        "1921": [
+          101
+        ],
+        "logical": [
+          102,
+          106
+        ],
+        "axioms,": [
+          103
+        ],
+        "passed": [
+          105
+        ],
+        "satisfiability": [
+          107
+        ],
+        "consistency": [
+          109
+        ],
+        "tests.": [
+          110
+        ],
+        "Compared": [
+          111
+        ],
+        "physical": [
+          113
+        ],
+        "activity-related": [
+          114
+        ],
+        "ontologies,": [
+          115
+        ],
+        "exhibited": [
+          117
+        ],
+        "high": [
+          118,
+          122
+        ],
+        "semiotic": [
+          119
+        ],
+        "quality,": [
+          120
+        ],
+        "including": [
+          121
+        ],
+        "domain": [
+          123
+        ],
+        "coverage.": [
+          124
+        ],
+        "is": [
+          126
+        ],
+        "publicly": [
+          127
+        ],
+        "available": [
+          128
+        ],
+        "as": [
+          129
+        ],
+        "an": [
+          130
+        ],
+        "open-source": [
+          131
+        ],
+        "resource": [
+          132
+        ],
+        "our": [
+          134,
+          145,
+          154
+        ],
+        "GitHub": [
+          135
+        ],
+        "repository,": [
+          136
+        ],
+        "we": [
+          138
+        ],
+        "software": [
+          140
+        ],
+        "data": [
+          142,
+          160,
+          164
+        ],
+        "management": [
+          143
+        ],
+        "model.": [
+          147
+        ],
+        "envision": [
+          149
+        ],
+        "furthering": [
+          150
+        ],
+        "research": [
+          152
+        ],
+        "work": [
+          155
+        ],
+        "interoperate": [
+          157
+        ],
+        "with": [
+          158
+        ],
+        "curation": [
+          165
+        ],
+        "harmonization": [
+          167
+        ],
+        "endeavors.": [
+          168
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2026-03-08T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W2957117711",
+      "doi": "https://doi.org/10.1590/2175-623688362",
+      "title": "Infâncias Diante do Racismo: teses para um bom combate",
+      "display_name": "Infâncias Diante do Racismo: teses para um bom combate",
+      "relevance_score": 9.537905,
+      "publication_year": 2019,
+      "publication_date": "2019-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2957117711",
+        "doi": "https://doi.org/10.1590/2175-623688362",
+        "mag": "2957117711"
+      },
+      "language": "pt",
+      "primary_location": {
+        "id": "doi:10.1590/2175-623688362",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1590/2175-623688362",
+        "pdf_url": "http://www.scielo.br/pdf/edreal/v44n2/en_2175-6236-edreal-44-02-e88362.pdf",
+        "source": {
+          "id": "https://openalex.org/S2739092582",
+          "display_name": "Educação & Realidade",
+          "issn_l": "0100-3143",
+          "issn": [
+            "0100-3143",
+            "2175-6236"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312571",
+          "host_organization_name": "Federal University of Rio Grande do Sul",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312571"
+          ],
+          "host_organization_lineage_names": [
+            "Federal University of Rio Grande do Sul"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Educação &amp; Realidade",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://www.scielo.br/pdf/edreal/v44n2/en_2175-6236-edreal-44-02-e88362.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5008731501",
+            "display_name": "Renato Noguera",
+            "orcid": "https://orcid.org/0000-0002-6609-9360"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I161460629",
+              "display_name": "Universidade Federal Rural do Rio de Janeiro",
+              "ror": "https://ror.org/00xwgyp12",
+              "country_code": "BR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I161460629"
+              ]
+            }
+          ],
+          "countries": [
+            "BR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Renato Noguera",
+          "raw_affiliation_strings": [
+            "Universidade Federal Rural do Rio de Janeiro,  Brasil"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6609-9360",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Universidade Federal Rural do Rio de Janeiro,  Brasil",
+              "institution_ids": [
+                "https://openalex.org/I161460629"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5102753824",
+            "display_name": "Luciana Pires Alves",
+            "orcid": "https://orcid.org/0000-0001-8249-3002"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40034438",
+              "display_name": "Universidade do Estado do Rio de Janeiro",
+              "ror": "https://ror.org/0198v2949",
+              "country_code": "BR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I40034438"
+              ]
+            }
+          ],
+          "countries": [
+            "BR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Luciana Pires Alves",
+          "raw_affiliation_strings": [
+            "Universidade do Estado do Rio de Janeiro,  Brasil",
+            "Universidade do Estado do Rio de Janeiro, Duque de Caxias, Brasil"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8249-3002",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Universidade do Estado do Rio de Janeiro,  Brasil",
+              "institution_ids": [
+                "https://openalex.org/I40034438"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Universidade do Estado do Rio de Janeiro, Duque de Caxias, Brasil",
+              "institution_ids": [
+                "https://openalex.org/I40034438"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 2.0156,
+      "has_fulltext": true,
+      "cited_by_count": 9,
+      "citation_normalized_percentile": {
+        "value": 0.89936179,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 97
+      },
+      "biblio": {
+        "volume": "44",
+        "issue": "2",
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11506",
+        "display_name": "Children's Rights and Participation",
+        "score": 0.9876999855041504,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3312",
+          "display_name": "Sociology and Political Science"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11506",
+          "display_name": "Children's Rights and Participation",
+          "score": 0.9876999855041504,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3312",
+            "display_name": "Sociology and Political Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T14226",
+          "display_name": "Migration, Racism, and Human Rights",
+          "score": 0.972599983215332,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3306",
+            "display_name": "Health"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12109",
+          "display_name": "Race, Identity, and Education in Brazil",
+          "score": 0.9656999707221985,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3312",
+            "display_name": "Sociology and Political Science"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.5468373894691467
+        },
+        {
+          "id": "https://openalex.org/keywords/humanities",
+          "display_name": "Humanities",
+          "score": 0.48516684770584106
+        },
+        {
+          "id": "https://openalex.org/keywords/sociology",
+          "display_name": "Sociology",
+          "score": 0.36892178654670715
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.5468373894691467
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.48516684770584106
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.36892178654670715
+        }
+      ],
+      "mesh": [],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "doi:10.1590/2175-623688362",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1590/2175-623688362",
+          "pdf_url": "http://www.scielo.br/pdf/edreal/v44n2/en_2175-6236-edreal-44-02-e88362.pdf",
+          "source": {
+            "id": "https://openalex.org/S2739092582",
+            "display_name": "Educação & Realidade",
+            "issn_l": "0100-3143",
+            "issn": [
+              "0100-3143",
+              "2175-6236"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310312571",
+            "host_organization_name": "Federal University of Rio Grande do Sul",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310312571"
+            ],
+            "host_organization_lineage_names": [
+              "Federal University of Rio Grande do Sul"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Educação &amp; Realidade",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:americanae.aecid.es:2410288",
+          "is_oa": true,
+          "landing_page_url": "http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2175-62362019000200409",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400786",
+            "display_name": "Americanae (AECID Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Educação &amp;amp; Realidade v.44 n.2 2019",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:seer.ufrgs.br:article/88362",
+          "is_oa": true,
+          "landing_page_url": "https://seer.ufrgs.br/index.php/educacaoerealidade/article/view/88362",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402641",
+            "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4383465926",
+            "host_organization_name": "LA Referencia",
+            "host_organization_lineage": [
+              "https://openalex.org/I4383465926"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "instacron:UFRGS",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:82616e8775694058821807755e8dd085",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/82616e8775694058821807755e8dd085",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Educação & Realidade, Vol 44, Iss 2 (2019)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:redalyc.org:317265188005",
+          "is_oa": false,
+          "landing_page_url": "https://www.redalyc.org/articulo.oa?id=317265188005",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196100",
+            "display_name": "Redalyc (Universidad Autónoma del Estado de México)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I179647637",
+            "host_organization_name": "Universidad Autónoma del Estado de México",
+            "host_organization_lineage": [
+              "https://openalex.org/I179647637"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Educação &amp; Realidade (Brasil) Num.2 Vol.44",
+          "raw_type": "artículo científico"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1590/2175-623688362",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1590/2175-623688362",
+        "pdf_url": "http://www.scielo.br/pdf/edreal/v44n2/en_2175-6236-edreal-44-02-e88362.pdf",
+        "source": {
+          "id": "https://openalex.org/S2739092582",
+          "display_name": "Educação & Realidade",
+          "issn_l": "0100-3143",
+          "issn": [
+            "0100-3143",
+            "2175-6236"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312571",
+          "host_organization_name": "Federal University of Rio Grande do Sul",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312571"
+          ],
+          "host_organization_lineage_names": [
+            "Federal University of Rio Grande do Sul"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Educação &amp; Realidade",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/10",
+          "score": 0.5,
+          "display_name": "Reduced inequalities"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2957117711.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2957117711.grobid-xml"
+      },
+      "referenced_works_count": 8,
+      "referenced_works": [
+        "https://openalex.org/W1588027131",
+        "https://openalex.org/W2003754770",
+        "https://openalex.org/W2072270168",
+        "https://openalex.org/W2129480410",
+        "https://openalex.org/W2155229462",
+        "https://openalex.org/W2801336422",
+        "https://openalex.org/W2885586817",
+        "https://openalex.org/W2889651390"
+      ],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W93312527",
+        "https://openalex.org/W2603296253",
+        "https://openalex.org/W1589203209",
+        "https://openalex.org/W2557454913",
+        "https://openalex.org/W828925460",
+        "https://openalex.org/W11365241",
+        "https://openalex.org/W1013667899",
+        "https://openalex.org/W2559405764"
+      ],
+      "abstract_inverted_index": {
+        "Resumo:": [
+          0
+        ],
+        "Este": [
+          1
+        ],
+        "artigo": [
+          2
+        ],
+        "discute": [
+          3
+        ],
+        "brevemente": [
+          4
+        ],
+        "a": [
+          5,
+          30,
+          96
+        ],
+        "infância": [
+          6,
+          23,
+          104
+        ],
+        "como": [
+          7,
+          32,
+          80,
+          105
+        ],
+        "noção,": [
+          8
+        ],
+        "categoria": [
+          9
+        ],
+        "e": [
+          10,
+          16,
+          49,
+          51,
+          57,
+          77,
+          83,
+          114
+        ],
+        "conceito.": [
+          11
+        ],
+        "Vamos": [
+          12
+        ],
+        "problematizar": [
+          13
+        ],
+        "o": [
+          14,
+          33,
+          109
+        ],
+        "racismo": [
+          15
+        ],
+        "as": [
+          17
+        ],
+        "formulações": [
+          18
+        ],
+        "que": [
+          19,
+          95
+        ],
+        "associam": [
+          20
+        ],
+        "África": [
+          21
+        ],
+        "à": [
+          22
+        ],
+        "da": [
+          24,
+          36,
+          103,
+          112,
+          117
+        ],
+        "humanidade.": [
+          25
+        ],
+        "O": [
+          26,
+          38
+        ],
+        "objetivo": [
+          27
+        ],
+        "é": [
+          28
+        ],
+        "enfrentar": [
+          29
+        ],
+        "adultidade": [
+          31
+        ],
+        "grande": [
+          34
+        ],
+        "perigo": [
+          35
+        ],
+        "vida.": [
+          37
+        ],
+        "texto": [
+          39
+        ],
+        "traz": [
+          40
+        ],
+        "resultados": [
+          41
+        ],
+        "de": [
+          42,
+          44,
+          72,
+          90,
+          98,
+          107
+        ],
+        "pesquisas": [
+          43
+        ],
+        "campo": [
+          45
+        ],
+        "realizadas": [
+          46
+        ],
+        "em": [
+          47
+        ],
+        "2016": [
+          48
+        ],
+        "2017": [
+          50
+        ],
+        "uma": [
+          52,
+          101
+        ],
+        "análise": [
+          53
+        ],
+        "do": [
+          54,
+          92
+        ],
+        "filme": [
+          55
+        ],
+        "Cores": [
+          56
+        ],
+        "Botas": [
+          58
+        ],
+        "(2010);": [
+          59
+        ],
+        "nas": [
+          60
+        ],
+        "duas": [
+          61
+        ],
+        "situações,": [
+          62
+        ],
+        "crianças": [
+          63
+        ],
+        "negras": [
+          64
+        ],
+        "se": [
+          65
+        ],
+        "deparam": [
+          66
+        ],
+        "com": [
+          67,
+          74
+        ],
+        "desafios": [
+          68
+        ],
+        "sociorraciais.": [
+          69
+        ],
+        "A": [
+          70
+        ],
+        "partir": [
+          71
+        ],
+        "diálogos": [
+          73
+        ],
+        "diversos": [
+          75
+        ],
+        "autores": [
+          76
+        ],
+        "autoras,": [
+          78
+        ],
+        "tais": [
+          79
+        ],
+        "Mbembe,": [
+          81
+        ],
+        "Oyewumi": [
+          82
+        ],
+        "Bispo": [
+          84
+        ],
+        "dos": [
+          85
+        ],
+        "Santos,": [
+          86
+        ],
+        "propomos": [
+          87
+        ],
+        "teses": [
+          88
+        ],
+        "infantis": [
+          89
+        ],
+        "superação": [
+          91
+        ],
+        "racismo,": [
+          93
+        ],
+        "para": [
+          94
+        ],
+        "mais-valia": [
+          97
+        ],
+        "vida": [
+          99
+        ],
+        "seja": [
+          100
+        ],
+        "afirmação": [
+          102
+        ],
+        "modo": [
+          106
+        ],
+        "colocar": [
+          108
+        ],
+        "desejo": [
+          110
+        ],
+        "além": [
+          111
+        ],
+        "falta": [
+          113
+        ],
+        "das": [
+          115
+        ],
+        "armadilhas": [
+          116
+        ],
+        "mercadoria.": [
+          118
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7127048002",
+      "doi": "https://doi.org/10.35424/rha.173.2026.5953",
+      "title": "Enlightenment, Mestizaje, and Slavery in Late 19th —and Early 20th— Century Brazil",
+      "display_name": "Enlightenment, Mestizaje, and Slavery in Late 19th —and Early 20th— Century Brazil",
+      "relevance_score": 1.4247723,
+      "publication_year": 2026,
+      "publication_date": "2026-01-30",
+      "ids": {
+        "openalex": "https://openalex.org/W7127048002",
+        "doi": "https://doi.org/10.35424/rha.173.2026.5953"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.35424/rha.173.2026.5953",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35424/rha.173.2026.5953",
+        "pdf_url": "https://www.revistasipgh.org/index.php/rehiam/article/download/5953/6926",
+        "source": {
+          "id": "https://openalex.org/S4210215618",
+          "display_name": "Revista de Historia de América",
+          "issn_l": "0034-8325",
+          "issn": [
+            "0034-8325",
+            "2663-371X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321111",
+          "host_organization_name": "Pan American Institute of Geography and History",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321111"
+          ],
+          "host_organization_lineage_names": [
+            "Pan American Institute of Geography and History"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Revista de Historia de América",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://www.revistasipgh.org/index.php/rehiam/article/download/5953/6926",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5124700967",
+            "display_name": "Ulisses Do Valle",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I68106152",
+              "display_name": "Universidade Federal de Goiás",
+              "ror": "https://ror.org/0039d5757",
+              "country_code": "BR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I68106152"
+              ]
+            }
+          ],
+          "countries": [
+            "BR"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Ulisses Do Valle",
+          "raw_affiliation_strings": [
+            "Universidade Federal de Goiás"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0486-8320",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Universidade Federal de Goiás",
+              "institution_ids": [
+                "https://openalex.org/I68106152"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5124700967"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I68106152"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.14435282,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": "173",
+        "first_page": "65",
+        "last_page": "100"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12512",
+        "display_name": "History of Colonial Brazil",
+        "score": 0.3774000108242035,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3314",
+          "display_name": "Anthropology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/33",
+          "display_name": "Social Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12512",
+          "display_name": "History of Colonial Brazil",
+          "score": 0.3774000108242035,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3314",
+            "display_name": "Anthropology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12778",
+          "display_name": "History of Medicine and Tropical Health",
+          "score": 0.1386999934911728,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1202",
+            "display_name": "History"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12144",
+          "display_name": "Colonialism, slavery, and trade",
+          "score": 0.04280000180006027,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3314",
+            "display_name": "Anthropology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/emperor",
+          "display_name": "Emperor",
+          "score": 0.7962999939918518
+        },
+        {
+          "id": "https://openalex.org/keywords/adventure",
+          "display_name": "Adventure",
+          "score": 0.6413000226020813
+        },
+        {
+          "id": "https://openalex.org/keywords/social-life",
+          "display_name": "Social life",
+          "score": 0.4311000108718872
+        },
+        {
+          "id": "https://openalex.org/keywords/social-history",
+          "display_name": "Social history (medicine)",
+          "score": 0.4002000093460083
+        },
+        {
+          "id": "https://openalex.org/keywords/late-19th-century",
+          "display_name": "Late 19th century",
+          "score": 0.39629998803138733
+        },
+        {
+          "id": "https://openalex.org/keywords/elite",
+          "display_name": "Elite",
+          "score": 0.3901999890804291
+        },
+        {
+          "id": "https://openalex.org/keywords/descendant",
+          "display_name": "Descendant",
+          "score": 0.3411000072956085
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776501734",
+          "wikidata": "https://www.wikidata.org/wiki/Q527496",
+          "display_name": "Emperor",
+          "level": 2,
+          "score": 0.7962999939918518
+        },
+        {
+          "id": "https://openalex.org/C42133412",
+          "wikidata": "https://www.wikidata.org/wiki/Q319221",
+          "display_name": "Adventure",
+          "level": 2,
+          "score": 0.6413000226020813
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.505299985408783
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.4977000057697296
+        },
+        {
+          "id": "https://openalex.org/C2992884035",
+          "wikidata": "https://www.wikidata.org/wiki/Q7551229",
+          "display_name": "Social life",
+          "level": 2,
+          "score": 0.4311000108718872
+        },
+        {
+          "id": "https://openalex.org/C2780702156",
+          "wikidata": "https://www.wikidata.org/wiki/Q7551154",
+          "display_name": "Social history (medicine)",
+          "level": 2,
+          "score": 0.4002000093460083
+        },
+        {
+          "id": "https://openalex.org/C3018868712",
+          "wikidata": "https://www.wikidata.org/wiki/Q6955",
+          "display_name": "Late 19th century",
+          "level": 3,
+          "score": 0.39629998803138733
+        },
+        {
+          "id": "https://openalex.org/C2775987171",
+          "wikidata": "https://www.wikidata.org/wiki/Q192797",
+          "display_name": "Elite",
+          "level": 3,
+          "score": 0.3901999890804291
+        },
+        {
+          "id": "https://openalex.org/C2549261",
+          "wikidata": "https://www.wikidata.org/wiki/Q43455",
+          "display_name": "Ethnology",
+          "level": 1,
+          "score": 0.3441999852657318
+        },
+        {
+          "id": "https://openalex.org/C201811572",
+          "wikidata": "https://www.wikidata.org/wiki/Q188518",
+          "display_name": "Descendant",
+          "level": 2,
+          "score": 0.3411000072956085
+        },
+        {
+          "id": "https://openalex.org/C2778495208",
+          "wikidata": "https://www.wikidata.org/wiki/Q48349",
+          "display_name": "Empire",
+          "level": 2,
+          "score": 0.3237000107765198
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3190999925136566
+        },
+        {
+          "id": "https://openalex.org/C67101536",
+          "wikidata": "https://www.wikidata.org/wiki/Q5535910",
+          "display_name": "George (robot)",
+          "level": 2,
+          "score": 0.2928999960422516
+        },
+        {
+          "id": "https://openalex.org/C6303427",
+          "wikidata": "https://www.wikidata.org/wiki/Q47398",
+          "display_name": "Economic history",
+          "level": 1,
+          "score": 0.2913999855518341
+        },
+        {
+          "id": "https://openalex.org/C531593650",
+          "wikidata": "https://www.wikidata.org/wiki/Q7167",
+          "display_name": "Colonialism",
+          "level": 2,
+          "score": 0.290800005197525
+        },
+        {
+          "id": "https://openalex.org/C2991942024",
+          "wikidata": "https://www.wikidata.org/wiki/Q51844591",
+          "display_name": "Public life",
+          "level": 3,
+          "score": 0.2793000042438507
+        },
+        {
+          "id": "https://openalex.org/C122302079",
+          "wikidata": "https://www.wikidata.org/wiki/Q8432",
+          "display_name": "Civilization",
+          "level": 2,
+          "score": 0.2752000093460083
+        },
+        {
+          "id": "https://openalex.org/C35651441",
+          "wikidata": "https://www.wikidata.org/wiki/Q625303",
+          "display_name": "Independence (probability theory)",
+          "level": 2,
+          "score": 0.2667999863624573
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.26440000534057617
+        },
+        {
+          "id": "https://openalex.org/C2987946170",
+          "wikidata": "https://www.wikidata.org/wiki/Q853725",
+          "display_name": "Social relationship",
+          "level": 2,
+          "score": 0.257999986410141
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.35424/rha.173.2026.5953",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.35424/rha.173.2026.5953",
+          "pdf_url": "https://www.revistasipgh.org/index.php/rehiam/article/download/5953/6926",
+          "source": {
+            "id": "https://openalex.org/S4210215618",
+            "display_name": "Revista de Historia de América",
+            "issn_l": "0034-8325",
+            "issn": [
+              "0034-8325",
+              "2663-371X"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321111",
+            "host_organization_name": "Pan American Institute of Geography and History",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321111"
+            ],
+            "host_organization_lineage_names": [
+              "Pan American Institute of Geography and History"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Revista de Historia de América",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.35424/rha.173.2026.5953",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35424/rha.173.2026.5953",
+        "pdf_url": "https://www.revistasipgh.org/index.php/rehiam/article/download/5953/6926",
+        "source": {
+          "id": "https://openalex.org/S4210215618",
+          "display_name": "Revista de Historia de América",
+          "issn_l": "0034-8325",
+          "issn": [
+            "0034-8325",
+            "2663-371X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321111",
+          "host_organization_name": "Pan American Institute of Geography and History",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321111"
+          ],
+          "host_organization_lineage_names": [
+            "Pan American Institute of Geography and History"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Revista de Historia de América",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/8",
+          "score": 0.4298560321331024,
+          "display_name": "Decent work and economic growth"
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321178",
+          "display_name": "Governo Brasil",
+          "ror": "https://ror.org/00n0s9w57"
+        },
+        {
+          "id": "https://openalex.org/F4320323257",
+          "display_name": "Universidad de Buenos Aires",
+          "ror": "https://ror.org/0081fs513"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W7127048002.pdf"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "This": [
+          0,
+          108
+        ],
+        "research,": [
+          1
+        ],
+        "using": [
+          2
+        ],
+        "unpublished": [
+          3
+        ],
+        "and": [
+          4,
+          24,
+          59,
+          68,
+          90,
+          106,
+          231
+        ],
+        "mostly": [
+          5
+        ],
+        "digitized": [
+          6
+        ],
+        "documents,": [
+          7
+        ],
+        "reconstructs": [
+          8
+        ],
+        "the": [
+          9,
+          29,
+          33,
+          52,
+          71,
+          87,
+          112,
+          149,
+          157,
+          170,
+          180,
+          204,
+          210,
+          222,
+          227,
+          234
+        ],
+        "life": [
+          10,
+          190
+        ],
+        "of": [
+          11,
+          32,
+          54,
+          73,
+          75,
+          111,
+          115,
+          140,
+          153,
+          169,
+          172,
+          182,
+          189,
+          195,
+          203,
+          212,
+          221,
+          237
+        ],
+        "Domingos": [
+          12,
+          47,
+          130,
+          160,
+          196
+        ],
+        "Carlos": [
+          13,
+          48,
+          131,
+          161,
+          197
+        ],
+        "da": [
+          14,
+          49,
+          132,
+          162,
+          198
+        ],
+        "Silva,": [
+          15,
+          163,
+          199
+        ],
+        "an": [
+          16,
+          94,
+          127
+        ],
+        "illustrious": [
+          17
+        ],
+        "Bahian": [
+          18
+        ],
+        "doctor": [
+          19,
+          67,
+          85
+        ],
+        "who": [
+          20,
+          143
+        ],
+        "lived": [
+          21
+        ],
+        "in": [
+          22,
+          28,
+          41,
+          119,
+          164,
+          226,
+          233
+        ],
+        "Salvador": [
+          23
+        ],
+        "Rio": [
+          25
+        ],
+        "de": [
+          26
+        ],
+        "Janeiro": [
+          27
+        ],
+        "second": [
+          30
+        ],
+        "half": [
+          31
+        ],
+        "19th": [
+          34
+        ],
+        "century.": [
+          35
+        ],
+        "Despite": [
+          36
+        ],
+        "being": [
+          37,
+          65
+        ],
+        "a": [
+          38,
+          42,
+          55,
+          66,
+          84,
+          104,
+          116,
+          120,
+          138,
+          176,
+          218
+        ],
+        "black": [
+          39,
+          117
+        ],
+        "man": [
+          40,
+          118
+        ],
+        "racially": [
+          43
+        ],
+        "stratified": [
+          44
+        ],
+        "slave": [
+          45,
+          121
+        ],
+        "society,": [
+          46
+        ],
+        "Silva": [
+          50,
+          133
+        ],
+        "was": [
+          51,
+          91,
+          103,
+          134
+        ],
+        "protagonist": [
+          53
+        ],
+        "dizzying": [
+          56
+        ],
+        "political,": [
+          57
+        ],
+        "economic,": [
+          58
+        ],
+        "social": [
+          60,
+          113
+        ],
+        "rise.": [
+          61
+        ],
+        "In": [
+          62,
+          100
+        ],
+        "addition": [
+          63
+        ],
+        "to": [
+          64,
+          96,
+          174,
+          207,
+          217
+        ],
+        "professor": [
+          69
+        ],
+        "at": [
+          70
+        ],
+        "Faculty": [
+          72
+        ],
+        "Medicine": [
+          74
+        ],
+        "Bahia,": [
+          76
+        ],
+        "he": [
+          77,
+          102
+        ],
+        "published": [
+          78
+        ],
+        "several": [
+          79
+        ],
+        "scientific": [
+          80
+        ],
+        "books,": [
+          81
+        ],
+        "served": [
+          82
+        ],
+        "as": [
+          83,
+          193
+        ],
+        "during": [
+          86
+        ],
+        "Paraguayan": [
+          88
+        ],
+        "War,": [
+          89
+        ],
+        "even": [
+          92
+        ],
+        "named": [
+          93
+        ],
+        "advisor": [
+          95
+        ],
+        "Emperor": [
+          97
+        ],
+        "Pedro": [
+          98
+        ],
+        "ii.": [
+          99
+        ],
+        "addition,": [
+          101
+        ],
+        "farmer": [
+          105
+        ],
+        "businessman.": [
+          107
+        ],
+        "fascinating": [
+          109
+        ],
+        "story": [
+          110
+        ],
+        "rise": [
+          114
+        ],
+        "society": [
+          122
+        ],
+        "is": [
+          123,
+          156
+        ],
+        "also": [
+          124
+        ],
+        "marked": [
+          125
+        ],
+        "by": [
+          126,
+          159
+        ],
+        "intriguing": [
+          128
+        ],
+        "paradox:": [
+          129
+        ],
+        "also,": [
+          135
+        ],
+        "more": [
+          136
+        ],
+        "than": [
+          137
+        ],
+        "defender": [
+          139
+        ],
+        "slavery,": [
+          141
+        ],
+        "someone": [
+          142
+        ],
+        "directly": [
+          144
+        ],
+        "benefited": [
+          145
+        ],
+        "from": [
+          146
+        ],
+        "it.": [
+          147,
+          208
+        ],
+        "Among": [
+          148
+        ],
+        "most": [
+          150
+        ],
+        "important": [
+          151
+        ],
+        "findings": [
+          152
+        ],
+        "this": [
+          154
+        ],
+        "research": [
+          155
+        ],
+        "attempt": [
+          158
+        ],
+        "consortium": [
+          165
+        ],
+        "with": [
+          166
+        ],
+        "public": [
+          167
+        ],
+        "authorities": [
+          168
+        ],
+        "city": [
+          171
+        ],
+        "Salvador,": [
+          173
+        ],
+        "create": [
+          175
+        ],
+        "labor": [
+          177
+        ],
+        "colony": [
+          178
+        ],
+        "for": [
+          179
+        ],
+        "enslavement": [
+          181
+        ],
+        "abandoned": [
+          183
+        ],
+        "children.": [
+          184
+        ],
+        "The": [
+          185
+        ],
+        "forgetting": [
+          186
+        ],
+        "or": [
+          187
+        ],
+        "elimination": [
+          188
+        ],
+        "stories,": [
+          191
+        ],
+        "such": [
+          192
+        ],
+        "that": [
+          194
+        ],
+        "deprives": [
+          200
+        ],
+        "Brazilian": [
+          201,
+          238
+        ],
+        "history": [
+          202
+        ],
+        "complexity": [
+          205
+        ],
+        "inherent": [
+          206
+        ],
+        "Reconstructing": [
+          209
+        ],
+        "adventures": [
+          211
+        ],
+        "his": [
+          213
+        ],
+        "life,": [
+          214
+        ],
+        "therefore,": [
+          215
+        ],
+        "contributes": [
+          216
+        ],
+        "better": [
+          219
+        ],
+        "understanding": [
+          220
+        ],
+        "many": [
+          223
+        ],
+        "nuances": [
+          224
+        ],
+        "involved": [
+          225
+        ],
+        "relationship": [
+          228
+        ],
+        "between": [
+          229
+        ],
+        "slavery": [
+          230
+        ],
+        "miscegenation": [
+          232
+        ],
+        "historical": [
+          235
+        ],
+        "formation": [
+          236
+        ],
+        "society.": [
+          239
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-05-21T06:26:12.895304",
+      "created_date": "2026-02-03T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W1762471320",
+      "doi": null,
+      "title": "DaZKom - Professional Competencies of Pre-Service Teachers for Secondary Education in the Field of German as a Second Language",
+      "display_name": "DaZKom - Professional Competencies of Pre-Service Teachers for Secondary Education in the Field of German as a Second Language",
+      "relevance_score": 0.8128639,
+      "publication_year": 2013,
+      "publication_date": "2013-01-01",
+      "ids": {
+        "openalex": "https://openalex.org/W1762471320",
+        "mag": "1762471320"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "pmh:oai:pure.leuphana.de:publications/f738e267-e087-4f48-aefc-c60bd8dc3820",
+        "is_oa": true,
+        "landing_page_url": "http://fis.leuphana.de/de/publications/dazkom--professional-competencies-of-preservice-teachers-for-secondary-education-in-the-field-of-german-as-a-second-language(f738e267-e087-4f48-aefc-c60bd8dc3820).html",
+        "pdf_url": "https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400489",
+          "display_name": "Multilingual Matters (Channel View Publications)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Koch-Priewe, B, Köker, A, Ohm, U, Ehmke, T, Carlson, S, Gültekin-Karakoç, N, Hammer, S & Rosenbrock, S 2013, DaZKom – Professional Competencies of Pre-Service Teachers for Secondary Education in the Field of German as a Second Language. in S Blömeke & O Zlatkin-Troitschanskaia (eds), The German funding initiative “Modeling and Measuring Competencies in Higher Education”: 23 research projects on engineering, economics and social sciences, education and generic skills of higher education students. KoKoHs Working Papers , no. 3, Humboldt-Universität zu Berlin, Berlin, Mainz, pp. 58-62. < https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf >",
+        "raw_type": "info:eu-repo/semantics/other"
+      },
+      "type": "book-chapter",
+      "indexed_in": [],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5051880983",
+            "display_name": "Barbara Koch-Priewe",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Barbara Koch-Priewe",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049212787",
+            "display_name": "Anne Köker",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Anne Köker",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5022555276",
+            "display_name": "Udo Ohm",
+            "orcid": "https://orcid.org/0000-0001-7540-2547"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Udo Ohm",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-7540-2547",
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012653298",
+            "display_name": "Timo Ehmke",
+            "orcid": "https://orcid.org/0000-0001-9572-2185"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210115568",
+              "display_name": "Community Research and Development Information Service",
+              "ror": "https://ror.org/02nc61e46",
+              "country_code": "BE",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210115568"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Timo Ehmke",
+          "raw_affiliation_strings": [
+            "Professur für Erziehungswissenschaften, insbesondere empirische Bildungsforschung"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9572-2185",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Professur für Erziehungswissenschaften, insbesondere empirische Bildungsforschung",
+              "institution_ids": [
+                "https://openalex.org/I4210115568"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5082338939",
+            "display_name": "Sonja A. Carlson",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Sonja A. Carlson",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5041704088",
+            "display_name": "Nazan Gültekin-Karakoç",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Nazan Gültekin-Karakoç",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027037181",
+            "display_name": "Svenja Hammer",
+            "orcid": "https://orcid.org/0000-0002-4335-3178"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210115568",
+              "display_name": "Community Research and Development Information Service",
+              "ror": "https://ror.org/02nc61e46",
+              "country_code": "BE",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I4210115568"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Svenja Hammer",
+          "raw_affiliation_strings": [
+            "Professur für Erziehungswissenschaften, insbesondere empirische Bildungsforschung"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4335-3178",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Professur für Erziehungswissenschaften, insbesondere empirische Bildungsforschung",
+              "institution_ids": [
+                "https://openalex.org/I4210115568"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5055857382",
+            "display_name": "Sonja Rosenbrock",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Sonja Rosenbrock",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 8,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 0.0,
+      "has_fulltext": true,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.06020651,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": "3",
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T14081",
+        "display_name": "Linguistic Education and Pedagogy",
+        "score": 0.9925000071525574,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1203",
+          "display_name": "Language and Linguistics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/12",
+          "display_name": "Arts and Humanities"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T14081",
+          "display_name": "Linguistic Education and Pedagogy",
+          "score": 0.9925000071525574,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1203",
+            "display_name": "Language and Linguistics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12542",
+          "display_name": "Second Language Learning and Teaching",
+          "score": 0.9646000266075134,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1208",
+            "display_name": "Literature and Literary Theory"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/12",
+            "display_name": "Arts and Humanities"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13978",
+          "display_name": "Foreign Language Teaching Methods",
+          "score": 0.9639000296592712,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3304",
+            "display_name": "Education"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/33",
+            "display_name": "Social Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/german",
+          "display_name": "German",
+          "score": 0.8796403408050537
+        },
+        {
+          "id": "https://openalex.org/keywords/service",
+          "display_name": "Service (business)",
+          "score": 0.4452701807022095
+        },
+        {
+          "id": "https://openalex.org/keywords/field",
+          "display_name": "Field (mathematics)",
+          "score": 0.4440622925758362
+        },
+        {
+          "id": "https://openalex.org/keywords/pedagogy",
+          "display_name": "Pedagogy",
+          "score": 0.44177860021591187
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics-education",
+          "display_name": "Mathematics education",
+          "score": 0.3581344485282898
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.35363155603408813
+        },
+        {
+          "id": "https://openalex.org/keywords/sociology",
+          "display_name": "Sociology",
+          "score": 0.34235379099845886
+        },
+        {
+          "id": "https://openalex.org/keywords/medical-education",
+          "display_name": "Medical education",
+          "score": 0.32891541719436646
+        },
+        {
+          "id": "https://openalex.org/keywords/political-science",
+          "display_name": "Political science",
+          "score": 0.32676827907562256
+        },
+        {
+          "id": "https://openalex.org/keywords/business",
+          "display_name": "Business",
+          "score": 0.29018133878707886
+        },
+        {
+          "id": "https://openalex.org/keywords/linguistics",
+          "display_name": "Linguistics",
+          "score": 0.207643061876297
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.12302011251449585
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics",
+          "display_name": "Mathematics",
+          "score": 0.11893275380134583
+        },
+        {
+          "id": "https://openalex.org/keywords/marketing",
+          "display_name": "Marketing",
+          "score": 0.08997327089309692
+        },
+        {
+          "id": "https://openalex.org/keywords/philosophy",
+          "display_name": "Philosophy",
+          "score": 0.08090329170227051
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C154775046",
+          "wikidata": "https://www.wikidata.org/wiki/Q188",
+          "display_name": "German",
+          "level": 2,
+          "score": 0.8796403408050537
+        },
+        {
+          "id": "https://openalex.org/C2780378061",
+          "wikidata": "https://www.wikidata.org/wiki/Q25351891",
+          "display_name": "Service (business)",
+          "level": 2,
+          "score": 0.4452701807022095
+        },
+        {
+          "id": "https://openalex.org/C9652623",
+          "wikidata": "https://www.wikidata.org/wiki/Q190109",
+          "display_name": "Field (mathematics)",
+          "level": 2,
+          "score": 0.4440622925758362
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.44177860021591187
+        },
+        {
+          "id": "https://openalex.org/C145420912",
+          "wikidata": "https://www.wikidata.org/wiki/Q853077",
+          "display_name": "Mathematics education",
+          "level": 1,
+          "score": 0.3581344485282898
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.35363155603408813
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.34235379099845886
+        },
+        {
+          "id": "https://openalex.org/C509550671",
+          "wikidata": "https://www.wikidata.org/wiki/Q126945",
+          "display_name": "Medical education",
+          "level": 1,
+          "score": 0.32891541719436646
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.32676827907562256
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.29018133878707886
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.207643061876297
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.12302011251449585
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.11893275380134583
+        },
+        {
+          "id": "https://openalex.org/C162853370",
+          "wikidata": "https://www.wikidata.org/wiki/Q39809",
+          "display_name": "Marketing",
+          "level": 1,
+          "score": 0.08997327089309692
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08090329170227051
+        },
+        {
+          "id": "https://openalex.org/C202444582",
+          "wikidata": "https://www.wikidata.org/wiki/Q837863",
+          "display_name": "Pure mathematics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "pmh:oai:pure.leuphana.de:publications/f738e267-e087-4f48-aefc-c60bd8dc3820",
+          "is_oa": true,
+          "landing_page_url": "http://fis.leuphana.de/de/publications/dazkom--professional-competencies-of-preservice-teachers-for-secondary-education-in-the-field-of-german-as-a-second-language(f738e267-e087-4f48-aefc-c60bd8dc3820).html",
+          "pdf_url": "https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400489",
+            "display_name": "Multilingual Matters (Channel View Publications)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Koch-Priewe, B, Köker, A, Ohm, U, Ehmke, T, Carlson, S, Gültekin-Karakoç, N, Hammer, S & Rosenbrock, S 2013, DaZKom – Professional Competencies of Pre-Service Teachers for Secondary Education in the Field of German as a Second Language. in S Blömeke & O Zlatkin-Troitschanskaia (eds), The German funding initiative “Modeling and Measuring Competencies in Higher Education”: 23 research projects on engineering, economics and social sciences, education and generic skills of higher education students. KoKoHs Working Papers , no. 3, Humboldt-Universität zu Berlin, Berlin, Mainz, pp. 58-62. < https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf >",
+          "raw_type": "info:eu-repo/semantics/other"
+        },
+        {
+          "id": "mag:1762471320",
+          "is_oa": false,
+          "landing_page_url": null,
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": null
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:pure.leuphana.de:publications/f738e267-e087-4f48-aefc-c60bd8dc3820",
+        "is_oa": true,
+        "landing_page_url": "http://fis.leuphana.de/de/publications/dazkom--professional-competencies-of-preservice-teachers-for-secondary-education-in-the-field-of-german-as-a-second-language(f738e267-e087-4f48-aefc-c60bd8dc3820).html",
+        "pdf_url": "https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400489",
+          "display_name": "Multilingual Matters (Channel View Publications)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Koch-Priewe, B, Köker, A, Ohm, U, Ehmke, T, Carlson, S, Gültekin-Karakoç, N, Hammer, S & Rosenbrock, S 2013, DaZKom – Professional Competencies of Pre-Service Teachers for Secondary Education in the Field of German as a Second Language. in S Blömeke & O Zlatkin-Troitschanskaia (eds), The German funding initiative “Modeling and Measuring Competencies in Higher Education”: 23 research projects on engineering, economics and social sciences, education and generic skills of higher education students. KoKoHs Working Papers , no. 3, Humboldt-Universität zu Berlin, Berlin, Mainz, pp. 58-62. < https://www.kompetenzen-im-hochschulsektor.de/files/2018/05/KoKoHs_WP3_Bloemeke_Zlatkin-Troitschanskaia_2013_neu.pdf >",
+        "raw_type": "info:eu-repo/semantics/other"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/4",
+          "score": 0.8799999952316284,
+          "display_name": "Quality Education"
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321114",
+          "display_name": "Bundesministerium für Bildung und Forschung",
+          "ror": "https://ror.org/04pz7b180"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W1762471320.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W1762471320.grobid-xml"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2341738168",
+        "https://openalex.org/W3010511782",
+        "https://openalex.org/W2101024218",
+        "https://openalex.org/W2283344803",
+        "https://openalex.org/W2796392215",
+        "https://openalex.org/W2985837135",
+        "https://openalex.org/W608445534",
+        "https://openalex.org/W2906678652",
+        "https://openalex.org/W3209986191",
+        "https://openalex.org/W2363059785",
+        "https://openalex.org/W2884938844",
+        "https://openalex.org/W226309032",
+        "https://openalex.org/W218510538",
+        "https://openalex.org/W2713677526",
+        "https://openalex.org/W1526426681",
+        "https://openalex.org/W67903159",
+        "https://openalex.org/W2399750667",
+        "https://openalex.org/W2587413225",
+        "https://openalex.org/W202715512",
+        "https://openalex.org/W268960197"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          30
+        ],
+        "research": [
+          1
+        ],
+        "study": [
+          2
+        ],
+        "“DaZKom”": [
+          3,
+          35
+        ],
+        "is": [
+          4,
+          36
+        ],
+        "an": [
+          5
+        ],
+        "interdisciplinary": [
+          6
+        ],
+        "and": [
+          7,
+          18,
+          23,
+          40
+        ],
+        "inter-university": [
+          8
+        ],
+        "project,": [
+          9
+        ],
+        "funded": [
+          10
+        ],
+        "by": [
+          11
+        ],
+        "the": [
+          12,
+          33,
+          46
+        ],
+        "German": [
+          13,
+          49
+        ],
+        "Federal": [
+          14
+        ],
+        "Ministry": [
+          15
+        ],
+        "of": [
+          16,
+          32,
+          48
+        ],
+        "Education": [
+          17
+        ],
+        "Research": [
+          19
+        ],
+        "(BMBF)": [
+          20
+        ],
+        "program": [
+          21
+        ],
+        "“Modeling": [
+          22
+        ],
+        "Measuring": [
+          24
+        ],
+        "Competencies": [
+          25
+        ],
+        "in": [
+          26,
+          45
+        ],
+        "Higher": [
+          27
+        ],
+        "Education”": [
+          28
+        ],
+        "(KoKoHs).": [
+          29
+        ],
+        "objective": [
+          31
+        ],
+        "project": [
+          34
+        ],
+        "to": [
+          37
+        ],
+        "theoretically": [
+          38
+        ],
+        "model": [
+          39
+        ],
+        "empirically": [
+          41
+        ],
+        "validate": [
+          42
+        ],
+        "teacher": [
+          43
+        ],
+        "competencies": [
+          44
+        ],
+        "field": [
+          47
+        ],
+        "as": [
+          50
+        ],
+        "a": [
+          51
+        ],
+        "Second": [
+          52
+        ],
+        "Language": [
+          53
+        ],
+        "(Deutsch": [
+          54
+        ],
+        "als": [
+          55
+        ],
+        "Zweitsprache": [
+          56
+        ],
+        "–": [
+          57
+        ],
+        "DaZ).": [
+          58
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

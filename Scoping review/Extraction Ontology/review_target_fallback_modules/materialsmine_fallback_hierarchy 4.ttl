@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/materialsmine_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for MATERIALSMINE; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2024-07-24T18:09:48.000-07:00, creationDate=2024-07-24T18:09:53.000-07:00, submissionId=3" ;
+    dcterms:created "2026-07-10T19:41:00-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://materialsmine.org/ns/CompressionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://materialsmine.org/ns/CompressionProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Compression Property" .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "Description of the material's environment (e.g., during characterization)" .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "The approximation, such as Plane Stress or Plane Strain, used to calculate the stress state of the material." .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "see Condition" .
+<http://materialsmine.org/ns/Condition> <http://purl.org/dc/terms/source> "generated review target module for MATERIALSMINE from disease_terms_review_enriched.csv" .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://materialsmine.org/ns/CompressionProperty> .

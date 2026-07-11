@@ -1,0 +1,68 @@
+{
+  "languages": [
+    "en"
+  ],
+  "lang": "en",
+  "ontologyId": "idocovid19",
+  "loaded": "2026-06-26T09:02:15.248410520",
+  "updated": "2026-06-26T09:02:15.248410520",
+  "status": "LOADED",
+  "message": "",
+  "version": null,
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 485,
+  "numberOfProperties": 110,
+  "numberOfIndividuals": 23,
+  "config": {
+    "id": "idocovid19",
+    "versionIri": "http://purl.obolibrary.org/obo/2020-21-07/ido-covid-19.owl",
+    "namespace": "idocovid19",
+    "preferredPrefix": "IDO-COVID-19",
+    "title": "The COVID-19 Infectious Disease Ontology",
+    "description": "The COVID-19 Infectious Disease Ontology (IDO-COVID-19) is an extension of the Infectious Disease Ontology (IDO) and the Virus Infectious Disease Ontology (VIDO). IDO-COVID-19 follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used to represent infection by the SARS-CoV-2 virus strain, and the associated COVID-19 disease.",
+    "homepage": "https://github.com/infectious-disease-ontology-extensions/ido-covid-19",
+    "version": null,
+    "mailingList": "johnbeverley2021@u.northwestern.edu",
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-covid-19/master/ontology/ido%20covid-19",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000115"
+    ],
+    "synonymProperties": [
+      "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+    ],
+    "hierarchicalProperties": [
+      "http://purl.obolibrary.org/obo/BFO_0000050"
+    ],
+    "baseUris": [
+      "http://purl.obolibrary.org/obo/IDO-COVID-19"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "http://purl.obolibrary.org/obo/IDO-COVID-19"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/idocovid19?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/idocovid19/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/idocovid19/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/idocovid19/individuals"
+    }
+  }
+}

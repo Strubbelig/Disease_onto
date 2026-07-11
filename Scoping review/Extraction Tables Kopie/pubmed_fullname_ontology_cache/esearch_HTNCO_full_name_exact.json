@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "215",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37929582",
+      "32450155",
+      "38199208",
+      "37427430",
+      "38757788",
+      "40418901",
+      "36583008",
+      "30342690",
+      "25991219",
+      "38564376"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"hypertense\"[All Fields] OR \"hypertension\"[MeSH Terms] OR \"hypertension\"[All Fields] OR \"hypertension s\"[All Fields] OR \"hypertensions\"[All Fields] OR \"hypertensive\"[All Fields] OR \"hypertensive s\"[All Fields] OR \"hypertensives\"[All Fields]) AND (\"ambulatory care facilities\"[MeSH Terms] OR (\"ambulatory\"[All Fields] AND \"care\"[All Fields] AND \"facilities\"[All Fields]) OR \"ambulatory care facilities\"[All Fields] OR \"clinic\"[All Fields] OR \"clinic s\"[All Fields] OR \"clinical\"[All Fields] OR \"clinically\"[All Fields] OR \"clinicals\"[All Fields] OR \"clinics\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Hypertension Clinical Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

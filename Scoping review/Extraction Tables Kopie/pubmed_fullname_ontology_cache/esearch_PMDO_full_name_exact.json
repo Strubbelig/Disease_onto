@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "186",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40355913",
+      "37735671",
+      "40215824",
+      "37418066",
+      "26395080",
+      "29455577",
+      "38741190",
+      "37396535",
+      "40022229",
+      "39556279"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"parkinson disease\"[MeSH Terms] OR (\"parkinson\"[All Fields] AND \"disease\"[All Fields]) OR \"parkinson disease\"[All Fields] OR \"parkinson s\"[All Fields] OR \"parkinsons\"[All Fields] OR \"parkinson\"[All Fields] OR \"parkinsonian disorders\"[MeSH Terms] OR (\"parkinsonian\"[All Fields] AND \"disorders\"[All Fields]) OR \"parkinsonian disorders\"[All Fields] OR \"parkinsonism\"[All Fields] OR \"parkinsonisms\"[All Fields] OR \"parkinsons s\"[All Fields]) AND (\"movement disorders\"[MeSH Terms] OR (\"movement\"[All Fields] AND \"disorders\"[All Fields]) OR \"movement disorders\"[All Fields] OR (\"movement\"[All Fields] AND \"disorder\"[All Fields]) OR \"movement disorder\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Parkinson and Movement Disorder Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

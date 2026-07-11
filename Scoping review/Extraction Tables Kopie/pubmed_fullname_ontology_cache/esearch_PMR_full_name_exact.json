@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "29",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39022436",
+      "40574978",
+      "33478276",
+      "42081471",
+      "37126650",
+      "38327828",
+      "37208468",
+      "36077104",
+      "35144391",
+      "38162904"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Physical Medicine and Rehabilitation\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

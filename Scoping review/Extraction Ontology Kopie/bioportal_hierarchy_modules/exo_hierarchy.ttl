@@ -1,0 +1,63 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/exo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2025-08-29, released=2025-09-09T09:05:46.000-07:00, creationDate=2025-09-09T00:00:00.000+00:00, submissionId=12" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/ExO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity (e.g., a human, human population, or a human organ) that interacts with an exposure stimulus during an exposure event." .
+<http://purl.obolibrary.org/obo/ExO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "exposure recipient" .
+<http://purl.obolibrary.org/obo/ExO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "exposure receptor" .
+<http://purl.obolibrary.org/obo/ExO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "exposure target" .
+<http://purl.obolibrary.org/obo/ExO_0000003> <http://purl.obolibrary.org/obo/IAO_0000115> "Entity that results from the interaction between and exposure_receptor and an exposure stressor during an exposure event." .
+<http://purl.obolibrary.org/obo/ExO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000003> <http://www.w3.org/2000/01/rdf-schema#label> "exposure outcome" .
+<http://purl.obolibrary.org/obo/ExO_0000003> <http://www.w3.org/2004/02/skos/core#altLabel> "interaction outcome" .
+<http://purl.obolibrary.org/obo/ExO_0000030> <http://purl.obolibrary.org/obo/IAO_0000115> "The earth, all of the organisms living on it, and all of the environmental factors, which act on the organisms. The volume of area where biological matter can exist, slightly above, on or below ground level." .
+<http://purl.obolibrary.org/obo/ExO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "ecosphere" .
+<http://purl.obolibrary.org/obo/ExO_0000030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000001> .
+<http://purl.obolibrary.org/obo/ExO_0000031> <http://purl.obolibrary.org/obo/IAO_0000115> "MERGED DEFINITION:\\nTARGET DEFINITION: An exposure_receptor that is the global ecological system integrating all living beings and their relationships, including their interaction with the elements of the lithosphere, hydrosphere and atmosphere.\\n--------------------\\nSOURCE DEFINITION: An exposure_receptor that is the part of the environment that is made or modified by humans for use in human activities and human habitats." .
+<http://purl.obolibrary.org/obo/ExO_0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000031> <http://www.w3.org/2000/01/rdf-schema#label> "biosphere" .
+<http://purl.obolibrary.org/obo/ExO_0000031> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000030> .
+<http://purl.obolibrary.org/obo/ExO_0000031> <http://www.w3.org/2004/02/skos/core#altLabel> "anthrosphere" .
+<http://purl.obolibrary.org/obo/ExO_0000033> <http://purl.obolibrary.org/obo/IAO_0000115> "An exposure_receptor that is a group of Homo sapiens inhabiting a given area." .
+<http://purl.obolibrary.org/obo/ExO_0000033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000033> <http://www.w3.org/2000/01/rdf-schema#label> "human population" .
+<http://purl.obolibrary.org/obo/ExO_0000033> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000001> .
+<http://purl.obolibrary.org/obo/ExO_0000033> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000031> .
+<http://purl.obolibrary.org/obo/ExO_0000038> <http://purl.obolibrary.org/obo/IAO_0000115> "The condition of an organism in all aspects (e.g., functional or metabolic efficiency)." .
+<http://purl.obolibrary.org/obo/ExO_0000038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000038> <http://www.w3.org/2000/01/rdf-schema#label> "health status" .
+<http://purl.obolibrary.org/obo/ExO_0000038> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000089> .
+<http://purl.obolibrary.org/obo/ExO_0000042> <http://purl.obolibrary.org/obo/IAO_0000115> "Being or characteristic of a single thing or person." .
+<http://purl.obolibrary.org/obo/ExO_0000042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000042> <http://www.w3.org/2000/01/rdf-schema#label> "human individual" .
+<http://purl.obolibrary.org/obo/ExO_0000042> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000001> .
+<http://purl.obolibrary.org/obo/ExO_0000042> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000033> .
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/2000/01/rdf-schema#label> "biological response" .
+<http://purl.obolibrary.org/obo/ExO_0000077> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000003> .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a pattern of abnormal functioning, or abnormal localization of normal functioning, and/or abnormal localization of constituents when compared to other members of that species." .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://purl.org/dc/terms/source> "review target in EXO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000077> .
+<http://purl.obolibrary.org/obo/ExO_0000079> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000103> .
+<http://purl.obolibrary.org/obo/ExO_0000089> <http://purl.obolibrary.org/obo/IAO_0000115> "An attribute describing some aspect of an individual or human population." .
+<http://purl.obolibrary.org/obo/ExO_0000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000089> <http://www.w3.org/2000/01/rdf-schema#label> "human attribute" .
+<http://purl.obolibrary.org/obo/ExO_0000089> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000033> .
+<http://purl.obolibrary.org/obo/ExO_0000089> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000042> .
+<http://purl.obolibrary.org/obo/ExO_0000103> <http://purl.obolibrary.org/obo/IAO_0000115> "Other conditions with the power to have an effect on health status." .
+<http://purl.obolibrary.org/obo/ExO_0000103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ExO_0000103> <http://www.w3.org/2000/01/rdf-schema#label> "influencing factor" .
+<http://purl.obolibrary.org/obo/ExO_0000103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/ExO_0000038> .
+<http://purl.obolibrary.org/obo/ExO_0000103> <http://www.w3.org/2004/02/skos/core#altLabel> "Influence" .

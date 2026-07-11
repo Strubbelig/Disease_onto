@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "166",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39367086",
+      "33238868",
+      "32939051",
+      "38980440",
+      "39896800",
+      "31911677",
+      "37551667",
+      "40731221",
+      "41068076",
+      "40885114"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"precision medicine\"[MeSH Terms] OR (\"precision\"[All Fields] AND \"medicine\"[All Fields]) OR \"precision medicine\"[All Fields]) AND (\"investigated\"[All Fields] OR \"investigates\"[All Fields] OR \"investigating\"[All Fields] OR \"investigation\"[All Fields] OR \"investigations\"[All Fields] OR \"investigative\"[All Fields] OR \"investigator s\"[All Fields] OR \"research personnel\"[MeSH Terms] OR (\"research\"[All Fields] AND \"personnel\"[All Fields]) OR \"research personnel\"[All Fields] OR \"investigator\"[All Fields] OR \"investigators\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Precision Medicine and Investigation\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

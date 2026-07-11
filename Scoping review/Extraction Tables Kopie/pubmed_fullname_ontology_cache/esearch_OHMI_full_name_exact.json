@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "832",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31888755",
+      "19278549",
+      "40929771",
+      "21772787",
+      "36342167",
+      "26215368",
+      "29176882",
+      "29028879",
+      "32455748",
+      "27489274"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"host microbial interactions\"[MeSH Terms] OR (\"host\"[All Fields] AND \"microbial\"[All Fields] AND \"interactions\"[All Fields]) OR \"host microbial interactions\"[All Fields] OR (\"host\"[All Fields] AND \"microbe\"[All Fields] AND \"interactions\"[All Fields]) OR \"host microbe interactions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Host-Microbe Interactions\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

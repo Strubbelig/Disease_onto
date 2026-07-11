@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Alzheimer's Disease",
+        "to": "\"alzheimer disease\"[MeSH Terms] OR (\"alzheimer\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer disease\"[All Fields] OR (\"alzheimer's\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer's disease\"[All Fields]"
+      },
+      {
+        "from": "Common Data Element",
+        "to": "\"common data elements\"[MeSH Terms] OR (\"common\"[All Fields] AND \"data\"[All Fields] AND \"elements\"[All Fields]) OR \"common data elements\"[All Fields] OR (\"common\"[All Fields] AND \"data\"[All Fields] AND \"element\"[All Fields]) OR \"common data element\"[All Fields]"
+      },
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "Clinical Trials",
+        "to": "\"clinical trial\"[Publication Type] OR \"clinical trials as topic\"[MeSH Terms] OR \"clinical trials\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"alzheimer disease\"[MeSH Terms] OR (\"alzheimer\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer disease\"[All Fields] OR (\"alzheimer s\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer s disease\"[All Fields]) AND (\"common data elements\"[MeSH Terms] OR (\"common\"[All Fields] AND \"data\"[All Fields] AND \"elements\"[All Fields]) OR \"common data elements\"[All Fields] OR (\"common\"[All Fields] AND \"data\"[All Fields] AND \"element\"[All Fields]) OR \"common data element\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"clinical trial\"[Publication Type] OR \"clinical trials as topic\"[MeSH Terms] OR \"clinical trials\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "for"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"develop\"[All Fields] OR \"develope\"[All Fields] OR \"developed\"[All Fields] OR \"developer\"[All Fields] OR \"developer s\"[All Fields] OR \"developers\"[All Fields] OR \"developing\"[All Fields] OR \"developments\"[All Fields] OR \"develops\"[All Fields] OR \"growth and development\"[MeSH Subheading] OR (\"growth\"[All Fields] AND \"development\"[All Fields]) OR \"growth and development\"[All Fields] OR \"development\"[All Fields]) AND \"psycare\"[All Fields] AND (\"project\"[All Fields] OR \"project s\"[All Fields] OR \"projects\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology developed during PsyCARE project\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

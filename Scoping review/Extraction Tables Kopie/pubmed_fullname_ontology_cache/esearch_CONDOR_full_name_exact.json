@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "246",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36037300",
+      "30066122",
+      "31761566",
+      "39382748",
+      "36923407",
+      "38822621",
+      "34471502",
+      "40240471",
+      "39697329",
+      "35832625"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"liver neoplasms\"[MeSH Terms] OR (\"liver\"[All Fields] AND \"neoplasms\"[All Fields]) OR \"liver neoplasms\"[All Fields] OR (\"liver\"[All Fields] AND \"cancer\"[All Fields]) OR \"liver cancer\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"diagnosable\"[All Fields] OR \"diagnosi\"[All Fields] OR \"diagnosis\"[MeSH Terms] OR \"diagnosis\"[All Fields] OR \"diagnose\"[All Fields] OR \"diagnosed\"[All Fields] OR \"diagnoses\"[All Fields] OR \"diagnosing\"[All Fields] OR \"diagnosis\"[MeSH Subheading]) AND (\"therapeutics\"[MeSH Terms] OR \"therapeutics\"[All Fields] OR \"treatments\"[All Fields] OR \"therapy\"[MeSH Subheading] OR \"therapy\"[All Fields] OR \"treatment\"[All Fields] OR \"treatment s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Liver Cancer Ontology Diagnosis Treatment\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

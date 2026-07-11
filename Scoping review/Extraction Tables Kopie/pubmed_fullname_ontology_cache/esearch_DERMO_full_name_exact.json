@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1587",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34140509",
+      "21633166",
+      "37629154",
+      "37781402",
+      "37402769",
+      "41246813",
+      "27296450",
+      "40885114",
+      "40508038",
+      "38115636"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"human s\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]) AND (\"skin diseases\"[MeSH Terms] OR (\"skin\"[All Fields] AND \"diseases\"[All Fields]) OR \"skin diseases\"[All Fields] OR (\"dermatological\"[All Fields] AND \"disease\"[All Fields]) OR \"dermatological disease\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Human Dermatological Disease Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "87",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37401199",
+      "26190839",
+      "29176882",
+      "31156637",
+      "34677584",
+      "34851690",
+      "28231761",
+      "38984200",
+      "27450006",
+      "36687611"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"host pathogen interactions\"[MeSH Terms] OR (\"host pathogen\"[All Fields] AND \"interactions\"[All Fields]) OR \"host pathogen interactions\"[All Fields] OR (\"pathogen\"[All Fields] AND \"host\"[All Fields] AND \"interaction\"[All Fields]) OR \"pathogen host interaction\"[All Fields]) AND (\"phenotype\"[MeSH Terms] OR \"phenotype\"[All Fields] OR \"phenotypes\"[All Fields] OR \"phenotyped\"[All Fields] OR \"phenotypic\"[All Fields] OR \"phenotypical\"[All Fields] OR \"phenotypically\"[All Fields] OR \"phenotyping\"[All Fields] OR \"phenotypings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Pathogen Host Interaction Phenotype Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

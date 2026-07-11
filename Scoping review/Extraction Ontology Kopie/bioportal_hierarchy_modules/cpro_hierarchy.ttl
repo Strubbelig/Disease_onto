@@ -1,0 +1,74 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/cpro_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=Last modification: July 31th, 2011 Chimezie Ogbuji, released=2013-04-24T00:00:00.000-07:00, creationDate=2013-04-24T17:36:12.000-07:00, submissionId=3" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.org/cpr/biological-process> <http://purl.obolibrary.org/obo/IAO_0000115> "Those processes which either take place within the human organism or\n            are processes of causal interaction in which the human organism is involved." .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/2000/01/rdf-schema#label> "Biological process" .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> .
+<http://purl.org/cpr/idiopathic-disease> <http://purl.obolibrary.org/obo/IAO_0000115> ".. relating to or denoting any disease or condition that arises spontaneously or for which the cause is unknown" .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/2000/01/rdf-schema#label> "idiopathic disease" .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/pathological-disposition> .
+<http://purl.org/cpr/pathological-disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism\n            caused by one or more etiologic agents (iii) typically involving an identifiable group of signs and symptoms\n            and (iv) consistent physiological or anatomical alterations" .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological disposition (disease)" .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Disposition> .
+<http://purl.org/cpr/pathological-process> <http://purl.org/dc/terms/source> "review target in CPRO from disease_terms_review_enriched.csv" .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological process" .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/biological-process> .
+<http://purl.org/cpr/syndrome> <http://purl.org/dc/terms/source> "review target in CPRO from disease_terms_review_enriched.csv" .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/idiopathic-disease> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonyms: endurant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities." .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "dependent_continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A realizable entity [snap:RealizableEntity] that essentially causes a specific process or transformation in the object [snap:Object] in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object [snap:Object] has the disposition D to (transform, initiate a process) R under conditions C." .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the disposition of vegetables to decay when not refrigerated, the disposition of a vase to brake if dropped, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease, the disposition of metal to conduct electricity." .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Comment: If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized." .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity" .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "realizable_entity" .
+<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc." .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonyms: property, trope, mode" .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "specifically_dependent_continuant" .
+<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants." .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh's life, the spatiotemporal region occupied by the development of a cancer tumor" .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonyms: perdurant" .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#label> "occurrent" .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition: An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird" .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#label> "processual_entity" .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/span#Occurrent> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .

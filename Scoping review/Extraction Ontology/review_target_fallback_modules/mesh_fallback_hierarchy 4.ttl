@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/mesh_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for MESH; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=2026_2025_08_15, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=31" ;
+    dcterms:created "2026-07-10T19:41:00-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://purl.obolibrary.org/obo/IAO_0000115> "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown." .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://purl.org/dc/terms/source> "generated review target module for MESH from disease_terms_review_enriched.csv" .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MESH/D010335> .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2004/02/skos/core#altLabel> "Diseases" .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2000/01/rdf-schema#label> "Pathologic Processes" .

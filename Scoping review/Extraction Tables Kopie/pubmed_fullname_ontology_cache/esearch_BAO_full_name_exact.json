@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "14",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37568227",
+      "22553882",
+      "25512330",
+      "25093074",
+      "21471461",
+      "41821121",
+      "21702939",
+      "25415593",
+      "24441647",
+      "23155465"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"BioAssay Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "38",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "17023201",
+      "17051306",
+      "10566339",
+      "11825188",
+      "16160341",
+      "16636713",
+      "17108621",
+      "16160348",
+      "10978911",
+      "37651309"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"galen\"[All Fields] OR \"galen s\"[All Fields] OR \"galenic\"[All Fields] OR \"galenical\"[All Fields] OR \"galenics\"[All Fields] OR \"galenism\"[All Fields] OR \"galens\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Galen Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

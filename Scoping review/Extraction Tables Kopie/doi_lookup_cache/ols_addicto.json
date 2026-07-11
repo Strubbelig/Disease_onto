@@ -1,0 +1,72 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "la"
+  ],
+  "lang": "en",
+  "ontologyId": "addicto",
+  "loaded": "2026-06-26T09:02:12.284676583",
+  "updated": "2026-06-26T09:02:12.284676583",
+  "status": "LOADED",
+  "message": "",
+  "version": null,
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 1364,
+  "numberOfProperties": 113,
+  "numberOfIndividuals": 0,
+  "config": {
+    "id": "addicto",
+    "versionIri": "http://addictovocab.org/addicto.owl/2026-06-16",
+    "namespace": "addicto",
+    "preferredPrefix": "ADDICTO",
+    "title": "Addiction Ontology",
+    "description": "The Addiction Ontology (AddictO) is an ontology being developed all aspects of addiction research.",
+    "homepage": "https://addictovocab.org",
+    "version": null,
+    "mailingList": null,
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "http://addictovocab.org/addicto.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000115"
+    ],
+    "synonymProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000118"
+    ],
+    "hierarchicalProperties": [
+      "http://purl.obolibrary.org/obo/BFO_0000050"
+    ],
+    "baseUris": [
+      "http://addictovocab.org/ADDICTO_"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "http://addictovocab.org/ADDICTO_"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/addicto?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/addicto/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/addicto/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/addicto/individuals"
+    }
+  }
+}

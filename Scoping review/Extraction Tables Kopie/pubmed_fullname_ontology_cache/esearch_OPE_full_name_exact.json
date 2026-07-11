@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "330",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31012864",
+      "26262394",
+      "39464170",
+      "27365029",
+      "31980607",
+      "35860315",
+      "40325420",
+      "21893853",
+      "28974991",
+      "38637746"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"exercise\"[MeSH Terms] OR \"exercise\"[All Fields] OR (\"physical\"[All Fields] AND \"exercises\"[All Fields]) OR \"physical exercises\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Physical Exercises\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

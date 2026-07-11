@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "35263799",
+      "31221108",
+      "40747300",
+      "37372414",
+      "31259014",
+      "36316904",
+      "41548179",
+      "41742703",
+      "26596646",
+      "27233742"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"depression, postpartum\"[MeSH Terms] OR (\"depression\"[All Fields] AND \"postpartum\"[All Fields]) OR \"postpartum depression\"[All Fields] OR (\"postpartum\"[All Fields] AND \"depression\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"postpartum depression ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

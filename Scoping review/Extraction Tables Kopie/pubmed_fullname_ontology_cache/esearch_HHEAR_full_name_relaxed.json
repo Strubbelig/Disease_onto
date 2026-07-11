@@ -1,0 +1,50 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "31",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34034040",
+      "41352163",
+      "41366203",
+      "39999933",
+      "35387429",
+      "29351546",
+      "39244797",
+      "29867105",
+      "37081511",
+      "40790242"
+    ],
+    "translationset": [
+      {
+        "from": "Human",
+        "to": "\"human's\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]"
+      },
+      {
+        "from": "Health",
+        "to": "\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health's\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]"
+      },
+      {
+        "from": "Exposure",
+        "to": "\"exposure\"[All Fields] OR \"exposure's\"[All Fields] OR \"exposured\"[All Fields] OR \"exposures\"[All Fields] OR \"exposuring\"[All Fields]"
+      },
+      {
+        "from": "Analysis",
+        "to": "\"analysis\"[Subheading] OR \"analysis\"[All Fields]"
+      },
+      {
+        "from": "Resource",
+        "to": "\"health resources\"[MeSH Terms] OR (\"health\"[All Fields] AND \"resources\"[All Fields]) OR \"health resources\"[All Fields] OR \"resource\"[All Fields] OR \"resources\"[All Fields] OR \"resource's\"[All Fields] OR \"resourced\"[All Fields] OR \"resourceful\"[All Fields] OR \"resourcefulness\"[All Fields] OR \"resourcing\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"human s\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]) AND (\"health\"[MeSH Terms] OR \"health\"[All Fields] OR \"health s\"[All Fields] OR \"healthful\"[All Fields] OR \"healthfulness\"[All Fields] OR \"healths\"[All Fields]) AND (\"exposure\"[All Fields] OR \"exposure s\"[All Fields] OR \"exposured\"[All Fields] OR \"exposures\"[All Fields] OR \"exposuring\"[All Fields]) AND (\"analysis\"[MeSH Subheading] OR \"analysis\"[All Fields]) AND (\"health resources\"[MeSH Terms] OR (\"health\"[All Fields] AND \"resources\"[All Fields]) OR \"health resources\"[All Fields] OR \"resource\"[All Fields] OR \"resources\"[All Fields] OR \"resource s\"[All Fields] OR \"resourced\"[All Fields] OR \"resourceful\"[All Fields] OR \"resourcefulness\"[All Fields] OR \"resourcing\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

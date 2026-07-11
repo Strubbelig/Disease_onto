@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/09d42d60-0340-0131-abbd-001ec9b0ea92",
+      "name": "NLM Customer Service",
+      "email": "custserv@nlm.nih.gov"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/admin"
+    ],
+    "acronym": "SNOMEDCT",
+    "name": "SNOMED CT, US Edition",
+    "@id": "https://data.bioontology.org/ontologies/SNOMEDCT",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/SNOMEDCT/submissions",
+      "properties": "https://data.bioontology.org/ontologies/SNOMEDCT/properties",
+      "classes": "https://data.bioontology.org/ontologies/SNOMEDCT/classes",
+      "single_class": "https://data.bioontology.org/ontologies/SNOMEDCT/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/SNOMEDCT/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/SNOMEDCT/schemes",
+      "collections": "https://data.bioontology.org/ontologies/SNOMEDCT/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/SNOMEDCT/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/SNOMEDCT/instances",
+      "metrics": "https://data.bioontology.org/ontologies/SNOMEDCT/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/SNOMEDCT/reviews",
+      "notes": "https://data.bioontology.org/ontologies/SNOMEDCT/notes",
+      "groups": "https://data.bioontology.org/ontologies/SNOMEDCT/groups",
+      "categories": "https://data.bioontology.org/ontologies/SNOMEDCT/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/SNOMEDCT/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/SNOMEDCT/projects",
+      "download": "https://data.bioontology.org/ontologies/SNOMEDCT/download",
+      "views": "https://data.bioontology.org/ontologies/SNOMEDCT/views",
+      "analytics": "https://data.bioontology.org/ontologies/SNOMEDCT/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/SNOMEDCT",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "UMLS",
+  "released": "2025-11-03T00:00:00.000+00:00",
+  "creationDate": "2026-03-22T00:00:00.000+00:00",
+  "homepage": "http://www.snomed.org",
+  "publication": [
+    "http://www.snomed.org"
+  ],
+  "documentation": "https://www.nlm.nih.gov/healthit/snomedct/us_edition.html",
+  "version": "2025_09_01",
+  "description": "<p>The US Edition of SNOMED CT combines the International Release of SNOMED CT and the US Extension of SNOMED CT</p>\r\n\r\n<p>SNOMED CT provides the core general terminology for the electronic health record (EHR). The concepts have unique meanings and formal logic-based definitions organized into hierarchies. Each International Release includes the core of the terminology (concepts, descriptions, and relationships), together with works to support the implementation and use of SNOMED CT, including subsets, cross maps to existing classifications and coding schemes, and an extensive set of guidelines.</p>\r\n\r\n<p>The US Extension to SNOMED CT included the concepts, descriptions, and relationships accepted by NLM as a formal extension to the SNOMED CT International Release. NLM no longer releases the standalone US Extension.</p>\r\n\r\nThe US Edition of SNOMED CT includes more than 300,000 unique concepts. There are over 1,000,000 descriptions in SNOMED CT, including synonyms that can be used to refer to a concept. In addition, there are approximately 903,000 links or semantic relationships between the SNOMED CT concepts.</p>",
+  "status": "production",
+  "submissionId": 32,
+  "@id": "https://data.bioontology.org/ontologies/SNOMEDCT/submissions/32",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/SNOMEDCT/submissions/32/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

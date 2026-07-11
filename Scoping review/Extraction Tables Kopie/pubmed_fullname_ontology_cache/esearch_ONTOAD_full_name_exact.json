@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "24382429"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"bilingual\"[All Fields] OR \"bilingual s\"[All Fields] OR \"bilinguality\"[All Fields] OR \"bilingually\"[All Fields] OR \"bilinguals\"[All Fields] OR \"multilingualism\"[MeSH Terms] OR \"multilingualism\"[All Fields] OR \"bilingualism\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"alzheimer disease\"[MeSH Terms] OR (\"alzheimer\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer disease\"[All Fields] OR (\"alzheimer s\"[All Fields] AND \"disease\"[All Fields]) OR \"alzheimer s disease\"[All Fields]) AND (\"family\"[MeSH Terms] OR \"family\"[All Fields] OR \"relation\"[All Fields] OR \"relatability\"[All Fields] OR \"relatable\"[All Fields] OR \"related\"[All Fields] OR \"relates\"[All Fields] OR \"relating\"[All Fields] OR \"relational\"[All Fields] OR \"relations\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Bilingual Ontology of Alzheimer's Disease and Related Diseases\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

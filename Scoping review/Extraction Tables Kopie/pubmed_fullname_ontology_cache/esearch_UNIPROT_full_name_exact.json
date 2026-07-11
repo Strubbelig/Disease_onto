@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "76",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39125368",
+      "34755880",
+      "38701256",
+      "38199208",
+      "39934490",
+      "30272209",
+      "36482625",
+      "41360503",
+      "40199101",
+      "40728954"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"uniprot\"[All Fields] AND \"core\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Uniprot Core Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

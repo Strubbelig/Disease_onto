@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "21",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36805914",
+      "40263515",
+      "41121516",
+      "40622977",
+      "38784223",
+      "33148436",
+      "39410900",
+      "34455108",
+      "36394070",
+      "25187986"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Sleep Disorders\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

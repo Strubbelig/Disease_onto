@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/8370ed10-6f7b-0137-27a2-005056010088",
+      "name": "Paulo Pinheiro",
+      "email": "pp3223@gmail.com"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/pp3223%40gmail.com"
+    ],
+    "acronym": "HASCO",
+    "name": "Human-Aware Science Ontology",
+    "@id": "https://data.bioontology.org/ontologies/HASCO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/HASCO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/HASCO/properties",
+      "classes": "https://data.bioontology.org/ontologies/HASCO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/HASCO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/HASCO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/HASCO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/HASCO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/HASCO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/HASCO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/HASCO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/HASCO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/HASCO/notes",
+      "groups": "https://data.bioontology.org/ontologies/HASCO/groups",
+      "categories": "https://data.bioontology.org/ontologies/HASCO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/HASCO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/HASCO/projects",
+      "download": "https://data.bioontology.org/ontologies/HASCO/download",
+      "views": "https://data.bioontology.org/ontologies/HASCO/views",
+      "analytics": "https://data.bioontology.org/ontologies/HASCO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/HASCO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2025-11-17T18:07:28.000-08:00",
+  "creationDate": "2025-11-17T00:00:00.000+00:00",
+  "homepage": "http://www.hadatac.org/hasco-ontology/",
+  "publication": [
+    "http://ceur-ws.org/Vol-2228/paper4.pdf"
+  ],
+  "documentation": "https://github.com/paulopinheiro1234/hadatac/wiki/4.2.-The-Human-Aware-Science-Ontology-(HAScO)",
+  "version": "0.9",
+  "description": "The Human-Aware Science Ontology (HAScO) integrates a collection of well-established science-related ontologies, and aims to address issues related to data annotation for large data ecosystem, where data can come from diverse data sources including sensors, lab results, and questionnaires. The HAScO has been used to annotate data collections to facilitate data exploration and analysis for numerous scientific projects. Data files produced by scientific studies are processed to identify and annotate the objects (a gene, for instance) with the appropriate ontological terms. ",
+  "status": "alpha",
+  "submissionId": 8,
+  "@id": "https://data.bioontology.org/ontologies/HASCO/submissions/8",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/HASCO/submissions/8/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ontopsychia_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for ONTOPSYCHIA; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2018-01-30T00:00:00.000+00:00, creationDate=2018-01-30T03:28:19.000-08:00, submissionId=2" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.limics.fr/ontologies/ontopsychiasoc#Concept_Comportement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Concept_Comportement> <http://www.w3.org/2000/01/rdf-schema#label> "concept linked to behaviour" .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Trouble> <http://purl.obolibrary.org/obo/IAO_0000115> "\"Dérèglement d'ordre physiologique ou psychique qui entraîne des perturbations dans le fonctionnement normal du corps humain.\" \"État d'égarement, de confusion, d'angoisse qui altère le fonctionnement normal des facultés mentales.\" \"État émotif qui altère, perturbe le calme intérieur d'une personne.\"" .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Trouble> <http://purl.org/dc/terms/source> "generated review target module for ONTOPSYCHIA from disease_terms_review_enriched.csv" .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Trouble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Trouble> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .
+<http://www.limics.fr/ontologies/ontopsychiasoc#Trouble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontopsychiasoc#Concept_Comportement> .

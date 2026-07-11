@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "29",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "28244549",
+      "41052288",
+      "35841031",
+      "29295411",
+      "37770956",
+      "33319709",
+      "21893803",
+      "30854243",
+      "30205172",
+      "40681965"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"NCIT\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

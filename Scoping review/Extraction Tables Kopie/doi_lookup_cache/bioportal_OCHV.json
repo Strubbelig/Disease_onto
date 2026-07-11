@@ -1,0 +1,112 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/c800f1d0-a229-0133-7c6d-005056010073",
+      "name": "Tuan Amith",
+      "email": "muhammad.f.amith@uth.tmc.edu"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/55edaf50-3d8e-0131-e4bb-005056010073",
+      "name": "Cui Tao",
+      "email": "cui.tao@uth.tmc.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/MFAmith",
+      "https://data.bioontology.org/users/taocui"
+    ],
+    "acronym": "OCHV",
+    "name": "Ontology of Consumer Health Vocabulary",
+    "@id": "https://data.bioontology.org/ontologies/OCHV",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/OCHV/submissions",
+      "properties": "https://data.bioontology.org/ontologies/OCHV/properties",
+      "classes": "https://data.bioontology.org/ontologies/OCHV/classes",
+      "single_class": "https://data.bioontology.org/ontologies/OCHV/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/OCHV/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/OCHV/schemes",
+      "collections": "https://data.bioontology.org/ontologies/OCHV/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/OCHV/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/OCHV/instances",
+      "metrics": "https://data.bioontology.org/ontologies/OCHV/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/OCHV/reviews",
+      "notes": "https://data.bioontology.org/ontologies/OCHV/notes",
+      "groups": "https://data.bioontology.org/ontologies/OCHV/groups",
+      "categories": "https://data.bioontology.org/ontologies/OCHV/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/OCHV/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/OCHV/projects",
+      "download": "https://data.bioontology.org/ontologies/OCHV/download",
+      "views": "https://data.bioontology.org/ontologies/OCHV/views",
+      "analytics": "https://data.bioontology.org/ontologies/OCHV/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/OCHV",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2016-01-21T00:00:00.000+00:00",
+  "creationDate": "2019-09-25T18:59:09.000-07:00",
+  "homepage": null,
+  "publication": [],
+  "documentation": null,
+  "version": "1",
+  "description": "A SKOS-encoded implementation of  the \"Open Access, Collaborative Consumer Health Vocabulary Initiative\" by the University of Utah (consumerhealthvocab.org and layhealthinformatics.com)",
+  "status": "alpha",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/OCHV/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/OCHV/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

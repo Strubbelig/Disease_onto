@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "559",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38907924",
+      "32362324",
+      "38811033",
+      "37598461",
+      "38488760",
+      "30321400",
+      "34695270",
+      "26529777",
+      "26619905",
+      "39177583"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"epigenome\"[MeSH Terms] OR \"epigenome\"[All Fields] OR \"epigenomes\"[All Fields] OR \"epigenomically\"[All Fields] OR \"epigenomics\"[MeSH Terms] OR \"epigenomics\"[All Fields] OR \"epigenomic\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Epigenome Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

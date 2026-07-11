@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "7678",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34902553",
+      "34271012",
+      "27432908",
+      "32987519",
+      "20482850",
+      "38902567",
+      "22548825",
+      "35531299",
+      "34625104",
+      "29286604"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"human s\"[All Fields] OR \"humans\"[MeSH Terms] OR \"humans\"[All Fields] OR \"human\"[All Fields]) AND (\"interact\"[All Fields] OR \"interactant\"[All Fields] OR \"interactants\"[All Fields] OR \"interacted\"[All Fields] OR \"interacting\"[All Fields] OR \"interaction\"[All Fields] OR \"interactional\"[All Fields] OR \"interactions\"[All Fields] OR \"interactive\"[All Fields] OR \"interactively\"[All Fields] OR \"interactives\"[All Fields] OR \"interactivities\"[All Fields] OR \"interactivity\"[All Fields] OR \"interacts\"[All Fields]) AND (\"network\"[All Fields] OR \"network s\"[All Fields] OR \"networked\"[All Fields] OR \"networker\"[All Fields] OR \"networkers\"[All Fields] OR \"networking\"[All Fields] OR \"networks\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Human Interaction Network Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

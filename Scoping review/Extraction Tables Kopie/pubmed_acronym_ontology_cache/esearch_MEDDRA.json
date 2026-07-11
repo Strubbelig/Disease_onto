@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "42",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "26918107",
+      "18998828",
+      "27003817",
+      "22874155",
+      "29058218",
+      "33969520",
+      "24680984",
+      "37984548",
+      "27348725",
+      "39193326"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"MEDDRA\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

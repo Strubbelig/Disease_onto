@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/bervo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=2026-05-20, released=2026-05-20T18:00:32.000-07:00, creationDate=2026-05-20T00:00:00.000+00:00, submissionId=6" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/bervo/BERVO_8000232> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition source - Claude Sonnet 4 through GitHub Copilot in VSCode (Sep 26 2025)" .
+<https://w3id.org/bervo/BERVO_8000232> <http://purl.obolibrary.org/obo/IAO_0000115> "The foundational category that serves as the parent classification for all conceptual terms in the Biological and Environmental Research Variable Ontology. This abstract class encompasses all non-variable concepts that describe entities, processes, and properties fundamental to understanding earth and environmental science systems." .
+<https://w3id.org/bervo/BERVO_8000232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bervo/BERVO_8000232> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+<https://w3id.org/bervo/BERVO_8000302> <http://purl.obolibrary.org/obo/IAO_0000115> "A descriptive statement specifying the particular set of environmental, chemical, biological, or physical circumstances under which an experiment or observation occurs. Conditions define the parameters being tested and are essential for interpreting results and enabling comparative analysis across different experimental treatments." .
+<https://w3id.org/bervo/BERVO_8000302> <http://purl.obolibrary.org/obo/IAO_0000115> "Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)" .
+<https://w3id.org/bervo/BERVO_8000302> <http://purl.org/dc/terms/source> "review target in BERVO from disease_terms_review_enriched.csv" .
+<https://w3id.org/bervo/BERVO_8000302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bervo/BERVO_8000302> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition source - Claude 4.5 Sonnet through Claude Code in VSCode (Dec 16 2025)" .
+<https://w3id.org/bervo/BERVO_8000302> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<https://w3id.org/bervo/BERVO_8000302> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bervo/BERVO_8000232> .

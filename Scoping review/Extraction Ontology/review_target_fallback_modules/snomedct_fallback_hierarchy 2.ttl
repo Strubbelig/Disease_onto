@@ -6,8 +6,8 @@
 
 <https://example.org/disease-review/modules/snomedct_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for SNOMEDCT; source API hierarchy module was missing or incomplete" ;
-    owl:versionInfo "BioPortal: version=2025_09_01, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=32; BioPortal: version=2025_09_01, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=32; BioPortal: version=1.1, released=2023-05-05T00:00:00.000+00:00, creationDate=2024-08-05T03:14:36.000-07:00, submissionId=2" ;
-    dcterms:created "2026-07-03T12:17:37-04:00" ;
+    owl:versionInfo "BioPortal: version=2025_09_01, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=32" ;
+    dcterms:created "2026-07-10T19:36:51-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://purl.bioontology.org/ontology/SNOMEDCT/260905004> <http://purl.org/dc/terms/source> "generated review target module for SNOMEDCT from disease_terms_review_enriched.csv" .
@@ -15,19 +15,6 @@
 <http://purl.bioontology.org/ontology/SNOMEDCT/260905004> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
 <http://purl.bioontology.org/ontology/SNOMEDCT/260905004> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/408739003> .
 <http://purl.bioontology.org/ontology/SNOMEDCT/260905004> <http://www.w3.org/2004/02/skos/core#altLabel> "Condition (attribute)" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/303102005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/303102005> <http://www.w3.org/2000/01/rdf-schema#label> "Special disorder atoms" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://purl.org/dc/terms/source> "generated review target module for SNOMEDCT from disease_terms_review_enriched.csv" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological process" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/303102005> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/719982003> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/308489006> <http://www.w3.org/2004/02/skos/core#altLabel> "Pathological process (qualifier value)" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/370135005> <http://purl.org/dc/terms/source> "generated review target module for SNOMEDCT from disease_terms_review_enriched.csv" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/370135005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/370135005> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological process" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/370135005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/SNOMEDCT/762705008> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/370135005> <http://www.w3.org/2004/02/skos/core#altLabel> "Pathological process (attribute)" .
 <http://purl.bioontology.org/ontology/SNOMEDCT/39104002> <http://purl.org/dc/terms/source> "generated review target module for SNOMEDCT from disease_terms_review_enriched.csv" .
 <http://purl.bioontology.org/ontology/SNOMEDCT/39104002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.bioontology.org/ontology/SNOMEDCT/39104002> <http://www.w3.org/2000/01/rdf-schema#label> "Illness" .
@@ -38,7 +25,3 @@
 <http://purl.bioontology.org/ontology/SNOMEDCT/404684003> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical finding" .
 <http://purl.bioontology.org/ontology/SNOMEDCT/408739003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.bioontology.org/ontology/SNOMEDCT/408739003> <http://www.w3.org/2000/01/rdf-schema#label> "Unapproved attribute" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/719982003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/719982003> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
-<http://purl.bioontology.org/ontology/SNOMEDCT/762705008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.bioontology.org/ontology/SNOMEDCT/762705008> <http://www.w3.org/2000/01/rdf-schema#label> "Concept model object attribute" .

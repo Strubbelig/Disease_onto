@@ -1,0 +1,54 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/crisp_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=CSP2006, released=2013-05-08T00:00:00.000+00:00, creationDate=2013-09-25T12:00:00.000+00:00, submissionId=1" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/CSP/0944-4756> <http://purl.obolibrary.org/obo/IAO_0000115> "top term heading for all specific disorders and diseases; a disease is a deviation from or interruption of the normal structure or function of any part, organ or system (or combination thereof) of the body that is manifested by a characteristic set of symptoms and signs; a disorder is a derangement or abnormality of function." .
+<http://purl.bioontology.org/ontology/CSP/0944-4756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/0944-4756> <http://www.w3.org/2000/01/rdf-schema#label> "disease/disorder" .
+<http://purl.bioontology.org/ontology/CSP/0944-4756> <http://www.w3.org/2004/02/skos/core#altLabel> "insect disease" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://purl.obolibrary.org/obo/IAO_0000115> "heading term for a set of symptoms, usually three or more, which have a complex etiology and characterize a particular pathological state." .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://purl.org/dc/terms/source> "review target in CRISP from disease_terms_review_enriched.csv" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/0944-4756> .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Alstrom syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Bardet Biedel syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Brachmann de Lange syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Cornelia de Lange syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Eaton Lambert syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Joubert syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Kenny Caffey syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "LEOPARD syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Lambert Eaton myasthenic syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Lambert Eaton syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "MLS (Multiple Lentigines/LEOPARD syndrome)" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Multiple Lentigines" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Multiple Lentigines/LEOPARD syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Peutz Jeghers syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Rabson Mendenhall syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "Saethre Chotzen syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "VDWS" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "de Lange syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "dumping syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "myasthenic syndrome of Lambert Eaton" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "postgastrectomy syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "postpericardiotomy syndrome" .
+<http://purl.bioontology.org/ontology/CSP/0944-7801> <http://www.w3.org/2004/02/skos/core#altLabel> "van der Woude syndrome" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://purl.obolibrary.org/obo/IAO_0000115> "damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://purl.org/dc/terms/source> "review target in CRISP from disease_terms_review_enriched.csv" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/0944-4756> .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2004/02/skos/core#altLabel> "electrical injury" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2004/02/skos/core#altLabel> "hazard" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2004/02/skos/core#altLabel> "physical insult" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2004/02/skos/core#altLabel> "rupture" .
+<http://purl.bioontology.org/ontology/CSP/1582-3104> <http://www.w3.org/2004/02/skos/core#altLabel> "shock (electrical injury)" .

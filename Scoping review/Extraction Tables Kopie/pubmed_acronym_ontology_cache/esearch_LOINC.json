@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "58",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38222429",
+      "33936520",
+      "40712447",
+      "38222329",
+      "30306935",
+      "17102314",
+      "21346949",
+      "25954591",
+      "40775962",
+      "29024958"
+    ],
+    "translationset": [
+      {
+        "from": "LOINC",
+        "to": "\"logical observation identifiers names and codes\"[MeSH Terms] OR (\"logical\"[All Fields] AND \"observation\"[All Fields] AND \"identifiers\"[All Fields] AND \"names\"[All Fields] AND \"codes\"[All Fields]) OR \"logical observation identifiers names and codes\"[All Fields] OR \"loinc\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"logical observation identifiers names and codes\"[MeSH Terms] OR (\"logical\"[All Fields] AND \"observation\"[All Fields] AND \"identifiers\"[All Fields] AND \"names\"[All Fields] AND \"codes\"[All Fields]) OR \"logical observation identifiers names and codes\"[All Fields] OR \"loinc\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

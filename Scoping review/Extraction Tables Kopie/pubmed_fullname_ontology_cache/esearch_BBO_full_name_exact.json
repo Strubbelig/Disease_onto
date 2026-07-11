@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "100",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34758253",
+      "41708847",
+      "30208311",
+      "31383942",
+      "39539629",
+      "40340690",
+      "34671039",
+      "40347464",
+      "39222110",
+      "36658526"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biomedical\"[All Fields] OR \"biomedically\"[All Fields]) AND (\"burden\"[All Fields] OR \"burdened\"[All Fields] OR \"burdening\"[All Fields] OR \"burdens\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Biomedical Burden Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "27",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34275487",
+      "38236918",
+      "36271389",
+      "39325530",
+      "31437936",
+      "22041276",
+      "27538448",
+      "21995952",
+      "32533075",
+      "23920598"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Infectious Disease Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

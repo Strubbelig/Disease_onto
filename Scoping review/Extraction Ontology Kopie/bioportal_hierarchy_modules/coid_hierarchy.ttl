@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/coid_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.0.0, released=2022-04-20T00:00:00.000+00:00, creationDate=2022-04-20T10:04:10.000-07:00, submissionId=1" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00014> <http://www.w3.org/2000/01/rdf-schema#label> "physical" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00014> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/sap218/coid/blob/master/coid.owl#COID_00027> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00016> <http://purl.obolibrary.org/obo/IAO_0000115> "impacts to result in inflammation - or complications outcome from inflammation" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00016> <http://www.w3.org/2000/01/rdf-schema#label> "complication" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00027> <http://purl.obolibrary.org/obo/IAO_0000115> "external factors which can cause inflammation" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00027> <http://www.w3.org/2000/01/rdf-schema#label> "impact" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00027> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/sap218/coid/blob/master/coid.owl#COID_00016> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00043> <http://purl.org/dc/terms/source> "review target in COID from disease_terms_review_enriched.csv" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00043> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00043> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/sap218/coid/blob/master/coid.owl#COID_00014> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00609> <http://purl.obolibrary.org/obo/IAO_0000115> "inflammatory conditions and associated diseases" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00609> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00609> <http://www.w3.org/2000/01/rdf-schema#label> "clinical associations" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00761> <http://www.w3.org/2000/01/rdf-schema#label> "non-infectious" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_00761> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/sap218/coid/blob/master/coid.owl#COID_00609> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://purl.obolibrary.org/obo/IAO_0000115> "group of symptoms" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://purl.org/dc/terms/source> "review target in COID from disease_terms_review_enriched.csv" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://www.w3.org/2000/01/rdf-schema#comment> "group of symptoms" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<https://github.com/sap218/coid/blob/master/coid.owl#COID_01149> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/sap218/coid/blob/master/coid.owl#COID_00761> .

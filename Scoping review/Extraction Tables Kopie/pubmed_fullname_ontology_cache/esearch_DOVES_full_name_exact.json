@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "39914801"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"npj digit med\"[Journal] OR \"digit med\"[Journal] OR (\"digital\"[All Fields] AND \"medicine\"[All Fields]) OR \"digital medicine\"[All Fields]) AND (\"outcome\"[All Fields] OR \"outcomes\"[All Fields]) AND (\"value\"[All Fields] OR \"values\"[All Fields]) AND \"set\"[All Fields] AND (\"columbidae\"[MeSH Terms] OR \"columbidae\"[All Fields] OR \"doves\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Digital medicine Outcomes Value Set (DOVeS) Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

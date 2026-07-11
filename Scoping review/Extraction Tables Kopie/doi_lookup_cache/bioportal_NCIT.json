@@ -1,0 +1,106 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/fcb544c0-b4c5-013c-1ba4-005056010073",
+      "name": "NCI Thesaurus Mailbox",
+      "email": "ncithesaurus@mail.nih.gov"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/vendetti"
+    ],
+    "acronym": "NCIT",
+    "name": "National Cancer Institute Thesaurus",
+    "@id": "https://data.bioontology.org/ontologies/NCIT",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/NCIT/submissions",
+      "properties": "https://data.bioontology.org/ontologies/NCIT/properties",
+      "classes": "https://data.bioontology.org/ontologies/NCIT/classes",
+      "single_class": "https://data.bioontology.org/ontologies/NCIT/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/NCIT/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/NCIT/schemes",
+      "collections": "https://data.bioontology.org/ontologies/NCIT/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/NCIT/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/NCIT/instances",
+      "metrics": "https://data.bioontology.org/ontologies/NCIT/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/NCIT/reviews",
+      "notes": "https://data.bioontology.org/ontologies/NCIT/notes",
+      "groups": "https://data.bioontology.org/ontologies/NCIT/groups",
+      "categories": "https://data.bioontology.org/ontologies/NCIT/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/NCIT/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/NCIT/projects",
+      "download": "https://data.bioontology.org/ontologies/NCIT/download",
+      "views": "https://data.bioontology.org/ontologies/NCIT/views",
+      "analytics": "https://data.bioontology.org/ontologies/NCIT/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/NCIT",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2026-06-02T18:11:57.000-07:00",
+  "creationDate": "2026-06-02T00:00:00.000+00:00",
+  "homepage": "https://ncithesaurus.nci.nih.gov/ncitbrowser/",
+  "publication": [],
+  "documentation": null,
+  "version": "26.05d",
+  "description": "Vocabulary for clinical care, translational and basic research, and public information and administrative activities.",
+  "status": "production",
+  "submissionId": 148,
+  "@id": "https://data.bioontology.org/ontologies/NCIT/submissions/148",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/NCIT/submissions/148/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

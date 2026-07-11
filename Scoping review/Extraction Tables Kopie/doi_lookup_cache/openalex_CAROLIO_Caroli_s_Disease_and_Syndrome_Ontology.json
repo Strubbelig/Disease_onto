@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "count": 0,
+    "db_response_time_ms": 43,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Caroli's Disease \"and\" Syndrome Ontology CAROLIO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Caroli's Disease and Syndrome Ontology CAROLIO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Caroli%27s Disease and Syndrome Ontology CAROLIO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [],
+  "group_by": []
+}

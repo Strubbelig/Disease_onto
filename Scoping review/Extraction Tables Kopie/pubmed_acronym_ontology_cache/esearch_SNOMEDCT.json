@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "77",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37770956",
+      "30658684",
+      "39238154",
+      "35672975",
+      "18999312",
+      "39176481",
+      "25474588",
+      "36148752",
+      "15360859",
+      "39826846"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"SNOMEDCT\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

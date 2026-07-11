@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2294",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30744660",
+      "37851445",
+      "24243846",
+      "33264411",
+      "30287891",
+      "39295298",
+      "40553344",
+      "19785740",
+      "36808136",
+      "26188561"
+    ],
+    "translationset": [
+      {
+        "from": "GENO",
+        "to": "\"genotype\"[MeSH Terms] OR \"genotype\"[All Fields] OR \"geno\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"genotype\"[MeSH Terms] OR \"genotype\"[All Fields] OR \"geno\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

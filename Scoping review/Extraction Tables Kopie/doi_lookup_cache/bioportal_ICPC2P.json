@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/4344d800-0340-0131-abbd-001ec9b0ea92",
+      "name": "Prof Helena Britt",
+      "email": "fmrc@fmrc.org.au"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/admin"
+    ],
+    "acronym": "ICPC2P",
+    "name": "International Classification of Primary Care - 2 PLUS",
+    "@id": "https://data.bioontology.org/ontologies/ICPC2P",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ICPC2P/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ICPC2P/properties",
+      "classes": "https://data.bioontology.org/ontologies/ICPC2P/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ICPC2P/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ICPC2P/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ICPC2P/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ICPC2P/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ICPC2P/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ICPC2P/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ICPC2P/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ICPC2P/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ICPC2P/notes",
+      "groups": "https://data.bioontology.org/ontologies/ICPC2P/groups",
+      "categories": "https://data.bioontology.org/ontologies/ICPC2P/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ICPC2P/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ICPC2P/projects",
+      "download": "https://data.bioontology.org/ontologies/ICPC2P/download",
+      "views": "https://data.bioontology.org/ontologies/ICPC2P/views",
+      "analytics": "https://data.bioontology.org/ontologies/ICPC2P/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ICPC2P",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "UMLS",
+  "released": "2024-05-06T00:00:00.000+00:00",
+  "creationDate": "2024-08-28T16:00:11.000-07:00",
+  "homepage": "http://www.fmrc.org.au/",
+  "publication": [
+    "http://www.fmrc.org.au/"
+  ],
+  "documentation": "http://www.fmrc.org.au/",
+  "version": "ICPC2P_2005",
+  "description": "Australian Modification of ICPC-2, known as ICPC-2 Plus.\r\n\r\nICPC-2 Plus is primarily used in Australia and provides greater specificity for data input than ICPC-2.",
+  "status": "production",
+  "submissionId": 24,
+  "@id": "https://data.bioontology.org/ontologies/ICPC2P/submissions/24",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ICPC2P/submissions/24/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "15",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "31272367",
+      "25852852",
+      "27377652",
+      "29322912",
+      "18694200",
+      "31272389",
+      "29322915",
+      "29322916",
+      "31272374",
+      "29322930"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Cell Line Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "355",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39367086",
+      "40509575",
+      "40817441",
+      "40683426",
+      "37359526",
+      "41787734",
+      "41070114",
+      "40108253",
+      "37942414",
+      "38363924"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"sepsis\"[MeSH Terms] OR \"sepsis\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Sepsis Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

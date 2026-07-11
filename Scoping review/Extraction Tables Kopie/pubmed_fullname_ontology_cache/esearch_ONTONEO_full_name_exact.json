@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "74",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30349098",
+      "38564376",
+      "35872606",
+      "35802600",
+      "38200445",
+      "39451253",
+      "40778264",
+      "26349411",
+      "36343018",
+      "34470139"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"obstetric\"[All Fields] OR \"obstetrically\"[All Fields] OR \"obstetrics\"[MeSH Terms] OR \"obstetrics\"[All Fields] OR \"obstetrical\"[All Fields]) AND (\"infant, newborn\"[MeSH Terms] OR (\"infant\"[All Fields] AND \"newborn\"[All Fields]) OR \"newborn infant\"[All Fields] OR \"neonatal\"[All Fields] OR \"neonate\"[All Fields] OR \"neonates\"[All Fields] OR \"neonatality\"[All Fields] OR \"neonatals\"[All Fields] OR \"neonate s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Obstetric and Neonatal Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

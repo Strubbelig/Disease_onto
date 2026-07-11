@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/tmo_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for TMO; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.0.2, released=2016-05-16T18:27:01.000-07:00, creationDate=2016-05-16T18:27:01.000-07:00, submissionId=13" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047> <http://purl.obolibrary.org/obo/IAO_0000115> "A quality of an organism which predisposes it to undergo pathological processes because of one or more disorders in that organism." .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047> <http://purl.org/dc/terms/source> "generated review target module for TMO from disease_terms_review_enriched.csv" .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0084> .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0084> <http://www.w3.org/2000/01/rdf-schema#label> "organismal quality" .

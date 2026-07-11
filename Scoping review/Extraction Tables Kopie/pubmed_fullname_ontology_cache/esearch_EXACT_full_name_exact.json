@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "502",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "38170849",
+      "37575231",
+      "38579666",
+      "38992401",
+      "36370638",
+      "34521246",
+      "19826008",
+      "40437179",
+      "40692843",
+      "18001970"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"experimental\"[All Fields] OR \"experimentally\"[All Fields] OR \"experimentals\"[All Fields] OR \"experimentation\"[All Fields] OR \"experimentations\"[All Fields] OR \"experimenter\"[All Fields] OR \"experimenter s\"[All Fields] OR \"experimenters\"[All Fields]) AND (\"action\"[All Fields] OR \"action s\"[All Fields] OR \"actions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"An ontology for experimental actions\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

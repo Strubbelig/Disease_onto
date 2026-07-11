@@ -1,0 +1,290 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rev: <https://example.org/disease-review/ap/> .
+
+<https://example.org/disease-review/bioportal-hierarchy-smoke> a owl:Ontology ;
+    owl:imports <https://example.org/disease-review/review-core> ;
+    rdfs:label "Disease ontology scoping review smoke extraction" ;
+    dcterms:created "2026-07-02T12:37:24-04:00" ;
+    dcterms:description "Generated from 10 enriched extraction rows plus manual review annotations." .
+
+<http://brd.bsvgateway.org/api/disease/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://brd.bsvgateway.org/api/disease/> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/definition_quality> "absent" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/manual_screening_hint> "missing definition; missing comment" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/mapping_count> "321" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_title> "Anthology of Biosurveillance Diseases" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: released=2016-09-13T00:00:00.000+00:00, creationDate=2016-09-13T18:00:04.000-07:00, submissionId=4" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/parentage_quality> "absent" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/preferred_label> "Disease" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:06:55-04:00" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: ABD" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/ABD/classes/http%3A%2F%2Fbrd.bsvgateway.org%2Fapi%2Fdisease%2F" .
+<http://brd.bsvgateway.org/api/disease/> <https://example.org/disease-review/ap/term> "disease" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <http://www.w3.org/2000/01/rdf-schema#label> "Predisposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2015/0/disorderscluster.owl#DisorderCharacteristics> .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/definition_quality> "absent" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/manual_screening_hint> "missing definition; missing comment" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/mapping_count> "5" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_title> "Disorders cluster" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: released=2015-01-07T00:00:00.000+00:00, creationDate=2015-01-11T13:52:39.000-08:00, submissionId=1" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/preferred_label> "Predisposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:19:37-04:00" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: APADISORDERS" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/APADISORDERS/classes/http%3A%2F%2Fontology.apa.org%2Fapaonto%2FtermsonlyOUT%2520%285%29.owl%23Predisposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/term> "predisposition" .
+<http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition> <https://example.org/disease-review/ap/upper_level_interpretation> "subclass of disposition" .
+<http://purl.bioontology.org/ontology/CST/SKIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CST/SKIN> <http://www.w3.org/2000/01/rdf-schema#label> "SKIN DISORDERS" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <http://www.w3.org/2000/01/rdf-schema#label> "DYSFUNCTION" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CST/SKIN> .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/definition_quality> "absent" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disorder" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/manual_screening_hint> "missing definition; missing comment" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/mapping_count> "16" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_title> "Coding Symbols for a Thesaurus of Adverse Reaction Terms" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=CSP2006, released=2013-05-08T00:00:00.000+00:00, creationDate=2013-09-25T12:00:00.000+00:00, submissionId=1" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/preferred_label> "DYSFUNCTION" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:19:21-04:00" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: COSTART" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/COSTART/classes/http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FCST%2FSKINDYSFUNCT" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/term> "dysfunction" .
+<http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT> <https://example.org/disease-review/ap/upper_level_interpretation> "subclass of disorder" .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000485> <http://www.w3.org/2000/01/rdf-schema#label> "medical condition" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://purl.obolibrary.org/obo/IAO_0000115> "The patient's personal experience of their disease." .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/2000/01/rdf-schema#label> "illness" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GSSO_000485> .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/manual_include_status> "include" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/mapping_count> "11" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/native_ontology_guess> "gsso" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/native_or_imported_manual> "native" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/native_term_status> "native_source_seen" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_description> "The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_domain> "organisms" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_homepage> "https://gsso.research.cchmc.org/" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_license> "Apache 2.0 License" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_repository> "https://github.com/Superraptor/GSSO" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_title> "Gender, Sex, and Sexual Orientation Ontology" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=2.0.6, released=2022-09-08T18:08:47.000-07:00, creationDate=2022-09-08T18:08:55.000-07:00, submissionId=75" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/preferred_label> "illness" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:15:41-04:00" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: GSSO" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/GSSO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGSSO_000487" .
+<http://purl.obolibrary.org/obo/GSSO_000487> <https://example.org/disease-review/ap/term> "illness" .
+<http://purl.obolibrary.org/obo/NCIT_C36291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C36291> <http://www.w3.org/2000/01/rdf-schema#label> "Finding by Cause" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C36291> .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Trauma" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Traumatic Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "Wound" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/disease_model_category> "entity_as_finding" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/manual_include_status> "include" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment; term IRI namespace suggests imported/reused class" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/mapping_count> "91" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/native_ontology_guess> "ncit" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/native_or_imported_manual> "imported" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/native_term_status> "likely_imported_or_reused_term" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_title> "Biological and Environmental Research Ontology" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=2022-12-23, released=2022-12-23T00:00:00.000+00:00, creationDate=2022-12-23T00:03:39.000-08:00, submissionId=3; BioPortal: version=2026-04-13, released=2026-04-13T18:05:37.000-07:00, creationDate=2026-04-13T00:00:00.000+00:00, submissionId=3; BioPortal: version=2021-04-15, released=2021-05-06T18:30:09.000-07:00, creationDate=2021-05-06T18:30:13.000-07:00, submissionId=21; BioPortal: released=2018-11-24T00:00:00.000+00:00, creationDate=2018-11-24T17:43:33.000-08:00, submissionId=1" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/preferred_label> "Injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:14:08-04:00; BioPortal: 2026-06-29T20:14:27-04:00; BioPortal: 2026-06-29T20:14:36-04:00; BioPortal: 2026-06-29T20:14:48-04:00" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: BERO; BioPortal: GENEPIO; BioPortal: SCDO; BioPortal: PREMEDONTO" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/BERO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C3671; BioPortal: https://data.bioontology.org/ontologies/GENEPIO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C3671; BioPortal: https://data.bioontology.org/ontologies/SCDO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C3671; BioPortal: https://data.bioontology.org/ontologies/PREMEDONTO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C3671" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/term> "injury" .
+<http://purl.obolibrary.org/obo/NCIT_C3671> <https://example.org/disease-review/ap/upper_level_interpretation> "subclass of finding" .
+<http://purl.org/biotop/biotop.owl#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://purl.obolibrary.org/obo/IAO_0000115> "any kind of disposition considered non-canonical. The criteria of canonicity are not further specified. \nThe classification of certain dispositions as dysfunctional or pathological is dependent on a historic and cultural context. Dysfunction or disease therefore hasn't the status of a universal." .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#label> "pathological disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/biotop/biotop.owl#Disposition> .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/disease_model_category> "entity_as_disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/mapping_count> "2" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_title> "BioTop" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=v2012-04-24, released=2012-04-24T00:00:00.000+00:00, creationDate=2026-01-22T00:00:00.000+00:00, submissionId=4" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/preferred_label> "pathological disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:19:17-04:00" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: BIOTOP" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/BIOTOP/classes/http%3A%2F%2Fpurl.org%2Fbiotop%2Fbiotop.owl%23PathologicalDisposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/term> "pathological disposition" .
+<http://purl.org/biotop/biotop.owl#PathologicalDisposition> <https://example.org/disease-review/ap/upper_level_interpretation> "subclass of disposition" .
+<http://www.ifomis.org/acgt/1.0#NonInfectiousDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/acgt/1.0#NonInfectiousDisease> <http://www.w3.org/2000/01/rdf-schema#label> "NonInfectiousDisease" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <http://purl.obolibrary.org/obo/IAO_0000115> "or is it under qualities or processes?" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <http://www.w3.org/2000/01/rdf-schema#comment> "or is it under qualities or processes?" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/acgt/1.0#NonInfectiousDisease> .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/definition_quality> "poor" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/mapping_count> "96" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_title> "Cancer Research and Management ACGT Master Ontology" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=1.1, released=2010-01-03T00:00:00.000-08:00, creationDate=2010-03-17T03:04:50.000-07:00, submissionId=2" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/preferred_label> "Syndrome" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:18:14-04:00" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: ACGT-MO" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/ACGT-MO/classes/http%3A%2F%2Fwww.ifomis.org%2Facgt%2F1.0%23Syndrome" .
+<http://www.ifomis.org/acgt/1.0#Syndrome> <https://example.org/disease-review/ap/term> "syndrome" .
+<http://www.semanticweb.org/ontologies/2015/0/disorderscluster.owl#DisorderCharacteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2015/0/disorderscluster.owl#DisorderCharacteristics> <http://www.w3.org/2000/01/rdf-schema#label> "DisorderCharacteristics" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "260905004 | Condition |" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "Some of the factors that interfere with the degree of adherence to drug treatment are grouped into so-called factors related to the patient's condition. With them we refer to the particular demands that the patient faces due to his condition of chronic patient. Here we find the importance of an adequate cognitive level, as well as the level of physical dependence/independence of the patient (e.g. whether most or all of the time he or she is in bed). The presence of symptoms and their severity, as well as the progression of symptoms and the disease itself, are also factors addressed here. \n\nIn addition, if the patient has a condition of drug addiction, comorbidity or does not perceive with clarity and good judgement the importance of following the treatment, it can damage the degree of adherence to the treatment.\n\n[1] De Geest, S., & Sabaté, E. (2003). Adherence to long-term therapies: Evidence for action. European Journal of Cardiovascular Nursing, 2(4), 323. https://doi.org/10.1016/S1474-5151(03)00091-4" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "260905004 | Condition |" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "Some of the factors that interfere with the degree of adherence to drug treatment are grouped into so-called factors related to the patient's condition. With them we refer to the particular demands that the patient faces due to his condition of chronic patient. Here we find the importance of an adequate cognitive level, as well as the level of physical dependence/independence of the patient (e.g. whether most or all of the time he or she is in bed). The presence of symptoms and their severity, as well as the progression of symptoms and the disease itself, are also factors addressed here. \n\nIn addition, if the patient has a condition of drug addiction, comorbidity or does not perceive with clarity and good judgement the importance of following the treatment, it can damage the degree of adherence to the treatment.\n\n[1] De Geest, S., & Sabaté, E. (2003). Adherence to long-term therapies: Evidence for action. European Journal of Cardiovascular Nursing, 2(4), 323. https://doi.org/10.1016/S1474-5151(03)00091-4" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Influencing_factors> .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/definition_quality> "partial" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/mapping_count> "56" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_status> "None" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_title> "Adherence and Integrated Care" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=English 051319, released=2019-05-13T00:00:00.000+00:00, creationDate=2019-05-13T10:01:03.000-07:00, submissionId=1" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/preferred_label> "Condition" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:15:55-04:00" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: ADHER_INTCARE_EN" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/ADHER_INTCARE_EN/classes/http%3A%2F%2Fwww.semanticweb.org%2Fparracarlos%2Fontologies%2F2019%2F3%2Funtitled-ontology-31%23Condition" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition> <https://example.org/disease-review/ap/term> "condition" .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Influencing_factors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Influencing_factors> <http://www.w3.org/2000/01/rdf-schema#label> "Influencing_factors" .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "biological process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://purl.obolibrary.org/obo/IAO_0000115> "A biologic function or a process having an abnormal or deleterious effect at the subcellular, cellular, multicellular, or organismal level." .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "pathological process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalProcess> .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/comment_quality> "absent" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/disease_model_category> "entity_as_process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/manual_screening_hint> "missing comment" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/mapping_count> "28" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/native_ontology_guess> "biolink" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/native_or_imported_manual> "native" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/native_term_status> "native_source_seen" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_status> "None" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_title> "Biolink Model" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=4.4.3, released=2026-06-26T18:00:34.000-07:00, creationDate=2026-06-26T00:00:00.000+00:00, submissionId=82" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/preferred_label> "pathological process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:19:07-04:00" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: BIOLINK" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/BIOLINK/classes/https%3A%2F%2Fw3id.org%2Fbiolink%2Fvocab%2FPathologicalProcess" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/term> "pathological process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <https://example.org/disease-review/ap/upper_level_interpretation> "subclass of process" .
+<https://w3id.org/codo#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder refers to an abnormal condition or disruption in the regular functioning of an organ, system, or overall body. It can involve physical, mental, or physiological dysregulation that affects normal processes and may lead to symptoms or impairments." .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "In medicine, a disturbance of normal functioning of the mind or body. Disorders may be caused by genetic factors, disease, or trauma" .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "a functional abnormality or disturbance" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "A disorder refers to an abnormal condition or disruption in the regular functioning of an organ, system, or overall body. It can involve physical, mental, or physiological dysregulation that affects normal processes and may lead to symptoms or impairments." .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "In medicine, a disturbance of normal functioning of the mind or body. Disorders may be caused by genetic factors, disease, or trauma" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "a functional abnormality or disturbance" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#Condition> .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#PathologicalState> .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/definition_quality> "partial" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/mapping_count> "72" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/native_term_status> "unknown_native_ontology" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_exclusion_status> "candidate" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_metadata_retrieved_at> "2026-06-29T22:31:35-04:00" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_metadata_source> "BioPortal ontology metadata" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_scope_category> "ontology_or_terminology_candidate" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_status> "None" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_title> "CODO: an Ontology for collection and analysis of COviD-19 data" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/ontology_versions> "BioPortal: version=1.5, released=2023-07-26T00:00:00.000+00:00, creationDate=2024-05-29T11:20:14.000+00:00, submissionId=6" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/preferred_label> "Disorder" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/provenance_quality> "good" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/retrieved_at_by_database> "BioPortal: 2026-06-29T20:13:17-04:00" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/source_databases> "BioPortal" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/source_ontology_ids> "BioPortal: CODO" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/source_urls> "BioPortal: https://data.bioontology.org/ontologies/CODO/classes/https%3A%2F%2Fw3id.org%2Fcodo%23Disorder" .
+<https://w3id.org/codo#Disorder> <https://example.org/disease-review/ap/term> "disorder" .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological state" .

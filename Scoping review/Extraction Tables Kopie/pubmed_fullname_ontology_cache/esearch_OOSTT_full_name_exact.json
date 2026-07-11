@@ -1,0 +1,31 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "4",
+    "retmax": "4",
+    "retstart": "0",
+    "idlist": [
+      "40196293",
+      "32789188",
+      "28217041",
+      "31437954"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"organisation\"[All Fields] OR \"organization and administration\"[MeSH Subheading] OR (\"organization\"[All Fields] AND \"administration\"[All Fields]) OR \"organization and administration\"[All Fields] OR \"organization\"[All Fields] OR \"organizations\"[MeSH Terms] OR \"organizations\"[All Fields] OR \"organisation s\"[All Fields] OR \"organisational\"[All Fields] OR \"organisations\"[All Fields] OR \"organise\"[All Fields] OR \"organised\"[All Fields] OR \"organiser\"[All Fields] OR \"organisers\"[All Fields] OR \"organises\"[All Fields] OR \"organising\"[All Fields] OR \"organization s\"[All Fields] OR \"organizational\"[All Fields] OR \"organizations s\"[All Fields] OR \"organize\"[All Fields] OR \"organized\"[All Fields] OR \"organizer\"[All Fields] OR \"organizer s\"[All Fields] OR \"organizers\"[All Fields] OR \"organizes\"[All Fields] OR \"organizing\"[All Fields]) AND (\"structural\"[All Fields] OR \"structurally\"[All Fields] OR \"structurals\"[All Fields] OR \"structuration\"[All Fields] OR \"structurations\"[All Fields] OR \"structure\"[All Fields] OR \"structure s\"[All Fields] OR \"structured\"[All Fields] OR \"structures\"[All Fields] OR \"structuring\"[All Fields]) AND (\"trauma centers\"[MeSH Terms] OR (\"trauma\"[All Fields] AND \"centers\"[All Fields]) OR \"trauma centers\"[All Fields]) AND (\"injuries\"[MeSH Subheading] OR \"injuries\"[All Fields] OR \"trauma\"[All Fields] OR \"wounds and injuries\"[MeSH Terms] OR (\"wounds\"[All Fields] AND \"injuries\"[All Fields]) OR \"wounds and injuries\"[All Fields] OR \"trauma s\"[All Fields] OR \"traumas\"[All Fields]) AND (\"system\"[All Fields] OR \"system s\"[All Fields] OR \"systems\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Organizational Structures of Trauma centers and Trauma systems\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

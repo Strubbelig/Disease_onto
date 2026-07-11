@@ -1,0 +1,113 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/a0aa0f40-8965-0138-9662-005056010088",
+      "name": "John Beverley",
+      "email": "johnbeverley2021@u.northwestern.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/gcarvalho",
+      "https://data.bioontology.org/users/cjcallanan",
+      "https://data.bioontology.org/users/tmprd",
+      "https://data.bioontology.org/users/CameronFeeley",
+      "https://data.bioontology.org/users/Regina-Hurley",
+      "https://data.bioontology.org/users/johnbeve",
+      "https://data.bioontology.org/users/Shane+Babcock",
+      "https://data.bioontology.org/users/Sebastian+Duesing"
+    ],
+    "acronym": "IDO-COVID-19",
+    "name": "The COVID-19 Infectious Disease Ontology",
+    "@id": "https://data.bioontology.org/ontologies/IDO-COVID-19",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/IDO-COVID-19/submissions",
+      "properties": "https://data.bioontology.org/ontologies/IDO-COVID-19/properties",
+      "classes": "https://data.bioontology.org/ontologies/IDO-COVID-19/classes",
+      "single_class": "https://data.bioontology.org/ontologies/IDO-COVID-19/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/IDO-COVID-19/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/IDO-COVID-19/schemes",
+      "collections": "https://data.bioontology.org/ontologies/IDO-COVID-19/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/IDO-COVID-19/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/IDO-COVID-19/instances",
+      "metrics": "https://data.bioontology.org/ontologies/IDO-COVID-19/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/IDO-COVID-19/reviews",
+      "notes": "https://data.bioontology.org/ontologies/IDO-COVID-19/notes",
+      "groups": "https://data.bioontology.org/ontologies/IDO-COVID-19/groups",
+      "categories": "https://data.bioontology.org/ontologies/IDO-COVID-19/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/IDO-COVID-19/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/IDO-COVID-19/projects",
+      "download": "https://data.bioontology.org/ontologies/IDO-COVID-19/download",
+      "views": "https://data.bioontology.org/ontologies/IDO-COVID-19/views",
+      "analytics": "https://data.bioontology.org/ontologies/IDO-COVID-19/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/IDO-COVID-19",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2020-06-05T00:00:00.000+00:00",
+  "creationDate": "2020-08-03T00:45:39.000-07:00",
+  "homepage": "https://github.com/infectious-disease-ontology-extensions/ido-covid-19",
+  "publication": [],
+  "documentation": "https://github.com/infectious-disease-ontology-extensions/ido-covid-19",
+  "version": "8-3-2020",
+  "description": "The COVID-19 Infectious Disease Ontology (IDO-COVID-19) is an extension of the Infectious Disease Ontology (IDO) and the Virus Infectious Disease Ontology (VIDO). IDO Virus follows OBO Foundry guidelines, employs the Basic Formal Ontology as its starting point, and covers epidemiology, classification, pathogenesis, and treatment of terms used to represent infection by the SARS-CoV-2 virus strain, and the associated COVID-19 disease.\r\n",
+  "status": "beta",
+  "submissionId": 2,
+  "@id": "https://data.bioontology.org/ontologies/IDO-COVID-19/submissions/2",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/IDO-COVID-19/submissions/2/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/gcbo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: released=2025-06-04T00:00:00.000+00:00, creationDate=2025-06-04T00:00:00.000+00:00, submissionId=6" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.org/dc/terms/source> "review target in GCBO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/radx/gcbo/OtherThing> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://w3id.org/radx/gcbo/OtherThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/radx/gcbo/OtherThing> <http://www.w3.org/2000/01/rdf-schema#label> "OtherThing" .

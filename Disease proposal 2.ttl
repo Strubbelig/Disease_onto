@@ -15,7 +15,7 @@
                                                      dcterms:creator "Dr. Moritz Rudolf Franz Valerius Milewski"@en ,
                                                                      <https://orcid.org/0009-0006-6251-7592> ;
                                                      dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                                     dcterms:modified "2026-06-30"^^xsd:date ;
+                                                     dcterms:modified "2026-07-06"^^xsd:date ;
                                                      dcterms:title "Mid Layer Disease Ontology"@en ;
                                                      vann:preferredNamespacePrefix "MILD" ;
                                                      vann:preferredNamespaceUri "https://bioportal.bioontology.org/ontologies/MILD/" ;
@@ -465,6 +465,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                 ] ;
                                                                 owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
+                                                                rdfs:comment "A named disease expression may be used for a material disease entity only when it denotes an individual pathological organization in a patient, not merely a diagnostic category, criterion set, behaviour, or social/legal classification. For example, a material substance use disorder case would require a stable pathological neuropsychological organization grounding impaired control and disease course processes; the substance itself and isolated use events are not material disease entities."@en ;
                                                                 rdfs:label "material disease entity"@en .
 
 
@@ -496,6 +497,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                 ] ;
                                                                 owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en ;
+                                                                rdfs:comment "ExO_0000079 is reused as a comparison anchor rather than as the MILD disease definition: pathological disorder may involve abnormal functioning, abnormal localization of normal functioning, or abnormal localization/organization of constituents relative to relevant members of the same species. Species-comparative abnormality is not sufficient by itself, because rare variation is not automatically pathological."@en ,
+                                                                             "A pathological disorder should not be identified with a merely voluntary, transient, and immediately reversible functional deviation. In substance use disorder cases, the candidate pathological disorder is the relatively stable neurobiological or neuropsychological organization that grounds impaired control, craving, tolerance, withdrawal tendency, or harmful recurrence, not a single act of substance use."@en ;
                                                                 rdfs:label "pathological disorder"@en ;
                                                                 <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
 
@@ -535,6 +538,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                   owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047>
                                                                                 ] ;
                                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
+                                                                <http://purl.org/dc/elements/1.1/description> "An information content entity that classifies or groups one or more pathological disorders according to diagnostic criteria. Names such as 'substance use disorder' can denote this diagnostic layer when used as DSM/ICD-style categories or results; this diagnostic use is distinct from any material disease entity in the patient."@en ;
                                                                 rdfs:label "disease diagnostic result"@en .
 
 

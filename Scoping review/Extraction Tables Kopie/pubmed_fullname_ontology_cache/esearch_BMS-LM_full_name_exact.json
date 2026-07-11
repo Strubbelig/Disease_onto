@@ -1,0 +1,32 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "35124236",
+      "38135173",
+      "40822568",
+      "42039682",
+      "27751176"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biomedical\"[All Fields] OR \"biomedically\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields]) AND (\"lifecycle\"[All Fields] OR \"lifecycles\"[All Fields]) AND (\"manage\"[All Fields] OR \"managed\"[All Fields] OR \"management s\"[All Fields] OR \"managements\"[All Fields] OR \"manager\"[All Fields] OR \"manager s\"[All Fields] OR \"managers\"[All Fields] OR \"manages\"[All Fields] OR \"managing\"[All Fields] OR \"managment\"[All Fields] OR \"organization and administration\"[MeSH Terms] OR (\"organization\"[All Fields] AND \"administration\"[All Fields]) OR \"organization and administration\"[All Fields] OR \"management\"[All Fields] OR \"disease management\"[MeSH Terms] OR (\"disease\"[All Fields] AND \"management\"[All Fields]) OR \"disease management\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"BioMedical Study Lifecycle Management\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

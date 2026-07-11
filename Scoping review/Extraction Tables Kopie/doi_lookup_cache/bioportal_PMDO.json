@@ -1,0 +1,114 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/b5ac0f60-032a-0131-abbd-001ec9b0ea92",
+      "name": "Satya S. Sahoo",
+      "email": "satyasahoo@ieee.org"
+    },
+    {
+      "id": "https://data.bioontology.org/contacts/cb129ca0-765b-0139-5e88-005056010074",
+      "name": "Deepak Gupta",
+      "email": "deepak.gupta@med.uvm.edu"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/satyasahoo",
+      "https://data.bioontology.org/users/drdkgupta"
+    ],
+    "acronym": "PMDO",
+    "name": "Parkinson and Movement Disorder Ontology",
+    "@id": "https://data.bioontology.org/ontologies/PMDO",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/PMDO/submissions",
+      "properties": "https://data.bioontology.org/ontologies/PMDO/properties",
+      "classes": "https://data.bioontology.org/ontologies/PMDO/classes",
+      "single_class": "https://data.bioontology.org/ontologies/PMDO/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/PMDO/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/PMDO/schemes",
+      "collections": "https://data.bioontology.org/ontologies/PMDO/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/PMDO/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/PMDO/instances",
+      "metrics": "https://data.bioontology.org/ontologies/PMDO/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/PMDO/reviews",
+      "notes": "https://data.bioontology.org/ontologies/PMDO/notes",
+      "groups": "https://data.bioontology.org/ontologies/PMDO/groups",
+      "categories": "https://data.bioontology.org/ontologies/PMDO/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/PMDO/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/PMDO/projects",
+      "download": "https://data.bioontology.org/ontologies/PMDO/download",
+      "views": "https://data.bioontology.org/ontologies/PMDO/views",
+      "analytics": "https://data.bioontology.org/ontologies/PMDO/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/PMDO",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2023-12-12T00:00:00.000+00:00",
+  "creationDate": "2023-12-13T08:58:53.000-08:00",
+  "homepage": "https://bmhinformatics.case.edu/",
+  "publication": [
+    "https://www.medrxiv.org/content/medrxiv/early/2020/11/12/2020.11.09.20228577.full.pdf"
+  ],
+  "documentation": "https://bmhinformatics.case.edu/",
+  "version": "1.1",
+  "description": "The Parkinson Movement Disorder Ontology (PMDO) uses a systematic analysis of movement disorder instruments, extensive review of literature led by movement disorder specialists, and the AMP PD knowledge portal with an iterative ontology engineering process. The current version of PMDO is focused on parkinsonian disorders with classes representing three broad categories of: (1) neurological findings, (2) treatment plans, and (3) instruments used to evaluate various traits of PD. \r\n\r\nRelease notes (v1.0):\r\nThis version models the MDS Clinical Diagnostic Criteria for Parkinson’s Disease (2015), including:\r\n1. Essential criteria (1)\r\n2. Supportive criteria (4)\r\n3. Absolute exclusion criteria (9)\r\n4. Red flags (10)",
+  "status": "beta",
+  "submissionId": 4,
+  "@id": "https://data.bioontology.org/ontologies/PMDO/submissions/4",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/PMDO/submissions/4/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

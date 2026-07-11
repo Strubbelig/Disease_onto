@@ -1,0 +1,32 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "5",
+    "retmax": "5",
+    "retstart": "0",
+    "idlist": [
+      "35178824",
+      "41383021",
+      "32908882",
+      "15869708",
+      "41515125"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields]) AND \"core\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"applied\"[All Fields] OR \"applies\"[All Fields] OR \"applying\"[All Fields]) AND (\"rare diseases\"[MeSH Terms] OR (\"rare\"[All Fields] AND \"diseases\"[All Fields]) OR \"rare diseases\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Disease core ontology applied to Rare Diseases\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

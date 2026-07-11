@@ -1,0 +1,2003 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 45,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (The Biomarker Ontology BMONT ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "The Biomarker Ontology BMONT ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:The Biomarker Ontology BMONT ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4387607418",
+      "doi": "https://doi.org/10.1007/s00441-023-03823-0",
+      "title": "MicroRNAs in atrial fibrillation target genes in structural remodelling",
+      "display_name": "MicroRNAs in atrial fibrillation target genes in structural remodelling",
+      "relevance_score": 10.08849,
+      "publication_year": 2023,
+      "publication_date": "2023-10-14",
+      "ids": {
+        "openalex": "https://openalex.org/W4387607418",
+        "doi": "https://doi.org/10.1007/s00441-023-03823-0",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/37833432"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/s00441-023-03823-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s00441-023-03823-0",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00441-023-03823-0.pdf",
+        "source": {
+          "id": "https://openalex.org/S139399906",
+          "display_name": "Cell and Tissue Research",
+          "issn_l": "0302-766X",
+          "issn": [
+            "0302-766X",
+            "1432-0878"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Cell and Tissue Research",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s00441-023-03823-0.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5007314126",
+            "display_name": "Nicoline W.E. van den Berg",
+            "orcid": "https://orcid.org/0000-0002-0473-1981"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Nicoline W. E. van den Berg",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands. n.w.vandenberg@amsterdamumc.nl",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0473-1981",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands. n.w.vandenberg@amsterdamumc.nl",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110662125",
+            "display_name": "Makiri Kawasaki",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Makiri Kawasaki",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5065480774",
+            "display_name": "Fransisca A. Nariswari",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Fransisca A. Nariswari",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5032661397",
+            "display_name": "Benedetta Fabrizi",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Benedetta Fabrizi",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5013382415",
+            "display_name": "Jolien Neefs",
+            "orcid": "https://orcid.org/0000-0002-8733-0867"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jolien Neefs",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5045922112",
+            "display_name": "Ingeborg van der Made",
+            "orcid": "https://orcid.org/0000-0001-6251-8161"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ingeborg van der Made",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004321808",
+            "display_name": "Robin Wesselink",
+            "orcid": "https://orcid.org/0000-0001-5671-2531"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Robin Wesselink",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072479375",
+            "display_name": "Wim Jan van Boven",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Wim Jan P. van Boven",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5038659908",
+            "display_name": "Antoine H.G. Driessen",
+            "orcid": "https://orcid.org/0000-0003-4712-6228"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Antoine H. G. Driessen",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5005699911",
+            "display_name": "Aldo Jongejan",
+            "orcid": "https://orcid.org/0000-0002-8948-2549"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Aldo Jongejan",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, Department of Epidemiology and Data Science, University of Amsterdam, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, Department of Epidemiology and Data Science, University of Amsterdam, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I887064364",
+                "https://openalex.org/I4210151833"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5076628732",
+            "display_name": "Joris R. de Groot",
+            "orcid": "https://orcid.org/0000-0002-8122-7017"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108594",
+              "display_name": "Amsterdam Neuroscience",
+              "ror": "https://ror.org/01x2d9f70",
+              "country_code": "NL",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210108594"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151833",
+              "display_name": "Amsterdam University Medical Centers",
+              "ror": "https://ror.org/05grdyy37",
+              "country_code": "NL",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I887064364",
+              "display_name": "University of Amsterdam",
+              "ror": "https://ror.org/04dkp9463",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Joris R. de Groot",
+          "raw_affiliation_strings": [
+            "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands. j.r.degroot@amsterdamumc.nl",
+            "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+            "Amsterdam UMC, University of Amsterdam, Heart Center"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center; Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands. j.r.degroot@amsterdamumc.nl",
+              "institution_ids": [
+                "https://openalex.org/I887064364",
+                "https://openalex.org/I4210108594",
+                "https://openalex.org/I4210151833"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Clinical and Experimental Cardiology and Cardiothoracic Surgery, Amsterdam Cardiovascular Sciences, Meibergdreef 9, 1105AZ, Amsterdam, The Netherlands",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Amsterdam UMC, University of Amsterdam, Heart Center",
+              "institution_ids": [
+                "https://openalex.org/I4210151833",
+                "https://openalex.org/I887064364"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 3,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5007314126",
+        "https://openalex.org/A5076628732"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I4210108594",
+        "https://openalex.org/I4210151833",
+        "https://openalex.org/I887064364"
+      ],
+      "apc_list": {
+        "value": 3690,
+        "currency": "EUR",
+        "value_usd": 4790
+      },
+      "apc_paid": {
+        "value": 3690,
+        "currency": "EUR",
+        "value_usd": 4790
+      },
+      "fwci": 2.0386,
+      "has_fulltext": true,
+      "cited_by_count": 15,
+      "citation_normalized_percentile": {
+        "value": 0.87055167,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 96,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "394",
+        "issue": "3",
+        "first_page": "497",
+        "last_page": "514"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10604",
+        "display_name": "RNA Research and Splicing",
+        "score": 0.9973999857902527,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10604",
+          "display_name": "RNA Research and Splicing",
+          "score": 0.9973999857902527,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10062",
+          "display_name": "MicroRNA in disease regulation",
+          "score": 0.9959999918937683,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1306",
+            "display_name": "Cancer Research"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12610",
+          "display_name": "RNA regulation and disease",
+          "score": 0.9958000183105469,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/microrna",
+          "display_name": "microRNA",
+          "score": 0.8703356981277466
+        },
+        {
+          "id": "https://openalex.org/keywords/downregulation-and-upregulation",
+          "display_name": "Downregulation and upregulation",
+          "score": 0.7254741191864014
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.6290872693061829
+        },
+        {
+          "id": "https://openalex.org/keywords/gene-expression",
+          "display_name": "Gene expression",
+          "score": 0.46431753039360046
+        },
+        {
+          "id": "https://openalex.org/keywords/gene",
+          "display_name": "Gene",
+          "score": 0.4550096392631531
+        },
+        {
+          "id": "https://openalex.org/keywords/cell-biology",
+          "display_name": "Cell biology",
+          "score": 0.443060040473938
+        },
+        {
+          "id": "https://openalex.org/keywords/regulation-of-gene-expression",
+          "display_name": "Regulation of gene expression",
+          "score": 0.43847429752349854
+        },
+        {
+          "id": "https://openalex.org/keywords/atrial-fibrillation",
+          "display_name": "Atrial fibrillation",
+          "score": 0.4222466051578522
+        },
+        {
+          "id": "https://openalex.org/keywords/messenger-rna",
+          "display_name": "Messenger RNA",
+          "score": 0.41439101099967957
+        },
+        {
+          "id": "https://openalex.org/keywords/genetics",
+          "display_name": "Genetics",
+          "score": 0.21085724234580994
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.1846088171005249
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.1150655448436737
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C145059251",
+          "wikidata": "https://www.wikidata.org/wiki/Q310899",
+          "display_name": "microRNA",
+          "level": 3,
+          "score": 0.8703356981277466
+        },
+        {
+          "id": "https://openalex.org/C127561419",
+          "wikidata": "https://www.wikidata.org/wiki/Q224527",
+          "display_name": "Downregulation and upregulation",
+          "level": 3,
+          "score": 0.7254741191864014
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.6290872693061829
+        },
+        {
+          "id": "https://openalex.org/C150194340",
+          "wikidata": "https://www.wikidata.org/wiki/Q26972",
+          "display_name": "Gene expression",
+          "level": 3,
+          "score": 0.46431753039360046
+        },
+        {
+          "id": "https://openalex.org/C104317684",
+          "wikidata": "https://www.wikidata.org/wiki/Q7187",
+          "display_name": "Gene",
+          "level": 2,
+          "score": 0.4550096392631531
+        },
+        {
+          "id": "https://openalex.org/C95444343",
+          "wikidata": "https://www.wikidata.org/wiki/Q7141",
+          "display_name": "Cell biology",
+          "level": 1,
+          "score": 0.443060040473938
+        },
+        {
+          "id": "https://openalex.org/C165864922",
+          "wikidata": "https://www.wikidata.org/wiki/Q411391",
+          "display_name": "Regulation of gene expression",
+          "level": 3,
+          "score": 0.43847429752349854
+        },
+        {
+          "id": "https://openalex.org/C2779161974",
+          "wikidata": "https://www.wikidata.org/wiki/Q815819",
+          "display_name": "Atrial fibrillation",
+          "level": 2,
+          "score": 0.4222466051578522
+        },
+        {
+          "id": "https://openalex.org/C105580179",
+          "wikidata": "https://www.wikidata.org/wiki/Q188928",
+          "display_name": "Messenger RNA",
+          "level": 3,
+          "score": 0.41439101099967957
+        },
+        {
+          "id": "https://openalex.org/C54355233",
+          "wikidata": "https://www.wikidata.org/wiki/Q7162",
+          "display_name": "Genetics",
+          "level": 1,
+          "score": 0.21085724234580994
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.1846088171005249
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.1150655448436737
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D001281",
+          "descriptor_name": "Atrial Fibrillation",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D001281",
+          "descriptor_name": "Atrial Fibrillation",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D001281",
+          "descriptor_name": "Atrial Fibrillation",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D001281",
+          "descriptor_name": "Atrial Fibrillation",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006325",
+          "descriptor_name": "Heart Atria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006325",
+          "descriptor_name": "Heart Atria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006325",
+          "descriptor_name": "Heart Atria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006325",
+          "descriptor_name": "Heart Atria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012333",
+          "descriptor_name": "RNA, Messenger",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012333",
+          "descriptor_name": "RNA, Messenger",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012333",
+          "descriptor_name": "RNA, Messenger",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012333",
+          "descriptor_name": "RNA, Messenger",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D035683",
+          "descriptor_name": "MicroRNAs",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D058750",
+          "descriptor_name": "Epithelial-Mesenchymal Transition",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058750",
+          "descriptor_name": "Epithelial-Mesenchymal Transition",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058750",
+          "descriptor_name": "Epithelial-Mesenchymal Transition",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058750",
+          "descriptor_name": "Epithelial-Mesenchymal Transition",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 4,
+      "locations": [
+        {
+          "id": "doi:10.1007/s00441-023-03823-0",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s00441-023-03823-0",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00441-023-03823-0.pdf",
+          "source": {
+            "id": "https://openalex.org/S139399906",
+            "display_name": "Cell and Tissue Research",
+            "issn_l": "0302-766X",
+            "issn": [
+              "0302-766X",
+              "1432-0878"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Cell and Tissue Research",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:37833432",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37833432",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Cell and tissue research",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:10697892",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10697892",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10697892/pdf/441_2023_Article_3823.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Cell Tissue Res",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pure.amsterdamumc.nl:publications/495dd143-d19f-4391-a400-113cbfeabd77",
+          "is_oa": true,
+          "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/495dd143-d19f-4391-a400-113cbfeabd77",
+          "pdf_url": "https://pure.amsterdamumc.nl/ws/files/141634795/Micrornas-in-atrial-fibrillation-target-genes-in-structural-remodelling.pdf",
+          "source": {
+            "id": "https://openalex.org/S7407055222",
+            "display_name": "Pure Amsterdam UMC",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "van den Berg, N W E, Kawasaki, M, Nariswari, F A, Fabrizi, B, Neefs, J, van der Made, I, Wesselink, R, van Boven, W J P, Driessen, A H G, Jongejan, A & de Groot, J R 2023, 'MicroRNAs in atrial fibrillation target genes in structural remodelling', Cell and tissue research, vol. 394, no. 3, pp. 497-514. https://doi.org/10.1007/s00441-023-03823-0",
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1007/s00441-023-03823-0",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s00441-023-03823-0",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00441-023-03823-0.pdf",
+        "source": {
+          "id": "https://openalex.org/S139399906",
+          "display_name": "Cell and Tissue Research",
+          "issn_l": "0302-766X",
+          "issn": [
+            "0302-766X",
+            "1432-0878"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Cell and Tissue Research",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G7522307310",
+          "display_name": null,
+          "funder_award_id": "106.146.310",
+          "funder_id": "https://openalex.org/F4320321007",
+          "funder_display_name": "ZonMw"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320310638",
+          "display_name": "McGill University",
+          "ror": "https://ror.org/01pxwe438"
+        },
+        {
+          "id": "https://openalex.org/F4320321007",
+          "display_name": "ZonMw",
+          "ror": "https://ror.org/01yaj9a77"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4387607418.pdf"
+      },
+      "referenced_works_count": 56,
+      "referenced_works": [
+        "https://openalex.org/W20074729",
+        "https://openalex.org/W1584433563",
+        "https://openalex.org/W1850125129",
+        "https://openalex.org/W1964847767",
+        "https://openalex.org/W1972528076",
+        "https://openalex.org/W1972989638",
+        "https://openalex.org/W1976324983",
+        "https://openalex.org/W2009777681",
+        "https://openalex.org/W2011290576",
+        "https://openalex.org/W2026570544",
+        "https://openalex.org/W2053835153",
+        "https://openalex.org/W2067861954",
+        "https://openalex.org/W2091911944",
+        "https://openalex.org/W2093478617",
+        "https://openalex.org/W2102656714",
+        "https://openalex.org/W2106196733",
+        "https://openalex.org/W2109934828",
+        "https://openalex.org/W2120701932",
+        "https://openalex.org/W2133658633",
+        "https://openalex.org/W2134629862",
+        "https://openalex.org/W2136309995",
+        "https://openalex.org/W2145056290",
+        "https://openalex.org/W2147018083",
+        "https://openalex.org/W2151868278",
+        "https://openalex.org/W2157916750",
+        "https://openalex.org/W2159793493",
+        "https://openalex.org/W2159975225",
+        "https://openalex.org/W2161205200",
+        "https://openalex.org/W2161918376",
+        "https://openalex.org/W2162674813",
+        "https://openalex.org/W2167036751",
+        "https://openalex.org/W2171398108",
+        "https://openalex.org/W2317719637",
+        "https://openalex.org/W2392997463",
+        "https://openalex.org/W2401574496",
+        "https://openalex.org/W2518217251",
+        "https://openalex.org/W2581284942",
+        "https://openalex.org/W2597544746",
+        "https://openalex.org/W2608588289",
+        "https://openalex.org/W2699220065",
+        "https://openalex.org/W2740811673",
+        "https://openalex.org/W2752357798",
+        "https://openalex.org/W2910904530",
+        "https://openalex.org/W2944545583",
+        "https://openalex.org/W2969500229",
+        "https://openalex.org/W2970358232",
+        "https://openalex.org/W2974410043",
+        "https://openalex.org/W2995932332",
+        "https://openalex.org/W3011468741",
+        "https://openalex.org/W3021338373",
+        "https://openalex.org/W3025853082",
+        "https://openalex.org/W3036547154",
+        "https://openalex.org/W3081980722",
+        "https://openalex.org/W3082188176",
+        "https://openalex.org/W3212545301",
+        "https://openalex.org/W4205961991"
+      ],
+      "related_works": [
+        "https://openalex.org/W2592007767",
+        "https://openalex.org/W2026862129",
+        "https://openalex.org/W582905479",
+        "https://openalex.org/W2080599553",
+        "https://openalex.org/W2996239022",
+        "https://openalex.org/W2900494214",
+        "https://openalex.org/W2128583238",
+        "https://openalex.org/W2134405083",
+        "https://openalex.org/W2049907435",
+        "https://openalex.org/W2034377088"
+      ],
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          25
+        ],
+        "aim": [
+          1
+        ],
+        "to": [
+          2,
+          14,
+          59
+        ],
+        "elucidate": [
+          3
+        ],
+        "how": [
+          4
+        ],
+        "miRNAs": [
+          5,
+          78,
+          86,
+          97,
+          124,
+          153,
+          161
+        ],
+        "regulate": [
+          6
+        ],
+        "the": [
+          7,
+          80,
+          113,
+          159
+        ],
+        "mRNA": [
+          8,
+          53,
+          81
+        ],
+        "signature": [
+          9
+        ],
+        "of": [
+          10,
+          33,
+          116,
+          119,
+          145,
+          152
+        ],
+        "atrial": [
+          11,
+          31
+        ],
+        "fibrillation": [
+          12
+        ],
+        "(AF),": [
+          13
+        ],
+        "gain": [
+          15
+        ],
+        "mechanistic": [
+          16
+        ],
+        "insight": [
+          17
+        ],
+        "and": [
+          18,
+          46,
+          65,
+          71,
+          92,
+          94,
+          104,
+          135,
+          139,
+          147
+        ],
+        "identify": [
+          19
+        ],
+        "candidate": [
+          20
+        ],
+        "targets": [
+          21,
+          171
+        ],
+        "for": [
+          22,
+          172
+        ],
+        "future": [
+          23
+        ],
+        "therapies.": [
+          24
+        ],
+        "present": [
+          26
+        ],
+        "combined": [
+          27
+        ],
+        "miRNA-mRNA": [
+          28
+        ],
+        "sequencing": [
+          29,
+          54
+        ],
+        "using": [
+          30
+        ],
+        "tissues": [
+          32
+        ],
+        "patient": [
+          34
+        ],
+        "without": [
+          35
+        ],
+        "AF": [
+          36,
+          42,
+          49
+        ],
+        "(n": [
+          37,
+          43,
+          50
+        ],
+        "=": [
+          38,
+          44,
+          51
+        ],
+        "22),": [
+          39
+        ],
+        "with": [
+          40,
+          47,
+          112,
+          126
+        ],
+        "paroxysmal": [
+          41
+        ],
+        "22)": [
+          45
+        ],
+        "persistent": [
+          48
+        ],
+        "20).": [
+          52
+        ],
+        "previously": [
+          55
+        ],
+        "uncovered": [
+          56
+        ],
+        "upregulated": [
+          57,
+          96,
+          133
+        ],
+        "epithelial": [
+          58,
+          134
+        ],
+        "mesenchymal": [
+          60
+        ],
+        "transition,": [
+          61
+        ],
+        "endothelial": [
+          62,
+          136
+        ],
+        "cell": [
+          63,
+          137
+        ],
+        "proliferation": [
+          64
+        ],
+        "extracellular": [
+          66
+        ],
+        "matrix": [
+          67
+        ],
+        "remodelling": [
+          68
+        ],
+        "involving": [
+          69
+        ],
+        "glycoproteins": [
+          70
+        ],
+        "proteoglycans": [
+          72
+        ],
+        "in": [
+          73,
+          132,
+          165,
+          175
+        ],
+        "AF.": [
+          74,
+          176
+        ],
+        "MiRNA": [
+          75,
+          106
+        ],
+        "co-sequencing": [
+          76
+        ],
+        "discovered": [
+          77,
+          160
+        ],
+        "regulating": [
+          79
+        ],
+        "expression": [
+          82,
+          107,
+          114,
+          129
+        ],
+        "changes.": [
+          83
+        ],
+        "Key": [
+          84
+        ],
+        "downregulated": [
+          85
+        ],
+        "included": [
+          87
+        ],
+        "miR-135b-5p,": [
+          88
+        ],
+        "miR-138-5p,": [
+          89
+        ],
+        "miR-200a-3p,": [
+          90
+        ],
+        "miR-200b-3p": [
+          91
+        ],
+        "miR-31-5p": [
+          93
+        ],
+        "key": [
+          95
+        ],
+        "were": [
+          98,
+          109
+        ],
+        "miR-144-3p,": [
+          99
+        ],
+        "miR-15b-3p,": [
+          100
+        ],
+        "miR-182-5p": [
+          101
+        ],
+        "miR-18b-5p,": [
+          102
+        ],
+        "miR-4306": [
+          103
+        ],
+        "miR-206.": [
+          105
+        ],
+        "levels": [
+          108,
+          115
+        ],
+        "negatively": [
+          110
+        ],
+        "correlated": [
+          111
+        ],
+        "a": [
+          117
+        ],
+        "multitude": [
+          118
+        ],
+        "predicted": [
+          120,
+          156
+        ],
+        "target": [
+          121
+        ],
+        "genes.": [
+          122
+        ],
+        "Downregulated": [
+          123
+        ],
+        "associated": [
+          125
+        ],
+        "increased": [
+          127
+        ],
+        "gene": [
+          128
+        ],
+        "are": [
+          130
+        ],
+        "involved": [
+          131
+        ],
+        "migration": [
+          138
+        ],
+        "glycosaminoglycan": [
+          140
+        ],
+        "biosynthesis.": [
+          141
+        ],
+        "In": [
+          142
+        ],
+        "vitro": [
+          143
+        ],
+        "inhibition": [
+          144
+        ],
+        "miR-135b-5p": [
+          146
+        ],
+        "miR-138-5p": [
+          148
+        ],
+        "validated": [
+          149
+        ],
+        "an": [
+          150
+        ],
+        "effect": [
+          151
+        ],
+        "on": [
+          154
+        ],
+        "multiple": [
+          155
+        ],
+        "targets.": [
+          157
+        ],
+        "Altogether,": [
+          158
+        ],
+        "may": [
+          162
+        ],
+        "be": [
+          163
+        ],
+        "explored": [
+          164
+        ],
+        "further": [
+          166
+        ],
+        "functional": [
+          167
+        ],
+        "studies": [
+          168
+        ],
+        "as": [
+          169
+        ],
+        "potential": [
+          170
+        ],
+        "anti-fibrotic": [
+          173
+        ],
+        "therapies": [
+          174
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

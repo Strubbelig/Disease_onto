@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1178",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "29736190",
+      "28974991",
+      "28916566",
+      "36851719",
+      "30321400",
+      "28980264",
+      "31181762",
+      "39590304",
+      "38922666",
+      "37769756"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"nutrition s\"[All Fields] OR \"nutritional status\"[MeSH Terms] OR (\"nutritional\"[All Fields] AND \"status\"[All Fields]) OR \"nutritional status\"[All Fields] OR \"nutrition\"[All Fields] OR \"nutritional sciences\"[MeSH Terms] OR (\"nutritional\"[All Fields] AND \"sciences\"[All Fields]) OR \"nutritional sciences\"[All Fields] OR \"nutritional\"[All Fields] OR \"nutritionals\"[All Fields] OR \"nutritions\"[All Fields] OR \"nutritive\"[All Fields]) AND (\"studies\"[All Fields] OR \"study\"[All Fields] OR \"study s\"[All Fields] OR \"studying\"[All Fields] OR \"studys\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Nutritional Studies\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

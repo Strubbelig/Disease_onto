@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "26",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34755882",
+      "30407550",
+      "39379679",
+      "25348409",
+      "36856688",
+      "30863320",
+      "36829165",
+      "21550421",
+      "37953304",
+      "37128427"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Human Disease Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

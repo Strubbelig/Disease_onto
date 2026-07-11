@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"clinical coding\"[MeSH Terms] OR (\"clinical\"[All Fields] AND \"coding\"[All Fields]) OR \"clinical coding\"[All Fields] OR \"coding\"[All Fields] OR \"coded\"[All Fields] OR \"codes\"[All Fields] OR \"codings\"[All Fields]) AND (\"symbol\"[All Fields] OR \"symbol s\"[All Fields] OR \"symbolic\"[All Fields] OR \"symbolical\"[All Fields] OR \"symbolically\"[All Fields] OR \"symbolics\"[All Fields] OR \"symbolism\"[MeSH Terms] OR \"symbolism\"[All Fields] OR \"symbolisms\"[All Fields] OR \"symbolization\"[All Fields] OR \"symbolizations\"[All Fields] OR \"symbolize\"[All Fields] OR \"symbolized\"[All Fields] OR \"symbolizes\"[All Fields] OR \"symbolizing\"[All Fields] OR \"symbols\"[All Fields]) AND (\"vocabulary, controlled\"[MeSH Terms] OR (\"vocabulary\"[All Fields] AND \"controlled\"[All Fields]) OR \"controlled vocabulary\"[All Fields] OR \"thesaurus\"[All Fields]) AND (\"adverse\"[All Fields] OR \"adversely\"[All Fields] OR \"adverses\"[All Fields]) AND (\"reaction\"[All Fields] OR \"reaction s\"[All Fields] OR \"reactions\"[All Fields]) AND \"terms\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Coding Symbols for a Thesaurus of Adverse Reaction Terms\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

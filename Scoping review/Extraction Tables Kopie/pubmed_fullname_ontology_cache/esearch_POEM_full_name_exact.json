@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "29942800"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"psychometrical\"[All Fields] OR \"psychometrically\"[All Fields] OR \"psychometrics\"[MeSH Terms] OR \"psychometrics\"[All Fields] OR \"psychometric\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"experience\"[All Fields] OR \"experience s\"[All Fields] OR \"experiences\"[All Fields]) AND (\"measurability\"[All Fields] OR \"measurable\"[All Fields] OR \"measurably\"[All Fields] OR \"measure s\"[All Fields] OR \"measureable\"[All Fields] OR \"measured\"[All Fields] OR \"measurement\"[All Fields] OR \"measurement s\"[All Fields] OR \"measurements\"[All Fields] OR \"measurer\"[All Fields] OR \"measurers\"[All Fields] OR \"measuring\"[All Fields] OR \"measurings\"[All Fields] OR \"measurment\"[All Fields] OR \"measurments\"[All Fields] OR \"weights and measures\"[MeSH Terms] OR (\"weights\"[All Fields] AND \"measures\"[All Fields]) OR \"weights and measures\"[All Fields] OR \"measure\"[All Fields] OR \"measures\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Psychometric Ontology of Experiences and Measures\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

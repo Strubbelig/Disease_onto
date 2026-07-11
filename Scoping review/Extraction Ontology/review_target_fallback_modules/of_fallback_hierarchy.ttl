@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/of_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for OF; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=1.0, released=2015-12-26T00:00:00.000+00:00, creationDate=2015-12-26T01:18:36.000-08:00, submissionId=1" ;
-    dcterms:created "2026-07-03T12:41:43-04:00" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://www.owl-ontologies.com/Ontology1435740495.owl#Disease> <http://purl.org/dc/terms/source> "generated review target module for OF from disease_terms_review_enriched.csv" .

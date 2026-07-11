@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "39",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "23429179",
+      "20393974",
+      "36577097",
+      "23845992",
+      "21721252",
+      "40108637",
+      "42019804",
+      "31049374",
+      "18592187",
+      "36860278"
+    ],
+    "translationset": [
+      {
+        "from": "PRIDE",
+        "to": "\"pride\"[All Fields] OR \"prides\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"pride\"[All Fields] OR \"prides\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

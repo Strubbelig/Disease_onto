@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/trak_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for TRAK; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=unknown, released=2015-09-14T00:00:00.000+00:00, creationDate=2015-09-14T03:39:19.000-07:00, submissionId=5" ;
-    dcterms:created "2026-07-03T12:17:37-04:00" ;
+    dcterms:created "2026-07-10T19:36:51-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -20,13 +20,6 @@
 <http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
 <http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000204> .
 <http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000607> .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://purl.obolibrary.org/obo/IAO_0000115> "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure." .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://purl.org/dc/terms/source> "generated review target module for TRAK from disease_terms_review_enriched.csv" .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000204> .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
-<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
 <http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
 <http://purl.obolibrary.org/obo/TRAK_0000610> <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." .

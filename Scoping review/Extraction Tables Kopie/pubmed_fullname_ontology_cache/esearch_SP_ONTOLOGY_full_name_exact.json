@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"proyect\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"complex\"[All Fields] OR \"complex s\"[All Fields] OR \"complexant\"[All Fields] OR \"complexants\"[All Fields] OR \"complexated\"[All Fields] OR \"complexation\"[All Fields] OR \"complexations\"[All Fields] OR \"complexe\"[All Fields] OR \"complexed\"[All Fields] OR \"complexes\"[All Fields] OR \"complexing\"[All Fields] OR \"complexities\"[All Fields] OR \"complexity\"[All Fields] OR \"complexs\"[All Fields]) AND (\"chronic\"[All Fields] OR \"chronical\"[All Fields] OR \"chronically\"[All Fields] OR \"chronicities\"[All Fields] OR \"chronicity\"[All Fields] OR \"chronicization\"[All Fields] OR \"chronics\"[All Fields]) AND (\"patient s\"[All Fields] OR \"patients\"[MeSH Terms] OR \"patients\"[All Fields] OR \"patient\"[All Fields] OR \"patients s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"SmartPITeS Proyect Ontology for Complex Chronic Patients\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

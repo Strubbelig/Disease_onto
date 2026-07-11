@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "161",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "39695140",
+      "31980607",
+      "38843995",
+      "39210538",
+      "22254621",
+      "40691753",
+      "36063823",
+      "35860315",
+      "39464170"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"exercise\"[MeSH Terms] OR \"exercise\"[All Fields] OR \"exercises\"[All Fields] OR \"exercise therapy\"[MeSH Terms] OR (\"exercise\"[All Fields] AND \"therapy\"[All Fields]) OR \"exercise therapy\"[All Fields] OR \"exercising\"[All Fields] OR \"exercise s\"[All Fields] OR \"exercised\"[All Fields] OR \"exerciser\"[All Fields] OR \"exercisers\"[All Fields]) AND (\"medicin\"[All Fields] OR \"medicinal\"[All Fields] OR \"medicinally\"[All Fields] OR \"medicinals\"[All Fields] OR \"medicine\"[MeSH Terms] OR \"medicine\"[All Fields] OR \"medicine s\"[All Fields] OR \"medicines\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Exercise Medicine Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

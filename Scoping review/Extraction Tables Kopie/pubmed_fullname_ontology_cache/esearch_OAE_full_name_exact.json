@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "31",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "41526409",
+      "35401219",
+      "35062118",
+      "25093068",
+      "30195820",
+      "29867505",
+      "35814246",
+      "23209624",
+      "41971073",
+      "27213033"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Ontology of Adverse Events\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

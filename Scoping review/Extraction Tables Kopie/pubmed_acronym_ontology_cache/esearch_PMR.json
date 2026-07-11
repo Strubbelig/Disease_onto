@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6",
+    "retmax": "6",
+    "retstart": "0",
+    "idlist": [
+      "35283794",
+      "36865672",
+      "34409637",
+      "37842339",
+      "15272433",
+      "16452792"
+    ],
+    "translationset": [
+      {
+        "from": "PMR",
+        "to": "\"Prev Med Rep\"[Journal:__jid101643766] OR \"Palliat Med Rep\"[Journal:__jid101770666] OR \"pmr\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"prev med rep\"[Journal] OR \"palliat med rep\"[Journal] OR \"pmr\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

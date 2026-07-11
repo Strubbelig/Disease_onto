@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "14",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "40311258",
+      "35686059",
+      "35860315",
+      "25954436",
+      "41073487",
+      "38572804",
+      "36172025",
+      "33731876",
+      "27573308",
+      "31133741"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"mapped\"[All Fields] OR \"mapping\"[All Fields] OR \"mappings\"[All Fields]) AND (\"epilepsie\"[All Fields] OR \"epilepsy\"[MeSH Terms] OR \"epilepsy\"[All Fields] OR \"epilepsies\"[All Fields] OR \"epilepsy s\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Mapping of Epilepsy Ontologies\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

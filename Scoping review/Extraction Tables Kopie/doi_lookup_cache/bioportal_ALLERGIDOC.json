@@ -1,0 +1,108 @@
+{
+  "contact": [
+    {
+      "id": "https://data.bioontology.org/contacts/6ae3a180-0b2a-013d-4847-005056010128",
+      "name": "Marcin Trzmielewski",
+      "email": "marcin.trzmielewski@univ-montp3.fr"
+    }
+  ],
+  "ontology": {
+    "administeredBy": [
+      "https://data.bioontology.org/users/marcin.t"
+    ],
+    "acronym": "ALLERGIDOC",
+    "name": "Allergy Ontology",
+    "@id": "https://data.bioontology.org/ontologies/ALLERGIDOC",
+    "@type": "http://data.bioontology.org/metadata/Ontology",
+    "links": {
+      "submissions": "https://data.bioontology.org/ontologies/ALLERGIDOC/submissions",
+      "properties": "https://data.bioontology.org/ontologies/ALLERGIDOC/properties",
+      "classes": "https://data.bioontology.org/ontologies/ALLERGIDOC/classes",
+      "single_class": "https://data.bioontology.org/ontologies/ALLERGIDOC/classes/{class_id}",
+      "roots": "https://data.bioontology.org/ontologies/ALLERGIDOC/classes/roots",
+      "schemes": "https://data.bioontology.org/ontologies/ALLERGIDOC/schemes",
+      "collections": "https://data.bioontology.org/ontologies/ALLERGIDOC/collections",
+      "xl_labels": "https://data.bioontology.org/ontologies/ALLERGIDOC/skos_xl_labels",
+      "instances": "https://data.bioontology.org/ontologies/ALLERGIDOC/instances",
+      "metrics": "https://data.bioontology.org/ontologies/ALLERGIDOC/metrics",
+      "reviews": "https://data.bioontology.org/ontologies/ALLERGIDOC/reviews",
+      "notes": "https://data.bioontology.org/ontologies/ALLERGIDOC/notes",
+      "groups": "https://data.bioontology.org/ontologies/ALLERGIDOC/groups",
+      "categories": "https://data.bioontology.org/ontologies/ALLERGIDOC/categories",
+      "latest_submission": "https://data.bioontology.org/ontologies/ALLERGIDOC/latest_submission",
+      "projects": "https://data.bioontology.org/ontologies/ALLERGIDOC/projects",
+      "download": "https://data.bioontology.org/ontologies/ALLERGIDOC/download",
+      "views": "https://data.bioontology.org/ontologies/ALLERGIDOC/views",
+      "analytics": "https://data.bioontology.org/ontologies/ALLERGIDOC/analytics",
+      "ui": "http://bioportal.bioontology.org/ontologies/ALLERGIDOC",
+      "@context": {
+        "submissions": "http://data.bioontology.org/metadata/OntologySubmission",
+        "properties": "http://data.bioontology.org/metadata/Property",
+        "classes": "http://www.w3.org/2002/07/owl#Class",
+        "single_class": "http://www.w3.org/2002/07/owl#Class",
+        "roots": "http://www.w3.org/2002/07/owl#Class",
+        "schemes": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "collections": "http://www.w3.org/2004/02/skos/core#Collection",
+        "xl_labels": "http://www.w3.org/2008/05/skos-xl#Label",
+        "instances": "http://data.bioontology.org/metadata/Instance",
+        "metrics": "http://data.bioontology.org/metadata/Metrics",
+        "reviews": "http://data.bioontology.org/metadata/Review",
+        "notes": "http://data.bioontology.org/metadata/Note",
+        "groups": "http://data.bioontology.org/metadata/Group",
+        "categories": "http://data.bioontology.org/metadata/Category",
+        "latest_submission": "http://data.bioontology.org/metadata/OntologySubmission",
+        "projects": "http://data.bioontology.org/metadata/Project",
+        "download": "http://data.bioontology.org/metadata/Ontology",
+        "views": "http://data.bioontology.org/metadata/Ontology",
+        "analytics": "http://data.bioontology.org/metadata/Analytics",
+        "ui": "http://data.bioontology.org/metadata/Ontology"
+      }
+    },
+    "@context": {
+      "@vocab": "http://data.bioontology.org/metadata/",
+      "acronym": "http://omv.ontoware.org/2005/05/ontology#acronym",
+      "name": "http://omv.ontoware.org/2005/05/ontology#name",
+      "administeredBy": {
+        "@id": "http://data.bioontology.org/metadata/User",
+        "@type": "@id"
+      },
+      "@language": "en"
+    }
+  },
+  "hasOntologyLanguage": "OWL",
+  "released": "2025-03-12T00:00:00.000+00:00",
+  "creationDate": "2025-03-12T01:56:56.000-07:00",
+  "homepage": "https://allergo.infodocs.eu/ontologie/allergidoc3.0",
+  "publication": [
+    "http://doi.org/10.5771/0943-7444-2024-3-151"
+  ],
+  "documentation": "https://hal.science/tel-04128883",
+  "version": "3.0",
+  "description": "L'ontologie ALLERGIDOC représente la terminologie et les connaissances scientifiques, cliniques et généralistes du domaine de l'allergologie. Elle a été élaborée par Marcin Trzmielewski pour l'Unité d'Exploration des Allergies du CHU de Montpellier (référents : Docteur Davide Caimmi et Prof. Pascal Demoly), dans le cadre d'une thèse en sciences de l'information, de la communication et de la documentation à l'Université Paul Valéry Montpellier 3, financée par la Région Occitanie (France) entre 2019 et 2023 et encadrée par Prof. Céline Paganelli. L'ontologie a été élaborée dans une approche constructiviste, à partir d'une analyse des pratiques informationnelles des employés de l'unité d'allergologie et d'une analyse des documents que ces employés utilisent dans leur quotidien. \r\n\r\nLa version 3.0, élaborée après la thèse, comprend des modifications des versions 1.1 et 2.0 effectuées en février-mars 2025 par Marcin Trzmielewski (Laboratoire d'Etudes et de Recherches Appliquées en Sciences Sociales - LERASS), avec la contribution des étudiantes de la licence professionnelle en documentation : Anne Guerre, Nada Bouhsina, Sabrina Duc et Claire Casasso (Université de Montpellier Paul-Valéry). La version 3.0 contient également une nouvelle structuration au niveau des classes principales (facettes) et d'autres niveaux de profondeur classificatoire. L'analyse à facettes a été basée sur les catégories représentant les cibles informationnelles des professionnels d'allergologie et celles de la catégorie Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE). Les concepts, les termes et les relations qui composent l'ontologie sont issus des versions précédentes 1.1 et 2.0, des extractions terminologiques effectuées lors de l'élaboration de la version 1.0, comme des réunions de validation des versions 1.0 et 2.0. Ils proviennent également des systèmes d'organisation des connaissances existants : Ontology for General Medical Science, Information Artifact Ontology, MeSH, SNOMED, LOINC, Allergen Nomenclature, catalogues des allergènes ThermoFisher et Eurofins, site IMAIOS, taxonomies biologiques consultées sur Wikipédia, VIDAL, Gender, Sex, and Sexual Orientation Ontology, et classification d'Eckman.\r\nLa version 3.0 est actuellement en cours de validation par les professionnels d'allergologie.",
+  "status": "alpha",
+  "submissionId": 9,
+  "@id": "https://data.bioontology.org/ontologies/ALLERGIDOC/submissions/9",
+  "@type": "http://data.bioontology.org/metadata/OntologySubmission",
+  "links": {
+    "metrics": "https://data.bioontology.org/ontologies/ALLERGIDOC/submissions/9/metrics",
+    "@context": {
+      "metrics": "http://data.bioontology.org/metadata/OntologySubmission"
+    }
+  },
+  "@context": {
+    "@vocab": "http://data.bioontology.org/metadata/",
+    "submissionId": "http://data.bioontology.org/metadata/submissionId",
+    "version": "http://omv.ontoware.org/2005/05/ontology#version",
+    "status": "http://omv.ontoware.org/2005/05/ontology#status",
+    "hasOntologyLanguage": "http://omv.ontoware.org/2005/05/ontology#hasOntologyLanguage",
+    "description": "http://omv.ontoware.org/2005/05/ontology#description",
+    "homepage": "http://xmlns.com/foaf/0.1/homepage",
+    "documentation": "http://omv.ontoware.org/2005/05/ontology#documentation",
+    "publication": "http://data.bioontology.org/metadata/publication",
+    "released": "http://data.bioontology.org/metadata/released",
+    "creationDate": "http://omv.ontoware.org/2005/05/ontology#creationDate",
+    "contact": "http://data.bioontology.org/metadata/contact",
+    "ontology": "http://data.bioontology.org/metadata/ontology",
+    "@language": "en"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "6792",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37108249",
+      "39374113",
+      "39049786",
+      "39051629",
+      "38539022",
+      "30669933",
+      "33839696",
+      "37129094",
+      "38224673",
+      "36111950"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"rna untranslated\"[Supplementary Concept] OR \"rna untranslated\"[All Fields] OR \"non coding rna\"[All Fields] OR \"rna, untranslated\"[MeSH Terms] OR (\"rna\"[All Fields] AND \"untranslated\"[All Fields]) OR \"untranslated rna\"[All Fields] OR (\"non\"[All Fields] AND \"coding\"[All Fields] AND \"rna\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Non-coding RNA Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

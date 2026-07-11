@@ -1,0 +1,69 @@
+{
+  "languages": [
+    "en"
+  ],
+  "lang": "en",
+  "ontologyId": "cpont",
+  "loaded": "2026-06-26T09:02:20.657633361",
+  "updated": "2026-06-26T09:02:20.657633361",
+  "status": "LOADED",
+  "message": "",
+  "version": "2024-05-21",
+  "fileHash": null,
+  "loadAttempts": 0,
+  "numberOfTerms": 9119,
+  "numberOfProperties": 126,
+  "numberOfIndividuals": 0,
+  "config": {
+    "id": "cpont",
+    "versionIri": "https://w3id.org/cpont/ontology/releases/2024-05-21/cpont.owl",
+    "namespace": "cpont",
+    "preferredPrefix": "CPONT",
+    "title": "Critical Path Ontology",
+    "description": "An application ontology for integrating data from the Critical Path Institute's Rare Disease Cures Accelerator Data and Analytica Platform (RDCA-DAP).",
+    "homepage": "https://gitlab.c-path.org/c-pathontology/critical-path-ontology",
+    "version": "2024-05-21",
+    "mailingList": "rwalls@c-path.org",
+    "tracker": null,
+    "logo": null,
+    "creators": [],
+    "annotations": null,
+    "fileLocation": "https://w3id.org/cpont/cpont.owl",
+    "oboSlims": false,
+    "labelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+    "definitionProperties": [
+      "http://purl.obolibrary.org/obo/IAO_0000115"
+    ],
+    "synonymProperties": [
+      "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+    ],
+    "hierarchicalProperties": [],
+    "baseUris": [
+      "https://w3id.org/cpont"
+    ],
+    "hiddenProperties": [],
+    "preferredRootTerms": [],
+    "isSkos": false,
+    "allowDownload": false
+  },
+  "baseUris": [
+    "https://w3id.org/cpont"
+  ],
+  "_links": {
+    "self": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/cpont?lang=en"
+    },
+    "terms": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/cpont/terms"
+    },
+    "properties": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/cpont/properties"
+    },
+    "individuals": {
+      "href": "http://www.ebi.ac.uk/ols4/api/ontologies/cpont/individuals"
+    }
+  }
+}

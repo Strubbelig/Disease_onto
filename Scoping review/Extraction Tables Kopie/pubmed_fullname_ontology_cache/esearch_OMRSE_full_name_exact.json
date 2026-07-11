@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "11",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "27406187",
+      "32613922",
+      "34125068",
+      "34346892",
+      "38779420",
+      "28739560",
+      "40489355",
+      "30634527",
+      "39176807",
+      "16181619"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"model\"[All Fields] OR \"model s\"[All Fields] OR \"modeled\"[All Fields] OR \"modeler\"[All Fields] OR \"modeler s\"[All Fields] OR \"modelers\"[All Fields] OR \"modeling\"[All Fields] OR \"modelings\"[All Fields] OR \"modelization\"[All Fields] OR \"modelizations\"[All Fields] OR \"modelize\"[All Fields] OR \"modelized\"[All Fields] OR \"modelled\"[All Fields] OR \"modeller\"[All Fields] OR \"modellers\"[All Fields] OR \"modelling\"[All Fields] OR \"modellings\"[All Fields] OR \"models\"[All Fields]) AND (\"representability\"[All Fields] OR \"representable\"[All Fields] OR \"representation\"[All Fields] OR \"representation s\"[All Fields] OR \"representational\"[All Fields] OR \"representations\"[All Fields]) AND (\"social behavior\"[MeSH Terms] OR (\"social\"[All Fields] AND \"behavior\"[All Fields]) OR \"social behavior\"[All Fields] OR \"sociality\"[All Fields] OR \"social\"[All Fields] OR \"socialisation\"[All Fields] OR \"socialization\"[MeSH Terms] OR \"socialization\"[All Fields] OR \"socialise\"[All Fields] OR \"socialised\"[All Fields] OR \"socialising\"[All Fields] OR \"socialities\"[All Fields] OR \"socializations\"[All Fields] OR \"socialize\"[All Fields] OR \"socialized\"[All Fields] OR \"socializers\"[All Fields] OR \"socializes\"[All Fields] OR \"socializing\"[All Fields] OR \"socially\"[All Fields] OR \"socials\"[All Fields]) AND (\"entities\"[All Fields] OR \"entity\"[All Fields] OR \"entity s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology for Modeling and Representation of Social Entities\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      },
+      {
+        "from": "Enriched",
+        "to": "\"enrich\"[All Fields] OR \"enriched\"[All Fields] OR \"enriches\"[All Fields] OR \"enriching\"[All Fields] OR \"enrichment\"[All Fields] OR \"enrichments\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Areej\"[All Fields] AND \"OCD\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND \"WordNet\"[All Fields] AND (\"enrich\"[All Fields] OR \"enriched\"[All Fields] OR \"enriches\"[All Fields] OR \"enriching\"[All Fields] OR \"enrichment\"[All Fields] OR \"enrichments\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

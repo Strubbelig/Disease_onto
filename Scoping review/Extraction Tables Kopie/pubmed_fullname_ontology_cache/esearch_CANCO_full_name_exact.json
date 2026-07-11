@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "44",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39604470",
+      "35864856",
+      "33491737",
+      "34918389",
+      "38721626",
+      "26932781",
+      "32743846",
+      "35398242",
+      "35899893",
+      "28459462"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"cancer s\"[All Fields] OR \"cancerated\"[All Fields] OR \"canceration\"[All Fields] OR \"cancerization\"[All Fields] OR \"cancerized\"[All Fields] OR \"cancerous\"[All Fields] OR \"neoplasms\"[MeSH Terms] OR \"neoplasms\"[All Fields] OR \"cancer\"[All Fields] OR \"cancers\"[All Fields]) AND (\"chemopreventers\"[All Fields] OR \"chemoprevention\"[MeSH Terms] OR \"chemoprevention\"[All Fields] OR \"chemopreventive\"[All Fields] OR \"chemopreventives\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Cancer Chemoprevention Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

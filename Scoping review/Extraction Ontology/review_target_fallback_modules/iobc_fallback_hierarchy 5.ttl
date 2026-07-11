@@ -1,0 +1,47 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/iobc_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for IOBC; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=version 1.6.0, released=2021-09-25T00:00:00.000+00:00, creationDate=2021-09-25T12:54:14.000-07:00, submissionId=25" ;
+    dcterms:created "2026-07-10T19:41:00-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.jp/bio/4/id/200906041631547545> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/id/200906041631547545> <http://www.w3.org/2000/01/rdf-schema#label> "Disease, and Symptom" .
+<http://purl.jp/bio/4/id/200906061373980620> <http://purl.org/dc/terms/source> "generated review target module for IOBC from disease_terms_review_enriched.csv" .
+<http://purl.jp/bio/4/id/200906061373980620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/id/200906061373980620> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://purl.jp/bio/4/id/200906061373980620> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/subject/IA08> .
+<http://purl.jp/bio/4/id/200906061373980620> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://purl.jp/bio/4/id/200906083676161529> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/id/200906083676161529> <http://www.w3.org/2000/01/rdf-schema#label> "disorder, trouble, obstacle" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://purl.org/dc/terms/source> "generated review target module for IOBC from disease_terms_review_enriched.csv" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2000/01/rdf-schema#label> "dysfunction" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/id/200906083676161529> .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "dysfunction" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional decline" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional disability" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional disorder" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional disturbance" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional impairment" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional incompetence" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "functional lesion" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "hypergasia" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "hypofunction" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "impaired functioning" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "impairment" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "inadequacy" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "incompetence" .
+<http://purl.jp/bio/4/id/200906099632625564> <http://www.w3.org/2004/02/skos/core#altLabel> "malfunction" .
+<http://purl.jp/bio/4/id/201606017936711318> <http://purl.org/dc/terms/source> "generated review target module for IOBC from disease_terms_review_enriched.csv" .
+<http://purl.jp/bio/4/id/201606017936711318> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/id/201606017936711318> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.jp/bio/4/id/201606017936711318> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.jp/bio/4/id/200906041631547545> .
+<http://purl.jp/bio/4/id/201606017936711318> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://purl.jp/bio/4/subject/IA08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.jp/bio/4/subject/IA08> <http://www.w3.org/2000/01/rdf-schema#label> "Properties" .

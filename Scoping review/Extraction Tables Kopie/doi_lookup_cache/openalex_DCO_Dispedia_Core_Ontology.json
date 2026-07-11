@@ -1,0 +1,1891 @@
+{
+  "meta": {
+    "count": 1,
+    "db_response_time_ms": 113,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (Dispedia Core Ontology DCO ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "Dispedia Core Ontology DCO ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:Dispedia Core Ontology DCO ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2948801580",
+      "doi": "https://doi.org/10.3390/nu11061300",
+      "title": "An Ontology to Standardize Research Output of Nutritional Epidemiology: From Paper-Based Standards to Linked Content",
+      "display_name": "An Ontology to Standardize Research Output of Nutritional Epidemiology: From Paper-Based Standards to Linked Content",
+      "relevance_score": 134.24402,
+      "publication_year": 2019,
+      "publication_date": "2019-06-08",
+      "ids": {
+        "openalex": "https://openalex.org/W2948801580",
+        "doi": "https://doi.org/10.3390/nu11061300",
+        "mag": "2948801580",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/31181762"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3390/nu11061300",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/nu11061300",
+        "pdf_url": "https://www.mdpi.com/2072-6643/11/6/1300/pdf?version=1561262490",
+        "source": {
+          "id": "https://openalex.org/S110785341",
+          "display_name": "Nutrients",
+          "issn_l": "2072-6643",
+          "issn": [
+            "2072-6643"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nutrients",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "datacite",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2072-6643/11/6/1300/pdf?version=1561262490",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5005568548",
+            "display_name": "Chen Yang",
+            "orcid": "https://orcid.org/0000-0001-9202-5309"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Chen Yang",
+          "raw_affiliation_strings": [
+            "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9202-5309",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088513115",
+            "display_name": "Henry Ambayo",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Henry Ambayo",
+          "raw_affiliation_strings": [
+            "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012437460",
+            "display_name": "Bernard De Baets",
+            "orcid": "https://orcid.org/0000-0002-3876-620X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Bernard De Baets",
+          "raw_affiliation_strings": [
+            "KERMIT, Department of Data Analysis and Mathematical Modelling, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3876-620X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "KERMIT, Department of Data Analysis and Mathematical Modelling, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027040611",
+            "display_name": "Patrick Kolsteren",
+            "orcid": "https://orcid.org/0000-0002-0504-2205"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Patrick Kolsteren",
+          "raw_affiliation_strings": [
+            "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5077772967",
+            "display_name": "Nattapon Thanintorn",
+            "orcid": "https://orcid.org/0000-0001-5831-1088"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I76835614",
+              "display_name": "University of Missouri",
+              "ror": "https://ror.org/02ymw8z06",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I76835614"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nattapon Thanintorn",
+          "raw_affiliation_strings": [
+            "Department of Pathology and Anatomical Sciences, University of Missouri, Columbia, MO 65203, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5831-1088",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Pathology and Anatomical Sciences, University of Missouri, Columbia, MO 65203, USA",
+              "institution_ids": [
+                "https://openalex.org/I76835614"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035630815",
+            "display_name": "Dana Hawwash",
+            "orcid": "https://orcid.org/0000-0001-7053-8488"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Dana Hawwash",
+          "raw_affiliation_strings": [
+            "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061463439",
+            "display_name": "Jildau Bouwman",
+            "orcid": "https://orcid.org/0000-0002-9396-0646"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148297040",
+              "display_name": "Netherlands Organisation for Applied Scientific Research",
+              "ror": "https://ror.org/01bnjb948",
+              "country_code": "NL",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I148297040"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jildau Bouwman",
+          "raw_affiliation_strings": [
+            "Netherlands Organization for Applied Scientific Research, NL-2509 Zeist, The Netherlands"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Netherlands Organization for Applied Scientific Research, NL-2509 Zeist, The Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I148297040"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063611538",
+            "display_name": "Antoon Bronselaer",
+            "orcid": "https://orcid.org/0000-0001-6663-192X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Antoon Bronselaer",
+          "raw_affiliation_strings": [
+            "Department of Telecommunications and information processing, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Telecommunications and information processing, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072598822",
+            "display_name": "Filip Pattyn",
+            "orcid": "https://orcid.org/0000-0003-0858-6651"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Filip Pattyn",
+          "raw_affiliation_strings": [
+            "ONTOFORCE, 9052 Ghent, Belgium"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ONTOFORCE, 9052 Ghent, Belgium",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5037577899",
+            "display_name": "Carl Lachat",
+            "orcid": "https://orcid.org/0000-0002-1389-8855"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32597200",
+              "display_name": "Ghent University",
+              "ror": "https://ror.org/00cv9y106",
+              "country_code": "BE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ],
+          "countries": [
+            "BE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Carl Lachat",
+          "raw_affiliation_strings": [
+            "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1389-8855",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Food Technology, Safety and Health, Ghent University, 9000 Ghent, Belgium",
+              "institution_ids": [
+                "https://openalex.org/I32597200"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 3,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5037577899"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I32597200"
+      ],
+      "apc_list": {
+        "value": 2600,
+        "currency": "CHF",
+        "value_usd": 2815
+      },
+      "apc_paid": {
+        "value": 2600,
+        "currency": "CHF",
+        "value_usd": 2815
+      },
+      "fwci": 1.9879,
+      "has_fulltext": true,
+      "cited_by_count": 31,
+      "citation_normalized_percentile": {
+        "value": 0.87078537,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 94,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "11",
+        "issue": "6",
+        "first_page": "1300",
+        "last_page": "1300"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.7660999894142151,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.7660999894142151,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13984",
+          "display_name": "Nutrition, Genetics, and Disease",
+          "score": 0.0868000015616417,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10215",
+          "display_name": "Semantic Web and Ontologies",
+          "score": 0.010499999858438969,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/nutritional-epidemiology",
+          "display_name": "Nutritional epidemiology",
+          "score": 0.620229959487915
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.5183842778205872
+        },
+        {
+          "id": "https://openalex.org/keywords/epidemiology",
+          "display_name": "Epidemiology",
+          "score": 0.45112696290016174
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.44911444187164307
+        },
+        {
+          "id": "https://openalex.org/keywords/content",
+          "display_name": "Content (measure theory)",
+          "score": 0.4424513578414917
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.3978922665119171
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.3766482174396515
+        },
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.3300006091594696
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.3268641531467438
+        },
+        {
+          "id": "https://openalex.org/keywords/food-science",
+          "display_name": "Food science",
+          "score": 0.3219444751739502
+        },
+        {
+          "id": "https://openalex.org/keywords/biology",
+          "display_name": "Biology",
+          "score": 0.14060300588607788
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics",
+          "display_name": "Mathematics",
+          "score": 0.13179552555084229
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.11339792609214783
+        },
+        {
+          "id": "https://openalex.org/keywords/epistemology",
+          "display_name": "Epistemology",
+          "score": 0.06800037622451782
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2775848727",
+          "wikidata": "https://www.wikidata.org/wiki/Q7070522",
+          "display_name": "Nutritional epidemiology",
+          "level": 3,
+          "score": 0.620229959487915
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.5183842778205872
+        },
+        {
+          "id": "https://openalex.org/C107130276",
+          "wikidata": "https://www.wikidata.org/wiki/Q133805",
+          "display_name": "Epidemiology",
+          "level": 2,
+          "score": 0.45112696290016174
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.44911444187164307
+        },
+        {
+          "id": "https://openalex.org/C2778152352",
+          "wikidata": "https://www.wikidata.org/wiki/Q5165061",
+          "display_name": "Content (measure theory)",
+          "level": 2,
+          "score": 0.4424513578414917
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.3978922665119171
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.3766482174396515
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3300006091594696
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.3268641531467438
+        },
+        {
+          "id": "https://openalex.org/C31903555",
+          "wikidata": "https://www.wikidata.org/wiki/Q1637030",
+          "display_name": "Food science",
+          "level": 1,
+          "score": 0.3219444751739502
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.14060300588607788
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.13179552555084229
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.11339792609214783
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.06800037622451782
+        },
+        {
+          "id": "https://openalex.org/C134306372",
+          "wikidata": "https://www.wikidata.org/wiki/Q7754",
+          "display_name": "Mathematical analysis",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000068598",
+          "descriptor_name": "Data Accuracy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000068598",
+          "descriptor_name": "Data Accuracy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000068598",
+          "descriptor_name": "Data Accuracy",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000078332",
+          "descriptor_name": "Data Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000078332",
+          "descriptor_name": "Data Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000078332",
+          "descriptor_name": "Data Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004032",
+          "descriptor_name": "Diet",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004032",
+          "descriptor_name": "Diet",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004032",
+          "descriptor_name": "Diet",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004812",
+          "descriptor_name": "Epidemiologic Methods",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004812",
+          "descriptor_name": "Epidemiologic Methods",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004812",
+          "descriptor_name": "Epidemiologic Methods",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D009626",
+          "descriptor_name": "Terminology as Topic",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D033181",
+          "descriptor_name": "Information Dissemination",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D033181",
+          "descriptor_name": "Information Dissemination",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D033181",
+          "descriptor_name": "Information Dissemination",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D035843",
+          "descriptor_name": "Biomedical Research",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D052756",
+          "descriptor_name": "Nutritional Sciences",
+          "qualifier_ui": "Q000592",
+          "qualifier_name": "standards",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": "Q000458",
+          "qualifier_name": "organization & administration",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": "Q000458",
+          "qualifier_name": "organization & administration",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": "Q000458",
+          "qualifier_name": "organization & administration",
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 8,
+      "locations": [
+        {
+          "id": "doi:10.3390/nu11061300",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/nu11061300",
+          "pdf_url": "https://www.mdpi.com/2072-6643/11/6/1300/pdf?version=1561262490",
+          "source": {
+            "id": "https://openalex.org/S110785341",
+            "display_name": "Nutrients",
+            "issn_l": "2072-6643",
+            "issn": [
+              "2072-6643"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nutrients",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:31181762",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31181762",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nutrients",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:archive.ugent.be:8621928",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/1854/LU-8621928",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400478",
+            "display_name": "Ghent University Academic Bibliography (Ghent University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I32597200",
+            "host_organization_name": "Ghent University",
+            "host_organization_lineage": [
+              "https://openalex.org/I32597200"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "ISSN: 2072-6643",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:2b75e604aaa840a9a034aba7817dec58",
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/2b75e604aaa840a9a034aba7817dec58",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nutrients, Vol 11, Iss 6, p 1300 (2019)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:mdpi.com:/2072-6643/11/6/1300/",
+          "is_oa": true,
+          "landing_page_url": "http://dx.doi.org/10.3390/nu11061300",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400947",
+            "display_name": "MDPI (MDPI AG)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210097602",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute (Switzerland)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210097602"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nutrients",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:6628051",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6628051",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nutrients",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:tudelft.nl:uuid:cea4d023-5965-48b5-8ba0-b656c1f9c833",
+          "is_oa": false,
+          "landing_page_url": "http://resolver.tudelft.nl/uuid:cea4d023-5965-48b5-8ba0-b656c1f9c833",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402238",
+            "display_name": "Repository hosted by TU Delft Library (TU Delft)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98358874",
+            "host_organization_name": "Delft University of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I98358874"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nutrients, 6, 11, 8 June",
+          "raw_type": "article"
+        },
+        {
+          "id": "doi:10.25504/fairsharing.usxx0k",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.25504/fairsharing.usxx0k",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407053452",
+            "display_name": "FAIRsharing.org",
+            "issn_l": null,
+            "issn": [],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3390/nu11061300",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/nu11061300",
+        "pdf_url": "https://www.mdpi.com/2072-6643/11/6/1300/pdf?version=1561262490",
+        "source": {
+          "id": "https://openalex.org/S110785341",
+          "display_name": "Nutrients",
+          "issn_l": "2072-6643",
+          "issn": [
+            "2072-6643"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nutrients",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Zero hunger",
+          "score": 0.75,
+          "id": "https://metadata.un.org/sdg/2"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G7219811706",
+          "display_name": "JPI HDHL ENPADASI",
+          "funder_award_id": "G0D4815N",
+          "funder_id": "https://openalex.org/F4320321730",
+          "funder_display_name": "Fonds Wetenschappelijk Onderzoek"
+        },
+        {
+          "id": "https://openalex.org/G899333419",
+          "display_name": null,
+          "funder_award_id": "201507650002",
+          "funder_id": "https://openalex.org/F4320322725",
+          "funder_display_name": "China Scholarship Council"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321730",
+          "display_name": "Fonds Wetenschappelijk Onderzoek",
+          "ror": "https://ror.org/03qtxy027"
+        },
+        {
+          "id": "https://openalex.org/F4320322725",
+          "display_name": "China Scholarship Council",
+          "ror": "https://ror.org/04atp4p48"
+        },
+        {
+          "id": "https://openalex.org/F4320327336",
+          "display_name": "Vlaamse regering",
+          "ror": null
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2948801580.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2948801580.grobid-xml"
+      },
+      "referenced_works_count": 57,
+      "referenced_works": [
+        "https://openalex.org/W246286872",
+        "https://openalex.org/W1577425432",
+        "https://openalex.org/W1580457945",
+        "https://openalex.org/W1654805921",
+        "https://openalex.org/W1871852719",
+        "https://openalex.org/W2002463857",
+        "https://openalex.org/W2012975414",
+        "https://openalex.org/W2032541700",
+        "https://openalex.org/W2040607104",
+        "https://openalex.org/W2045729458",
+        "https://openalex.org/W2045887661",
+        "https://openalex.org/W2049321668",
+        "https://openalex.org/W2077044157",
+        "https://openalex.org/W2093152548",
+        "https://openalex.org/W2107712133",
+        "https://openalex.org/W2113142309",
+        "https://openalex.org/W2122435612",
+        "https://openalex.org/W2122908200",
+        "https://openalex.org/W2123656165",
+        "https://openalex.org/W2131660156",
+        "https://openalex.org/W2149040964",
+        "https://openalex.org/W2149874581",
+        "https://openalex.org/W2156098321",
+        "https://openalex.org/W2161102743",
+        "https://openalex.org/W2162427312",
+        "https://openalex.org/W2163068967",
+        "https://openalex.org/W2218936605",
+        "https://openalex.org/W2302501749",
+        "https://openalex.org/W2319983832",
+        "https://openalex.org/W2508371170",
+        "https://openalex.org/W2532893037",
+        "https://openalex.org/W2552962015",
+        "https://openalex.org/W2599076725",
+        "https://openalex.org/W2618498494",
+        "https://openalex.org/W2620105395",
+        "https://openalex.org/W2750241868",
+        "https://openalex.org/W2754102093",
+        "https://openalex.org/W2765477195",
+        "https://openalex.org/W2773787581",
+        "https://openalex.org/W2776954001",
+        "https://openalex.org/W2782145796",
+        "https://openalex.org/W2788353510",
+        "https://openalex.org/W2790092110",
+        "https://openalex.org/W2790731199",
+        "https://openalex.org/W2797727324",
+        "https://openalex.org/W2802844983",
+        "https://openalex.org/W2803874636",
+        "https://openalex.org/W2889722506",
+        "https://openalex.org/W2903298154",
+        "https://openalex.org/W3022423927",
+        "https://openalex.org/W3124627165",
+        "https://openalex.org/W3144045493",
+        "https://openalex.org/W3160709674",
+        "https://openalex.org/W4248429808",
+        "https://openalex.org/W4293254419",
+        "https://openalex.org/W4294215472",
+        "https://openalex.org/W6683722246"
+      ],
+      "related_works": [
+        "https://openalex.org/W2003333417",
+        "https://openalex.org/W599478544",
+        "https://openalex.org/W1576711507",
+        "https://openalex.org/W647896512",
+        "https://openalex.org/W3121757313",
+        "https://openalex.org/W562084794",
+        "https://openalex.org/W4245070045",
+        "https://openalex.org/W2398530805",
+        "https://openalex.org/W2394586642",
+        "https://openalex.org/W4395098123"
+      ],
+      "abstract_inverted_index": {
+        "BACKGROUND:": [
+          0
+        ],
+        "The": [
+          1,
+          93
+        ],
+        "use": [
+          2
+        ],
+        "of": [
+          3,
+          41,
+          111,
+          137,
+          148,
+          154,
+          166,
+          183
+        ],
+        "linked": [
+          4
+        ],
+        "data": [
+          5,
+          80,
+          174,
+          192
+        ],
+        "in": [
+          6,
+          44,
+          76,
+          96,
+          104,
+          124,
+          151,
+          205
+        ],
+        "the": [
+          7,
+          24,
+          39,
+          49,
+          97,
+          109,
+          112,
+          119,
+          181
+        ],
+        "Semantic": [
+          8
+        ],
+        "Web": [
+          9
+        ],
+        "is": [
+          10,
+          187
+        ],
+        "a": [
+          11,
+          64,
+          105,
+          152,
+          188
+        ],
+        "promising": [
+          12
+        ],
+        "approach": [
+          13
+        ],
+        "to": [
+          14,
+          17,
+          56,
+          69,
+          131,
+          172,
+          179,
+          190,
+          201
+        ],
+        "add": [
+          15
+        ],
+        "value": [
+          16
+        ],
+        "nutrition": [
+          18
+        ],
+        "research.": [
+          19
+        ],
+        "An": [
+          20
+        ],
+        "ontology,": [
+          21
+        ],
+        "which": [
+          22
+        ],
+        "defines": [
+          23
+        ],
+        "logical": [
+          25
+        ],
+        "relationships": [
+          26
+        ],
+        "between": [
+          27
+        ],
+        "well-defined": [
+          28
+        ],
+        "taxonomic": [
+          29,
+          106
+        ],
+        "terms,": [
+          30
+        ],
+        "enables": [
+          31
+        ],
+        "linking": [
+          32
+        ],
+        "and": [
+          33,
+          82,
+          101,
+          118,
+          140,
+          145,
+          162,
+          175,
+          195,
+          197
+        ],
+        "harmonizing": [
+          34
+        ],
+        "research": [
+          35
+        ],
+        "output.": [
+          36
+        ],
+        "To": [
+          37
+        ],
+        "enable": [
+          38
+        ],
+        "description": [
+          40
+        ],
+        "domain-specific": [
+          42
+        ],
+        "output": [
+          43
+        ],
+        "nutritional": [
+          45,
+          60,
+          86,
+          113,
+          206
+        ],
+        "epidemiology,": [
+          46
+        ],
+        "we": [
+          47
+        ],
+        "propose": [
+          48
+        ],
+        "Ontology": [
+          50
+        ],
+        "for": [
+          51,
+          59,
+          74,
+          85
+        ],
+        "Nutritional": [
+          52
+        ],
+        "Epidemiology": [
+          53
+        ],
+        "(ONE)": [
+          54
+        ],
+        "according": [
+          55
+        ],
+        "authoritative": [
+          57
+        ],
+        "guidance": [
+          58
+        ],
+        "epidemiology.": [
+          61,
+          207
+        ],
+        "METHODS:": [
+          62
+        ],
+        "Firstly,": [
+          63
+        ],
+        "scoping": [
+          65
+        ],
+        "review": [
+          66
+        ],
+        "was": [
+          67
+        ],
+        "conducted": [
+          68
+        ],
+        "identify": [
+          70
+        ],
+        "existing": [
+          71,
+          79,
+          138
+        ],
+        "ontology": [
+          72
+        ],
+        "terms": [
+          73,
+          94
+        ],
+        "reuse": [
+          75
+        ],
+        "ONE.": [
+          77,
+          125
+        ],
+        "Secondly,": [
+          78
+        ],
+        "standards": [
+          81,
+          98
+        ],
+        "reporting": [
+          83,
+          116,
+          149,
+          203
+        ],
+        "guidelines": [
+          84
+        ],
+        "epidemiology": [
+          87
+        ],
+        "were": [
+          88,
+          99,
+          122,
+          129,
+          160
+        ],
+        "converted": [
+          89
+        ],
+        "into": [
+          90
+        ],
+        "an": [
+          91
+        ],
+        "ontology.": [
+          92
+        ],
+        "used": [
+          95,
+          200
+        ],
+        "summarized": [
+          100
+        ],
+        "listed": [
+          102
+        ],
+        "separately": [
+          103
+        ],
+        "hierarchy.": [
+          107
+        ],
+        "Thirdly,": [
+          108
+        ],
+        "ontologies": [
+          110
+        ],
+        "epidemiologic": [
+          114
+        ],
+        "standards,": [
+          115
+        ],
+        "guidelines,": [
+          117
+        ],
+        "core": [
+          120
+        ],
+        "concepts": [
+          121
+        ],
+        "gathered": [
+          123
+        ],
+        "Three": [
+          126
+        ],
+        "case": [
+          127
+        ],
+        "studies": [
+          128
+        ],
+        "included": [
+          130
+        ],
+        "illustrate": [
+          132
+        ],
+        "potential": [
+          133
+        ],
+        "applications:": [
+          134
+        ],
+        "(i)": [
+          135
+        ],
+        "annotation": [
+          136
+        ],
+        "manuscripts": [
+          139
+        ],
+        "data,": [
+          141
+        ],
+        "(ii)": [
+          142
+        ],
+        "ontology-based": [
+          143
+        ],
+        "inference,": [
+          144
+        ],
+        "(iii)": [
+          146
+        ],
+        "estimation": [
+          147
+        ],
+        "completeness": [
+          150,
+          204
+        ],
+        "sample": [
+          153
+        ],
+        "nine": [
+          155
+        ],
+        "manuscripts.": [
+          156,
+          184
+        ],
+        "RESULTS:": [
+          157
+        ],
+        "=": [
+          158
+        ],
+        "44)": [
+          159
+        ],
+        "reviewed": [
+          161
+        ],
+        "listed.": [
+          163
+        ],
+        "ONE": [
+          164,
+          186
+        ],
+        "consists": [
+          165
+        ],
+        "339": [
+          167
+        ],
+        "classes:": [
+          168
+        ],
+        "79": [
+          169
+        ],
+        "new": [
+          170,
+          177
+        ],
+        "classes": [
+          171,
+          178
+        ],
+        "describe": [
+          173,
+          180
+        ],
+        "24": [
+          176
+        ],
+        "content": [
+          182
+        ],
+        "CONCLUSION:": [
+          185
+        ],
+        "resource": [
+          189
+        ],
+        "automate": [
+          191
+        ],
+        "integration,": [
+          193
+        ],
+        "searching,": [
+          194
+        ],
+        "browsing,": [
+          196
+        ],
+        "can": [
+          198
+        ],
+        "be": [
+          199
+        ],
+        "assess": [
+          202
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 9
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

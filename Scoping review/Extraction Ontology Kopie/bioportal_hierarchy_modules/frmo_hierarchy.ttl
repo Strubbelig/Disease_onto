@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/frmo_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=09.10, released=2023-03-28T00:00:00.000+00:00, creationDate=2025-02-27T17:41:54.000-08:00, submissionId=19" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Consequences_Of_Falls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Consequences_Of_Falls> <http://www.w3.org/2000/01/rdf-schema#label> "Consequences of Falls" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://purl.obolibrary.org/obo/IAO_0000115> "Cut And Laceration" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://purl.org/dc/terms/source> "review target in FRMO from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://www.w3.org/2000/01/rdf-schema#comment> "Cut And Laceration" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Physical> .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury> <http://www.w3.org/2004/02/skos/core#altLabel> "Laceration/cut" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Physical> <http://www.w3.org/2000/01/rdf-schema#label> "Physical" .
+<http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Physical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Consequences_Of_Falls> .

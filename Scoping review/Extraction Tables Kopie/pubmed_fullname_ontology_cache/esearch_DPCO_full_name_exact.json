@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "592",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39952201",
+      "37499457",
+      "34657574",
+      "37480090",
+      "38759318",
+      "34718329",
+      "34824300",
+      "35372585",
+      "40865347",
+      "39723533"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"diabete\"[All Fields] OR \"diabetes mellitus\"[MeSH Terms] OR (\"diabetes\"[All Fields] AND \"mellitus\"[All Fields]) OR \"diabetes mellitus\"[All Fields] OR \"diabetes\"[All Fields] OR \"diabetes insipidus\"[MeSH Terms] OR (\"diabetes\"[All Fields] AND \"insipidus\"[All Fields]) OR \"diabetes insipidus\"[All Fields] OR \"diabetic\"[All Fields] OR \"diabetics\"[All Fields] OR \"diabets\"[All Fields]) AND (\"pharmacology\"[MeSH Terms] OR \"pharmacology\"[All Fields] OR \"pharmacologies\"[All Fields] OR \"pharmacology\"[MeSH Subheading]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Diabetes Pharmacology Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

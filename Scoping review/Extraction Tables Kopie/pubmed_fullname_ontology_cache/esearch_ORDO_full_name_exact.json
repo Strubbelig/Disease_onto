@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "15",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36776767",
+      "36149471",
+      "37147628",
+      "37759342",
+      "36824742",
+      "29425702",
+      "39375687",
+      "34891745",
+      "29295229",
+      "35292119"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Orphanet Rare Disease Ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "686",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "37076585",
+      "36747660",
+      "38686385",
+      "36303779",
+      "37807632",
+      "18077472",
+      "41052288",
+      "36015549",
+      "41191606",
+      "31749418"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields]) AND (\"biological products\"[Supplementary Concept] OR \"biological products\"[All Fields] OR \"biologic\"[All Fields] OR \"biological products\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"products\"[All Fields]) OR \"biological\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biologicals\"[All Fields] OR \"biological factors\"[Supplementary Concept] OR \"biological factors\"[All Fields] OR \"biological factors\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"factors\"[All Fields]) OR \"biologics\"[All Fields] OR \"biologically\"[All Fields]) AND (\"attributable\"[All Fields] OR \"attribute\"[All Fields] OR \"attribute s\"[All Fields] OR \"attributed\"[All Fields] OR \"attributes\"[All Fields] OR \"attributing\"[All Fields] OR \"attribution\"[All Fields] OR \"attributional\"[All Fields] OR \"attributions\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Ontology of Biological Attributes\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

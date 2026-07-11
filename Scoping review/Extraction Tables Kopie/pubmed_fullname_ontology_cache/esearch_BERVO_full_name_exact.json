@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "100",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "36823605",
+      "40618553",
+      "37255566",
+      "35047859",
+      "33232313",
+      "35387429",
+      "32143025",
+      "35397190",
+      "41177129",
+      "35409038"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"biological products\"[Supplementary Concept] OR \"biological products\"[All Fields] OR \"biologic\"[All Fields] OR \"biological products\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"products\"[All Fields]) OR \"biological\"[All Fields] OR \"biology\"[MeSH Terms] OR \"biology\"[All Fields] OR \"biologicals\"[All Fields] OR \"biological factors\"[Supplementary Concept] OR \"biological factors\"[All Fields] OR \"biological factors\"[MeSH Terms] OR (\"biological\"[All Fields] AND \"factors\"[All Fields]) OR \"biologics\"[All Fields] OR \"biologically\"[All Fields]) AND (\"environ res\"[Journal] OR \"environ res food syst\"[Journal] OR \"environ res energy\"[Journal] OR (\"environmental\"[All Fields] AND \"research\"[All Fields]) OR \"environmental research\"[All Fields]) AND (\"variabilities\"[All Fields] OR \"variability\"[All Fields] OR \"variable\"[All Fields] OR \"variable s\"[All Fields] OR \"variables\"[All Fields] OR \"variably\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"The Biological and Environmental Research Variable Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

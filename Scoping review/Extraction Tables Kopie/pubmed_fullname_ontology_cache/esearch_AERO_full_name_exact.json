@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "110",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "29058218",
+      "33969520",
+      "36791465",
+      "40552149",
+      "25157320",
+      "35401219",
+      "27749923",
+      "30195820",
+      "25093068",
+      "38915743"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"adverse\"[All Fields] OR \"adversely\"[All Fields] OR \"adverses\"[All Fields]) AND (\"event\"[All Fields] OR \"event s\"[All Fields] OR \"events\"[All Fields]) AND (\"reportable\"[All Fields] OR \"reporting\"[All Fields] OR \"reportings\"[All Fields] OR \"research report\"[MeSH Terms] OR (\"research\"[All Fields] AND \"report\"[All Fields]) OR \"research report\"[All Fields] OR \"report\"[All Fields] OR \"reported\"[All Fields] OR \"reports\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Adverse Event Reporting Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

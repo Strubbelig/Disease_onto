@@ -1,0 +1,58 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/ncit_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for NCIT; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=26.06e, released=2026-07-02T18:07:00.000-07:00, creationDate=2026-07-02T00:00:00.000+00:00, submissionId=149; BioPortal: version=0.5, released=2018-06-19T00:00:00.000+00:00, creationDate=2018-06-19T10:41:28.000-07:00, submissionId=8; BioPortal: released=2025-06-04T00:00:00.000+00:00, creationDate=2025-06-04T00:00:00.000+00:00, submissionId=6; BioPortal: version=Light, released=2018-12-21T00:00:00.000+00:00, creationDate=2019-01-25T12:16:23.000-08:00, submissionId=2; BioPortal: version=26.05d, released=2026-06-02T18:11:57.000-07:00, creationDate=2026-06-02T00:00:00.000+00:00, submissionId=148" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20189> <http://www.w3.org/2000/01/rdf-schema#label> "Property or Attribute" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being, such as a state of health." .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://purl.org/dc/terms/source> "generated review target module for NCIT from disease_terms_review_enriched.csv" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C27993> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://www.w3.org/2004/02/skos/core#altLabel> "Condition" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457> <http://www.w3.org/2004/02/skos/core#altLabel> "Conditions" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C27993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C27993> <http://www.w3.org/2000/01/rdf-schema#label> "General Qualifier" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://purl.obolibrary.org/obo/IAO_0000115> "A group of signs, symptoms, and clinicopathological characteristics that may or may not have a genetic basis and collectively define an abnormal condition." .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://purl.org/dc/terms/source> "generated review target module for NCIT from disease_terms_review_enriched.csv" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://www.w3.org/2004/02/skos/core#altLabel> "Syndrome" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193> <http://www.w3.org/2004/02/skos/core#altLabel> "syndrome" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://purl.obolibrary.org/obo/IAO_0000115> "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function." .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://purl.org/dc/terms/source> "generated review target module for NCIT from disease_terms_review_enriched.csv" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2000/01/rdf-schema#label> "Disease or Disorder" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Condition" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Diagnosis" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease or Disorder" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease or Disorder, Non-Neoplastic" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Diseases" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Diseases and Disorders" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Disorder" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Disorders" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "Other Disease" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disease term" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disease type" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disease_term" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disease_type" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://purl.obolibrary.org/obo/IAO_0000115> "Disturbance, impairment or abnormality of function." .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://purl.org/dc/terms/source> "generated review target module for NCIT from disease_terms_review_enriched.csv" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://www.w3.org/2000/01/rdf-schema#label> "Dysfunction" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20189> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://www.w3.org/2004/02/skos/core#altLabel> "Dysfunction" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526> <http://www.w3.org/2004/02/skos/core#altLabel> "dysfunction" .

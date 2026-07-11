@@ -7,7 +7,7 @@
 <https://example.org/disease-review/modules/pgxo_fallback_hierarchy> a owl:Ontology ;
     dcterms:source "Generated review target module for PGXO; source API hierarchy module was missing or incomplete" ;
     owl:versionInfo "BioPortal: version=0.4, released=2018-09-20T00:00:00.000+00:00, creationDate=2018-09-20T11:27:42.000-07:00, submissionId=4" ;
-    dcterms:created "2026-07-03T12:41:43-04:00" ;
+    dcterms:created "2026-07-10T19:42:24-04:00" ;
     rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
 
 <http://pgxo.loria.fr/Disease> <http://purl.org/dc/terms/source> "generated review target module for PGXO from disease_terms_review_enriched.csv" .

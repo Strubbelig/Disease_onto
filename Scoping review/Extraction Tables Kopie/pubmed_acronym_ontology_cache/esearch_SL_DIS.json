@@ -1,0 +1,26 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "38355534",
+      "37386457"
+    ],
+    "translationset": [
+      {
+        "from": "DIS",
+        "to": "\"Drosoph Inf Serv\"[Journal:__jid8500325] OR \"DIS (Des Interact Syst Conf)\"[Journal:__jid101709716] OR \"dis\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"SL\"[All Fields] AND (\"dis des interact syst conf\"[Journal] OR \"dis\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

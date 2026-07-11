@@ -1,0 +1,30 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "39811705",
+      "28187367",
+      "37359058",
+      "21406352",
+      "37301740",
+      "38477963",
+      "39222110",
+      "41959815",
+      "18922738",
+      "21347152"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "\"Health_ontology\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

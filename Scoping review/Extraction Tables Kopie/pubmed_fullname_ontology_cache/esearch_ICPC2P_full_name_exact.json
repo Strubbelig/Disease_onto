@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"internation\"[All Fields] OR \"international\"[All Fields] OR \"international s\"[All Fields] OR \"internationals\"[All Fields]) AND (\"classification\"[MeSH Terms] OR \"classification\"[All Fields] OR \"classifications\"[All Fields] OR \"classification\"[MeSH Subheading] OR \"classification s\"[All Fields] OR \"classificator\"[All Fields] OR \"classificators\"[All Fields]) AND (\"primary health care\"[MeSH Terms] OR (\"primary\"[All Fields] AND \"health\"[All Fields] AND \"care\"[All Fields]) OR \"primary health care\"[All Fields] OR (\"primary\"[All Fields] AND \"care\"[All Fields]) OR \"primary care\"[All Fields]) AND \"2\"[All Fields] AND \"plus\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"International Classification of Primary Care - 2 PLUS\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

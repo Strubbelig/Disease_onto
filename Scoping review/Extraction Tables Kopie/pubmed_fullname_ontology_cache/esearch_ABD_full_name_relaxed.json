@@ -1,0 +1,40 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Anthology",
+        "to": "\"anthologies\"[All Fields] OR \"anthology\"[All Fields]"
+      },
+      {
+        "from": "Biosurveillance",
+        "to": "\"biosurveillance\"[MeSH Terms] OR \"biosurveillance\"[All Fields]"
+      },
+      {
+        "from": "Diseases",
+        "to": "\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease's\"[All Fields] OR \"diseased\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"anthologies\"[All Fields] OR \"anthology\"[All Fields]) AND (\"biosurveillance\"[MeSH Terms] OR \"biosurveillance\"[All Fields]) AND (\"disease\"[MeSH Terms] OR \"disease\"[All Fields] OR \"diseases\"[All Fields] OR \"disease s\"[All Fields] OR \"diseased\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [
+        "of"
+      ],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

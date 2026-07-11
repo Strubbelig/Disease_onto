@@ -1,0 +1,66 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/dpco_hierarchy> a owl:Ontology ;
+    dcterms:source "BioPortal API hierarchy extraction" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2022-10-31T00:00:00.000+00:00, creationDate=2022-12-18T07:38:21.000-08:00, submissionId=2" ;
+    dcterms:created "2026-07-01T10:24:59-04:00" ;
+    rdfs:comment "Contains review target classes, BioPortal ancestors, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/NCIT_C19591> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C19591> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Factor" .
+<http://purl.obolibrary.org/obo/NCIT_C19591> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/ExternalClass> .
+<http://purl.obolibrary.org/obo/NCIT_C19591> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/Thing> .
+<http://purl.obolibrary.org/obo/NCIT_C20189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C20189> <http://www.w3.org/2000/01/rdf-schema#label> "Property or Attribute" .
+<http://purl.obolibrary.org/obo/NCIT_C20189> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/ExternalClass> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic" .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C19591> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C20189> .
+<http://purl.obolibrary.org/obo/NCIT_C25447> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/DiagnosticFactor> .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://purl.org/dc/terms/source> "review target in DPCO from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25447> .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C27993> .
+<http://purl.obolibrary.org/obo/NCIT_C25457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/PatientCharacteristic> .
+<http://purl.obolibrary.org/obo/NCIT_C27993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C27993> <http://www.w3.org/2000/01/rdf-schema#label> "General Qualifier" .
+<http://purl.obolibrary.org/obo/NCIT_C27993> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C20189> .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://www.w3.org/2000/01/rdf-schema#label> "Disease, Disorder or Finding" .
+<http://purl.obolibrary.org/obo/NCIT_C7057> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/ExternalClass> .
+<http://purl.org/twc/dpo/ont/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being, such as a state of health. [Definition Source: NCI]" .
+<http://purl.org/twc/dpo/ont/Condition> <http://purl.org/dc/terms/source> "review target in DPCO from disease_terms_review_enriched.csv" .
+<http://purl.org/twc/dpo/ont/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://purl.org/twc/dpo/ont/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25447> .
+<http://purl.org/twc/dpo/ont/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C27993> .
+<http://purl.org/twc/dpo/ont/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/PatientCharacteristic> .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "A biological, physiological, behavioral, or molecular indicator of the presence or predisposition towards development of a specific disease. [Definition Source: NCI]" .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "A circumstance influencing the dianosis of a disease." .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Factor" .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/ExternalClass> .
+<http://purl.org/twc/dpo/ont/DiagnosticFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/Thing> .
+<http://purl.org/twc/dpo/ont/Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. [Definition Source: NCI]" .
+<http://purl.org/twc/dpo/ont/Disease> <http://purl.org/dc/terms/source> "review target in DPCO from disease_terms_review_enriched.csv" .
+<http://purl.org/twc/dpo/ont/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.org/twc/dpo/ont/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C25447> .
+<http://purl.org/twc/dpo/ont/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C7057> .
+<http://purl.org/twc/dpo/ont/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/PatientCharacteristic> .
+<http://purl.org/twc/dpo/ont/ExternalClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/ExternalClass> <http://www.w3.org/2000/01/rdf-schema#label> "External Class" .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://purl.obolibrary.org/obo/IAO_0000115> "The distinguishing qualities or prominent aspect of a person. [Definition Source: NCI]" .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Characteristic" .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C19591> .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/NCIT_C20189> .
+<http://purl.org/twc/dpo/ont/PatientCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/dpo/ont/DiagnosticFactor> .
+<http://purl.org/twc/dpo/ont/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/dpo/ont/Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .

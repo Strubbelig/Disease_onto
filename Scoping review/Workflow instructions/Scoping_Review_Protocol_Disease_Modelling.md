@@ -10,7 +10,7 @@ Comparative treatments of how disease should be modelled exist only as **preambl
 
 ## 2. Review questions
 
-**Primary.** How is *disease* (and its immediate neighbours — disorder, pathological process, abnormal state, disease course) formally defined and represented across biomedical ontologies and ontology-engineering proposals, and what design commitments distinguish these approaches?
+**Primary.** How is *disease* (and its immediate neighbours — disorder, pathological process, abnormal state) formally defined and represented across biomedical ontologies and ontology-engineering proposals, and what design commitments distinguish these approaches?
 
 **Secondary.**
 - S1. Which top-level/foundational ontology (BFO, DOLCE, YAMATO, BioTop, GFO, none) does each approach commit to, and how does that constrain the disease model?
@@ -35,7 +35,7 @@ Scoping review following **Arksey & O'Malley (2005)** as refined by **Levac et a
 
 **Population/Participants:** not applicable in the clinical sense; the unit of analysis is a *formal account or artifact* that defines/represents disease.
 
-**Concept:** the source must make an explicit **ontological or formal-representational commitment about what a disease (or disorder / pathological process / disease course) is** — a definition, axiomatisation, design pattern, or critique thereof.
+**Concept:** the source must make an explicit **ontological or formal-representational commitment about what a disease (or disorder / pathological process / abnormal state) is** — a definition, axiomatisation, design pattern, or critique thereof.
 
 **Context:** biomedical/clinical knowledge representation, applied/formal ontology, biomedical informatics, philosophy of medicine *where cited by or directly informing a formal model*.
 
@@ -50,6 +50,7 @@ Scoping review following **Arksey & O'Malley (2005)** as refined by **Levac et a
 - E2. Clinical/epidemiological "disease modelling" in the *mathematical/simulation* sense (compartmental models, etc.) — homonym, out of scope; **flag explicitly** because the keyword "disease modelling" retrieves these.
 - E3. Pure philosophy of medicine with no connection to formal/computational representation (covered by a *separate* review; cite, don't chart).
 - E4. Abstracts/posters without a retrievable full account.
+- E5. Injury-only classes or ontologies retrieved by registry searches are out of scope for this disease-modelling review. Injury may be clinically related to disease, but it is not treated as a disease synonym and usually carries a different modelling commitment. These hits are recorded as term-scope exclusions for the flow diagram, but they are not included in the review ontology's active class set or independent synthesis.
 
 ## 6. Information sources
 
@@ -63,15 +64,31 @@ Scoping review following **Arksey & O'Malley (2005)** as refined by **Levac et a
 
 Adapt per database; record full strings in an appendix. Core concept blocks combined with AND:
 
-- **Disease block:** disease OR disorder OR "pathological process" OR "abnormal state" OR nosolog* OR "disease course" OR pathologic*
+- **Disease block:** disease OR disorder OR "pathological process" OR "abnormal state" OR nosolog* OR pathologic*
 - **Ontology block:** ontolog* OR "knowledge representation" OR "formal definition" OR axiom* OR "description logic" OR OWL OR "top-level ontology" OR BFO OR DOLCE OR OGMS OR taxonom*
 - **Commitment block (to raise precision):** disposition OR continuant OR occurrent OR "causal chain" OR process OR realiz* OR "definition of disease" OR represent*
 
 Pilot the string, report sensitivity, then freeze. Use the seed set (§9) as a **known-item validation**: a good strategy must retrieve all of them.
 
+For ontology-registry extraction, use a two-tier term strategy. The primary exact-label tier searches the main disease-neighbour terms (`disease`, `disorder`, `illness`, `condition`, `syndrome`, `pathological process`, `pathological disposition`, `dysfunction`). A secondary sensitivity tier is then used to reduce false negatives from alternative root labels. Broad supplementary terms such as `pathological condition`, `pathological state`, `disease state`, `pathologic process`, and `morbid condition` are retained only for source ontologies that had no primary-term hit. Specific compound disease/disorder labels such as `DiseaseDisorderOrFinding`, `Disease or disorder`, and `Disease or syndrome` are retained as candidate disease-root classes because they may represent the relevant modelling class even when the same ontology also contains a generic `condition` class. Secondary-tier hits are marked with `discovery_tier = secondary_compound_label_sensitivity`.
+
+`Pathological process` is treated as a disease-neighbour/fallback signal rather than as an ordinary disease synonym. If a source ontology already has a stronger disease-like review target (`disease`, `disorder`, `condition`, `syndrome`, etc.), its `pathological process` class is suppressed from the active class-review list and recorded as contextual vocabulary for the flow/audit tables. If no stronger disease-like target is found in that source ontology, `pathological process` remains eligible as a process-based candidate.
+
+Non-canonical classes that explicitly declare `skos:exactMatch` to an already represented canonical disease-model class are treated as semantic reuses rather than independent modelling proposals, unless manual inspection shows that the source adds a materially different definition, superclass, or axiom pattern. The automated exclusion rule is intentionally conservative: it uses only ontology-authored `skos:exactMatch` metadata to recognised canonical disease-model roots (e.g. DOID, MONDO, OGMS, NCIT disease roots), not BioPortal LOOM mappings. Such rows are suppressed from the active class-review ontology/UI but retained in extraction and source-appearance tables with the exact-match target and a no-independent-analysis recommendation; canonical/reference roots remain reviewable as comparison anchors.
+
+Likewise, source appearances whose class IRI resolves to a different native ontology namespace are treated as imported or reused vocabulary. They remain in the comprehensive extraction and source-appearance tables to document that the source ontology contains a disease-related term, but they are not exported to the active class-review ontology/UI for independent modelling assessment. The modelling assessment is assigned to the native class provider instead.
+
+Classes with `rdfs:isDefinedBy` pointing to an external ontology class are treated as externally defined class reuses. They are retained in the comprehensive extraction and source-appearance tables with the defining class IRI, but suppressed from the active class-review ontology/UI unless manual inspection shows that the source ontology adds a materially different definition, superclass, or axiom pattern. `dcterms:conformsTo` is recorded as provenance/cross-reference evidence but is not by itself used as an exclusion criterion.
+
+When manual hierarchy inspection identifies a better native disease-model candidate in the same ontology than the initially extracted label hit, the active review target may be refined. The replaced class remains recorded in the extraction provenance and flow-exclusion table under `replaced_by_better_native_disease_model_candidate`, while the replacement class is added to the active review ontology/UI.
+
+Risk, susceptibility, predisposition, and disease-course terms are not treated as disease synonyms. They may be recorded as contextual evidence about a source ontology's disease-modelling vocabulary, but they are not active class-review targets for the disease-model synthesis unless the ontology explicitly models disease itself through such a class.
+
+The literature/document search remains language-scoped to English, with German retained for the Hucklenbroich/Krankheitstheorie strand. This language restriction does not exclude ontology artifact classes solely because their labels are non-English. For ontology artifacts, apply a small multilingual label-sensitivity pass for French and German disease/disorder equivalents (e.g. `maladie`, `trouble`, `condition pathologique`, `Krankheit`, `Erkrankung`, `Störung`). These hits are marked with `discovery_tier = multilingual_label_sensitivity` and enter the same ontology-based review workflow.
+
 ## 8. Ontology-Based Data Charting
 
-The primary charting object is an OWL class in the review ontology, not a spreadsheet row. Each reviewed disease, disorder, pathological process, abnormal state, or disease-course class is represented by its class IRI. The review ontology imports the relevant source module so the reviewer can inspect labels, definitions, axioms, and superclass hierarchy directly in Protege.
+The primary charting object is an OWL class in the review ontology, not a spreadsheet row. Each reviewed disease, disorder, condition, syndrome, abnormal state, or fallback pathological-process class is represented by its class IRI. The review ontology imports the relevant source module so the reviewer can inspect labels, definitions, axioms, and superclass hierarchy directly in Protege.
 
 Tables may be generated from the ontology for QA and reporting, but the durable review source is the ontology itself. Draft annotation dimensions — pilot on 5-10 sources/classes, then revise (Levac iterative step):
 
@@ -100,6 +117,12 @@ For ontology artifacts, class-level annotations should be attached directly to t
 ### Native definition vs imported dependency
 
 Ontology registries frequently report the same disease class IRI in many ontologies because the class is imported or reused. These appearances are not counted as independent disease-modelling commitments. For example, an application ontology that contains OGMS `disease` only through import is listed as an ontology appearance, but the disease model is charted and cited once under OGMS.
+
+The artifact pipeline also applies a term-scope screen before class-level review. `Injury` hits are excluded at this stage because injury is not used as a synonym for disease in the review question. The excluded source appearances are kept in the generated exclusion table so the PRISMA-ScR-style flow diagram can report them transparently.
+
+The artifact pipeline records whether a reviewed class was found in the primary exact-label tier or in the secondary sensitivity tier. Secondary hits enter the same class-level review workflow, but their discovery route is preserved as review context and should be reported separately in the methods/results.
+
+Multilingual label-sensitivity hits are also preserved with their own discovery tier. They are not evidence that the literature language scope has changed; they are ontology-artifact evidence that a formally inspectable class was labelled in another language.
 
 Therefore the artifact track reports two counts:
 

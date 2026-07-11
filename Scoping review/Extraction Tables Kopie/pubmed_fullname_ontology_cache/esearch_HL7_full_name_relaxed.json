@@ -1,0 +1,46 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "Health Level Seven",
+        "to": "\"health level seven\"[MeSH Terms] OR (\"health\"[All Fields] AND \"level\"[All Fields] AND \"seven\"[All Fields]) OR \"health level seven\"[All Fields]"
+      },
+      {
+        "from": "Reference",
+        "to": "\"refer\"[All Fields] OR \"referal\"[All Fields] OR \"referals\"[All Fields] OR \"refered\"[All Fields] OR \"reference\"[All Fields] OR \"references\"[All Fields] OR \"referred\"[All Fields] OR \"referring\"[All Fields] OR \"refers\"[All Fields]"
+      },
+      {
+        "from": "Implementation",
+        "to": "\"implementability\"[All Fields] OR \"implementable\"[All Fields] OR \"implementation\"[All Fields] OR \"implementation's\"[All Fields] OR \"implementational\"[All Fields] OR \"implementations\"[All Fields] OR \"implementer\"[All Fields] OR \"implementers\"[All Fields] OR \"implemention\"[All Fields]"
+      },
+      {
+        "from": "Model",
+        "to": "\"model\"[All Fields] OR \"model's\"[All Fields] OR \"modeled\"[All Fields] OR \"modeler\"[All Fields] OR \"modeler's\"[All Fields] OR \"modelers\"[All Fields] OR \"modeling\"[All Fields] OR \"modelings\"[All Fields] OR \"modelization\"[All Fields] OR \"modelizations\"[All Fields] OR \"modelize\"[All Fields] OR \"modelized\"[All Fields] OR \"modelled\"[All Fields] OR \"modeller\"[All Fields] OR \"modellers\"[All Fields] OR \"modelling\"[All Fields] OR \"modellings\"[All Fields] OR \"models\"[All Fields]"
+      },
+      {
+        "from": ", Version",
+        "to": "\"version\"[All Fields] OR \"version's\"[All Fields] OR \"versions\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"health level seven\"[MeSH Terms] OR (\"health\"[All Fields] AND \"level\"[All Fields] AND \"seven\"[All Fields]) OR \"health level seven\"[All Fields]) AND (\"refer\"[All Fields] OR \"referal\"[All Fields] OR \"referals\"[All Fields] OR \"refered\"[All Fields] OR \"reference\"[All Fields] OR \"references\"[All Fields] OR \"referred\"[All Fields] OR \"referring\"[All Fields] OR \"refers\"[All Fields]) AND (\"implementability\"[All Fields] OR \"implementable\"[All Fields] OR \"implementation\"[All Fields] OR \"implementation s\"[All Fields] OR \"implementational\"[All Fields] OR \"implementations\"[All Fields] OR \"implementer\"[All Fields] OR \"implementers\"[All Fields] OR \"implemention\"[All Fields]) AND (\"model\"[All Fields] OR \"model s\"[All Fields] OR \"modeled\"[All Fields] OR \"modeler\"[All Fields] OR \"modeler s\"[All Fields] OR \"modelers\"[All Fields] OR \"modeling\"[All Fields] OR \"modelings\"[All Fields] OR \"modelization\"[All Fields] OR \"modelizations\"[All Fields] OR \"modelize\"[All Fields] OR \"modelized\"[All Fields] OR \"modelled\"[All Fields] OR \"modeller\"[All Fields] OR \"modellers\"[All Fields] OR \"modelling\"[All Fields] OR \"modellings\"[All Fields] OR \"models\"[All Fields]) AND (\"version\"[All Fields] OR \"version s\"[All Fields] OR \"versions\"[All Fields]) AND \"3.0\"[All Fields] AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

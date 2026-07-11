@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "169",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34758253",
+      "32573726",
+      "40972649",
+      "40311258",
+      "40082611",
+      "40637118",
+      "23941937",
+      "37600845",
+      "33791734",
+      "41190441"
+    ],
+    "translationset": [
+      {
+        "from": "PATEL",
+        "to": "\"patel\"[All Fields] OR \"patels\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"patel\"[All Fields] OR \"patels\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

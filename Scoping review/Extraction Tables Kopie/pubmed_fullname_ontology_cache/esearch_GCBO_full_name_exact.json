@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"global\"[All Fields] OR \"globalism\"[All Fields] OR \"globalize\"[All Fields] OR \"globalized\"[All Fields] OR \"globalizes\"[All Fields] OR \"globalizing\"[All Fields] OR \"globally\"[All Fields] OR \"globals\"[All Fields] OR \"internationality\"[MeSH Terms] OR \"internationality\"[All Fields] OR \"globalization\"[All Fields]) AND (\"clinical coding\"[MeSH Terms] OR (\"clinical\"[All Fields] AND \"coding\"[All Fields]) OR \"clinical coding\"[All Fields] OR \"code\"[All Fields]) AND (\"books\"[MeSH Terms] OR \"books\"[All Fields] OR \"book\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Global Code Book Ontology\""
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

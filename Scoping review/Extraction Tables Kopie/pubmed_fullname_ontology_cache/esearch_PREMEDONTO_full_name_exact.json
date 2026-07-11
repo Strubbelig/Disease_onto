@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1048",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "30304648",
+      "36732524",
+      "32939051",
+      "33238868",
+      "29363432",
+      "40417545",
+      "38550940",
+      "41037379",
+      "27148566",
+      "32987570"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"precision medicine\"[MeSH Terms] OR (\"precision\"[All Fields] AND \"medicine\"[All Fields]) OR \"precision medicine\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Precision Medicine Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

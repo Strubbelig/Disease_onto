@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2846",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "33947203",
+      "30744660",
+      "40553344",
+      "24243846",
+      "33264411",
+      "41443197",
+      "22449239",
+      "36371527",
+      "30287891",
+      "26949740"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"genotype\"[MeSH Terms] OR \"genotype\"[All Fields] OR \"genotypes\"[All Fields] OR \"genotypic\"[All Fields] OR \"genotype s\"[All Fields] OR \"genotyped\"[All Fields] OR \"genotyper\"[All Fields] OR \"genotypical\"[All Fields] OR \"genotypically\"[All Fields] OR \"genotyping\"[All Fields] OR \"genotypings\"[All Fields] OR \"genotypization\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Genotype Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://example.org/disease-review/modules/idomal_fallback_hierarchy> a owl:Ontology ;
+    dcterms:source "Generated review target module for IDOMAL; source API hierarchy module was missing or incomplete" ;
+    owl:versionInfo "BioPortal: version=1.3.9, released=2015-03-16T00:00:00.000+00:00, creationDate=2017-09-05T15:39:37.000-07:00, submissionId=186; BioPortal: version=0.15b, released=2013-07-12T00:00:00.000-07:00, creationDate=2014-02-17T05:29:24.000-08:00, submissionId=6" ;
+    dcterms:created "2026-07-10T19:36:51-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://purl.obolibrary.org/obo/IAO_0000115> "\"A realizable dependent continuant that inheres in substances.\"" .
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable dependent continuant that inheres in substances." .
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://purl.org/dc/terms/source> "generated review target module for IDOMAL from disease_terms_review_enriched.csv" .
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://purl.obolibrary.org/obo/IDOMAL_0001241> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/snap_RealizableEntity> .
+<http://purl.obolibrary.org/obo/snap_RealizableEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/snap_RealizableEntity> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .

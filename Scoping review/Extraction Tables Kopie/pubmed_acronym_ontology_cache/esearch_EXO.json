@@ -1,0 +1,34 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "65",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "32743122",
+      "38266934",
+      "41041343",
+      "36823605",
+      "22324457",
+      "37575264",
+      "40637511",
+      "36614115",
+      "36168439",
+      "32050401"
+    ],
+    "translationset": [
+      {
+        "from": "EXO",
+        "to": "\"EXO\"[Journal:__jid9919251316306676] OR \"exo\"[All Fields]"
+      },
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "(\"exo\"[Journal] OR \"exo\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])"
+  }
+}

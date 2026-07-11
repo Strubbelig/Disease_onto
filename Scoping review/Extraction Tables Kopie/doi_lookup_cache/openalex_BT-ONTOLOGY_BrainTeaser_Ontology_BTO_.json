@@ -1,0 +1,3012 @@
+{
+  "meta": {
+    "count": 2,
+    "db_response_time_ms": 84,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (BrainTeaser Ontology BTO BT-ONTOLOGY ontology)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "BrainTeaser Ontology (BTO) BT-ONTOLOGY ontology",
+            "operator": "has"
+          }
+        ],
+        "per_page": 5
+      },
+      "url": "/works?filter=fulltext.search:BrainTeaser Ontology %28BTO%29 BT-ONTOLOGY ontology&per_page=5"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4401982528",
+      "doi": "https://doi.org/10.1186/s13326-024-00317-y",
+      "title": "An extensible and unifying approach to retrospective clinical data modeling: the BrainTeaser Ontology",
+      "display_name": "An extensible and unifying approach to retrospective clinical data modeling: the BrainTeaser Ontology",
+      "relevance_score": 133.71815,
+      "publication_year": 2024,
+      "publication_date": "2024-08-29",
+      "ids": {
+        "openalex": "https://openalex.org/W4401982528",
+        "doi": "https://doi.org/10.1186/s13326-024-00317-y",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/39210467"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1186/s13326-024-00317-y",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-024-00317-y",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-024-00317-y",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-024-00317-y",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5079246354",
+            "display_name": "Guglielmo Faggioli",
+            "orcid": "https://orcid.org/0000-0002-5070-2049"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Guglielmo Faggioli",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy. guglielmo.faggioli@unipd.it",
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy. guglielmo.faggioli@unipd.it",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103043214",
+            "display_name": "Laura Menotti",
+            "orcid": "https://orcid.org/0000-0002-0676-682X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Laura Menotti",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy. laura.menotti@unipd.it",
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy. laura.menotti@unipd.it",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5003820981",
+            "display_name": "Stefano Marchesin",
+            "orcid": "https://orcid.org/0000-0003-0362-5893"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Stefano Marchesin",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy. stefano.marchesin@unipd.it",
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy. stefano.marchesin@unipd.it",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090628289",
+            "display_name": "Adriano Chiò",
+            "orcid": "https://orcid.org/0000-0001-9579-5341"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210086903",
+              "display_name": "Azienda Ospedaliera Citta' della Salute e della Scienza di Torino",
+              "ror": "https://ror.org/001f7a930",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210086903"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210166865",
+              "display_name": "Institute of Cognitive Sciences and Technologies",
+              "ror": "https://ror.org/05w9g2j85",
+              "country_code": "IT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210155236",
+                "https://openalex.org/I4210166865"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I55143463",
+              "display_name": "University of Turin",
+              "ror": "https://ror.org/048tbm396",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I55143463"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Adriano Chió",
+          "raw_affiliation_strings": [
+            "Azienda Ospedaliero Universitaria Cittá della Salute e della Scienza, Turin, Italy",
+            "Institute of Cognitive Sciences and Technologies, C.N.R, Rome, Italy",
+            "Rita Levi Montalcini Department of Neuroscience, University of Turin, Turin, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Azienda Ospedaliero Universitaria Cittá della Salute e della Scienza, Turin, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210086903"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Cognitive Sciences and Technologies, C.N.R, Rome, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210166865"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Rita Levi Montalcini Department of Neuroscience, University of Turin, Turin, Italy",
+              "institution_ids": [
+                "https://openalex.org/I55143463"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5068449833",
+            "display_name": "Arianna Dagliati",
+            "orcid": "https://orcid.org/0000-0002-5041-0409"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I25217355",
+              "display_name": "University of Pavia",
+              "ror": "https://ror.org/00s6t1f81",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I25217355"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Arianna Dagliati",
+          "raw_affiliation_strings": [
+            "Department of Industrial and Information Engineering, University of Pavia, Pavia, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Industrial and Information Engineering, University of Pavia, Pavia, Italy",
+              "institution_ids": [
+                "https://openalex.org/I25217355"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5040831166",
+            "display_name": "Mamede de Carvalho",
+            "orcid": "https://orcid.org/0000-0001-7556-0158"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I141596103",
+              "display_name": "University of Lisbon",
+              "ror": "https://ror.org/01c27hj86",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I141596103"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mamede de Carvalho",
+          "raw_affiliation_strings": [
+            "Faculdade de Medicina, Instituto de Medicina Molecular, Universidade de Lisboa, Lisbon, Portugal"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculdade de Medicina, Instituto de Medicina Molecular, Universidade de Lisboa, Lisbon, Portugal",
+              "institution_ids": [
+                "https://openalex.org/I141596103"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050965055",
+            "display_name": "Marta Gromicho",
+            "orcid": "https://orcid.org/0000-0003-2111-4579"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I141596103",
+              "display_name": "University of Lisbon",
+              "ror": "https://ror.org/01c27hj86",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I141596103"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marta Gromicho",
+          "raw_affiliation_strings": [
+            "Faculdade de Medicina, Instituto de Medicina Molecular, Universidade de Lisboa, Lisbon, Portugal"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculdade de Medicina, Instituto de Medicina Molecular, Universidade de Lisboa, Lisbon, Portugal",
+              "institution_ids": [
+                "https://openalex.org/I141596103"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5052801313",
+            "display_name": "Umberto Manera",
+            "orcid": "https://orcid.org/0000-0002-9995-8133"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I55143463",
+              "display_name": "University of Turin",
+              "ror": "https://ror.org/048tbm396",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I55143463"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Umberto Manera",
+          "raw_affiliation_strings": [
+            "Rita Levi Montalcini Department of Neuroscience, University of Turin, Turin, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rita Levi Montalcini Department of Neuroscience, University of Turin, Turin, Italy",
+              "institution_ids": [
+                "https://openalex.org/I55143463"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016441737",
+            "display_name": "Eleonora Tavazzi",
+            "orcid": "https://orcid.org/0000-0003-2580-3646"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Eleonora Tavazzi",
+          "raw_affiliation_strings": [
+            "IRCCS Foundation C. Mondino in Pavia, Pavia, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "IRCCS Foundation C. Mondino in Pavia, Pavia, Italy",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5052334463",
+            "display_name": "Giorgio Maria Di Nunzio",
+            "orcid": "https://orcid.org/0000-0001-9709-6392"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Giorgio Maria Di Nunzio",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5078254809",
+            "display_name": "Gianmaria Silvello",
+            "orcid": "https://orcid.org/0000-0003-4970-4554"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gianmaria Silvello",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5069843101",
+            "display_name": "Nicola Ferro",
+            "orcid": "https://orcid.org/0000-0001-9219-6239"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I138689650",
+              "display_name": "University of Padua",
+              "ror": "https://ror.org/00240q980",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Nicola Ferro",
+          "raw_affiliation_strings": [
+            "Department of Information Engineering, University of Padova, Padova, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Information Engineering, University of Padova, Padova, Italy",
+              "institution_ids": [
+                "https://openalex.org/I138689650"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5079246354"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I138689650"
+      ],
+      "apc_list": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "apc_paid": {
+        "value": 1190,
+        "currency": "GBP",
+        "value_usd": 1459
+      },
+      "fwci": 0.3801,
+      "has_fulltext": true,
+      "cited_by_count": 2,
+      "citation_normalized_percentile": {
+        "value": 0.60801863,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 95,
+        "max": 96
+      },
+      "biblio": {
+        "volume": "15",
+        "issue": "1",
+        "first_page": "16",
+        "last_page": "16"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11710",
+        "display_name": "Biomedical Text Mining and Ontologies",
+        "score": 0.9987000226974487,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1312",
+          "display_name": "Molecular Biology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/13",
+          "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/1",
+          "display_name": "Life Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11710",
+          "display_name": "Biomedical Text Mining and Ontologies",
+          "score": 0.9987000226974487,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11642",
+          "display_name": "Genomics and Rare Diseases",
+          "score": 0.9821000099182129,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10887",
+          "display_name": "Bioinformatics and Genomic Networks",
+          "score": 0.9729999899864197,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.8486979603767395
+        },
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.6387135982513428
+        },
+        {
+          "id": "https://openalex.org/keywords/extensibility",
+          "display_name": "Extensibility",
+          "score": 0.5992492437362671
+        },
+        {
+          "id": "https://openalex.org/keywords/data-science",
+          "display_name": "Data science",
+          "score": 0.5520975589752197
+        },
+        {
+          "id": "https://openalex.org/keywords/information-retrieval",
+          "display_name": "Information retrieval",
+          "score": 0.4685702323913574
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.34842902421951294
+        },
+        {
+          "id": "https://openalex.org/keywords/data-mining",
+          "display_name": "Data mining",
+          "score": 0.3302716314792633
+        },
+        {
+          "id": "https://openalex.org/keywords/programming-language",
+          "display_name": "Programming language",
+          "score": 0.2063867151737213
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.8486979603767395
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.6387135982513428
+        },
+        {
+          "id": "https://openalex.org/C32833848",
+          "wikidata": "https://www.wikidata.org/wiki/Q4115054",
+          "display_name": "Extensibility",
+          "level": 2,
+          "score": 0.5992492437362671
+        },
+        {
+          "id": "https://openalex.org/C2522767166",
+          "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+          "display_name": "Data science",
+          "level": 1,
+          "score": 0.5520975589752197
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.4685702323913574
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.34842902421951294
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.3302716314792633
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.2063867151737213
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000690",
+          "descriptor_name": "Amyotrophic Lateral Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009103",
+          "descriptor_name": "Multiple Sclerosis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012189",
+          "descriptor_name": "Retrospective Studies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012660",
+          "descriptor_name": "Semantics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D064229",
+          "descriptor_name": "Biological Ontologies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 5,
+      "locations": [
+        {
+          "id": "doi:10.1186/s13326-024-00317-y",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s13326-024-00317-y",
+          "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-024-00317-y",
+          "source": {
+            "id": "https://openalex.org/S172276550",
+            "display_name": "Journal of Biomedical Semantics",
+            "issn_l": "2041-1480",
+            "issn": [
+              "2041-1480"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320256",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "BioMed Central",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Biomedical Semantics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:39210467",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39210467",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of biomedical semantics",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11363415",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11363415",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11363415/pdf/13326_2024_Article_317.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Biomed Semantics",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:www.research.unipd.it:11577/3523894",
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11577/3523894",
+          "pdf_url": "https://www.research.unipd.it/bitstream/11577/3523894/1/faggioli_etal-2024.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402547",
+            "display_name": "Padua Research Archive (University of Padova)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I138689650",
+            "host_organization_name": "University of Padua",
+            "host_organization_lineage": [
+              "https://openalex.org/I138689650"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:011335de1b1f4ba89b746177d99a618b",
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/011335de1b1f4ba89b746177d99a618b",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Biomedical Semantics, Vol 15, Iss 1, Pp 1-28 (2024)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1186/s13326-024-00317-y",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s13326-024-00317-y",
+        "pdf_url": "https://jbiomedsem.biomedcentral.com/counter/pdf/10.1186/s13326-024-00317-y",
+        "source": {
+          "id": "https://openalex.org/S172276550",
+          "display_name": "Journal of Biomedical Semantics",
+          "issn_l": "2041-1480",
+          "issn": [
+            "2041-1480"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320256",
+          "host_organization_name": "BioMed Central",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320256",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "BioMed Central",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Biomedical Semantics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "score": 0.4699999988079071,
+          "display_name": "Peace, Justice and strong institutions",
+          "id": "https://metadata.un.org/sdg/16"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2163157105",
+          "display_name": null,
+          "funder_award_id": "101017598",
+          "funder_id": "https://openalex.org/F4320332999",
+          "funder_display_name": "Horizon 2020 Framework Programme"
+        },
+        {
+          "id": "https://openalex.org/G7842005466",
+          "display_name": null,
+          "funder_award_id": "Horizon 2020",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320300",
+          "display_name": "European Commission",
+          "ror": "https://ror.org/00k4n6c32"
+        },
+        {
+          "id": "https://openalex.org/F4320321966",
+          "display_name": "Università degli Studi di Padova",
+          "ror": "https://ror.org/00240q980"
+        },
+        {
+          "id": "https://openalex.org/F4320332999",
+          "display_name": "Horizon 2020 Framework Programme",
+          "ror": "https://ror.org/00k4n6c32"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4401982528.pdf"
+      },
+      "referenced_works_count": 68,
+      "referenced_works": [
+        "https://openalex.org/W131196319",
+        "https://openalex.org/W134576514",
+        "https://openalex.org/W192631176",
+        "https://openalex.org/W1481389199",
+        "https://openalex.org/W1593387346",
+        "https://openalex.org/W1978225408",
+        "https://openalex.org/W1983569077",
+        "https://openalex.org/W1986613416",
+        "https://openalex.org/W1992926914",
+        "https://openalex.org/W2063959464",
+        "https://openalex.org/W2066828509",
+        "https://openalex.org/W2073176530",
+        "https://openalex.org/W2085752173",
+        "https://openalex.org/W2087779040",
+        "https://openalex.org/W2099839308",
+        "https://openalex.org/W2108381339",
+        "https://openalex.org/W2112165124",
+        "https://openalex.org/W2113481412",
+        "https://openalex.org/W2114061884",
+        "https://openalex.org/W2118420309",
+        "https://openalex.org/W2125210805",
+        "https://openalex.org/W2140248886",
+        "https://openalex.org/W2140786467",
+        "https://openalex.org/W2141201603",
+        "https://openalex.org/W2148728440",
+        "https://openalex.org/W2155249637",
+        "https://openalex.org/W2159583324",
+        "https://openalex.org/W2302501749",
+        "https://openalex.org/W2397949805",
+        "https://openalex.org/W2399817052",
+        "https://openalex.org/W2404369708",
+        "https://openalex.org/W2407061143",
+        "https://openalex.org/W2491827732",
+        "https://openalex.org/W2560140067",
+        "https://openalex.org/W2798292257",
+        "https://openalex.org/W2805978167",
+        "https://openalex.org/W2921702122",
+        "https://openalex.org/W2965191972",
+        "https://openalex.org/W2967188367",
+        "https://openalex.org/W2969980778",
+        "https://openalex.org/W2977611665",
+        "https://openalex.org/W3000380019",
+        "https://openalex.org/W3021653195",
+        "https://openalex.org/W3023401584",
+        "https://openalex.org/W3033581476",
+        "https://openalex.org/W3047499636",
+        "https://openalex.org/W3059196475",
+        "https://openalex.org/W3096667064",
+        "https://openalex.org/W3101115834",
+        "https://openalex.org/W3109069918",
+        "https://openalex.org/W3120551187",
+        "https://openalex.org/W3153769444",
+        "https://openalex.org/W3160776171",
+        "https://openalex.org/W3173667512",
+        "https://openalex.org/W4200193100",
+        "https://openalex.org/W4200196667",
+        "https://openalex.org/W4211041983",
+        "https://openalex.org/W4221128994",
+        "https://openalex.org/W4240619195",
+        "https://openalex.org/W4251503246",
+        "https://openalex.org/W4292939343",
+        "https://openalex.org/W4296127589",
+        "https://openalex.org/W4308387098",
+        "https://openalex.org/W4327498765",
+        "https://openalex.org/W4386609584",
+        "https://openalex.org/W4393753511",
+        "https://openalex.org/W4402636040",
+        "https://openalex.org/W6649067194"
+      ],
+      "related_works": [
+        "https://openalex.org/W1948607442",
+        "https://openalex.org/W3004004161",
+        "https://openalex.org/W2044615423",
+        "https://openalex.org/W4247766898",
+        "https://openalex.org/W4244765761",
+        "https://openalex.org/W2361584951",
+        "https://openalex.org/W2365327041",
+        "https://openalex.org/W4225348249",
+        "https://openalex.org/W31122515",
+        "https://openalex.org/W2466086502"
+      ],
+      "abstract_inverted_index": {
+        "Automatic": [
+          0
+        ],
+        "disease": [
+          1,
+          161
+        ],
+        "progression": [
+          2
+        ],
+        "prediction": [
+          3
+        ],
+        "models": [
+          4,
+          82
+        ],
+        "require": [
+          5
+        ],
+        "large": [
+          6
+        ],
+        "amounts": [
+          7
+        ],
+        "of": [
+          8,
+          144,
+          188,
+          196
+        ],
+        "training": [
+          9
+        ],
+        "data,": [
+          10
+        ],
+        "which": [
+          11
+        ],
+        "are": [
+          12
+        ],
+        "seldom": [
+          13
+        ],
+        "available,": [
+          14
+        ],
+        "especially": [
+          15
+        ],
+        "when": [
+          16
+        ],
+        "it": [
+          17,
+          216,
+          244
+        ],
+        "comes": [
+          18
+        ],
+        "to": [
+          19,
+          26,
+          46,
+          61,
+          204,
+          224,
+          247
+        ],
+        "rare": [
+          20,
+          90
+        ],
+        "diseases.": [
+          21
+        ],
+        "A": [
+          22
+        ],
+        "possible": [
+          23
+        ],
+        "solution": [
+          24,
+          60
+        ],
+        "is": [
+          25,
+          234
+        ],
+        "integrate": [
+          27
+        ],
+        "data": [
+          28,
+          39,
+          67,
+          85,
+          108,
+          141,
+          150
+        ],
+        "from": [
+          29,
+          69
+        ],
+        "different": [
+          30,
+          44
+        ],
+        "medical": [
+          31,
+          123,
+          178,
+          227
+        ],
+        "centres.": [
+          32
+        ],
+        "Nevertheless,": [
+          33
+        ],
+        "various": [
+          34,
+          70,
+          145,
+          156
+        ],
+        "centres": [
+          35
+        ],
+        "often": [
+          36
+        ],
+        "follow": [
+          37
+        ],
+        "diverse": [
+          38
+        ],
+        "collection": [
+          40,
+          142
+        ],
+        "procedures": [
+          41
+        ],
+        "and": [
+          42,
+          65,
+          93,
+          98,
+          105,
+          148,
+          152,
+          165,
+          168,
+          180,
+          190,
+          198,
+          207,
+          212,
+          229,
+          238
+        ],
+        "assign": [
+          43
+        ],
+        "semantics": [
+          45,
+          64
+        ],
+        "collected": [
+          47,
+          109
+        ],
+        "data.": [
+          48,
+          200
+        ],
+        "Ontologies,": [
+          49
+        ],
+        "used": [
+          50,
+          120
+        ],
+        "as": [
+          51,
+          160
+        ],
+        "schemas": [
+          52,
+          118
+        ],
+        "for": [
+          53,
+          192,
+          220,
+          236,
+          254
+        ],
+        "interoperable": [
+          54
+        ],
+        "knowledge": [
+          55
+        ],
+        "bases,": [
+          56
+        ],
+        "represent": [
+          57
+        ],
+        "a": [
+          58,
+          96,
+          126,
+          130,
+          134,
+          185,
+          217
+        ],
+        "state-of-the-art": [
+          59
+        ],
+        "homologate": [
+          62
+        ],
+        "the": [
+          63,
+          75,
+          83,
+          107,
+          139,
+          194
+        ],
+        "foster": [
+          66
+        ],
+        "integration": [
+          68
+        ],
+        "sources.": [
+          71
+        ],
+        "This": [
+          72
+        ],
+        "work": [
+          73
+        ],
+        "presents": [
+          74
+        ],
+        "BrainTeaser": [
+          76
+        ],
+        "Ontology": [
+          77
+        ],
+        "(BTO),": [
+          78
+        ],
+        "an": [
+          79,
+          171
+        ],
+        "ontology": [
+          80
+        ],
+        "that": [
+          81
+        ],
+        "clinical": [
+          84,
+          157
+        ],
+        "associated": [
+          86
+        ],
+        "with": [
+          87,
+          177
+        ],
+        "two": [
+          88
+        ],
+        "brain-related": [
+          89,
+          249
+        ],
+        "diseases": [
+          91
+        ],
+        "(ALS": [
+          92
+        ],
+        "MS)": [
+          94
+        ],
+        "in": [
+          95,
+          103,
+          175,
+          226
+        ],
+        "comprehensive": [
+          97
+        ],
+        "modular": [
+          99,
+          241
+        ],
+        "manner.": [
+          100
+        ],
+        "BTO": [
+          101,
+          136,
+          154,
+          183,
+          202,
+          233
+        ],
+        "assists": [
+          102
+        ],
+        "organizing": [
+          104
+        ],
+        "standardizing": [
+          106
+        ],
+        "during": [
+          110
+        ],
+        "patient": [
+          111,
+          230
+        ],
+        "follow-up.": [
+          112
+        ],
+        "It": [
+          113
+        ],
+        "was": [
+          114
+        ],
+        "created": [
+          115
+        ],
+        "by": [
+          116,
+          121
+        ],
+        "harmonizing": [
+          117
+        ],
+        "currently": [
+          119
+        ],
+        "multiple": [
+          122
+        ],
+        "centers": [
+          124
+        ],
+        "into": [
+          125
+        ],
+        "common": [
+          127
+        ],
+        "ontology,": [
+          128
+        ],
+        "following": [
+          129
+        ],
+        "bottom-up": [
+          131
+        ],
+        "approach.": [
+          132,
+          173
+        ],
+        "As": [
+          133
+        ],
+        "result,": [
+          135
+        ],
+        "effectively": [
+          137
+        ],
+        "addresses": [
+          138
+        ],
+        "practical": [
+          140
+        ],
+        "needs": [
+          143
+        ],
+        "real-world": [
+          146
+        ],
+        "situations": [
+          147
+        ],
+        "promotes": [
+          149
+        ],
+        "portability": [
+          151
+        ],
+        "interoperability.": [
+          153
+        ],
+        "captures": [
+          155
+        ],
+        "occurrences,": [
+          158
+        ],
+        "such": [
+          159
+        ],
+        "onset,": [
+          162
+        ],
+        "symptoms,": [
+          163
+        ],
+        "diagnostic": [
+          164
+        ],
+        "therapeutic": [
+          166
+        ],
+        "procedures,": [
+          167
+        ],
+        "relapses,": [
+          169
+        ],
+        "using": [
+          170
+        ],
+        "event-based": [
+          172
+        ],
+        "Developed": [
+          174
+        ],
+        "collaboration": [
+          176
+        ],
+        "partners": [
+          179
+        ],
+        "domain": [
+          181
+        ],
+        "experts,": [
+          182
+        ],
+        "offers": [
+          184
+        ],
+        "holistic": [
+          186
+        ],
+        "view": [
+          187
+        ],
+        "ALS": [
+          189,
+          237
+        ],
+        "MS": [
+          191
+        ],
+        "supporting": [
+          193
+        ],
+        "representation": [
+          195
+        ],
+        "retrospective": [
+          197
+        ],
+        "prospective": [
+          199
+        ],
+        "Furthermore,": [
+          201
+        ],
+        "adheres": [
+          203
+        ],
+        "Open": [
+          205
+        ],
+        "Science": [
+          206
+        ],
+        "FAIR": [
+          208
+        ],
+        "(Findable,": [
+          209
+        ],
+        "Accessible,": [
+          210
+        ],
+        "Interoperable,": [
+          211
+        ],
+        "Reusable)": [
+          213
+        ],
+        "principles,": [
+          214
+        ],
+        "making": [
+          215
+        ],
+        "reliable": [
+          218
+        ],
+        "framework": [
+          219
+        ],
+        "developing": [
+          221
+        ],
+        "predictive": [
+          222
+        ],
+        "tools": [
+          223
+        ],
+        "aid": [
+          225
+        ],
+        "decision-making": [
+          228
+        ],
+        "care.": [
+          231
+        ],
+        "Although": [
+          232
+        ],
+        "designed": [
+          235
+        ],
+        "MS,": [
+          239
+        ],
+        "its": [
+          240,
+          252
+        ],
+        "structure": [
+          242
+        ],
+        "makes": [
+          243
+        ],
+        "easily": [
+          245
+        ],
+        "extendable": [
+          246
+        ],
+        "other": [
+          248
+        ],
+        "diseases,": [
+          250
+        ],
+        "showcasing": [
+          251
+        ],
+        "potential": [
+          253
+        ],
+        "broader": [
+          255
+        ],
+        "applicability.Database": [
+          256
+        ],
+        "URL": [
+          257
+        ],
+        "https://zenodo.org/records/7886998": [
+          258
+        ],
+        ".": [
+          259
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2026-07-02T09:51:11.867554",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4414091249",
+      "doi": "https://doi.org/10.3390/electronics14183596",
+      "title": "Fuzzy MCGDM Approach for Ontology Fuzzification",
+      "display_name": "Fuzzy MCGDM Approach for Ontology Fuzzification",
+      "relevance_score": 119.83415,
+      "publication_year": 2025,
+      "publication_date": "2025-09-10",
+      "ids": {
+        "openalex": "https://openalex.org/W4414091249",
+        "doi": "https://doi.org/10.3390/electronics14183596"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3390/electronics14183596",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/electronics14183596",
+        "pdf_url": "https://www.mdpi.com/2079-9292/14/18/3596/pdf?version=1757509447",
+        "source": {
+          "id": "https://openalex.org/S4210202905",
+          "display_name": "Electronics",
+          "issn_l": "2079-9292",
+          "issn": [
+            "2079-9292"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Electronics",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2079-9292/14/18/3596/pdf?version=1757509447",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5079056608",
+            "display_name": "Lydia Castronovo",
+            "orcid": "https://orcid.org/0000-0001-5521-6464"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I112862951",
+              "display_name": "University of Messina",
+              "ror": "https://ror.org/05ctdxz19",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I112862951"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Lydia Castronovo",
+          "raw_affiliation_strings": [
+            "Dipartimento di Scienze Matematiche e Informatiche, Scienze Fisiche e Scienze della Terra, Università degli Studi di Messina, Viale Ferdinando Stagno d’Alcontres 31, 98166 Messina, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5521-6464",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dipartimento di Scienze Matematiche e Informatiche, Scienze Fisiche e Scienze della Terra, Università degli Studi di Messina, Viale Ferdinando Stagno d’Alcontres 31, 98166 Messina, Italy",
+              "institution_ids": [
+                "https://openalex.org/I112862951"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5004611630",
+            "display_name": "Giuseppe Filippone",
+            "orcid": "https://orcid.org/0000-0001-7315-1852"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I900890020",
+              "display_name": "University of Palermo",
+              "ror": "https://ror.org/044k9ta02",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Giuseppe Filippone",
+          "raw_affiliation_strings": [
+            "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7315-1852",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy",
+              "institution_ids": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5099282589",
+            "display_name": "Mario Galici",
+            "orcid": "https://orcid.org/0000-0003-2721-4095"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I142910587",
+              "display_name": "University of Salento",
+              "ror": "https://ror.org/03fc1k060",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I142910587"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mario Galici",
+          "raw_affiliation_strings": [
+            "Dipartimento di Matematica e Fisica “Ennio de Giorgi”, Università del Salento, Via Per Arnesano, 73100 Lecce, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-2721-4095",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dipartimento di Matematica e Fisica “Ennio de Giorgi”, Università del Salento, Via Per Arnesano, 73100 Lecce, Italy",
+              "institution_ids": [
+                "https://openalex.org/I142910587"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5088351028",
+            "display_name": "Gianmarco La Rosa",
+            "orcid": "https://orcid.org/0000-0003-1047-5993"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I900890020",
+              "display_name": "University of Palermo",
+              "ror": "https://ror.org/044k9ta02",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Gianmarco La Rosa",
+          "raw_affiliation_strings": [
+            "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1047-5993",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy",
+              "institution_ids": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5090006996",
+            "display_name": "Marco Elio Tabacchi",
+            "orcid": "https://orcid.org/0000-0001-7230-8192"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I900890020",
+              "display_name": "University of Palermo",
+              "ror": "https://ror.org/044k9ta02",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Marco Elio Tabacchi",
+          "raw_affiliation_strings": [
+            "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy",
+            "Istituto Nazionale di Ricerche Demopolis, 90139 Palermo, Italy"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-7230-8192",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via Archirafi 34, 90123 Palermo, Italy",
+              "institution_ids": [
+                "https://openalex.org/I900890020"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Istituto Nazionale di Ricerche Demopolis, 90139 Palermo, Italy",
+              "institution_ids": [
+                "https://openalex.org/I900890020"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5088351028"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I900890020"
+      ],
+      "apc_list": {
+        "value": 2000,
+        "currency": "CHF",
+        "value_usd": 2165
+      },
+      "apc_paid": {
+        "value": 2000,
+        "currency": "CHF",
+        "value_usd": 2165
+      },
+      "fwci": 4.5141,
+      "has_fulltext": true,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.94756123,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 98,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "14",
+        "issue": "18",
+        "first_page": "3596",
+        "last_page": "3596"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10050",
+        "display_name": "Multi-Criteria Decision Making",
+        "score": 0.9987999796867371,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1803",
+          "display_name": "Management Science and Operations Research"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/18",
+          "display_name": "Decision Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/2",
+          "display_name": "Social Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10050",
+          "display_name": "Multi-Criteria Decision Making",
+          "score": 0.9987999796867371,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1803",
+            "display_name": "Management Science and Operations Research"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/18",
+            "display_name": "Decision Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12805",
+          "display_name": "Cognitive Science and Mapping",
+          "score": 0.9968000054359436,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13083",
+          "display_name": "Advanced Text Analysis Techniques",
+          "score": 0.9689000248908997,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/ontology",
+          "display_name": "Ontology",
+          "score": 0.7674999833106995
+        },
+        {
+          "id": "https://openalex.org/keywords/fuzzy-logic",
+          "display_name": "Fuzzy logic",
+          "score": 0.6306999921798706
+        },
+        {
+          "id": "https://openalex.org/keywords/task",
+          "display_name": "Task (project management)",
+          "score": 0.6043000221252441
+        },
+        {
+          "id": "https://openalex.org/keywords/fuzzy-set",
+          "display_name": "Fuzzy set",
+          "score": 0.5318999886512756
+        },
+        {
+          "id": "https://openalex.org/keywords/key",
+          "display_name": "Key (lock)",
+          "score": 0.5056999921798706
+        },
+        {
+          "id": "https://openalex.org/keywords/feature",
+          "display_name": "Feature (linguistics)",
+          "score": 0.4602000117301941
+        },
+        {
+          "id": "https://openalex.org/keywords/process-ontology",
+          "display_name": "Process ontology",
+          "score": 0.4327999949455261
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.7674999833106995
+        },
+        {
+          "id": "https://openalex.org/C58166",
+          "wikidata": "https://www.wikidata.org/wiki/Q224821",
+          "display_name": "Fuzzy logic",
+          "level": 2,
+          "score": 0.6306999921798706
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6284999847412109
+        },
+        {
+          "id": "https://openalex.org/C2780451532",
+          "wikidata": "https://www.wikidata.org/wiki/Q759676",
+          "display_name": "Task (project management)",
+          "level": 2,
+          "score": 0.6043000221252441
+        },
+        {
+          "id": "https://openalex.org/C42011625",
+          "wikidata": "https://www.wikidata.org/wiki/Q1055058",
+          "display_name": "Fuzzy set",
+          "level": 3,
+          "score": 0.5318999886512756
+        },
+        {
+          "id": "https://openalex.org/C26517878",
+          "wikidata": "https://www.wikidata.org/wiki/Q228039",
+          "display_name": "Key (lock)",
+          "level": 2,
+          "score": 0.5056999921798706
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.4675999879837036
+        },
+        {
+          "id": "https://openalex.org/C2776401178",
+          "wikidata": "https://www.wikidata.org/wiki/Q12050496",
+          "display_name": "Feature (linguistics)",
+          "level": 2,
+          "score": 0.4602000117301941
+        },
+        {
+          "id": "https://openalex.org/C137003198",
+          "wikidata": "https://www.wikidata.org/wiki/Q7247296",
+          "display_name": "Process ontology",
+          "level": 3,
+          "score": 0.4327999949455261
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.4235000014305115
+        },
+        {
+          "id": "https://openalex.org/C98893333",
+          "wikidata": "https://www.wikidata.org/wiki/Q4339878",
+          "display_name": "Ontology alignment",
+          "level": 4,
+          "score": 0.3855000138282776
+        },
+        {
+          "id": "https://openalex.org/C22550185",
+          "wikidata": "https://www.wikidata.org/wiki/Q7095047",
+          "display_name": "Ontology-based data integration",
+          "level": 3,
+          "score": 0.33970001339912415
+        },
+        {
+          "id": "https://openalex.org/C2781311116",
+          "wikidata": "https://www.wikidata.org/wiki/Q83306",
+          "display_name": "Group (periodic table)",
+          "level": 2,
+          "score": 0.2930000126361847
+        },
+        {
+          "id": "https://openalex.org/C20701700",
+          "wikidata": "https://www.wikidata.org/wiki/Q388791",
+          "display_name": "Group decision-making",
+          "level": 2,
+          "score": 0.29170000553131104
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.2858000099658966
+        },
+        {
+          "id": "https://openalex.org/C148671577",
+          "wikidata": "https://www.wikidata.org/wiki/Q5511133",
+          "display_name": "Fuzzy set operations",
+          "level": 4,
+          "score": 0.28439998626708984
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.2660999894142151
+        },
+        {
+          "id": "https://openalex.org/C165696696",
+          "wikidata": "https://www.wikidata.org/wiki/Q11287",
+          "display_name": "Exploit",
+          "level": 2,
+          "score": 0.26510000228881836
+        },
+        {
+          "id": "https://openalex.org/C5041914",
+          "wikidata": "https://www.wikidata.org/wiki/Q5511107",
+          "display_name": "Fuzzy cognitive map",
+          "level": 5,
+          "score": 0.25929999351501465
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.3390/electronics14183596",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/electronics14183596",
+          "pdf_url": "https://www.mdpi.com/2079-9292/14/18/3596/pdf?version=1757509447",
+          "source": {
+            "id": "https://openalex.org/S4210202905",
+            "display_name": "Electronics",
+            "issn_l": "2079-9292",
+            "issn": [
+              "2079-9292"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Electronics",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:iris.unipa.it:10447/689403",
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10447/689403",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401065",
+            "display_name": "Nova Science Publishers (Nova Science Publishers, Inc.)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3390/electronics14183596",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/electronics14183596",
+        "pdf_url": "https://www.mdpi.com/2079-9292/14/18/3596/pdf?version=1757509447",
+        "source": {
+          "id": "https://openalex.org/S4210202905",
+          "display_name": "Electronics",
+          "issn_l": "2079-9292",
+          "issn": [
+            "2079-9292"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Electronics",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [
+        {
+          "id": "https://openalex.org/G102564798",
+          "display_name": null,
+          "funder_award_id": "QM4NP",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        },
+        {
+          "id": "https://openalex.org/G4005999512",
+          "display_name": null,
+          "funder_award_id": "CUP B53D23030160001",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        },
+        {
+          "id": "https://openalex.org/G782550056",
+          "display_name": null,
+          "funder_award_id": "14.9.2022",
+          "funder_id": "https://openalex.org/F4320320300",
+          "funder_display_name": "European Commission"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320300",
+          "display_name": "European Commission",
+          "ror": "https://ror.org/00k4n6c32"
+        },
+        {
+          "id": "https://openalex.org/F4320334045",
+          "display_name": "Gruppo Nazionale per le Strutture Algebriche, Geometriche e le loro Applicazioni",
+          "ror": null
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4414091249.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4414091249.grobid-xml"
+      },
+      "referenced_works_count": 45,
+      "referenced_works": [
+        "https://openalex.org/W35369483",
+        "https://openalex.org/W1516862703",
+        "https://openalex.org/W1583981513",
+        "https://openalex.org/W1781692281",
+        "https://openalex.org/W1987347924",
+        "https://openalex.org/W1999561830",
+        "https://openalex.org/W1999943538",
+        "https://openalex.org/W2024284069",
+        "https://openalex.org/W2042102899",
+        "https://openalex.org/W2048288497",
+        "https://openalex.org/W2095768683",
+        "https://openalex.org/W2096578078",
+        "https://openalex.org/W2110182592",
+        "https://openalex.org/W2146156042",
+        "https://openalex.org/W2149017759",
+        "https://openalex.org/W2171279236",
+        "https://openalex.org/W2307489124",
+        "https://openalex.org/W2344808210",
+        "https://openalex.org/W2499828064",
+        "https://openalex.org/W2759308881",
+        "https://openalex.org/W2789627406",
+        "https://openalex.org/W2808450119",
+        "https://openalex.org/W2948447020",
+        "https://openalex.org/W2964340136",
+        "https://openalex.org/W2992898014",
+        "https://openalex.org/W3014201061",
+        "https://openalex.org/W3122990377",
+        "https://openalex.org/W3126847131",
+        "https://openalex.org/W4205217596",
+        "https://openalex.org/W4205772790",
+        "https://openalex.org/W4210259099",
+        "https://openalex.org/W4211007335",
+        "https://openalex.org/W4212984337",
+        "https://openalex.org/W4234976561",
+        "https://openalex.org/W4236702134",
+        "https://openalex.org/W4248996458",
+        "https://openalex.org/W4252846328",
+        "https://openalex.org/W4292158025",
+        "https://openalex.org/W4313893761",
+        "https://openalex.org/W4323350470",
+        "https://openalex.org/W4381330884",
+        "https://openalex.org/W4388156124",
+        "https://openalex.org/W4393058992",
+        "https://openalex.org/W4404224825",
+        "https://openalex.org/W4412153640"
+      ],
+      "related_works": [
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W2390279801",
+        "https://openalex.org/W4391913857",
+        "https://openalex.org/W2358668433",
+        "https://openalex.org/W4396701345",
+        "https://openalex.org/W2376932109",
+        "https://openalex.org/W2001405890",
+        "https://openalex.org/W4396696052"
+      ],
+      "abstract_inverted_index": {
+        "This": [
+          0
+        ],
+        "paper": [
+          1
+        ],
+        "extends": [
+          2
+        ],
+        "a": [
+          3,
+          11,
+          28
+        ],
+        "novel": [
+          4
+        ],
+        "method": [
+          5,
+          23,
+          86
+        ],
+        "for": [
+          6,
+          49
+        ],
+        "fuzzifying": [
+          7
+        ],
+        "crisp": [
+          8
+        ],
+        "ontologies": [
+          9
+        ],
+        "through": [
+          10
+        ],
+        "fuzzy": [
+          12
+        ],
+        "Multi-Criteria": [
+          13
+        ],
+        "Group": [
+          14
+        ],
+        "Decision-Making": [
+          15
+        ],
+        "(MCGDM)": [
+          16
+        ],
+        "approach.": [
+          17
+        ],
+        "The": [
+          18
+        ],
+        "key": [
+          19
+        ],
+        "feature": [
+          20
+        ],
+        "of": [
+          21,
+          27,
+          83,
+          98,
+          104
+        ],
+        "the": [
+          22,
+          25,
+          36,
+          69,
+          75,
+          81,
+          84,
+          96,
+          102
+        ],
+        "is": [
+          24,
+          63
+        ],
+        "achievement": [
+          26
+        ],
+        "geometric": [
+          29
+        ],
+        "compromise": [
+          30
+        ],
+        "obtained": [
+          31
+        ],
+        "by": [
+          32,
+          40,
+          43
+        ],
+        "minimising": [
+          33
+        ],
+        "distances": [
+          34
+        ],
+        "among": [
+          35
+        ],
+        "best": [
+          37
+        ],
+        "alternatives": [
+          38
+        ],
+        "provided": [
+          39
+        ],
+        "experts,": [
+          41
+        ],
+        "and": [
+          42,
+          45,
+          51,
+          59,
+          74,
+          101
+        ],
+        "assigning": [
+          44
+        ],
+        "refining": [
+          46
+        ],
+        "membership": [
+          47
+        ],
+        "degrees": [
+          48
+        ],
+        "entities": [
+          50
+        ],
+        "relations": [
+          52
+        ],
+        "in": [
+          53,
+          87
+        ],
+        "order": [
+          54
+        ],
+        "to": [
+          55
+        ],
+        "better": [
+          56
+        ],
+        "capture": [
+          57
+        ],
+        "uncertainty": [
+          58
+        ],
+        "vagueness.": [
+          60
+        ],
+        "Its": [
+          61
+        ],
+        "effectiveness": [
+          62
+        ],
+        "demonstrated": [
+          64
+        ],
+        "on": [
+          65
+        ],
+        "two": [
+          66
+        ],
+        "case": [
+          67
+        ],
+        "studies,": [
+          68
+        ],
+        "Cognitive": [
+          70
+        ],
+        "Task": [
+          71
+        ],
+        "Ontology": [
+          72,
+          77
+        ],
+        "(CogiTO)": [
+          73
+        ],
+        "BrainTeaser": [
+          76
+        ],
+        "(BTO),": [
+          78
+        ],
+        "which": [
+          79
+        ],
+        "showcase": [
+          80
+        ],
+        "potential": [
+          82
+        ],
+        "proposed": [
+          85
+        ],
+        "complex": [
+          88
+        ],
+        "decision-making": [
+          89
+        ],
+        "scenarios.": [
+          90
+        ],
+        "Many": [
+          91
+        ],
+        "applications": [
+          92
+        ],
+        "are": [
+          93
+        ],
+        "possible,": [
+          94
+        ],
+        "including": [
+          95
+        ],
+        "enhancement": [
+          97
+        ],
+        "knowledge": [
+          99
+        ],
+        "integration": [
+          100
+        ],
+        "development": [
+          103
+        ],
+        "more": [
+          105
+        ],
+        "informative": [
+          106
+        ],
+        "reasoning": [
+          107
+        ],
+        "under": [
+          108
+        ],
+        "uncertainty.": [
+          109
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 3
+        }
+      ],
+      "updated_date": "2026-06-15T08:34:33.830935",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ],
+  "group_by": []
+}

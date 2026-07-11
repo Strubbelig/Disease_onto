@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "1",
+    "retmax": "1",
+    "retstart": "0",
+    "idlist": [
+      "40547394"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"triobp protein human\"[Supplementary Concept] OR \"triobp protein human\"[All Fields] OR \"tara\"[All Fields]) AND (\"acupoint s\"[All Fields] OR \"acupuncture points\"[MeSH Terms] OR (\"acupuncture\"[All Fields] AND \"points\"[All Fields]) OR \"acupuncture points\"[All Fields] OR \"acupoint\"[All Fields] OR \"acupoints\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"TARA Acupoints Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

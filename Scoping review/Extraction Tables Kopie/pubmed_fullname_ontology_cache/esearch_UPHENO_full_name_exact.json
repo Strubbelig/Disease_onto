@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "813",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "34315224",
+      "35471885",
+      "29970176",
+      "35317743",
+      "33875846",
+      "35728000",
+      "40223054",
+      "40473955",
+      "39345458",
+      "37550531"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"combinable\"[All Fields] OR \"combinated\"[All Fields] OR \"combination\"[All Fields] OR \"combinational\"[All Fields] OR \"combinations\"[All Fields] OR \"combinative\"[All Fields] OR \"combine\"[All Fields] OR \"combined\"[All Fields] OR \"combines\"[All Fields] OR \"combining\"[All Fields]) AND (\"phenotype\"[MeSH Terms] OR \"phenotype\"[All Fields] OR \"phenotypes\"[All Fields] OR \"phenotyped\"[All Fields] OR \"phenotypic\"[All Fields] OR \"phenotypical\"[All Fields] OR \"phenotypically\"[All Fields] OR \"phenotyping\"[All Fields] OR \"phenotypings\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Combined Phenotype Ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}

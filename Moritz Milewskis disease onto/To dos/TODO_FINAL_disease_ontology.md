@@ -27,6 +27,8 @@ Current status: the ontology source is a reasoner-checked draft, with validation
 
 - [ ] **F6 — Optional: formalize the disease-A to disease-B predisposition pattern further.** The current model covers existing-disorder-grounded predisposition and complication realization, but a named A-to-B target pattern could still be added if needed for examples or competency questions.
 
+- [ ] **F7 — Decide the substance-use-disorder modelling stance.** Treat this as an edge case for pathologicity: distinguish the substance, use events, intoxication/withdrawal processes, diagnostic thresholds, and any stable pathological neuropsychological organization that could ground a disorder. Avoid modelling substance use disorder as a moral defect, legal category, or mere single behaviour.
+
 ---
 
 ## Resolved Modelling Conflicts

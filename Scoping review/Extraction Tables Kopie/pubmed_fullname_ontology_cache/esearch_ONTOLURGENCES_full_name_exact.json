@@ -1,0 +1,37 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "355",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "25118309",
+      "35550528",
+      "35673159",
+      "40509575",
+      "40086567",
+      "31189204",
+      "34734855",
+      "40896293",
+      "39545839",
+      "39678869"
+    ],
+    "translationset": [
+      {
+        "from": "ontology",
+        "to": "\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology's\"[All Fields]"
+      }
+    ],
+    "querytranslation": "((\"emergency treatment\"[MeSH Terms] OR (\"emergency\"[All Fields] AND \"treatment\"[All Fields]) OR \"emergency treatment\"[All Fields] OR (\"emergency\"[All Fields] AND \"care\"[All Fields]) OR \"emergency care\"[All Fields] OR \"emergency medical services\"[MeSH Terms] OR (\"emergency\"[All Fields] AND \"medical\"[All Fields] AND \"services\"[All Fields]) OR \"emergency medical services\"[All Fields]) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])) AND (\"ontologies\"[All Fields] OR \"ontology\"[All Fields] OR \"ontology s\"[All Fields])",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"Emergency care ontology\""
+      ],
+      "outputmessages": []
+    }
+  }
+}
