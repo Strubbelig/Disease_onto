@@ -32,12 +32,13 @@ FIELDNAMES = [
     "class_iri", "term", "preferred_label", "source_ontology_ids",
     "manual_include_status", "manual_exclusion_reason", "manual_exclusion_detail",
     "ontology_type_manual", "native_or_imported_manual", "logical_inconsistency",
-    "disease_model_category", "upper_level_interpretation",
-    "definition_quality", "comment_quality", "parentage_quality", "provenance_quality",
+    "disease_model_category",
+    "ontological_category", "pathological_grounding", "crisp_vs_graded", "reality_vs_classification",
+    "review_comment",
+    "definition_quality", "comment_quality", "parentage_quality",
     "entity_quality_score", "quality_decision",
     "reviewer", "review_date",
     "second_reviewer", "second_review_date", "disagreement_flag", "adjudication_decision",
-    "review_notes",
 ]
 
 OBO_PURL = "http://purl.obolibrary.org/obo/"
@@ -118,11 +119,14 @@ THESAURUS_METADATA_PHRASES = {
 THESAURUS_REVIEW_DISABLED_FIELDS = {
     "native_or_imported_manual",
     "disease_model_category",
-    "upper_level_interpretation",
+    "ontological_category",
+    "pathological_grounding",
+    "crisp_vs_graded",
+    "reality_vs_classification",
+    "review_comment",
     "definition_quality",
     "comment_quality",
     "parentage_quality",
-    "provenance_quality",
     "entity_quality_score",
     "quality_decision",
     "reviewer",
@@ -368,23 +372,6 @@ def rule_parentage_quality(row: dict) -> str:
     return ""
 
 
-def rule_provenance_quality(row: dict) -> str:
-    """
-    good    — ontology_versions, retrieved_at_by_database, and source_urls all present.
-    partial — at least one present.
-    absent  — none present.
-    """
-    has_version = bool(row.get("ontology_versions", "").strip())
-    has_date    = bool(row.get("retrieved_at_by_database", "").strip())
-    has_url     = bool(row.get("source_urls", "").strip())
-    count = sum([has_version, has_date, has_url])
-    if count == 3:
-        return "good"
-    if count > 0:
-        return "partial"
-    return "absent"
-
-
 NOT_GROUNDED_CATEGORIES = {"", "unclear_model", "no_grounded_model", "not_applicable"}
 
 
@@ -432,8 +419,11 @@ def rule_entity_quality_score(row: dict) -> str:
     return ""
 
 
-def rule_upper_level_interpretation(row: dict) -> str:
-    """
+def rule_review_comment(row: dict) -> str:
+    """Prefill the single free-text review comment with a first-pass modelling
+    interpretation (what the ontology itself says). The reviewer then edits this
+    one field, which also absorbs any audit/notes text.
+
     Priority order (highest confidence first):
     1. BFO IRI match in parent_iris — authoritative, IRI-based.
     2. 'disposition' in label, definition, or parent labels — near-certain (per domain rule).
@@ -514,7 +504,7 @@ def keyword_grounding_for_row(row: dict) -> str:
         row.get("synonyms", ""), row.get("preferred_label", ""), row.get("term", ""),
         row.get("parent_iris", ""), row.get("parent_labels", ""), row.get("bfo_anchor", ""),
         row.get("ontology_title", ""), row.get("ontology_description", ""),
-        row.get("review_notes", ""), row.get("upper_level_interpretation", ""),
+        row.get("review_comment", ""),
         row.get("manual_exclusion_detail", ""),
     )
 
@@ -588,9 +578,8 @@ def prefill_row(enriched: dict) -> dict:
     row["definition_quality"]         = rule_definition_quality(enriched)
     row["comment_quality"]            = rule_comment_quality(enriched)
     row["parentage_quality"]          = rule_parentage_quality(enriched)
-    row["provenance_quality"]         = rule_provenance_quality(enriched)
     row["entity_quality_score"]       = rule_entity_quality_score(enriched)
-    row["upper_level_interpretation"] = rule_upper_level_interpretation(enriched)
+    row["review_comment"]             = rule_review_comment(enriched)
     row["disease_model_category"]     = rule_disease_model_category(enriched)
     return row
 
@@ -625,8 +614,8 @@ def normalise_manual_row(row: dict) -> dict:
             normalised["manual_exclusion_detail"] = THESAURUS_EXCLUSION_DETAIL
         for field in THESAURUS_REVIEW_DISABLED_FIELDS:
             normalised[field] = ""
-        if not normalised.get("review_notes"):
-            normalised["review_notes"] = THESAURUS_EXCLUSION_DETAIL
+        if not normalised.get("review_comment"):
+            normalised["review_comment"] = THESAURUS_EXCLUSION_DETAIL
     elif normalised.get("manual_include_status") != "exclude":
         normalised["manual_exclusion_reason"] = ""
         normalised["manual_exclusion_detail"] = ""
@@ -673,8 +662,8 @@ def main() -> None:
     from collections import Counter
     report_fields = [
         "manual_include_status", "ontology_type_manual", "native_or_imported_manual",
-        "definition_quality", "comment_quality", "parentage_quality", "provenance_quality",
-        "upper_level_interpretation", "disease_model_category",
+        "definition_quality", "comment_quality", "parentage_quality",
+        "review_comment", "disease_model_category",
     ]
     for field in report_fields:
         counts = Counter(r[field] for r in output_rows if r[field])

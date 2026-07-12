@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Preselect the ontology-level `logical_inconsistency` flag from review comments.
 
-For every ontology you have reviewed, this scans the free-text fields
-`review_notes` and `upper_level_interpretation` for language that indicates a
+For every ontology you have reviewed, this scans the free-text field
+`review_comment` for language that indicates a
 genuine LOGICAL inconsistency (a reasoner-level contradiction, unsatisfiable
 classes, or a clearly contradictory modelling commitment) and preselects the
 flag `logical_inconsistency = true` for ALL classes of that ontology.
@@ -40,7 +40,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_CSV = SCRIPT_DIR.parent / "Extraction Tables" / "disease_terms_manual_annotations.csv"
 DEFAULT_ENRICHED = SCRIPT_DIR.parent / "Extraction Tables" / "disease_terms_review_enriched.csv"
 
-SCAN_FIELDS = ("review_notes", "upper_level_interpretation")
+SCAN_FIELDS = ("review_comment",)
 
 # Explicit contradiction / inconsistency language (word-boundary, case-insensitive).
 STRONG_PATTERNS = [

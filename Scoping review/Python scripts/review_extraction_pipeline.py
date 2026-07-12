@@ -207,7 +207,7 @@ HIERARCHY_SYNONYM_KEYS = {
 }
 
 CONTROLLED_VALUES = {
-    "manual_include_status": ["include", "exclude", "maybe", "needs_second_review"],
+    "manual_include_status": ["include", "exclude"],
     "manual_exclusion_reason": [
         "",
         "demo_or_training_resource",
@@ -250,10 +250,44 @@ CONTROLLED_VALUES = {
         "unclear_model",
         "not_applicable",
     ],
+    "ontological_category": [
+        "",
+        "continuant",
+        "occurrent",
+        "continuant_individuated_by_process",
+        "under_committed",
+        "unclear",
+    ],
+    "pathological_grounding": [
+        "",
+        "statistical",
+        "evolutionary_function",
+        "normative",
+        "primitive_criteria",
+        "reference_class_indexed",
+        "undefined",
+        "not_applicable",
+    ],
+    "crisp_vs_graded": [
+        "",
+        "crisp",
+        "graded_or_fuzzy",
+        "prototype",
+        "gradedness_in_data",
+        "silent",
+    ],
+    "reality_vs_classification": [
+        "",
+        "biological_state",
+        "illness_role",
+        "nosological_category",
+        "precision_medicine_stratification",
+        "conflated",
+        "unclear",
+    ],
     "definition_quality": ["good", "partial", "poor", "absent"],
     "comment_quality": ["good", "partial", "poor", "absent", "not_applicable"],
     "parentage_quality": ["good", "partial", "poor", "absent"],
-    "provenance_quality": ["good", "partial", "poor", "absent"],
     "entity_quality_score": ["3", "2", "1", "0"],
     "quality_decision": ["high_confidence_include", "include_with_caveat", "uncertain_second_review"],
 }
@@ -261,11 +295,14 @@ CONTROLLED_VALUES = {
 THESAURUS_REVIEW_DISABLED_FIELDS = {
     "native_or_imported_manual",
     "disease_model_category",
-    "upper_level_interpretation",
+    "ontological_category",
+    "pathological_grounding",
+    "crisp_vs_graded",
+    "reality_vs_classification",
+    "review_comment",
     "definition_quality",
     "comment_quality",
     "parentage_quality",
-    "provenance_quality",
     "entity_quality_score",
     "quality_decision",
     "reviewer",
@@ -285,22 +322,30 @@ REVIEW_PROMPT_SECTIONS = [
     (
         "2. Philosophical legacy / modelling interpretation",
         [
-            "upper_level_interpretation",
+            "review_comment",
             "disease_model_category",
         ],
     ),
     (
-        "3. Evidence quality",
+        "3. Design commitments (four coupled decisions)",
+        [
+            "ontological_category",
+            "pathological_grounding",
+            "crisp_vs_graded",
+            "reality_vs_classification",
+        ],
+    ),
+    (
+        "4. Evidence quality",
         [
             "definition_quality",
             "comment_quality",
             "parentage_quality",
-            "provenance_quality",
             "entity_quality_score",
         ],
     ),
     (
-        "4. Scope decision",
+        "5. Scope decision",
         [
             "manual_include_status",
             "manual_exclusion_reason",
@@ -308,11 +353,10 @@ REVIEW_PROMPT_SECTIONS = [
         ],
     ),
     (
-        "5. Audit trail",
+        "6. Audit trail",
         [
             "reviewer",
             "review_date",
-            "review_notes",
         ],
     ),
 ]
@@ -330,17 +374,19 @@ PROMPT_GUIDANCE = {
     "manual_include_status": "Final scope decision after checking definition, comment, superclass, and source context.",
     "manual_exclusion_reason": "If the final scope decision is exclude, choose the main reason.",
     "manual_exclusion_detail": "Optional free-text detail for exclusions or special cases.",
-    "upper_level_interpretation": "Free text first: write what the ontology itself says, e.g. subclass of realizable entity, situation, process, clinical finding, or unclear. Do not force a category.",
+    "review_comment": "Single free-text field: write what the ontology itself says (e.g. subclass of realizable entity, situation, process, clinical finding, or unclear) plus any caveats, reasoning, or paper evidence. Do not force a category.",
     "disease_model_category": "Optional philosophical legacy/synthesis bucket. Leave blank if the ontology's own model is more precise than these options.",
+    "ontological_category": "Coupled decision 1 — continuant/occurrent. Is disease modelled as a continuant (state/disposition/material entity that persists), an occurrent (process/causal chain that unfolds), a continuant individuated by a causal-process structure (River-Flow 'river' reading), under-committed, or unclear? Read it from the OWL superclass/axioms, not just the prose.",
+    "pathological_grounding": "Coupled decision 2 — what grounds 'pathological/abnormal'. statistical (Boorse sub-normal function), evolutionary_function (Wakefield/Schwartz dysfunction), normative (harm/disvalue), primitive_criteria (Hucklenbroich criteria-defined pathologicity), reference_class_indexed (abnormality relative to an age/sex reference class), undefined (imports a notion but never states which), or not_applicable.",
+    "crisp_vs_graded": "Coupled decision 3 — vagueness handling. crisp (necessary-and-sufficient DL classes), graded_or_fuzzy (fuzzy/graded membership, Sadegh-Zadeh), prototype (resemblance to a prototype), gradedness_in_data (crisp classes with gradedness pushed to data/annotation, e.g. Yamagata attribute-value or HPO similarity), or silent (does not address vagueness).",
+    "reality_vs_classification": "Coupled decision 4 — what 'disease' denotes. biological_state (underlying biological state/disorder), illness_role (practical patient/illness role), nosological_category (a classification/nosology label), precision_medicine_stratification (computable integrative stratification, Haendel et al.), conflated (mixes ≥2 of these), or unclear.",
     "definition_quality": "How useful is the definition for understanding the entity?",
     "comment_quality": "How useful are comments/notes, if present?",
     "parentage_quality": "How ontologically rich is the parent class",
-    "provenance_quality": "How adequate is version/source/provenance metadata?",
     "entity_quality_score": "Quality score for included classes: 3 strong, 2 usable, 1 weak. Use 0 only for classes already excluded in eligibility.",
     "quality_decision": "Legacy field; no longer asked in the active review workflow.",
     "reviewer": "Reviewer initials/name.",
     "review_date": "ISO date for this review.",
-    "review_notes": "Short caveats, reasoning, or paper evidence used.",
 }
 
 FIELD_LABELS = {
@@ -350,17 +396,19 @@ FIELD_LABELS = {
     "manual_include_status": "Final scope decision",
     "manual_exclusion_reason": "Exclusion reason",
     "manual_exclusion_detail": "Exclusion detail",
-    "upper_level_interpretation": "Free-text modelling interpretation",
+    "review_comment": "Review comment (free text)",
     "disease_model_category": "Optional synthesis category",
+    "ontological_category": "1 · Continuant vs occurrent",
+    "pathological_grounding": "2 · Grounding of 'pathological'",
+    "crisp_vs_graded": "3 · Crisp vs graded",
+    "reality_vs_classification": "4 · Reality vs classification",
     "definition_quality": "Definition quality",
     "comment_quality": "Comment quality",
     "parentage_quality": "Parentage quality",
-    "provenance_quality": "Provenance quality",
     "entity_quality_score": "Entity quality score",
     "quality_decision": "Legacy synthesis confidence",
     "reviewer": "Reviewer",
     "review_date": "Review date",
-    "review_notes": "Review notes",
 }
 
 def native_ontology_group(row: dict[str, str]) -> str:
@@ -1188,8 +1236,8 @@ class ReviewExtractionPipeline:
                 normalised["manual_exclusion_detail"] = THESAURUS_EXCLUSION_DETAIL
             for field in THESAURUS_REVIEW_DISABLED_FIELDS:
                 normalised[field] = ""
-            if not normalised.get("review_notes"):
-                normalised["review_notes"] = THESAURUS_EXCLUSION_DETAIL
+            if not normalised.get("review_comment"):
+                normalised["review_comment"] = THESAURUS_EXCLUSION_DETAIL
         elif normalised.get("manual_include_status") != "exclude":
             normalised["manual_exclusion_reason"] = ""
             normalised["manual_exclusion_detail"] = ""
@@ -1444,7 +1492,8 @@ class ReviewExtractionPipeline:
             return self._nonblank(base_identity + source_context[:3] + native_context)
         if field in {"manual_include_status", "manual_exclusion_reason", "manual_exclusion_detail"}:
             return self._nonblank(base_identity + source_context + extraction_hints + definitions[:2] + parents[:3])
-        if field in {"disease_model_category", "upper_level_interpretation"}:
+        if field in {"disease_model_category", "review_comment", "ontological_category",
+                     "pathological_grounding", "crisp_vs_graded", "reality_vs_classification"}:
             return self._nonblank(base_identity + extraction_hints + definitions[:3] + parents[:6])
         if field == "definition_quality":
             return self._nonblank(definitions or ["(no definition found)"])
@@ -1452,9 +1501,7 @@ class ReviewExtractionPipeline:
             return self._nonblank(comments or ["(no comments found)"])
         if field == "parentage_quality":
             return self._nonblank(extraction_hints[:1] + (parents or ["(no parent found)"]))
-        if field == "provenance_quality":
-            return self._nonblank(provenance)
-        if field in {"entity_quality_score", "quality_decision", "review_notes"}:
+        if field in {"entity_quality_score", "quality_decision"}:
             return self._nonblank(current_review[:8] + definitions[:2] + parents[:3])
         return []
 
@@ -1507,6 +1554,8 @@ class ReviewExtractionPipeline:
                         self._send_json(payload if payload else {"error": "class not found"}, 200 if payload else 404)
                     elif parsed.path == "/api/violations":
                         self._send_json(pipeline._review_ui_violations(args))
+                    elif parsed.path == "/api/missing":
+                        self._send_json(pipeline._review_ui_missing(args))
                     elif parsed.path == "/api/citations":
                         self._send_json(pipeline._review_ui_citations(args))
                     elif parsed.path == "/api/health":
@@ -1605,8 +1654,7 @@ class ReviewExtractionPipeline:
                 "logical": m.get("logical_inconsistency", ""),
                 "type": m.get("ontology_type_manual", ""),
                 "parents": _t(row.get("parent_labels", ""), 140),
-                "interp": _t(m.get("upper_level_interpretation", "")),
-                "notes": _t(m.get("review_notes", "")),
+                "comment": _t(m.get("review_comment", "")),
             }
 
         not_grounded = {"", "unclear_model", "no_grounded_model", "not_applicable"}
@@ -1625,7 +1673,7 @@ class ReviewExtractionPipeline:
                 r.get("class_iri", ""), r.get("definition", ""), r.get("comments", ""), r.get("synonyms", ""),
                 r.get("parent_iris", ""), r.get("parent_labels", ""), r.get("bfo_anchor", ""),
                 r.get("ontology_title", ""), r.get("ontology_description", ""),
-                m.get("review_notes", ""), m.get("upper_level_interpretation", ""), m.get("manual_exclusion_detail", ""),
+                m.get("review_comment", ""), m.get("manual_exclusion_detail", ""),
                 r.get("preferred_label", ""), r.get("term", ""),
             ]).lower()
 
@@ -1693,6 +1741,82 @@ class ReviewExtractionPipeline:
                         })
         violations.sort(key=lambda v: (v["rule"], v["label"].casefold()))
         return {"violations": violations, "rules": REVIEW_RULE_META}
+
+    # Required review fields for a fully-charted in-scope class. Excluded and
+    # thesaurus classes are skipped (their blanks are expected).
+    MISSING_REQUIRED_FIELDS = [
+        "ontology_type_manual",
+        "native_or_imported_manual",
+        "manual_include_status",
+        "disease_model_category",
+        "ontological_category",
+        "pathological_grounding",
+        "crisp_vs_graded",
+        "reality_vs_classification",
+        "review_comment",
+        "definition_quality",
+        "comment_quality",
+        "parentage_quality",
+        "entity_quality_score",
+        "reviewer",
+        "review_date",
+    ]
+
+    def _review_ui_missing(self, args: argparse.Namespace) -> dict[str, Any]:
+        """Missing-value report for the Missing tab: for every in-scope class
+        (not excluded, not a thesaurus) list which required review fields are
+        still blank, grouped by field. Read-only; mirrors the violations tab."""
+        rows, manual_by_iri = self._review_ui_rows_and_manual(args)
+        required = self.MISSING_REQUIRED_FIELDS
+
+        def _t(s: str, n: int = 160) -> str:
+            s = (s or "").strip()
+            return s if len(s) <= n else s[:n] + "…"
+
+        entries: list[dict[str, Any]] = []
+        classes_with_gaps: set[str] = set()
+        seen: set[str] = set()
+        in_scope = 0
+        for row in rows:
+            iri = row.get("class_iri", "")
+            if not iri or iri in seen:
+                continue
+            seen.add(iri)
+            m = manual_by_iri.get(iri, {})
+            excluded = (m.get("manual_include_status", "").strip() == "exclude"
+                        or m.get("quality_decision", "").strip() == "exclude")
+            thesaurus = m.get("ontology_type_manual", "").strip() == "thesaurus"
+            if excluded or thesaurus:
+                continue
+            in_scope += 1
+            label = row.get("preferred_label") or row.get("term") or iri
+            context = {
+                "term": row.get("term", ""),
+                "ontology": native_ontology_group(row),
+                "include": m.get("manual_include_status", ""),
+                "score": m.get("entity_quality_score", ""),
+                "category": m.get("disease_model_category", ""),
+                "parents": _t(row.get("parent_labels", ""), 140),
+            }
+            for field in required:
+                if not (m.get(field, "") or "").strip():
+                    entries.append({
+                        "field": field,
+                        "fieldLabel": FIELD_LABELS.get(field, field),
+                        "iri": iri,
+                        "label": label,
+                        "context": context,
+                    })
+                    classes_with_gaps.add(iri)
+        entries.sort(key=lambda e: (required.index(e["field"]) if e["field"] in required else 99,
+                                    e["label"].casefold()))
+        return {
+            "missing": entries,
+            "fieldOrder": required,
+            "fieldLabels": {f: FIELD_LABELS.get(f, f) for f in required},
+            "classesWithGaps": len(classes_with_gaps),
+            "inScope": in_scope,
+        }
 
     def _review_ui_config(self) -> dict[str, Any]:
         return {
@@ -2411,6 +2535,7 @@ class ReviewExtractionPipeline:
       <div id="tabbar" style="display:flex;gap:8px;padding:10px 16px 0;">
         <button id="tab-review" class="primary">Review</button>
         <button id="tab-violations" class="secondary">Violations <span id="tab-viol-count"></span></button>
+        <button id="tab-missing" class="secondary">Missing values <span id="tab-missing-count"></span></button>
         <button id="tab-citations" class="secondary">Citations <span id="tab-cit-count"></span></button>
       </div>
       <div class="topbar">
@@ -2436,6 +2561,13 @@ class ReviewExtractionPipeline:
           <label class="export-toggle"><input id="viol-export" type="checkbox"> regenerate TTL on each fix (slower)</label>
         </div>
         <div id="violations-list"></div>
+      </div>
+      <div class="content" id="missing-content" style="display:none;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap;">
+          <button class="secondary" id="missing-refresh">Refresh</button>
+          <span class="subtle" id="missing-count">Loading…</span>
+        </div>
+        <div id="missing-list"></div>
       </div>
       <div class="content" id="citations-content" style="display:none;">
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap;">
@@ -2771,11 +2903,14 @@ class ReviewExtractionPipeline:
       const thesaurusDisabledFields = new Set([
         "native_or_imported_manual",
         "disease_model_category",
-        "upper_level_interpretation",
+        "ontological_category",
+        "pathological_grounding",
+        "crisp_vs_graded",
+        "reality_vs_classification",
+        "review_comment",
         "definition_quality",
         "comment_quality",
         "parentage_quality",
-        "provenance_quality",
         "entity_quality_score",
         "quality_decision",
         "reviewer",
@@ -2877,12 +3012,59 @@ class ReviewExtractionPipeline:
     function setTab(tab) {
       $("content").style.display = tab === "review" ? "" : "none";
       $("violations-content").style.display = tab === "violations" ? "" : "none";
+      $("missing-content").style.display = tab === "missing" ? "" : "none";
       $("citations-content").style.display = tab === "citations" ? "" : "none";
       $("tab-review").className = tab === "review" ? "primary" : "secondary";
       $("tab-violations").className = tab === "violations" ? "primary" : "secondary";
+      $("tab-missing").className = tab === "missing" ? "primary" : "secondary";
       $("tab-citations").className = tab === "citations" ? "primary" : "secondary";
       if (tab === "violations") loadViolations().catch((e) => { $("violations-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
+      if (tab === "missing") loadMissing().catch((e) => { $("missing-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
       if (tab === "citations") loadCitations().catch((e) => { $("citations-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
+    }
+
+    let missingFieldLabels = {};
+    async function loadMissing() {
+      const payload = await requestJson("/api/missing");
+      const list = payload.missing || [];
+      missingFieldLabels = payload.fieldLabels || {};
+      const gaps = payload.classesWithGaps || 0;
+      $("tab-missing-count").textContent = `(${gaps})`;
+      $("missing-count").textContent = list.length
+        ? `${list.length} blank field(s) across ${gaps} of ${payload.inScope} in-scope class(es)`
+        : "No missing values — all in-scope classes are complete.";
+      renderMissing(list, payload.fieldOrder || []);
+    }
+
+    function renderMissing(list, fieldOrder) {
+      const container = $("missing-list");
+      if (!list.length) { container.innerHTML = '<div class="empty">No missing values — all in-scope classes are complete.</div>'; return; }
+      const byField = {};
+      list.forEach((m) => { (byField[m.field] = byField[m.field] || []).push(m); });
+      const order = (fieldOrder && fieldOrder.length) ? fieldOrder : Object.keys(byField);
+      container.innerHTML = order.filter((f) => byField[f]).map((field) => {
+        const items = byField[field];
+        const header = `<div style="margin:18px 0 8px;padding:8px 10px;background:var(--soft);border-radius:8px;">
+            <h3 style="margin:0;">${escapeHtml(missingFieldLabels[field] || field)} <span class="subtle">(${items.length} class${items.length === 1 ? "" : "es"} missing this)</span></h3>
+            <div class="subtle" style="margin-top:2px;">Field: <code>${escapeHtml(field)}</code></div>
+          </div>`;
+        const rowsHtml = items.map((m) => {
+          const c = m.context || {};
+          const bits = [];
+          const add = (k, v) => { if (v) bits.push(`${k}=${escapeHtml(v)}`); };
+          add("ontology", c.ontology); add("include", c.include); add("score", c.score); add("category", c.category);
+          const ctx = bits.length ? `<div class="subtle" style="margin-top:2px;">${bits.join(" · ")}</div>` : "";
+          const parents = c.parents ? `<div class="subtle">parents: ${escapeHtml(c.parents)}</div>` : "";
+          return `<div style="display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);">
+              <div style="flex:1;min-width:0;">
+                <strong>${escapeHtml(m.label)}</strong> <span class="subtle">${escapeHtml(c.term || "")}</span>
+                ${ctx}${parents}
+              </div>
+              <div style="flex-shrink:0;"><button class="secondary missing-open" data-iri="${escapeHtml(m.iri)}">Open</button></div>
+            </div>`;
+        }).join("");
+        return `<div>${header}${rowsHtml}</div>`;
+      }).join("");
     }
 
     let citationGroups = [];
@@ -2964,8 +3146,7 @@ class ReviewExtractionPipeline:
       add("definition", c.definition_quality); add("logical", c.logical); add("type", c.type);
       let html = parts.length ? `<div class="subtle" style="margin-top:3px;">${parts.join(" · ")}</div>` : "";
       if (c.parents) html += `<div class="subtle">parents: ${escapeHtml(c.parents)}</div>`;
-      if (c.interp) html += `<div class="subtle">interp: ${escapeHtml(c.interp)}</div>`;
-      if (c.notes) html += `<div class="subtle">notes: ${escapeHtml(c.notes)}</div>`;
+      if (c.comment) html += `<div class="subtle">comment: ${escapeHtml(c.comment)}</div>`;
       return html;
     }
 
@@ -3028,7 +3209,13 @@ class ReviewExtractionPipeline:
 
     $("tab-review").addEventListener("click", () => setTab("review"));
     $("tab-violations").addEventListener("click", () => setTab("violations"));
+    $("tab-missing").addEventListener("click", () => setTab("missing"));
     $("tab-citations").addEventListener("click", () => setTab("citations"));
+    $("missing-refresh").addEventListener("click", () => loadMissing().catch((e) => alert(e.message)));
+    $("missing-list").addEventListener("click", (e) => {
+      const op = e.target.closest(".missing-open");
+      if (op) { setTab("review"); loadClass(op.dataset.iri).catch((err) => renderEmpty(err.message)); }
+    });
     $("cit-refresh").addEventListener("click", () => loadCitations().catch((e) => alert(e.message)));
     $("cit-only-unapproved").addEventListener("change", renderCitations);
     $("citations-list").addEventListener("click", (e) => {

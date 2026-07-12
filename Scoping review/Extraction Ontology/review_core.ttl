@@ -128,9 +128,7 @@ rev:manual_include_status
     iao:0000115 "The reviewer's overall inclusion decision for this class in the substantive analysis."@en ;
     skos:scopeNote """Controlled values:
   include — class is suitable for substantive analysis without reservation.
-  exclude — class is not used in substantive synthesis; see manual_exclusion_reason for the primary reason.
-  maybe — relevance or quality is uncertain; needs further evidence before a firm decision.
-  needs_second_review — reviewer lacks confidence or the case is borderline; flagged for an independent second pass."""@en .
+  exclude — class is not used in substantive synthesis; see manual_exclusion_reason for the primary reason."""@en .
 
 rev:manual_exclusion_reason
     rdf:type owl:AnnotationProperty ;
@@ -174,10 +172,61 @@ rev:disease_model_category
   unclear_model — the available evidence is insufficient to assign a philosophical/modelling synthesis category.
   not_applicable — the class is not a disease-like entity proper (e.g. a process or quality encountered through hierarchy traversal)."""@en .
 
-rev:upper_level_interpretation
+rev:review_comment
     rdf:type owl:AnnotationProperty ;
-    rdfs:label "upper-level interpretation"@en ;
-    iao:0000115 "Primary free-text reviewer interpretation of the modelling claim indicated by the class hierarchy, definition, or source paper. Use this field before assigning any optional synthesis category."@en .
+    rdfs:label "review comment"@en ;
+    iao:0000115 "Single free-text reviewer field for this class. Records the primary interpretation of the modelling claim indicated by the class hierarchy, definition, or source paper, together with any caveats, rationale, open questions, or paper evidence. Use this field before assigning any optional synthesis category. (Merges the former upper_level_interpretation and review_notes fields.)"@en .
+
+#################################################################
+#  Coupled design decisions (four commitments every disease model makes)
+#################################################################
+
+rev:ontological_category
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "coupled decision 1: ontological category"@en ;
+    iao:0000115 "Coupled design decision 1. Whether the class models disease as a continuant or an occurrent, read from the OWL superclass/axioms rather than the prose. The SNAP/SPAN split (Grenon & Smith) makes this a forced choice in BFO; Mizoguchi's River-Flow model denies the choice is clean and treats disease as a persisting entity individuated by a causal-process structure."@en ;
+    skos:scopeNote """Controlled values:
+  continuant — a state, disposition, or material entity that persists through change (SNAP).
+  occurrent — a process or causal chain that unfolds over time (SPAN).
+  continuant_individuated_by_process — a persisting entity individuated by its causal-process structure (Mizoguchi River-Flow 'river' reading).
+  under_committed — no clear continuant/occurrent commitment is made.
+  unclear — the evidence is insufficient to decide."""@en .
+
+rev:pathological_grounding
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "coupled decision 2: grounding of pathological/abnormal"@en ;
+    iao:0000115 "Coupled design decision 2. How the load-bearing primitive 'pathological/abnormal' is grounded. Every formal ontology imports an answer from the philosophy of medicine, and almost none states which; record the answer the class actually commits to (or 'undefined')."@en ;
+    skos:scopeNote """Controlled values:
+  statistical — abnormality as statistically sub-normal biological function (Boorse's biostatistical theory).
+  evolutionary_function — abnormality as failure of a naturally selected function / harmful dysfunction (Wakefield, Schwartz).
+  normative — abnormality as harm or disvalue to the bearer (normativism).
+  primitive_criteria — pathologicity taken as a criteria-defined primitive (Hucklenbroich), not reduced to statistics or values.
+  reference_class_indexed — abnormality defined relative to a reference class (age/sex/species) or situation.
+  undefined — the model relies on 'pathological/abnormal' but never states what grounds it.
+  not_applicable — the class does not carry a pathological/abnormal commitment."""@en .
+
+rev:crisp_vs_graded
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "coupled decision 3: crisp vs graded"@en ;
+    iao:0000115 "Coupled design decision 3. Whether disease membership is modelled as crisp (necessary-and-sufficient) or as inherently graded/vague. A pure OWL/DL ontology structurally cannot represent graded membership, so this is usually decided by where gradedness is pushed."@en ;
+    skos:scopeNote """Controlled values:
+  crisp — crisp universals with necessary-and-sufficient conditions.
+  graded_or_fuzzy — inherently vague, fuzzy/graded membership (Sadegh-Zadeh).
+  prototype — membership by resemblance to a prototype.
+  gradedness_in_data — crisp classes, with gradedness pushed to data/annotation (e.g. Yamagata attribute-value layer, HPO-style similarity).
+  silent — the model does not address vagueness at all."""@en .
+
+rev:reality_vs_classification
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "coupled decision 4: reality vs classification"@en ;
+    iao:0000115 "Coupled design decision 4. What 'disease' is taken to denote. These uses come apart (Boorse's disease/illness distinction; Ereshefsky's state-description vs normative-claim split; Haendel et al.'s precision-medicine framing), and conflating them is a recurrent failure mode."@en ;
+    skos:scopeNote """Controlled values:
+  biological_state — the underlying biological state or disorder in the organism.
+  illness_role — the practical illness/patient role (socially and normatively loaded).
+  nosological_category — a classification/nosology category or label.
+  precision_medicine_stratification — a computable, integrative stratification for decision support (Haendel et al.).
+  conflated — the class conflates two or more of the above.
+  unclear — the evidence is insufficient to decide."""@en .
 
 #################################################################
 #  Quality assessments
@@ -214,16 +263,6 @@ rev:parentage_quality
   poor — class is placed directly under owl:Thing or a very generic class that provides no modelling information.
   absent — no parent class is asserted."""@en .
 
-rev:provenance_quality
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "provenance quality"@en ;
-    iao:0000115 "Quality of the class's source provenance metadata, including ontology version, retrieval timestamp, and source URL as recorded in the extraction."@en ;
-    skos:scopeNote """Controlled values:
-  good — ontology version, retrieval date, and source URL are all present and machine-readable.
-  partial — some provenance metadata is present but one or more fields are missing or ambiguous.
-  poor — only minimal provenance is available (e.g. retrieval date only, no version).
-  absent — no provenance metadata is recorded."""@en .
-
 rev:entity_quality_score
     rdf:type owl:AnnotationProperty ;
     rdfs:label "entity quality score"@en ;
@@ -237,7 +276,7 @@ rev:entity_quality_score
 rev:quality_decision
     rdf:type owl:AnnotationProperty ;
     rdfs:label "legacy synthesis confidence"@en ;
-    iao:0000115 "Legacy reviewer-confidence field retained for compatibility with earlier review exports. The active workflow uses manual_include_status, upper_level_interpretation, disease_model_category, quality fields, entity_quality_score, and review_notes instead."@en ;
+    iao:0000115 "Legacy reviewer-confidence field retained for compatibility with earlier review exports. The active workflow uses manual_include_status, review_comment, disease_model_category, quality fields, and entity_quality_score instead."@en ;
     skos:scopeNote """Controlled values:
   high_confidence_include — class is suitable for analysis without reservation; definition, parentage, and relevance are all adequate.
   include_with_caveat — class is usable in analysis but has a noted limitation (e.g. missing definition, imported term, shallow parentage) that should be acknowledged.
@@ -256,11 +295,6 @@ rev:review_date
     rdf:type owl:AnnotationProperty ;
     rdfs:label "review date"@en ;
     iao:0000115 "ISO 8601 date on which the primary review of this class was completed (e.g. 2026-06-29)."@en .
-
-rev:review_notes
-    rdf:type owl:AnnotationProperty ;
-    rdfs:label "review notes"@en ;
-    iao:0000115 "Free-text notes from the primary reviewer explaining the rationale for decisions, recording open questions, or flagging anomalies observed during the review."@en .
 
 rev:second_reviewer
     rdf:type owl:AnnotationProperty ;

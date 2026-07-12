@@ -255,7 +255,7 @@ def main() -> int:
     def kw_blob(r: dict) -> str:
         return " ".join(r.get(f, "") for f in (
             "class_iri", "preferred_label", "term",
-            "review_notes", "upper_level_interpretation", "manual_exclusion_detail")).lower()
+            "review_comment", "manual_exclusion_detail")).lower()
 
     check_field(
         "[Rule 11] 'menelas' in a text field/IRI -> disease_model_category == entity_as_kantian_state",

@@ -102,7 +102,7 @@ def main() -> int:
     if not any(r["class_iri"] == args.target_iri for r in man):
         pf = m.prefill_row(enr_by_iri[args.target_iri])
         pf["manual_include_status"] = "include"
-        pf["review_notes"] = f"Manual replacement target for {args.ontology} {args.replaced_label}; review {tgt_local} instead of {args.replaced_label.title()}."
+        pf["review_comment"] = f"Manual replacement target for {args.ontology} {args.replaced_label}; review {tgt_local} instead of {args.replaced_label.title()}."
         man.append({k: pf.get(k, "") for k in man_cols})
         print(f"seeded manual target row (include): {args.target_iri}")
 
