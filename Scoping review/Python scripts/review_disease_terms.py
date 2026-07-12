@@ -110,6 +110,12 @@ MULTILINGUAL_SENSITIVITY_TERMS = [
 
 BFO_PREFIX = "http://purl.obolibrary.org/obo/BFO_"
 DELAY = 0.12
+# Safety cap for BioPortal /search pagination. Multi-word / common terms (e.g.
+# "Clinical Condition") get tokenised, so require_exact_match stops limiting and
+# BioPortal returns a huge fuzzy result set spanning tens of thousands of pages.
+# Exact-label matches (the only ones we keep) rank on the first page(s); deeper
+# pages are fuzzy noise that is filtered out anyway. 0 disables the cap.
+MAX_SEARCH_PAGES = 50
 
 DEFINITION_KEYS = {
     "definition",
@@ -554,6 +560,15 @@ def search_bioportal_exact(term: str, apikey: str) -> list[dict[str, Any]]:
         if not data.get("links", {}).get("nextPage"):
             break
         page += 1
+        if MAX_SEARCH_PAGES and page > MAX_SEARCH_PAGES:
+            print(
+                f"  [cap] '{term}': stopped at {MAX_SEARCH_PAGES} pages "
+                f"(~{len(hits)} raw hits). require_exact_match is not limiting "
+                f"this term; exact-label matches rank first, deeper pages are "
+                f"fuzzy noise.",
+                file=sys.stderr,
+            )
+            break
     return hits
 
 

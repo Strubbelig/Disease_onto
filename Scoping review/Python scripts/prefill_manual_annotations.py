@@ -32,7 +32,7 @@ FIELDNAMES = [
     "class_iri", "term", "preferred_label", "source_ontology_ids",
     "manual_include_status", "manual_exclusion_reason", "manual_exclusion_detail",
     "ontology_type_manual", "native_or_imported_manual", "logical_inconsistency",
-    "disease_model_category",
+    "disease_model_category", "no_grounded_model_subtype",
     "ontological_category", "pathological_grounding", "crisp_vs_graded", "reality_vs_classification",
     "review_comment",
     "definition_quality", "comment_quality", "parentage_quality",
@@ -101,6 +101,29 @@ BFO_DISEASE_MODEL: dict[str, str] = {
     "BFO_0000015": "entity_as_process",
 }
 
+# --- Ontological category (continuant vs occurrent) -------------------------
+# disease_model_category values whose BFO/upper-level anchor makes the
+# continuant/occurrent split certain. Debatable types (finding, syndrome,
+# disorder, biotop:condition, kantian_state) are intentionally NOT listed and
+# left blank for human review ("blank unless anchored").
+CONTINUANT_MODEL_CATEGORIES = {
+    "entity_as_bfo:disposition",
+    "entity_as_disposition_non_bfo",
+    "entity_as_realizable_entity",
+    "entity_as_dependent_continuant",
+    "entity_as_sio:quality",
+}
+OCCURRENT_MODEL_CATEGORIES = {
+    "entity_as_process",
+}
+# Raw BFO IRI fragments, used as a fallback when a class carries a BFO parent
+# but no model-category mapping fired.
+BFO_OCCURRENT_IDS = {"BFO_0000003", "BFO_0000007", "BFO_0000015"}
+BFO_CONTINUANT_IDS = {
+    "BFO_0000002", "BFO_0000004", "BFO_0000016", "BFO_0000017",
+    "BFO_0000019", "BFO_0000020", "BFO_0000023", "BFO_0000031", "BFO_0000040",
+}
+
 # Ontology IDs that are unambiguously clinical terminologies regardless of scope category
 CLINICAL_TERMINOLOGY_IDS = {
     "snomedct", "loinc", "rcd", "icd10", "icd10cm", "icd9cm",
@@ -119,6 +142,7 @@ THESAURUS_METADATA_PHRASES = {
 THESAURUS_REVIEW_DISABLED_FIELDS = {
     "native_or_imported_manual",
     "disease_model_category",
+    "no_grounded_model_subtype",
     "ontological_category",
     "pathological_grounding",
     "crisp_vs_graded",
@@ -543,7 +567,11 @@ def rule_disease_model_category(row: dict) -> str:
     if "information content entity" in text or "information entity" in text:
         return "no_grounded_model"
     if "disposition" in text:
-        return "entity_as_bfo:disposition"
+        # Reaching here means the class is disposition-flavoured but has NO BFO
+        # anchor (the IFOMIS-parent check and the BFO_DISEASE_MODEL loop above
+        # already returned entity_as_bfo:disposition for genuine BFO cases).
+        # So this is a disposition in some other/undeclared upper-ontology sense.
+        return "entity_as_disposition_non_bfo"
 
     parent_text = row.get("parent_labels", "").lower()
     if "process" in parent_text:
@@ -555,6 +583,76 @@ def rule_disease_model_category(row: dict) -> str:
     if "disorder" in parent_text:
         return "entity_as_disorder"
 
+    return ""
+
+
+def rule_ontological_category(row: dict, disease_model_category: str) -> str:
+    """BFO SNAP/SPAN split: continuant vs occurrent.
+
+    Filled only where the anchor is certain (per user decision "blank unless
+    anchored"): disposition / realizable entity / dependent continuant /
+    quality -> continuant; process -> occurrent. Finding, syndrome, disorder,
+    biotop:condition and kantian_state have no crisp BFO anchor and are left
+    blank for human review. A raw BFO parent IRI is used as a fallback signal.
+    """
+    dmc = (disease_model_category or "").strip()
+    if dmc in OCCURRENT_MODEL_CATEGORIES:
+        return "occurrent"
+    if dmc in CONTINUANT_MODEL_CATEGORIES:
+        return "continuant"
+    bfo_ids = set(_bfo_ids_in_iris(row.get("parent_iris", "")))
+    if bfo_ids & BFO_OCCURRENT_IDS:
+        return "occurrent"
+    if bfo_ids & BFO_CONTINUANT_IDS:
+        return "continuant"
+    return ""
+
+
+def rule_no_grounded_subtype(row: dict, disease_model_category: str) -> str:
+    """Refine 'no_grounded_model' into how the ontology avoided a grounded model.
+
+    Only fires when disease_model_category == 'no_grounded_model'. Best-effort
+    structural signal; leaves blank when no pattern is clear so a human decides.
+      - finding_or_phenotype_route: disease subsumed under a clinical
+        finding / observation / sign-symptom / phenotype umbrella (SNOMED-style
+        non-decompositional classification).
+      - information_model_wrapper: disease placed under a generic structural /
+        data container (Concept, Model item, Patient record, phenome,
+        BiomedicineConcept, linkML/FHIR class) to leverage a graph/data schema.
+      - application_scoped_narrow: disease redefined for one narrow application
+        (adherence/influencing factor, exposure outcome, protein annotation),
+        not a general disease universal.
+    """
+    if (disease_model_category or "").strip() != "no_grounded_model":
+        return ""
+    parents = row.get("parent_labels", "").lower()
+    defn = row.get("definition", "").lower()
+    comment = row.get("review_comment", "").lower()
+    blob = " ".join((parents, defn, comment))
+
+    finding_signals = (
+        "clinical finding", "finding", "phenotyp", "observation",
+        "sign/symptom", "sign or symptom", "sign, symptom", "symptom",
+        "pathological phenomena", "pathological phenotype",
+    )
+    wrapper_signals = (
+        "concept", "model item", "patient record", "patient-record",
+        "patientrecord", "phenome", "biomedicineconcept", "biomedicine concept",
+        "linkml", "fhir", "information model", "data ", "record", "construct",
+        "characteristic", "annotation", "biophysicochemical",
+    )
+    narrow_signals = (
+        "influencing factor", "adherence", "exposure", "narrow scope",
+        "protein annotation", "single use", "application", "outcome of the exposure",
+    )
+
+    # Application-scoped narrowness is the most specific claim -> check first.
+    if any(s in blob for s in narrow_signals):
+        return "application_scoped_narrow"
+    if any(s in blob for s in finding_signals):
+        return "finding_or_phenotype_route"
+    if any(s in blob for s in wrapper_signals):
+        return "information_model_wrapper"
     return ""
 
 
@@ -581,6 +679,8 @@ def prefill_row(enriched: dict) -> dict:
     row["entity_quality_score"]       = rule_entity_quality_score(enriched)
     row["review_comment"]             = rule_review_comment(enriched)
     row["disease_model_category"]     = rule_disease_model_category(enriched)
+    row["no_grounded_model_subtype"]  = rule_no_grounded_subtype(enriched, row["disease_model_category"])
+    row["ontological_category"]       = rule_ontological_category(enriched, row["disease_model_category"])
     return row
 
 

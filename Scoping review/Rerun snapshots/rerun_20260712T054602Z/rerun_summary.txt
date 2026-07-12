@@ -1,0 +1,21 @@
+Non-destructive re-extraction vs current extraction
+generated_utc: 2026-07-12T05:46:02+00:00
+sources: bioportal, ols, obo
+baseline_file: disease_terms_review.csv  (266 unique class IRIs)
+rerun_unique_class_iris: 225
+
+ADDED   (in re-run, not in current): 10
+DROPPED (in current, not in re-run): 51
+UNCHANGED (present in both):         215
+
+First added IRIs:
+  + http://example.org/msdo#ClinicalCondition  [MSCDO] ClinicalCondition
+  + http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disorders  [APADISORDERS] Disorders
+  + http://purl.bioontology.org/ontology/RCD/X0003  [RCD] Disorders
+  + http://purl.obolibrary.org/obo/GSSO_000484  [GSSO] health condition
+  + http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition  [SSO] ClinicalCondition
+  + http://www.semanticweb.org/ontologies/epo.owl#HealthCondition  [EPO] health condition
+  + http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition  [DRANPTO] Health Condition
+  + https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HealthCondition  [BBO] Health Condition
+  + https://w3id.org/ontologies-ULL/OSDi#HealthCondition  [OSDI] Health condition
+  + https://w3id.org/onvoc/ONVOC_0000003  [ONVOC] Disorders

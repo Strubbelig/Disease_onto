@@ -1,0 +1,9 @@
+class_iri,preferred_label,source_ontology_ids,bfo_anchor_enriched,parent_labels_enriched,review_comment
+http://bioontology.org/projects/ontologies/birnlex#birnlex_11013,Disease,BioPortal: BIRNLEX,,disposition,"subclass of disposition, clear bfo legacy"
+http://www.phoc.org.cn/pmo/class/PMO_00035870,Disease,BioPortal: PMAPP-PMO,,,"definition imported from OGMS, thus definition-wise subclass of disposition but actual superclass is owl:Thing which mimics DOID. Strangely no reuse of BFO."
+http://www.semanticweb.org/ontologies/2010/2/MiRNA-Ontology.owl#Disease,Disease,BioPortal: PVONTO; BioPortal: NEUMORE,,Disposition,subclass of disposition. The rest of the super hierarchy is derived of BFO too but with the ontology's own IRI. The ontology uses no property except prefixIRI...
+http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition,Predisposition,BioPortal: APADISORDERS,,DisorderCharacteristics,subclass of disposition
+http://sbmi.uth.tmc.edu/ontology/ochv#21230,predisposition,BioPortal: OCHV,,CHV_Concept,subclass of disposition
+http://sbmi.uth.tmc.edu/ontology/ochv#C0220898,predisposition,BioPortal: OCHV,,UMLS_Concept,subclass of disposition
+http://www.co-ode.org/ontologies/galen#Predisposition,Predisposition,BioPortal: GALEN,,ConativeProcess,subclass of disposition
+https://w3id.org/biolink/vocab/Disease,disease,BioPortal: BIOLINK,,disease or phenotypic feature,subclass of disposition

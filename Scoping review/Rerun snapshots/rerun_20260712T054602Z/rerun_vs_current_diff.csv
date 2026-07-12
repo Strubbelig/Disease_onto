@@ -1,0 +1,277 @@
+status,class_iri,ontology,preferred_label,term,discovery_tier
+ADDED_would_be_new,http://example.org/msdo#ClinicalCondition,MSCDO,ClinicalCondition,ClinicalCondition,primary_exact_label
+ADDED_would_be_new,http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disorders,APADISORDERS,Disorders,disorders,primary_exact_label
+ADDED_would_be_new,http://purl.bioontology.org/ontology/RCD/X0003,RCD,Disorders,disorders,primary_exact_label
+ADDED_would_be_new,http://purl.obolibrary.org/obo/GSSO_000484,GSSO,health condition,health condition,primary_exact_label
+ADDED_would_be_new,http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition,SSO,ClinicalCondition,ClinicalCondition,primary_exact_label
+ADDED_would_be_new,http://www.semanticweb.org/ontologies/epo.owl#HealthCondition,EPO,health condition,health condition,primary_exact_label
+ADDED_would_be_new,http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition,DRANPTO,Health Condition,health condition,primary_exact_label
+ADDED_would_be_new,https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HealthCondition,BBO,Health Condition,health condition,primary_exact_label
+ADDED_would_be_new,https://w3id.org/ontologies-ULL/OSDi#HealthCondition,OSDI,Health condition,health condition,primary_exact_label
+ADDED_would_be_new,https://w3id.org/onvoc/ONVOC_0000003,ONVOC,Disorders,disorders,primary_exact_label
+DROPPED_not_retrieved_now,http://addictovocab.org/ADDICTO_0000383,addicto,injury,injury,
+DROPPED_not_retrieved_now,http://doe-generated-ontology.com/OntoAD#C0175677,ONTOAD,Injury,injury,
+DROPPED_not_retrieved_now,http://doe-generated-ontology.com/OntoAD#DiseaseOrSyndrome,ONTOAD,Disease or Syndrome,Disease or syndrome,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://example.org/npdx-ontology/term/4,NPDX,Injury,injury,
+DROPPED_not_retrieved_now,http://jermontology.org/ontology/JERMOntology#disease_state,JERM,Disease State,disease state,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991,NCIT,Disease or Disorder,Disease or disorder,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671,NCIT,Injury,injury,
+DROPPED_not_retrieved_now,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Injury,OPE,Injury,injury,
+DROPPED_not_retrieved_now,http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disease_Course,APADISORDERS,Disease_Course,Disease_Course,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition,APADISORDERS,Predisposition,predisposition,
+DROPPED_not_retrieved_now,http://psink.de/scio/Injury,SCIO,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/CSP/1582-3104,CRISP,injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/ICPC2P/A80003,ICPC2P,injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/LNC/LA17713-1,LOINC,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/MEDDRA/10022116,MEDDRA,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/RCD/XA001,RCD,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/STY/T047,MESH,Disease or Syndrome,Disease or syndrome,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://purl.bioontology.org/ontology/npo#NPO_899,NPO,pathologic process,pathologic process,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/GSSO_009123,GSSO,injury,injury,
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/HIO_0000093,HIO,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/MONDO_0021178,EFO,injury,injury,
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/NCIT_C2991,BERO,Disease or Disorder,Disease or disorder,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/NCIT_C3671,BERO,Injury,injury,
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/OGMS_0000063,obcs,disease course,disease course,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/OGMS_0000102,KTAO,injury,injury,
+DROPPED_not_retrieved_now,http://purl.obolibrary.org/obo/TRAK_0000206,TRAK,injury,injury,
+DROPPED_not_retrieved_now,http://purl.org/cpr/pathological-disposition,CPRO,Pathological disposition (disease),pathological disposition,manual_target_refinement
+DROPPED_not_retrieved_now,http://regenbase.org/ontology#RB_0000287,RB,injury,injury,
+DROPPED_not_retrieved_now,http://sbmi.uth.tmc.edu/ontology/ochv#21230,OCHV,predisposition,predisposition,
+DROPPED_not_retrieved_now,http://sbmi.uth.tmc.edu/ontology/ochv#C0220898,OCHV,predisposition,predisposition,
+DROPPED_not_retrieved_now,http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000269,HUPSON,injury,injury,
+DROPPED_not_retrieved_now,http://uri.neuinfo.org/nif/nifstd/nlx_090803,NIFSTD,Injury,injury,
+DROPPED_not_retrieved_now,http://www.ICPS/ontologies/PatientOutcomes#Injury,ICPS,Injury,injury,
+DROPPED_not_retrieved_now,http://www.co-ode.org/ontologies/galen#Injury,GALEN,Injury,injury,
+DROPPED_not_retrieved_now,http://www.co-ode.org/ontologies/galen#Predisposition,GALEN,Predisposition,predisposition,
+DROPPED_not_retrieved_now,http://www.ebi.ac.uk/efo/EFO_0000546,CCONT,injury,injury,
+DROPPED_not_retrieved_now,http://www.icn.ch/icnp#Injury,ICNP,Injury,injury,
+DROPPED_not_retrieved_now,http://www.phoc.org.cn/pmo/class/PMO_00015137,PMAPP-PMO,Disease Or Syndrome,Disease or syndrome,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,http://www.radlex.org/RID/RID4628,RADLEX,injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826,MIO,injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/cjf/ontologies/2022/8/NeuralReprogrammingOntology(NRO)#Injury,NRO,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury,FRMO,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/janetkim/ontologies/2023/4/untitled-ontology-39#Injury,STRONG,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury,DEB,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/rbmor/ontologies/2021/1/1/untitled-ontology-133#Injury,PARTUMDO,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury,NCCO,Injury,injury,
+DROPPED_not_retrieved_now,http://www.semanticweb.org/zhenyuzhang/ontologies/2021/DREAMDNPTO#Injury,DREAMDNPTO,Injury,injury,
+DROPPED_not_retrieved_now,https://allergo.infodocs.eu/ontologie/allergidoc3.0/Maladie,ALLERGIDOC,Maladie,maladie,multilingual_label_sensitivity
+DROPPED_not_retrieved_now,https://github.com/sap218/coid/blob/master/coid.owl#COID_00043,COID,injury,injury,
+DROPPED_not_retrieved_now,https://mhio.org/mh#MH_0000026,MHIO,Disease or disorder,Disease or disorder,secondary_compound_label_sensitivity
+DROPPED_not_retrieved_now,https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding,BT-ONTOLOGY,"Disease, Disorder or Finding",DiseaseDisorderOrFinding,secondary_compound_label_sensitivity
+UNCHANGED_present_both,http://bioontology.org/projects/ontologies/birnlex#birnlex_11013,BIRNLEX,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://brd.bsvgateway.org/api/disease/,ABD,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://chem.deri.ie/granatum#Disease,CANCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://clinicaltrials.gov/ctgo#Condition,CTGO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://data.cochrane.org/ontologies/core/Condition,COCHRANE,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://dbpedia.org/ontology/Disease,DCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://doe-generated-ontology.com/OntoAD#C0012634,ONTOAD,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://doe-generated-ontology.com/OntoAD#C0039082,ONTOAD,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://doe-generated-ontology.com/OntoPneumo#Syndrome,ONTOPNEUMO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://example.org/digitalhealth#Condition,ONTOSTAR,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease-1,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease1,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_10,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_11,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_12,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_13,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_2,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_3,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_4,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_5,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_6,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_7,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_8,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/irAEs.owl#Disease_9,IRAEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://example.org/ontology/Disorder,SL_DIS,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://hl7.org/fhir/Condition,HERO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://id.nlm.nih.gov/mesh/D004194,MDM,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://id.nlm.nih.gov/mesh/D013577,MDM,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://materialsmine.org/ns/Condition,MATERIALSMINE,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://mental-ontology.com/mental_health_bfo.owl#Syndrome,MHMO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457,NCIT,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193,NCIT,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526,NCIT,Dysfunction,dysfunction,primary_exact_label
+UNCHANGED_present_both,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Syndrome,OPE,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://ontriscal#Disorder,ONTRISCAL,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://opendata.inra.fr/AHOL/AHOL_0005001,AHOL,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://pgxo.loria.fr/Disease,PGXO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://phenomebrowser.net/ontologies/mesh/mesh.owl#C23.550.288,RH-MESH,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://phenomebrowser.net/ontologies/mesh/mesh.owl#C23.550.288.500,RH-MESH,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://phenomebrowser.net/ontologies/mesh/mesh.owl#D004194,RH-MESH,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://phenomebrowser.net/ontologies/mesh/mesh.owl#D013577,RH-MESH,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.allotrope.org/ontologies/common#AFC_0000090,AFO,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/CSP/0944-7801,CRISP,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT,COSTART,DYSFUNCTION,dysfunction,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/HL7/C0348080,HL7,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/ICPC2P/A99001,ICPC2P,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/LNC/LA18199-2,LOINC,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/LNC/LP185404-3,LOINC,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/LNC/MTHU048140,LOINC,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/MEDDRA/10080284,MEDDRA,Illness,illness,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/MESH/D004194,MESH,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/MESH/D013577,MESH,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/PMR.owl#Disease,PMR,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/RCD/X905K,RCD,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/RCD/Xa7w9,RCD,Illness,illness,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/RCD/XaBTk,RCD,Pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/SNOMEDCT/260905004,SNOMEDCT,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/SNOMEDCT/308489006,SNOMEDCT,Pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/SNOMEDCT/370135005,SNOMEDCT,Pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/SNOMEDCT/39104002,SNOMEDCT,Illness,illness,primary_exact_label
+UNCHANGED_present_both,http://purl.bioontology.org/ontology/SNOMEDCT/64572001,SNOMEDCT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.jp/bio/4/id/200906000364961703,IOBC,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.jp/bio/4/id/200906061373980620,IOBC,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.jp/bio/4/id/200906099632625564,IOBC,dysfunction,dysfunction,primary_exact_label
+UNCHANGED_present_both,http://purl.jp/bio/4/id/201606017936711318,IOBC,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo#disease,COVID19-IBO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/COMO_0000006,COMO,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/DERMO_0000000,DERMO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/DOID_225,NIFSTD,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/DOID_4,NIFSTD,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/ExO_0000079,EXO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/GSSO_000486,GSSO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/GSSO_000487,GSSO,illness,illness,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/GSSO_000488,GSSO,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/GSSO_000497,GSSO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/HINO_0015722,HINO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/IDOMAL_0001241,IDOMAL,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/IEV_0000075,PTS,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/MI_0617,MI,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/MONDO_0000001,OBA,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/MPATH_596,UPHENO,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/NCIT_C25457,GSSO,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/NCIT_C28193,BERO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OBI_1110055,NEOMARK4,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OBI_1110122,CCONT,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OGMS_0000031,NIFSTD,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OGMS_0000045,RBO,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OGMS_0000086,MIDO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OMIT_0005457,OMIT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/OMIT_0014440,OMIT,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/PDRO_0000129,PDRO,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/TRAK_0000205,TRAK,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/TRAK_0000610,TRAK,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://purl.obolibrary.org/obo/creno.owl#Disease,CRENO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000038,ADAR,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.org/biotop/biotop.owl#Condition,BIOTOP,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.org/biotop/biotop.owl#PathologicalDisposition,BIOTOP,pathological disposition,pathological disposition,primary_exact_label
+UNCHANGED_present_both,http://purl.org/biotop/biotop.owl#PathologicalProcess,BIOTOP,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.org/biotop/biotop.owl#condition,NATPRO,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.org/cpr/pathological-process,SDO,Pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://purl.org/cpr/syndrome,SDO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://purl.org/twc/dpo/ont/Condition,DPCO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://purl.org/twc/dpo/ont/Disease,DPCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.org/twc/poem/Disorder,POEM,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://purl.org/zonmw/generic/10026,ZONMW-GENERIC,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://purl.uniprot.org/core/Disease_Annotation,UNIPROT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://regenbase.org/ontology#RB_0008003,RB,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#11977,OCHV,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#4014,OCHV,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#C0012634,OCHV,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#C0030660,OCHV,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#C0039082,OCHV,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#C0221423,OCHV,illness,illness,primary_exact_label
+UNCHANGED_present_both,http://sbmi.uth.tmc.edu/ontology/ochv#C1314692,OCHV,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://scai.fraunhofer.de/CSEO#CSEO_00000817,CSEO,Pathological Process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://scai.fraunhofer.de/CSEO#CSEO_10000024,CSEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://scai.fraunhofer.de/CSEO#Condition,CSEO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://semanticscience.org/resource/Disease,CHEAR,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://semanticscience.org/resource/SIO_000354,IOBC,dysfunction,dysfunction,primary_exact_label
+UNCHANGED_present_both,http://semanticscience.org/resource/SIO_001017,CHEAR,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://semanticscience.org/resource/SIO_010299,CHEAR,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://surveillance.mcgill.ca/sso/syndromes.owl#Syndrome,SSO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://sweetontology.net/phenBiol/Disease,SWEET,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://sweetontology.net/propOrdinal/Condition,SWEET,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://uri.neuinfo.org/nif/nifstd/birnlex_11013,NIFSTD,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://vocab.lternet.edu/vocab/vocab/skos/155,LTER-CV,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://vocabs.lter-europe.net/EnvThes/21012,ENVTHES,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://vocabs.lter-europe.net/EnvThes/USLterCV_155,ENVTHES,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV,MEDICALINFO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://webprotege.stanford.edu/RBdVjT6X9mH1nSXd2YTRm0t,PATEL,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://webprotege.stanford.edu/RUbdXTXEazcByxbbdTq8kS,OFDSIPT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.bioassayontology.org/bao#BAO_0002927,BAO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.bootstrep.eu/ontology/GRO#Disease,GRO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.case.edu/EpSO.owl#Disease,MEPO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.case.edu/EpilepsyOntology.owl#Disease,EPSO,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://www.case.edu/PMDO#Disease,PMDO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.co-ode.org/ontologies/galen#Condition,GALEN,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.dispedia.de/o/Disease,DCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.ebi.ac.uk/efo/EFO_0000408,CCONT,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.humannervousystem.org/KAnOE/2014/dave86#Condition,HNS,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.ifomis.org/acgt/1.0#Disease,ACGT-MO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.ifomis.org/acgt/1.0#Syndrome,ACGT-MO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.limics.fr/ontologies/ontoDOME#Maladie,ONTONEPHRO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.limics.fr/ontologies/ontoDOME#Syndrome,ONTONEPHRO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.limics.fr/ontologies/ontolurgences#Syndrome,ONTOLURGENCES,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.limics.fr/ontologies/ontonephro#Syndrome,ONTONEPHRO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.limics.fr/ontologies/ontopsychiasoc#Trouble,ONTOPSYCHIA,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://www.limics.org/hrdo/rdfns#typ_id_11,HRDO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.limics.org/hrdo/rdfns#typ_id_4,HRDO,disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://www.onto-med.de/ontologies/gfo-persian-medicine-diseases.owl#Disease,PMD,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.ontologyrepository.com/CommonCoreOntologies/Disease,BBO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.orpha.net/ORDO/Orphanet_377788,ORDO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.orpha.net/ORDO/Orphanet_557493,ORDO,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://www.owl-ontologies.com/NPOntology.owl#DOID_225,NATPRO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.owl-ontologies.com/Ontology1184060740.owl#Class_83,EXACT,condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.owl-ontologies.com/Ontology1239104585.owl#Disease,BCGO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.owl-ontologies.com/Ontology1435740495.owl#Disease,OF,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.phoc.org.cn/pmo/class/PMO_00035870,PMAPP-PMO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.projecthalo.com/aura#Condition,AURA,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.projecthalo.com/aura#Disease,AURA,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org//Childbearing-ageWomenwithEpilepsyOntology#OWLClassde18b6e3_5aab_4eba_937e_3c256c84cdb6,WWECA,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/NDDRFO#Disease,NDDRFO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/NDDRFO#Syndrome,NDDRFO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/Thibaut/ontologies/2021/3/OntoBioStat#Condition,OBS,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#Condition,FALL,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/abid/ontologies/2022/9/untitled-ontology-11#Disease,EDONTOLOGY,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Disease,DMDSONT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/danielhier/ontologies/2019/3/untitled-ontology-57#disease,NEO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/debna/ontologies/2026/5/hypertension_ontology#Disease,HTNCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease,HP_O,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/erden/ontologies/2023/7/LiverCancerExample/OWLClass_b5ec253b_53ec_4771_82e9_fa3d0d08dd33,CONDOR,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/hanfei/ontologies/2020/9/untitled-ontology-1306#Disease,COVID-19-ONT-PM,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/hsh/ontologies/2019/7/CBRDystempOnto#Disease,CASE-BASE-ONTO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/janetkim/ontologies/2023/4/untitled-ontology-38#Illness,STRONG,Illness,illness,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Disease,CDMONTO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/maria/ontologies/2023/1/OntologiaByMAF#OWLClass_94f15b74_e615_4e1a_a162_c9f95c18afd6,SP_ONTOLOGY,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome,MEPO,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/2010/2/MiRNA-Ontology.owl#Disease,PVONTO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000026,HPIO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000170,HPIO,Pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629,ELIG,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases,PCALION,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#Disease,CDPEO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/ontologies/epo.owl#Syndrome,EPO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition,ADHER_INTCARE_EN,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Disease,ADHER_INTCARE_EN,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/rbmor/ontologies/2021/1/1/untitled-ontology-133#Condition,PARTUMDO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#Disease,ESSO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease,MEPO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/sun/ontologies/AD-CDE#Disease,AD-CDO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/user/ontologies/2023/10/untitled-ontology-5#condition,MELLO-D,Condition,condition,primary_exact_label
+UNCHANGED_present_both,http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome,SEPON,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,http://www.shojaee.com/shr/shr.owl#Disease,SHR,Disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047,TMO,disease,disease,primary_exact_label
+UNCHANGED_present_both,http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0058,TMO,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome,ALLERGIDOC,Syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,https://github.com/sap218/coid/blob/master/coid.owl#COID_01149,COID,syndrome,syndrome,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/bervo/BERVO_8000302,BERVO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/biolink/vocab/Disease,BIOLINK,disease,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/biolink/vocab/PathologicalProcess,BIOLINK,pathological process,pathological process,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/brainteaser/ontology/schema/Condition,BT-ONTOLOGY,Condition,condition,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/codo#Condition,CODO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/codo#Disease,CODO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/codo#Disorder,CODO,Disorder,disorder,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/def/predibionto#Disease,DDSS,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/monarch-initiative/namo/DigitalTwinScopeEnum#DISEASE,NAMO,DISEASE,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/ontologies-ULL/OSDi#Disease,OSDI,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/opencare#Condition,OCO,Condition,condition,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/opencare#Disease,OCO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://w3id.org/valuesets/Disease,VALUESETS,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://www.commoncoreontologies.org/ont00000318,SLSO,Disease,disease,primary_exact_label
+UNCHANGED_present_both,https://yogaontology.org/ontology/Condition,YOGA,Condition,condition,primary_exact_label
+UNCHANGED_present_both,urn:agi-folder:disease,BPT,Disease,disease,primary_exact_label
+UNCHANGED_present_both,urn:agi-folder:pathological_process,BPT,Pathological process,pathological process,primary_exact_label
