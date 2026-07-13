@@ -1572,6 +1572,8 @@ class ReviewExtractionPipeline:
                     data = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
                     if parsed.path == "/api/save":
                         self._send_json(pipeline._review_ui_save(data, args))
+                    elif parsed.path == "/api/apply-to-definition":
+                        self._send_json(pipeline._review_ui_apply_to_definition(data, args))
                     elif parsed.path == "/api/citation_approve":
                         self._send_json(pipeline._review_ui_citation_approve(data))
                     else:
@@ -2035,6 +2037,15 @@ class ReviewExtractionPipeline:
             field: self._prompt_evidence_lines(field, row, evidence, manual)
             for field in REVIEW_PROMPT_FIELDS
         }
+        def_key = self._normalise_definition_text(row.get("definition", ""))
+        sibling_iris = []
+        if def_key:
+            sibling_iris = [
+                r.get("class_iri", "")
+                for r in rows
+                if r.get("class_iri")
+                and self._normalise_definition_text(r.get("definition", "")) == def_key
+            ]
         return {
             "row": row,
             "manual": {field: manual.get(field, "") for field in manual_script.FIELDNAMES},
@@ -2042,7 +2053,19 @@ class ReviewExtractionPipeline:
             "modulePaths": evidence.get("module_paths", []),
             "sourceLinks": self._review_ui_source_links(row),
             "citation": self._citation_lookup().get(iri, {}),
+            "definitionSiblingCount": len(sibling_iris),
+            "definitionSiblingIris": sibling_iris,
         }
+
+    @staticmethod
+    def _normalise_definition_text(text: str) -> str:
+        """Canonical form for detecting copy-pasted definitions across ontologies:
+        lowercase, drop URLs and [bracketed source tags], strip punctuation."""
+        s = (text or "").lower()
+        s = re.sub(r"https?://\S+", " ", s)
+        s = re.sub(r"\[[^\]]*\]", " ", s)
+        s = re.sub(r"[^a-z0-9]+", " ", s)
+        return re.sub(r"\s+", " ", s).strip()
 
     @staticmethod
     def _review_ui_source_links(row: dict[str, str]) -> list[dict[str, str]]:
@@ -2138,6 +2161,70 @@ class ReviewExtractionPipeline:
             "exported": exported,
             "manualCsv": str(self.config.manual_csv),
             "reviewOntologyTtl": str(self.config.review_ontology_ttl),
+        }
+
+    # Fields safe to set in bulk across classes that share the same definition —
+    # the definition-driven coupled decisions.
+    APPLY_TO_DEFINITION_FIELDS = {
+        "pathological_grounding",
+        "ontological_category",
+        "crisp_vs_graded",
+        "reality_vs_classification",
+        "disease_model_category",
+    }
+
+    def _review_ui_apply_to_definition(self, data: dict[str, Any], args: argparse.Namespace) -> dict[str, Any]:
+        """Set one field on every reviewed class whose definition text is identical
+        (after normalisation) to the source class's — 'decide once per definition'.
+        Overwrites that single field on siblings; other fields untouched."""
+        iri = str(data.get("iri", "")).strip()
+        field = str(data.get("field", "")).strip()
+        value = str(data.get("value", "") or "")
+        if not iri:
+            raise ValueError("Request needs iri.")
+        if field not in self.APPLY_TO_DEFINITION_FIELDS:
+            raise ValueError(f"Field not allowed for definition-propagation: {field!r}")
+
+        rows, manual_by_iri = self._review_ui_rows_and_manual(args)
+        source = next((r for r in rows if r.get("class_iri") == iri), None)
+        if not source:
+            raise ValueError(f"Class not found in current review export rows: {iri}")
+        def_key = self._normalise_definition_text(source.get("definition", ""))
+        if not def_key:
+            return {"ok": False, "affected": 0, "field": field, "value": value,
+                    "message": "This class has no definition text, so there is nothing to match."}
+
+        affected_iris: list[str] = []
+        for other in rows:
+            other_iri = other.get("class_iri", "")
+            if not other_iri:
+                continue
+            if self._normalise_definition_text(other.get("definition", "")) != def_key:
+                continue
+            entry = dict(manual_by_iri.get(other_iri, {}))
+            entry["class_iri"] = other_iri
+            entry.setdefault("term", other.get("term", ""))
+            entry.setdefault("preferred_label", other.get("preferred_label", ""))
+            entry.setdefault("source_ontology_ids", other.get("source_ontology_ids", ""))
+            if entry.get(field, "") != value:
+                entry[field] = value
+                affected_iris.append(other_iri)
+            entry = self._normalise_manual_row(entry)
+            manual_by_iri[other_iri] = entry
+
+        self._write_manual_annotations(rows, manual_by_iri)
+        exported = False
+        if bool(data.get("export", False)) and not args.no_export_after_review:
+            self.export_review_ontology(args)
+            exported = True
+        return {
+            "ok": True,
+            "field": field,
+            "value": value,
+            "affected": len(affected_iris),
+            "affectedIris": affected_iris,
+            "exported": exported,
+            "manualCsv": str(self.config.manual_csv),
         }
 
     @staticmethod
@@ -2854,6 +2941,7 @@ class ReviewExtractionPipeline:
           <div class="answer">
             ${renderEvidence(evidence)}
             ${renderControl(field, value)}
+            ${renderDefinitionPropagate(field)}
           </div>
         </div>
       `;
@@ -2885,6 +2973,43 @@ class ReviewExtractionPipeline:
         return `<input id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}" value="${escapeHtml(value || config.defaultReviewer || "")}">`;
       }
       return `<textarea id="field-${escapeHtml(field)}" data-field="${escapeHtml(field)}">${escapeHtml(value || "")}</textarea>`;
+    }
+
+    function renderDefinitionPropagate(field) {
+      if (field !== "pathological_grounding") return "";
+      const n = (currentPayload && currentPayload.definitionSiblingCount) || 0;
+      if (n < 2) return "";
+      return `
+        <div class="def-propagate" style="margin-top:6px;">
+          <button type="button" class="secondary" onclick="applyFieldToDefinition('pathological_grounding')">
+            Apply this grounding to all ${n} classes with the same definition
+          </button>
+          <div class="subtle">This exact definition text is shared by ${n} classes (copy-paste). Sets the dropdown's current value on all of them.</div>
+        </div>
+      `;
+    }
+
+    async function applyFieldToDefinition(field) {
+      if (!selectedIri) return;
+      const control = fieldControl(field);
+      if (!control) return;
+      const value = control.value;
+      const label = (config.fieldLabels && config.fieldLabels[field]) || field;
+      try {
+        setStatus(`Applying ${label} = "${value || "(blank)"}" to all classes with this definition…`);
+        const result = await requestJson("/api/apply-to-definition", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ iri: selectedIri, field: field, value: value }),
+        });
+        if (result.error) { setStatus(result.error, true); return; }
+        if (result.ok === false) { setStatus(result.message || "Nothing to apply.", true); return; }
+        setStatus(`Set ${label} = "${value || "(blank)"}" on ${result.affected} class(es) sharing this definition.`);
+        await loadClasses(true, false);
+        await loadClass(selectedIri);
+      } catch (error) {
+        setStatus(error.message, true);
+      }
     }
 
     function fieldControl(field) {

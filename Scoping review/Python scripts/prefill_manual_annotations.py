@@ -656,6 +656,56 @@ def rule_no_grounded_subtype(row: dict, disease_model_category: str) -> str:
     return ""
 
 
+def rule_pathological_grounding(row: dict) -> str:
+    """Coupled decision #2 — what grounds 'pathological/abnormal', read from the
+    class definition. Heuristic first-pass suggestion (human confirms/overrides
+    in the review UI). Returns one of the UI's controlled values, or "" when the
+    definition gives no usable signal (or is not in English / mixed).
+
+    UI vocabulary: statistical | evolutionary_function | normative |
+    primitive_criteria | reference_class_indexed | undefined | not_applicable.
+    """
+    d = (row.get("definition", "") or "").lower()
+    if not d.strip():
+        return ""                                   # no definition -> let human decide
+    if not any(ch.isalpha() and ord(ch) < 128 for ch in d):
+        return ""                                   # non-latin / needs language review
+
+    reference = any(w in d for w in ["reference class", "relative to age", "age and sex",
+                                     "age/sex", "sex-specific", "for the age", "peer group"])
+    harm = any(w in d for w in ["discomfort", "distress", "suffering", "detrimental",
+                                "harm", "disvalue", "impair", "burden", "well-being",
+                                "wellbeing", "quality of life", "damage", "injur"])
+    dysf = any(w in d for w in ["dysfunction", "malfunction", "disruption of",
+                                "impairment of function", "loss of function", "abnormal function"])
+    evol = any(w in d for w in ["evolution", "selected function", "natural function",
+                                "designed to", "biological function"])
+    stat = any(w in d for w in ["normal function", "species-typical", "statistical",
+                                "below normal", "typical function", "normal range",
+                                "biologically normal"])
+    disorder_based = ("disposition" in d and "disorder" in d) or "physical basis" in d
+    primitive = any(w in d for w in ["pathologic process", "pathological process",
+                                     "pathologic state", "pathological state", "morbid",
+                                     "characteristic set of signs", "signs and symptoms",
+                                     "clinicopatholog"])
+
+    if reference:
+        return "reference_class_indexed"
+    if (dysf and harm) or evol:
+        return "evolutionary_function"             # Wakefield/Schwartz harmful dysfunction
+    if stat and not harm:
+        return "statistical"                       # Boorse sub-normal function
+    if harm and not dysf and not stat:
+        return "normative"                         # harm/disvalue
+    if primitive and not (harm or dysf or stat):
+        return "primitive_criteria"                # Hucklenbroich criteria-defined
+    if disorder_based:
+        return "undefined"                         # OGMS: imports a notion, never states which
+    if dysf or harm or stat or primitive:
+        return ""                                   # mixed cues -> human call
+    return "undefined"                             # has a definition but grounds nothing
+
+
 # ---------------------------------------------------------------------------
 # Apply all rules to one enriched row
 # ---------------------------------------------------------------------------
@@ -681,6 +731,7 @@ def prefill_row(enriched: dict) -> dict:
     row["disease_model_category"]     = rule_disease_model_category(enriched)
     row["no_grounded_model_subtype"]  = rule_no_grounded_subtype(enriched, row["disease_model_category"])
     row["ontological_category"]       = rule_ontological_category(enriched, row["disease_model_category"])
+    row["pathological_grounding"]     = rule_pathological_grounding(enriched)
     return row
 
 
