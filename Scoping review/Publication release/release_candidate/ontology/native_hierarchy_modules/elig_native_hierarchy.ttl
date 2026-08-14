@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-elig> a owl:Ontology ;
+    dcterms:source "BioPortal:ELIG (elig_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=v. 1.0, released=2013-05-07T00:00:00.000-07:00, creationDate=2013-05-07T13:09:37.000-07:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "DiseaseCharacteristic" .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381> .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012585538592381> <http://www.w3.org/2000/01/rdf-schema#label> "EligibilityFeature" .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629> <http://purl.org/dc/terms/source> "review target in ELIG from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#DiseaseCharacteristic> .

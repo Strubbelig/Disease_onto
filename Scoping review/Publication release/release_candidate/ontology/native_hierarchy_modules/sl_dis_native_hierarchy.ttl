@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sl_dis> a owl:Ontology ;
+    dcterms:source "BioPortal API:SL_DIS" ;
+    owl:versionInfo "BioPortal: version=2.0, released=2025-08-25T00:00:00.000+00:00, creationDate=2025-08-25T00:00:00.000+00:00, submissionId=2" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://example.org/ontology#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/ontology#Sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep" .
+<http://example.org/ontology/Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "An abnormal condition that affects the body's function but may or may not have specific signs and symptoms. Resulting from an organismic dysfunction that causes distress, disability, or disadvantage." .
+<http://example.org/ontology/Disorder> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SL_DIS" .
+<http://example.org/ontology/Disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/ontology/Disorder> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" .
+<http://example.org/ontology/Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/ontology#Sleep> .

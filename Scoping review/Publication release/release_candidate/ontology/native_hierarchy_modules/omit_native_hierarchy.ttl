@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-omit> a owl:Ontology ;
+    dcterms:source "BioPortal API:OMIT" ;
+    owl:versionInfo "BioPortal: version=OBO 4.0-12122013-2338, released=2021-01-05T18:15:02.000-08:00, creationDate=2021-01-05T18:15:28.000-08:00, submissionId=41" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000019> <http://www.w3.org/2000/01/rdf-schema#label> "quality" .
+<http://purl.obolibrary.org/obo/OMIT_0000110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0000110> <http://www.w3.org/2000/01/rdf-schema#label> "MeSH_term" .
+<http://purl.obolibrary.org/obo/OMIT_0000110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://purl.obolibrary.org/obo/OMIT_0001003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0001003> <http://www.w3.org/2000/01/rdf-schema#label> "Diseases Category" .
+<http://purl.obolibrary.org/obo/OMIT_0001003> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OMIT_0000110> .
+<http://purl.obolibrary.org/obo/OMIT_0005457> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: OMIT" .
+<http://purl.obolibrary.org/obo/OMIT_0005457> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0005457> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.obolibrary.org/obo/OMIT_0005457> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OMIT_0011330> .
+<http://purl.obolibrary.org/obo/OMIT_0011330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0011330> <http://www.w3.org/2000/01/rdf-schema#label> "Pathologic Processes" .
+<http://purl.obolibrary.org/obo/OMIT_0011330> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OMIT_0014432> .
+<http://purl.obolibrary.org/obo/OMIT_0014432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0014432> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological Conditions, Signs and Symptoms" .
+<http://purl.obolibrary.org/obo/OMIT_0014432> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OMIT_0001003> .
+<http://purl.obolibrary.org/obo/OMIT_0014440> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: OMIT" .
+<http://purl.obolibrary.org/obo/OMIT_0014440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMIT_0014440> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://purl.obolibrary.org/obo/OMIT_0014440> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OMIT_0005457> .

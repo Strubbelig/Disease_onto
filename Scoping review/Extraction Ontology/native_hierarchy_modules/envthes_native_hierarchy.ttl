@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-envthes> a owl:Ontology ;
+    dcterms:source "BioPortal:ENVTHES (envthes_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=5.0.16, released=2025-11-06T18:04:22.000-08:00, creationDate=2025-11-06T00:00:00.000+00:00, submissionId=54" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://vocabs.lter-europe.net/EnvThes/1> <http://purl.obolibrary.org/obo/IAO_0000115> "Deprecated concept is a container that contains concepts which are no longer in use. Concepts which are not used anymore or are replaced by another updated terms are moved to deprecated and maintain their link to the following term. By this no broken links are guaranteed throughout the lifetime of the controlled vocabulary./p" .
+<http://vocabs.lter-europe.net/EnvThes/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/1> <http://www.w3.org/2000/01/rdf-schema#label> "deprecated concept" .
+<http://vocabs.lter-europe.net/EnvThes/10002> <http://purl.obolibrary.org/obo/IAO_0000115> "[CSIRO] The substance, taxon or other physical/chemical phenomenon of the feature of interest that is being observed. E.g. Waves, Rainfall, Calluna Vulgaris, Aluminium." .
+<http://vocabs.lter-europe.net/EnvThes/10002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/10002> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://vocabs.lter-europe.net/EnvThes/20948> <http://purl.obolibrary.org/obo/IAO_0000115> "[REX] A phenomenon by which change takes place in a system. In physiological systems, a process may be chemical, physical or both. , \"This term contains dynamic development and cycling of elements in a controlled way driven by biology or environmental conditions (e.g. NT growth, decomposition, nitrogen cycling)" .
+<http://vocabs.lter-europe.net/EnvThes/20948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/20948> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://vocabs.lter-europe.net/EnvThes/20948> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocabs.lter-europe.net/EnvThes/10002> .
+<http://vocabs.lter-europe.net/EnvThes/20982> <http://purl.obolibrary.org/obo/IAO_0000115> "[GEMET] Processes concerning living organisms" .
+<http://vocabs.lter-europe.net/EnvThes/20982> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/20982> <http://www.w3.org/2000/01/rdf-schema#label> "biological process" .
+<http://vocabs.lter-europe.net/EnvThes/20982> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocabs.lter-europe.net/EnvThes/20948> .
+<http://vocabs.lter-europe.net/EnvThes/21012> <http://purl.obolibrary.org/obo/IAO_0000115> "[GEMET] A definite pathological process having a characteristic set of signs and symptoms which are detrimental to the well-being of the individual." .
+<http://vocabs.lter-europe.net/EnvThes/21012> <http://purl.org/dc/terms/source> "review target in ENVTHES from disease_terms_review_enriched.csv" .
+<http://vocabs.lter-europe.net/EnvThes/21012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/21012> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://vocabs.lter-europe.net/EnvThes/21012> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocabs.lter-europe.net/EnvThes/20982> .
+<http://vocabs.lter-europe.net/EnvThes/USLterCV_155> <http://purl.obolibrary.org/obo/IAO_0000115> "[GEMET] A definite pathological process having a characteristic set of signs and symptoms which are detrimental to the well-being of the individual." .
+<http://vocabs.lter-europe.net/EnvThes/USLterCV_155> <http://purl.org/dc/terms/source> "review target in ENVTHES from disease_terms_review_enriched.csv" .
+<http://vocabs.lter-europe.net/EnvThes/USLterCV_155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocabs.lter-europe.net/EnvThes/USLterCV_155> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://vocabs.lter-europe.net/EnvThes/USLterCV_155> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocabs.lter-europe.net/EnvThes/1> .

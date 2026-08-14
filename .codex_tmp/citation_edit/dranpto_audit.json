@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-08-10T19:18:15-04:00",
+  "master_csv": "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Disease ontologies/Scoping review/Extraction Tables/disease_terms_review_enriched.csv",
+  "master_sha256": "110300755994f42ba5f6fe8d7f1d87058bc9bee01831728f6a57c4ee00326ce2",
+  "row_count": 276,
+  "unique_class_iris": 276,
+  "effective_synthesis_status_counts": {
+    "include": 146,
+    "exclude": 130
+  },
+  "evidence_status_counts": {
+    "fallback_with_evidence": 13,
+    "native_module": 257,
+    "insufficient_metadata": 6
+  },
+  "ambiguity_count": 2,
+  "ambiguities": [
+    {
+      "class_iri": "http://example.org/msdo#ClinicalCondition",
+      "ontology": "MSCDO",
+      "label": "ClinicalCondition",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "ClinicalCondition subclass of snomed:404684003 and snomed:404684003 subclass of ClinicalCondition. No comment, no definition.",
+      "proposed_comment": ""
+    },
+    {
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003",
+      "ontology": "ONVOC",
+      "label": "Disorders",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "No parent, no definition, no superclass.",
+      "proposed_comment": ""
+    }
+  ],
+  "citation_unreviewed": [
+    {
+      "ontology": "MSCDO",
+      "class_iri": "http://example.org/msdo#ClinicalCondition"
+    },
+    {
+      "ontology": "ONVOC",
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003"
+    }
+  ],
+  "approved_citations_incomplete": [],
+  "target_module_mismatches": [],
+  "cross_module_duplicate_edges": [],
+  "ttl_checks": {
+    "disease_terms_review.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "ced3b225c357d30c3e590b3ca2d61933ca8a8c0bc46ffdf8914380a4888b1fe0"
+    },
+    "disease_terms_synthesis.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "09ea0d056c00d229cc3638a26758d61571ef198726a16d493f711a087bcc8da3"
+    },
+    "review_core.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "d174f983aefea8ce94e2c0c9da55ab7680b7bc540379b28ac5bb5de49feb6f34"
+    }
+  },
+  "external_human_tasks": [
+    "When the OSF registration embargo is lifted, insert its public DOI, URL, and registration date in the manuscript.",
+    "Complete and reconcile the prespecified 50-class independent stratified validation sample.",
+    "Add the corresponding-author postal address, email, and telephone; confirm Martin Boeker's degree, both authors' CRediT roles and competing interests, and institutional open-access coverage.",
+    "Reconcile the draft reference inventory in Zotero and export it in the selected journal's style.",
+    "Approve or edit unresolved publication decisions in the review UI."
+  ]
+}

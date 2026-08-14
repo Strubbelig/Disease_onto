@@ -1,0 +1,34 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/materialsmine> a owl:Ontology ;
+    dcterms:source "BioPortal API:MATERIALSMINE" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2024-07-24T18:09:48.000-07:00, creationDate=2024-07-24T18:09:53.000-07:00, submissionId=3" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://materialsmine.org/ns/CompressionProperty> <http://purl.obolibrary.org/obo/IAO_0000115> "Properties of how the material will react to forces being applied in compression" .
+<http://materialsmine.org/ns/CompressionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://materialsmine.org/ns/CompressionProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Compression Property" .
+<http://materialsmine.org/ns/CompressionProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://materialsmine.org/ns/MechanicalProperty> .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "Description of the material's environment (e.g., during characterization)" .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "The approximation, such as Plane Stress or Plane Strain, used to calculate the stress state of the material." .
+<http://materialsmine.org/ns/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "see Condition" .
+<http://materialsmine.org/ns/Condition> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MATERIALSMINE" .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://materialsmine.org/ns/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://materialsmine.org/ns/CompressionProperty> .
+<http://materialsmine.org/ns/MechanicalProperty> <http://purl.obolibrary.org/obo/IAO_0000115> "A materials property related to the response of a material under some external applied load." .
+<http://materialsmine.org/ns/MechanicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://materialsmine.org/ns/MechanicalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Property" .
+<http://materialsmine.org/ns/MechanicalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000052> .
+<http://semanticscience.org/resource/SIO_000052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000052> <http://www.w3.org/2000/01/rdf-schema#label> "Amount" .

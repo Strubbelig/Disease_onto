@@ -1,6 +1,8 @@
-# Scoping Review Protocol — How Disease Is Formally Modelled in Ontologies
+# HISTORICAL SUBMITTED PROTOCOL: Scoping Review — How Disease Is Formally Modelled in Ontologies
 
-*Draft protocol, v0.1. Written to be registrable (OSF / Open Science Framework) and PRISMA-ScR compliant. Scope deliberately narrowed to **ontological/computational modelling of disease**; the philosophy-of-medicine literature enters only where a formal model explicitly imports it.*
+> **Preserve for registration history; do not use as the publication-facing design description.** The protocol was submitted retrospectively under the label “scoping review.” On 10 August 2026 the implemented study was reclassified as a systematic cross-sectional evaluation of primary ontology artifacts because publications are not its units of analysis. See `OSF_Retrospective_Registration_Addendum.md` and `Reporting_Guideline_Applicability.md`. The underlying retrieval and coding procedures remain documented below.
+
+*Draft protocol, v0.2. Written to be registrable (OSF / Open Science Framework) and PRISMA-ScR compliant. Scope deliberately narrowed to **ontological/computational modelling of disease**; the philosophy-of-medicine literature enters only where a formal model explicitly imports it. This version records the implemented master-table and OWL-release workflow.*
 
 ---
 
@@ -70,7 +72,7 @@ Adapt per database; record full strings in an appendix. Core concept blocks comb
 
 Pilot the string, report sensitivity, then freeze. Use the seed set (§9) as a **known-item validation**: a good strategy must retrieve all of them.
 
-For ontology-registry extraction, use a two-tier term strategy. The primary exact-label tier searches the main disease-neighbour terms (`disease`, `disorder`, `illness`, `condition`, `syndrome`, `pathological process`, `pathological disposition`, `dysfunction`). A secondary sensitivity tier is then used to reduce false negatives from alternative root labels. Broad supplementary terms such as `pathological condition`, `pathological state`, `disease state`, `pathologic process`, and `morbid condition` are retained only for source ontologies that had no primary-term hit. Specific compound disease/disorder labels such as `DiseaseDisorderOrFinding`, `Disease or disorder`, and `Disease or syndrome` are retained as candidate disease-root classes because they may represent the relevant modelling class even when the same ontology also contains a generic `condition` class. Secondary-tier hits are marked with `discovery_tier = secondary_compound_label_sensitivity`.
+For ontology-registry extraction, use a two-tier term strategy. The primary exact-label tier searches the main disease-neighbour terms (`disease`, `disorder`, `illness`, `condition`, `health condition`, `syndrome`, `pathological process`, `pathological disposition`, `dysfunction`). A secondary sensitivity tier is then used to reduce false negatives from alternative root labels. Broad supplementary terms such as `pathological condition`, `pathological state`, `disease state`, `pathologic process`, and `morbid condition` are retained only for source ontologies that had no primary-term hit. Specific compound disease/disorder labels such as `DiseaseDisorderOrFinding`, `Disease or disorder`, and `Disease or syndrome` are retained as candidate disease-root classes because they may represent the relevant modelling class even when the same ontology also contains a generic `condition` class. Secondary-tier hits are marked with `discovery_tier = secondary_compound_label_sensitivity`.
 
 `Pathological process` is treated as a disease-neighbour/fallback signal rather than as an ordinary disease synonym. If a source ontology already has a stronger disease-like review target (`disease`, `disorder`, `condition`, `syndrome`, etc.), its `pathological process` class is suppressed from the active class-review list and recorded as contextual vocabulary for the flow/audit tables. If no stronger disease-like target is found in that source ontology, `pathological process` remains eligible as a process-based candidate.
 
@@ -88,9 +90,9 @@ The literature/document search remains language-scoped to English, with German r
 
 ## 8. Ontology-Based Data Charting
 
-The primary charting object is an OWL class in the review ontology, not a spreadsheet row. Each reviewed disease, disorder, condition, syndrome, abnormal state, or fallback pathological-process class is represented by its class IRI. The review ontology imports the relevant source module so the reviewer can inspect labels, definitions, axioms, and superclass hierarchy directly in Protege.
+The unit of analysis is an OWL class identified by its IRI. The sole editable charting record is `disease_terms_review_enriched.csv`; the full evidence ontology and included-only synthesis ontology are generated from it. Each reviewed disease, disorder, condition, syndrome, abnormal state, or fallback pathological-process class resolves through a subject-sanitized native source module so the reviewer can inspect labels, definitions, comments, synonyms, and asserted superclass hierarchy directly in Protege or the review UI.
 
-Tables may be generated from the ontology for QA and reporting, but the durable review source is the ontology itself. Draft annotation dimensions — pilot on 5-10 sources/classes, then revise (Levac iterative step):
+The generated `disease_terms_review.ttl` retains all screened records; `disease_terms_synthesis.ttl` contains only rows with `effective_synthesis_status = include`. Manual decisions are preserved separately from rule-derived effective decisions, and unresolved conflicts use `needs_user_decision`. Draft annotation dimensions — pilot on 5-10 sources/classes, then revise (Levac iterative step):
 
 | Field | Values / notes |
 |---|---|
@@ -102,7 +104,7 @@ Tables may be generated from the ontology for QA and reporting, but the durable 
 | Category of *disorder* | material continuant / abnormal state / quality / process / n.a. |
 | Pathological process modelled? | yes/no; relation to disorder (manifestation-of, part-of, constitutes) |
 | Disease course modelled? | yes/no; how |
-| **Grounding of "pathological/abnormal"** | statistical (Boorse) / function-evolutionary / normative / primitive-criteria (Hucklenbroich) / undefined / reference-class-indexed |
+| **Grounding of "pathological/abnormal"** | statistical (Boorse) / function-evolutionary / normative / primitive-criteria (Hucklenbroich) / undefined / not applicable; reference classes such as age, sex, species, breed, or life stage qualify the underlying grounding rather than forming a separate category |
 | Crisp vs graded | crisp DL classes / fuzzy / prototype / gradedness in data-annotation / silent |
 | Ontology vs default knowledge | does it separate necessary axioms from typical/probabilistic associations? (Schulz distinction) |
 | Reference-class / context handling | yes/no; mechanism |

@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/uniprot> a owl:Ontology ;
+    dcterms:source "BioPortal API:UNIPROT" ;
+    owl:versionInfo "BioPortal: version=v2012-10-03, released=2012-10-02T00:00:00.000+00:00, creationDate=2026-01-22T00:00:00.000+00:00, submissionId=1" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.uniprot.org/core/Annotation> <http://purl.obolibrary.org/obo/IAO_0000115> "Description of a resource on a specific topic." .
+<http://purl.uniprot.org/core/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.uniprot.org/core/Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation" .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://purl.obolibrary.org/obo/IAO_0000115> "Description of the diseases associated with a deficiency of a protein." .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: UNIPROT" .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the diseases associated with a deficiency of a protein." .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.uniprot.org/core/Disease_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.uniprot.org/core/Annotation> .

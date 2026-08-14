@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/trak> a owl:Ontology ;
+    dcterms:source "BioPortal API:TRAK" ;
+    owl:versionInfo "BioPortal: version=unknown, released=2015-09-14T00:00:00.000+00:00, creationDate=2015-09-14T03:39:19.000-07:00, submissionId=5" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/TRAK_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://purl.obolibrary.org/obo/IAO_0000115> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/2000/01/rdf-schema#label> "material entity" .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000409> .
+<http://purl.obolibrary.org/obo/TRAK_0000086> <http://www.w3.org/2004/02/skos/core#altLabel> "physical object" .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://purl.obolibrary.org/obo/IAO_0000115> "Pathological structure, disposition, or process. This disjoint category helps properly represent diseases because it is often left open whether they are meant as pathological structure, disposition, or process." .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://www.w3.org/2000/01/rdf-schema#label> "pathological condition" .
+<http://purl.obolibrary.org/obo/TRAK_0000204> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000409> .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: TRAK" .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000204> .
+<http://purl.obolibrary.org/obo/TRAK_0000205> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000607> .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://purl.obolibrary.org/obo/IAO_0000115> "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure." .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: TRAK" .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000204> .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/TRAK_0000206> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://purl.obolibrary.org/obo/TRAK_0000409> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://purl.obolibrary.org/obo/TRAK_0000409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000409> <http://www.w3.org/2000/01/rdf-schema#label> "continuant" .
+<http://purl.obolibrary.org/obo/TRAK_0000409> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000001> .
+<http://purl.obolibrary.org/obo/TRAK_0000409> <http://www.w3.org/2004/02/skos/core#altLabel> "endurant" .
+<http://purl.obolibrary.org/obo/TRAK_0000463> <http://purl.obolibrary.org/obo/IAO_0000115> "A continuant that inheres in continuant entities and is not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." .
+<http://purl.obolibrary.org/obo/TRAK_0000463> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000463> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://purl.obolibrary.org/obo/TRAK_0000463> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000409> .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity that essentially causes a specific process or transformation in the entity in which it inheres, under specific circumstances and in conjunction with the laws of nature." .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://purl.obolibrary.org/obo/TRAK_0000607> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000463> .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: TRAK" .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .
+<http://purl.obolibrary.org/obo/TRAK_0000610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/TRAK_0000086> .

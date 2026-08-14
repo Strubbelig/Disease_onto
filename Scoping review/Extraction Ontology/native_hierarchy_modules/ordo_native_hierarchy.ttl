@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ordo> a owl:Ontology ;
+    dcterms:source "BioPortal API:ORDO" ;
+    owl:versionInfo "BioPortal: version=4.8, released=2013-06-20T12:00:00.000+00:00, creationDate=2025-12-10T00:00:00.000+00:00, submissionId=32" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.orpha.net/ORDO/Orphanet_377788> <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder with homogeneous therapeutic possibilities and an identified pathophysiological mechanism. Developmental anomalies are excluded." .
+<http://www.orpha.net/ORDO/Orphanet_377788> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ORDO" .
+<http://www.orpha.net/ORDO/Orphanet_377788> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.orpha.net/ORDO/Orphanet_377788> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.orpha.net/ORDO/Orphanet_377788> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.orpha.net/ORDO/Orphanet_557493> .
+<http://www.orpha.net/ORDO/Orphanet_557493> <http://purl.obolibrary.org/obo/IAO_0000115> "A clinical entity characterised by a set of homogeneous phenotypic abnormalities and evolution allowing a definitive clinical diagnosis." .
+<http://www.orpha.net/ORDO/Orphanet_557493> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ORDO" .
+<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" .
+<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.orpha.net/ORDO/Orphanet_C001> .
+<http://www.orpha.net/ORDO/Orphanet_C001> <http://purl.obolibrary.org/obo/IAO_0000115> "A generic term used to describe the clinical items included in the Orphanet nomenclature of rare diseases." .
+<http://www.orpha.net/ORDO/Orphanet_C001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.orpha.net/ORDO/Orphanet_C001> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical entity" .

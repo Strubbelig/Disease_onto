@@ -1,0 +1,49 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mio> a owl:Ontology ;
+    dcterms:source "BioPortal API:MIO" ;
+    owl:versionInfo "BioPortal: version=V1.0.0, released=2024-08-18T00:00:00.000+00:00, creationDate=2024-12-18T01:25:48.000-08:00, submissionId=7" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://purl.obolibrary.org/obo/IAO_0000115> "Necrosis of the myocardium, as a result of interruption of the blood supply to the area.\n\nA condition which occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle.\n\nGross necrosis of the myocardium, as a result of interruption of the blood supply to the area, as in coronary thrombosis.\n\nA disorder characterized by gross necrosis of the myocardium; this is due to an interruption of blood supply to the area. [url:http://purl.obolibrary.org/obo/NCIT_C27996]" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2000/01/rdf-schema#label> "myocardial infarction-related concepts" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2004/02/skos/core#altLabel> "MI" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2004/02/skos/core#altLabel> "MI, myocardial infarction" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2004/02/skos/core#altLabel> "heart attack" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2004/02/skos/core#altLabel> "myocardial infarct" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> <http://www.w3.org/2004/02/skos/core#altLabel> "myocardial infarction (MI)" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> <http://purl.obolibrary.org/obo/IAO_0000115> "Other conditions with the power to have an effect on health status. [url:http://purl.obolibrary.org/obo/ExO_0000103]" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> <http://www.w3.org/2000/01/rdf-schema#label> "influencing factor" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00000> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> <http://www.w3.org/2004/02/skos/core#altLabel> "influencing factors" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> <http://purl.obolibrary.org/obo/IAO_0000115> "Clinical factors include abnormal phenotype, treatment factors, personal medical history, etc." .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> <http://www.w3.org/2000/01/rdf-schema#label> "clinical factor" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00004> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> <http://www.w3.org/2004/02/skos/core#altLabel> "clinical factors" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> <http://purl.obolibrary.org/obo/IAO_0000115> "A phenotype that shows detectable differences from normal. [url:http://purl.obolibrary.org/obo/HP_0000118]" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> <http://www.w3.org/2000/01/rdf-schema#label> "phenotypic abnormality" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00023> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> <http://www.w3.org/2004/02/skos/core#altLabel> "abnormal phenotype" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity. [url:http://purl.obolibrary.org/obo/NCIT_C3671]" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MIO" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00146> .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .

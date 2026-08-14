@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mepo> a owl:Ontology ;
+    dcterms:source "BioPortal API:MEPO" ;
+    owl:versionInfo "BioPortal: version=0.6, released=2021-01-15T00:00:00.000+00:00, creationDate=2021-02-19T01:04:05.000-08:00, submissionId=6; BioPortal: version=0.6, released=2021-01-15T00:00:00.000+00:00, creationDate=2021-02-19T01:04:05.000-08:00, submissionId=6; BioPortal: version=5.0, released=2019-11-07T00:00:00.000+00:00, creationDate=2019-11-07T15:18:10.000-08:00, submissionId=8; BioPortal: version=0.6, released=2021-01-15T00:00:00.000+00:00, creationDate=2021-02-19T01:04:05.000-08:00, submissionId=6; BioPortal: version=V1, released=2011-07-18T00:00:00.000-07:00, creationDate=2011-07-18T09:54:20.000-07:00, submissionId=2" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.case.edu/EpSO.owl#Disease> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MEPO" .
+<http://www.case.edu/EpSO.owl#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.case.edu/EpSO.owl#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.case.edu/EpSO.owl#Disease> <http://www.w3.org/2004/02/skos/core#altLabel> "diseas" .
+<http://www.case.edu/EpSO.owl#Disease> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MEPO" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "A group of sign and symptom that collect deﬁn or character a diseas or disorder; sign are object ﬁnding such as weakness, and symptom are subject ﬁnding such as a feel of fear.@en" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "a group of signs and symptoms that collectively deﬁne or characterize a disease or disorder; signs are objective ﬁndings such as weakness, and symptoms are subjective ﬁndings such as a feeling of fear.@en" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "syndrom" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "syndrome" .
+<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "síndrome" .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MEPO" .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/2004/02/skos/core#altLabel> "Scheuermann 2009 Diseas A disposit (i) to undergo patholog process that (ii) exist in an organ becaus of one or more disord in that organism. Diseas as disposit root in physic disord in the organ and realiz in patholog processes. (1) to the exist of pre-clin manifest of diseas (disord can exist befor they are realiz in overt patholog processes); (2) to the combin of diseas and predisposit to diseas which can exist within a singl patient (as when an instanc of diseas of type A in a given patient is a risk factor for a second diseas of type B); and (3) to the fact that the diseas cours and the clinic pictur may vari wide between patient who have the same disease. Disord A causal relat isol combin of physic compon that is (a) clinic abnorm and (b) maximal, in the sens that it is not a part of some larger such combination. Such disord are the physic basi of disease. A diseas come into exist becaus some physic compon becom malformed." .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/2004/02/skos/core#altLabel> "diseas" .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease> <http://www.w3.org/2004/02/skos/core#altLabel> "scheuermann 2009 disease a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism. diseases as dispositions rooted in physical disorders in the organism and realized in pathological processes. (1) to the existence of pre-clinical manifestations of disease (disorders can exist before they are realized in overt pathological processes); (2) to the combinations of disease and predispositions to disease which can exist within a single patient (as when an instance of disease of type a in a given patient is a risk factor for a second disease of type b); and (3) to the fact that the disease course and the clinical picture may vary widely between patients who have the same disease. disorder a causally relatively isolated combination of physical components that is (a) clinically abnormal and (b) maximal, in the sense that it is not a part of some larger such combination. such disorders are the physical basis of disease. a disease comes into existence because some physical component becomes malformed." .

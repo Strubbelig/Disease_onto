@@ -1,0 +1,55 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontolurgences> a owl:Ontology ;
+    dcterms:source "BioPortal API:ONTOLURGENCES" ;
+    owl:versionInfo "BioPortal: version=3.0.4, released=2015-10-27T00:00:00.000+00:00, creationDate=2015-10-27T10:32:00.000-07:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.limics.fr/ontologies/ontolurgences#Entitee> <http://purl.obolibrary.org/obo/IAO_0000115> "Tout... (en analogie à Menelas)\nLe \"particular\" de DOLCE également." .
+<http://www.limics.fr/ontologies/ontolurgences#Entitee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#Entitee> <http://www.w3.org/2000/01/rdf-schema#label> "entitée" .
+<http://www.limics.fr/ontologies/ontolurgences#Etat> <http://purl.obolibrary.org/obo/IAO_0000115> "Description d'un etat: figé dans le temps.\nPar exemple, une  pathologie, un signe clinique, etc." .
+<http://www.limics.fr/ontologies/ontolurgences#Etat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#Etat> <http://www.w3.org/2000/01/rdf-schema#label> "état" .
+<http://www.limics.fr/ontologies/ontolurgences#Etat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatDeSante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatDeSante> <http://www.w3.org/2000/01/rdf-schema#label> "état de santé" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatDeSante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#EtatMorphologique> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatInterne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatInterne> <http://www.w3.org/2000/01/rdf-schema#label> "état interne" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatInterne> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatMorphologique> <http://purl.obolibrary.org/obo/IAO_0000115> "Description d'un etat morphologique, lié  à la morphologie du corps humain mais hors localisation.\nPar exemple: ischémie, embolie, etc. seront des etat morphologique alors qu'une \"embolie pulmonaire\" sera un etat physique (car situé)" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatMorphologique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatMorphologique> <http://www.w3.org/2000/01/rdf-schema#label> "état morphologique" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatMorphologique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#Etat> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://purl.obolibrary.org/obo/IAO_0000115> "SNOMED: D\nDiagnostic = synthèse de la clinique (anamnèse+examen) et paraclinique" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ONTOLURGENCES" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://www.w3.org/2000/01/rdf-schema#label> "état pathologique" .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#EtatInterne> .
+<http://www.limics.fr/ontologies/ontolurgences#EtatPathologique> <http://www.w3.org/2004/02/skos/core#altLabel> "pathologie" .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetAbstrait> <http://purl.obolibrary.org/obo/IAO_0000115> "Objet abstrait.\nOn rejoint les \"perdurant\" de DOLCE" .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetAbstrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetAbstrait> <http://www.w3.org/2000/01/rdf-schema#label> "objet abstrait" .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetAbstrait> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#Entitee> .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> <http://purl.obolibrary.org/obo/IAO_0000115> "Au sens Menelas:\nUn objet intentionnel est un objet qui ne peut être trouvé dans le monde physique, ni dans le monde abstrait ou temporel. Un tel objet est une description du monde ou d'un changement dans le monde. Il est intentionnel parce qu'il est la facon dont on pense le monde : pas directement  des objets physiques, abstraits ou temporels mais a travers les etats ou les processus qui s'y definissent." .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> <http://www.w3.org/2000/01/rdf-schema#label> "objet intentionel" .
+<http://www.limics.fr/ontologies/ontolurgences#ObjetIntentionnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#ObjetAbstrait> .
+<http://www.limics.fr/ontologies/ontolurgences#Signe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#Signe> <http://www.w3.org/2000/01/rdf-schema#label> "signe" .
+<http://www.limics.fr/ontologies/ontolurgences#Signe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#EtatDeSante> .
+<http://www.limics.fr/ontologies/ontolurgences#Syndrome> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ONTOLURGENCES" .
+<http://www.limics.fr/ontologies/ontolurgences#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.limics.fr/ontologies/ontolurgences#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://www.limics.fr/ontologies/ontolurgences#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.limics.fr/ontologies/ontolurgences#Signe> .

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One entry point for the disease-ontology scoping-review extraction pipeline.
+"""One entry point for the disease-ontology artifact-evaluation pipeline.
 
 The older scripts are kept importable, but this class gives one place to run the
 main chunks:
@@ -9,10 +9,10 @@ main chunks:
     python3 "Scoping review/Python scripts/review_extraction_pipeline.py" --chunk search --sources bioportal,ols
     python3 "Scoping review/Python scripts/review_extraction_pipeline.py" --chunk bioportal-hierarchy --limit-rows 10
 
-The review ontology export is intentionally lean: it turns the enriched
-extraction CSV and manual annotation CSV into class-review annotations on the
-extracted OWL classes. Source-ontology appearances and dependency/reuse routes
-are exported as CSV review reports instead of being copied onto each class.
+The enriched review CSV is the sole editable master for extraction evidence,
+manual decisions, citations, and publication decisions. The review ontology is
+generated from that master. Source-ontology appearances and dependency/reuse
+routes remain generated reports rather than editable review inputs.
 """
 
 from __future__ import annotations
@@ -28,7 +28,7 @@ import time
 import urllib.parse
 import webbrowser
 import xml.etree.ElementTree as ET
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -66,11 +66,18 @@ DCTERMS_CREATED = "http://purl.org/dc/terms/created"
 DCTERMS_SOURCE = "http://purl.org/dc/terms/source"
 DCTERMS_DESCRIPTION = "http://purl.org/dc/terms/description"
 DCTERMS_BIBLIOGRAPHIC_CITATION = "http://purl.org/dc/terms/bibliographicCitation"
-REV = "https://example.org/disease-review/ap/"
+# Publication-supplement identifiers. These UUID URNs are intentionally not
+# dereferenceable: the review ontologies are distributed as a self-contained
+# attachment whose imports resolve through the accompanying XML catalog.
+REVIEW_BASE_IRI = "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#"
+REVIEW_CORE_IRI = "urn:uuid:8f96cf34-53c2-48d2-88c5-96d07704fcf7"
+REVIEW_EVIDENCE_IRI = "urn:uuid:c1ef7677-3e88-4c42-a768-87d1231838a3"
+REVIEW_SYNTHESIS_IRI = "urn:uuid:ac9490a2-31ef-4d3c-ae89-41080f90c5f4"
+REVIEW_MODULE_BASE_IRI = REVIEW_BASE_IRI + "module-"
+REVIEW_VERSION_BASE_IRI = "urn:uuid:278d72a8-731f-4a54-899f-b93000670d55#version-"
+REV = REVIEW_CORE_IRI + "#"
 CANONICAL_MESH_ONTOLOGY = "MESH"
 DUPLICATE_MESH_ONTOLOGIES = {"MDM", "RH-MESH"}
-EXCLUDED_WEBPROTEGE_IRI_HOST = "webprotege.stanford.edu"
-WEBPROTEGE_EXCLUSION_REASON = "webprotege_random_or_local_iri_unstable_provenance"
 EXCLUDED_VALUESET_ONTOLOGIES = {"VALUESETS"}
 VALUESET_EXCLUSION_REASON = "value_set_collection_not_independent_ontology"
 EXCLUDED_SCOPE_TERMS = {"injury", "predisposition", "disease course", "disease_course"}
@@ -117,7 +124,19 @@ CANONICAL_EXACT_MATCH_TARGETS = {
 EXACT_MATCH_REUSE_EXCLUSION_REASON = "explicit_exact_match_to_canonical_disease_model"
 DEFINED_BY_REUSE_EXCLUSION_REASON = "defined_by_external_class_no_independent_analysis"
 IMPORTED_REUSE_EXCLUSION_REASON = "imported_or_reused_term_no_independent_analysis"
-CITATION_REVIEW_TERMS = {"condition", "disease", "disease or disorder", "disease state", "disorder", "illness", "maladie", "pathologic process"}
+CITATION_REVIEW_TERMS = {
+    "condition",
+    "disease",
+    "disease or disorder",
+    "disease state",
+    "disorder",
+    "etat pathologique",
+    "état pathologique",
+    "health condition",
+    "illness",
+    "maladie",
+    "pathologic process",
+}
 CITATION_REVIEW_EXTRA_TERMS_BY_SOURCE = {
     "CRISP": {"injury", "syndrome"},
 }
@@ -167,6 +186,11 @@ NATIVE_NAMESPACE_PATTERNS = [
 
 EXTRACTION_REVIEW_COLUMNS = [
     "discovery_tier",
+    "source_databases",
+    "retrieved_at_by_database",
+    "ontology_versions",
+    "source_ontology_ids",
+    "source_urls",
     "native_ontology_guess",
     "native_term_status",
     "bfo_anchor",
@@ -177,6 +201,28 @@ EXTRACTION_REVIEW_COLUMNS = [
     "defined_by_external_targets",
     "defined_by_review_status",
     "conforms_to_iris",
+]
+
+PUBLICATION_REVIEW_COLUMNS = [
+    "definition_values_json",
+    "comment_values_json",
+    "synonym_values_json",
+    "parent_iri_values_json",
+    "parent_label_values_json",
+    "hierarchy_evidence_status",
+    "hierarchy_module_iri",
+    "hierarchy_module_source",
+    "hierarchy_evidence_detail",
+    "effective_synthesis_status",
+    "effective_synthesis_exclusion_reason",
+    "effective_decision_basis",
+    "effective_decision_rule",
+    "publication_eligibility_override",
+    "publication_review_comment_proposed",
+    "publication_comment_status",
+    "publication_ambiguity_flags",
+    "publication_ambiguity_note",
+    "modelling_citation_notes",
 ]
 
 HIERARCHY_DEFINITION_KEYS = {
@@ -217,6 +263,7 @@ CONTROLLED_VALUES = {
         "obsolete_or_noncurrent",
         "insufficient_metadata",
         "out_of_scope",
+        "replaced_by_better_native_disease_model_candidate",
     ],
     "ontology_type_manual": [
         "curated_ontology",
@@ -235,6 +282,7 @@ CONTROLLED_VALUES = {
         "entity_as_dependent_continuant",
         "entity_as_realizable_entity",
         "entity_as_bfo:disposition",
+        "entity_as_disposition_non_bfo",
         "entity_as_sio:quality",
         "entity_as_situation",
         "no_grounded_model",
@@ -254,8 +302,8 @@ CONTROLLED_VALUES = {
         "",
         "continuant",
         "occurrent",
-        "continuant_individuated_by_process",
-        "under_committed",
+        "mixed_continuant_occurrent_model",
+        "no_continuant_occurrent_commitment",
         "unclear",
     ],
     "pathological_grounding": [
@@ -264,7 +312,6 @@ CONTROLLED_VALUES = {
         "evolutionary_function",
         "normative",
         "primitive_criteria",
-        "reference_class_indexed",
         "undefined",
         "not_applicable",
     ],
@@ -290,6 +337,10 @@ CONTROLLED_VALUES = {
     "parentage_quality": ["good", "partial", "poor", "absent"],
     "entity_quality_score": ["3", "2", "1", "0"],
     "quality_decision": ["high_confidence_include", "include_with_caveat", "uncertain_second_review"],
+    "effective_synthesis_status": ["include", "exclude", "needs_user_decision"],
+    "publication_eligibility_override": ["", "include", "exclude"],
+    "hierarchy_evidence_status": ["native_module", "fallback_with_evidence", "insufficient_metadata"],
+    "publication_comment_status": ["", "not_needed", "needs_review", "approved", "rejected"],
 }
 
 THESAURUS_REVIEW_DISABLED_FIELDS = {
@@ -376,8 +427,8 @@ PROMPT_GUIDANCE = {
     "manual_exclusion_detail": "Optional free-text detail for exclusions or special cases.",
     "review_comment": "Single free-text field: write what the ontology itself says (e.g. subclass of realizable entity, situation, process, clinical finding, or unclear) plus any caveats, reasoning, or paper evidence. Do not force a category.",
     "disease_model_category": "Optional philosophical legacy/synthesis bucket. Leave blank if the ontology's own model is more precise than these options.",
-    "ontological_category": "Coupled decision 1 — continuant/occurrent. Is disease modelled as a continuant (state/disposition/material entity that persists), an occurrent (process/causal chain that unfolds), a continuant individuated by a causal-process structure (River-Flow 'river' reading), under-committed, or unclear? Read it from the OWL superclass/axioms, not just the prose.",
-    "pathological_grounding": "Coupled decision 2 — what grounds 'pathological/abnormal'. statistical (Boorse sub-normal function), evolutionary_function (Wakefield/Schwartz dysfunction), normative (harm/disvalue), primitive_criteria (Hucklenbroich criteria-defined pathologicity), reference_class_indexed (abnormality relative to an age/sex reference class), undefined (imports a notion but never states which), or not_applicable.",
+    "ontological_category": "Coupled decision 1 — continuant/occurrent. Is disease modelled as a continuant (state/disposition/material entity that persists), an occurrent (process/causal chain that unfolds), a mixed_continuant_occurrent_model (the class is deliberately modelled as a continuant/occurrent bridge or hybrid, e.g. disease plus disease course), no_continuant_occurrent_commitment (no superclass, axiom, or prose commits to either side), or unclear (some evidence exists, but it is ambiguous/conflicting/unintelligible)? Read it from the OWL superclass/axioms, not just the prose.",
+    "pathological_grounding": "Coupled decision 2 — what grounds 'pathological/abnormal'. statistical (Boorse sub-normal function), evolutionary_function (Wakefield/Schwartz dysfunction), normative (harm/disvalue), primitive_criteria (Hucklenbroich criteria-defined pathologicity), undefined (imports a notion but never states which), or not_applicable. If a definition names a reference class such as age, sex, species, breed, or life stage, record the underlying grounding here rather than treating reference class as its own category.",
     "crisp_vs_graded": "Coupled decision 3 — vagueness handling. crisp (necessary-and-sufficient DL classes), graded_or_fuzzy (fuzzy/graded membership, Sadegh-Zadeh), prototype (resemblance to a prototype), gradedness_in_data (crisp classes with gradedness pushed to data/annotation, e.g. Yamagata attribute-value or HPO similarity), or silent (does not address vagueness).",
     "reality_vs_classification": "Coupled decision 4 — what 'disease' denotes. biological_state (underlying biological state/disorder), illness_role (practical patient/illness role), nosological_category (a classification/nosology label), precision_medicine_stratification (computable integrative stratification, Haendel et al.), conflated (mixes ≥2 of these), or unclear.",
     "definition_quality": "How useful is the definition for understanding the entity?",
@@ -421,7 +472,11 @@ def native_ontology_group(row: dict[str, str]) -> str:
     if ns.strip():
         key = ns.split(";")[0].split(":", 1)[-1].strip()
     else:
-        key = row.get("native_ontology_guess", "").strip() or (row.get("ontology", "") or "").strip()
+        key = (
+            row.get("native_ontology_guess", "").strip()
+            or terms_script.infer_native_ontology_guess(row.get("class_iri", ""))
+            or (row.get("ontology", "") or "").strip()
+        )
     return key.upper()
 
 
@@ -459,12 +514,76 @@ REVIEW_RULE_META = {
     12: {"title": "'biotop' anywhere → disease_model_category = entity_as_biotop:condition",
          "rule": "If 'biotop' appears in any text field or the IRI (even the namespace), the class is a BioTop condition or reuses one, so its grounding should be entity_as_biotop:condition.",
          "hint": "Set the category to entity_as_biotop:condition."},
+    13: {"title": "Continuant model category → ontological_category = continuant",
+         "rule": "A class modelled as a disposition, realizable entity, or dependent continuant should have ontological_category = continuant.",
+         "hint": "Set the continuant/occurrent selection to continuant."},
+    14: {"title": "Process model category → ontological_category = occurrent",
+         "rule": "A class modelled as a process should have ontological_category = occurrent.",
+         "hint": "Set the continuant/occurrent selection to occurrent."},
+    15: {"title": "Nosological category → no_grounded_model",
+         "rule": "If disease denotes a nosological/classification category, the disease model category should be no_grounded_model.",
+         "hint": "Set disease_model_category to no_grounded_model, or change reality_vs_classification if the ontology is modelling a real disease entity."},
+    16: {"title": "IRAEO duplicated Disease classes → same category set",
+         "rule": "Every IRAEO class labelled Disease is the same NCIT-derived disease definition under different body-system groupings, so the coupled categories should be identical across those rows.",
+         "hint": "Set IRAEO Disease rows to no_grounded_model / finding_or_phenotype_route / no_continuant_occurrent_commitment / undefined / silent / nosological_category."},
+    17: {"title": "Phenotype/finding/observation superclass → finding_or_phenotype_route",
+         "rule": "If phenotype, phenomenon, phenome, finding, or observation appears in the superclass hierarchy of a no_grounded_model class, its no_grounded_model_subtype should be finding_or_phenotype_route.",
+         "hint": "Set no_grounded_model_subtype to finding_or_phenotype_route."},
+    18: {"title": "No definition/comment + poor parent → pathological_grounding = undefined",
+         "rule": "If definition_quality and comment_quality are absent, and parentage_quality is poor or absent, the class gives no usable basis for pathological grounding.",
+         "hint": "Set pathological_grounding to undefined."},
 }
+
+CONTINUANT_REVIEW_MODEL_CATEGORIES = {
+    "entity_as_bfo:disposition",
+    "entity_as_disposition_non_bfo",
+    "entity_as_realizable_entity",
+    "entity_as_dependent_continuant",
+}
+OCCURRENT_REVIEW_MODEL_CATEGORIES = {
+    "entity_as_process",
+}
+REQUIRED_FIELD_RULES = {13, 14, 15, 16, 17, 18}
 
 MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY = [
     column
     for column in manual_script.FIELDNAMES
     if column not in {"class_iri", "term", "preferred_label", "source_ontology_ids", "quality_decision"}
+]
+
+CITATION_REVIEW_COLUMNS = [
+    "modelling_citation_source_ontology_id",
+    "modelling_citation_status",
+    "modelling_citation_confidence",
+    "modelling_citation_doi",
+    "modelling_citation_pmid",
+    "modelling_citation_pmcid",
+    "modelling_citation_url",
+    "modelling_citation_publication_title",
+    "modelling_citation_authors",
+    "modelling_citation_year",
+    "modelling_citation_venue",
+    "modelling_citation_bibliographic_citation",
+    "modelling_citation_lookup_source",
+    "modelling_citation_source",
+    "modelling_citation_approved",
+    "modelling_citation_assignment_flag",
+    "modelling_citation_assignment_flag_reason",
+    "modelling_citation_assignment_checked_at",
+]
+
+CITATION_REFERENCE_COLUMNS = [
+    "modelling_citation_doi",
+    "modelling_citation_pmid",
+    "modelling_citation_pmcid",
+    "modelling_citation_url",
+    "modelling_citation_publication_title",
+    "modelling_citation_authors",
+    "modelling_citation_year",
+    "modelling_citation_venue",
+    "modelling_citation_bibliographic_citation",
+    "modelling_citation_lookup_source",
+    "modelling_citation_source",
 ]
 
 
@@ -474,19 +593,16 @@ class ReviewPipelineConfig:
     ontology_dir: Path = ONTOLOGY_DIR
     raw_csv: Path = TABLE_DIR / "disease_terms_review.csv"
     enriched_csv: Path = TABLE_DIR / "disease_terms_review_enriched.csv"
-    manual_csv: Path = TABLE_DIR / "disease_terms_manual_annotations.csv"
     review_core_ttl: Path = ONTOLOGY_DIR / "review_core.ttl"
     review_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_review.ttl"
+    synthesis_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_synthesis.ttl"
+    ontology_catalog: Path = ONTOLOGY_DIR / "catalog-v001.xml"
     smoke_ontology_ttl: Path = ONTOLOGY_DIR / "disease_terms_bioportal_hierarchy_smoke.ttl"
-    preferred_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs_changed by MM.xlsx"
-    citation_review_workbook: Path = TABLE_DIR / "Ontologies_Needing_Citations.xlsx"
-    generated_citation_workbook: Path = TABLE_DIR / "Ontology_Modelling_Paper_DOIs.xlsx"
-    citation_lookup_json: Path = TABLE_DIR / "ontology_merged_best_fit_lookup.json"
-    citation_overrides_csv: Path = TABLE_DIR / "citation_overrides.csv"
-    citation_coverage_csv: Path = TABLE_DIR / "native_class_citation_coverage.csv"
     exclusion_detail_csv: Path = TABLE_DIR / "ontology_source_exclusions_for_flow_figure.csv"
     exclusion_summary_csv: Path = TABLE_DIR / "ontology_source_exclusion_counts_for_flow_figure.csv"
     fallback_module_dir: Path = ONTOLOGY_DIR / "review_target_fallback_modules"
+    native_module_dir: Path = ONTOLOGY_DIR / "native_hierarchy_modules"
+    native_module_manifest: Path = ONTOLOGY_DIR / "native_hierarchy_modules_manifest.json"
     bioportal_module_dir: Path = ONTOLOGY_DIR / "bioportal_hierarchy_modules"
     bioportal_merged_ttl: Path = ONTOLOGY_DIR / "disease_terms_bioportal_hierarchy.ttl"
     bioportal_manifest: Path = TABLE_DIR / "bioportal_hierarchy_modules_manifest.csv"
@@ -682,6 +798,10 @@ def write_hierarchy_ttl(
         handle.write("@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n")
         handle.write("@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .\n")
         handle.write("@prefix dcterms: <http://purl.org/dc/terms/> .\n\n")
+        handle.write("dcterms:source a owl:AnnotationProperty .\n")
+        handle.write("dcterms:created a owl:AnnotationProperty .\n")
+        handle.write("skos:altLabel a owl:AnnotationProperty .\n")
+        handle.write("iao:0000115 a owl:AnnotationProperty .\n\n")
         handle.write(f"{ttl_iri(ontology_iri)} a owl:Ontology ;\n")
         handle.write(f"    dcterms:source {ttl_literal(source_label)}")
         if ontology_versions:
@@ -1080,20 +1200,24 @@ class ReviewExtractionPipeline:
     def prefill_manual(self, args: argparse.Namespace) -> None:
         enriched_rows = read_csv_rows(self.config.enriched_csv)
         manual_script.register_ontology_disease_context(enriched_rows)
-        existing = manual_script.load_existing(self.config.manual_csv) if args.merge_manual else {}
+        existing = {
+            row["class_iri"]: self._normalise_manual_row(dict(row))
+            for row in enriched_rows
+            if row.get("class_iri")
+        } if args.merge_manual else {}
         rows = []
         fresh = merged = 0
         for enriched in enriched_rows:
             iri = enriched.get("class_iri", "")
             prefilled = manual_script.prefill_row(enriched)
             if iri in existing and args.merge_manual:
-                rows.append(self._normalise_manual_row(manual_script.merge_rows(existing[iri], prefilled)))
+                rows.append(self._merge_master_row(enriched, self._normalise_manual_row(manual_script.merge_rows(existing[iri], prefilled))))
                 merged += 1
             else:
-                rows.append(self._normalise_manual_row(prefilled))
+                rows.append(self._merge_master_row(enriched, self._normalise_manual_row(prefilled)))
                 fresh += 1
-        write_csv_rows(self.config.manual_csv, rows, manual_script.FIELDNAMES)
-        print(f"Wrote {len(rows)} manual annotation rows -> {self.config.manual_csv}")
+        self._write_master_review_rows(rows)
+        print(f"Wrote {len(rows)} rows with prefilled manual columns -> {self.config.enriched_csv}")
         print(f"  prefilled fresh: {fresh}, merged over existing: {merged}")
 
     def review_class_interactive(self, args: argparse.Namespace) -> None:
@@ -1101,17 +1225,17 @@ class ReviewExtractionPipeline:
         if args.limit_rows:
             enriched_rows = enriched_rows[: args.limit_rows]
         manual_script.register_ontology_disease_context(enriched_rows)
-        existing_manual = manual_script.load_existing(self.config.manual_csv)
         manual_by_iri: dict[str, dict[str, str]] = {
-            iri: self._normalise_manual_row(dict(row))
-            for iri, row in existing_manual.items()
+            row["class_iri"]: self._normalise_manual_row(dict(row))
+            for row in enriched_rows
+            if row.get("class_iri")
         }
         for row in enriched_rows:
             iri = row.get("class_iri", "")
             if not iri:
                 continue
             manual_by_iri[iri] = self._normalise_manual_row(
-                manual_script.merge_rows(existing_manual.get(iri, {}), manual_script.prefill_row(row))
+                manual_script.merge_rows(manual_by_iri.get(iri, {}), manual_script.prefill_row(row))
             )
 
         target = self._select_review_target(enriched_rows, manual_by_iri, args)
@@ -1142,7 +1266,7 @@ class ReviewExtractionPipeline:
 
         manual_by_iri[iri] = updated
         manual_by_iri[iri] = self._normalise_manual_row(manual_by_iri[iri])
-        self._write_manual_annotations(enriched_rows, manual_by_iri)
+        self._write_master_review_annotations(enriched_rows, manual_by_iri)
         print(f"\nSaved review annotations for:\n  {iri}")
 
         if not args.no_export_after_review:
@@ -1210,21 +1334,53 @@ class ReviewExtractionPipeline:
             print(f"  {index}. {row.get('preferred_label') or '(no label)'} [{row.get('ontology')}] - {status}")
             print(f"     {row.get('class_iri')}")
 
-    def _write_manual_annotations(self, enriched_rows: list[dict[str, str]], manual_by_iri: dict[str, dict[str, str]]) -> None:
+    def _write_master_review_annotations(self, enriched_rows: list[dict[str, str]], manual_by_iri: dict[str, dict[str, str]]) -> None:
         ordered_rows: list[dict[str, str]] = []
         seen: set[str] = set()
-        for row in enriched_rows:
+        current_rows = read_csv_rows(self.config.enriched_csv) or enriched_rows
+        for row in current_rows:
             iri = row.get("class_iri", "")
             if not iri or iri in seen:
                 continue
             seen.add(iri)
-            manual_row = self._normalise_manual_row(manual_by_iri.get(iri, {}))
-            ordered_rows.append({field: manual_row.get(field, "") for field in manual_script.FIELDNAMES})
+            if iri in manual_by_iri:
+                manual_row = self._normalise_manual_row(manual_by_iri.get(iri, {}))
+                ordered_rows.append(self._merge_master_row(row, manual_row))
+            else:
+                ordered_rows.append(dict(row))
         for iri, row in sorted(manual_by_iri.items()):
             if iri not in seen:
                 manual_row = self._normalise_manual_row(row)
-                ordered_rows.append({field: manual_row.get(field, "") for field in manual_script.FIELDNAMES})
-        write_csv_rows(self.config.manual_csv, ordered_rows, manual_script.FIELDNAMES)
+                ordered_rows.append(self._merge_master_row({}, manual_row))
+        self._write_master_review_rows(ordered_rows)
+
+    def _master_review_fieldnames(self, rows: list[dict[str, str]] | None = None) -> list[str]:
+        base = list(rows[0].keys()) if rows else []
+        if not base and self.config.enriched_csv.exists():
+            with self.config.enriched_csv.open(newline="", encoding="utf-8") as handle:
+                base = list(csv.DictReader(handle).fieldnames or [])
+        return list(
+            dict.fromkeys(
+                base
+                + manual_script.FIELDNAMES
+                + CITATION_REVIEW_COLUMNS
+                + PUBLICATION_REVIEW_COLUMNS
+            )
+        )
+
+    def _merge_master_row(self, extraction_row: dict[str, str], manual_row: dict[str, str]) -> dict[str, str]:
+        merged = dict(extraction_row)
+        for field in manual_script.FIELDNAMES:
+            value = manual_row.get(field, "")
+            if field in {"class_iri", "term", "preferred_label", "source_ontology_ids"}:
+                merged[field] = merged.get(field, "") or value
+            else:
+                merged[field] = value
+        return merged
+
+    def _write_master_review_rows(self, rows: list[dict[str, str]]) -> None:
+        fieldnames = self._master_review_fieldnames(rows)
+        write_csv_rows(self.config.enriched_csv, rows, fieldnames)
 
     @staticmethod
     def _normalise_manual_row(row: dict[str, str]) -> dict[str, str]:
@@ -1296,6 +1452,14 @@ class ReviewExtractionPipeline:
                 keys.append(ontology)
 
         safe_keys = list(dict.fromkeys(safe_name(key) for key in keys if key.strip()))
+        native_paths = [
+            self.config.native_module_dir / f"{key}_native_hierarchy.ttl"
+            for key in safe_keys
+        ]
+        native_existing = [path for path in native_paths if path.exists()]
+        if native_existing:
+            return native_existing
+
         candidate_paths: list[Path] = []
         for key in safe_keys:
             candidate_paths.extend(
@@ -1311,6 +1475,10 @@ class ReviewExtractionPipeline:
         return existing or self._all_hierarchy_module_paths()
 
     def _all_hierarchy_module_paths(self) -> list[Path]:
+        if self.config.native_module_dir.exists():
+            native_paths = sorted(self.config.native_module_dir.glob("*.ttl"))
+            if native_paths:
+                return native_paths
         module_dirs = [
             self.config.bioportal_module_dir,
             self.config.ols_module_dir,
@@ -1558,6 +1726,8 @@ class ReviewExtractionPipeline:
                         self._send_json(pipeline._review_ui_missing(args))
                     elif parsed.path == "/api/citations":
                         self._send_json(pipeline._review_ui_citations(args))
+                    elif parsed.path == "/api/publication-decisions":
+                        self._send_json(pipeline._review_ui_publication_decisions(args))
                     elif parsed.path == "/api/health":
                         self._send_json({"ok": True})
                     else:
@@ -1576,6 +1746,10 @@ class ReviewExtractionPipeline:
                         self._send_json(pipeline._review_ui_apply_to_definition(data, args))
                     elif parsed.path == "/api/citation_approve":
                         self._send_json(pipeline._review_ui_citation_approve(data))
+                    elif parsed.path == "/api/citation_assignment_flag":
+                        self._send_json(pipeline._review_ui_citation_assignment_flag(data))
+                    elif parsed.path == "/api/publication-decision":
+                        self._send_json(pipeline._review_ui_publication_decision_save(data, args))
                     else:
                         self._send_json({"error": "not found"}, 404)
                 except Exception as exc:
@@ -1602,17 +1776,17 @@ class ReviewExtractionPipeline:
         if args.limit_rows:
             rows = rows[: args.limit_rows]
         manual_script.register_ontology_disease_context(rows)
-        existing_manual = manual_script.load_existing(self.config.manual_csv)
         manual_by_iri: dict[str, dict[str, str]] = {
-            iri: self._normalise_manual_row(dict(row))
-            for iri, row in existing_manual.items()
+            row["class_iri"]: self._normalise_manual_row(dict(row))
+            for row in rows
+            if row.get("class_iri")
         }
         for row in rows:
             iri = row.get("class_iri", "")
             if not iri:
                 continue
             manual_by_iri[iri] = self._normalise_manual_row(
-                manual_script.merge_rows(existing_manual.get(iri, {}), manual_script.prefill_row(row))
+                manual_script.merge_rows(manual_by_iri.get(iri, {}), manual_script.prefill_row(row))
             )
         return rows, manual_by_iri
 
@@ -1620,8 +1794,8 @@ class ReviewExtractionPipeline:
         """Distinct disease_model_category values actually assigned in the manual
         annotations -- i.e. the ontological-grounding categories really used."""
         used = {
-            (m.get("disease_model_category") or "").strip()
-            for m in manual_script.load_existing(self.config.manual_csv).values()
+            (row.get("disease_model_category") or "").strip()
+            for row in read_csv_rows(self.config.enriched_csv)
         }
         return sorted(v for v in used if v)
 
@@ -1679,6 +1853,32 @@ class ReviewExtractionPipeline:
                 r.get("preferred_label", ""), r.get("term", ""),
             ]).lower()
 
+        def iraeo_disease(m: dict, r: dict) -> bool:
+            return (
+                native_ontology_group(r) == "IRAEO"
+                and (r.get("preferred_label", "") or "").strip().casefold() == "disease"
+                and "iraes.owl#disease" in (r.get("class_iri", "") or "").casefold()
+            )
+
+        def no_grounded_with_finding_hierarchy(m: dict, r: dict) -> bool:
+            if m.get("disease_model_category", "").strip() != "no_grounded_model":
+                return False
+            hierarchy = " ".join([
+                r.get("parent_labels", ""),
+                r.get("parent_iris", ""),
+            ]).casefold()
+            return any(signal in hierarchy for signal in (
+                "phenotype", "phenomenon", "phenomena", "phenome",
+                "finding", "observation",
+            ))
+
+        def no_evidence_for_pathological_grounding(m: dict, r: dict) -> bool:
+            return (
+                m.get("definition_quality", "").strip() == "absent"
+                and m.get("comment_quality", "").strip() == "absent"
+                and m.get("parentage_quality", "").strip() in {"poor", "absent"}
+            )
+
         # (rule, predicate, field, fix_value, skip_excluded, accepted_values)
         field_rules = [
             (2, lambda m, r: m.get("disease_model_category", "").strip() == UNGROUNDED, "entity_quality_score", "1", True, None),
@@ -1692,6 +1892,20 @@ class ReviewExtractionPipeline:
             (10, lambda m, r: grounded_good(m), "entity_quality_score", "3", True, None),
             (11, lambda m, r: "menelas" in kw_blob(m, r), "disease_model_category", "entity_as_kantian_state", True, None),
             (12, lambda m, r: "biotop" in kw_blob(m, r), "disease_model_category", "entity_as_biotop:condition", True, None),
+            (13, lambda m, r: m.get("disease_model_category", "").strip() in CONTINUANT_REVIEW_MODEL_CATEGORIES,
+             "ontological_category", "continuant", True, None),
+            (14, lambda m, r: m.get("disease_model_category", "").strip() in OCCURRENT_REVIEW_MODEL_CATEGORIES,
+             "ontological_category", "occurrent", True, None),
+            (15, lambda m, r: m.get("reality_vs_classification", "").strip() == "nosological_category",
+             "disease_model_category", "no_grounded_model", True, None),
+            (16, iraeo_disease, "disease_model_category", "no_grounded_model", True, None),
+            (16, iraeo_disease, "no_grounded_model_subtype", "finding_or_phenotype_route", True, None),
+            (16, iraeo_disease, "ontological_category", "no_continuant_occurrent_commitment", True, None),
+            (16, iraeo_disease, "pathological_grounding", "undefined", True, None),
+            (16, iraeo_disease, "crisp_vs_graded", "silent", True, None),
+            (16, iraeo_disease, "reality_vs_classification", "nosological_category", True, None),
+            (17, no_grounded_with_finding_hierarchy, "no_grounded_model_subtype", "finding_or_phenotype_route", True, None),
+            (18, no_evidence_for_pathological_grounding, "pathological_grounding", "undefined", True, None),
         ]
 
         violations: list[dict[str, Any]] = []
@@ -1711,7 +1925,7 @@ class ReviewExtractionPipeline:
                     continue
                 acc = accepted or (expected,)
                 cur = (m.get(field, "") or "").strip()
-                if cur and cur not in acc:
+                if (cur or rule in REQUIRED_FIELD_RULES) and cur not in acc:
                     violations.append({
                         "rule": rule, "iri": iri, "label": label_of.get(iri, iri),
                         "field": field, "current": cur, "expected": expected, "kind": "field",
@@ -1767,7 +1981,7 @@ class ReviewExtractionPipeline:
     def _review_ui_missing(self, args: argparse.Namespace) -> dict[str, Any]:
         """Missing-value report for the Missing tab: for every in-scope class
         (not excluded, not a thesaurus) list which required review fields are
-        still blank, grouped by field. Read-only; mirrors the violations tab."""
+        still blank, grouped by field. Mirrors the violations tab."""
         rows, manual_by_iri = self._review_ui_rows_and_manual(args)
         required = self.MISSING_REQUIRED_FIELDS
 
@@ -1775,10 +1989,24 @@ class ReviewExtractionPipeline:
             s = (s or "").strip()
             return s if len(s) <= n else s[:n] + "…"
 
+        def _parents_summary(row: dict[str, str]) -> str:
+            labels = split_semicolon(row.get("parent_labels", ""))
+            iris = split_semicolon(row.get("parent_iris", ""))
+            if not labels and not iris:
+                return ""
+            parts = []
+            for index, parent_iri in enumerate(iris):
+                label = labels[index] if index < len(labels) else ""
+                parts.append(f"{label} <{parent_iri}>" if label else f"<{parent_iri}>")
+            if len(labels) > len(iris):
+                parts.extend(labels[len(iris):])
+            return _t("; ".join(parts), 320)
+
         entries: list[dict[str, Any]] = []
         classes_with_gaps: set[str] = set()
         seen: set[str] = set()
         in_scope = 0
+        value_counts: dict[str, dict[str, int]] = {field: defaultdict(int) for field in required}
         for row in rows:
             iri = row.get("class_iri", "")
             if not iri or iri in seen:
@@ -1791,15 +2019,36 @@ class ReviewExtractionPipeline:
             if excluded or thesaurus:
                 continue
             in_scope += 1
+            for field in required:
+                value = (m.get(field, "") or "").strip()
+                if value:
+                    value_counts[field][value] += 1
             label = row.get("preferred_label") or row.get("term") or iri
             context = {
                 "term": row.get("term", ""),
                 "ontology": native_ontology_group(row),
+                "ontology_title": _t(row.get("ontology_title", ""), 120),
                 "include": m.get("manual_include_status", ""),
                 "score": m.get("entity_quality_score", ""),
                 "category": m.get("disease_model_category", ""),
-                "parents": _t(row.get("parent_labels", ""), 140),
+                "subtype": m.get("no_grounded_model_subtype", ""),
+                "ontological_category": m.get("ontological_category", ""),
+                "pathological_grounding": m.get("pathological_grounding", ""),
+                "crisp_vs_graded": m.get("crisp_vs_graded", ""),
+                "reality_vs_classification": m.get("reality_vs_classification", ""),
+                "definition_quality": m.get("definition_quality", ""),
+                "comment_quality": m.get("comment_quality", ""),
+                "parentage_quality": m.get("parentage_quality", ""),
+                "bfo_anchor": _t(row.get("bfo_anchor", ""), 140),
+                "parents": _parents_summary(row),
+                "manual_screening_hint": _t(row.get("manual_screening_hint", ""), 180),
+                "review_comment": _t(m.get("review_comment", ""), 220),
             }
+            source_links = self._review_ui_source_links(row)
+            source_link = next(
+                (link for link in source_links if link.get("source", "").casefold() == "bioportal"),
+                source_links[0] if source_links else {},
+            )
             for field in required:
                 if not (m.get(field, "") or "").strip():
                     entries.append({
@@ -1808,14 +2057,24 @@ class ReviewExtractionPipeline:
                         "iri": iri,
                         "label": label,
                         "context": context,
+                        "sourceUrl": source_link.get("url", ""),
+                        "sourceLabel": source_link.get("label", ""),
                     })
                     classes_with_gaps.add(iri)
         entries.sort(key=lambda e: (required.index(e["field"]) if e["field"] in required else 99,
                                     e["label"].casefold()))
+        quick_values = {
+            field: [
+                {"value": value, "count": count}
+                for value, count in sorted(counts.items(), key=lambda item: (-item[1], item[0].casefold()))[:2]
+            ]
+            for field, counts in value_counts.items()
+        }
         return {
             "missing": entries,
             "fieldOrder": required,
             "fieldLabels": {f: FIELD_LABELS.get(f, f) for f in required},
+            "quickValues": quick_values,
             "classesWithGaps": len(classes_with_gaps),
             "inScope": in_scope,
         }
@@ -1830,7 +2089,7 @@ class ReviewExtractionPipeline:
             "usedCategories": self._used_disease_model_categories(),
             "defaultReviewer": "MM",
             "today": datetime.now().date().isoformat(),
-            "manualCsv": str(self.config.manual_csv),
+            "masterCsv": str(self.config.enriched_csv),
             "reviewOntologyTtl": str(self.config.review_ontology_ttl),
         }
 
@@ -1923,41 +2182,59 @@ class ReviewExtractionPipeline:
         return "reviewed" if reviewed else "unreviewed"
 
     def _citation_lookup(self) -> dict[str, dict[str, str]]:
-        """Per-class citation, read at runtime from citation_link_preview.csv
-        (derived from the modelling-paper workbook). Read-only; does not touch
-        the review CSV or ttl. Returns {} if the preview file is absent."""
+        """Per-class citation metadata, read from the master enriched review CSV."""
         cache = getattr(self, "_citation_cache", None)
         if cache is not None:
             return cache
-        path = self.config.manual_csv.parent / "citation_link_preview.csv"
         lookup: dict[str, dict[str, str]] = {}
-        if path.exists():
-            for r in read_csv_rows(path):
-                doi = (r.get("doi") or "").strip()
-                url = (r.get("url") or "").strip()
-                pmid = (r.get("pmid") or "").strip()
-                resolve = (f"https://doi.org/{doi}" if doi
-                           else url or (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else ""))
-                lookup[r.get("class_iri", "")] = {
-                    "status": r.get("citation_status", ""),
-                    "ontology": r.get("iri_ontology", ""),
-                    "ontologyTitle": r.get("ontology_title", ""),
-                    "doi": doi,
-                    "title": r.get("publication_title", ""),
-                    "authors": r.get("authors", ""),
-                    "year": r.get("year", ""),
-                    "venue": r.get("venue", ""),
-                    "resolveUrl": resolve,
-                    "pmid": pmid,
-                    "note": r.get("review_note", ""),
-                    "approved": (r.get("approved") or "").strip(),
-                }
+        for r in read_csv_rows(self.config.enriched_csv):
+            iri = r.get("class_iri", "")
+            if not iri:
+                continue
+            source_id = (
+                r.get("modelling_citation_source_ontology_id", "")
+                or r.get("native_ontology_guess", "")
+                or r.get("ontology", "")
+            )
+            if not source_id and not any(r.get(field, "") for field in CITATION_REVIEW_COLUMNS):
+                continue
+            confidence = (r.get("modelling_citation_confidence") or "").strip()
+            status = (r.get("modelling_citation_status") or "").strip()
+            if confidence.lower() in REJECTED_CITATION_CONFIDENCES:
+                status = "no_citation"
+            doi = (r.get("modelling_citation_doi") or "").strip()
+            url = (r.get("modelling_citation_url") or "").strip()
+            pmid = (r.get("modelling_citation_pmid") or "").strip()
+            resolve = (
+                f"https://doi.org/{doi}"
+                if doi
+                else url or (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else "")
+            )
+            lookup[iri] = {
+                "status": status or ("cited" if doi or url or pmid or r.get("modelling_citation_publication_title") else "no_citation"),
+                "ontology": source_id,
+                "ontologyTitle": r.get("ontology_title", ""),
+                "doi": doi,
+                "title": r.get("modelling_citation_publication_title", ""),
+                "authors": r.get("modelling_citation_authors", ""),
+                "year": r.get("modelling_citation_year", ""),
+                "venue": r.get("modelling_citation_venue", ""),
+                "bibliographic": r.get("modelling_citation_bibliographic_citation", ""),
+                "resolveUrl": resolve,
+                "pmid": pmid,
+                "pmcid": (r.get("modelling_citation_pmcid") or "").strip(),
+                "note": confidence,
+                "approved": (r.get("modelling_citation_approved") or "").strip(),
+                "assignmentFlag": (r.get("modelling_citation_assignment_flag") or "").strip(),
+                "assignmentReason": (r.get("modelling_citation_assignment_flag_reason") or "").strip(),
+                "assignmentCheckedAt": (r.get("modelling_citation_assignment_checked_at") or "").strip(),
+            }
         self._citation_cache = lookup
         return lookup
 
     def _review_ui_citations(self, args: argparse.Namespace) -> dict[str, Any]:
-        """Citations grouped by the IRI's ontology (one citation per ontology),
-        with approval state, for the Citations approval tab."""
+        """Citation assignments grouped by ontology and citation signature,
+        with approval and correctness-audit state for the Citations tab."""
         rows, _ = self._review_ui_rows_and_manual(args)
         lookup = self._citation_lookup()
         groups: dict[str, dict[str, Any]] = {}
@@ -1967,7 +2244,19 @@ class ReviewExtractionPipeline:
             cit = lookup.get(iri)
             if not iri or cit is None:
                 continue
-            key = cit.get("ontology", "") or "(unknown)"
+            signature = "\u241f".join([
+                cit.get("ontology", ""),
+                cit.get("status", ""),
+                cit.get("title", ""),
+                cit.get("doi", ""),
+                cit.get("pmid", ""),
+                cit.get("pmcid", ""),
+                cit.get("resolveUrl", ""),
+                cit.get("bibliographic", ""),
+                cit.get("assignmentFlag", ""),
+                cit.get("assignmentReason", ""),
+            ])
+            key = signature or "(unknown)"
             if key not in groups:
                 groups[key] = {
                     "ontology": cit.get("ontology", ""), "ontologyTitle": cit.get("ontologyTitle", ""),
@@ -1975,11 +2264,19 @@ class ReviewExtractionPipeline:
                     "doi": cit.get("doi", ""), "title": cit.get("title", ""),
                     "authors": cit.get("authors", ""), "year": cit.get("year", ""),
                     "venue": cit.get("venue", ""), "resolveUrl": cit.get("resolveUrl", ""),
-                    "note": cit.get("note", ""), "classes": [], "approvedCount": 0, "disapprovedCount": 0, "noneCount": 0,
+                    "bibliographic": cit.get("bibliographic", ""),
+                    "note": cit.get("note", ""),
+                    "assignmentFlag": cit.get("assignmentFlag", ""),
+                    "assignmentReason": cit.get("assignmentReason", ""),
+                    "assignmentCheckedAt": cit.get("assignmentCheckedAt", ""),
+                    "classes": [],
+                    "iris": [],
+                    "approvedCount": 0, "disapprovedCount": 0, "noneCount": 0,
                 }
                 order.append(key)
             g = groups[key]
             g["classes"].append({"iri": iri, "label": row.get("preferred_label") or row.get("term") or iri})
+            g["iris"].append(iri)
             appr = cit.get("approved", "")
             if appr == "yes":
                 g["approvedCount"] += 1
@@ -2001,30 +2298,176 @@ class ReviewExtractionPipeline:
                 g["state"] = "pending"
             out.append(g)
         order_rank = {"pending": 0, "disapproved": 1, "no_citation": 2, "approved": 3}
-        out.sort(key=lambda g: (order_rank[g["state"]], g["status"] != "cited", (g["ontology"] or "").lower()))
-        return {"citations": out}
+        assignment_rank = {"potential_assignment_error": 0, "needs_manual_check": 1, "": 2, "ok": 3, "not_applicable": 4}
+        out.sort(key=lambda g: (
+            assignment_rank.get(g.get("assignmentFlag", ""), 2),
+            order_rank[g["state"]],
+            g["status"] != "cited",
+            (g["ontology"] or "").lower(),
+        ))
+        assignment_counts = Counter(g.get("assignmentFlag", "") or "(blank)" for g in out)
+        return {"citations": out, "assignmentCounts": dict(assignment_counts)}
+
+    def _review_ui_publication_decisions(self, args: argparse.Namespace) -> dict[str, Any]:
+        """Return unresolved synthesis eligibility and wording decisions."""
+        rows = read_csv_rows(self.config.enriched_csv)
+        if args.limit_rows:
+            rows = rows[: args.limit_rows]
+        decisions: list[dict[str, Any]] = []
+        for row in rows:
+            flags = split_semicolon(row.get("publication_ambiguity_flags", ""))
+            eligibility_pending = row.get("effective_synthesis_status", "").strip() == "needs_user_decision"
+            comment_pending = row.get("publication_comment_status", "").strip() == "needs_review"
+            if not eligibility_pending and not comment_pending:
+                continue
+            decisions.append({
+                "iri": row.get("class_iri", ""),
+                "label": row.get("preferred_label", "") or row.get("term", ""),
+                "term": row.get("term", ""),
+                "ontology": native_ontology_group(row),
+                "appearanceOntology": row.get("ontology", ""),
+                "flags": flags,
+                "eligibilityPending": eligibility_pending,
+                "manualStatus": row.get("manual_include_status", ""),
+                "effectiveStatus": row.get("effective_synthesis_status", ""),
+                "decisionRule": row.get("effective_decision_rule", ""),
+                "decisionBasis": row.get("effective_decision_basis", ""),
+                "decisionNote": row.get("publication_ambiguity_note", ""),
+                "hierarchyStatus": row.get("hierarchy_evidence_status", ""),
+                "definition": row.get("definition", ""),
+                "parents": row.get("parent_labels", ""),
+                "reviewComment": row.get("review_comment", ""),
+                "commentProposal": row.get("publication_review_comment_proposed", ""),
+                "commentStatus": row.get("publication_comment_status", ""),
+            })
+        decisions.sort(key=lambda item: (
+            not item["eligibilityPending"],
+            item["ontology"].casefold(),
+            item["label"].casefold(),
+        ))
+        return {
+            "decisions": decisions,
+            "eligibilityCount": sum(item["eligibilityPending"] for item in decisions),
+            "commentCount": sum(item["commentStatus"] == "needs_review" for item in decisions),
+        }
+
+    def _review_ui_publication_decision_save(
+        self,
+        data: dict[str, Any],
+        args: argparse.Namespace,
+    ) -> dict[str, Any]:
+        iri = str(data.get("iri", "")).strip()
+        field = str(data.get("field", "")).strip()
+        value = str(data.get("value", "")).strip()
+        allowed = {
+            "publication_eligibility_override": {"", "include", "exclude"},
+            "publication_comment_status": {"needs_review", "approved", "rejected"},
+        }
+        if not iri or field not in allowed or value not in allowed[field]:
+            raise ValueError("Unsupported publication decision.")
+        rows = read_csv_rows(self.config.enriched_csv)
+        updated = 0
+        for row in rows:
+            if row.get("class_iri", "") == iri:
+                row[field] = value
+                updated += 1
+        if not updated:
+            raise ValueError(f"Class not found: {iri}")
+        self._write_master_review_rows(rows)
+
+        # Import lazily to avoid a module cycle during command-line startup.
+        from publication_readiness import PublicationReadiness
+
+        PublicationReadiness(self.config).materialize_master()
+        exported = bool(data.get("export"))
+        if exported:
+            self.export_review_ontology(args)
+        self._citation_cache = None
+        return {"ok": True, "updated": updated, "exported": exported}
 
     def _review_ui_citation_approve(self, data: dict[str, Any]) -> dict[str, Any]:
-        """Record citation approval in citation_link_preview.csv (an `approved`
-        column). Does NOT modify the review CSV or ttl."""
+        """Record citation approval in the master enriched review CSV."""
         ontology = str(data.get("ontology", "")).strip().upper()
         iris = set(data.get("iris") or [])
         approved = str(data.get("status", "")).strip()  # "yes" | "no" | ""
-        path = self.config.manual_csv.parent / "citation_link_preview.csv"
-        if not path.exists():
-            raise ValueError("citation_link_preview.csv not found")
-        rows = read_csv_rows(path)
-        fieldnames = list(rows[0].keys()) if rows else []
-        if "approved" not in fieldnames:
-            fieldnames = fieldnames + ["approved"]
+        rows = read_csv_rows(self.config.enriched_csv)
         n = 0
         for r in rows:
-            if r.get("class_iri", "") in iris or (ontology and (r.get("iri_ontology", "") or "").strip().upper() == ontology):
-                r["approved"] = approved
+            source_id = (
+                r.get("modelling_citation_source_ontology_id", "")
+                or r.get("native_ontology_guess", "")
+                or r.get("ontology", "")
+            ).strip().upper()
+            if r.get("class_iri", "") in iris or (ontology and source_id == ontology):
+                if approved == "none":
+                    self._clear_modelling_citation_reference(
+                        r,
+                        "Marked no citation in UI; captured citation metadata cleared.",
+                        approved="none",
+                    )
+                elif approved == "no":
+                    self._clear_modelling_citation_reference(
+                        r,
+                        "Disapproved in UI; captured citation metadata cleared.",
+                        approved="no",
+                    )
+                else:
+                    r["modelling_citation_approved"] = approved
                 n += 1
-        write_csv_rows(path, rows, fieldnames)
+        self._write_master_review_rows(rows)
         self._citation_cache = None
         return {"ok": True, "updated": n}
+
+    @staticmethod
+    def _clear_modelling_citation_reference(row: dict[str, str], reason: str = "", approved: str = "none") -> None:
+        for field in CITATION_REFERENCE_COLUMNS:
+            row[field] = ""
+        row["modelling_citation_status"] = "no_citation"
+        row["modelling_citation_confidence"] = "not_good" if approved == "no" else "no_candidate"
+        row["modelling_citation_approved"] = approved
+        row["modelling_citation_assignment_flag"] = (
+            "potential_assignment_error" if approved == "no" else "not_applicable"
+        )
+        row["modelling_citation_assignment_flag_reason"] = reason or (
+            "Disapproved citation; captured citation metadata cleared."
+            if approved == "no"
+            else "No active citation assignment to audit."
+        )
+        row["modelling_citation_assignment_checked_at"] = datetime.now().astimezone().replace(microsecond=0).isoformat()
+
+    def _review_ui_citation_assignment_flag(self, data: dict[str, Any]) -> dict[str, Any]:
+        """Record citation assignment correctness flags in the master enriched CSV."""
+        ontology = str(data.get("ontology", "")).strip().upper()
+        iris = set(data.get("iris") or [])
+        flag = str(data.get("flag", "")).strip()
+        reason = str(data.get("reason", "") or "").strip()
+        allowed = {"ok", "needs_manual_check", "potential_assignment_error", "not_applicable", ""}
+        if flag not in allowed:
+            raise ValueError(f"Unsupported citation assignment flag: {flag!r}")
+        checked_at = datetime.now().astimezone().replace(microsecond=0).isoformat()
+        default_reason = {
+            "ok": "Reviewed in UI: citation assignment appears correct.",
+            "needs_manual_check": "Reviewed in UI: citation assignment needs manual confirmation.",
+            "potential_assignment_error": "Reviewed in UI: citation assignment appears potentially incorrect.",
+            "not_applicable": "Reviewed in UI: no active citation assignment to audit.",
+            "": "",
+        }.get(flag, "")
+        rows = read_csv_rows(self.config.enriched_csv)
+        n = 0
+        for r in rows:
+            source_id = (
+                r.get("modelling_citation_source_ontology_id", "")
+                or r.get("native_ontology_guess", "")
+                or r.get("ontology", "")
+            ).strip().upper()
+            if r.get("class_iri", "") in iris or (ontology and source_id == ontology and not iris):
+                r["modelling_citation_assignment_flag"] = flag
+                r["modelling_citation_assignment_flag_reason"] = reason or default_reason
+                r["modelling_citation_assignment_checked_at"] = checked_at if flag else ""
+                n += 1
+        self._write_master_review_rows(rows)
+        self._citation_cache = None
+        return {"ok": True, "updated": n, "flag": flag}
 
     def _review_ui_class_payload(self, iri: str, args: argparse.Namespace) -> dict[str, Any] | None:
         rows, manual_by_iri = self._review_ui_rows_and_manual(args)
@@ -2150,7 +2593,7 @@ class ReviewExtractionPipeline:
                 sibling.setdefault("source_ontology_ids", other.get("source_ontology_ids", ""))
                 manual_by_iri[other_iri] = sibling
 
-        self._write_manual_annotations(rows, manual_by_iri)
+        self._write_master_review_annotations(rows, manual_by_iri)
         exported = False
         if bool(data.get("export", True)) and not args.no_export_after_review:
             self.export_review_ontology(args)
@@ -2159,7 +2602,7 @@ class ReviewExtractionPipeline:
             "ok": True,
             "iri": iri,
             "exported": exported,
-            "manualCsv": str(self.config.manual_csv),
+            "masterCsv": str(self.config.enriched_csv),
             "reviewOntologyTtl": str(self.config.review_ontology_ttl),
         }
 
@@ -2212,7 +2655,7 @@ class ReviewExtractionPipeline:
             entry = self._normalise_manual_row(entry)
             manual_by_iri[other_iri] = entry
 
-        self._write_manual_annotations(rows, manual_by_iri)
+        self._write_master_review_annotations(rows, manual_by_iri)
         exported = False
         if bool(data.get("export", False)) and not args.no_export_after_review:
             self.export_review_ontology(args)
@@ -2224,7 +2667,7 @@ class ReviewExtractionPipeline:
             "affected": len(affected_iris),
             "affectedIris": affected_iris,
             "exported": exported,
-            "manualCsv": str(self.config.manual_csv),
+            "masterCsv": str(self.config.enriched_csv),
         }
 
     @staticmethod
@@ -2393,6 +2836,8 @@ class ReviewExtractionPipeline:
     }
     .tag.reviewed { background: #e4f0dc; color: #355d2d; }
     .tag.excluded { background: #f3dddd; color: var(--danger); }
+    .tag.warn { background: #f7ead6; color: var(--warn); }
+    .tag.error { background: #f3dddd; color: var(--danger); }
     main {
       min-width: 0;
       display: flex;
@@ -2624,6 +3069,7 @@ class ReviewExtractionPipeline:
         <button id="tab-violations" class="secondary">Violations <span id="tab-viol-count"></span></button>
         <button id="tab-missing" class="secondary">Missing values <span id="tab-missing-count"></span></button>
         <button id="tab-citations" class="secondary">Citations <span id="tab-cit-count"></span></button>
+        <button id="tab-publication" class="secondary">Publication decisions <span id="tab-pub-count"></span></button>
       </div>
       <div class="topbar">
         <div class="title-block">
@@ -2653,6 +3099,8 @@ class ReviewExtractionPipeline:
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap;">
           <button class="secondary" id="missing-refresh">Refresh</button>
           <span class="subtle" id="missing-count">Loading…</span>
+          <span class="subtle" id="missing-save-status"></span>
+          <label class="export-toggle"><input id="missing-export" type="checkbox"> regenerate TTL on quick fill (slower)</label>
         </div>
         <div id="missing-list"></div>
       </div>
@@ -2661,8 +3109,26 @@ class ReviewExtractionPipeline:
           <button class="secondary" id="cit-refresh">Refresh</button>
           <span class="subtle" id="cit-count">Loading…</span>
           <label class="export-toggle"><input id="cit-only-unapproved" type="checkbox"> only unapproved</label>
+          <select id="cit-correctness-filter" style="max-width:240px;" title="Filter by citation assignment correctness audit">
+            <option value="">All correctness flags</option>
+            <option value="potential_assignment_error">Potential assignment errors</option>
+            <option value="needs_manual_check">Needs manual check</option>
+            <option value="ok">OK</option>
+            <option value="not_applicable">Not applicable</option>
+            <option value="(blank)">Blank</option>
+          </select>
+          <span class="subtle" id="cit-save-status"></span>
         </div>
         <div id="citations-list"></div>
+      </div>
+      <div class="content" id="publication-content" style="display:none;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap;">
+          <button class="secondary" id="pub-refresh">Refresh</button>
+          <span class="subtle" id="pub-count">Loading...</span>
+          <label class="export-toggle"><input id="pub-export" type="checkbox" checked> regenerate TTL on decision</label>
+          <span class="subtle" id="pub-save-status"></span>
+        </div>
+        <div id="publication-list"></div>
       </div>
     </main>
   </div>
@@ -2672,6 +3138,7 @@ class ReviewExtractionPipeline:
     let allClasses = [];
     let selectedIri = "";
     let selectedOntology = "";
+    let returnTabAfterSave = "";
 
     function filterByCategory(list) {
       const sel = $("category-filter");
@@ -2804,6 +3271,7 @@ class ReviewExtractionPipeline:
       }).join("");
       document.querySelectorAll(".ontology-head").forEach((button) => {
         button.addEventListener("click", async () => {
+          returnTabAfterSave = "";
           selectedOntology = button.dataset.ontology;
           const group = classGroups().find((item) => item.key === selectedOntology);
           renderClassList();
@@ -2811,7 +3279,7 @@ class ReviewExtractionPipeline:
         });
       });
       document.querySelectorAll(".class-item").forEach((button) => {
-        button.addEventListener("click", () => loadClass(button.dataset.iri));
+        button.addEventListener("click", () => { returnTabAfterSave = ""; loadClass(button.dataset.iri); });
       });
     }
 
@@ -2880,9 +3348,11 @@ class ReviewExtractionPipeline:
           <div style="display:flex;align-items:center;gap:8px;">
             <b>Citation</b>
             <span class="tag ${cited ? "reviewed" : "excluded"}">${escapeHtml(badge)}</span>
+            ${cit.assignmentFlag ? citationFlagBadge(cit.assignmentFlag) : ""}
             <span class="subtle">IRI ontology: ${escapeHtml(cit.ontology || "?")}</span>
           </div>
           ${body}
+          ${cit.assignmentReason ? `<div class="subtle" style="margin-top:4px;"><b>Correctness reason:</b> ${escapeHtml(cit.assignmentReason)}</div>` : ""}
         </div>`;
     }
 
@@ -3112,7 +3582,18 @@ class ReviewExtractionPipeline:
         });
         setStatus(payload.exported ? "Saved and regenerated TTL." : "Saved manual annotations.");
         await loadClasses(true, !goNext);
-        if (goNext && classList.length) {
+        const tabAfterSave = returnTabAfterSave;
+        returnTabAfterSave = "";
+        if (tabAfterSave === "missing") {
+          await loadMissing();
+          setTab("missing");
+        } else if (tabAfterSave === "citations") {
+          await loadCitations();
+          setTab("citations");
+        } else if (tabAfterSave === "publication") {
+          await loadPublicationDecisions();
+          setTab("publication");
+        } else if (goNext && classList.length) {
           const candidates = classList.filter((item) => item.iri !== savedIri);
           const next = (nextBeforeSave && nextBeforeSave.iri !== savedIri && candidates.find((item) => item.iri === nextBeforeSave.iri))
             || candidates.find((item) => ontologyKey(item) === selectedOntology)
@@ -3139,20 +3620,25 @@ class ReviewExtractionPipeline:
       $("violations-content").style.display = tab === "violations" ? "" : "none";
       $("missing-content").style.display = tab === "missing" ? "" : "none";
       $("citations-content").style.display = tab === "citations" ? "" : "none";
+      $("publication-content").style.display = tab === "publication" ? "" : "none";
       $("tab-review").className = tab === "review" ? "primary" : "secondary";
       $("tab-violations").className = tab === "violations" ? "primary" : "secondary";
       $("tab-missing").className = tab === "missing" ? "primary" : "secondary";
       $("tab-citations").className = tab === "citations" ? "primary" : "secondary";
+      $("tab-publication").className = tab === "publication" ? "primary" : "secondary";
       if (tab === "violations") loadViolations().catch((e) => { $("violations-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
       if (tab === "missing") loadMissing().catch((e) => { $("missing-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
       if (tab === "citations") loadCitations().catch((e) => { $("citations-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
+      if (tab === "publication") loadPublicationDecisions().catch((e) => { $("publication-list").innerHTML = `<div class="empty">${escapeHtml(e.message)}</div>`; });
     }
 
     let missingFieldLabels = {};
+    let missingQuickValues = {};
     async function loadMissing() {
       const payload = await requestJson("/api/missing");
       const list = payload.missing || [];
       missingFieldLabels = payload.fieldLabels || {};
+      missingQuickValues = payload.quickValues || {};
       const gaps = payload.classesWithGaps || 0;
       $("tab-missing-count").textContent = `(${gaps})`;
       $("missing-count").textContent = list.length
@@ -3169,86 +3655,257 @@ class ReviewExtractionPipeline:
       const order = (fieldOrder && fieldOrder.length) ? fieldOrder : Object.keys(byField);
       container.innerHTML = order.filter((f) => byField[f]).map((field) => {
         const items = byField[field];
+        const quick = (missingQuickValues[field] || []).filter((item) => item.value);
+        const quickHint = quick.length
+          ? `<div class="subtle" style="margin-top:2px;">Quick fill uses the two most common existing values for this field: ${quick.map((item) => `${escapeHtml(item.value)} (${item.count})`).join(" · ")}</div>`
+          : `<div class="subtle" style="margin-top:2px;">No quick-fill values yet for this field.</div>`;
         const header = `<div style="margin:18px 0 8px;padding:8px 10px;background:var(--soft);border-radius:8px;">
             <h3 style="margin:0;">${escapeHtml(missingFieldLabels[field] || field)} <span class="subtle">(${items.length} class${items.length === 1 ? "" : "es"} missing this)</span></h3>
             <div class="subtle" style="margin-top:2px;">Field: <code>${escapeHtml(field)}</code></div>
+            ${quickHint}
           </div>`;
         const rowsHtml = items.map((m) => {
           const c = m.context || {};
-          const bits = [];
-          const add = (k, v) => { if (v) bits.push(`${k}=${escapeHtml(v)}`); };
-          add("ontology", c.ontology); add("include", c.include); add("score", c.score); add("category", c.category);
-          const ctx = bits.length ? `<div class="subtle" style="margin-top:2px;">${bits.join(" · ")}</div>` : "";
-          const parents = c.parents ? `<div class="subtle">parents: ${escapeHtml(c.parents)}</div>` : "";
+          const metaBits = [];
+          const groundingBits = [];
+          const qualityBits = [];
+          const addTo = (target, k, v) => { if (v) target.push(`${k}=${escapeHtml(v)}`); };
+          addTo(metaBits, "ontology", c.ontology);
+          addTo(metaBits, "include", c.include);
+          addTo(metaBits, "score", c.score);
+          addTo(groundingBits, "model", c.category);
+          addTo(groundingBits, "subtype", c.subtype);
+          addTo(groundingBits, "ont.cat", c.ontological_category);
+          addTo(groundingBits, "path.ground", c.pathological_grounding);
+          addTo(groundingBits, "crisp/graded", c.crisp_vs_graded);
+          addTo(groundingBits, "reality", c.reality_vs_classification);
+          addTo(qualityBits, "definition", c.definition_quality);
+          addTo(qualityBits, "comment", c.comment_quality);
+          addTo(qualityBits, "parentage", c.parentage_quality);
+          const ctx = metaBits.length ? `<div class="subtle" style="margin-top:2px;">${metaBits.join(" · ")}</div>` : "";
+          const grounding = groundingBits.length ? `<div class="subtle">grounding: ${groundingBits.join(" · ")}</div>` : "";
+          const quality = qualityBits.length ? `<div class="subtle">quality: ${qualityBits.join(" · ")}</div>` : "";
+          const parents = c.parents ? `<div class="subtle">superclass: ${escapeHtml(c.parents)}</div>` : "";
+          const bfo = c.bfo_anchor ? `<div class="subtle">BFO anchor: ${escapeHtml(c.bfo_anchor)}</div>` : "";
+          const hint = c.manual_screening_hint ? `<div class="subtle">hint: ${escapeHtml(c.manual_screening_hint)}</div>` : "";
+          const comment = c.review_comment ? `<div class="subtle">review comment: ${escapeHtml(c.review_comment)}</div>` : "";
+          const quickButtons = quick.map((item) =>
+            `<button class="secondary missing-fill" data-iri="${escapeHtml(m.iri)}" data-field="${escapeHtml(field)}" data-value="${escapeHtml(item.value)}">Set ${escapeHtml(item.value)}</button>`
+          ).join("");
+          const sourceButton = m.sourceUrl
+            ? `<button class="secondary missing-source" data-url="${escapeHtml(m.sourceUrl)}" data-label="${escapeHtml(m.sourceLabel || "BioPortal class")}">BioPortal</button>`
+            : "";
           return `<div style="display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);">
               <div style="flex:1;min-width:0;">
                 <strong>${escapeHtml(m.label)}</strong> <span class="subtle">${escapeHtml(c.term || "")}</span>
-                ${ctx}${parents}
+                ${ctx}${grounding}${quality}${parents}${bfo}${hint}${comment}
               </div>
-              <div style="flex-shrink:0;"><button class="secondary missing-open" data-iri="${escapeHtml(m.iri)}">Open</button></div>
+              <div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0;">${quickButtons}${sourceButton}<button class="secondary missing-open" data-iri="${escapeHtml(m.iri)}">Open</button></div>
             </div>`;
         }).join("");
         return `<div>${header}${rowsHtml}</div>`;
       }).join("");
     }
 
+    async function fillMissingValue(iri, field, value, btn) {
+      btn.disabled = true;
+      const orig = btn.textContent;
+      btn.textContent = "Saving…";
+      $("missing-save-status").textContent = "Saving to CSV…";
+      try {
+        await requestJson("/api/save", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({iri, annotations: {[field]: value}, export: $("missing-export").checked})
+        });
+        $("missing-save-status").textContent = `Saved ${field} = ${value} to master CSV.`;
+        await loadMissing();
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = orig;
+        $("missing-save-status").textContent = "Save failed.";
+        alert(e.message);
+      }
+    }
+
+    let publicationDecisions = [];
+    async function loadPublicationDecisions() {
+      const payload = await requestJson("/api/publication-decisions");
+      publicationDecisions = payload.decisions || [];
+      const total = publicationDecisions.length;
+      $("tab-pub-count").textContent = `(${total})`;
+      $("pub-count").textContent = `${payload.eligibilityCount || 0} eligibility decision(s) and ${payload.commentCount || 0} wording decision(s)`;
+      renderPublicationDecisions();
+    }
+
+    function renderPublicationDecisions() {
+      const container = $("publication-list");
+      if (!publicationDecisions.length) {
+        container.innerHTML = '<div class="empty">No unresolved publication decisions.</div>';
+        return;
+      }
+      container.innerHTML = publicationDecisions.map((item, index) => {
+        const identity = `${escapeHtml(item.label)} <span class="subtle">${escapeHtml(item.term || "")}</span>`;
+        const meta = [
+          `ontology=${escapeHtml(item.ontology || "")}`,
+          item.appearanceOntology && item.appearanceOntology !== item.ontology ? `appearance=${escapeHtml(item.appearanceOntology)}` : "",
+          `hierarchy=${escapeHtml(item.hierarchyStatus || "")}`,
+          item.decisionRule ? `rule=${escapeHtml(item.decisionRule)}` : "",
+        ].filter(Boolean).join(" · ");
+        const definition = item.definition ? `<div class="subtle"><b>definition:</b> ${escapeHtml(item.definition)}</div>` : "";
+        const parents = item.parents ? `<div class="subtle"><b>parents:</b> ${escapeHtml(item.parents)}</div>` : "";
+        const note = item.decisionNote ? `<div class="subtle"><b>decision note:</b> ${escapeHtml(item.decisionNote)}</div>` : "";
+        const eligibility = item.eligibilityPending ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;">
+            <button class="primary pub-decision" data-index="${index}" data-field="publication_eligibility_override" data-value="include">Include in synthesis</button>
+            <button class="secondary pub-decision" data-index="${index}" data-field="publication_eligibility_override" data-value="exclude">Screening record only</button>
+          </div>` : "";
+        const wording = item.commentStatus === "needs_review" ? `<div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--line);">
+            <div><b>Original review comment</b></div>
+            <div class="subtle">${escapeHtml(item.reviewComment || "(blank)")}</div>
+            <div style="margin-top:5px;"><b>Neutral publication proposal</b></div>
+            <div>${escapeHtml(item.commentProposal || "(blank)")}</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;">
+              <button class="primary pub-decision" data-index="${index}" data-field="publication_comment_status" data-value="approved">Approve wording</button>
+              <button class="secondary pub-decision" data-index="${index}" data-field="publication_comment_status" data-value="rejected">Reject wording</button>
+            </div>
+          </div>` : "";
+        return `<div style="margin:12px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;">
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <b>${identity}</b>
+              ${(item.flags || []).map((flag) => `<span class="tag warn">${escapeHtml(flag.replace(/_/g, " "))}</span>`).join("")}
+              <span style="flex:1;"></span>
+              <button class="secondary pub-open" data-iri="${escapeHtml(item.iri)}">Open class</button>
+            </div>
+            <div class="subtle" style="margin-top:3px;">${meta}</div>
+            ${definition}${parents}${note}${eligibility}${wording}
+          </div>`;
+      }).join("");
+    }
+
+    async function savePublicationDecision(item, field, value, btn) {
+      btn.disabled = true;
+      $("pub-save-status").textContent = "Saving to master CSV...";
+      try {
+        await requestJson("/api/publication-decision", {
+          method: "POST", headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({iri: item.iri, field, value, export: $("pub-export").checked})
+        });
+        $("pub-save-status").textContent = "Saved and recalculated publication status.";
+        await loadPublicationDecisions();
+      } catch (e) {
+        btn.disabled = false;
+        $("pub-save-status").textContent = "Save failed.";
+        alert(e.message);
+      }
+    }
+
     let citationGroups = [];
+    let citationAssignmentCounts = {};
     async function loadCitations() {
       const payload = await requestJson("/api/citations");
       citationGroups = payload.citations || [];
+      citationAssignmentCounts = payload.assignmentCounts || {};
       const total = citationGroups.length;
       const approved = citationGroups.filter((g) => g.state === "approved").length;
       const disapproved = citationGroups.filter((g) => g.state === "disapproved").length;
       const noCit = citationGroups.filter((g) => g.state === "no_citation").length;
+      const errors = citationGroups.filter((g) => g.assignmentFlag === "potential_assignment_error").length;
+      const checks = citationGroups.filter((g) => g.assignmentFlag === "needs_manual_check").length;
       $("tab-cit-count").textContent = `(${approved}/${total})`;
-      $("cit-count").textContent = `${approved} approved · ${disapproved} disapproved · ${noCit} no-citation · ${total - approved - disapproved - noCit} pending (of ${total} ontologies)`;
+      $("cit-count").textContent = `${approved} approved · ${disapproved} disapproved · ${noCit} marked no citation · ${total - approved - disapproved - noCit} pending · ${errors} likely error · ${checks} check`;
       renderCitations();
+    }
+
+    function citationFlagBadge(flag) {
+      const value = flag || "(blank)";
+      const cls = value === "potential_assignment_error" ? "error"
+        : value === "needs_manual_check" ? "warn"
+        : value === "ok" ? "reviewed"
+        : value === "not_applicable" ? "excluded"
+        : "";
+      return `<span class="tag ${cls}">${escapeHtml(value.replace(/_/g, " "))}</span>`;
+    }
+
+    function citationGroupIrisAttr(g) {
+      return escapeHtml(JSON.stringify(g.iris || []));
     }
 
     function renderCitations() {
       const container = $("citations-list");
       let groups = citationGroups;
+      const correctnessFilter = $("cit-correctness-filter").value;
       if ($("cit-only-unapproved").checked) groups = groups.filter((g) => g.state !== "approved" && g.state !== "no_citation");
+      if (correctnessFilter) groups = groups.filter((g) => (g.assignmentFlag || "(blank)") === correctnessFilter);
       if (!groups.length) { container.innerHTML = '<div class="empty">Nothing to show.</div>'; return; }
       container.innerHTML = groups.map((g) => {
+        const index = citationGroups.indexOf(g);
         const cited = g.status === "cited";
         const stateBadge = g.state === "approved" ? "approved"
           : g.state === "disapproved" ? "disapproved"
-          : g.state === "no_citation" ? "no citation"
+          : g.state === "no_citation" ? "marked no citation"
           : (cited ? "cited" : (g.status === "no_citation" ? "no citation" : g.status.replace(/_/g, " ")));
         const tagClass = g.state === "approved" ? "reviewed" : g.state === "disapproved" ? "excluded" : "";
         const meta = cited ? [g.title, g.authors, g.year, g.venue].filter(Boolean).map(escapeHtml).join(" · ") : "";
         const link = cited && g.resolveUrl
           ? `<a class="source-link" href="${escapeHtml(g.resolveUrl)}" target="disease-review-citation">${escapeHtml(g.doi || g.resolveUrl)}</a>` : "";
+        const bib = g.bibliographic && !g.title ? `<div style="margin-top:4px;">${escapeHtml(g.bibliographic)}</div>` : "";
         const name = g.ontologyTitle ? `${escapeHtml(g.ontology)} — ${escapeHtml(g.ontologyTitle)}` : escapeHtml(g.ontology || "(unknown)");
-        const approveBtn = `<button class="${g.state === "approved" ? "secondary" : "primary"} cit-approve" data-onto="${escapeHtml(g.ontology)}" data-status="${g.state === "approved" ? "" : "yes"}">${g.state === "approved" ? "Approved ✓" : "Approve"}</button>`;
-        const disBtn = `<button class="secondary cit-approve" data-onto="${escapeHtml(g.ontology)}" data-status="${g.state === "disapproved" ? "" : "no"}">${g.state === "disapproved" ? "Disapproved ✕" : "Disapprove"}</button>`;
-        const noneBtn = `<button class="secondary cit-approve" data-onto="${escapeHtml(g.ontology)}" data-status="${g.state === "no_citation" ? "" : "none"}">${g.state === "no_citation" ? "No citation ✓" : "Has no citation"}</button>`;
+        const iris = citationGroupIrisAttr(g);
+        const approveBtn = `<button class="${g.state === "approved" ? "secondary" : "primary"} cit-approve" data-index="${index}" data-status="${g.state === "approved" ? "" : "yes"}">${g.state === "approved" ? "Approved ✓" : "Approve"}</button>`;
+        const disBtn = `<button class="secondary cit-approve" data-index="${index}" data-status="${g.state === "disapproved" ? "" : "no"}">${g.state === "disapproved" ? "Disapproved ✕" : "Disapprove"}</button>`;
+        const noneBtn = `<button class="secondary cit-approve" data-index="${index}" data-status="${g.state === "no_citation" ? "" : "none"}">${g.state === "no_citation" ? "No citation mark ✓" : "Mark no citation"}</button>`;
+        const okBtn = `<button class="secondary cit-flag" data-index="${index}" data-flag="ok">Correct OK</button>`;
+        const checkBtn = `<button class="secondary cit-flag" data-index="${index}" data-flag="needs_manual_check">Needs check</button>`;
+        const errorBtn = `<button class="secondary cit-flag" data-index="${index}" data-flag="potential_assignment_error">Assignment error</button>`;
+        const naBtn = `<button class="secondary cit-flag" data-index="${index}" data-flag="not_applicable">N/A</button>`;
         const classes = g.classes.map((c) => escapeHtml(c.label)).join(", ");
-        return `<div style="margin:12px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;${g.state === "approved" || g.state === "no_citation" ? "opacity:.7;" : ""}">
+        const reason = g.assignmentReason ? `<div class="subtle" style="margin-top:4px;"><b>Correctness reason:</b> ${escapeHtml(g.assignmentReason)}</div>` : "";
+        const checked = g.assignmentCheckedAt ? `<span class="subtle">checked ${escapeHtml(g.assignmentCheckedAt)}</span>` : "";
+        const note = g.note ? `<div class="subtle" style="margin-top:4px;">citation confidence/note: ${escapeHtml(g.note)}</div>` : "";
+        const openFirst = g.classes.length ? `<button class="secondary cit-open-class" data-iri="${escapeHtml(g.classes[0].iri)}">Open class</button>` : "";
+        return `<div style="margin:12px 0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;${g.state === "approved" || g.state === "no_citation" ? "opacity:.72;" : ""}" data-iris="${iris}">
             <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
               <b>${name}</b>
               <span class="tag ${tagClass}">${escapeHtml(stateBadge)}</span>
+              ${citationFlagBadge(g.assignmentFlag)}
               <span class="subtle">${g.count} class${g.count === 1 ? "" : "es"}</span>
+              ${checked}
               <span style="flex:1;"></span>
               ${approveBtn} ${disBtn} ${noneBtn}
             </div>
-            ${cited ? `<div style="margin-top:4px;">${meta}</div><div style="margin-top:3px;">${link}</div>`
+            ${cited ? `<div style="margin-top:4px;">${meta}</div>${bib}<div style="margin-top:3px;">${link}</div>`
                     : `<div class="subtle" style="margin-top:4px;">No modelling-paper citation for this ontology.</div>`}
+            ${note}${reason}
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;">${okBtn}${checkBtn}${errorBtn}${naBtn}${openFirst}</div>
             <div class="subtle" style="margin-top:4px;">${classes}</div>
           </div>`;
       }).join("");
     }
 
-    async function approveCitation(ontology, status, btn) {
+    async function approveCitation(group, status, btn) {
       btn.disabled = true;
+      $("cit-save-status").textContent = "Saving approval…";
       try {
         await requestJson("/api/citation_approve", {
           method: "POST", headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({ontology, status})
+          body: JSON.stringify({ontology: group.ontology, iris: group.iris || [], status})
         });
+        $("cit-save-status").textContent = "Saved citation approval.";
         await loadCitations();
-      } catch (e) { btn.disabled = false; alert(e.message); }
+      } catch (e) { btn.disabled = false; $("cit-save-status").textContent = "Save failed."; alert(e.message); }
+    }
+
+    async function setCitationAssignmentFlag(group, flag, btn) {
+      btn.disabled = true;
+      $("cit-save-status").textContent = "Saving correctness flag…";
+      try {
+        await requestJson("/api/citation_assignment_flag", {
+          method: "POST", headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({ontology: group.ontology, iris: group.iris || [], flag})
+        });
+        $("cit-save-status").textContent = `Saved correctness flag: ${flag || "(blank)"}.`;
+        await loadCitations();
+      } catch (e) { btn.disabled = false; $("cit-save-status").textContent = "Save failed."; alert(e.message); }
     }
 
     let violationRules = {};
@@ -3328,24 +3985,62 @@ class ReviewExtractionPipeline:
     }
 
     function openViolationClass(iri) {
+      returnTabAfterSave = "";
       setTab("review");
       loadClass(iri).catch((e) => renderEmpty(e.message));
     }
 
-    $("tab-review").addEventListener("click", () => setTab("review"));
+    $("tab-review").addEventListener("click", () => { returnTabAfterSave = ""; setTab("review"); });
     $("tab-violations").addEventListener("click", () => setTab("violations"));
     $("tab-missing").addEventListener("click", () => setTab("missing"));
     $("tab-citations").addEventListener("click", () => setTab("citations"));
+    $("tab-publication").addEventListener("click", () => setTab("publication"));
     $("missing-refresh").addEventListener("click", () => loadMissing().catch((e) => alert(e.message)));
     $("missing-list").addEventListener("click", (e) => {
+      const fill = e.target.closest(".missing-fill");
+      if (fill) { fillMissingValue(fill.dataset.iri, fill.dataset.field, fill.dataset.value, fill); return; }
+      const source = e.target.closest(".missing-source");
+      if (source) { openSourceLink({url: source.dataset.url, label: source.dataset.label || "BioPortal class"}); return; }
       const op = e.target.closest(".missing-open");
-      if (op) { setTab("review"); loadClass(op.dataset.iri).catch((err) => renderEmpty(err.message)); }
+      if (op) { returnTabAfterSave = "missing"; setTab("review"); loadClass(op.dataset.iri).catch((err) => renderEmpty(err.message)); }
     });
     $("cit-refresh").addEventListener("click", () => loadCitations().catch((e) => alert(e.message)));
     $("cit-only-unapproved").addEventListener("change", renderCitations);
+    $("cit-correctness-filter").addEventListener("change", renderCitations);
     $("citations-list").addEventListener("click", (e) => {
       const b = e.target.closest(".cit-approve");
-      if (b) approveCitation(b.dataset.onto, b.dataset.status, b);
+      const flag = e.target.closest(".cit-flag");
+      const op = e.target.closest(".cit-open-class");
+      if (b) {
+        const group = citationGroups[Number(b.dataset.index)];
+        if (group) approveCitation(group, b.dataset.status, b);
+        return;
+      }
+      if (flag) {
+        const group = citationGroups[Number(flag.dataset.index)];
+        if (group) setCitationAssignmentFlag(group, flag.dataset.flag, flag);
+        return;
+      }
+      if (op) {
+        returnTabAfterSave = "citations";
+        setTab("review");
+        loadClass(op.dataset.iri).catch((err) => renderEmpty(err.message));
+      }
+    });
+    $("pub-refresh").addEventListener("click", () => loadPublicationDecisions().catch((e) => alert(e.message)));
+    $("publication-list").addEventListener("click", (e) => {
+      const decision = e.target.closest(".pub-decision");
+      const op = e.target.closest(".pub-open");
+      if (decision) {
+        const item = publicationDecisions[Number(decision.dataset.index)];
+        if (item) savePublicationDecision(item, decision.dataset.field, decision.dataset.value, decision);
+        return;
+      }
+      if (op) {
+        returnTabAfterSave = "publication";
+        setTab("review");
+        loadClass(op.dataset.iri).catch((err) => renderEmpty(err.message));
+      }
     });
     $("viol-refresh").addEventListener("click", () => loadViolations().catch((e) => alert(e.message)));
     $("violations-list").addEventListener("click", (e) => {
@@ -3711,236 +4406,64 @@ class ReviewExtractionPipeline:
             return "Eligible for independent class-level review if otherwise in scope."
         return "Needs manual namespace/provenance check before deciding review route."
 
-    def _citation_workbook_path(self) -> Path | None:
-        for path in [self.config.preferred_citation_workbook, self.config.generated_citation_workbook]:
-            if path.exists():
-                return path
-        return None
+    def _load_modelling_citations(self, rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
+        """Load ontology-level modelling citations from the master review table.
 
-    def _load_modelling_citations(self) -> dict[str, dict[str, str]]:
+        External citation suggestion files are intentionally not consulted here;
+        disease_terms_review_enriched.csv is the canonical table.
+        """
         citations: dict[str, dict[str, str]] = {}
-        workbook_path = self._citation_workbook_path()
-        if workbook_path:
-            try:
-                manual_decisions = workbook_path == self.config.preferred_citation_workbook
-                citations.update(self._load_modelling_citations_from_workbook(workbook_path, manual_decisions=manual_decisions))
-            except Exception as exc:
-                print(f"  [warn] could not read citation workbook {workbook_path}: {exc}", file=sys.stderr)
-        if not citations and self.config.citation_lookup_json.exists():
-            try:
-                data = json.loads(self.config.citation_lookup_json.read_text(encoding="utf-8"))
-                rows = data.get("merged_best_rows", [])
-                citations.update(self._citation_lookup_from_rows(rows, source_label=str(self.config.citation_lookup_json), manual_decisions=False))
-            except Exception as exc:
-                print(f"  [warn] could not read citation lookup JSON {self.config.citation_lookup_json}: {exc}", file=sys.stderr)
-        citations.update(self._load_csv_citation_overrides())
-        citations.update(self._load_citation_review_overrides())
-        return citations
-
-    def _load_csv_citation_overrides(self) -> dict[str, dict[str, str]]:
-        if not self.config.citation_overrides_csv.exists():
-            return {}
-        citations: dict[str, dict[str, str]] = {}
-        for row in read_csv_rows(self.config.citation_overrides_csv):
-            ontology_id = clean_cell(row.get("ontology_id", ""))
-            if not ontology_id:
-                continue
-            doi = self._clean_doi(row.get("doi", ""))
-            pmid = clean_cell(row.get("pmid", ""))
-            pmcid = clean_cell(row.get("pmcid", ""))
-            url = clean_cell(row.get("url", ""))
-            citation = {
-                "ontology_id": ontology_id,
-                "confidence": clean_cell(row.get("note", "")) or "user-provided citation",
-                "doi": doi,
-                "pmid": pmid,
-                "pmcid": pmcid,
-                "url": f"https://doi.org/{doi}" if doi else (url or (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else "")),
-                "title": clean_cell(row.get("publication_title", "")),
-                "bibliographic_citation": self._format_bibliographic_citation(row, doi=doi),
-                "lookup_source": "citation_overrides.csv",
-                "citation_source": str(self.config.citation_overrides_csv),
-            }
-            if citation["bibliographic_citation"] or citation["doi"] or citation["pmid"]:
-                citations[citation_lookup_key(ontology_id)] = citation
-        if citations:
-            print(f"Loaded {len(citations)} citation override(s) from {self.config.citation_overrides_csv}", file=sys.stderr)
-        return citations
-
-    def _load_citation_review_overrides(self) -> dict[str, dict[str, str]]:
-        if not self.config.citation_review_workbook.exists():
-            return {}
-        try:
-            from openpyxl import load_workbook
-
-            workbook = load_workbook(self.config.citation_review_workbook, read_only=True, data_only=True)
-            if "Ontologies needing citation" not in workbook.sheetnames:
-                return {}
-            worksheet = workbook["Ontologies needing citation"]
-            rows = worksheet.iter_rows(values_only=True)
-            headers = [clean_cell(value) for value in next(rows)]
-            records = [
-                {headers[index]: clean_cell(value) for index, value in enumerate(row) if index < len(headers)}
-                for row in rows
-            ]
-        except Exception as exc:
-            print(f"  [warn] could not read citation review workbook {self.config.citation_review_workbook}: {exc}", file=sys.stderr)
-            return {}
-
-        citations: dict[str, dict[str, str]] = {}
-        for row in records:
-            ontology_id = row.get("Ontology ID", "")
-            if not ontology_id:
-                continue
-            citation = self._normalise_review_citation_row(row, source_label=str(self.config.citation_review_workbook))
+        for row in rows:
+            citation = self._master_citation_from_row(row)
             if citation:
-                citations[citation_lookup_key(ontology_id)] = citation
-        if citations:
-            print(f"Loaded {len(citations)} citation override(s) from {self.config.citation_review_workbook}", file=sys.stderr)
+                citations[citation_lookup_key(citation["ontology_id"])] = citation
         return citations
 
-    def _normalise_review_citation_row(self, row: dict[str, str], *, source_label: str) -> dict[str, str] | None:
-        decision = clean_cell(row.get("Certainty assessment", ""))
-        decision_key = decision.lower()
-        if not decision or decision_key in REJECTED_CITATION_CONFIDENCES:
+    def _master_citation_from_row(self, row: dict[str, str]) -> dict[str, str] | None:
+        source_id = clean_cell(
+            row.get("modelling_citation_source_ontology_id", "")
+            or row.get("native_ontology_guess", "")
+            or row.get("ontology", "")
+        )
+        if not source_id:
             return None
-
-        suggested_title = row.get("Suggested paper title", "")
-        suggested_doi = self._clean_doi(row.get("Suggested DOI", ""))
-        suggested_pmid = row.get("Suggested PMID", "")
-        suggested_pmcid = row.get("Suggested PMCID", "")
-        suggested_url = row.get("Suggested URL", "")
-
-        if decision_key in MANUAL_ACCEPTED_CITATION_CONFIDENCES or decision_key == "good":
-            doi = suggested_doi
-            pmid = suggested_pmid
-            pmcid = suggested_pmcid
-            url = suggested_url or (f"https://doi.org/{doi}" if doi else "")
-            citation_text = self._format_review_citation(row, title=suggested_title, doi=doi, pmid=pmid)
-            title = suggested_title
-        else:
-            doi = self._doi_from_text(decision)
-            pmid = self._pmid_from_text(decision)
-            pmcid = self._pmcid_from_text(decision)
-            url = self._url_from_text(decision) or (f"https://doi.org/{doi}" if doi else "")
-            title = "" if (doi or pmid or url) else decision
-            citation_text = decision
-            if doi and not citation_text.lower().startswith(("doi", "http")):
-                citation_text = f"doi:{doi}"
-
-        if not citation_text and not doi and not pmid and not url and not title:
+        confidence = clean_cell(row.get("modelling_citation_confidence", ""))
+        if confidence.lower() in REJECTED_CITATION_CONFIDENCES:
+            return None
+        approved = clean_cell(row.get("modelling_citation_approved", "")).lower()
+        if approved in {"no", "none"}:
+            return None
+        status = clean_cell(row.get("modelling_citation_status", ""))
+        doi = self._clean_doi(row.get("modelling_citation_doi", ""))
+        pmid = clean_cell(row.get("modelling_citation_pmid", ""))
+        pmcid = clean_cell(row.get("modelling_citation_pmcid", ""))
+        url = clean_cell(row.get("modelling_citation_url", ""))
+        title = clean_cell(row.get("modelling_citation_publication_title", ""))
+        bibliographic = clean_cell(row.get("modelling_citation_bibliographic_citation", ""))
+        if status and status not in {"cited", "approved"}:
+            return None
+        if not (bibliographic or doi or pmid or url or title):
             return None
         return {
-            "ontology_id": row.get("Ontology ID", ""),
-            "confidence": decision,
-            "doi": doi,
-            "pmid": pmid,
-            "pmcid": pmcid,
-            "url": url,
-            "title": title or suggested_title,
-            "bibliographic_citation": citation_text or title or suggested_title,
-            "lookup_source": "manual citation-needed workbook",
-            "citation_source": source_label,
-        }
-
-    @staticmethod
-    def _format_review_citation(row: dict[str, str], *, title: str, doi: str, pmid: str) -> str:
-        parts = []
-        if title:
-            parts.append(title.rstrip(".") + ".")
-        if row.get("Suggested year"):
-            parts.append(f"({row['Suggested year']})")
-        if row.get("Suggested venue"):
-            parts.append(row["Suggested venue"].rstrip(".") + ".")
-        if doi:
-            parts.append(f"doi:{doi}")
-        elif pmid:
-            parts.append(f"PMID:{pmid}")
-        return " ".join(parts).strip()
-
-    def _load_modelling_citations_from_workbook(self, path: Path, *, manual_decisions: bool) -> dict[str, dict[str, str]]:
-        from openpyxl import load_workbook
-
-        workbook = load_workbook(path, read_only=True, data_only=True)
-        if "Merged Best Fit" not in workbook.sheetnames:
-            raise ValueError("sheet 'Merged Best Fit' not found")
-        worksheet = workbook["Merged Best Fit"]
-        rows = worksheet.iter_rows(values_only=True)
-        headers = [clean_cell(value) for value in next(rows)]
-        records = [
-            {headers[index]: clean_cell(value) for index, value in enumerate(row) if index < len(headers)}
-            for row in rows
-        ]
-        return self._citation_lookup_from_rows(records, source_label=str(path), manual_decisions=manual_decisions)
-
-    def _citation_lookup_from_rows(self, rows: list[dict[str, Any]], *, source_label: str, manual_decisions: bool) -> dict[str, dict[str, str]]:
-        citations: dict[str, dict[str, str]] = {}
-        for raw_row in rows:
-            row = {str(key): clean_cell(value) for key, value in raw_row.items()}
-            ontology_id = row.get("ontology_id", "")
-            if not ontology_id:
-                continue
-            citation = self._normalise_citation_row(row, source_label=source_label, manual_decisions=manual_decisions)
-            if citation:
-                citations[citation_lookup_key(ontology_id)] = citation
-        return citations
-
-    def _normalise_citation_row(self, row: dict[str, str], *, source_label: str, manual_decisions: bool) -> dict[str, str] | None:
-        confidence = self._citation_decision_value(row)
-        confidence_key = confidence.strip().lower()
-        manual_citation = self._manual_citation_override(confidence)
-        accepted_values = MANUAL_ACCEPTED_CITATION_CONFIDENCES if manual_decisions else ACCEPTED_CITATION_CONFIDENCES
-        accepted = confidence_key in accepted_values or bool(manual_citation)
-        if confidence_key in REJECTED_CITATION_CONFIDENCES and not manual_citation:
-            accepted = False
-        if not accepted:
-            return None
-
-        title = row.get("publication_title", "")
-        doi = self._clean_doi(row.get("doi", ""))
-        pmid = row.get("pmid", "")
-        pmcid = row.get("pmcid", "")
-        if manual_citation:
-            doi = self._doi_from_text(manual_citation)
-            pmid = self._pmid_from_text(manual_citation)
-            pmcid = self._pmcid_from_text(manual_citation)
-            title = manual_citation
-        doi_url = f"https://doi.org/{doi}" if manual_citation and doi else row.get("doi_url", "") or (f"https://doi.org/{doi}" if doi else "")
-        url = doi_url or row.get("url", "")
-        if manual_citation and not doi:
-            url = ""
-        bibliographic_citation = manual_citation or self._format_bibliographic_citation(row, doi=doi)
-        if not bibliographic_citation and not doi and not url:
-            return None
-        return {
-            "ontology_id": row.get("ontology_id", ""),
+            "ontology_id": source_id,
             "confidence": confidence,
             "doi": doi,
             "pmid": pmid,
             "pmcid": pmcid,
-            "url": url,
+            "url": url or (f"https://doi.org/{doi}" if doi else (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else "")),
             "title": title,
-            "bibliographic_citation": bibliographic_citation,
-            "lookup_source": row.get("lookup_source", ""),
-            "citation_source": source_label,
+            "bibliographic_citation": bibliographic or self._format_bibliographic_citation(
+                {
+                    "publication_title": title,
+                    "authors": row.get("modelling_citation_authors", ""),
+                    "year": row.get("modelling_citation_year", ""),
+                    "venue": row.get("modelling_citation_venue", ""),
+                },
+                doi=doi,
+            ),
+            "lookup_source": clean_cell(row.get("modelling_citation_lookup_source", "")),
+            "citation_source": clean_cell(row.get("modelling_citation_source", "")) or str(self.config.enriched_csv),
         }
-
-    @staticmethod
-    def _citation_decision_value(row: dict[str, str]) -> str:
-        for column in CITATION_DECISION_COLUMNS:
-            if row.get(column):
-                return row[column]
-        return ""
-
-    @staticmethod
-    def _manual_citation_override(value: str) -> str:
-        text = clean_cell(value)
-        lowered = text.lower()
-        if not text or lowered in ACCEPTED_CITATION_CONFIDENCES or lowered in REJECTED_CITATION_CONFIDENCES:
-            return ""
-        if len(text) > 40 and (re.search(r"\b(19|20)\d{2}\b", text) or "doi" in lowered or "pmid" in lowered):
-            return text
-        return ""
 
     @staticmethod
     def _clean_doi(value: str) -> str:
@@ -4018,7 +4541,7 @@ class ReviewExtractionPipeline:
         return {iri: sorted(values, key=lambda value: (citation_lookup_key(value), value)) for iri, values in sources_by_iri.items()}
 
     def _is_citation_review_row(self, row: dict[str, str]) -> bool:
-        term = row.get("term", "").strip().lower()
+        term = (row.get("term") or row.get("preferred_label", "")).strip().lower()
         if term in CITATION_REVIEW_TERMS:
             return True
         native_guess = row.get("native_ontology_guess") or terms_script.infer_native_ontology_guess(row.get("class_iri", ""))
@@ -4045,67 +4568,37 @@ class ReviewExtractionPipeline:
             return {"source_id": source_id, **citation}
         return None
 
-    def _write_citation_coverage_report(self, rows: list[dict[str, str]], citation_sources_by_iri: dict[str, list[str]], citations_by_source: dict[str, dict[str, str]]) -> None:
-        report_rows = []
-        seen: set[tuple[str, str, str]] = set()
-        for row in rows:
-            iri = row.get("class_iri", "")
-            term = row.get("term", "").strip().lower()
-            if not self._is_citation_review_row(row) or iri not in citation_sources_by_iri:
-                continue
-            for source_id in citation_sources_by_iri[iri]:
-                key = (iri, term, source_id)
-                if key in seen:
-                    continue
-                seen.add(key)
-                citation = citations_by_source.get(citation_lookup_key(source_id), {})
-                report_rows.append(
-                    {
-                        "class_iri": iri,
-                        "term": term,
-                        "preferred_label": row.get("preferred_label", ""),
-                        "native_source_ontology_id": source_id,
-                        "citation_added_to_review_ttl": "yes" if citation else "no",
-                        "doi": citation.get("doi", ""),
-                        "pmid": citation.get("pmid", ""),
-                        "pmcid": citation.get("pmcid", ""),
-                        "publication_title": citation.get("title", ""),
-                        "citation_url": citation.get("url", ""),
-                        "citation_confidence_or_manual_note": citation.get("confidence", ""),
-                        "citation_source": citation.get("citation_source", ""),
-                    }
-                )
-        write_csv_rows(
-            self.config.citation_coverage_csv,
-            sorted(report_rows, key=lambda r: (r["native_source_ontology_id"].lower(), r["term"], r["class_iri"])),
-            [
-                "class_iri",
-                "term",
-                "preferred_label",
-                "native_source_ontology_id",
-                "citation_added_to_review_ttl",
-                "doi",
-                "pmid",
-                "pmcid",
-                "publication_title",
-                "citation_url",
-                "citation_confidence_or_manual_note",
-                "citation_source",
-            ],
-        )
-        added = sum(1 for row in report_rows if row["citation_added_to_review_ttl"] == "yes")
-        print(f"Wrote native citation coverage ({added}/{len(report_rows)} cited rows) -> {self.config.citation_coverage_csv}")
-
     def export_review_ontology(self, args: argparse.Namespace) -> None:
-        rows = self._review_export_rows(read_csv_rows(self.config.enriched_csv))
+        rows = read_csv_rows(self.config.enriched_csv)
+        self.config.fallback_module_dir.mkdir(parents=True, exist_ok=True)
+        for stale_path in self.config.fallback_module_dir.glob("*.ttl"):
+            stale_path.unlink()
+        synthesis_rows = [
+            row for row in rows
+            if row.get("effective_synthesis_status", "").strip() == "include"
+        ]
+        if not any(row.get("effective_synthesis_status", "").strip() for row in rows):
+            synthesis_rows = [
+                row for row in self._review_export_rows(rows)
+                if row.get("manual_include_status", "").strip() != "exclude"
+            ]
         self._export_review_ontology(
             self.config.review_ontology_ttl,
-            ontology_iri="https://example.org/disease-review/extraction",
+            ontology_iri=REVIEW_EVIDENCE_IRI,
             rows=rows,
-            manual_rows=read_csv_rows(self.config.manual_csv),
-            label="Disease ontology scoping review extraction and review annotations",
+            manual_rows=rows,
+            label="Disease ontology artifact-evaluation evidence and assessment annotations",
             include_hierarchy_module_imports=True,
         )
+        self._export_review_ontology(
+            self.config.synthesis_ontology_ttl,
+            ontology_iri=REVIEW_SYNTHESIS_IRI,
+            rows=synthesis_rows,
+            manual_rows=synthesis_rows,
+            label="Disease ontology artifact-evaluation included analysis classes",
+            include_hierarchy_module_imports=True,
+        )
+        self._write_ontology_catalog()
 
     def _review_export_rows(
         self,
@@ -4117,7 +4610,6 @@ class ReviewExtractionPipeline:
     ) -> list[dict[str, str]]:
         filtered = []
         skipped_mesh_duplicates = 0
-        webprotege_excluded_rows = []
         valueset_excluded_rows = []
         scope_term_excluded_rows = []
         replaced_class_rows = []
@@ -4139,9 +4631,6 @@ class ReviewExtractionPipeline:
                 continue
             if self._is_excluded_valueset_row(row):
                 valueset_excluded_rows.append(dict(row))
-                continue
-            if self._is_excluded_webprotege_row(row):
-                webprotege_excluded_rows.append(dict(row))
                 continue
             filtered.append(dict(row))
         disease_sources = self._disease_source_ontology_ids(filtered)
@@ -4216,7 +4705,6 @@ class ReviewExtractionPipeline:
                     continue
             active_rows.append(row)
         self._write_exclusion_figure_reports(
-            webprotege_excluded_rows,
             valueset_excluded_rows,
             scope_term_excluded_rows,
             replaced_class_rows,
@@ -4228,10 +4716,6 @@ class ReviewExtractionPipeline:
             title_by_ontology,
         )
         return active_rows
-
-    @staticmethod
-    def _is_excluded_webprotege_row(row: dict[str, str]) -> bool:
-        return EXCLUDED_WEBPROTEGE_IRI_HOST in row.get("class_iri", "").lower()
 
     @staticmethod
     def _is_excluded_valueset_row(row: dict[str, str]) -> bool:
@@ -4332,7 +4816,6 @@ class ReviewExtractionPipeline:
 
     def _write_exclusion_figure_reports(
         self,
-        webprotege_rows: list[dict[str, str]],
         valueset_rows: list[dict[str, str]],
         scope_term_rows: list[dict[str, str]],
         replaced_class_rows: list[dict[str, str]],
@@ -4346,12 +4829,6 @@ class ReviewExtractionPipeline:
         detail_rows: list[dict[str, str]] = []
         exclusion_groups = [
             (
-                webprotege_rows,
-                "source_ontology_provenance_screen",
-                WEBPROTEGE_EXCLUSION_REASON,
-                "Discarded because the matched class IRI is a WebProtege-hosted random/local identifier; provenance is unstable for independent ontology-review counting.",
-            ),
-            (
                 valueset_rows,
                 "source_ontology_type_screen",
                 VALUESET_EXCLUSION_REASON,
@@ -4361,7 +4838,7 @@ class ReviewExtractionPipeline:
                 scope_term_rows,
                 "term_scope_screen",
                 SCOPE_TERM_EXCLUSION_REASON,
-                "Discarded because the matched term is not treated as a disease synonym in this disease-modelling scoping review; it is recorded as contextual vocabulary, not an active disease-class target.",
+                "Discarded because the matched term is not treated as a disease synonym in this disease-ontology artifact evaluation; it is recorded as contextual vocabulary, not an active disease-class target.",
             ),
             (
                 replaced_class_rows,
@@ -4482,10 +4959,10 @@ class ReviewExtractionPipeline:
         smoke_rows = self._smoke_rows_by_term(rows, args.smoke_per_term)
         self._export_review_ontology(
             self.config.smoke_ontology_ttl,
-            ontology_iri="https://example.org/disease-review/bioportal-hierarchy-smoke",
+            ontology_iri=REVIEW_BASE_IRI + "bioportal-hierarchy-smoke",
             rows=smoke_rows,
-            manual_rows=read_csv_rows(self.config.manual_csv),
-            label="Disease ontology scoping review smoke extraction",
+            manual_rows=smoke_rows,
+            label="Disease ontology artifact-evaluation smoke extraction",
         )
 
     def _smoke_rows_by_term(self, rows: list[dict[str, str]], per_term: int) -> list[dict[str, str]]:
@@ -4510,7 +4987,7 @@ class ReviewExtractionPipeline:
         include_hierarchy_module_imports: bool = False,
     ) -> None:
         manual_by_iri = {row["class_iri"]: self._normalise_manual_row(row) for row in manual_rows if row.get("class_iri")}
-        citations_by_source = self._load_modelling_citations()
+        citations_by_source = self._load_modelling_citations(rows)
         citation_sources_by_iri = self._native_citation_sources_by_iri(rows)
         triples: set[tuple[str, str, str, bool]] = set()
         parent_labels_by_iri: dict[str, str] = {}
@@ -4548,6 +5025,12 @@ class ReviewExtractionPipeline:
             for column in MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY:
                 self._add_literal(triples, iri, REV + column, manual_by_iri.get(iri, {}).get(column, ""))
 
+            for column in PUBLICATION_REVIEW_COLUMNS:
+                self._add_literal(triples, iri, REV + column, row.get(column, ""))
+
+            for column in CITATION_REVIEW_COLUMNS:
+                self._add_literal(triples, iri, REV + column, row.get(column, ""))
+
             if iri not in cited_iris:
                 citation_added = self._add_modelling_citation_annotations(
                     triples,
@@ -4561,12 +5044,9 @@ class ReviewExtractionPipeline:
         for parent_iri, parent_label in parent_labels_by_iri.items():
             self._add_literal(triples, parent_iri, RDFS_LABEL, parent_label)
 
+        import_iris = [REVIEW_CORE_IRI]
         if include_hierarchy_module_imports:
-            self._write_citation_coverage_report(rows, citation_sources_by_iri, citations_by_source)
-
-        import_iris = [self.config.review_core_ttl.resolve().as_uri()]
-        if include_hierarchy_module_imports:
-            import_iris.extend(self._hierarchy_module_import_iris())
+            import_iris.extend(self._hierarchy_module_import_iris(rows))
             import_iris.extend(self._write_missing_target_modules(rows))
             self._assert_exported_targets_are_imported(rows, import_iris)
         self._write_review_ttl(path, ontology_iri, label, triples, len(rows), import_iris)
@@ -4576,9 +5056,9 @@ class ReviewExtractionPipeline:
         target_iris = {row["class_iri"] for row in rows if row.get("class_iri")}
         imported_class_iris: set[str] = set()
         for import_iri in import_iris:
-            if not import_iri.startswith("file://"):
+            import_path = self._path_for_import_iri(import_iri)
+            if import_path is None:
                 continue
-            import_path = Path(urllib.parse.unquote(urllib.parse.urlparse(import_iri).path))
             if not import_path.exists() or import_path == self.config.review_core_ttl:
                 continue
             text = import_path.read_text(encoding="utf-8", errors="ignore")
@@ -4596,14 +5076,12 @@ class ReviewExtractionPipeline:
             )
 
     def _write_missing_target_modules(self, rows: list[dict[str, str]]) -> list[str]:
-        covered_iris = self._module_class_iris()
+        covered_iris = self._module_class_iris(rows)
         missing_rows = [
             row for row in rows
             if row.get("class_iri") and row["class_iri"] not in covered_iris
         ]
         self.config.fallback_module_dir.mkdir(parents=True, exist_ok=True)
-        for stale_path in self.config.fallback_module_dir.glob("*.ttl"):
-            stale_path.unlink()
         old_single_fallback = self.config.ontology_dir / "review_target_fallback_stubs.ttl"
         if old_single_fallback.exists():
             old_single_fallback.unlink()
@@ -4623,13 +5101,13 @@ class ReviewExtractionPipeline:
             module_path = self.config.fallback_module_dir / f"{safe_name(ontology)}_fallback_hierarchy.ttl"
             write_hierarchy_ttl(
                 module_path,
-                f"https://example.org/disease-review/modules/{safe_name(ontology)}_fallback_hierarchy",
+                REVIEW_MODULE_BASE_IRI + f"{safe_name(ontology)}_fallback_hierarchy",
                 triples,
                 source_label=f"Generated review target module for {ontology}; source API hierarchy module was missing or incomplete",
                 ontology_versions=join_values(row.get("ontology_versions", "") for row in ontology_rows),
                 retrieved_at=now_iso(),
             )
-            import_iris.append(module_path.resolve().as_uri())
+            import_iris.append(REVIEW_MODULE_BASE_IRI + f"{safe_name(ontology)}_fallback_hierarchy")
 
         print(
             f"Wrote {len(import_iris)} generated fallback modules covering {len(missing_rows)} exported target classes -> {self.config.fallback_module_dir}"
@@ -4664,19 +5142,36 @@ class ReviewExtractionPipeline:
             self._add_literal(triples, parent_iri, RDFS_LABEL, parent_label)
         return triples
 
-    def _module_class_iris(self) -> set[str]:
+    def _module_class_iris(self, rows: list[dict[str, str]] | None = None) -> set[str]:
         module_iris: set[str] = set()
-        for module_iri in self._hierarchy_module_import_iris():
-            if not module_iri.startswith("file://"):
+        for module_iri in self._hierarchy_module_import_iris(rows):
+            module_path = self._path_for_import_iri(module_iri)
+            if module_path is None:
                 continue
-            module_path = Path(urllib.parse.unquote(urllib.parse.urlparse(module_iri).path))
             if not module_path.exists():
                 continue
             text = module_path.read_text(encoding="utf-8", errors="ignore")
             module_iris.update(re.findall(r"<([^>]+)>\s+<http://www\.w3\.org/1999/02/22-rdf-syntax-ns#type>\s+<http://www\.w3\.org/2002/07/owl#Class>", text))
         return module_iris
 
-    def _hierarchy_module_import_iris(self) -> list[str]:
+    def _hierarchy_module_import_iris(self, rows: list[dict[str, str]] | None = None) -> list[str]:
+        if self.config.native_module_dir.exists():
+            if rows is None:
+                native_paths = sorted(self.config.native_module_dir.glob("*_native_hierarchy.ttl"))
+            else:
+                keys = sorted({
+                    safe_name(terms_script.normalise_ontology_id_for_dependency(native_ontology_group(row)))
+                    for row in rows
+                    if native_ontology_group(row)
+                })
+                native_paths = [
+                    self.config.native_module_dir / f"{key}_native_hierarchy.ttl"
+                    for key in keys
+                    if (self.config.native_module_dir / f"{key}_native_hierarchy.ttl").exists()
+                ]
+            if native_paths:
+                return [self._module_iri_for_path(path) for path in native_paths]
+
         module_dirs = [
             self.config.bioportal_module_dir,
             self.config.ols_module_dir,
@@ -4687,6 +5182,42 @@ class ReviewExtractionPipeline:
             if module_dir.exists():
                 module_paths.extend(sorted(module_dir.glob("*.ttl")))
         return [path.resolve().as_uri() for path in module_paths]
+
+    @staticmethod
+    def _module_iri_for_path(path: Path) -> str:
+        stem = path.stem
+        if stem.endswith("_native_hierarchy"):
+            stem = stem[: -len("_native_hierarchy")]
+        return REVIEW_MODULE_BASE_IRI + stem
+
+    def _path_for_import_iri(self, import_iri: str) -> Path | None:
+        if import_iri == REVIEW_CORE_IRI:
+            return self.config.review_core_ttl
+        if import_iri.startswith(REVIEW_MODULE_BASE_IRI):
+            key = import_iri.removeprefix(REVIEW_MODULE_BASE_IRI)
+            if key.endswith("_fallback_hierarchy"):
+                return self.config.fallback_module_dir / f"{key}.ttl"
+            return self.config.native_module_dir / f"{key}_native_hierarchy.ttl"
+        if import_iri.startswith("file://"):
+            return Path(urllib.parse.unquote(urllib.parse.urlparse(import_iri).path))
+        return None
+
+    def _write_ontology_catalog(self) -> None:
+        mappings = [(REVIEW_CORE_IRI, self.config.review_core_ttl.name)]
+        for path in sorted(self.config.native_module_dir.glob("*_native_hierarchy.ttl")):
+            mappings.append((self._module_iri_for_path(path), f"native_hierarchy_modules/{path.name}"))
+        for path in sorted(self.config.fallback_module_dir.glob("*_fallback_hierarchy.ttl")):
+            mappings.append((REVIEW_MODULE_BASE_IRI + path.stem, f"review_target_fallback_modules/{path.name}"))
+        lines = [
+            '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
+            '<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">',
+        ]
+        lines.extend(
+            f'  <uri id="User Entered Import Resolution" name="{iri}" uri="{uri}"/>'
+            for iri, uri in mappings
+        )
+        lines.append("</catalog>")
+        self.config.ontology_catalog.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     @staticmethod
     def _add_literal(triples: set[tuple[str, str, str, bool]], subject: str, predicate: str, value: str) -> None:
@@ -4703,6 +5234,17 @@ class ReviewExtractionPipeline:
         import_iris: list[str],
     ) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
+        generated_at = now_iso()
+        release_date = generated_at[:10]
+        ontology_name = {
+            REVIEW_EVIDENCE_IRI: "review-evidence",
+            REVIEW_SYNTHESIS_IRI: "synthesis",
+            REVIEW_CORE_IRI: "review-core",
+        }.get(ontology_iri, safe_name(ontology_iri))
+        version_iri = REVIEW_VERSION_BASE_IRI + f"{release_date}-{ontology_name}"
+        source_hash = ""
+        if self.config.enriched_csv.exists():
+            source_hash = hashlib.sha256(self.config.enriched_csv.read_bytes()).hexdigest()
         with path.open("w", encoding="utf-8") as handle:
             handle.write("@prefix owl: <http://www.w3.org/2002/07/owl#> .\n")
             handle.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n")
@@ -4710,14 +5252,21 @@ class ReviewExtractionPipeline:
             handle.write("@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n")
             handle.write("@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .\n")
             handle.write("@prefix dcterms: <http://purl.org/dc/terms/> .\n")
-            handle.write("@prefix rev: <https://example.org/disease-review/ap/> .\n\n")
+            handle.write(f"@prefix rev: <{REV}> .\n\n")
             handle.write(f"{ttl_iri(ontology_iri)} a owl:Ontology ;\n")
             if import_iris:
                 imports = ",\n        ".join(ttl_iri(import_iri) for import_iri in import_iris)
                 handle.write(f"    owl:imports {imports} ;\n")
             handle.write(f"    rdfs:label {ttl_literal(label)} ;\n")
-            handle.write(f"    dcterms:created {ttl_literal(now_iso())} ;\n")
-            handle.write(f"    dcterms:description {ttl_literal(f'Generated from {target_row_count} enriched extraction rows plus manual review annotations.')} .\n\n")
+            handle.write(f"    owl:versionIRI {ttl_iri(version_iri)} ;\n")
+            handle.write(f"    owl:versionInfo {ttl_literal(generated_at)} ;\n")
+            handle.write(f"    dcterms:created {ttl_literal(generated_at)} ;\n")
+            handle.write(f"    dcterms:issued {ttl_literal(release_date)} ;\n")
+            handle.write(f"    dcterms:creator {ttl_literal('Moritz Milewski')} ;\n")
+            handle.write("    dcterms:license <https://opensource.org/license/mit/> ;\n")
+            handle.write(f"    dcterms:source {ttl_literal(f'{self.config.enriched_csv.name}; SHA-256 {source_hash}')} ;\n")
+            handle.write(f"    rev:generation_software {ttl_literal('review_extraction_pipeline.py and publication_readiness.py')} ;\n")
+            handle.write(f"    dcterms:description {ttl_literal(f'Generated from {target_row_count} rows in the sole master review table.')} .\n\n")
             for subject, predicate, obj, object_is_iri in sorted(triples):
                 handle.write(ttl_line(subject, predicate, obj, object_is_iri=object_is_iri) + "\n")
 
@@ -4824,7 +5373,7 @@ class ReviewExtractionPipeline:
             module_path = self.config.bioportal_module_dir / f"{safe_name(ontology)}_hierarchy.ttl"
             write_hierarchy_ttl(
                 module_path,
-                f"https://example.org/disease-review/modules/{safe_name(ontology)}_hierarchy",
+                REVIEW_MODULE_BASE_IRI + f"{safe_name(ontology)}_hierarchy",
                 module_triples,
                 source_label="BioPortal API hierarchy extraction",
                 ontology_versions=join_values(row.get("ontology_versions", "") for row in ontology_rows),
@@ -4835,7 +5384,7 @@ class ReviewExtractionPipeline:
 
         write_hierarchy_ttl(
             self.config.bioportal_merged_ttl,
-            "https://example.org/disease-review/bioportal-hierarchy",
+            REVIEW_BASE_IRI + "bioportal-hierarchy",
             all_triples,
             source_label="BioPortal API hierarchy extraction",
             retrieved_at=run_retrieved_at,
@@ -4883,7 +5432,7 @@ class ReviewExtractionPipeline:
             module_path = self.config.ols_module_dir / f"{safe_name(ontology)}_ols_hierarchy.ttl"
             write_hierarchy_ttl(
                 module_path,
-                f"https://example.org/disease-review/modules/{safe_name(ontology)}_ols_hierarchy",
+                REVIEW_MODULE_BASE_IRI + f"{safe_name(ontology)}_ols_hierarchy",
                 module_triples,
                 source_label="OLS API hierarchy extraction",
                 ontology_versions=join_values([terms_script.fetch_ols_ontology_version(ontology, base_url)] + [r.get("hierarchy_source_ontology_version", "") for r in ontology_rows]),
@@ -4891,7 +5440,7 @@ class ReviewExtractionPipeline:
             )
             all_triples.update(module_triples)
             manifest_rows.append(self._manifest_row(ontology, ontology_rows, target_iris, nodes, edge_count, "OLS", module_path, run_retrieved_at))
-        write_hierarchy_ttl(self.config.ols_merged_ttl, "https://example.org/disease-review/ols-hierarchy", all_triples, source_label="OLS API hierarchy extraction", retrieved_at=run_retrieved_at)
+        write_hierarchy_ttl(self.config.ols_merged_ttl, REVIEW_BASE_IRI + "ols-hierarchy", all_triples, source_label="OLS API hierarchy extraction", retrieved_at=run_retrieved_at)
         self._write_hierarchy_manifest(self.config.ols_manifest, manifest_rows)
 
     def _ols_term_record(self, ontology: str, iri: str, base_url: str) -> dict[str, Any]:
@@ -4954,7 +5503,7 @@ class ReviewExtractionPipeline:
             module_path = self.config.obo_module_dir / f"{safe_name(ontology)}_obo_direct_hierarchy.ttl"
             write_hierarchy_ttl(
                 module_path,
-                f"https://example.org/disease-review/modules/{safe_name(ontology)}_obo_direct_hierarchy",
+                REVIEW_MODULE_BASE_IRI + f"{safe_name(ontology)}_obo_direct_hierarchy",
                 module_triples,
                 source_label=f"OBO Foundry Direct hierarchy extraction from {source_url}",
                 ontology_versions=join_values([version] + [r.get("hierarchy_source_ontology_version", "") for r in ontology_rows]),
@@ -4964,7 +5513,7 @@ class ReviewExtractionPipeline:
             row = self._manifest_row(ontology, ontology_rows, target_iris, nodes, edge_count, "OBO Foundry Direct", module_path, run_retrieved_at)
             row["source_url"] = source_url
             manifest_rows.append(row)
-        write_hierarchy_ttl(self.config.obo_merged_ttl, "https://example.org/disease-review/obo-direct-hierarchy", all_triples, source_label="OBO Foundry Direct hierarchy extraction", retrieved_at=run_retrieved_at)
+        write_hierarchy_ttl(self.config.obo_merged_ttl, REVIEW_BASE_IRI + "obo-direct-hierarchy", all_triples, source_label="OBO Foundry Direct hierarchy extraction", retrieved_at=run_retrieved_at)
         self._write_hierarchy_manifest(self.config.obo_manifest, manifest_rows)
 
     @staticmethod
@@ -5081,7 +5630,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--search-text", default="", help="For --chunk review-class: filter by label, IRI, ontology, or definition before selecting. Omit to review all extracted terms.")
     parser.add_argument("--reviewer", default="MM", help="For --chunk review-class: default reviewer name/id.")
     parser.add_argument("--review-date", default="", help="For --chunk review-class: default ISO review date.")
-    parser.add_argument("--no-export-after-review", action="store_true", help="For --chunk review-class: update manual CSV only.")
+    parser.add_argument("--no-export-after-review", action="store_true", help="For --chunk review-class: update the master CSV without regenerating TTL outputs.")
     parser.add_argument("--host", default="127.0.0.1", help="For --chunk review-ui: local server host.")
     parser.add_argument("--port", type=int, default=8765, help="For --chunk review-ui: local server port.")
     parser.add_argument("--no-browser", action="store_true", help="For --chunk review-ui: do not open the browser automatically.")

@@ -1,0 +1,58 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-biolink> a owl:Ontology ;
+    dcterms:source "BioPortal:BIOLINK (biolink_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=4.4.3, released=2026-06-26T18:00:34.000-07:00, creationDate=2026-06-26T00:00:00.000+00:00, submissionId=82" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/biolink/vocab/BiologicalEntity> <http://purl.obolibrary.org/obo/IAO_0000115> "A heterogeneous substance that contains genomic material or is the product of a biological process." .
+<https://w3id.org/biolink/vocab/BiologicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "biological entity" .
+<https://w3id.org/biolink/vocab/BiologicalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/NamedThing> .
+<https://w3id.org/biolink/vocab/BiologicalEntity> <http://www.w3.org/2004/02/skos/core#altLabel> "bioentity" .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://purl.obolibrary.org/obo/IAO_0000115> "One or more causally connected executions of molecular functions" .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "biological process" .
+<https://w3id.org/biolink/vocab/BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalProcessOrActivity> .
+<https://w3id.org/biolink/vocab/BiologicalProcessOrActivity> <http://purl.obolibrary.org/obo/IAO_0000115> "Either an individual molecular activity, or a collection of causally connected molecular activities in a biological system." .
+<https://w3id.org/biolink/vocab/BiologicalProcessOrActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/BiologicalProcessOrActivity> <http://www.w3.org/2000/01/rdf-schema#label> "biological process or activity" .
+<https://w3id.org/biolink/vocab/BiologicalProcessOrActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalEntity> .
+<https://w3id.org/biolink/vocab/Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism. A disorder of structure or function, especially one that produces specific signs, phenotypes or symptoms or that affects a specific location and is not simply a direct result of physical injury." .
+<https://w3id.org/biolink/vocab/Disease> <http://purl.org/dc/terms/source> "review target in BIOLINK from disease_terms_review_enriched.csv" .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<https://w3id.org/biolink/vocab/Disease> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease or an individual phenotypic feature, grouped as a single class to accommodate source vocabularies and assertions that do not distinguish the two. Prefer the more specific subclasses disease or phenotypic feature when the distinction is known." .
+<https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> <http://www.w3.org/2000/01/rdf-schema#label> "disease or phenotypic feature" .
+<https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalEntity> .
+<https://w3id.org/biolink/vocab/DiseaseOrPhenotypicFeature> <http://www.w3.org/2004/02/skos/core#altLabel> "phenome" .
+<https://w3id.org/biolink/vocab/Entity> <http://purl.obolibrary.org/obo/IAO_0000115> "Root Biolink Model class for all things and informational relationships, real or imagined." .
+<https://w3id.org/biolink/vocab/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<https://w3id.org/biolink/vocab/Entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/linkml/ClassDefinition> .
+<https://w3id.org/biolink/vocab/NamedThing> <http://purl.obolibrary.org/obo/IAO_0000115> "a databased entity or concept/class" .
+<https://w3id.org/biolink/vocab/NamedThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/NamedThing> <http://www.w3.org/2000/01/rdf-schema#label> "named thing" .
+<https://w3id.org/biolink/vocab/NamedThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/Entity> .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://purl.obolibrary.org/obo/IAO_0000115> "A biologic function or a process having an abnormal or deleterious effect at the subcellular, cellular, multicellular, or organismal level." .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://purl.org/dc/terms/source> "review target in BIOLINK from disease_terms_review_enriched.csv" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "pathological process" .
+<https://w3id.org/biolink/vocab/PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/biolink/vocab/BiologicalProcess> .
+<https://w3id.org/linkml/ClassDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/linkml/ClassDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "ClassDefinition" .

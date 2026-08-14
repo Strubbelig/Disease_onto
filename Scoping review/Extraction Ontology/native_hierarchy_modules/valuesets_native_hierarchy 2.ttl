@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/valuesets> a owl:Ontology ;
+    dcterms:source "BioPortal API:VALUESETS" ;
+    owl:versionInfo "BioPortal: released=2026-02-22T22:37:55.000-08:00, creationDate=2026-02-22T00:00:00.000+00:00, submissionId=4" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/valuesets/BioDomainEnum> <http://purl.obolibrary.org/obo/IAO_0000115> "Domain-level enum for bio value sets" .
+<https://w3id.org/valuesets/BioDomainEnum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valuesets/BioDomainEnum> <http://www.w3.org/2000/01/rdf-schema#label> "BioDomainEnum" .
+<https://w3id.org/valuesets/BioDomainEnum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valuesets/ValueSetEnum> .
+<https://w3id.org/valuesets/BioEntitiesSchemaEnum> <http://purl.obolibrary.org/obo/IAO_0000115> "Schema-level enum for bio_entities in bio" .
+<https://w3id.org/valuesets/BioEntitiesSchemaEnum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valuesets/BioEntitiesSchemaEnum> <http://www.w3.org/2000/01/rdf-schema#label> "BioEntitiesSchemaEnum" .
+<https://w3id.org/valuesets/BioEntitiesSchemaEnum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valuesets/BioDomainEnum> .
+<https://w3id.org/valuesets/Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Human diseases from the Mondo Disease Ontology" .
+<https://w3id.org/valuesets/Disease> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: VALUESETS" .
+<https://w3id.org/valuesets/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valuesets/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<https://w3id.org/valuesets/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valuesets/BioEntitiesSchemaEnum> .
+<https://w3id.org/valuesets/ValueSetEnum> <http://purl.obolibrary.org/obo/IAO_0000115> "Root enum for all value sets" .
+<https://w3id.org/valuesets/ValueSetEnum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valuesets/ValueSetEnum> <http://www.w3.org/2000/01/rdf-schema#label> "ValueSetEnum" .

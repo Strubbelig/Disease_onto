@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/pcalion> a owl:Ontology ;
+    dcterms:source "BioPortal API:PCALION" ;
+    owl:versionInfo "BioPortal: version=3.0, released=2020-10-28T00:00:00.000+00:00, creationDate=2020-10-29T00:56:09.000-07:00, submissionId=6; BioPortal: version=2021/8/10, released=2021-08-09T00:00:00.000+00:00, creationDate=2021-08-09T23:16:09.000-07:00, submissionId=1" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Clinical_characteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Clinical_characteristics> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical characteristic" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Clinical_characteristics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer_lifestyle> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: PCALION" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/Prostate_cancer#Clinical_characteristics> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases> <http://www.w3.org/2004/02/skos/core#altLabel> "Condition\nDisease\ndisease\nDisease or Disorder\nDisease or Disorder, Non-Neoplastic\nDiseases\nDiseases and Disorders\nDisorder\ndisorder\nDisorders\nOther Disease" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer> <http://www.w3.org/2000/01/rdf-schema#label> "Prostate cancer" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer_lifestyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer_lifestyle> <http://www.w3.org/2000/01/rdf-schema#label> "Prostate cancer lifestyle" .
+<http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer_lifestyle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/Prostate_cancer#Prostate_cancer> .

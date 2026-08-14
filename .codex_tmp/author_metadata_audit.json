@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-08-10T19:15:29-04:00",
+  "master_csv": "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Disease ontologies/Scoping review/Extraction Tables/disease_terms_review_enriched.csv",
+  "master_sha256": "0b73e9043bf5a55194707e42ca2289899e09f1a4c7f7808634fdab0d02c859f0",
+  "row_count": 276,
+  "unique_class_iris": 276,
+  "effective_synthesis_status_counts": {
+    "include": 146,
+    "exclude": 130
+  },
+  "evidence_status_counts": {
+    "fallback_with_evidence": 13,
+    "native_module": 257,
+    "insufficient_metadata": 6
+  },
+  "ambiguity_count": 3,
+  "ambiguities": [
+    {
+      "class_iri": "http://example.org/msdo#ClinicalCondition",
+      "ontology": "MSCDO",
+      "label": "ClinicalCondition",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "ClinicalCondition subclass of snomed:404684003 and snomed:404684003 subclass of ClinicalCondition. No comment, no definition.",
+      "proposed_comment": ""
+    },
+    {
+      "class_iri": "http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition",
+      "ontology": "DRANPTO",
+      "label": "Health Condition",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "Narrow scope of health state of a person with dementia.",
+      "proposed_comment": ""
+    },
+    {
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003",
+      "ontology": "ONVOC",
+      "label": "Disorders",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "No parent, no definition, no superclass.",
+      "proposed_comment": ""
+    }
+  ],
+  "citation_unreviewed": [
+    {
+      "ontology": "MSCDO",
+      "class_iri": "http://example.org/msdo#ClinicalCondition"
+    },
+    {
+      "ontology": "DRANPTO",
+      "class_iri": "http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition"
+    },
+    {
+      "ontology": "ONVOC",
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003"
+    }
+  ],
+  "approved_citations_incomplete": [],
+  "target_module_mismatches": [],
+  "cross_module_duplicate_edges": [],
+  "ttl_checks": {
+    "disease_terms_review.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "e67561e0118b1816b46ef3eae18eedfdd9845f6062c194c7a1901224feb02c43"
+    },
+    "disease_terms_synthesis.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "5f8cc37ccc2945c5761fb569f02f1b604d8fd2b39094ed72ab157c10f5acd31d"
+    },
+    "review_core.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "d174f983aefea8ce94e2c0c9da55ab7680b7bc540379b28ac5bb5de49feb6f34"
+    }
+  },
+  "external_human_tasks": [
+    "When the OSF registration embargo is lifted, insert its public DOI, URL, and registration date in the manuscript.",
+    "Complete and reconcile the prespecified 50-class independent stratified validation sample.",
+    "Add the corresponding-author postal address, email, and telephone; confirm Martin Boeker's degree, both authors' CRediT roles and competing interests, and institutional open-access coverage.",
+    "Reconcile the draft reference inventory in Zotero and export it in the selected journal's style.",
+    "Approve or edit unresolved publication decisions in the review UI."
+  ]
+}

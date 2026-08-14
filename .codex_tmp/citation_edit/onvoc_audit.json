@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-10T19:21:53-04:00",
+  "master_csv": "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Disease ontologies/Scoping review/Extraction Tables/disease_terms_review_enriched.csv",
+  "master_sha256": "3376bd4b16ab7e60009ce79a7a39de25d69de37ccf380713a1be520c3b94b467",
+  "row_count": 276,
+  "unique_class_iris": 276,
+  "effective_synthesis_status_counts": {
+    "include": 145,
+    "exclude": 131
+  },
+  "evidence_status_counts": {
+    "fallback_with_evidence": 13,
+    "native_module": 257,
+    "insufficient_metadata": 6
+  },
+  "ambiguity_count": 0,
+  "ambiguities": [],
+  "citation_unreviewed": [],
+  "approved_citations_incomplete": [],
+  "target_module_mismatches": [],
+  "cross_module_duplicate_edges": [],
+  "ttl_checks": {
+    "disease_terms_review.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "def5412c56c96ec9fac87c945344f15b1fd9115de59d27e107b218491d9c8456"
+    },
+    "disease_terms_synthesis.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "3af07997a2eb6f7b59d02e9c73e811a0ef813e220aa19afabb59ca35507bc711"
+    },
+    "review_core.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "d174f983aefea8ce94e2c0c9da55ab7680b7bc540379b28ac5bb5de49feb6f34"
+    }
+  },
+  "external_human_tasks": [
+    "When the OSF registration embargo is lifted, insert its public DOI, URL, and registration date in the manuscript.",
+    "Complete and reconcile the prespecified 50-class independent stratified validation sample.",
+    "Add the corresponding-author postal address, email, and telephone; confirm Martin Boeker's degree, both authors' CRediT roles and competing interests, and institutional open-access coverage.",
+    "Reconcile the draft reference inventory in Zotero and export it in the selected journal's style."
+  ]
+}

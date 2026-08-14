@@ -1,0 +1,2632 @@
+{
+  "generated_at": "2026-08-09T11:38:31-04:00",
+  "modules": [
+    {
+      "native_ontology": "ABD",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-abd",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/abd_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://brd.bsvgateway.org/api/disease/"
+      ],
+      "source_labels": [
+        "BioPortal:ABD (abd_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "ACGT_MO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-acgt_mo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/acgt_mo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.ifomis.org/acgt/1.0#Disease",
+        "http://www.ifomis.org/acgt/1.0#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal:ACGT-MO (acgt-mo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "AD_CDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ad_cdo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ad_cdo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/sun/ontologies/AD-CDE#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:AD-CDO (ad-cdo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "ADAR",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-adar",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/adar_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.org/autism-ontology/1.0/autism-core.owl#AUTISMC1000038"
+      ],
+      "source_labels": [
+        "BioPortal:ADAR (adar_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "ADDICTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-addicto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/addicto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://addictovocab.org/ADDICTO_0000383"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "ADHER_INTCARE_EN",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-adher_intcare_en",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/adher_intcare_en_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Condition",
+        "http://www.semanticweb.org/parracarlos/ontologies/2019/3/untitled-ontology-31#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:ADHER_INTCARE_EN (adher_intcare_en_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 31
+    },
+    {
+      "native_ontology": "AFO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-afo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/afo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.allotrope.org/ontologies/common#AFC_0000090"
+      ],
+      "source_labels": [
+        "BioPortal:AFO (afo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "AHOL",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ahol",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ahol_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://opendata.inra.fr/AHOL/AHOL_0005001"
+      ],
+      "source_labels": [
+        "BioPortal:AHOL (ahol_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "ALLERGIDOC",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-allergidoc",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/allergidoc_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "https://allergo.infodocs.eu/ontologie/allergidoc3.0/Maladie",
+        "https://allergo.infodocs.eu/ontologie/allergidoc3.0/Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal:ALLERGIDOC (allergidoc_hierarchy.ttl)",
+        "BioPortal API:ALLERGIDOC"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 24
+    },
+    {
+      "native_ontology": "APADISORDERS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-apadisorders",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/apadisorders_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disease_Course",
+        "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Disorders",
+        "http://ontology.apa.org/apaonto/termsonlyOUT%20(5).owl#Predisposition"
+      ],
+      "source_labels": [
+        "BioPortal:APADISORDERS (apadisorders_hierarchy.ttl)",
+        "BioPortal API:APADISORDERS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2,
+        "insufficient_metadata": 1
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "AURA",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-aura",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/aura_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.projecthalo.com/aura#Condition",
+        "http://www.projecthalo.com/aura#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:AURA (aura_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 18
+    },
+    {
+      "native_ontology": "BAO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bao",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bao_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.bioassayontology.org/bao#BAO_0002927"
+      ],
+      "source_labels": [
+        "BioPortal:BAO (bao_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "BBO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bbo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bbo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.ontologyrepository.com/CommonCoreOntologies/Disease",
+        "https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HealthCondition"
+      ],
+      "source_labels": [
+        "BioPortal:BBO (bbo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1,
+        "insufficient_metadata": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "BCGO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bcgo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bcgo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.owl-ontologies.com/Ontology1239104585.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:BCGO (bcgo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "BERVO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bervo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bervo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://w3id.org/bervo/BERVO_8000302"
+      ],
+      "source_labels": [
+        "BioPortal:BERVO (bervo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 11
+    },
+    {
+      "native_ontology": "BIOLINK",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-biolink",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/biolink_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "https://w3id.org/biolink/vocab/Disease",
+        "https://w3id.org/biolink/vocab/PathologicalProcess"
+      ],
+      "source_labels": [
+        "BioPortal:BIOLINK (biolink_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 41
+    },
+    {
+      "native_ontology": "BIOTOP",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-biotop",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/biotop_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://purl.org/biotop/biotop.owl#Condition",
+        "http://purl.org/biotop/biotop.owl#PathologicalDisposition",
+        "http://purl.org/biotop/biotop.owl#PathologicalProcess"
+      ],
+      "source_labels": [
+        "BioPortal:BIOTOP (biotop_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 26
+    },
+    {
+      "native_ontology": "BIRNLEX",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-birnlex",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/birnlex_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://bioontology.org/projects/ontologies/birnlex#birnlex_11013"
+      ],
+      "source_labels": [
+        "BioPortal:BIRNLEX (birnlex_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 21
+    },
+    {
+      "native_ontology": "BPT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bpt",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bpt_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "urn:agi-folder:disease",
+        "urn:agi-folder:pathological_process"
+      ],
+      "source_labels": [
+        "BioPortal:BPT (bpt_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "BT_ONTOLOGY",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-bt_ontology",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/bt_ontology_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "https://w3id.org/brainteaser/ontology/schema/Condition",
+        "https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"
+      ],
+      "source_labels": [
+        "BioPortal:BT-ONTOLOGY (bt-ontology_hierarchy.ttl)",
+        "BioPortal API:BT-ONTOLOGY"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "CANCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-canco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/canco_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://chem.deri.ie/granatum#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:CANCO (canco_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "CASE_BASE_ONTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-case_base_onto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/case_base_onto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/hsh/ontologies/2019/7/CBRDystempOnto#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:CASE-BASE-ONTO (case-base-onto_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "CDMONTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cdmonto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/cdmonto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:CDMONTO (cdmonto_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "CDPEO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cdpeo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/cdpeo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/chronic-diease-patient-education-ontology#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:CDPEO (cdpeo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "COCHRANE",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cochrane",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/cochrane_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://data.cochrane.org/ontologies/core/Condition"
+      ],
+      "source_labels": [
+        "BioPortal:COCHRANE (cochrane_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "CODO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-codo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/codo_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "https://w3id.org/codo#Condition",
+        "https://w3id.org/codo#Disease",
+        "https://w3id.org/codo#Disorder"
+      ],
+      "source_labels": [
+        "BioPortal:CODO (codo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 52
+    },
+    {
+      "native_ontology": "COID",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-coid",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/coid_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "https://github.com/sap218/coid/blob/master/coid.owl#COID_00043",
+        "https://github.com/sap218/coid/blob/master/coid.owl#COID_00609",
+        "https://github.com/sap218/coid/blob/master/coid.owl#COID_01149"
+      ],
+      "source_labels": [
+        "BioPortal:COID (coid_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 26
+    },
+    {
+      "native_ontology": "COMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-como",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/como_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/COMO_0000006"
+      ],
+      "source_labels": [
+        "BioPortal:COMO (como_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 16
+    },
+    {
+      "native_ontology": "CONDOR",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-condor",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/condor_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/erden/ontologies/2023/7/LiverCancerExample/OWLClass_b5ec253b_53ec_4771_82e9_fa3d0d08dd33"
+      ],
+      "source_labels": [
+        "BioPortal:CONDOR (condor_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "COSTART",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-costart",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/costart_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/CST/SKINDYSFUNCT"
+      ],
+      "source_labels": [
+        "BioPortal:COSTART (costart_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "COVID19_IBO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-covid19_ibo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/covid19_ibo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo#disease"
+      ],
+      "source_labels": [
+        "BioPortal:COVID19-IBO (covid19-ibo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "COVID_19_ONT_PM",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-covid_19_ont_pm",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/covid_19_ont_pm_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/hanfei/ontologies/2020/9/untitled-ontology-1306#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:COVID-19-ONT-PM (covid-19-ont-pm_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "CPRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cpro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/cpro_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://purl.org/cpr/pathological-disposition",
+        "http://purl.org/cpr/pathological-process",
+        "http://purl.org/cpr/syndrome"
+      ],
+      "source_labels": [
+        "BioPortal:CPRO (cpro_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 24
+    },
+    {
+      "native_ontology": "CRENO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-creno",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/creno_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/creno.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:CRENO (creno_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "CRISP",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-crisp",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/crisp_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/CSP/0944-7801",
+        "http://purl.bioontology.org/ontology/CSP/1582-3104"
+      ],
+      "source_labels": [
+        "BioPortal:CRISP (crisp_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 42
+    },
+    {
+      "native_ontology": "CSEO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cseo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/cseo_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://scai.fraunhofer.de/CSEO#CSEO_00000817",
+        "http://scai.fraunhofer.de/CSEO#CSEO_10000024",
+        "http://scai.fraunhofer.de/CSEO#Condition"
+      ],
+      "source_labels": [
+        "BioPortal:CSEO (cseo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 18
+    },
+    {
+      "native_ontology": "CTGO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ctgo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ctgo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://clinicaltrials.gov/ctgo#Condition"
+      ],
+      "source_labels": [
+        "BioPortal:CTGO (ctgo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "DCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dco_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://dbpedia.org/ontology/Disease",
+        "http://www.dispedia.de/o/Disease"
+      ],
+      "source_labels": [
+        "BioPortal:DCO (dco_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "DDSS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ddss",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ddss_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://w3id.org/def/predibionto#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:DDSS (ddss_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "DEB",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-deb",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/deb_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/osnathakimi/ontologies/deb#Injury"
+      ],
+      "source_labels": [
+        "BioPortal:DEB (deb_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "DERMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dermo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dermo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/DERMO_0000000"
+      ],
+      "source_labels": [
+        "BioPortal:DERMO (dermo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 5
+    },
+    {
+      "native_ontology": "DMDSONT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dmdsont",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dmdsont_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:DMDSONT (dmdsont_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "DOID",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-doid",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/doid_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/DOID_225",
+        "http://purl.obolibrary.org/obo/DOID_4"
+      ],
+      "source_labels": [
+        "BioPortal:DOID (doid_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "DPCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dpco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dpco_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.org/twc/dpo/ont/Condition",
+        "http://purl.org/twc/dpo/ont/Disease"
+      ],
+      "source_labels": [
+        "BioPortal:DPCO (dpco_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 40
+    },
+    {
+      "native_ontology": "DRANPTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dranpto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dranpto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "insufficient_metadata": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "DREAMDNPTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-dreamdnpto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/dreamdnpto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/zhenyuzhang/ontologies/2021/DREAMDNPTO#Injury"
+      ],
+      "source_labels": [
+        "BioPortal:DREAMDNPTO (dreamdnpto_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "EDONTOLOGY",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-edontology",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/edontology_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/abid/ontologies/2022/9/untitled-ontology-11#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:EDONTOLOGY (edontology_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "EFO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-efo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/efo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.ebi.ac.uk/efo/EFO_0000408",
+        "http://www.ebi.ac.uk/efo/EFO_0000546"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 2
+      },
+      "triple_count": 31
+    },
+    {
+      "native_ontology": "ELIG",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-elig",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/elig_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/2012/8/Ontology1348158066194.owl#OWLClass_00000012615273587629"
+      ],
+      "source_labels": [
+        "BioPortal:ELIG (elig_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "ENVTHES",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-envthes",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/envthes_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://vocabs.lter-europe.net/EnvThes/21012",
+        "http://vocabs.lter-europe.net/EnvThes/USLterCV_155"
+      ],
+      "source_labels": [
+        "BioPortal:ENVTHES (envthes_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 24
+    },
+    {
+      "native_ontology": "EPO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-epo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/epo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/epo.owl#HealthCondition",
+        "http://www.semanticweb.org/ontologies/epo.owl#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal:EPO (epo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "EPSO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-epso",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/epso_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.case.edu/EpilepsyOntology.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:EPSO (epso_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "ESSO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-esso",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/esso_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:ESSO (esso_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "EXACT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-exact",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/exact_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.owl-ontologies.com/Ontology1184060740.owl#Class_83"
+      ],
+      "source_labels": [
+        "BioPortal:EXACT (exact_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "EXO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-exo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/exo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/ExO_0000079"
+      ],
+      "source_labels": [
+        "BioPortal:EXO (exo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 51
+    },
+    {
+      "native_ontology": "FALL",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-fall",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/fall_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/abed/ontologies/2015/1/untitled-ontology-337#Condition"
+      ],
+      "source_labels": [
+        "BioPortal:FALL (fall_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "FRMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-frmo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/frmo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/ftuha/ontologies/2021/5/FRMO-01untitled-ontology-175/Injury"
+      ],
+      "source_labels": [
+        "BioPortal:FRMO (frmo_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "GALEN",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-galen",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/galen_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://www.co-ode.org/ontologies/galen#Condition",
+        "http://www.co-ode.org/ontologies/galen#Injury",
+        "http://www.co-ode.org/ontologies/galen#Predisposition"
+      ],
+      "source_labels": [
+        "BioPortal:GALEN (galen_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 51
+    },
+    {
+      "native_ontology": "GRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-gro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/gro_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.bootstrep.eu/ontology/GRO#Disease"
+      ],
+      "source_labels": [
+        "BioPortal:GRO (gro_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 18
+    },
+    {
+      "native_ontology": "GSSO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-gsso",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/gsso_native_hierarchy.ttl",
+      "target_count": 6,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/GSSO_000484",
+        "http://purl.obolibrary.org/obo/GSSO_000486",
+        "http://purl.obolibrary.org/obo/GSSO_000487",
+        "http://purl.obolibrary.org/obo/GSSO_000488",
+        "http://purl.obolibrary.org/obo/GSSO_000497",
+        "http://purl.obolibrary.org/obo/GSSO_009123"
+      ],
+      "source_labels": [
+        "BioPortal:GSSO (gsso_hierarchy.ttl)"
+      ],
+      "evidence_status_counts": {
+        "native_module": 6
+      },
+      "triple_count": 75
+    },
+    {
+      "native_ontology": "HERO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hero",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hero_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://hl7.org/fhir/Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:HERO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 20
+    },
+    {
+      "native_ontology": "HINO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hino",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hino_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/HINO_0015722"
+      ],
+      "source_labels": [
+        "BioPortal API:HINO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "HIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hio_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/HIO_0000093"
+      ],
+      "source_labels": [
+        "BioPortal API:HIO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 20
+    },
+    {
+      "native_ontology": "HL7",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hl7",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hl7_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/HL7/C0348080"
+      ],
+      "source_labels": [
+        "BioPortal API:HL7"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 21
+    },
+    {
+      "native_ontology": "HNS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hns",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hns_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.humannervousystem.org/KAnOE/2014/dave86#Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:HNS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "HP_O",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hp_o",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hp_o_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/dellvostro3750/ontologies/2018/2/untitled-ontology-10#disease"
+      ],
+      "source_labels": [
+        "BioPortal API:HP_O"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "HPIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hpio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hpio_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000026",
+        "http://www.semanticweb.org/ontologies/2010/5/22/Ontology1277229984000.owl#HPI:0000170"
+      ],
+      "source_labels": [
+        "BioPortal API:HPIO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 14
+    },
+    {
+      "native_ontology": "HRDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hrdo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hrdo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.limics.org/hrdo/rdfns#typ_id_11",
+        "http://www.limics.org/hrdo/rdfns#typ_id_4"
+      ],
+      "source_labels": [
+        "BioPortal API:HRDO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "HTNCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-htnco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/htnco_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/debna/ontologies/2026/5/hypertension_ontology#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:HTNCO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "HUPSON",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hupson",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/hupson_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000269"
+      ],
+      "source_labels": [
+        "BioPortal API:HUPSON"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "ICNP",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-icnp",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/icnp_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.icn.ch/icnp#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:ICNP"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 22
+    },
+    {
+      "native_ontology": "ICPC2P",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-icpc2p",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/icpc2p_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/ICPC2P/A80003",
+        "http://purl.bioontology.org/ontology/ICPC2P/A99001"
+      ],
+      "source_labels": [
+        "BioPortal API:ICPC2P"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "ICPS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-icps",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/icps_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.ICPS/ontologies/PatientOutcomes#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:ICPS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "IDOMAL",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-idomal",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/idomal_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/IDOMAL_0001241"
+      ],
+      "source_labels": [
+        "BioPortal API:IDOMAL"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "IEV",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-iev",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/iev_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/IEV_0000075"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "IOBC",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-iobc",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/iobc_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://purl.jp/bio/4/id/200906000364961703",
+        "http://purl.jp/bio/4/id/200906061373980620",
+        "http://purl.jp/bio/4/id/200906099632625564",
+        "http://purl.jp/bio/4/id/201606017936711318"
+      ],
+      "source_labels": [
+        "BioPortal API:IOBC"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4
+      },
+      "triple_count": 55
+    },
+    {
+      "native_ontology": "IRAEO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-iraeo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/iraeo_native_hierarchy.ttl",
+      "target_count": 15,
+      "target_iris": [
+        "http://example.org/irAEs.owl#Disease",
+        "http://example.org/irAEs.owl#Disease-1",
+        "http://example.org/irAEs.owl#Disease1",
+        "http://example.org/irAEs.owl#Disease_10",
+        "http://example.org/irAEs.owl#Disease_11",
+        "http://example.org/irAEs.owl#Disease_12",
+        "http://example.org/irAEs.owl#Disease_13",
+        "http://example.org/irAEs.owl#Disease_2",
+        "http://example.org/irAEs.owl#Disease_3",
+        "http://example.org/irAEs.owl#Disease_4",
+        "http://example.org/irAEs.owl#Disease_5",
+        "http://example.org/irAEs.owl#Disease_6",
+        "http://example.org/irAEs.owl#Disease_7",
+        "http://example.org/irAEs.owl#Disease_8",
+        "http://example.org/irAEs.owl#Disease_9"
+      ],
+      "source_labels": [
+        "BioPortal API:IRAEO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 15
+      },
+      "triple_count": 143
+    },
+    {
+      "native_ontology": "JERM",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-jerm",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/jerm_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://jermontology.org/ontology/JERMOntology#disease_state"
+      ],
+      "source_labels": [
+        "BioPortal API:JERM"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "LOINC",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-loinc",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/loinc_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/LNC/LA17713-1",
+        "http://purl.bioontology.org/ontology/LNC/LA18199-2",
+        "http://purl.bioontology.org/ontology/LNC/LP185404-3",
+        "http://purl.bioontology.org/ontology/LNC/MTHU048140"
+      ],
+      "source_labels": [
+        "BioPortal API:LOINC"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "LTER_CV",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-lter_cv",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/lter_cv_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://vocab.lternet.edu/vocab/vocab/skos/155"
+      ],
+      "source_labels": [
+        "BioPortal API:LTER-CV"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "MATERIALSMINE",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-materialsmine",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/materialsmine_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://materialsmine.org/ns/Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:MATERIALSMINE"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 17
+    },
+    {
+      "native_ontology": "MDM",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mdm",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mdm_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://id.nlm.nih.gov/mesh/D004194",
+        "http://id.nlm.nih.gov/mesh/D013577"
+      ],
+      "source_labels": [
+        "BioPortal API:MDM"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 18
+    },
+    {
+      "native_ontology": "MEDDRA",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-meddra",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/meddra_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/MEDDRA/10022116",
+        "http://purl.bioontology.org/ontology/MEDDRA/10080284"
+      ],
+      "source_labels": [
+        "BioPortal API:MEDDRA"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 24
+    },
+    {
+      "native_ontology": "MEDICALINFO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-medicalinfo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/medicalinfo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://webprotege.stanford.edu/R8O0uGFaO8DaQeagclBYpUV"
+      ],
+      "source_labels": [
+        "BioPortal API:MEDICALINFO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "MELLO_D",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mello_d",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mello_d_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/user/ontologies/2023/10/untitled-ontology-5#condition"
+      ],
+      "source_labels": [
+        "BioPortal API:MELLO-D"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "MEPO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mepo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mepo_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://www.case.edu/EpSO.owl#Disease",
+        "http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Syndrome",
+        "http://www.semanticweb.org/rjyy/ontologies/2015/5/ESSO#disease"
+      ],
+      "source_labels": [
+        "BioPortal API:MEPO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 20
+    },
+    {
+      "native_ontology": "MESH",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mesh",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mesh_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/MESH/D004194",
+        "http://purl.bioontology.org/ontology/MESH/D013577",
+        "http://purl.bioontology.org/ontology/STY/T047"
+      ],
+      "source_labels": [
+        "BioPortal API:MESH"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 45
+    },
+    {
+      "native_ontology": "MHIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mhio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mhio_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://mhio.org/mh#MH_0000026"
+      ],
+      "source_labels": [
+        "BioPortal API:MHIO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "MHMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mhmo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mhmo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://mental-ontology.com/mental_health_bfo.owl#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:MHMO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "MI",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mi",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mi_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/MI_0617"
+      ],
+      "source_labels": [
+        "BioPortal API:MI"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 19
+    },
+    {
+      "native_ontology": "MIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mio_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/admin/ontologies/2022/7/MIO:00826"
+      ],
+      "source_labels": [
+        "BioPortal API:MIO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 32
+    },
+    {
+      "native_ontology": "MONDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mondo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mondo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/MONDO_0000001",
+        "http://purl.obolibrary.org/obo/MONDO_0021178"
+      ],
+      "source_labels": [
+        "BioPortal API:MONDO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 22
+    },
+    {
+      "native_ontology": "MPATH",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mpath",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mpath_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/MPATH_0"
+      ],
+      "source_labels": [
+        "BioPortal API:MPATH"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "MSCDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mscdo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/mscdo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://example.org/msdo#ClinicalCondition"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "insufficient_metadata": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "NAMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-namo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/namo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://w3id.org/monarch-initiative/namo/DigitalTwinScopeEnum#DISEASE"
+      ],
+      "source_labels": [
+        "BioPortal API:NAMO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "NATPRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-natpro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/natpro_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.org/biotop/biotop.owl#condition",
+        "http://www.owl-ontologies.com/NPOntology.owl#DOID_225"
+      ],
+      "source_labels": [
+        "BioPortal API:NATPRO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "NCCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ncco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ncco_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:NCCO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "NCIT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ncit",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ncit_native_hierarchy.ttl",
+      "target_count": 9,
+      "target_iris": [
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25457",
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28193",
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2991",
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3671",
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C53526",
+        "http://purl.obolibrary.org/obo/NCIT_C25457",
+        "http://purl.obolibrary.org/obo/NCIT_C28193",
+        "http://purl.obolibrary.org/obo/NCIT_C2991",
+        "http://purl.obolibrary.org/obo/NCIT_C3671"
+      ],
+      "source_labels": [
+        "BioPortal API:NCIT"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 4,
+        "native_module": 5
+      },
+      "triple_count": 137
+    },
+    {
+      "native_ontology": "NDDRFO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-nddrfo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/nddrfo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/NDDRFO#Disease",
+        "http://www.semanticweb.org/NDDRFO#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:NDDRFO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 20
+    },
+    {
+      "native_ontology": "NEO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-neo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/neo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/danielhier/ontologies/2019/3/untitled-ontology-57#disease"
+      ],
+      "source_labels": [
+        "BioPortal API:NEO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "NIFSTD",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-nifstd",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/nifstd_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://uri.neuinfo.org/nif/nifstd/birnlex_11013",
+        "http://uri.neuinfo.org/nif/nifstd/nlx_090803"
+      ],
+      "source_labels": [
+        "BioPortal API:NIFSTD"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 17
+    },
+    {
+      "native_ontology": "NPDX",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-npdx",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/npdx_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://example.org/npdx-ontology/term/4"
+      ],
+      "source_labels": [
+        "BioPortal API:NPDX"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "NPO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-npo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/npo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/npo#NPO_899"
+      ],
+      "source_labels": [
+        "BioPortal API:NPO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "NRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-nro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/nro_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/cjf/ontologies/2022/8/NeuralReprogrammingOntology(NRO)#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:NRO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "OBI",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-obi",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/obi_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/OBI_1110055",
+        "http://purl.obolibrary.org/obo/OBI_1110122"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 2
+      },
+      "triple_count": 14
+    },
+    {
+      "native_ontology": "OBS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-obs",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/obs_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/Thibaut/ontologies/2021/3/OntoBioStat#Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:OBS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "OCHV",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ochv",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ochv_native_hierarchy.ttl",
+      "target_count": 9,
+      "target_iris": [
+        "http://sbmi.uth.tmc.edu/ontology/ochv#11977",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#21230",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#4014",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C0012634",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C0030660",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C0039082",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C0220898",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C0221423",
+        "http://sbmi.uth.tmc.edu/ontology/ochv#C1314692"
+      ],
+      "source_labels": [
+        "BioPortal API:OCHV"
+      ],
+      "evidence_status_counts": {
+        "native_module": 9
+      },
+      "triple_count": 56
+    },
+    {
+      "native_ontology": "OCO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-oco",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/oco_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "https://w3id.org/opencare#Condition",
+        "https://w3id.org/opencare#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:OCO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 44
+    },
+    {
+      "native_ontology": "OF",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-of",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/of_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.owl-ontologies.com/Ontology1435740495.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:OF"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "OFDSIPT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ofdsipt",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ofdsipt_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://webprotege.stanford.edu/RUbdXTXEazcByxbbdTq8kS"
+      ],
+      "source_labels": [
+        "BioPortal API:OFDSIPT"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "OGMS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ogms",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ogms_native_hierarchy.ttl",
+      "target_count": 5,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/OGMS_0000031",
+        "http://purl.obolibrary.org/obo/OGMS_0000045",
+        "http://purl.obolibrary.org/obo/OGMS_0000063",
+        "http://purl.obolibrary.org/obo/OGMS_0000086",
+        "http://purl.obolibrary.org/obo/OGMS_0000102"
+      ],
+      "source_labels": [
+        "BioPortal API:OGMS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4,
+        "fallback_with_evidence": 1
+      },
+      "triple_count": 31
+    },
+    {
+      "native_ontology": "OMIT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-omit",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/omit_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/OMIT_0005457",
+        "http://purl.obolibrary.org/obo/OMIT_0014440"
+      ],
+      "source_labels": [
+        "BioPortal API:OMIT"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 22
+    },
+    {
+      "native_ontology": "ONTOAD",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontoad",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontoad_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://doe-generated-ontology.com/OntoAD#C0012634",
+        "http://doe-generated-ontology.com/OntoAD#C0039082",
+        "http://doe-generated-ontology.com/OntoAD#C0175677",
+        "http://doe-generated-ontology.com/OntoAD#DiseaseOrSyndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTOAD"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4
+      },
+      "triple_count": 57
+    },
+    {
+      "native_ontology": "ONTOLURGENCES",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontolurgences",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontolurgences_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.limics.fr/ontologies/ontolurgences#EtatPathologique",
+        "http://www.limics.fr/ontologies/ontolurgences#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTOLURGENCES"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 38
+    },
+    {
+      "native_ontology": "ONTONEPHRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontonephro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontonephro_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://www.limics.fr/ontologies/ontoDOME#Maladie",
+        "http://www.limics.fr/ontologies/ontoDOME#Syndrome",
+        "http://www.limics.fr/ontologies/ontonephro#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTONEPHRO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 19
+    },
+    {
+      "native_ontology": "ONTOPNEUMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontopneumo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontopneumo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://doe-generated-ontology.com/OntoPneumo#EtatPathologique",
+        "http://doe-generated-ontology.com/OntoPneumo#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTOPNEUMO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 28
+    },
+    {
+      "native_ontology": "ONTOPSYCHIA",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontopsychia",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontopsychia_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.limics.fr/ontologies/ontopsychiasoc#Trouble"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTOPSYCHIA"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "ONTOSTAR",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontostar",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontostar_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://example.org/digitalhealth#Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTOSTAR"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "ONTRISCAL",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontriscal",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ontriscal_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://ontriscal#Disorder"
+      ],
+      "source_labels": [
+        "BioPortal API:ONTRISCAL"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "ONVOC",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-onvoc",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/onvoc_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://w3id.org/onvoc/ONVOC_0000003"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "insufficient_metadata": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "OPE",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ope",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ope_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Injury",
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:OPE"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "ORDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ordo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/ordo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.orpha.net/ORDO/Orphanet_377788",
+        "http://www.orpha.net/ORDO/Orphanet_557493"
+      ],
+      "source_labels": [
+        "BioPortal API:ORDO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "OSDI",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-osdi",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/osdi_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "https://w3id.org/ontologies-ULL/OSDi#Disease",
+        "https://w3id.org/ontologies-ULL/OSDi#HealthCondition"
+      ],
+      "source_labels": [
+        "BioPortal API:OSDI"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1,
+        "fallback_with_evidence": 1
+      },
+      "triple_count": 17
+    },
+    {
+      "native_ontology": "PARTUMDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-partumdo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/partumdo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/rbmor/ontologies/2021/1/1/untitled-ontology-133#Condition",
+        "http://www.semanticweb.org/rbmor/ontologies/2021/1/1/untitled-ontology-133#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:PARTUMDO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "PATEL",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-patel",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/patel_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://webprotege.stanford.edu/RBdVjT6X9mH1nSXd2YTRm0t"
+      ],
+      "source_labels": [
+        "BioPortal API:PATEL"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    },
+    {
+      "native_ontology": "PCALION",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pcalion",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pcalion_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/Prostate_cancer#Diseases"
+      ],
+      "source_labels": [
+        "BioPortal API:PCALION"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 13
+    },
+    {
+      "native_ontology": "PDRO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pdro",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pdro_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/PDRO_0000129"
+      ],
+      "source_labels": [
+        "BioPortal API:PDRO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "PGXO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pgxo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pgxo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://pgxo.loria.fr/Disease"
+      ],
+      "source_labels": [
+        "master_csv_fallback"
+      ],
+      "evidence_status_counts": {
+        "fallback_with_evidence": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "PMAPP_PMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pmapp_pmo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pmapp_pmo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.phoc.org.cn/pmo/class/PMO_00015137",
+        "http://www.phoc.org.cn/pmo/class/PMO_00035870"
+      ],
+      "source_labels": [
+        "BioPortal API:PMAPP-PMO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 41
+    },
+    {
+      "native_ontology": "PMD",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pmd",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pmd_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.onto-med.de/ontologies/gfo-persian-medicine-diseases.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:PMD"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "PMDO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pmdo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pmdo_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.case.edu/PMDO#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:PMDO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "PMR",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pmr",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pmr_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/PMR.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:PMR"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "POEM",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-poem",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/poem_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.org/twc/poem/Disorder"
+      ],
+      "source_labels": [
+        "BioPortal API:POEM"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "PVONTO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-pvonto",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/pvonto_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/ontologies/2010/2/MiRNA-Ontology.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:PVONTO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "RADLEX",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-radlex",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/radlex_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.radlex.org/RID/RID4628"
+      ],
+      "source_labels": [
+        "BioPortal API:RADLEX"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 16
+    },
+    {
+      "native_ontology": "RB",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-rb",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/rb_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://regenbase.org/ontology#RB_0000287",
+        "http://regenbase.org/ontology#RB_0008003"
+      ],
+      "source_labels": [
+        "BioPortal API:RB"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 20
+    },
+    {
+      "native_ontology": "RCD",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-rcd",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/rcd_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/RCD/X0003",
+        "http://purl.bioontology.org/ontology/RCD/X905K",
+        "http://purl.bioontology.org/ontology/RCD/XA001",
+        "http://purl.bioontology.org/ontology/RCD/XaBTk"
+      ],
+      "source_labels": [
+        "BioPortal API:RCD"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4
+      },
+      "triple_count": 40
+    },
+    {
+      "native_ontology": "RH_MESH",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-rh_mesh",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/rh_mesh_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://phenomebrowser.net/ontologies/mesh/mesh.owl#C23.550.288",
+        "http://phenomebrowser.net/ontologies/mesh/mesh.owl#C23.550.288.500",
+        "http://phenomebrowser.net/ontologies/mesh/mesh.owl#D004194",
+        "http://phenomebrowser.net/ontologies/mesh/mesh.owl#D013577"
+      ],
+      "source_labels": [
+        "BioPortal API:RH-MESH"
+      ],
+      "evidence_status_counts": {
+        "native_module": 4
+      },
+      "triple_count": 21
+    },
+    {
+      "native_ontology": "SCIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-scio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/scio_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://psink.de/scio/Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:SCIO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 12
+    },
+    {
+      "native_ontology": "SEPON",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sepon",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sepon_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:SEPON"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 24
+    },
+    {
+      "native_ontology": "SHR",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-shr",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/shr_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.shojaee.com/shr/shr.owl#Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:SHR"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "SIO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sio",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sio_native_hierarchy.ttl",
+      "target_count": 4,
+      "target_iris": [
+        "http://semanticscience.org/resource/Disease",
+        "http://semanticscience.org/resource/SIO_000354",
+        "http://semanticscience.org/resource/SIO_001017",
+        "http://semanticscience.org/resource/SIO_010299"
+      ],
+      "source_labels": [
+        "BioPortal API:SIO"
+      ],
+      "evidence_status_counts": {
+        "insufficient_metadata": 1,
+        "native_module": 3
+      },
+      "triple_count": 61
+    },
+    {
+      "native_ontology": "SL_DIS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sl_dis",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sl_dis_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://example.org/ontology/Disorder"
+      ],
+      "source_labels": [
+        "BioPortal API:SL_DIS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "SLSO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-slso",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/slso_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://www.commoncoreontologies.org/ont00000318"
+      ],
+      "source_labels": [
+        "BioPortal API:SLSO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 7
+    },
+    {
+      "native_ontology": "SNOMEDCT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-snomedct",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/snomedct_native_hierarchy.ttl",
+      "target_count": 5,
+      "target_iris": [
+        "http://purl.bioontology.org/ontology/SNOMEDCT/260905004",
+        "http://purl.bioontology.org/ontology/SNOMEDCT/308489006",
+        "http://purl.bioontology.org/ontology/SNOMEDCT/370135005",
+        "http://purl.bioontology.org/ontology/SNOMEDCT/39104002",
+        "http://purl.bioontology.org/ontology/SNOMEDCT/64572001"
+      ],
+      "source_labels": [
+        "BioPortal API:SNOMEDCT"
+      ],
+      "evidence_status_counts": {
+        "native_module": 5
+      },
+      "triple_count": 74
+    },
+    {
+      "native_ontology": "SP_ONTOLOGY",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sp_ontology",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sp_ontology_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org/maria/ontologies/2023/1/OntologiaByMAF#OWLClass_94f15b74_e615_4e1a_a162_c9f95c18afd6"
+      ],
+      "source_labels": [
+        "BioPortal API:SP_ONTOLOGY"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "SSO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sso",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sso_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://surveillance.mcgill.ca/sso/syndromes.owl#ClinicalCondition",
+        "http://surveillance.mcgill.ca/sso/syndromes.owl#Syndrome"
+      ],
+      "source_labels": [
+        "BioPortal API:SSO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 6
+    },
+    {
+      "native_ontology": "STRONG",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-strong",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/strong_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.semanticweb.org/janetkim/ontologies/2023/4/untitled-ontology-38#Illness",
+        "http://www.semanticweb.org/janetkim/ontologies/2023/4/untitled-ontology-39#Injury"
+      ],
+      "source_labels": [
+        "BioPortal API:STRONG"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 19
+    },
+    {
+      "native_ontology": "SWEET",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sweet",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/sweet_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://sweetontology.net/phenBiol/Disease",
+        "http://sweetontology.net/propOrdinal/Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:SWEET"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 21
+    },
+    {
+      "native_ontology": "TMO",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-tmo",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/tmo_native_hierarchy.ttl",
+      "target_count": 2,
+      "target_iris": [
+        "http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0047",
+        "http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0058"
+      ],
+      "source_labels": [
+        "BioPortal API:TMO"
+      ],
+      "evidence_status_counts": {
+        "native_module": 2
+      },
+      "triple_count": 15
+    },
+    {
+      "native_ontology": "TRAK",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-trak",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/trak_native_hierarchy.ttl",
+      "target_count": 3,
+      "target_iris": [
+        "http://purl.obolibrary.org/obo/TRAK_0000205",
+        "http://purl.obolibrary.org/obo/TRAK_0000206",
+        "http://purl.obolibrary.org/obo/TRAK_0000610"
+      ],
+      "source_labels": [
+        "BioPortal API:TRAK"
+      ],
+      "evidence_status_counts": {
+        "native_module": 3
+      },
+      "triple_count": 42
+    },
+    {
+      "native_ontology": "UNIPROT",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-uniprot",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/uniprot_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.uniprot.org/core/Disease_Annotation"
+      ],
+      "source_labels": [
+        "BioPortal API:UNIPROT"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 9
+    },
+    {
+      "native_ontology": "VALUESETS",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-valuesets",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/valuesets_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://w3id.org/valuesets/Disease"
+      ],
+      "source_labels": [
+        "BioPortal API:VALUESETS"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 16
+    },
+    {
+      "native_ontology": "WWECA",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-wweca",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/wweca_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://www.semanticweb.org//Childbearing-ageWomenwithEpilepsyOntology#OWLClassde18b6e3_5aab_4eba_937e_3c256c84cdb6"
+      ],
+      "source_labels": [
+        "BioPortal API:WWECA"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 10
+    },
+    {
+      "native_ontology": "YOGA",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-yoga",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/yoga_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "https://yogaontology.org/ontology/Condition"
+      ],
+      "source_labels": [
+        "BioPortal API:YOGA"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 8
+    },
+    {
+      "native_ontology": "ZONMW_GENERIC",
+      "module_iri": "urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-zonmw_generic",
+      "module_path": "Extraction Ontology/native_hierarchy_modules/zonmw_generic_native_hierarchy.ttl",
+      "target_count": 1,
+      "target_iris": [
+        "http://purl.org/zonmw/generic/10026"
+      ],
+      "source_labels": [
+        "BioPortal API:ZONMW-GENERIC"
+      ],
+      "evidence_status_counts": {
+        "native_module": 1
+      },
+      "triple_count": 3
+    }
+  ]
+}

@@ -1,17 +1,19 @@
 # Entity Quality Assessment Workflow
 
-This workflow treats the review ontology as the durable review workspace. The reviewed objects are OWL classes, not spreadsheet rows. Human decisions are recorded as `rev:*` annotations on each reviewed class in the review ontology. Tables may still be generated for batch editing, QA, statistics, or manuscript reporting, but they are not the conceptual source of truth.
+The reviewed objects are OWL classes, but `disease_terms_review_enriched.csv` is the sole editable master record. Human decisions, extraction evidence, citation decisions, and effective synthesis decisions are stored in that table and keyed by class IRI. The OWL files are generated, inspectable views of the master record and must not be edited as an alternative annotation store.
 
-The formal definitions and controlled-value sets for every annotation property are declared in `review_core.ttl` (namespace `https://example.org/disease-review/ap/`). This document provides the procedural guidance; the ontology is the authoritative source for property semantics and should be imported by the review ontology.
+The formal definitions and controlled-value sets for exported annotation properties are declared in `review_core.ttl` (annotation namespace `urn:uuid:8f96cf34-53c2-48d2-88c5-96d07704fcf7#`). The publication-only ontology package uses non-resolving UUID URNs; its imports resolve through the accompanying local XML catalog. The CSV schema and data dictionary in `Publication release/audit/` define the master-table representation.
 
 ## Files
 
-- `disease_terms_review.ttl`: main review ontology. It declares reviewed class stubs, imports `review_core.ttl`, imports all extraction modules needed to resolve class hierarchy, and stores manual review annotations.
+- `disease_terms_review_enriched.csv`: sole editable master table and source for all review decisions and generated products.
+- `disease_terms_review.ttl`: complete screening/evidence ontology containing all 278 records, including excluded and unresolved records.
+- `disease_terms_synthesis.ttl`: included-only synthesis view; rows marked `needs_user_decision` are not included until adjudicated.
 - `review_core.ttl`: core annotation-property ontology defining all `rev:*` fields and controlled values.
-- `bioportal_hierarchy_modules/` and `review_target_fallback_modules/`: imported ontology modules that provide labels, definitions, parentage, and hierarchy axioms. These modules provide evidence; they are not where review decisions are made.
-- `disease_terms_review_enriched.csv`: generated machine-output table used only as an intermediate extraction and QA view.
-- `disease_terms_manual_annotations.csv`: optional compatibility/export table for batch editing or backup. If used, it must be synchronized back into `disease_terms_review.ttl`.
-- `disease_terms_review_annotated.csv`: optional generated report view combining extraction context and manual decisions.
+- `native_hierarchy_modules/`: subject-sanitized native modules that provide labels, definitions, comments, synonyms, and native asserted superclass paths. Foreign parent classes occur only as stubs.
+- `native_hierarchy_modules_manifest.json`: explicit class-to-native-module manifest and evidence status.
+- `catalog-v001.xml`: local resolution of persistent module IRIs; generated TTLs contain no absolute local file imports.
+- `Publication release/audit/`: baseline hashes, schema, data dictionary, changelog, ambiguity report, and validation report.
 
 Do not use row number as an identifier. Use the class IRI as the primary review key. If a class appears in several registries or source ontologies, keep one reviewed class node and record the source appearances with `rev:source_ontology_ids`, `rev:source_databases`, and related provenance annotations.
 
@@ -24,7 +26,7 @@ Each reviewed disease class should have:
 - manual review annotations from `review_core.ttl`;
 - its asserted labels, definitions, and hierarchy resolved through imported modules, not duplicated in the review ontology.
 
-The review ontology should contain only the MIREOT-style stubs and review annotations needed for the scoping review. Subclass axioms, labels, definitions, and source ontology metadata should come from the imported modules whenever possible. This keeps Protege readable and prevents doubled axioms.
+The evidence ontology should contain only the MIREOT-style stubs and assessment annotations needed for the artifact evaluation. Subclass axioms, labels, definitions, and source ontology metadata should come from the imported modules whenever possible. This keeps Protege readable and prevents doubled axioms.
 
 If a reviewed class does not resolve through an imported module, that is a pipeline error or source limitation that must be handled explicitly before review. Either import the missing module or create a documented fallback module for that class. Do not silently review unresolved stubs as if hierarchy evidence were present.
 
@@ -54,8 +56,8 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
 - `include` — class is suitable for substantive analysis without reservation.
 - `exclude` — class is not used in substantive synthesis; set `manual_exclusion_reason`.
-- `maybe` — relevance or quality is uncertain; needs further evidence before a firm decision.
-- `needs_second_review` — borderline or low-confidence case; flagged for an independent second pass.
+
+Unresolved publication eligibility is represented separately as `effective_synthesis_status = needs_user_decision`; do not put provisional values into `manual_include_status`.
 
 ### `manual_exclusion_reason`
 
@@ -90,6 +92,9 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 - Optional synthesis bucket. Use only after writing the free-text `upper_level_interpretation`; leave blank if the source's own model is more precise than the available buckets.
 - `entity_as_realizable_entity` — the reviewed entity is modelled at the broader level of realizable entity, without enough evidence to narrow it to disposition.
 - `entity_as_bfo:disposition` — the reviewed entity is modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
+- `entity_as_disposition_non_bfo` — explicitly a disposition in a non-BFO model.
+- `entity_as_dependent_continuant` — a dependent continuant without a narrower disposition commitment.
+- `entity_as_sio:quality` — modelled as an SIO quality or attribute.
 - `entity_as_situation` — the reviewed entity is modelled as a situation, state of affairs, or configuration of circumstances.
 - `no_grounded_model` — the reviewed entity is modelled as a terminology/classification category without a clear commitment to what kind of biomedical entity disease is.
 - `entity_as_disorder` — the reviewed entity is modelled as a structural or functional disorder of a bodily entity (e.g. OGMS disorder).
@@ -97,13 +102,14 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 - `entity_as_finding` — the reviewed entity is modelled as a clinical observation or finding recorded about a patient (e.g. SNOMED clinical finding).
 - `entity_as_biotop:condition` — the reviewed entity is modelled as a BioTop-style condition (or reuses BioTop's condition): a patient condition without further upper-ontological commitment.
 - `entity_as_kantian_state` — the reviewed entity is modelled as a state in the Kantian sense: a way a substance/bearer is determined, rather than an independent entity.
+- `entity_as_domain_specific_abnormal_pattern` — a source-specific abnormal pattern whose scope is too narrow for a general disease model.
 - `entity_as_pathology` — the reviewed entity is modelled as a pathological state or tissue-level change (e.g. morphological abnormality).
 - `entity_as_syndrome` — the reviewed entity is modelled as a named cluster of co-occurring signs and symptoms without a single unifying cause.
 - `mixed_model` — the class intentionally combines more than one modelling perspective.
 - `unclear_model` — the available evidence is insufficient to assign a philosophical/modelling synthesis category.
 - `not_applicable` — the class is not a disease-like entity proper (e.g. a process or quality encountered through hierarchy traversal).
 
-### Quality fields (`definition_quality`, `comment_quality`, `parentage_quality`, `provenance_quality`)
+### Quality fields (`definition_quality`, `comment_quality`, `parentage_quality`)
 
 - `good` — fully adequate for the purpose; see per-field guidance in Assessment Steps.
 - `partial` — informative but incomplete, inconsistent, or underspecified.
@@ -113,7 +119,7 @@ Use these values where possible. Full definitions are in `review_core.ttl`.
 
 ### `quality_decision` legacy field
 
-This field is retained for compatibility with earlier exports, but it is no longer part of the active review workflow. Use `manual_include_status`, `upper_level_interpretation`, `disease_model_category`, the quality fields, `entity_quality_score`, and `review_notes` instead.
+This field is retained for compatibility with earlier exports, but it is no longer part of the active review workflow. Use `manual_include_status`, `review_comment`, `disease_model_category`, the coupled-decision fields, the quality fields, and `entity_quality_score` instead.
 
 ## Assessment Steps
 
@@ -160,7 +166,7 @@ This field is retained for compatibility with earlier exports, but it is no long
 
    Use the asserted and imported superclass hierarchy visible in Protege, plus extracted helper annotations such as `parent_iris`, `parent_labels`, and `bfo_anchor` when present.
 
-   Record `upper_level_interpretation` in plain language first. Use the ontology's own wording where possible, for example `subclass of realizable entity`, `subclass of disposition`, `situation`, `process/course`, `clinical finding`, `state`, `quality`, or `unclear`. Do not force a controlled category at this stage.
+   Record the interpretation and supporting evidence in `review_comment`. Use the ontology's own wording where possible, for example `subclass of realizable entity`, `subclass of disposition`, `situation`, `process/course`, `clinical finding`, `state`, `quality`, or `unclear`.
 
    Set `parentage_quality`:
 
@@ -169,16 +175,9 @@ This field is retained for compatibility with earlier exports, but it is no long
    - `poor`: placed directly under `owl:Thing` or a very generic class that provides no modelling information.
    - `absent`: no parent class asserted.
 
-   Set `provenance_quality`:
-
-   - `good`: ontology version, retrieval date, and source URL are all present and machine-readable.
-   - `partial`: some provenance present but one or more fields are missing or ambiguous.
-   - `poor`: only minimal provenance available (e.g. retrieval date only, no version).
-   - `absent`: no provenance metadata recorded.
-
 6. Optionally assign a synthesis category.
 
-   Choose `disease_model_category` only if a controlled bucket is already clear. The values are review synthesis aids, not a claim that every bucket corresponds to a named philosophical position. If the source model is specific, unusual, or not yet confidently categorizable, leave this blank and rely on `upper_level_interpretation`.
+   Choose `disease_model_category` only if a controlled bucket is clear. The values are review synthesis aids, not a claim that every bucket corresponds to a named philosophical position. If evidence is insufficient, use `unclear_model` and explain why in `review_comment`.
 
 7. Score entity quality.
 
@@ -195,11 +194,11 @@ This field is retained for compatibility with earlier exports, but it is no long
 
    Only after checking definition, comment, superclass/parentage, source context, and modelling interpretation, set `manual_include_status`.
 
-   If the class is not conceptually relevant, set `manual_include_status` to `exclude` and `manual_exclusion_reason` to `out_of_scope` or another matching value. If the source is clearly a demo, training resource, value-set collection, obsolete resource, or generated local artifact, set the matching exclusion reason. For included, maybe, or second-review cases, leave `manual_exclusion_reason` and `manual_exclusion_detail` blank.
+   If the class is not conceptually relevant, set `manual_include_status` to `exclude` and `manual_exclusion_reason` to `out_of_scope` or another matching value. For included classes, leave `manual_exclusion_reason` and `manual_exclusion_detail` blank. Rule/manual conflicts are surfaced through `effective_synthesis_status = needs_user_decision` and resolved with `publication_eligibility_override`.
 
 9. Preserve auditability.
 
-    Fill `reviewer`, `review_date`, and `review_notes`. Use ISO dates such as `2026-06-29`.
+    Fill `reviewer`, `review_date`, and `review_comment`. Use ISO dates such as `2026-06-29`.
 
     If a second reviewer checks the class, fill `second_reviewer`, `second_review_date`, `disagreement_flag` (`true` if decisions differ), and `adjudication_decision`.
 
@@ -214,12 +213,11 @@ Do not count imported copies of the same IRI as independent disease implementati
 
 ## Rerun Workflow
 
-1. Rerun the extraction pipeline to produce fresh extraction data and modules.
-2. Regenerate `disease_terms_review.ttl` in ontology-first mode, preserving existing `rev:*` manual annotations by class IRI.
-3. Import one module for every reviewed class, or create a documented fallback module when a source module cannot be obtained.
-4. Validate that every reviewed class resolves through at least one imported module.
-5. New IRIs receive blank manual review annotations.
-6. Previously annotated IRIs missing from the new extraction should remain in the review ontology and be flagged with a note such as "not retrieved in current extraction run".
-7. Export CSV views only after the ontology has been regenerated and validated.
+1. Preserve the current master CSV and run the search merge by class IRI; never replace reviewed fields by row position.
+2. Run `python3 "Scoping review/Python scripts/publication_readiness.py" build-native-modules`.
+3. Run `python3 "Scoping review/Python scripts/publication_readiness.py" citations` and then `materialize`.
+4. Resolve items in the UI's **Publication decisions** and **Citations** tabs.
+5. Run `python3 "Scoping review/Python scripts/publication_readiness.py" export` and `audit`.
+6. Run `python3 -m unittest "Scoping review/Python scripts/test_publication_readiness.py"` and ROBOT OWL 2 DL validation on both generated TTLs.
 
-This keeps the review reproducible while allowing generated extraction files and imported modules to change. The stable review record is the ontology, not the table.
+New IRIs receive blank human-review fields. Previously reviewed IRIs are retained by class IRI. The stable review record is the master CSV; TTLs, modules, reports, and the catalog are reproducible generated artifacts.

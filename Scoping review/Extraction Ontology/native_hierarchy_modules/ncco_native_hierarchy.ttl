@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ncco> a owl:Ontology ;
+    dcterms:source "BioPortal API:NCCO" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2013-11-05T00:00:00.000+00:00, creationDate=2013-11-05T19:01:55.000-08:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: NCCO" .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Injury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Physical_problems> .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Physical_problems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Physical_problems> <http://www.w3.org/2000/01/rdf-schema#label> "Physical_problems" .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Physical_problems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Problems> .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Problems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vanessa/ontologies/2012/7/untitled-ontology-33#Problems> <http://www.w3.org/2000/01/rdf-schema#label> "Problems" .

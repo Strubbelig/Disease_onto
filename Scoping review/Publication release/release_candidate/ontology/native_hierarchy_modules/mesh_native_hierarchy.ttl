@@ -1,0 +1,62 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mesh> a owl:Ontology ;
+    dcterms:source "BioPortal API:MESH" ;
+    owl:versionInfo "BioPortal: version=2026_2025_08_15, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=31; BioPortal: version=2025_09_01, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=32; BioPortal: version=28.0, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=281, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=30; BioPortal: version=20AA_250902F, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=30; BioPortal: version=2025_04_10, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=NDFRT_2018_02_05_18_03_05, released=2018-05-07T00:00:00.000+00:00, creationDate=2018-07-06T20:03:31.000-07:00, submissionId=13; BioPortal: version=RCD99, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:08:47.000-07:00, submissionId=24; BioPortal: version=2025_08_04, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=29; BioPortal: version=2025_08_13, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=2026, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=28; BioPortal: version=2024AA, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:28:25.000-07:00, submissionId=24; BioPortal: version=2025_07_31, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=ICD9CM_2014, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T15:58:32.000-07:00, submissionId=26; BioPortal: version=CSP2006, released=2013-05-08T00:00:00.000+00:00, creationDate=2013-09-25T12:00:00.000+00:00, submissionId=1; BioPortal: version=ICD10_1998, released=2013-05-08T00:00:00.000+00:00, creationDate=2013-09-25T12:00:00.000+00:00, submissionId=1; BioPortal: version=20250624, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=26; BioPortal: version=2025_04, released=2025-05-06T00:00:00.000+00:00, creationDate=2026-03-19T00:00:00.000+00:00, submissionId=26; BioPortal: version=PDQ_2018_10_27, released=2019-05-06T00:00:00.000+00:00, creationDate=2019-08-27T17:52:38.000-07:00, submissionId=16; BioPortal: version=2025_02_10, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=25; BioPortal: version=WHO97, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:20:04.000-07:00, submissionId=23; BioPortal: version=ICPC2P_2005, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:00:11.000-07:00, submissionId=24; BioPortal: version=2025AB, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=26; BioPortal: version=MTHMST2001, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:28:29.000-07:00, submissionId=24; BioPortal: version=MDDB_2017_02_08, released=2017-02-06T00:00:00.000+00:00, creationDate=2018-04-06T15:44:17.000-07:00, submissionId=10; BioPortal: version=AIR93, released=2013-05-08T00:00:00.000+00:00, creationDate=2013-09-25T12:00:00.000+00:00, submissionId=1; BioPortal: version=2026, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=2025_07, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27; BioPortal: version=2020AB, released=2020-11-02T00:00:00.000+00:00, creationDate=2021-01-06T22:24:45.000-08:00, submissionId=3; BioPortal: version=0.5, released=2018-06-19T00:00:00.000+00:00, creationDate=2018-06-19T10:41:28.000-07:00, submissionId=8; BioPortal: version=2026_2025_08_15, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=31" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://purl.obolibrary.org/obo/IAO_0000115> "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown." .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MESH" .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MESH/D010335> .
+<http://purl.bioontology.org/ontology/MESH/D004194> <http://www.w3.org/2004/02/skos/core#altLabel> "Diseases" .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://purl.obolibrary.org/obo/IAO_0000115> "The abnormal mechanisms and forms involved in the dysfunctions of tissues and organs." .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2000/01/rdf-schema#label> "Pathologic Processes" .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MESH/D013568> .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2004/02/skos/core#altLabel> "Pathological Processes" .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2004/02/skos/core#altLabel> "Processes, Pathologic" .
+<http://purl.bioontology.org/ontology/MESH/D010335> <http://www.w3.org/2004/02/skos/core#altLabel> "Processes, Pathological" .
+<http://purl.bioontology.org/ontology/MESH/D013568> <http://purl.obolibrary.org/obo/IAO_0000115> "Abnormal anatomical or physiological conditions and objective or subjective manifestations of disease, not classified as disease or syndrome." .
+<http://purl.bioontology.org/ontology/MESH/D013568> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D013568> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological Conditions, Signs and Symptoms" .
+<http://purl.bioontology.org/ontology/MESH/D013568> <http://www.w3.org/2004/02/skos/core#altLabel> "Symptoms and General Pathology" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic symptom complex." .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MESH" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MESH/D004194> .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2004/02/skos/core#altLabel> "Cluster, Symptom" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2004/02/skos/core#altLabel> "Clusters, Symptom" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2004/02/skos/core#altLabel> "Symptom Cluster" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2004/02/skos/core#altLabel> "Symptom Clusters" .
+<http://purl.bioontology.org/ontology/MESH/D013577> <http://www.w3.org/2004/02/skos/core#altLabel> "Syndromes" .
+<http://purl.bioontology.org/ontology/STY/T038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T038> <http://www.w3.org/2000/01/rdf-schema#label> "Biologic Function" .
+<http://purl.bioontology.org/ontology/STY/T038> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T070> .
+<http://purl.bioontology.org/ontology/STY/T046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T046> <http://www.w3.org/2000/01/rdf-schema#label> "Pathologic Function" .
+<http://purl.bioontology.org/ontology/STY/T046> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T038> .
+<http://purl.bioontology.org/ontology/STY/T047> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MESH" .
+<http://purl.bioontology.org/ontology/STY/T047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T047> <http://www.w3.org/2000/01/rdf-schema#label> "Disease or Syndrome" .
+<http://purl.bioontology.org/ontology/STY/T047> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T046> .
+<http://purl.bioontology.org/ontology/STY/T051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T051> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+<http://purl.bioontology.org/ontology/STY/T067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T067> <http://www.w3.org/2000/01/rdf-schema#label> "Phenomenon or Process" .
+<http://purl.bioontology.org/ontology/STY/T067> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T051> .
+<http://purl.bioontology.org/ontology/STY/T070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/STY/T070> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Phenomenon or Process" .
+<http://purl.bioontology.org/ontology/STY/T070> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/STY/T067> .

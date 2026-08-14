@@ -1405,6 +1405,7 @@ def infer_native_ontology_guess(class_iri: str) -> str:
         (r"bioontology\.org/ontology/LNC/", "loinc"),
         (r"snomed\.info/id/", "snomedct"),
         (r"semanticscience\.org/resource/", "sio"),
+        (r"purl\.org/cpr/", "cpro"),
         (r"w3id\.org/biolink", "biolink"),
     ]
     for pattern, fixed in patterns:

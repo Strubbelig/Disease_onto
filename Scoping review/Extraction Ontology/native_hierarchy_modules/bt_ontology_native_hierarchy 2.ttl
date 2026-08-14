@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/bt_ontology> a owl:Ontology ;
+    dcterms:source "BioPortal:BT-ONTOLOGY (bt-ontology_hierarchy.ttl); BioPortal API:BT-ONTOLOGY" ;
+    owl:versionInfo "BioPortal: version=2.0, released=2024-07-21T18:00:44.000-07:00, creationDate=2024-07-21T18:00:48.000-07:00, submissionId=3" ;
+    dcterms:created "2026-08-06T18:33:17-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/brainteaser/ontology/schema/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being, such as a state of health. [Definition Source: NCI]" .
+<https://w3id.org/brainteaser/ontology/schema/Condition> <http://purl.org/dc/terms/source> "review target in BT-ONTOLOGY from disease_terms_review_enriched.csv" .
+<https://w3id.org/brainteaser/ontology/schema/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brainteaser/ontology/schema/Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "A state of being, such as a state of health. [Definition Source: NCI]" .
+<https://w3id.org/brainteaser/ontology/schema/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding> <http://purl.obolibrary.org/obo/IAO_0000115> "A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions. [Definition Source: NCI]" .
+<https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: BT-ONTOLOGY" .
+<https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding> <http://www.w3.org/2000/01/rdf-schema#comment> "A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions. [Definition Source: NCI]" .
+<https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding> <http://www.w3.org/2000/01/rdf-schema#label> "Disease, Disorder or Finding" .

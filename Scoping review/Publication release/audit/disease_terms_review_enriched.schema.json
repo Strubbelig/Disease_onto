@@ -1,0 +1,466 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Disease ontology artifact-evaluation master row",
+  "type": "object",
+  "required": [
+    "class_iri",
+    "effective_synthesis_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "term": {
+      "type": "string"
+    },
+    "discovery_tier": {
+      "type": "string"
+    },
+    "ontology": {
+      "type": "string"
+    },
+    "preferred_label": {
+      "type": "string"
+    },
+    "class_iri": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "string"
+    },
+    "synonyms": {
+      "type": "string"
+    },
+    "parent_labels": {
+      "type": "string"
+    },
+    "parent_iris": {
+      "type": "string"
+    },
+    "bfo_anchor": {
+      "type": "string"
+    },
+    "mapping_count": {
+      "type": "string"
+    },
+    "exact_match_iris": {
+      "type": "string"
+    },
+    "defined_by_iris": {
+      "type": "string"
+    },
+    "conforms_to_iris": {
+      "type": "string"
+    },
+    "source_databases": {
+      "type": "string"
+    },
+    "retrieved_at_by_database": {
+      "type": "string"
+    },
+    "ontology_versions": {
+      "type": "string"
+    },
+    "source_ontology_ids": {
+      "type": "string"
+    },
+    "source_urls": {
+      "type": "string"
+    },
+    "source_records": {
+      "type": "string"
+    },
+    "ontology_title": {
+      "type": "string"
+    },
+    "ontology_description": {
+      "type": "string"
+    },
+    "ontology_domain": {
+      "type": "string"
+    },
+    "ontology_homepage": {
+      "type": "string"
+    },
+    "ontology_repository": {
+      "type": "string"
+    },
+    "ontology_license": {
+      "type": "string"
+    },
+    "ontology_status": {
+      "type": "string"
+    },
+    "ontology_metadata_source": {
+      "type": "string"
+    },
+    "ontology_metadata_retrieved_at": {
+      "type": "string"
+    },
+    "ontology_scope_category": {
+      "type": "string"
+    },
+    "ontology_exclusion_status": {
+      "type": "string"
+    },
+    "ontology_exclusion_rule": {
+      "type": "string"
+    },
+    "ontology_exclusion_reason": {
+      "type": "string"
+    },
+    "native_ontology_guess": {
+      "type": "string"
+    },
+    "native_term_status": {
+      "type": "string"
+    },
+    "native_source_ontology_ids": {
+      "type": "string"
+    },
+    "dependent_source_ontology_ids": {
+      "type": "string"
+    },
+    "dependency_on_ontology_ids": {
+      "type": "string"
+    },
+    "source_appearance_summary": {
+      "type": "string"
+    },
+    "review_route": {
+      "type": "string"
+    },
+    "manual_screening_hint": {
+      "type": "string"
+    },
+    "manual_include_status": {
+      "type": "string",
+      "enum": [
+        "include",
+        "exclude"
+      ]
+    },
+    "manual_exclusion_reason": {
+      "type": "string",
+      "enum": [
+        "",
+        "demo_or_training_resource",
+        "value_set_or_collection",
+        "terminology_not_ontology",
+        "duplicate_imported_term",
+        "obsolete_or_noncurrent",
+        "insufficient_metadata",
+        "out_of_scope",
+        "replaced_by_better_native_disease_model_candidate"
+      ]
+    },
+    "manual_exclusion_detail": {
+      "type": "string"
+    },
+    "ontology_type_manual": {
+      "type": "string",
+      "enum": [
+        "curated_ontology",
+        "clinical_terminology",
+        "thesaurus",
+        "value_set",
+        "application_ontology",
+        "demo_or_training_resource",
+        "generated_or_local_resource",
+        "unclear"
+      ]
+    },
+    "native_or_imported_manual": {
+      "type": "string",
+      "enum": [
+        "native",
+        "imported",
+        "reused_unclear",
+        "unknown"
+      ]
+    },
+    "logical_inconsistency": {
+      "type": "string",
+      "enum": [
+        "",
+        "wrong_is_a_hierarchy",
+        "contradictory_upper_level",
+        "reasoner_inconsistent",
+        "other_logical_error"
+      ]
+    },
+    "disease_model_category": {
+      "type": "string",
+      "enum": [
+        "",
+        "entity_as_dependent_continuant",
+        "entity_as_realizable_entity",
+        "entity_as_bfo:disposition",
+        "entity_as_disposition_non_bfo",
+        "entity_as_sio:quality",
+        "entity_as_situation",
+        "no_grounded_model",
+        "entity_as_disorder",
+        "entity_as_process",
+        "entity_as_finding",
+        "entity_as_biotop:condition",
+        "entity_as_kantian_state",
+        "entity_as_domain_specific_abnormal_pattern",
+        "entity_as_pathology",
+        "entity_as_syndrome",
+        "mixed_model",
+        "unclear_model",
+        "not_applicable"
+      ]
+    },
+    "no_grounded_model_subtype": {
+      "type": "string"
+    },
+    "ontological_category": {
+      "type": "string",
+      "enum": [
+        "",
+        "continuant",
+        "occurrent",
+        "mixed_continuant_occurrent_model",
+        "no_continuant_occurrent_commitment",
+        "unclear"
+      ]
+    },
+    "pathological_grounding": {
+      "type": "string",
+      "enum": [
+        "",
+        "statistical",
+        "evolutionary_function",
+        "normative",
+        "primitive_criteria",
+        "undefined",
+        "not_applicable"
+      ]
+    },
+    "crisp_vs_graded": {
+      "type": "string",
+      "enum": [
+        "",
+        "crisp",
+        "graded_or_fuzzy",
+        "prototype",
+        "gradedness_in_data",
+        "silent"
+      ]
+    },
+    "reality_vs_classification": {
+      "type": "string",
+      "enum": [
+        "",
+        "biological_state",
+        "illness_role",
+        "nosological_category",
+        "precision_medicine_stratification",
+        "conflated",
+        "unclear"
+      ]
+    },
+    "review_comment": {
+      "type": "string"
+    },
+    "definition_quality": {
+      "type": "string",
+      "enum": [
+        "good",
+        "partial",
+        "poor",
+        "absent"
+      ]
+    },
+    "comment_quality": {
+      "type": "string",
+      "enum": [
+        "good",
+        "partial",
+        "poor",
+        "absent",
+        "not_applicable"
+      ]
+    },
+    "parentage_quality": {
+      "type": "string",
+      "enum": [
+        "good",
+        "partial",
+        "poor",
+        "absent"
+      ]
+    },
+    "entity_quality_score": {
+      "type": "string",
+      "enum": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    "quality_decision": {
+      "type": "string",
+      "enum": [
+        "high_confidence_include",
+        "include_with_caveat",
+        "uncertain_second_review"
+      ]
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "review_date": {
+      "type": "string"
+    },
+    "second_reviewer": {
+      "type": "string"
+    },
+    "second_review_date": {
+      "type": "string"
+    },
+    "disagreement_flag": {
+      "type": "string"
+    },
+    "adjudication_decision": {
+      "type": "string"
+    },
+    "modelling_citation_source_ontology_id": {
+      "type": "string"
+    },
+    "modelling_citation_status": {
+      "type": "string"
+    },
+    "modelling_citation_confidence": {
+      "type": "string"
+    },
+    "modelling_citation_doi": {
+      "type": "string"
+    },
+    "modelling_citation_pmid": {
+      "type": "string"
+    },
+    "modelling_citation_pmcid": {
+      "type": "string"
+    },
+    "modelling_citation_url": {
+      "type": "string"
+    },
+    "modelling_citation_publication_title": {
+      "type": "string"
+    },
+    "modelling_citation_authors": {
+      "type": "string"
+    },
+    "modelling_citation_year": {
+      "type": "string"
+    },
+    "modelling_citation_venue": {
+      "type": "string"
+    },
+    "modelling_citation_bibliographic_citation": {
+      "type": "string"
+    },
+    "modelling_citation_lookup_source": {
+      "type": "string"
+    },
+    "modelling_citation_source": {
+      "type": "string"
+    },
+    "modelling_citation_approved": {
+      "type": "string"
+    },
+    "modelling_citation_assignment_flag": {
+      "type": "string"
+    },
+    "modelling_citation_assignment_flag_reason": {
+      "type": "string"
+    },
+    "modelling_citation_assignment_checked_at": {
+      "type": "string"
+    },
+    "hierarchy_evidence_status": {
+      "type": "string",
+      "enum": [
+        "native_module",
+        "fallback_with_evidence",
+        "insufficient_metadata"
+      ]
+    },
+    "hierarchy_module_iri": {
+      "type": "string"
+    },
+    "hierarchy_module_source": {
+      "type": "string"
+    },
+    "hierarchy_evidence_detail": {
+      "type": "string"
+    },
+    "definition_values_json": {
+      "type": "string"
+    },
+    "comment_values_json": {
+      "type": "string"
+    },
+    "synonym_values_json": {
+      "type": "string"
+    },
+    "parent_iri_values_json": {
+      "type": "string"
+    },
+    "parent_label_values_json": {
+      "type": "string"
+    },
+    "effective_synthesis_status": {
+      "type": "string",
+      "enum": [
+        "include",
+        "exclude",
+        "needs_user_decision"
+      ]
+    },
+    "effective_synthesis_exclusion_reason": {
+      "type": "string"
+    },
+    "effective_decision_basis": {
+      "type": "string"
+    },
+    "effective_decision_rule": {
+      "type": "string"
+    },
+    "publication_eligibility_override": {
+      "type": "string",
+      "enum": [
+        "",
+        "include",
+        "exclude"
+      ]
+    },
+    "publication_review_comment_proposed": {
+      "type": "string"
+    },
+    "publication_comment_status": {
+      "type": "string",
+      "enum": [
+        "",
+        "not_needed",
+        "needs_review",
+        "approved",
+        "rejected"
+      ]
+    },
+    "publication_ambiguity_flags": {
+      "type": "string"
+    },
+    "publication_ambiguity_note": {
+      "type": "string"
+    },
+    "modelling_citation_notes": {
+      "type": "string"
+    }
+  }
+}

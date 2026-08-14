@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-epo> a owl:Ontology ;
+    dcterms:source "BioPortal:EPO (epo_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2016-05-28T00:00:00.000+00:00, creationDate=2016-06-03T10:38:39.000-07:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#OPPIO_d000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#OPPIO_d000002> <http://www.w3.org/2000/01/rdf-schema#label> "maternal state" .
+<http://www.semanticweb.org/ontologies/epo.owl#HealthCondition> <http://purl.obolibrary.org/obo/IAO_0000115> "Menelas definition :\n\"Principle is: imaging sign the sign on a non human object of a health condition or sign, that is the sign of an internal state.\"\n\nCG Representation :\n[health_condition: _x]-\n    (descriptive_result)<--[examination]\n    (sg_co_occurrence)-->[health_condition:_y]\n    (diagnosis)-->[internal_state]\n    (diagnosis_excl)-->[internal_state]\n    (state_of)-->[human_being]\n    (radio_interpretation_of)-->[imaging_sign]\n    (radio_interpretation)<--[imaging_sign]\n    (caused_by)-->[internal_state]\n    %" .
+<http://www.semanticweb.org/ontologies/epo.owl#HealthCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/epo.owl#HealthCondition> <http://www.w3.org/2000/01/rdf-schema#label> "health condition" .
+<http://www.semanticweb.org/ontologies/epo.owl#HealthCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2009/3/ontoDPN.owl#OPPIO_d000002> .
+<http://www.semanticweb.org/ontologies/epo.owl#Syndrome> <http://purl.org/dc/terms/source> "review target in EPO from disease_terms_review_enriched.csv" .
+<http://www.semanticweb.org/ontologies/epo.owl#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/epo.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://www.semanticweb.org/ontologies/epo.owl#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/epo.owl#HealthCondition> .

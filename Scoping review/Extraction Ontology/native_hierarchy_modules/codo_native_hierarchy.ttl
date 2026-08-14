@@ -1,0 +1,69 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-codo> a owl:Ontology ;
+    dcterms:source "BioPortal:CODO (codo_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=1.5, released=2023-07-26T00:00:00.000+00:00, creationDate=2024-05-29T11:20:14.000+00:00, submissionId=6" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> <http://purl.obolibrary.org/obo/IAO_0000115> "An underlying health condition refers to a pre-existing medical condition or disease that a person has before the onset of another illness or condition. Underlying health conditions can include chronic diseases like diabetes, hypertension, asthma, heart disease, autoimmune disorders, and other conditions that may affect the individual's overall health and increase the risk of complications." .
+<https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Underlying health condition" .
+<https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#RiskFactor> .
+<https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> <http://www.w3.org/2004/02/skos/core#altLabel> "Condition" .
+<https://w3id.org/codo#Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "A state of being, such as a state of health. (NCI)" .
+<https://w3id.org/codo#Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "An observable finding or state that persists over time and tends to require intervention or management, and, therefore, distinguished from an Observation made at a point in time; may exist before an Observation of the Condition is made or after interventions to manage the Condition are undertaken. Examples: equipment repair status, device recall status, a health risk, a financial risk, public health risk, pregnancy, health maintenance, chronic illness (HL7V3.0)" .
+<https://w3id.org/codo#Condition> <http://purl.org/dc/terms/source> "review target in CODO from disease_terms_review_enriched.csv" .
+<https://w3id.org/codo#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown. (MSH)" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. (NCI)" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Conceptually broad term referring primarily to physical illness. Also used when particular disorders are not specified. Use a more specific term if possible. For general discussions of health impairment consider also the term HEALTH. (PSY)" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "Disease refers to a disorder or abnormal condition of the body or mind that impairs normal functioning. Diseases can be caused by various factors, including pathogens (such as bacteria, viruses, or parasites), genetic mutations, environmental factors, lifestyle choices, or a combination of these factors." .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "MESH:D004194" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "SCTID: 64572001" .
+<https://w3id.org/codo#Disease> <http://purl.obolibrary.org/obo/IAO_0000115> "an impairment of health or a condition of abnormal functioning." .
+<https://w3id.org/codo#Disease> <http://purl.org/dc/terms/source> "review target in CODO from disease_terms_review_enriched.csv" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown. (MSH)" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function. (NCI)" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptually broad term referring primarily to physical illness. Also used when particular disorders are not specified. Use a more specific term if possible. For general discussions of health impairment consider also the term HEALTH. (PSY)" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Disease refers to a disorder or abnormal condition of the body or mind that impairs normal functioning. Diseases can be caused by various factors, including pathogens (such as bacteria, viruses, or parasites), genetic mutations, environmental factors, lifestyle choices, or a combination of these factors." .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "MESH:D004194" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "SCTID: 64572001" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "an impairment of health or a condition of abnormal functioning." .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<https://w3id.org/codo#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#PathologicalState> .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder refers to an abnormal condition or disruption in the regular functioning of an organ, system, or overall body. It can involve physical, mental, or physiological dysregulation that affects normal processes and may lead to symptoms or impairments." .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "In medicine, a disturbance of normal functioning of the mind or body. Disorders may be caused by genetic factors, disease, or trauma" .
+<https://w3id.org/codo#Disorder> <http://purl.obolibrary.org/obo/IAO_0000115> "a functional abnormality or disturbance" .
+<https://w3id.org/codo#Disorder> <http://purl.org/dc/terms/source> "review target in CODO from disease_terms_review_enriched.csv" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "A disorder refers to an abnormal condition or disruption in the regular functioning of an organ, system, or overall body. It can involve physical, mental, or physiological dysregulation that affects normal processes and may lead to symptoms or impairments." .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "In medicine, a disturbance of normal functioning of the mind or body. Disorders may be caused by genetic factors, disease, or trauma" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#comment> "a functional abnormality or disturbance" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#Condition> .
+<https://w3id.org/codo#Disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#PathologicalState> .
+<https://w3id.org/codo#PathologicalState> <http://purl.obolibrary.org/obo/IAO_0000115> "A pathological state refers to an abnormal or diseased condition of the body. It can involve structural or functional changes that deviate from the normal physiological state and may be associated with symptoms or manifestations of illness." .
+<https://w3id.org/codo#PathologicalState> <http://purl.obolibrary.org/obo/IAO_0000115> "An abnormal or physiologically unbalanced state of the body. illness, malady, sickness, unwellness. impairment of normal physiological function affecting part or all of an organism." .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological state" .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#COVIDRO_UnderlyingHealthCondition> .
+<https://w3id.org/codo#PathologicalState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/codo#Condition> .
+<https://w3id.org/codo#RiskFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "A risk factor is any attribute, characteristic, or exposure that increases the likelihood of developing a particular disease or experiencing a certain health condition. Risk factors can be divided into two main categories: modifiable and non-modifiable.\n\nSource:\nCenters for Disease Control and Prevention (CDC). (2021). Understand Your Risk for Heart Disease. Retrieved from: https://www.cdc.gov/heartdisease/risk_factors.htm" .
+<https://w3id.org/codo#RiskFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "An aspect of personal behavior or lifestyle, environmental exposure, inborn or inherited characteristic, which, based on epidemiological evidence, is known to be associated with a health-related condition considered important to prevent. (MSH)" .
+<https://w3id.org/codo#RiskFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "Any aspect of an individual's life, behavior, an environmental exposure, or an inborn or inherited characteristic that increases the likelihood of a disease, condition or injury. (NCI)" .
+<https://w3id.org/codo#RiskFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "Personal behaviors or lifestyles, environmental effects, or inborn characteristics which epidemiological evidence has shown to be associated with the increased rate of a behavior or health-related condition. (PSY)" .
+<https://w3id.org/codo#RiskFactor> <http://purl.obolibrary.org/obo/IAO_0000115> "SCTID: 80943009" .
+<https://w3id.org/codo#RiskFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/codo#RiskFactor> <http://www.w3.org/2000/01/rdf-schema#label> "RiskFactor" .

@@ -1,0 +1,36 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mi> a owl:Ontology ;
+    dcterms:source "BioPortal API:MI" ;
+    owl:versionInfo "BioPortal: released=2026-04-27T18:07:22.000-07:00, creationDate=2026-04-27T00:00:00.000+00:00, submissionId=75" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/MI_0000> <http://purl.obolibrary.org/obo/IAO_0000115> "Controlled vocabularies originally created for protein protein interactions, extended to other molecules interactions." .
+<http://purl.obolibrary.org/obo/MI_0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_0000> <http://www.w3.org/2000/01/rdf-schema#label> "molecular interaction" .
+<http://purl.obolibrary.org/obo/MI_0000> <http://www.w3.org/2004/02/skos/core#altLabel> "mi" .
+<http://purl.obolibrary.org/obo/MI_0590> <http://purl.obolibrary.org/obo/IAO_0000115> "Collection of topics describing the free text stored as an attribute value." .
+<http://purl.obolibrary.org/obo/MI_0590> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_0590> <http://www.w3.org/2000/01/rdf-schema#label> "attribute name" .
+<http://purl.obolibrary.org/obo/MI_0590> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_0000> .
+<http://purl.obolibrary.org/obo/MI_0590> <http://www.w3.org/2004/02/skos/core#altLabel> "CvTopic" .
+<http://purl.obolibrary.org/obo/MI_0617> <http://purl.obolibrary.org/obo/IAO_0000115> "The interaction has a known or demonstrated disease association." .
+<http://purl.obolibrary.org/obo/MI_0617> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MI" .
+<http://purl.obolibrary.org/obo/MI_0617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_0617> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MI_0617> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_0664> .
+<http://purl.obolibrary.org/obo/MI_0664> <http://purl.obolibrary.org/obo/IAO_0000115> "Attribute name of annotation associated to an interaction element." .
+<http://purl.obolibrary.org/obo/MI_0664> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MI_0664> <http://www.w3.org/2000/01/rdf-schema#label> "interaction attribute name" .
+<http://purl.obolibrary.org/obo/MI_0664> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MI_0590> .
+<http://purl.obolibrary.org/obo/MI_0664> <http://www.w3.org/2004/02/skos/core#altLabel> "interaction att name" .

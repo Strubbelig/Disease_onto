@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-hero> a owl:Ontology ;
+    dcterms:source "BioPortal API:HERO" ;
+    owl:versionInfo "BioPortal: version=FHIR W5 categorization (Preliminary), released=2024-09-07T00:00:00.000+00:00, creationDate=2024-09-07T05:53:33.000-07:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://hl7.org/fhir/Base> <http://purl.obolibrary.org/obo/IAO_0000115> "Base definition for all types defined in FHIR type system." .
+<http://hl7.org/fhir/Base> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hl7.org/fhir/Base> <http://www.w3.org/2000/01/rdf-schema#label> "Base" .
+<http://hl7.org/fhir/Condition> <http://purl.obolibrary.org/obo/IAO_0000115> "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern." .
+<http://hl7.org/fhir/Condition> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: HERO" .
+<http://hl7.org/fhir/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hl7.org/fhir/Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern." .
+<http://hl7.org/fhir/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://hl7.org/fhir/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hl7.org/fhir/DomainResource> .
+<http://hl7.org/fhir/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hl7.org/fhir/w5#clinical.general> .
+<http://hl7.org/fhir/DomainResource> <http://purl.obolibrary.org/obo/IAO_0000115> "A resource that includes narrative, extensions, and contained resources." .
+<http://hl7.org/fhir/DomainResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hl7.org/fhir/DomainResource> <http://www.w3.org/2000/01/rdf-schema#label> "DomainResource" .
+<http://hl7.org/fhir/DomainResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hl7.org/fhir/Resource> .
+<http://hl7.org/fhir/Resource> <http://purl.obolibrary.org/obo/IAO_0000115> "This is the base resource type for everything." .
+<http://hl7.org/fhir/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hl7.org/fhir/Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+<http://hl7.org/fhir/Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://hl7.org/fhir/Base> .
+<http://hl7.org/fhir/w5#clinical.general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://hl7.org/fhir/w5#clinical.general> <http://www.w3.org/2000/01/rdf-schema#label> "general" .

@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-meddra> a owl:Ontology ;
+    dcterms:source "BioPortal API:MEDDRA" ;
+    owl:versionInfo "BioPortal: version=28.0, released=2025-11-03T00:00:00.000+00:00, creationDate=2026-03-22T00:00:00.000+00:00, submissionId=27" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/MEDDRA/10018065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10018065> <http://www.w3.org/2000/01/rdf-schema#label> "General disorders and administration site conditions" .
+<http://purl.bioontology.org/ontology/MEDDRA/10018072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10018072> <http://www.w3.org/2000/01/rdf-schema#label> "General signs and symptoms NEC" .
+<http://purl.bioontology.org/ontology/MEDDRA/10018072> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10018073> .
+<http://purl.bioontology.org/ontology/MEDDRA/10018073> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10018073> <http://www.w3.org/2000/01/rdf-schema#label> "General system disorders NEC" .
+<http://purl.bioontology.org/ontology/MEDDRA/10018073> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10018065> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022114> <http://www.w3.org/2000/01/rdf-schema#label> "Injuries NEC" .
+<http://purl.bioontology.org/ontology/MEDDRA/10022114> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10022117> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022116> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MEDDRA" .
+<http://purl.bioontology.org/ontology/MEDDRA/10022116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022116> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.bioontology.org/ontology/MEDDRA/10022116> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10029511> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10022117> <http://www.w3.org/2000/01/rdf-schema#label> "Injury, poisoning and procedural complications" .
+<http://purl.bioontology.org/ontology/MEDDRA/10029511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10029511> <http://www.w3.org/2000/01/rdf-schema#label> "Non-site specific injuries NEC" .
+<http://purl.bioontology.org/ontology/MEDDRA/10029511> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10022114> .
+<http://purl.bioontology.org/ontology/MEDDRA/10080284> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MEDDRA" .
+<http://purl.bioontology.org/ontology/MEDDRA/10080284> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MEDDRA/10080284> <http://www.w3.org/2000/01/rdf-schema#label> "Illness" .
+<http://purl.bioontology.org/ontology/MEDDRA/10080284> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MEDDRA/10018072> .

@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-rb> a owl:Ontology ;
+    dcterms:source "BioPortal API:RB" ;
+    owl:versionInfo "BioPortal: version=1.0, released=2016-01-15T00:00:00.000+00:00, creationDate=2016-01-15T18:29:16.000-08:00, submissionId=5" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://regenbase.org/ontology#RB_0000287> <http://purl.obolibrary.org/obo/IAO_0000115> "The process of causing damage to an entity or tissue." .
+<http://regenbase.org/ontology#RB_0000287> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: RB" .
+<http://regenbase.org/ontology#RB_0000287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://regenbase.org/ontology#RB_0000287> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://regenbase.org/ontology#RB_0000287> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://regenbase.org/ontology#RB_0008000> .
+<http://regenbase.org/ontology#RB_0000483> <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of some entity." .
+<http://regenbase.org/ontology#RB_0000483> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://regenbase.org/ontology#RB_0000483> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<http://regenbase.org/ontology#RB_0000484> <http://purl.obolibrary.org/obo/IAO_0000115> "An attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary." .
+<http://regenbase.org/ontology#RB_0000484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://regenbase.org/ontology#RB_0000484> <http://www.w3.org/2000/01/rdf-schema#label> "quality" .
+<http://regenbase.org/ontology#RB_0000484> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://regenbase.org/ontology#RB_0000483> .
+<http://regenbase.org/ontology#RB_0008000> <http://purl.obolibrary.org/obo/IAO_0000115> "An entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists." .
+<http://regenbase.org/ontology#RB_0008000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://regenbase.org/ontology#RB_0008000> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://regenbase.org/ontology#RB_0008003> <http://purl.obolibrary.org/obo/IAO_0000115> "The state of something with regard to its appearance, quality, or working order." .
+<http://regenbase.org/ontology#RB_0008003> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: RB" .
+<http://regenbase.org/ontology#RB_0008003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://regenbase.org/ontology#RB_0008003> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://regenbase.org/ontology#RB_0008003> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://regenbase.org/ontology#RB_0000484> .

@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/epso> a owl:Ontology ;
+    dcterms:source "BioPortal:EPSO (epso_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=3.1, released=2025-05-29T00:00:00.000+00:00, creationDate=2025-05-29T00:00:00.000+00:00, submissionId=8" ;
+    dcterms:created "2026-08-06T18:38:01-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.case.edu/EpilepsyOntology.owl#Disease> <http://purl.org/dc/terms/source> "review target in EPSO from disease_terms_review_enriched.csv" .
+<http://www.case.edu/EpilepsyOntology.owl#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.case.edu/EpilepsyOntology.owl#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disorder" .
+<http://www.case.edu/EpilepsyOntology.owl#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#DependentContinuant> .
+<http://www.ifomis.org/bfo/1.1#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "Dependent Continuant" .

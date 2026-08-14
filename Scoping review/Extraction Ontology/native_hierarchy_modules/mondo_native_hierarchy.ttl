@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mondo> a owl:Ontology ;
+    dcterms:source "BioPortal API:MONDO" ;
+    owl:versionInfo "BioPortal: version=3.91.0, released=2026-06-15T18:03:13.000-07:00, creationDate=2026-06-15T00:00:00.000+00:00, submissionId=289; BioPortal: version=2026-05-15, released=2026-05-15T18:08:18.000-07:00, creationDate=2026-05-15T00:00:00.000+00:00, submissionId=28; BioPortal: version=2026-06-02, released=2026-06-02T18:10:26.000-07:00, creationDate=2026-06-02T00:00:00.000+00:00, submissionId=81; BioPortal: version=releases/2023-03-01, released=2023-12-13T00:00:00.000+00:00, creationDate=2023-12-13T13:53:58.000-08:00, submissionId=2; BioPortal: version=2026-04-13, released=2026-04-13T18:05:37.000-07:00, creationDate=2026-04-13T00:00:00.000+00:00, submissionId=3; BioPortal: version=1.2.0, released=2026-04-21T00:00:00.000+00:00, creationDate=2026-04-21T00:00:00.000+00:00, submissionId=5; BioPortal: released=2025-06-04T00:00:00.000+00:00, creationDate=2025-06-04T00:00:00.000+00:00, submissionId=6; BioPortal: version=release version - 2025-01-24, released=2025-09-09T09:23:43.000-07:00, creationDate=2025-09-09T00:00:00.000+00:00, submissionId=14; OLS: version=2024-05-21, versionIri=https://w3id.org/cpont/ontology/releases/2024-05-21/cpont.owl, title=Critical Path Ontology, namespace=cpont; OLS: versionIri=http://purl.obolibrary.org/obo/pride/releases/2026-06-01/pride.owl, title=Proteomics Identification Database Ontology, namespace=pride; BioPortal: version=Vision Release: 1.0.121, released=2024-03-16T18:07:22.000-07:00, creationDate=2024-03-16T18:07:33.000-07:00, submissionId=20; BioPortal: version=2026-02-28, released=2026-02-28T18:06:17.000-08:00, creationDate=2026-02-28T00:00:00.000+00:00, submissionId=19; BioPortal: released=2021-02-23T18:04:53.000-08:00, creationDate=2021-02-23T18:04:56.000-08:00, submissionId=8; BioPortal: version=1.0.1, released=2025-11-05T00:00:00.000+00:00, creationDate=2025-11-05T00:00:00.000+00:00, submissionId=2; BioPortal: released=2021-01-20T18:04:24.000-08:00, creationDate=2021-01-20T18:04:25.000-08:00, submissionId=11; BioPortal: version=3.91.0, released=2026-06-15T18:03:13.000-07:00, creationDate=2026-06-15T00:00:00.000+00:00, submissionId=289; BioPortal: version=2026-06-02, released=2026-06-02T18:10:26.000-07:00, creationDate=2026-06-02T00:00:00.000+00:00, submissionId=81; BioPortal: version=releases/2023-03-01, released=2023-12-13T00:00:00.000+00:00, creationDate=2023-12-13T13:53:58.000-08:00, submissionId=2; BioPortal: version=Vision Release: 1.0.121, released=2024-03-16T18:07:22.000-07:00, creationDate=2024-03-16T18:07:33.000-07:00, submissionId=20; BioPortal: version=2026-04-13, released=2026-04-13T18:05:37.000-07:00, creationDate=2026-04-13T00:00:00.000+00:00, submissionId=3; BioPortal: released=2021-01-20T18:04:24.000-08:00, creationDate=2021-01-20T18:04:25.000-08:00, submissionId=11; OLS: version=2024-05-21, versionIri=https://w3id.org/cpont/ontology/releases/2024-05-21/cpont.owl, title=Critical Path Ontology, namespace=cpont; OLS: versionIri=http://purl.obolibrary.org/obo/pride/releases/2026-06-01/pride.owl, title=Proteomics Identification Database Ontology, namespace=pride" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MONDO" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://purl.obolibrary.org/obo/MONDO_0000001> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MONDO" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://purl.obolibrary.org/obo/MONDO_0021178> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .

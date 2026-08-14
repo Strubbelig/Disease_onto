@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-icpc2p> a owl:Ontology ;
+    dcterms:source "BioPortal API:ICPC2P" ;
+    owl:versionInfo "BioPortal: version=ICPC2P_2005, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:00:11.000-07:00, submissionId=24" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/ICPC2P/A80003> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ICPC2P" .
+<http://purl.bioontology.org/ontology/ICPC2P/A80003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/ICPC2P/A80003> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://purl.bioontology.org/ontology/ICPC2P/A80003> <http://www.w3.org/2004/02/skos/core#altLabel> "Injury" .
+<http://purl.bioontology.org/ontology/ICPC2P/A99001> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ICPC2P" .
+<http://purl.bioontology.org/ontology/ICPC2P/A99001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/ICPC2P/A99001> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://purl.bioontology.org/ontology/ICPC2P/A99001> <http://www.w3.org/2004/02/skos/core#altLabel> "Disease" .

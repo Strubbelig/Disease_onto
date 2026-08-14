@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/hio> a owl:Ontology ;
+    dcterms:source "BioPortal API:HIO" ;
+    owl:versionInfo "BioPortal: version=1, released=2019-10-31T18:10:08.000-07:00, creationDate=2019-10-31T18:10:10.000-07:00, submissionId=3" ;
+    dcterms:created "2026-08-06T18:33:17-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/HIO_0000001> <http://purl.obolibrary.org/obo/IAO_0000115> "The root of all terms in the Hearing Impairment Ontology, an effort to unambiguously describe all concepts and unifying up-to-date knowledge in hearing impairment." .
+<http://purl.obolibrary.org/obo/HIO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HIO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> "HIO" .
+<http://purl.obolibrary.org/obo/HIO_0000077> <http://purl.obolibrary.org/obo/IAO_0000115> "An agent, event, condition or characteristic which plays an essential role in producing an occurrence of disease." .
+<http://purl.obolibrary.org/obo/HIO_0000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HIO_0000077> <http://www.w3.org/2000/01/rdf-schema#label> "Disease Cause" .
+<http://purl.obolibrary.org/obo/HIO_0000077> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/HIO_0000079> .
+<http://purl.obolibrary.org/obo/HIO_0000079> <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of a disease." .
+<http://purl.obolibrary.org/obo/HIO_0000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HIO_0000079> <http://www.w3.org/2000/01/rdf-schema#label> "Disease Attribute" .
+<http://purl.obolibrary.org/obo/HIO_0000079> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/HIO_0000001> .
+<http://purl.obolibrary.org/obo/HIO_0000082> <http://purl.obolibrary.org/obo/IAO_0000115> "A cause of disease that is (at least initially) external to the organism. This includes exposure to a toxic or infectious agent, physical factors in the environment, or an event that causes injury." .
+<http://purl.obolibrary.org/obo/HIO_0000082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HIO_0000082> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Disease Cause" .
+<http://purl.obolibrary.org/obo/HIO_0000082> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/HIO_0000077> .
+<http://purl.obolibrary.org/obo/HIO_0000093> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity." .
+<http://purl.obolibrary.org/obo/HIO_0000093> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: HIO" .
+<http://purl.obolibrary.org/obo/HIO_0000093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HIO_0000093> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.obolibrary.org/obo/HIO_0000093> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/HIO_0000082> .

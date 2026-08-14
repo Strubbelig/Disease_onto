@@ -16,6 +16,7 @@
 <http://www.projecthalo.com/aura#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#State> .
 <http://www.projecthalo.com/aura#Disease> <http://purl.org/dc/terms/source> "review target in AURA from disease_terms_review_enriched.csv" .
 <http://www.projecthalo.com/aura#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.projecthalo.com/aura#Disease> iao:0000115 "An abnormal condition that causes improper function in the body of an organism." .
 <http://www.projecthalo.com/aura#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
 <http://www.projecthalo.com/aura#Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.projecthalo.com/aura#Intangible-Entity> .
 <http://www.projecthalo.com/aura#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

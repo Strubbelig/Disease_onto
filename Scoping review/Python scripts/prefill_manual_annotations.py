@@ -1,16 +1,9 @@
-"""prefill_manual_annotations.py
+"""Deterministic prefill rules for the disease review master CSV.
 
-Generates pre-filled rows in disease_terms_manual_annotations.csv from the
-machine-generated disease_terms_review_enriched.csv using deterministic rules.
-Human fields (reviewer, review_date, entity_quality_score, quality_decision,
-disease_model_category where ambiguous, and all second-reviewer fields) are
-left blank — they require human judgement.
-
-Run from the Scoping review directory:
-    python prefill_manual_annotations.py
-
-To merge onto an existing manual annotations file instead of overwriting,
-set MERGE = True below. Existing non-blank values are never overwritten.
+The rules are imported by ``review_extraction_pipeline.py``. Direct execution
+updates ``disease_terms_review_enriched.csv`` in place while preserving every
+existing non-blank human decision and every extraction/citation column. No
+separate manual-annotation table is created.
 """
 from __future__ import annotations
 
@@ -23,10 +16,9 @@ from pathlib import Path
 # Config
 # ---------------------------------------------------------------------------
 
-SCOPING_DIR  = Path(__file__).resolve().parent
-ENRICHED_CSV = SCOPING_DIR / "disease_terms_review_enriched.csv"
-MANUAL_CSV   = SCOPING_DIR / "disease_terms_manual_annotations.csv"
-MERGE        = True   # False = overwrite, True = preserve existing non-blank values
+SCRIPT_DIR = Path(__file__).resolve().parent
+TABLE_DIR = SCRIPT_DIR.parent / "Extraction Tables"
+MASTER_CSV = TABLE_DIR / "disease_terms_review_enriched.csv"
 
 FIELDNAMES = [
     "class_iri", "term", "preferred_label", "source_ontology_ids",
@@ -115,6 +107,22 @@ CONTINUANT_MODEL_CATEGORIES = {
 }
 OCCURRENT_MODEL_CATEGORIES = {
     "entity_as_process",
+}
+BIOLOGICAL_STATE_MODEL_CATEGORIES = {
+    "entity_as_bfo:disposition",
+    "entity_as_disposition_non_bfo",
+    "entity_as_realizable_entity",
+    "entity_as_dependent_continuant",
+    "entity_as_sio:quality",
+    "entity_as_process",
+    "entity_as_biotop:condition",
+    "entity_as_domain_specific_abnormal_pattern",
+    "entity_as_pathology",
+    "entity_as_disorder",
+}
+NOSOLOGICAL_NO_GROUNDED_SUBTYPES = {
+    "finding_or_phenotype_route",
+    "information_model_wrapper",
 }
 # Raw BFO IRI fragments, used as a fallback when a class carries a BFO parent
 # but no model-category mapping fired.
@@ -625,11 +633,18 @@ def rule_no_grounded_subtype(row: dict, disease_model_category: str) -> str:
     """
     if (disease_model_category or "").strip() != "no_grounded_model":
         return ""
-    parents = row.get("parent_labels", "").lower()
+    parents = " ".join([
+        row.get("parent_labels", ""),
+        row.get("parent_iris", ""),
+    ]).lower()
     defn = row.get("definition", "").lower()
     comment = row.get("review_comment", "").lower()
     blob = " ".join((parents, defn, comment))
 
+    hierarchy_finding_signals = (
+        "phenotype", "phenomenon", "phenomena", "phenome",
+        "finding", "observation",
+    )
     finding_signals = (
         "clinical finding", "finding", "phenotyp", "observation",
         "sign/symptom", "sign or symptom", "sign, symptom", "symptom",
@@ -646,7 +661,10 @@ def rule_no_grounded_subtype(row: dict, disease_model_category: str) -> str:
         "protein annotation", "single use", "application", "outcome of the exposure",
     )
 
-    # Application-scoped narrowness is the most specific claim -> check first.
+    if any(s in parents for s in hierarchy_finding_signals):
+        return "finding_or_phenotype_route"
+
+    # Application-scoped narrowness is otherwise the most specific claim.
     if any(s in blob for s in narrow_signals):
         return "application_scoped_narrow"
     if any(s in blob for s in finding_signals):
@@ -663,7 +681,7 @@ def rule_pathological_grounding(row: dict) -> str:
     definition gives no usable signal (or is not in English / mixed).
 
     UI vocabulary: statistical | evolutionary_function | normative |
-    primitive_criteria | reference_class_indexed | undefined | not_applicable.
+    primitive_criteria | undefined | not_applicable.
     """
     d = (row.get("definition", "") or "").lower()
     if not d.strip():
@@ -671,8 +689,6 @@ def rule_pathological_grounding(row: dict) -> str:
     if not any(ch.isalpha() and ord(ch) < 128 for ch in d):
         return ""                                   # non-latin / needs language review
 
-    reference = any(w in d for w in ["reference class", "relative to age", "age and sex",
-                                     "age/sex", "sex-specific", "for the age", "peer group"])
     harm = any(w in d for w in ["discomfort", "distress", "suffering", "detrimental",
                                 "harm", "disvalue", "impair", "burden", "well-being",
                                 "wellbeing", "quality of life", "damage", "injur"])
@@ -689,8 +705,6 @@ def rule_pathological_grounding(row: dict) -> str:
                                      "characteristic set of signs", "signs and symptoms",
                                      "clinicopatholog"])
 
-    if reference:
-        return "reference_class_indexed"
     if (dysf and harm) or evol:
         return "evolutionary_function"             # Wakefield/Schwartz harmful dysfunction
     if stat and not harm:
@@ -704,6 +718,53 @@ def rule_pathological_grounding(row: dict) -> str:
     if dysf or harm or stat or primitive:
         return ""                                   # mixed cues -> human call
     return "undefined"                             # has a definition but grounds nothing
+
+
+def rule_reality_vs_classification(
+    row: dict,
+    disease_model_category: str,
+    no_grounded_model_subtype: str,
+) -> str:
+    """Coupled decision #4 — what 'disease' denotes.
+
+    Strong reality-side model categories are prefilled as biological_state.
+    Mixed/unclear models get their direct buckets. For no_grounded_model we only
+    prefill nosological_category where the subtype shows a classification,
+    finding/phenotype, or information-wrapper route; no_grounded_model does not
+    universally imply nosology.
+    """
+    dmc = (disease_model_category or "").strip()
+    subtype = (no_grounded_model_subtype or "").strip()
+    if dmc in BIOLOGICAL_STATE_MODEL_CATEGORIES:
+        return "biological_state"
+    if dmc == "mixed_model":
+        return "conflated"
+    if dmc == "unclear_model":
+        return "unclear"
+    if dmc == "no_grounded_model" and subtype in NOSOLOGICAL_NO_GROUNDED_SUBTYPES:
+        return "nosological_category"
+
+    text = _text(
+        row.get("preferred_label", ""),
+        row.get("definition", ""),
+        row.get("parent_labels", ""),
+        row.get("ontology_title", ""),
+        row.get("ontology_description", ""),
+    )
+    if dmc == "no_grounded_model" and any(
+        signal in text
+        for signal in (
+            "classification", "taxonomy", "terminology", "controlled vocabulary",
+            "diagnosis code", "diagnostic category", "disease category",
+            "disease classification", "nosology", "nosological",
+        )
+    ):
+        return "nosological_category"
+    if any(signal in text for signal in ("patient stratification", "precision medicine", "personalized medicine")):
+        return "precision_medicine_stratification"
+    if any(signal in text for signal in ("burden of illness", "patient experience", "quality of life", "suffering")):
+        return "illness_role"
+    return ""
 
 
 # ---------------------------------------------------------------------------
@@ -732,6 +793,25 @@ def prefill_row(enriched: dict) -> dict:
     row["no_grounded_model_subtype"]  = rule_no_grounded_subtype(enriched, row["disease_model_category"])
     row["ontological_category"]       = rule_ontological_category(enriched, row["disease_model_category"])
     row["pathological_grounding"]     = rule_pathological_grounding(enriched)
+    row["reality_vs_classification"]  = rule_reality_vs_classification(
+        enriched,
+        row["disease_model_category"],
+        row["no_grounded_model_subtype"],
+    )
+    if (
+        row["definition_quality"] == "absent"
+        and row["comment_quality"] == "absent"
+        and row["parentage_quality"] in {"poor", "absent"}
+    ):
+        row["pathological_grounding"] = "undefined"
+    if (
+        row["definition_quality"] == "absent"
+        and row["comment_quality"] == "absent"
+        and row["parentage_quality"] == "absent"
+    ):
+        row["ontological_category"] = "no_continuant_occurrent_commitment"
+        row["crisp_vs_graded"] = "silent"
+        row["reality_vs_classification"] = "unclear"
     return row
 
 
@@ -781,34 +861,39 @@ def normalise_manual_row(row: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    existing_rows = load_existing(MANUAL_CSV) if MERGE else {}
-
-    with ENRICHED_CSV.open(newline="", encoding="utf-8") as f:
-        enriched_rows = list(csv.DictReader(f))
+    with MASTER_CSV.open(newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        enriched_rows = list(reader)
+        fieldnames = list(reader.fieldnames or [])
 
     register_ontology_disease_context(enriched_rows)
 
     output_rows = []
-    n_prefilled = n_merged = 0
+    n_prefilled = n_preserved = 0
 
     for enriched in enriched_rows:
-        iri = enriched.get("class_iri", "")
         prefilled = prefill_row(enriched)
-        if iri in existing_rows and MERGE:
-            row = merge_rows(existing_rows[iri], prefilled)
-            n_merged += 1
-        else:
-            row = prefilled
-            n_prefilled += 1
-        output_rows.append(normalise_manual_row(row))
+        manual = normalise_manual_row(merge_rows(enriched, prefilled))
+        row = dict(enriched)
+        for field in FIELDNAMES:
+            previous = enriched.get(field, "")
+            row[field] = manual.get(field, "")
+            if previous.strip():
+                n_preserved += 1
+            elif row[field].strip():
+                n_prefilled += 1
+        output_rows.append(row)
 
-    with MANUAL_CSV.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction="ignore")
+    output_fieldnames = list(dict.fromkeys(fieldnames + FIELDNAMES))
+    temporary = MASTER_CSV.with_suffix(MASTER_CSV.suffix + ".tmp")
+    with temporary.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=output_fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(output_rows)
+    temporary.replace(MASTER_CSV)
 
-    print(f"Wrote {len(output_rows)} rows to {MANUAL_CSV}")
-    print(f"  prefilled fresh: {n_prefilled}, merged over existing: {n_merged}")
+    print(f"Updated {len(output_rows)} rows in {MASTER_CSV}")
+    print(f"  blank manual cells prefilled: {n_prefilled}; existing values preserved: {n_preserved}")
 
     from collections import Counter
     report_fields = [

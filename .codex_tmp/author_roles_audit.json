@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-10T19:46:02-04:00",
+  "master_csv": "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Disease ontologies/Scoping review/Extraction Tables/disease_terms_review_enriched.csv",
+  "master_sha256": "183cae5336d7e89940d1efe495969027bfe55fdb70a64a50f68f6900d7bbb59d",
+  "row_count": 276,
+  "unique_class_iris": 276,
+  "effective_synthesis_status_counts": {
+    "include": 145,
+    "exclude": 131
+  },
+  "evidence_status_counts": {
+    "fallback_with_evidence": 13,
+    "native_module": 257,
+    "insufficient_metadata": 6
+  },
+  "ambiguity_count": 0,
+  "ambiguities": [],
+  "citation_unreviewed": [],
+  "approved_citations_incomplete": [],
+  "target_module_mismatches": [],
+  "cross_module_duplicate_edges": [],
+  "ttl_checks": {
+    "disease_terms_review.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "4038d48ae553ebbeb95f949e0d6d7f24a04ca1786c6944ed7b1632484fabcdb2"
+    },
+    "disease_terms_synthesis.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "c9421f18272e85d9f95f7fd1e3658f166829aeb3f738deb2adb45b68530182fd"
+    },
+    "review_core.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "d174f983aefea8ce94e2c0c9da55ab7680b7bc540379b28ac5bb5de49feb6f34"
+    }
+  },
+  "external_human_tasks": [
+    "When the OSF registration embargo is lifted, insert its public DOI, URL, and registration date in the manuscript.",
+    "Complete and reconcile the prespecified 50-class independent stratified validation sample.",
+    "Confirm both authors' competing interests and the institutional route for article-processing-charge coverage.",
+    "Reconcile the draft reference inventory in Zotero and export it in the selected journal's style."
+  ]
+}

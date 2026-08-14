@@ -17,6 +17,9 @@
                                                      dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                      dcterms:modified "2026-07-06"^^xsd:date ;
                                                      dcterms:title "Mid Layer Disease Ontology"@en ;
+                                                     rdfs:comment "MODEL COMMITMENT (1 of 3) - disease category. MILD models disease as a material continuant (MILD_120020) individuated by the continuity of its disorder lineage, not as a disposition. This is a deliberate departure from the OGMS pattern; see the editor note on MILD_120020 for the argument and the relatedMatch to OGMS_0000031."@en ,
+                                                                  "MODEL COMMITMENT (2 of 3) - pathologicity is a declared primitive. What makes a disorder pathological is ASSERTED by criteria, never inferred. MILD adopts Hucklenbroich's criteria - threat to life, pain and suffering, loss of ability, loss of fertility - and does not reduce pathologicity to statistical rarity (Boorse) or to social disvalue (normativism). Species-comparative abnormality alone is explicitly not sufficient, because rare variation is not thereby pathological. Following Scheuermann et al., this term is left primitive on purpose rather than defined away, and the choice is recorded here rather than hidden. See MILD_120022."@en ,
+                                                                  "MODEL COMMITMENT (3 of 3) - crispness is a representational convenience, not a metaphysical claim. MILD classes have crisp OWL extensions because OWL DL provides no graded membership. This must not be read as a commitment to sharp natural boundaries; Sadegh-Zadeh's argument that health and disease are graded is accepted. Gradedness is represented, but in the data layer rather than in class membership: MILD_120005 tendency carries partial and probabilistic realization, and MILD_120029 to MILD_120031 carry threshold specifications, threshold values and threshold crossing events. A borderline case is therefore modelled as a measured value near a stated threshold, never as partial membership in a disease class."@en ;
                                                      vann:preferredNamespacePrefix "MILD" ;
                                                      vann:preferredNamespaceUri "https://bioportal.bioontology.org/ontologies/MILD/" ;
                                                      owl:imports <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
@@ -30,8 +33,7 @@
                                                                  <http://purl.obolibrary.org/obo/wond/modules/ogms_module.owl> ,
                                                                  <http://purl.obolibrary.org/obo/wond/modules/pato_module.owl> ,
                                                                  <http://purl.obolibrary.org/obo/wond/modules/uo_module.owl> ,
-                                                                 <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> ,
-                                                                 <https://bioportal.bioontology.org/ontologies/WONT> .
+                                                                 <http://purl.obolibrary.org/obo/wond/modules/upheno_module.owl> .
 
 #################################################################
 #    Annotation properties
@@ -39,6 +41,18 @@
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
 <http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#relatedMatch
+<http://www.w3.org/2004/02/skos/core#relatedMatch> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
@@ -356,7 +370,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                   owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021>
                                                                                 ] ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A disease whose disorders had to develop."@en ;
-                                                                rdfs:label "Developed material disease entity"@en .
+                                                                rdfs:label "Developed material disease entity"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease whose disorders had to develop."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120005
@@ -368,7 +383,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                 ] ;
                                                                 rdfs:comment "A tendency is distinguished from a disposition not by its bearer or by requiring a material basis — both inhere in a material entity and supervene on its physical makeup — but by its mode of realization: a disposition, once its trigger conditions obtain, is realized; a tendency only probabilistically and partially inclines toward realization and can be opposed by competing tendencies. It is therefore modelled as a sibling of disposition, function, and role under realizable entity, not as a subtype of disposition."@en ;
                                                                 rdfs:label "tendency"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity that inheres in a material entity and that, in virtue of the physical makeup of its bearer, inclines that bearer toward participating in processes of a certain type — such that the inclination raises the objective probability of, but does not necessitate, the occurrence of those processes; that may be counteracted or reinforced by other tendencies of the same bearer without thereby ceasing to exist; and that may be realized to varying degrees, or not at all."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120007
@@ -466,7 +482,10 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                 owl:disjointWith <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
                                                                 rdfs:comment "A named disease expression may be used for a material disease entity only when it denotes an individual pathological organization in a patient, not merely a diagnostic category, criterion set, behaviour, or social/legal classification. For example, a material substance use disorder case would require a stable pathological neuropsychological organization grounding impaired control and disease course processes; the substance itself and isolated use events are not material disease entities."@en ;
-                                                                rdfs:label "material disease entity"@en .
+                                                                rdfs:label "material disease entity"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity that has one or more pathological disorders as parts; which disorders compose one disease is fixed by the diagnostic classification assigned to them, not by an intrinsic unity criterion. Identity is grounded in the continuity of the disorder lineage, not in momentary material composition (cf. a river persisting through complete material replacement)."@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000116> "DESIGN RATIONALE - deliberate departure from OGMS. OGMS models disease (OGMS_0000031) as a disposition borne by an organism. MILD does not. Here a disease is a material continuant whose identity is given by the continuity of its disorder lineage, not by a single dispositional potential. Two reasons. (1) Roehl and Jansen show that a disposition-only account breaks on malfunction, because the very disposition said to constitute the disease is the one the bearer has lost. (2) The River Flow Model shows that disease identity persists through complete material replacement, which a single disposition cannot express. MILD keeps what OGMS was built to protect - presymptomatic disease, and the separation of disease from diagnosis and from manifestation - via MILD_120022 pathological disorder under OGMS_0000045 disorder, and via the diagnosis and classification layers. OGMS_0000031 is therefore related but NOT equivalent, and is deliberately not asserted as a parent of this class."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/OGMS_0000031> .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120021
@@ -500,7 +519,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                 rdfs:comment "ExO_0000079 is reused as a comparison anchor rather than as the MILD disease definition: pathological disorder may involve abnormal functioning, abnormal localization of normal functioning, or abnormal localization/organization of constituents relative to relevant members of the same species. Species-comparative abnormality is not sufficient by itself, because rare variation is not automatically pathological."@en ,
                                                                              "A pathological disorder should not be identified with a merely voluntary, transient, and immediately reversible functional deviation. In substance use disorder cases, the candidate pathological disorder is the relatively stable neurobiological or neuropsychological organization that grounds impaired control, craving, tolerance, withdrawal tendency, or harmful recurrence, not a single act of substance use."@en ;
                                                                 rdfs:label "pathological disorder"@en ;
-                                                                <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120023
@@ -523,7 +543,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                 ] ;
                                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en ;
-                                                                rdfs:label "disease predisposition"@en .
+                                                                rdfs:label "disease predisposition"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120024
@@ -539,7 +560,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                 ] ;
                                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "diagnosis"@en ;
                                                                 <http://purl.org/dc/elements/1.1/description> "An information content entity that classifies or groups one or more pathological disorders according to diagnostic criteria. Names such as 'substance use disorder' can denote this diagnostic layer when used as DSM/ICD-style categories or results; this diagnostic use is distinct from any material disease entity in the patient."@en ;
-                                                                rdfs:label "disease diagnostic result"@en .
+                                                                rdfs:label "disease diagnostic result"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity that classifies or groups one or more pathological disorders according to diagnostic criteria. Names such as 'substance use disorder' can denote this diagnostic layer when used as DSM/ICD-style categories or results; this diagnostic use is distinct from any material disease entity in the patient."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120025
@@ -823,7 +845,8 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                                                                                                      ]
                                                                                 ] ;
                                                                 <http://purl.org/dc/elements/1.1/description> "This entity models a process in disease A's course that produces a disorder which becomes part of disease B — the complication. The disorder as output is not the disorder of the producing disease but a newly instantiated structural abnormality that grounds a secondary disease."@en ;
-                                                                rdfs:label "disease course process putting out disorders as part of a complication"@en .
+                                                                rdfs:label "disease course process putting out disorders as part of a complication"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "This entity models a process in disease A's course that produces a disorder which becomes part of disease B — the complication. The disorder as output is not the disorder of the producing disease but a newly instantiated structural abnormality that grounds a secondary disease."@en .
 
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120054
@@ -904,7 +927,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_9606>
                                                                                                                             [ rdf:type owl:Restriction ;
                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/WONT/WONT_0000090>
+                                                                                                                              owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120093>
                                                                                                                             ]
                                                                                                                           ) ;
                                                                                                        rdf:type owl:Class
@@ -927,7 +950,16 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120092> rdf:type owl:Class ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A disease process that has as participant a disease that has as part a disorder which is the output of another disease course process."@en ;
-                                                                rdfs:label "complication disease process"@en .
+                                                                rdfs:label "complication disease process"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease process that has as participant a disease that has as part a disorder which is the output of another disease course process."@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120093
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120093> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OMRSE_00000012> ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A healthcare provider role that inheres in a person in virtue of that person being licensed to practise medicine."@en ;
+                                                                rdfs:comment "Relocated from WONT_0000090 when the MILD/WONT import direction was reversed: a physician role is not wound-specific, is not used by any WONT class, and its only consumer is the MILD treatment-plan axiom. Reuse an OMRSE physician-role class here if an OMRSE module is later added."@en ;
+                                                                rdfs:label "Physician role"@en .
 
 
 #################################################################
@@ -948,6 +980,63 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
                 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120043>
                 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120044>
               )
+] .
+
+
+
+
+###  Tier 1 - BFO backbone. Makes cross-category errors detectable by a reasoner.
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.obolibrary.org/obo/BFO_0000002>
+                <http://purl.obolibrary.org/obo/BFO_0000003>
+                )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                <http://purl.obolibrary.org/obo/BFO_0000020>
+                <http://purl.obolibrary.org/obo/BFO_0000031>
+                )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.obolibrary.org/obo/BFO_0000019>
+                <http://purl.obolibrary.org/obo/BFO_0000017>
+                )
+] .
+
+
+###  Disposition, role and tendency are pairwise disjoint realizables. This encodes MILD's
+###  commitment (see MILD_120005) that a tendency is a SIBLING of disposition, not a subtype.
+###  NOTE: function is deliberately NOT in this set. Roehl & Jansen argue function and
+###  disposition should be disjoint, but BFO 2020 asserts BFO_0000034 function rdfs:subClassOf
+###  BFO_0000016 disposition. Adding function here makes the imported BFO inconsistent.
+###  Overriding BFO on this point is a separate, deliberate decision - not yet taken.
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.obolibrary.org/obo/BFO_0000016>
+                <http://purl.obolibrary.org/obo/BFO_0000023>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120005>
+                )
+] .
+
+
+###  Tier 2 - separates biological reality from nosological classification.
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024>
+                )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020>
+                <https://bioportal.bioontology.org/ontologies/MILD/MILD_120054>
+                )
 ] .
 
 

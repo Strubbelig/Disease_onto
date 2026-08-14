@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-cpro> a owl:Ontology ;
+    dcterms:source "BioPortal:CPRO (cpro_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=Last modification: July 31th, 2011 Chimezie Ogbuji, released=2013-04-24T00:00:00.000-07:00, creationDate=2013-04-24T17:36:12.000-07:00, submissionId=3; BioPortal: version=Last modification: Feb. 11, 2013 Sivaram Arabandi, released=2015-06-23T00:00:00.000+00:00, creationDate=2015-06-23T17:11:29.000-07:00, submissionId=4; BioPortal: version=Last modification: Feb. 11, 2013 Sivaram Arabandi, released=2015-06-23T00:00:00.000+00:00, creationDate=2015-06-23T17:11:29.000-07:00, submissionId=4; BioPortal: version=Last modification: July 31th, 2011 Chimezie Ogbuji, released=2013-04-24T00:00:00.000-07:00, creationDate=2013-04-24T17:36:12.000-07:00, submissionId=3" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.org/cpr/biological-process> <http://purl.obolibrary.org/obo/IAO_0000115> "Those processes which either take place within the human organism or\n            are processes of causal interaction in which the human organism is involved." .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/2000/01/rdf-schema#label> "Biological process" .
+<http://purl.org/cpr/biological-process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> .
+<http://purl.org/cpr/idiopathic-disease> <http://purl.obolibrary.org/obo/IAO_0000115> ".. relating to or denoting any disease or condition that arises spontaneously or for which the cause is unknown" .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/2000/01/rdf-schema#label> "idiopathic disease" .
+<http://purl.org/cpr/idiopathic-disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/pathological-disposition> .
+<http://purl.org/cpr/pathological-disposition> <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition (i) to undergo pathological processes that (ii) exists in an organism\n            caused by one or more etiologic agents (iii) typically involving an identifiable group of signs and symptoms\n            and (iv) consistent physiological or anatomical alterations" .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological disposition (disease)" .
+<http://purl.org/cpr/pathological-disposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Disposition> .
+<http://purl.org/cpr/pathological-process> <http://purl.org/dc/terms/source> "review target in CPRO from disease_terms_review_enriched.csv" .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological process" .
+<http://purl.org/cpr/pathological-process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/biological-process> .
+<http://purl.org/cpr/syndrome> <http://purl.org/dc/terms/source> "review target in CPRO from disease_terms_review_enriched.csv" .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://purl.org/cpr/syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cpr/idiopathic-disease> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.w3.org/2000/01/rdf-schema#label> "processual_entity" .

@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-ontopneumo> a owl:Ontology ;
+    dcterms:source "BioPortal API:ONTOPNEUMO" ;
+    owl:versionInfo "BioPortal: version=0.1, released=2011-05-11T00:00:00.000+00:00, creationDate=2012-12-04T03:09:05.000-08:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://doe-generated-ontology.com/OntoPneumo#Entitee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#Entitee> <http://www.w3.org/2000/01/rdf-schema#label> "entitée" .
+<http://doe-generated-ontology.com/OntoPneumo#Etat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#Etat> <http://www.w3.org/2000/01/rdf-schema#label> "état" .
+<http://doe-generated-ontology.com/OntoPneumo#Etat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#ObjetIntentionnel> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatDeSante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatDeSante> <http://www.w3.org/2000/01/rdf-schema#label> "état de sante" .
+<http://doe-generated-ontology.com/OntoPneumo#EtatDeSante> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#EtatPhysique> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatInterne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatInterne> <http://www.w3.org/2000/01/rdf-schema#label> "état interne" .
+<http://doe-generated-ontology.com/OntoPneumo#EtatInterne> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#EtatPhysique> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPathologique> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ONTOPNEUMO" .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPathologique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPathologique> <http://www.w3.org/2000/01/rdf-schema#label> "état pathologique" .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPathologique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#EtatInterne> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPhysique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPhysique> <http://www.w3.org/2000/01/rdf-schema#label> "EtatPhysique" .
+<http://doe-generated-ontology.com/OntoPneumo#EtatPhysique> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#Etat> .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetAbstrait> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetAbstrait> <http://www.w3.org/2000/01/rdf-schema#label> "objet abstrait" .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetAbstrait> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#Entitee> .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetIntentionnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetIntentionnel> <http://www.w3.org/2000/01/rdf-schema#label> "objet intentionnel" .
+<http://doe-generated-ontology.com/OntoPneumo#ObjetIntentionnel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#ObjetAbstrait> .
+<http://doe-generated-ontology.com/OntoPneumo#Syndrome> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ONTOPNEUMO" .
+<http://doe-generated-ontology.com/OntoPneumo#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://doe-generated-ontology.com/OntoPneumo#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://doe-generated-ontology.com/OntoPneumo#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://doe-generated-ontology.com/OntoPneumo#EtatDeSante> .

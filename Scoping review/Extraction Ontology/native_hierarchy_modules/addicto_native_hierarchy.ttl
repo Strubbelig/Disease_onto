@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-addicto> a owl:Ontology ;
+    dcterms:source "master_csv_fallback" ;
+    owl:versionInfo "OLS: versionIri=http://addictovocab.org/addicto.owl/2026-06-16, title=Addiction Ontology, namespace=addicto" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://addictovocab.org/ADDICTO_0000383> <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder that involves some structural damage that is immediately caused by a destructive external force." .
+<http://addictovocab.org/ADDICTO_0000383> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://addictovocab.org/ADDICTO_0000383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://addictovocab.org/ADDICTO_0000383> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://addictovocab.org/ADDICTO_0000383> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OGMS_0000045> .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000045> <http://www.w3.org/2000/01/rdf-schema#label> "disorder" .

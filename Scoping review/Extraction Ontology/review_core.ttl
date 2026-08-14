@@ -4,13 +4,33 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix iao:     <http://purl.obolibrary.org/obo/IAO_> .
-@prefix rev:     <https://example.org/disease-review/ap/> .
+@prefix rev:     <urn:uuid:8f96cf34-53c2-48d2-88c5-96d07704fcf7#> .
 
-<https://example.org/disease-review/review-core>
+<urn:uuid:8f96cf34-53c2-48d2-88c5-96d07704fcf7>
     rdf:type owl:Ontology ;
     rdfs:label "Disease Ontology Scoping Review — Core Annotation Properties"@en ;
     dcterms:description "Declares the annotation properties used in the ontology-based manual review layer of the disease-ontology scoping review. These properties are asserted as rev:* annotations on reviewed OWL classes in disease_terms_review.ttl. Source-ontology appearances and dependency/reuse routes are reported in CSV tables rather than copied onto the reviewed class IRIs."@en ;
-    owl:versionInfo "2026-07-01" .
+    owl:versionIRI <urn:uuid:278d72a8-731f-4a54-899f-b93000670d55#version-2026-08-09-review-core> ;
+    dcterms:issued "2026-08-09" ;
+    dcterms:creator "Moritz Milewski" ;
+    dcterms:license <https://opensource.org/license/mit/> ;
+    owl:versionInfo "2026-08-09" .
+
+# External annotation properties used by the release are declared locally so
+# that the generated import closure remains OWL 2 DL without network imports.
+rdfs:label rdf:type owl:AnnotationProperty .
+rdfs:comment rdf:type owl:AnnotationProperty .
+owl:versionInfo rdf:type owl:AnnotationProperty .
+dcterms:created rdf:type owl:AnnotationProperty .
+dcterms:description rdf:type owl:AnnotationProperty .
+dcterms:source rdf:type owl:AnnotationProperty .
+dcterms:issued rdf:type owl:AnnotationProperty .
+dcterms:creator rdf:type owl:AnnotationProperty .
+dcterms:license rdf:type owl:AnnotationProperty .
+dcterms:bibliographicCitation rdf:type owl:AnnotationProperty .
+skos:altLabel rdf:type owl:AnnotationProperty .
+skos:scopeNote rdf:type owl:AnnotationProperty .
+iao:0000115 rdf:type owl:AnnotationProperty .
 
 #################################################################
 #  Context / provenance (read-only reference annotations)
@@ -159,6 +179,9 @@ rev:disease_model_category
     skos:scopeNote """Controlled values:
   entity_as_realizable_entity — the reviewed entity is modelled at the broader level of realizable entity, without enough evidence to narrow it to disposition.
   entity_as_bfo:disposition — the reviewed entity is modelled as a realizable entity, tendency, or disposition of a bearer (e.g. BFO disposition or risk).
+  entity_as_disposition_non_bfo — the reviewed entity is explicitly a disposition in a non-BFO upper-level model.
+  entity_as_dependent_continuant — the reviewed entity is a dependent continuant without a more specific disposition commitment.
+  entity_as_sio:quality — the reviewed entity is modelled as an SIO quality or attribute.
   entity_as_situation — the reviewed entity is modelled as a situation, state of affairs, or configuration of circumstances.
   no_grounded_model — the reviewed entity is modelled as a terminology/classification category without a clear commitment to what kind of biomedical entity disease is.
   entity_as_disorder — the reviewed entity is modelled as a structural or functional disorder of a bodily entity (e.g. OGMS disorder).
@@ -184,13 +207,13 @@ rev:review_comment
 rev:ontological_category
     rdf:type owl:AnnotationProperty ;
     rdfs:label "coupled decision 1: ontological category"@en ;
-    iao:0000115 "Coupled design decision 1. Whether the class models disease as a continuant or an occurrent, read from the OWL superclass/axioms rather than the prose. The SNAP/SPAN split (Grenon & Smith) makes this a forced choice in BFO; Mizoguchi's River-Flow model denies the choice is clean and treats disease as a persisting entity individuated by a causal-process structure."@en ;
+    iao:0000115 "Coupled design decision 1. Whether the class models disease as a continuant, an occurrent, a deliberate continuant/occurrent hybrid, or makes no continuant/occurrent commitment, read from the OWL superclass/axioms rather than the prose. The SNAP/SPAN split (Grenon & Smith) makes this a forced choice in BFO; some disease models deny the choice is clean and bridge persisting entities with process/course structure."@en ;
     skos:scopeNote """Controlled values:
   continuant — a state, disposition, or material entity that persists through change (SNAP).
   occurrent — a process or causal chain that unfolds over time (SPAN).
-  continuant_individuated_by_process — a persisting entity individuated by its causal-process structure (Mizoguchi River-Flow 'river' reading).
-  under_committed — no clear continuant/occurrent commitment is made.
-  unclear — the evidence is insufficient to decide."""@en .
+  mixed_continuant_occurrent_model — a deliberate bridge or hybrid between continuant and occurrent, e.g. a disease entity explicitly including disease course/process structure.
+  no_continuant_occurrent_commitment — no superclass, axiom, or prose commits the class to either continuant or occurrent.
+  unclear — some evidence exists, but it is ambiguous, conflicting, or unintelligible."""@en .
 
 rev:pathological_grounding
     rdf:type owl:AnnotationProperty ;
@@ -201,9 +224,10 @@ rev:pathological_grounding
   evolutionary_function — abnormality as failure of a naturally selected function / harmful dysfunction (Wakefield, Schwartz).
   normative — abnormality as harm or disvalue to the bearer (normativism).
   primitive_criteria — pathologicity taken as a criteria-defined primitive (Hucklenbroich), not reduced to statistics or values.
-  reference_class_indexed — abnormality defined relative to a reference class (age/sex/species) or situation.
   undefined — the model relies on 'pathological/abnormal' but never states what grounds it.
-  not_applicable — the class does not carry a pathological/abnormal commitment."""@en .
+  not_applicable — the class does not carry a pathological/abnormal commitment.
+
+Reference classes such as age, sex, species, breed, or life stage are treated as qualifiers for statistical or evolutionary-function grounding, not as a separate grounding category."""@en .
 
 rev:crisp_vs_graded
     rdf:type owl:AnnotationProperty ;
@@ -315,3 +339,54 @@ rev:adjudication_decision
     rdf:type owl:AnnotationProperty ;
     rdfs:label "adjudication decision"@en ;
     iao:0000115 "The final decision or short free-text resolution reached after adjudication of a disagreement between reviewers. Populated only when disagreement_flag is 'true'."@en .
+
+#################################################################
+#  Machine-readable provenance and publication decision fields
+#################################################################
+
+rev:source_databases rdf:type owl:AnnotationProperty .
+rev:retrieved_at_by_database rdf:type owl:AnnotationProperty .
+rev:ontology_versions rdf:type owl:AnnotationProperty .
+rev:source_ontology_ids rdf:type owl:AnnotationProperty .
+rev:source_urls rdf:type owl:AnnotationProperty .
+rev:exact_match_iris rdf:type owl:AnnotationProperty .
+rev:exact_match_canonical_targets rdf:type owl:AnnotationProperty .
+rev:exact_match_review_status rdf:type owl:AnnotationProperty .
+rev:defined_by_iris rdf:type owl:AnnotationProperty .
+rev:defined_by_external_targets rdf:type owl:AnnotationProperty .
+rev:defined_by_review_status rdf:type owl:AnnotationProperty .
+rev:conforms_to_iris rdf:type owl:AnnotationProperty .
+rev:definition_values_json rdf:type owl:AnnotationProperty .
+rev:comment_values_json rdf:type owl:AnnotationProperty .
+rev:synonym_values_json rdf:type owl:AnnotationProperty .
+rev:parent_iri_values_json rdf:type owl:AnnotationProperty .
+rev:parent_label_values_json rdf:type owl:AnnotationProperty .
+rev:hierarchy_evidence_status rdf:type owl:AnnotationProperty .
+rev:hierarchy_module_iri rdf:type owl:AnnotationProperty .
+rev:hierarchy_module_source rdf:type owl:AnnotationProperty .
+rev:hierarchy_evidence_detail rdf:type owl:AnnotationProperty .
+rev:effective_synthesis_status rdf:type owl:AnnotationProperty .
+rev:effective_synthesis_exclusion_reason rdf:type owl:AnnotationProperty .
+rev:effective_decision_basis rdf:type owl:AnnotationProperty .
+rev:effective_decision_rule rdf:type owl:AnnotationProperty .
+rev:publication_eligibility_override rdf:type owl:AnnotationProperty .
+rev:publication_review_comment_proposed rdf:type owl:AnnotationProperty .
+rev:publication_comment_status rdf:type owl:AnnotationProperty .
+rev:publication_ambiguity_flags rdf:type owl:AnnotationProperty .
+rev:publication_ambiguity_note rdf:type owl:AnnotationProperty .
+rev:no_grounded_model_subtype rdf:type owl:AnnotationProperty .
+rev:modelling_citation_status rdf:type owl:AnnotationProperty .
+rev:modelling_citation_confidence rdf:type owl:AnnotationProperty .
+rev:modelling_citation_publication_title rdf:type owl:AnnotationProperty .
+rev:modelling_citation_authors rdf:type owl:AnnotationProperty .
+rev:modelling_citation_year rdf:type owl:AnnotationProperty .
+rev:modelling_citation_venue rdf:type owl:AnnotationProperty .
+rev:modelling_citation_bibliographic_citation rdf:type owl:AnnotationProperty .
+rev:modelling_citation_lookup_source rdf:type owl:AnnotationProperty .
+rev:modelling_citation_source rdf:type owl:AnnotationProperty .
+rev:modelling_citation_approved rdf:type owl:AnnotationProperty .
+rev:modelling_citation_assignment_flag rdf:type owl:AnnotationProperty .
+rev:modelling_citation_assignment_flag_reason rdf:type owl:AnnotationProperty .
+rev:modelling_citation_assignment_checked_at rdf:type owl:AnnotationProperty .
+rev:modelling_citation_notes rdf:type owl:AnnotationProperty .
+rev:generation_software rdf:type owl:AnnotationProperty .

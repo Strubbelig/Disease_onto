@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sweet> a owl:Ontology ;
+    dcterms:source "BioPortal API:SWEET" ;
+    owl:versionInfo "BioPortal: version=3.6.0, released=2022-07-14T18:16:30.000-07:00, creationDate=2022-07-14T18:17:17.000-07:00, submissionId=13" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://sweetontology.net/phen/Phenomena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/phen/Phenomena> <http://www.w3.org/2000/01/rdf-schema#label> "phenomena" .
+<http://sweetontology.net/phenBiol/BiologicalPhenomena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/phenBiol/BiologicalPhenomena> <http://www.w3.org/2000/01/rdf-schema#label> "biological phenomena" .
+<http://sweetontology.net/phenBiol/BiologicalPhenomena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sweetontology.net/phen/Phenomena> .
+<http://sweetontology.net/phenBiol/Disease> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SWEET" .
+<http://sweetontology.net/phenBiol/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/phenBiol/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://sweetontology.net/phenBiol/Disease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sweetontology.net/phenBiol/BiologicalPhenomena> .
+<http://sweetontology.net/prop/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/prop/Property> <http://www.w3.org/2000/01/rdf-schema#label> "property" .
+<http://sweetontology.net/propOrdinal/Condition> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SWEET" .
+<http://sweetontology.net/propOrdinal/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/propOrdinal/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "condition" .
+<http://sweetontology.net/propOrdinal/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sweetontology.net/propOrdinal/OrdinalProperty> .
+<http://sweetontology.net/propOrdinal/OrdinalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/propOrdinal/OrdinalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "ordinal property" .
+<http://sweetontology.net/propOrdinal/OrdinalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sweetontology.net/prop/Property> .
+<http://sweetontology.net/propOrdinal/OrdinalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sweetontology.net/repr/OrdinalScale> .
+<http://sweetontology.net/repr/OrdinalScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sweetontology.net/repr/OrdinalScale> <http://www.w3.org/2000/01/rdf-schema#label> "ordinal scale" .

@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<https://w3id.org/disease-ontology-review/modules/rcd> a owl:Ontology ;
+    dcterms:source "Master CSV fallback evidence" ;
+    owl:versionInfo "BioPortal: version=RCD99, released=2024-05-06T00:00:00.000+00:00, creationDate=2024-08-28T16:08:47.000-07:00, submissionId=24" ;
+    dcterms:created "2026-08-06T18:32:41-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/RCD/X0003> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://purl.bioontology.org/ontology/RCD/X0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/X0003> <http://www.w3.org/2000/01/rdf-schema#label> "Disorders" .
+<http://purl.bioontology.org/ontology/RCD/X70qu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/X70qu> <http://www.w3.org/2000/01/rdf-schema#label> "Accidents, poisoning and injury" .
+<http://purl.bioontology.org/ontology/RCD/X75Mq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/X75Mq> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute" .
+<http://purl.bioontology.org/ontology/RCD/X905K> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://purl.bioontology.org/ontology/RCD/X905K> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/X905K> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://purl.bioontology.org/ontology/RCD/X905K> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/RCD/X75Mq> .
+<http://purl.bioontology.org/ontology/RCD/XA001> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://purl.bioontology.org/ontology/RCD/XA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/XA001> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://purl.bioontology.org/ontology/RCD/XA001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/RCD/X70qu> .
+<http://purl.bioontology.org/ontology/RCD/XA001> <http://www.w3.org/2004/02/skos/core#altLabel> "Trauma" .
+<http://purl.bioontology.org/ontology/RCD/Xa9GT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/Xa9GT> <http://www.w3.org/2000/01/rdf-schema#label> "Special disorder atoms" .
+<http://purl.bioontology.org/ontology/RCD/XaBTk> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://purl.bioontology.org/ontology/RCD/XaBTk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/RCD/XaBTk> <http://www.w3.org/2000/01/rdf-schema#label> "Pathological process" .
+<http://purl.bioontology.org/ontology/RCD/XaBTk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/RCD/Xa9GT> .

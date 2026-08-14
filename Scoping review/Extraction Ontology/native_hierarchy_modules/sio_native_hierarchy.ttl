@@ -1,0 +1,78 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sio> a owl:Ontology ;
+    dcterms:source "BioPortal API:SIO" ;
+    owl:versionInfo "BioPortal: version=2.8, released=2019-09-10T00:00:00.000+00:00, creationDate=2019-09-10T13:13:01.000-07:00, submissionId=15; BioPortal: version=2.8, released=2019-09-10T00:00:00.000+00:00, creationDate=2019-09-10T13:13:01.000-07:00, submissionId=15; BioPortal: version=1.13.1, released=2026-03-09T00:00:00.000+00:00, creationDate=2026-03-09T00:00:00.000+00:00, submissionId=20; BioPortal: version=1.61, released=2010-03-29T00:00:00.000+00:00, creationDate=2026-05-01T00:00:00.000+00:00, submissionId=95; BioPortal: version=1.1.0, released=2019-04-18T00:00:00.000+00:00, creationDate=2020-07-02T13:24:40.000-07:00, submissionId=5; BioPortal: version=0.0.4, released=2025-09-10T00:00:00.000+00:00, creationDate=2025-09-10T00:00:00.000+00:00, submissionId=4; BioPortal: version=0.9, released=2025-11-17T18:07:28.000-08:00, creationDate=2025-11-17T00:00:00.000+00:00, submissionId=8; BioPortal: version=1.0, released=2025-01-07T18:13:42.000-08:00, creationDate=2025-01-07T18:13:46.000-08:00, submissionId=8; BioPortal: released=2026-03-07T00:00:00.000+00:00, creationDate=2026-03-07T00:00:00.000+00:00, submissionId=2; BioPortal: version=version 1.6.0, released=2021-09-25T00:00:00.000+00:00, creationDate=2021-09-25T12:54:14.000-07:00, submissionId=25; BioPortal: version=2.0.6, released=2022-09-08T18:08:47.000-07:00, creationDate=2022-09-08T18:08:55.000-07:00, submissionId=75; BioPortal: version=2.8, released=2019-09-10T00:00:00.000+00:00, creationDate=2019-09-10T13:13:01.000-07:00, submissionId=15; BioPortal: version=1.61, released=2010-03-29T00:00:00.000+00:00, creationDate=2026-05-01T00:00:00.000+00:00, submissionId=95; BioPortal: version=1.1.0, released=2019-04-18T00:00:00.000+00:00, creationDate=2020-07-02T13:24:40.000-07:00, submissionId=5; BioPortal: version=0.0.4, released=2025-09-10T00:00:00.000+00:00, creationDate=2025-09-10T00:00:00.000+00:00, submissionId=4; BioPortal: version=0.9, released=2025-11-17T18:07:28.000-08:00, creationDate=2025-11-17T00:00:00.000+00:00, submissionId=8; BioPortal: version=1.0, released=2025-01-07T18:13:42.000-08:00, creationDate=2025-01-07T18:13:46.000-08:00, submissionId=8; BioPortal: version=2.8, released=2019-09-10T00:00:00.000+00:00, creationDate=2019-09-10T13:13:01.000-07:00, submissionId=15; BioPortal: version=1.61, released=2010-03-29T00:00:00.000+00:00, creationDate=2026-05-01T00:00:00.000+00:00, submissionId=95; BioPortal: version=1.1.0, released=2019-04-18T00:00:00.000+00:00, creationDate=2020-07-02T13:24:40.000-07:00, submissionId=5; BioPortal: version=0.0.4, released=2025-09-10T00:00:00.000+00:00, creationDate=2025-09-10T00:00:00.000+00:00, submissionId=4; BioPortal: version=0.9, released=2025-11-17T18:07:28.000-08:00, creationDate=2025-11-17T00:00:00.000+00:00, submissionId=8; BioPortal: version=1.0, released=2025-01-07T18:13:42.000-08:00, creationDate=2025-01-07T18:13:46.000-08:00, submissionId=8" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://semanticscience.org/resource/Disease> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://semanticscience.org/resource/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+<http://semanticscience.org/resource/SIO_000000> <http://purl.obolibrary.org/obo/IAO_0000115> "Every thing is an entity." .
+<http://semanticscience.org/resource/SIO_000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000000> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+<http://semanticscience.org/resource/SIO_000005> <http://purl.obolibrary.org/obo/IAO_0000115> "A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary." .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/2000/01/rdf-schema#label> "quality" .
+<http://semanticscience.org/resource/SIO_000005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000614> .
+<http://semanticscience.org/resource/SIO_000015> <http://purl.obolibrary.org/obo/IAO_0000115> "information content entity is an object that requires some background knowledge or procedure to correctly interpret." .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity" .
+<http://semanticscience.org/resource/SIO_000015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000776> .
+<http://semanticscience.org/resource/SIO_000026> <http://purl.obolibrary.org/obo/IAO_0000115> "An object quality is quality of an object." .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/2000/01/rdf-schema#label> "object quality" .
+<http://semanticscience.org/resource/SIO_000026> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000005> .
+<http://semanticscience.org/resource/SIO_000078> <http://purl.obolibrary.org/obo/IAO_0000115> "A language entity implements some language specification for the visual interpretation and is part of some document." .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#label> "language entity" .
+<http://semanticscience.org/resource/SIO_000078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000015> .
+<http://semanticscience.org/resource/SIO_000112> <http://purl.obolibrary.org/obo/IAO_0000115> "A capability is a realizable entity whose basis lies in one or more parts or qualities and reflects possibility of an entity to behave in a specified way under certain conditions or in response to a certain stimulus (trigger)." .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#label> "capability" .
+<http://semanticscience.org/resource/SIO_000112> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000340> .
+<http://semanticscience.org/resource/SIO_000136> <http://purl.obolibrary.org/obo/IAO_0000115> "A description is language entity in which elements of a language (formal or natural) are used to characterize an entity." .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+<http://semanticscience.org/resource/SIO_000136> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000078> .
+<http://semanticscience.org/resource/SIO_000340> <http://purl.obolibrary.org/obo/IAO_0000115> "A realizable entity is an attribute that is exhibited under some condition and is realized in some process." .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#label> "realizable entity" .
+<http://semanticscience.org/resource/SIO_000340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000614> .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.obolibrary.org/obo/IAO_0000115> "dysfunction is a capability to act in a manner that is abnormal or opposite  to the object's typical function." .
+<http://semanticscience.org/resource/SIO_000354> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SIO" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#label> "dysfunction" .
+<http://semanticscience.org/resource/SIO_000354> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000112> .
+<http://semanticscience.org/resource/SIO_000475> <http://purl.obolibrary.org/obo/IAO_0000115> "A biological quality is a quality held by a biological entity." .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/2000/01/rdf-schema#label> "biological quality" .
+<http://semanticscience.org/resource/SIO_000475> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000026> .
+<http://semanticscience.org/resource/SIO_000614> <http://purl.obolibrary.org/obo/IAO_0000115> "An attribute is a characteristic of some entity." .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#label> "attribute" .
+<http://semanticscience.org/resource/SIO_000614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000000> .
+<http://semanticscience.org/resource/SIO_000776> <http://purl.obolibrary.org/obo/IAO_0000115> "An object is an entity that is wholly identifiable at any instant of time during which it exists." .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/2000/01/rdf-schema#label> "object" .
+<http://semanticscience.org/resource/SIO_000776> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000000> .
+<http://semanticscience.org/resource/SIO_001017> <http://purl.obolibrary.org/obo/IAO_0000115> "A syndrome is composed of a set of several clinically recognizable features, signs (observed by someone other than the patient), symptoms (reported by the patient), phenomena or characteristics that often occur together." .
+<http://semanticscience.org/resource/SIO_001017> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SIO" .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/2000/01/rdf-schema#label> "syndrome" .
+<http://semanticscience.org/resource/SIO_001017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000136> .
+<http://semanticscience.org/resource/SIO_010299> <http://purl.obolibrary.org/obo/IAO_0000115> "disease is the outward manifestation of one or more disorders." .
+<http://semanticscience.org/resource/SIO_010299> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SIO" .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://semanticscience.org/resource/SIO_010299> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000475> .

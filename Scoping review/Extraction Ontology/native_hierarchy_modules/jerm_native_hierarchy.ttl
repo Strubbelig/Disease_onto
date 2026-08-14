@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-jerm> a owl:Ontology ;
+    dcterms:source "BioPortal API:JERM" ;
+    owl:versionInfo "BioPortal: version=2, released=2017-09-26T00:00:00.000+00:00, creationDate=2017-09-26T02:55:12.000-07:00, submissionId=15" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://jermontology.org/ontology/JERMOntology#Characteristics_for_sample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://jermontology.org/ontology/JERMOntology#Characteristics_for_sample> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristics for Sample" .
+<http://jermontology.org/ontology/JERMOntology#Characteristics_for_sample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://jermontology.org/ontology/JERMOntology#Experimental_factors> .
+<http://jermontology.org/ontology/JERMOntology#Experimental_factors> <http://purl.obolibrary.org/obo/IAO_0000115> "ExperimentalFactors are descriptors of the properties of the experiment. How the culture was prepared, what organism they are from, and what type of experiment was run" .
+<http://jermontology.org/ontology/JERMOntology#Experimental_factors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://jermontology.org/ontology/JERMOntology#Experimental_factors> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental Factors" .
+<http://jermontology.org/ontology/JERMOntology#Experimental_factors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://jermontology.org/ontology/JERMOntology#Information_entity> .
+<http://jermontology.org/ontology/JERMOntology#Information_entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://jermontology.org/ontology/JERMOntology#Information_entity> <http://www.w3.org/2000/01/rdf-schema#label> "Information Entity" .
+<http://jermontology.org/ontology/JERMOntology#disease_state> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: JERM" .
+<http://jermontology.org/ontology/JERMOntology#disease_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://jermontology.org/ontology/JERMOntology#disease_state> <http://www.w3.org/2000/01/rdf-schema#label> "Disease State" .
+<http://jermontology.org/ontology/JERMOntology#disease_state> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://jermontology.org/ontology/JERMOntology#Characteristics_for_sample> .

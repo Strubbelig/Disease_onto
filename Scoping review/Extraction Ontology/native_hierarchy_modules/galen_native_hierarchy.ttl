@@ -1,0 +1,68 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-galen> a owl:Ontology ;
+    dcterms:source "BioPortal:GALEN (galen_hierarchy.ttl)" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2007-01-09T00:00:00.000-08:00, creationDate=2007-01-16T13:51:57.000-08:00, submissionId=1" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.co-ode.org/ontologies/galen#BiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "BiologicalProcess" .
+<http://www.co-ode.org/ontologies/galen#BiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#SpecificProcess> .
+<http://www.co-ode.org/ontologies/galen#BodyProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#BodyProcess> <http://www.w3.org/2000/01/rdf-schema#label> "BodyProcess" .
+<http://www.co-ode.org/ontologies/galen#BodyProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#BiologicalProcess> .
+<http://www.co-ode.org/ontologies/galen#ConativeProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#ConativeProcess> <http://www.w3.org/2000/01/rdf-schema#label> "ConativeProcess" .
+<http://www.co-ode.org/ontologies/galen#ConativeProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#PsychologicalProcess> .
+<http://www.co-ode.org/ontologies/galen#Condition> <http://purl.org/dc/terms/source> "review target in GALEN from disease_terms_review_enriched.csv" .
+<http://www.co-ode.org/ontologies/galen#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://www.co-ode.org/ontologies/galen#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#NAMEDProcess> .
+<http://www.co-ode.org/ontologies/galen#DomainCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#DomainCategory> <http://www.w3.org/2000/01/rdf-schema#label> "DomainCategory" .
+<http://www.co-ode.org/ontologies/galen#DomainCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#TopCategory> .
+<http://www.co-ode.org/ontologies/galen#GeneralisedProcess> <http://purl.obolibrary.org/obo/IAO_0000115> "Synonym: Process" .
+<http://www.co-ode.org/ontologies/galen#GeneralisedProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#GeneralisedProcess> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralisedProcess" .
+<http://www.co-ode.org/ontologies/galen#GeneralisedProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#Phenomenon> .
+<http://www.co-ode.org/ontologies/galen#Injury> <http://purl.org/dc/terms/source> "review target in GALEN from disease_terms_review_enriched.csv" .
+<http://www.co-ode.org/ontologies/galen#Injury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#Injury> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://www.co-ode.org/ontologies/galen#Injury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#PathologicalPhenomenon> .
+<http://www.co-ode.org/ontologies/galen#NAMEDBrainProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#NAMEDBrainProcess> <http://www.w3.org/2000/01/rdf-schema#label> "NAMEDBrainProcess" .
+<http://www.co-ode.org/ontologies/galen#NAMEDBrainProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess> .
+<http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "NAMEDPhysiologicalProcess" .
+<http://www.co-ode.org/ontologies/galen#NAMEDPhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#BodyProcess> .
+<http://www.co-ode.org/ontologies/galen#NAMEDProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#NAMEDProcess> <http://www.w3.org/2000/01/rdf-schema#label> "NAMEDProcess" .
+<http://www.co-ode.org/ontologies/galen#NAMEDProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#GeneralisedProcess> .
+<http://www.co-ode.org/ontologies/galen#PathologicalPhenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#PathologicalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "PathologicalPhenomenon" .
+<http://www.co-ode.org/ontologies/galen#PathologicalPhenomenon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#Phenomenon> .
+<http://www.co-ode.org/ontologies/galen#Phenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#Phenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Phenomenon" .
+<http://www.co-ode.org/ontologies/galen#Phenomenon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#DomainCategory> .
+<http://www.co-ode.org/ontologies/galen#Predisposition> <http://purl.org/dc/terms/source> "review target in GALEN from disease_terms_review_enriched.csv" .
+<http://www.co-ode.org/ontologies/galen#Predisposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#Predisposition> <http://www.w3.org/2000/01/rdf-schema#label> "Predisposition" .
+<http://www.co-ode.org/ontologies/galen#Predisposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#ConativeProcess> .
+<http://www.co-ode.org/ontologies/galen#PsychologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#PsychologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "PsychologicalProcess" .
+<http://www.co-ode.org/ontologies/galen#PsychologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#NAMEDBrainProcess> .
+<http://www.co-ode.org/ontologies/galen#SpecificProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#SpecificProcess> <http://www.w3.org/2000/01/rdf-schema#label> "SpecificProcess" .
+<http://www.co-ode.org/ontologies/galen#SpecificProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.co-ode.org/ontologies/galen#GeneralisedProcess> .
+<http://www.co-ode.org/ontologies/galen#TopCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.co-ode.org/ontologies/galen#TopCategory> <http://www.w3.org/2000/01/rdf-schema#label> "TopCategory" .

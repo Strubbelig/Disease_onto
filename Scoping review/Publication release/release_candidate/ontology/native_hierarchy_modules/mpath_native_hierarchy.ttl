@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-mpath> a owl:Ontology ;
+    dcterms:source "BioPortal API:MPATH" ;
+    owl:versionInfo "BioPortal: version=2025-10-12, released=2025-10-12T18:14:25.000-07:00, creationDate=2025-10-12T00:00:00.000+00:00, submissionId=9; BioPortal: version=Vision Release: 1.0.121, released=2024-03-16T18:07:22.000-07:00, creationDate=2024-03-16T18:07:33.000-07:00, submissionId=20; BioPortal: version=2020-05-19, released=2023-09-30T18:17:48.000-07:00, creationDate=2023-09-30T18:17:50.000-07:00, submissionId=22" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/MPATH_0> <http://purl.obolibrary.org/obo/IAO_0000115> "Pathological structure or process" .
+<http://purl.obolibrary.org/obo/MPATH_0> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: MPATH" .
+<http://purl.obolibrary.org/obo/MPATH_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MPATH_0> <http://www.w3.org/2000/01/rdf-schema#label> "pathological entity" .
+<http://purl.obolibrary.org/obo/MPATH_0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/MPATH_1000> .
+<http://purl.obolibrary.org/obo/MPATH_1000> <http://purl.obolibrary.org/obo/IAO_0000115> "Phenotypic observation of the presence or absence of a pathological entity." .
+<http://purl.obolibrary.org/obo/MPATH_1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/MPATH_1000> <http://www.w3.org/2000/01/rdf-schema#label> "pathological phenotype observation" .

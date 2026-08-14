@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-efo> a owl:Ontology ;
+    dcterms:source "master_csv_fallback" ;
+    owl:versionInfo "BioPortal: version=1.1, released=2014-07-23T00:00:00.000+00:00, creationDate=2014-07-23T18:00:22.000-07:00, submissionId=3; BioPortal: version=2026-02-06, released=2026-02-22T22:21:58.000-08:00, creationDate=2026-02-22T00:00:00.000+00:00, submissionId=39; OLS: version=2022-10-26, versionIri=http://purl.obolibrary.org/obo/covoc/releases/2022-10-26/covoc.owl, title=CoVoc Coronavirus Vocabulary, namespace=covoc; BioPortal: version=1.1, released=2014-07-23T00:00:00.000+00:00, creationDate=2014-07-23T18:00:22.000-07:00, submissionId=3; BioPortal: version=1.13.1, released=2026-03-09T00:00:00.000+00:00, creationDate=2026-03-09T00:00:00.000+00:00, submissionId=20; BioPortal: released=2026-03-07T00:00:00.000+00:00, creationDate=2026-03-07T00:00:00.000+00:00, submissionId=2" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> "disposition" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://purl.obolibrary.org/obo/IAO_0000115> "A disease is a disposition that describes states of disease associated with a particular sample and/or organism.; A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism." .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2000/01/rdf-schema#label> "disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "Homo sapiens disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "condition" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disease or disorder, non-neoplastic" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "diseases and disorders" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disorder" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "disorders" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "human disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "medical condition" .
+<http://www.ebi.ac.uk/efo/EFO_0000408> <http://www.w3.org/2004/02/skos/core#altLabel> "other disease" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://purl.obolibrary.org/obo/IAO_0000115> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity.; This class denotes injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://purl.org/dc/terms/source> "Fallback evidence copied losslessly from the master review CSV" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2000/01/rdf-schema#label> "injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000016> .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "Trauma" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "Wound" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "trauma" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "traumatic injury" .
+<http://www.ebi.ac.uk/efo/EFO_0000546> <http://www.w3.org/2004/02/skos/core#altLabel> "wound" .

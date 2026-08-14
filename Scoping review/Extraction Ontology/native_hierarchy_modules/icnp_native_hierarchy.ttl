@@ -1,0 +1,39 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-icnp> a owl:Ontology ;
+    dcterms:source "BioPortal API:ICNP" ;
+    owl:versionInfo "BioPortal: version=classified, released=2019-06-27T00:00:00.000+00:00, creationDate=2020-04-03T04:35:48.000-07:00, submissionId=6" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://www.icn.ch/icnp#DiagnosticPhenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#DiagnosticPhenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "DiagnosticPhenomenon" .
+<http://www.icn.ch/icnp#DiagnosticPhenomenon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#Phenomenon> .
+<http://www.icn.ch/icnp#Injury> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: ICNP" .
+<http://www.icn.ch/icnp#Injury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#Injury> <http://www.w3.org/2000/01/rdf-schema#label> "Injury" .
+<http://www.icn.ch/icnp#Injury> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#Trauma> .
+<http://www.icn.ch/icnp#NegativeProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#NegativeProcess> <http://www.w3.org/2000/01/rdf-schema#label> "NegativeProcess" .
+<http://www.icn.ch/icnp#NegativeProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#DiagnosticPhenomenon> .
+<http://www.icn.ch/icnp#NegativeProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#Process> .
+<http://www.icn.ch/icnp#PathologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "PathologicalProcess" .
+<http://www.icn.ch/icnp#PathologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#NegativeProcess> .
+<http://www.icn.ch/icnp#Phenomenon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#Phenomenon> <http://www.w3.org/2000/01/rdf-schema#label> "Phenomenon" .
+<http://www.icn.ch/icnp#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
+<http://www.icn.ch/icnp#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#Phenomenon> .
+<http://www.icn.ch/icnp#Trauma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.icn.ch/icnp#Trauma> <http://www.w3.org/2000/01/rdf-schema#label> "Trauma" .
+<http://www.icn.ch/icnp#Trauma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.icn.ch/icnp#PathologicalProcess> .

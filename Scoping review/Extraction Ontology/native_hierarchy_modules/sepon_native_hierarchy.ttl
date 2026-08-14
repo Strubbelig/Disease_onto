@@ -1,0 +1,41 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+dcterms:source a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+skos:altLabel a owl:AnnotationProperty .
+iao:0000115 a owl:AnnotationProperty .
+
+<urn:uuid:d6fb0627-6568-43ee-a063-9e216a38cf1a#module-sepon> a owl:Ontology ;
+    dcterms:source "BioPortal API:SEPON" ;
+    owl:versionInfo "BioPortal: version=V1.0.0, released=2024-05-14T00:00:00.000+00:00, creationDate=2024-05-14T08:46:02.000+00:00, submissionId=2" ;
+    dcterms:created "2026-08-09T11:38:31-04:00" ;
+    rdfs:comment "Contains review target classes, ancestors or parent paths, direct superclass edges, and common annotations only. Full source OWL axioms are not preserved." .
+
+<http://purl.bioontology.org/ontology/ICD9CM/995.91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/ICD9CM/995.91> <http://www.w3.org/2000/01/rdf-schema#label> "Sepsis" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Endogenous_Etiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Endogenous_Etiology> <http://www.w3.org/2000/01/rdf-schema#label> "Endogenous Etiology" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Endogenous_Etiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Etiology> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Etiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Etiology> <http://www.w3.org/2000/01/rdf-schema#label> "Etiology" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Etiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/ICD9CM/995.91> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Inflammation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Inflammation> <http://www.w3.org/2000/01/rdf-schema#label> "Inflammation" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Inflammation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Pathophysiological_Etiology> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Inflammation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Risk_Factor> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Pathophysiological_Etiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Pathophysiological_Etiology> <http://www.w3.org/2000/01/rdf-schema#label> "Pathophysiological Etiology" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Pathophysiological_Etiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Endogenous_Etiology> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Risk_Factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Risk_Factor> <http://www.w3.org/2000/01/rdf-schema#label> "Endogenous Risk Factor" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Risk_Factor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Endogenous_Etiology> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://purl.obolibrary.org/obo/IAO_0000115> "A group of signs, symptoms, and clinicopathological characteristics that may or may not have a genetic basis and collectively define an abnormal condition." .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://purl.org/dc/terms/source> "Native BioPortal hierarchy: SEPON" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://www.w3.org/2000/01/rdf-schema#label> "Syndrome" .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Inflammation> .
+<http://www.semanticweb.org/zchero/ontologies/2023/11/SepsisOntology#Syndrome> <http://www.w3.org/2004/02/skos/core#altLabel> "Syndrome\nsyndrome" .

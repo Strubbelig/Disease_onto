@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-08-10T17:56:47-04:00",
+  "master_csv": "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Disease ontologies/Scoping review/Extraction Tables/disease_terms_review_enriched.csv",
+  "master_sha256": "1fd57469aa06203c5439833ef7adf7435d0437fab263ac52bc8c8898138f2a3c",
+  "row_count": 276,
+  "unique_class_iris": 276,
+  "effective_synthesis_status_counts": {
+    "include": 147,
+    "exclude": 129
+  },
+  "evidence_status_counts": {
+    "fallback_with_evidence": 13,
+    "native_module": 257,
+    "insufficient_metadata": 6
+  },
+  "ambiguity_count": 4,
+  "ambiguities": [
+    {
+      "class_iri": "http://purl.obolibrary.org/obo/OMIT_0005457",
+      "ontology": "OMIT",
+      "label": "Disease",
+      "flags": "publication_comment_needs_review",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "native_module",
+      "citation_status": "no_citation",
+      "citation_approved": "none",
+      "review_comment": "missing definition; missing comment. Very strange hierachy of omit:Disease is_a omit:Pathologic process is_a omit:Pathological Conditions, Signs and Symptoms is_a omit:Diseases Category is_a omit:Mesh_term is_a bfo:quality. Clearly, this ontology is built on bfo, but a disease can't be a bfo:quality and a process can't be a bfo:quality.",
+      "proposed_comment": "Missing definition; missing comment. The hierarchy of omit:Disease is_a omit:Pathologic process is_a omit:Pathological Conditions, Signs and Symptoms is_a omit:Diseases Category is_a omit:Mesh_term is_a bfo:quality is internally inconsistent. This ontology is built on bfo, but a disease cannot be a bfo:quality and a process cannot be a bfo:quality."
+    },
+    {
+      "class_iri": "http://example.org/msdo#ClinicalCondition",
+      "ontology": "MSCDO",
+      "label": "ClinicalCondition",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "ClinicalCondition subclass of snomed:404684003 and snomed:404684003 subclass of ClinicalCondition. No comment, no definition.",
+      "proposed_comment": ""
+    },
+    {
+      "class_iri": "http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition",
+      "ontology": "DRANPTO",
+      "label": "Health Condition",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "Narrow scope of health state of a person with dementia.",
+      "proposed_comment": ""
+    },
+    {
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003",
+      "ontology": "ONVOC",
+      "label": "Disorders",
+      "flags": "citation_status_unreviewed; citation_approval_unreviewed",
+      "manual_status": "include",
+      "effective_status": "include",
+      "rule": "manual_include_status",
+      "evidence_status": "insufficient_metadata",
+      "citation_status": "",
+      "citation_approved": "",
+      "review_comment": "No parent, no definition, no superclass.",
+      "proposed_comment": ""
+    }
+  ],
+  "citation_unreviewed": [
+    {
+      "ontology": "MSCDO",
+      "class_iri": "http://example.org/msdo#ClinicalCondition"
+    },
+    {
+      "ontology": "DRANPTO",
+      "class_iri": "http://www.semanticweb.org/zhenyuzhang/ontologies/2019/8/nonpharmacological-intervention-for-agitation-in-dementia-ontology/HealthCondition"
+    },
+    {
+      "ontology": "ONVOC",
+      "class_iri": "https://w3id.org/onvoc/ONVOC_0000003"
+    }
+  ],
+  "approved_citations_incomplete": [],
+  "target_module_mismatches": [],
+  "cross_module_duplicate_edges": [],
+  "ttl_checks": {
+    "disease_terms_review.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "c3dd1710359b2f6609f1b2d1652472087d2ee94416a84679dd51688eff6efcad"
+    },
+    "disease_terms_synthesis.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "a60e1d0992add88b9c0686059d366ddb9fd2fd76d41b467d5aa343232dd61846"
+    },
+    "review_core.ttl": {
+      "exists": true,
+      "contains_file_iri": false,
+      "contains_reserved_review_namespace": false,
+      "contains_deprecated_web_namespace": false,
+      "sha256": "d174f983aefea8ce94e2c0c9da55ab7680b7bc540379b28ac5bb5de49feb6f34"
+    }
+  },
+  "external_human_tasks": [
+    "When the OSF registration embargo is lifted, insert its public DOI, URL, and registration date in the manuscript.",
+    "Complete and reconcile the prespecified 50-class independent stratified validation sample.",
+    "Confirm corresponding-author details, ORCIDs, degrees, CRediT roles, conflicts of interest, and affiliations with both authors.",
+    "Reconcile the draft reference inventory in Zotero and export it in the selected journal's style.",
+    "Approve or edit unresolved publication decisions in the review UI."
+  ]
+}
