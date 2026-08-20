@@ -17,9 +17,10 @@
                                                      dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                      dcterms:modified "2026-07-06"^^xsd:date ;
                                                      dcterms:title "Mid Layer Disease Ontology"@en ;
-                                                     rdfs:comment "MODEL COMMITMENT (1 of 3) - disease category. MILD models disease as a material continuant (MILD_120020) individuated by the continuity of its disorder lineage, not as a disposition. This is a deliberate departure from the OGMS pattern; see the editor note on MILD_120020 for the argument and the relatedMatch to OGMS_0000031."@en ,
-                                                                  "MODEL COMMITMENT (2 of 3) - pathologicity is a declared primitive. What makes a disorder pathological is ASSERTED by criteria, never inferred. MILD adopts Hucklenbroich's criteria - threat to life, pain and suffering, loss of ability, loss of fertility - and does not reduce pathologicity to statistical rarity (Boorse) or to social disvalue (normativism). Species-comparative abnormality alone is explicitly not sufficient, because rare variation is not thereby pathological. Following Scheuermann et al., this term is left primitive on purpose rather than defined away, and the choice is recorded here rather than hidden. See MILD_120022."@en ,
-                                                                  "MODEL COMMITMENT (3 of 3) - crispness is a representational convenience, not a metaphysical claim. MILD classes have crisp OWL extensions because OWL DL provides no graded membership. This must not be read as a commitment to sharp natural boundaries; Sadegh-Zadeh's argument that health and disease are graded is accepted. Gradedness is represented, but in the data layer rather than in class membership: MILD_120005 tendency carries partial and probabilistic realization, and MILD_120029 to MILD_120031 carry threshold specifications, threshold values and threshold crossing events. A borderline case is therefore modelled as a measured value near a stated threshold, never as partial membership in a disease class."@en ;
+                                                     rdfs:comment "MODEL COMMITMENT (1 of 4) - disease category. MILD models disease as a material continuant (MILD_120020) individuated by the continuity of its disorder lineage, not as a disposition. This is a deliberate departure from the OGMS pattern; see the editor note on MILD_120020 for the argument and the relatedMatch to OGMS_0000031."@en ,
+                                                                  "MODEL COMMITMENT (2 of 4) - pathologicity is a declared primitive. What makes a disorder pathological is ASSERTED by criteria, never inferred. MILD adopts Hucklenbroich's criteria - threat to life, pain and suffering, loss of ability, loss of fertility - and does not reduce pathologicity to statistical rarity (Boorse) or to social disvalue (normativism). Species-comparative abnormality alone is explicitly not sufficient, because rare variation is not thereby pathological. Following Scheuermann et al., this term is left primitive on purpose rather than defined away, and the choice is recorded here rather than hidden. See MILD_120022."@en ,
+                                                                  "MODEL COMMITMENT (3 of 4) - crispness is a representational convenience, not a metaphysical claim. MILD classes have crisp OWL extensions because OWL DL provides no graded membership. This must not be read as a commitment to sharp natural boundaries; Sadegh-Zadeh's argument that health and disease are graded is accepted. Gradedness is represented, but in the data layer rather than in class membership: MILD_120005 tendency carries partial and probabilistic realization, and MILD_120029 to MILD_120031 carry threshold specifications, threshold values and threshold crossing events. A borderline case is therefore modelled as a measured value near a stated threshold, never as partial membership in a disease class."@en ;
+                                                     rdfs:comment "MODEL COMMITMENT (4 of 4) - aetiology is not causal. What a disease causes cannot be reliably distinguished from what the disease is, so no causal relation is asserted between one disorder and another. What can be asserted is co-location: that two disorders occupy the same site in the same bearer over the same period, and that a diagnostic classification groups them. Where a condition raises the likelihood of a further disorder without necessitating it, that is represented in the predisposition layer - MILD_120023 disease predisposition, a MILD_120005 tendency, with the responsible abnormality attached by MILD_120094 has a material basis - and not by a causal axiom. Consequently disorders divide by whether their development process is self-sufficient or additionally requires an external injury process, rather than by what is said to have caused them. NOTE: the temporal half of co-location is documentation only. BFO 2020 places temporal relations in a separate temporal extension which this ontology does not import, so 'over the same period' appears in definitions and annotations but is not axiomatised."@en ;
                                                      vann:preferredNamespacePrefix "MILD" ;
                                                      vann:preferredNamespaceUri "https://bioportal.bioontology.org/ontologies/MILD/" ;
                                                      owl:imports <http://purl.obolibrary.org/obo/wond/modules/chebi_module.owl> ,
@@ -53,6 +54,10 @@
 
 ###  http://www.w3.org/2004/02/skos/core#relatedMatch
 <http://www.w3.org/2004/02/skos/core#relatedMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
@@ -135,10 +140,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 <http://purl.obolibrary.org/obo/BFO_0000199> rdf:type owl:ObjectProperty ;
                                              owl:inverseOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081> ;
                                              rdf:type owl:FunctionalProperty .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000218
-<http://purl.obolibrary.org/obo/BFO_0000218> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000221
@@ -262,6 +263,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                          <https://bioportal.bioontology.org/ontologies/MILD/MILD_120081>
                                                                                        ) ;
                                                                 rdfs:label "has as process boundary at end"@en .
+
+
+###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120094
+<https://bioportal.bioontology.org/ontologies/MILD/MILD_120094> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000016>
+                                                                                            <https://bioportal.bioontology.org/ontologies/MILD/MILD_120005>
+                                                                                          )
+                                                                            ] ;
+                                                                rdfs:range <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "b has material basis c =Def b is a disposition or a tendency & c is a material entity & there is some d bearer of b & there is some time t such that c is a continuant part of d at t & d has b because c is a continuant part of d at t"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#scopeNote> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/profiles/temporal%20extensions>"@en ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000116> "DESIGN RATIONALE - MILD-owned widening of BFO_0000218 'has material basis'. BFO declares that property with rdfs:domain BFO_0000016 disposition, because BFO has no tendency category. MILD does (MILD_120005), and MILD_120005 states that a tendency, like a disposition, supervenes on the physical makeup of its bearer - so tendencies have material bases too. The domain here is therefore the union of disposition and tendency; range, definition and scope note are otherwise taken unchanged from BFO_0000218, with the definiens widened only by the disjunction. This property is deliberately NOT declared rdfs:subPropertyOf BFO_0000218: a subproperty inherits its parent's domain, which would reimpose disposition and make every tendency-based class unsatisfiable. It is also not asserted by patching BFO itself, because rdfs:domain axioms conjoin rather than union - adding a second domain narrows to the intersection - and owl:imports is monotonic, so BFO's original axiom cannot be retracted. The relation to the BFO property is recorded with skos:relatedMatch."@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                rdfs:label "has a material basis"@en .
 
 
 #################################################################
@@ -396,9 +412,10 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120008
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120008> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease predisposition that has as material basis a pathogenic genetic variant."@en ;
                                                                 rdfs:subClassOf [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023>
                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                                                         owl:onProperty <https://bioportal.bioontology.org/ontologies/MILD/MILD_120094> ;
                                                                                                          owl:someValuesFrom <https://bioportal.bioontology.org/ontologies/MILD/MILD_120013>
                                                                                                        ]
                                                                                                      ) ;
@@ -415,6 +432,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120010
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120010> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease predisposition that inheres in a Homo sapiens that has as part a pathological disorder."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ,
                                                                                 [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023>
                                                                                                        [ rdf:type owl:Restriction ;
@@ -443,6 +461,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120012
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120012> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disorder development process that realizes a disease predisposition."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
@@ -460,6 +479,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120014
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120014> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease predisposition that is realized by a disorder development process."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120023> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
@@ -490,6 +510,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120021
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120021> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process that has as output a pathological disorder and that has as its end boundary a threshold crossing event."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
@@ -531,15 +552,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
                                                                                                        ]
                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
+                                                                                                         owl:onProperty <https://bioportal.bioontology.org/ontologies/MILD/MILD_120094> ;
                                                                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
                                                                                                        ]
                                                                                                      ) ;
                                                                                   rdf:type owl:Class
-                                                                                ] ,
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000218> ;
-                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
                                                                                 ] ;
                                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "Predisposition / risk proper"@en ;
                                                                 <http://purl.org/dc/elements/1.1/description> "A tendency inhering in a person, grounded in a material basis, whose realization may produce a target pathological disorder."@en ;
@@ -566,6 +583,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120025
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120025> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease diagnostic process that has as specified input a measurement datum and a disease threshold specification and that has as specified output a confirmed diseases diagnostic result by objective criteria."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
@@ -600,6 +618,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120028
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120028> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process that has as participant a material disease entity, that is immediately causally downstream of a disorder development process, and that has as its start boundary a threshold crossing event."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
@@ -618,6 +637,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120029
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120029> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that has as part a threshold value and a comparison_operator and that is about a phenotypic abnormality."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -636,6 +656,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120030
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120030> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A scalar value specification that has as measurement unit a unit and that has a specified numeric value."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001931> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000039> ;
@@ -650,6 +671,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120031
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120031> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process boundary that occupies a temporal instant and that has as participant a measurement datum that is about a phenotypic abnormality."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000199> ;
@@ -671,6 +693,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120032
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120032> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease diagnostic result that has as part a candidate diagnosis."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120024> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -695,6 +718,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120035
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120035> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process that is part of a course of the disease process and that realizes a perpetuation tendency."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
@@ -775,6 +799,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120047
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that has as output a disease diagnostic result."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
@@ -785,6 +810,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120048
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120048> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A disease diagnostic process that has as specified output a candidate diagnosis."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120047> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
@@ -795,6 +821,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120049
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120049> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A pathological disorder that has as part a pathological disorder."@en ;
                                                                 owl:equivalentClass [ owl:intersectionOf ( <https://bioportal.bioontology.org/ontologies/MILD/MILD_120022>
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -814,6 +841,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120051
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120051> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A material disease entity that has as part a pathological disorder that is the output of a course of the disease process."@en ;
                                                                 rdfs:subClassOf <https://bioportal.bioontology.org/ontologies/MILD/MILD_120020> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -851,6 +879,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120054
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120054> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity that is the specified output of a disease classification process and that is about nothing other than a material disease entity."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
@@ -865,6 +894,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120055
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120055> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that has as specified output a disease stage classification result."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
@@ -875,6 +905,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120086
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120086> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that realizes a treatment plan and that has as input a pathological disorder that is part of a material disease entity."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
@@ -911,6 +942,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120089
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120089> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A plan specification that is about a treatment plan."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
@@ -921,6 +953,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
 ###  https://bioportal.bioontology.org/ontologies/MILD/MILD_120090
 <https://bioportal.bioontology.org/ontologies/MILD/MILD_120090> rdf:type owl:Class ;
+                                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A plan that inheres in a Homo sapiens that bears the role physician role and that concretizes a treatment plan specification."@en ;
                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000260> ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
