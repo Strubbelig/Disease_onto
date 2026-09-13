@@ -428,6 +428,37 @@ echo "Merging disease proposal with modules..."
 $ROBOT merge --input "$INPUT" --output "$OUTPUT" 2>&1 | grep -v "^$\|INFO" || true
 echo "Merged → $OUTPUT ($(wc -l < "$OUTPUT" | tr -d ' ') lines, $(du -sh "$OUTPUT" | cut -f1))"
  
+# ── Step 4b: every external class the curated files use must be labelled ───────
+# (INSTRUCTIONS rule 34: a module carries everything the curated files
+# reference, with a label. An unlabelled term is a term the modules lost.)
+echo ""
+echo "[4b] Checking that every external class WONT/MILD use is labelled in the closure..."
+$ROBOT merge --input "$TMP/combined_own.owl" --input "$OUTPUT" \
+  --output "$TMP/closure_check.owl" 2>/dev/null
+cat > "$TMP/unlabelled.sparql" << 'SPARQLEOF'
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?t WHERE {
+  { ?t a owl:Class } UNION { ?s rdfs:subClassOf ?t } UNION { ?r owl:someValuesFrom ?t }
+  FILTER(isIRI(?t))
+  FILTER NOT EXISTS { ?t rdfs:label ?l }
+}
+SPARQLEOF
+$ROBOT query --input "$TMP/closure_check.owl" \
+  --query "$TMP/unlabelled.sparql" "$TMP/unlabelled.csv" 2>/dev/null
+# intersect with the external terms the curated files actually use
+tail -n +2 "$TMP/unlabelled.csv" | tr -d '"' | sort -u > "$TMP/unlabelled.txt"
+tail -n +2 "$TMP/external_terms.csv" | tr -d '"' | grep 'purl.obolibrary.org/obo/' \
+  | grep -v '/obo/wond/' | sort -u > "$TMP/external_classes.txt"
+missing=$(comm -12 "$TMP/unlabelled.txt" "$TMP/external_classes.txt" || true)
+if [[ -n "$missing" ]]; then
+  echo "ERROR: these external terms are used by WONT/MILD but have no label in the closure:" >&2
+  echo "$missing" | sed 's/^/    /' >&2
+  echo "       Seed them (a bucket in step 2, or the MIREOT paths in step 3) and rebuild." >&2
+  exit 1
+fi
+echo "  all $(wc -l < "$TMP/external_classes.txt" | tr -d ' ') external terms in use are labelled."
+
 # ── Step 5: Reasoning — modular AND full-closure ground truth ──────────────────
 # Helper: run HermiT, return 0 if consistent/satisfiable, 1 otherwise.
 # (Called inside `if`, so set -e is suspended for the inner robot call.)
