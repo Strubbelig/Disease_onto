@@ -27,6 +27,33 @@
 #     "consistent" but full-closure says "inconsistent", a bridging axiom was
 #     dropped and the modular artifact is unsound.
 #
+#   FIX 3 (2026-09-12) — the over-extracted obi_module.
+#     With full pato.owl inside the joint merge, the STAR fixpoint ran away:
+#     16.3 MB, 5 549 classes, 29 roots beside `entity` (2 470 GO, 1 268 UBERON,
+#     529 UO, 334 CL, 330 CHEBI, 135 DOID, 38 SYMP ...), none of it referenced
+#     by WONT or MILD. Measured 2026-09-12: the six upper sources alone give a
+#     0.9 MB module; adding full pato.owl to the merge gives 15.2 MB; adding
+#     full uo.owl gives 1.4 MB (all 518 units, because `unit` is seeded).
+#     Fix, three parts:
+#       (a) PATO is BOT-extracted ON ITS OWN first (66 KB) and that
+#           module joins the joint merge in place of full pato.owl. The joint
+#           fixpoint still closes across BFO/RO/IAO/OBI/OGMS/COB and the PATO
+#           axioms that matter; only PATO's bundled GO/UBERON/CHEBI logic is
+#           kept out.
+#       (b) UO is a label-only stub for `unit` (the single UO term in use);
+#           its 518 subclasses are not.
+#       (c) DOID and HP are MIREOT paths (seed terms up to DOID_4 / HP_0000118,
+#           minimal intermediates), not STAR over 28 MB of doid.owl and hp.obo.
+#           WONT bridges to them with skos:relatedMatch only, so no logical
+#           seam runs through them. The two axioms that ground HP under BFO
+#           (HP_0000118 ⊑ UPHENO_0001001 ⊑ PATO_0000001) are carried over
+#           explicitly from the previous module set.
+#     Result: obi_module 0.9 MB, 248 classes, one root (`entity`); the DOID
+#     island is the 19 referenced terms plus their path to `disease`.
+#     go/chebi/dron leaf modules are NOT rebuilt unless --leaf-modules is
+#     given: go_module.owl carries hand-added property labels (commit 3a3859d)
+#     that a rebuild from go_import.owl would silently drop.
+#
 #   Minor: term discovery now uses a full signature scan (subject/predicate/
 #   object union) instead of declared-entities-only, so external terms that
 #   appear only inside class expressions are not missed.
@@ -39,6 +66,8 @@
 #                                                  #   ground-truth reason (slow,
 #                                                  #   needs RAM; default uses the
 #                                                  #   MIREOT leaf modules)
+#   bash build_disease_proposal.sh --leaf-modules  # also rebuild go/chebi/dron
+#                                                  #   from src/ontology/imports
 #
 # Output:
 #   Disease ontology modules/        updated module .owl files
@@ -60,16 +89,20 @@ trap 'rm -rf "$TMP"' EXIT
 RUN_REASON=true
 RUN_STUBS=false
 FULL_GIANTS=false
+LEAF_MODULES=false
 for arg in "$@"; do
   case "$arg" in
     --no-reason)   RUN_REASON=false ;;
     --stubs)       RUN_STUBS=true ;;
     --full-giants) FULL_GIANTS=true ;;
+    --leaf-modules) LEAF_MODULES=true ;;
   esac
 done
  
 # Sources that go through STAR and are merged for the JOINT extraction (FIX 1).
 # Order doesn't matter; robot merge dedupes.
+# FIX 3: pato.owl is NOT merged whole -- its own STAR module is (see step 3a2);
+# uo/doid/hp are handled separately (label stub / MIREOT paths).
 STAR_SOURCES=(
   bfo:"$IMP/bfo-core2020.owl"
   ro:"$IMP/ro.owl"
@@ -77,13 +110,9 @@ STAR_SOURCES=(
   obi:"$IMP/obi.owl"
   ogms:"$IMP/ogms.owl"
   cob:"$IMP/cob.owl"
-  pato:"$IMP/pato.owl"
-  uo:"$IMP/uo.owl"
-  doid:"$IMP/doid.owl"
-  hp:"$IMP/hp.obo"
 )
 # Namespace buckets whose seed terms feed the joint STAR extraction.
-STAR_BUCKETS=(bfo ro iao obi ogms cob pato uo doid hp)
+STAR_BUCKETS=(bfo ro iao obi ogms cob pato)
  
 # ── Step 1: Build a base TTL that only imports ground_truth ────────────────────
 echo "[1/5] Creating base (disease proposal with only ground_truth import)..."
@@ -91,23 +120,40 @@ python3 - "$INPUT" "$TMP/base.ttl" << 'PYEOF'
 import sys, re
 with open(sys.argv[1]) as f:
     content = f.read()
-new_imports = 'owl:imports <https://bioportal.bioontology.org/ontologies/WONT> .'
-content = re.sub(
-    r'owl:imports\s+<[^>]+>(?:\s*,\s*<[^>]+>)*\s*\.',
-    new_imports, content, flags=re.DOTALL,
+# The import list may end in ';' (more header annotations follow) or '.';
+# keep whichever terminator the file uses.
+content, n = re.subn(
+    r'owl:imports\s+<[^>]+>(?:\s*,\s*<[^>]+>)*\s*([;.])',
+    r'owl:imports <https://bioportal.bioontology.org/ontologies/WONT> \1',
+    content, flags=re.DOTALL,
 )
+if n != 1:
+    sys.exit(f"  ERROR: expected exactly one owl:imports list in {sys.argv[1]}, found {n}")
 with open(sys.argv[2], 'w') as f:
     f.write(content)
-print("  Base TTL written.")
+print("  Base TTL written (import list replaced).")
 PYEOF
  
-cat > "$TMP/catalog-v001.xml" << 'CATEOF'
+# WONT imports MILD back; point that IRI at the rewritten base so the closure
+# is exactly {WONT, MILD-own-content} and never the module files.
+cat > "$TMP/catalog-v001.xml" << CATEOF
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="https://bioportal.bioontology.org/ontologies/WONT"
          uri="file:/Users/Strubbelig/Library/Mobile%20Documents/com~apple~CloudDocs/Forschung/Ontology/Wound%20ontology/data/ground%20truth/ground_truth_final.owl"/>
+    <uri id="MILD base" name="https://bioportal.bioontology.org/ontologies/MILD"
+         uri="file:$TMP/base.ttl"/>
 </catalog>
 CATEOF
+
+# A curated file must not import a full source ontology directly: the seed
+# would then be the whole of that ontology. Refuse rather than build junk.
+if grep -q -E '<http://purl.obolibrary.org/obo/[a-z]+/(releases/)?[0-9]{4}-[0-9]{2}-[0-9]{2}/[a-z]+\.owl>' \
+     "$TMP/base.ttl" "/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Wound ontology/data/ground truth/ground_truth_final.owl"; then
+  echo "ERROR: WONT or MILD imports a full OBO release directly. Remove that import;"
+  echo "       the term reaches the closure through the module built here." >&2
+  exit 1
+fi
  
 $ROBOT merge --input "$TMP/base.ttl" --output "$TMP/combined_own.owl"
 echo "  Combined own content: $(wc -l < "$TMP/combined_own.owl") lines"
@@ -136,7 +182,7 @@ import csv, sys
 scratch = sys.argv[1]
 buckets = {k: [] for k in (
     'bfo','ro','iao','obi','ogms','pato','cob','go',
-    'hp','chebi','doid','dron','ncbi','uo','upheno')}
+    'hp','chebi','doid','dron','ncbi','uo','upheno','uberon')}
 with open(f"{scratch}/external_terms.csv") as f:
     for row in csv.DictReader(f):
         iri = row['term'].strip()
@@ -158,6 +204,8 @@ with open(f"{scratch}/external_terms.csv") as f:
         elif local.startswith('NCBITaxon_'):             buckets['ncbi'].append(iri)
         elif local.startswith('UO_'):                    buckets['uo'].append(iri)
         elif local.startswith('UPHENO_'):                buckets['upheno'].append(iri)
+        # no uberon source locally; pato.owl bundles the few UBERON terms in use
+        elif local.startswith('UBERON_'):                buckets['uberon'].append(iri)
 for name, iris in buckets.items():
     with open(f"{scratch}/termfile_{name}.txt", 'w') as f:
         f.write('\n'.join(iris) + ('\n' if iris else ''))
@@ -169,7 +217,7 @@ PYEOF
  
 # ── Step 3: JOINT STAR extraction over merged upper/mid sources ────────────────
 # ── CHANGED ── one merge + one STAR, replacing per-source extractions.
-echo "[3/5] Joint STAR extraction (merged bfo+ro+iao+obi+ogms+cob+pato+uo+doid+hp)..."
+echo "[3/5] Joint STAR extraction (merged bfo+ro+iao+obi+ogms+cob + PATO-STAR; uo stub; doid/hp MIREOT)..."
  
 # 3a. Build the combined seed (union of the six STAR buckets).
 : > "$TMP/seed_core.txt"
@@ -190,11 +238,93 @@ done
 $ROBOT merge "${core_merge_args[@]}" --output "$TMP/sources_core.owl" 2>/dev/null
 echo "  merged STAR sources: $(wc -l < "$TMP/sources_core.owl" | tr -d ' ') lines"
  
+# 3a2. FIX 3(a): PATO on its own first, then its module joins the merge.
+# The two roots of the ChEBI leaf module are grounded under BFO only by the
+# copies pato.owl bundles (CHEBI_24431 ⊑ BFO_0000040, CHEBI_50906 ⊑
+# PATO_0000001); seed them here so the leaf module does not dangle.
+if [[ -s "$TMP/termfile_pato.txt" ]]; then
+  printf 'http://purl.obolibrary.org/obo/CHEBI_24431\nhttp://purl.obolibrary.org/obo/CHEBI_50906\n' \
+    | tee -a "$TMP/termfile_pato.txt" >> "$TMP/seed_core.txt"
+  # BOT, not STAR: BOT keeps every superclass link (STAR alone would drop
+  # `CHEBI_24431 ⊑ BFO_0000040` because BFO_0000040 is not a PATO seed); the
+  # joint STAR below then trims against the full seed, where it IS present.
+  $ROBOT extract --method BOT --input "$IMP/pato.owl" \
+    --term-file "$TMP/termfile_pato.txt" \
+    --output "$TMP/pato_star.owl" 2>/dev/null
+  echo "  pato_star (PATO alone, BOT): $(wc -l < "$TMP/pato_star.owl" | tr -d ' ') lines"
+  core_merge_args+=(--input "$TMP/pato_star.owl")
+  $ROBOT merge "${core_merge_args[@]}" --output "$TMP/sources_core.owl" 2>/dev/null
+  echo "  merged STAR sources + pato_star: $(wc -l < "$TMP/sources_core.owl" | tr -d ' ') lines"
+fi
+
 # 3c. Single STAR extraction over the merged sources + combined seed.
 $ROBOT extract --method STAR --input "$TMP/sources_core.owl" \
   --term-file "$TMP/seed_core.txt" \
   --output "$TMP/extract_core.owl" 2>/dev/null
 echo "  extract_core: $(wc -l < "$TMP/extract_core.owl" | tr -d ' ') lines"
+core_bytes=$(wc -c < "$TMP/extract_core.owl" | tr -d ' ')
+if (( core_bytes > 3000000 )); then
+  echo "ERROR: extract_core is ${core_bytes} bytes; the joint STAR module ran away again" >&2
+  echo "       (0.9 MB expected). A full source ontology is back in the merge or the seed." >&2
+  exit 1
+fi
+
+# 3d. FIX 3(c): DOID and HP as MIREOT paths from the seed terms to their root.
+if [[ -s "$TMP/termfile_doid.txt" ]]; then
+  $ROBOT extract --method MIREOT --input "$IMP/doid.owl" \
+    --lower-terms "$TMP/termfile_doid.txt" \
+    --upper-term "http://purl.obolibrary.org/obo/DOID_4" \
+    --intermediates minimal --output "$TMP/extract_doid.owl" 2>/dev/null
+  echo "  extract_doid (MIREOT): $(wc -l < "$TMP/extract_doid.owl" | tr -d ' ') lines"
+fi
+if [[ -s "$TMP/termfile_hp.txt" ]]; then
+  $ROBOT extract --method MIREOT --input "$IMP/hp.obo" \
+    --lower-terms "$TMP/termfile_hp.txt" \
+    --upper-term "http://purl.obolibrary.org/obo/HP_0000118" \
+    --intermediates minimal --output "$TMP/extract_hp_path.owl" 2>/dev/null
+  # Grounding under BFO, carried over from the 2026-06 module set (it was in
+  # obi_module.owl then). Without it every HP stub is a root beside `entity`.
+  cat > "$TMP/hp_ground.owl" << 'OWLEOF'
+<?xml version="1.0"?>
+<rdf:RDF xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/hp_ground_tmp.owl"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:label xml:lang="en">phenotype</rdfs:label>
+        <rdfs:comment xml:lang="en">Grounding axiom carried over from the previous module set (obi_module.owl, 2026-06), where the joint extraction had placed HP_0000118 under UPHENO_0001001 under PATO_0000001 quality. Asserted here so the HP bridge stubs stay under BFO_0000020 rather than becoming roots.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
+</rdf:RDF>
+OWLEOF
+  $ROBOT merge --input "$TMP/extract_hp_path.owl" --input "$TMP/hp_ground.owl" \
+    --output "$TMP/extract_hp.owl" 2>/dev/null
+  echo "  extract_hp (MIREOT + grounding): $(wc -l < "$TMP/extract_hp.owl" | tr -d ' ') lines"
+fi
+
+# 3e2. UBERON: no local source; pato.owl bundles the terms in use (one:
+# UBERON_0000344 mucosa). A BOT/STAR seed there drags 145 GO and 47 UBERON
+# classes plus two new roots in (measured), so take the MIREOT path straight
+# to BFO_0000040 instead. Goes into obi_module beside the joint extract.
+if [[ -s "$TMP/termfile_uberon.txt" ]]; then
+  $ROBOT extract --method MIREOT --input "$IMP/pato.owl" \
+    --lower-terms "$TMP/termfile_uberon.txt" \
+    --upper-term "http://purl.obolibrary.org/obo/BFO_0000040" \
+    --intermediates minimal --output "$TMP/extract_uberon.owl" 2>/dev/null
+  echo "  extract_uberon (MIREOT to material entity): $(wc -l < "$TMP/extract_uberon.owl" | tr -d ' ') lines"
+fi
+
+# 3e. FIX 3(b): UO is the one term in use, as a label stub.
+if [[ -s "$TMP/termfile_uo.txt" ]]; then
+  $ROBOT filter --input "$IMP/uo.owl" --term-file "$TMP/termfile_uo.txt" \
+    --select "self annotations" --output "$TMP/extract_uo.owl" 2>/dev/null
+  echo "  extract_uo (label stub): $(wc -l < "$TMP/extract_uo.owl" | tr -d ' ') lines"
+fi
  
 # UPHENO: filter (annotation-only; root class with many descendants we don't seed).
 if [[ -s "$TMP/termfile_upheno.txt" ]]; then
@@ -268,21 +398,27 @@ make_label_module() {
 # sources), not four separate per-source extracts.
 make_module obi \
   "$IMP_WOND/obi_import.owl" \
-  "$TMP/extract_core.owl"
+  "$TMP/extract_core.owl" \
+  "$TMP/extract_uberon.owl"
  
-# ogms/cob/pato/uo/doid/hp: label-carriers; all logic is in extract_core.
+# ogms/cob/pato: label-carriers; all logic is in extract_core.
 make_label_module ogms
 make_label_module cob
 make_label_module pato
-make_label_module uo
-make_label_module doid
-make_label_module hp
+# FIX 3: uo is a stub, doid/hp are MIREOT paths (their logic is NOT in obi_module).
+make_module uo   "$TMP/extract_uo.owl"
+make_module doid "$TMP/extract_doid.owl"
+make_module hp   "$TMP/extract_hp.owl"
 
 make_module upheno    "$TMP/extract_upheno.owl"
 make_module ncbitaxon "$TMP/extract_ncbi.owl"
-for ns in go chebi dron; do
-  make_module "$ns" "$IMP_WOND/${ns}_import.owl"
-done
+if $LEAF_MODULES; then
+  for ns in go chebi dron; do
+    make_module "$ns" "$IMP_WOND/${ns}_import.owl"
+  done
+else
+  echo "  [kept] go/chebi/dron modules untouched (pass --leaf-modules to rebuild)"
+fi
  
 echo "Modules written to: $MODULE_DIR/"
  

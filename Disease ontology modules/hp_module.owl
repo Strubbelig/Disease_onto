@@ -9,7 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/hp_module.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/hp_module.owl">
+    </owl:Ontology>
     
 
 
@@ -26,7 +27,15 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
@@ -42,27 +51,51 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -74,7 +107,29 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -92,6 +147,7 @@
     <!-- http://purl.obolibrary.org/obo/HP_0000118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
         <obo:IAO_0000115>A phenotypic abnormality.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UMLS:C4021819</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Organ abnormality</oboInOwl:hasExactSynonym>
@@ -112,7 +168,7 @@
     <!-- http://purl.obolibrary.org/obo/HP_0000961 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000961">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
         <obo:IAO_0000115>Bluish discoloration of the skin and mucosa due to poor circulation or inadequate oxygenation of arterial or capillary blood.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SNOMEDCT_US:119419001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT_US:3415004</oboInOwl:hasDbXref>
@@ -141,7 +197,7 @@
     <!-- http://purl.obolibrary.org/obo/HP_0000980 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000980">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
         <obo:IAO_0000115>Abnormally pale skin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>SNOMEDCT_US:398979000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0030232</oboInOwl:hasDbXref>
@@ -174,6 +230,43 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0002715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <obo:IAO_0000115>An abnormality of the immune system.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>HP:0003257</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>HP:0003346</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>HP:0010986</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>UMLS:C4021753</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Abnormality of the immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Immunological abnormality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>HP:0002715</oboInOwl:id>
+        <rdfs:comment>The immune system is composed of organs and interdependent cell types that collectively protect the body from infections and from the growth of tumor cells. The organs of the immune system comprise the bone marrow, the spleen, the thymus,the lymph nodes, and the cell types comprise B cells, T cells, natural killer cells, granulocytes,dendritic cells, and macrophages.</rdfs:comment>
+        <rdfs:label>Abnormality of the immune system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An abnormality of the immune system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0736-9199</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Abnormality of the immune system</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Immunological abnormality</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0004395 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0004395">
@@ -201,10 +294,48 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0011121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0011121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <obo:IAO_0000115>Any morphological abnormality of the skin.</obo:IAO_0000115>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-06-12T10:03:23Z</terms:date>
+        <oboInOwl:hasDbXref>Fyler:4133</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C4023528</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Abnormal skin morphology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Abnormal skin structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Abnormality of skin morphology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>HP:0011121</oboInOwl:id>
+        <rdfs:label>Abnormal skin morphology</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any morphological abnormality of the skin.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0736-9199</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Abnormal skin morphology</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5208-3432</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Abnormal skin structure</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5208-3432</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0012399 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0012399">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
         <obo:IAO_0000115>A type of ulcer that is caused when an area of skin is subject to pressure over a prolonged period of time, ranging in range in severity from patches of discolored skin to open wounds that expose the underlying bone or muscle. The most common sites are the sacrum, coccyx, heels and the hips.</obo:IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-08T08:49:52Z</terms:date>
@@ -222,18 +353,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0012399"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Pressure Sore</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0012399"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Pressure ulcer</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0012399"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A type of ulcer that is caused when an area of skin is subject to pressure over a prolonged period of time, ranging in range in severity from patches of discolored skin to open wounds that expose the underlying bone or muscle. The most common sites are the sacrum, coccyx, heels and the hips.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0736-9199</oboInOwl:hasDbXref>
@@ -244,13 +363,25 @@
         <owl:annotatedTarget>Bedsore</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0012399"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Pressure Sore</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/HP_0012399"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Pressure ulcer</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/HP_0025615 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0025615">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
         <obo:IAO_0000115>An abscess is a localized collection of purulent material surrounded by inflammation and granulation.</obo:IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-08T22:41:54Z</terms:date>
@@ -267,10 +398,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0032101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0032101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
+        <obo:IAO_0000115>Increased susceptibility to infection, as manifested by recurrent infection, severe or invasive infection, infection occurring in an unusual anatomical location, or infection with opportunistic organisms, that is unusual for a healthy individual of the same age.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7601-9822"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9382-150X"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2029-0733"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-3577-9021"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-4315-9105"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0004-8124-8864"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-04T22:23:03Z</terms:date>
+        <oboInOwl:hasOBONamespace>human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>HP:0032101</oboInOwl:id>
+        <rdfs:comment>There are five general subtypes. (i) Opportunistic infection, meaning infection by a pathogen that is not normally able to cause infection in a healthy host (e.g., pneumonia by Pneumocystis jirovecii or CMV); (ii) Unusual location (focus) of an infection (e.g., an aspergillus brain abscess); (iii) a protracted course or lack of adequate response to treatment (e.g., chronic rhinosinusitis); (iv) Unusual severity or intensity of an infection; and (v) unusual recurrence of infections.</rdfs:comment>
+        <rdfs:label>Unusual infection</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0032326 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0032326">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0032101"/>
         <obo:IAO_0000115>Infection with staphylococcus aureus resistant to the antibiotic methicillin (MRSA). MRSA can infect any individual but is more common among hospitalized patients, and can also occur as an opportunistic infection.</obo:IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-14T12:04:53Z</terms:date>
@@ -297,7 +449,7 @@
     <!-- http://purl.obolibrary.org/obo/HP_0032674 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0032674">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0011121"/>
         <obo:IAO_0000115>A cutaneous wound is a defined as a disruption of normal anatomic structure and function of the skin that occurs owing to an injury of the skin. Wound healing is a dynamic, interactive process involving soluble mediators, blood cells, extracellularmatrix, and parenchymal cells. Wound healing has three phases: inflammation, tissue formation, and tissue remodeling, that overlap in time.</obo:IAO_0000115>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-23T09:13:36Z</terms:date>
@@ -422,6 +574,22 @@
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6548-5200</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/hp.obo#layperson"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:comment xml:lang="en">Grounding axiom carried over from the previous module set (obi_module.owl, 2026-06), where the joint extraction had placed HP_0000118 under UPHENO_0001001 under PATO_0000001 quality. Asserted here so the HP bridge stubs stay under BFO_0000020 rather than becoming roots.</rdfs:comment>
+        <rdfs:label xml:lang="en">phenotype</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
