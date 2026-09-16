@@ -34516,6 +34516,27 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0001323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001709"/>
+        <obo:IAO_0000115>A 2-D extent quality inhering in a bearer by virtue of the bearer&apos;s two dimensional extent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001323</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:label>area</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A 2-D extent quality inhering in a bearer by virtue of the bearer&apos;s two dimensional extent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Area</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001595 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001595">
@@ -34610,6 +34631,26 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001708"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in one dimension.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in two dimensions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>2-D size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001709</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:label>2-D extent</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001709"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in two dimensions.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -34721,6 +34762,41 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A structural quality which is held by a bearer when the latter&apos;s disposition the presence of abnormally proliferating masses of cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:MAH</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002057">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001323"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015007"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000461"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001323"/>
+        <obo:IAO_0000115>An area which is relatively high.</obo:IAO_0000115>
+        <obo:RO_0002604 rdf:resource="http://purl.obolibrary.org/obo/PATO_0002058"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2061-091X"/>
+        <oboInOwl:creation_date>2009-03-30T04:11:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0002057</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+        <rdfs:label>increased area</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002057"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An area which is relatively high.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

@@ -182,7 +182,7 @@ import csv, sys
 scratch = sys.argv[1]
 buckets = {k: [] for k in (
     'bfo','ro','iao','obi','ogms','pato','cob','go',
-    'hp','chebi','doid','dron','ncbi','uo','upheno','uberon')}
+    'hp','chebi','doid','dron','ncbi','uo','upheno','uberon','fma')}
 with open(f"{scratch}/external_terms.csv") as f:
     for row in csv.DictReader(f):
         iri = row['term'].strip()
@@ -206,6 +206,7 @@ with open(f"{scratch}/external_terms.csv") as f:
         elif local.startswith('UPHENO_'):                buckets['upheno'].append(iri)
         # no uberon source locally; pato.owl bundles the few UBERON terms in use
         elif local.startswith('UBERON_'):                buckets['uberon'].append(iri)
+        elif local.startswith('FMA_'):                   buckets['fma'].append(iri)
 for name, iris in buckets.items():
     with open(f"{scratch}/termfile_{name}.txt", 'w') as f:
         f.write('\n'.join(iris) + ('\n' if iris else ''))
@@ -319,6 +320,37 @@ if [[ -s "$TMP/termfile_uberon.txt" ]]; then
   echo "  extract_uberon (MIREOT to material entity): $(wc -l < "$TMP/extract_uberon.owl" | tr -d ' ') lines"
 fi
 
+# 3e3. FMA: the superclass path of every FMA term in use (one: FMA_7163 Skin),
+# MIREOT from the OBO-IRI edition of FMA up to `Anatomical entity`, then
+# grounded under BFO -- FMA does not import BFO, so without the two axioms
+# below `Anatomical entity` is a root beside `entity`.
+if [[ -s "$TMP/termfile_fma.txt" ]]; then
+  $ROBOT extract --method MIREOT --input "$IMP/fma_obo.owl" \
+    --lower-terms "$TMP/termfile_fma.txt" \
+    --upper-term "http://purl.obolibrary.org/obo/FMA_62955" \
+    --intermediates all --output "$TMP/extract_fma_path.owl" 2>/dev/null
+  cat > "$TMP/fma_ground.owl" << 'OWLEOF'
+<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/fma_ground_tmp.owl"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment xml:lang="en">Grounding axiom added by the module build: FMA 'Material anatomical entity' is a BFO material entity. FMA itself does not import BFO.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+</rdf:RDF>
+OWLEOF
+  $ROBOT merge --input "$TMP/extract_fma_path.owl" --input "$TMP/fma_ground.owl" \
+    --output "$TMP/extract_fma.owl" 2>/dev/null
+  echo "  extract_fma (MIREOT + grounding): $(wc -l < "$TMP/extract_fma.owl" | tr -d ' ') lines"
+fi
+
 # 3e. FIX 3(b): UO is the one term in use, as a label stub.
 if [[ -s "$TMP/termfile_uo.txt" ]]; then
   $ROBOT filter --input "$IMP/uo.owl" --term-file "$TMP/termfile_uo.txt" \
@@ -411,6 +443,7 @@ make_module doid "$TMP/extract_doid.owl"
 make_module hp   "$TMP/extract_hp.owl"
 
 make_module upheno    "$TMP/extract_upheno.owl"
+make_module fma       "$TMP/extract_fma.owl"
 make_module ncbitaxon "$TMP/extract_ncbi.owl"
 if $LEAF_MODULES; then
   for ns in go chebi dron; do

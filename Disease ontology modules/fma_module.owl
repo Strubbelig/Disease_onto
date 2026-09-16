@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/wond/modules/fma_module.owl#"
+     xml:base="http://purl.obolibrary.org/obo/wond/modules/fma_module.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/fma_module.owl">
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_55670"/>
+        <obo:IAO_0000115>Solid organ which consists of organ parts that are arranged as fascicles or sheets. Examples: muscle (organ), ligament (organ), membrane (organ), skin, viscerocranial mucosa.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:55665</oboInOwl:id>
+        <rdfs:label>Nonparenchymatous organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_55670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67498"/>
+        <obo:IAO_0000115>Organ the unshared parts of which do not surround macroscopic anatomical spaces; only its shared parts (subdivisions of hollow tree organs) contain anatomical spaces. Examples: lung, liver, thymus, ovary, muscle (organ), meninx, superficial fascia, skin.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:55670</oboInOwl:id>
+        <rdfs:label>Solid organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_61775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_61775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_62955"/>
+        <obo:IAO_0000115>Anatomical entity which has three or fewer spatial dimensions. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine, peritoneal cavity, diaphragmatic surface of heart, inferior margin of liver, apex of lung.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:61775</oboInOwl:id>
+        <rdfs:label>Physical anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000115>Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:62955</oboInOwl:id>
+        <rdfs:label>Anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67165"/>
+        <obo:IAO_0000115>Material anatomical entity which is generated by coordinated expression of the organism&apos;s own genes that guide its morphogenesis; has inherent 3D shape; its parts are connected and spatially related to one another in patterns determined by coordinated gene expression. Examples: heart, right ventricle, mitral valve, myocardium, endothelium, lymphocyte, fibroblast, thorax, cardiovascular system, hemoglobin, T cell receptor.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Biological structure</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:67135</oboInOwl:id>
+        <rdfs:label>Anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_61775"/>
+        <obo:IAO_0000115>Physical anatomical entity which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:67165</oboInOwl:id>
+        <rdfs:comment xml:lang="en">Grounding axiom added by the module build: FMA &apos;Material anatomical entity&apos; is a BFO material entity. FMA itself does not import BFO.</rdfs:comment>
+        <rdfs:label>Material anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67135"/>
+        <obo:IAO_0000115>Anatomical structure which has as its direct parts portions of two or more types of tissue or two or more types of cardinal organ part which constitute a maximally connected anatomical structure demarcated predominantly by a bona fide anatomical surface. Examples: femur, biceps, liver, heart, skin, tracheobronchial tree, ovary.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:67498</oboInOwl:id>
+        <rdfs:label>Organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_7163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_55665"/>
+        <obo:IAO_0000115>Nonparenchymatous organ that consists of the epidermis, dermis and sets of hair and nails and which surrounds the entire body. Subdivisions of the skin surround various body parts; as a whole, the skin constitutes the external layer of the body.  Examples: There is only one skin.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Skin of body</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:7163</oboInOwl:id>
+        <rdfs:label>Skin</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
