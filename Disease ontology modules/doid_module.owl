@@ -250,11 +250,34 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_0040085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0040085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_104"/>
+        <obo:IAO_0000115 xml:lang="en">A bacterial infectious disease has_material_basis_in Bacteria.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM:995.91</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:10001005</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0040085</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_IEDB_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_infectious_disease_slim"/>
+        <rdfs:label xml:lang="en">bacterial sepsis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_0040085"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A bacterial infectious disease has_material_basis_in Bacteria.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007645"/>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/pubmed/20421654</oboInOwl:hasDbXref>
+        <rdfs:comment>IEDB:RV</rdfs:comment>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_0050061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050117"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_104"/>
         <obo:IAO_0000115 xml:lang="en">A primary bacterial infectious disease that results_in infection located_in skin, has_material_basis_in Erysipelothrix rhusiopathiae, which is transmitted_by contact with infected animals. The infection has_symptom redness of skin, has_symptom tenderness of skin and has_symptom warmth of skin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D004887</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
@@ -438,6 +461,90 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">An autoimmune disease of skin and connective tissue that is characterized by subepidermal blistering especially in the lower abdomen, groin, and flexor surfaces of the extremities, creating tense blisters that do not break easily.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://rarediseases.org/rare-diseases/pemphigus/</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_65"/>
+        <obo:IAO_0000115 xml:lang="en">A bone inflammation disease that has_material_basis_in infection located_in bone or located_in bone marrow.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:1018</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:1020</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:10281</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:10282</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:10692</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:10860</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:1164</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:11788</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:11959</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:12011</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13673</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13674</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13675</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13678</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13684</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:13737</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:14003</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:14100</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:14166</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:2249</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:2250</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:5858</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:9456</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>GARD:7286</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:730.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2025_09_01:203181001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0008707</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:1019</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_infectious_disease_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_rare_slim"/>
+        <rdfs:label xml:lang="en">osteomyelitis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_1019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A bone inflammation disease that has_material_basis_in infection located_in bone or located_in bone marrow.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007640"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Osteomyelitis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://my.clevelandclinic.org/disorders/osteomyelitis/hic_osteomyelitis.aspx</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.mayoclinic.com/health/osteomyelitis/DS00759</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www.nlm.nih.gov/medlineplus/ency/article/000437.htm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 xml:lang="en">A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD10CM:A49.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D001424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C2890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2025_09_01:87628006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0004623</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:104</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_infectious_disease_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">bacterial infectious disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_104"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Pathogenic_bacteria</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

@@ -302,6 +302,10 @@
 # 
 # https://bioportal.bioontology.org/ontologies/MILD/MILD_120098
 # 
+# https://bioportal.bioontology.org/ontologies/MILD/MILD_120099
+# 
+# https://bioportal.bioontology.org/ontologies/MILD/MILD_120100
+# 
 # 
 # 
 # #################################################################
@@ -833,6 +837,15 @@ _:genid52 a owl:Restriction;
   rdfs:subClassOf :MILD_120098, _:genid53, _:genid54, _:genid55;
   <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that has as part a threshold value and a comparison_operator and that is about a phenotypic abnormality."@en;
   rdfs:label "disease threshold specification"@en .
+
+:MILD_120099 a owl:Class;
+  rdfs:subClassOf :MILD_120089;
+  rdfs:label "Method used for medical condition treatment"@en .
+
+:MILD_120100 a owl:Class;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104>;
+  <http://purl.obolibrary.org/obo/IAO_0000116> "Sibling of treatment plan specification, not a child: a prophylaxis is planned to keep a condition from arising, not to treat one. Named with the plan-specification pattern by decision (2026-09-17); 'method used for prophylaxis' was the alternative."@en;
+  rdfs:label "prophylaxis plan specification"@en .
 
 :MILD_120098 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033>;
