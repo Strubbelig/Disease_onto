@@ -840,7 +840,8 @@ _:genid52 a owl:Restriction;
 
 :MILD_120099 a owl:Class;
   rdfs:subClassOf :MILD_120089;
-  rdfs:label "Method used for medical condition treatment"@en .
+  <http://purl.obolibrary.org/obo/IAO_0000118> "Method used for medical condition treatment"@en;
+  rdfs:label "Medical condition treatment plan specification"@en .
 
 :MILD_120100 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104>;

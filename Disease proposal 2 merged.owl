@@ -29012,6 +29012,17 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_241863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_241863">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9661"/>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:241863</oboInOwl:id>
+        <rdfs:label>Free limb segment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_55665 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55665">
@@ -29096,6 +29107,19 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_67504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67135"/>
+        <obo:IAO_0000115>Anatomical structure, which is a subdivision of a cardinal body part; it may exclude bones; is demarcated from other subdivisions of the same cardinal body part by anatomical surfaces or lines or topographical references; together with other contiguous subdivisions of the same cardinal body part, it constitutes a cardinal body part. Examples: thorax, perineum, back of neck, forearm, hand, phalanx, nose, auricle of ear, scrotum.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Principal body part subdivision</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:67504</oboInOwl:id>
+        <rdfs:label>Subdivision of cardinal body part</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_7163 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_7163">
@@ -29105,6 +29129,56 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FMA:7163</oboInOwl:id>
         <rdfs:label>Skin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_83015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_83015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_83017"/>
+        <oboInOwl:hasExactSynonym>Distal segment of free limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:83015</oboInOwl:id>
+        <rdfs:label>Distal free limb segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_83017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_83017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_241863"/>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:83017</oboInOwl:id>
+        <rdfs:label>Cardinal free limb segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_9661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67504"/>
+        <oboInOwl:hasExactSynonym>Limb region</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Region of limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Segment of limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Subdivision of limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:9661</oboInOwl:id>
+        <rdfs:label>Limb segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_9664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_83015"/>
+        <oboInOwl:hasExactSynonym>Terminal segment of free lower limb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FMA:9664</oboInOwl:id>
+        <rdfs:label>Foot</rdfs:label>
     </owl:Class>
     
 
@@ -36712,7 +36786,8 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
 
     <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120099">
         <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120089"/>
-        <rdfs:label xml:lang="en">Method used for medical condition treatment</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">Method used for medical condition treatment</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">Medical condition treatment plan specification</rdfs:label>
     </owl:Class>
     
 
