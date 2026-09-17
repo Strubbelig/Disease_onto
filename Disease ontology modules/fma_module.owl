@@ -71,18 +71,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FMA_55665 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_55665">
@@ -122,7 +110,6 @@
     <!-- http://purl.obolibrary.org/obo/FMA_62955 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FMA:62955</oboInOwl:id>
@@ -147,12 +134,10 @@
     <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_61775"/>
         <obo:IAO_0000115>Physical anatomical entity which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FMA:67165</oboInOwl:id>
-        <rdfs:comment xml:lang="en">Grounding axiom added by the module build: FMA &apos;Material anatomical entity&apos; is a BFO material entity. FMA itself does not import BFO.</rdfs:comment>
         <rdfs:label>Material anatomical entity</rdfs:label>
     </owl:Class>
     

@@ -153,6 +153,7 @@
         <oboInOwl:hasExactSynonym>Organ abnormality</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:id>HP:0000118</oboInOwl:id>
+        <rdfs:comment xml:lang="en">Collapsed from hp.owl (HP_0000118 subClassOf UPHENO_0001003) and upheno.owl (UPHENO_0001003 subClassOf UPHENO_0001001); the local hp.obo omits both. Stated by the owners, not by this build.</rdfs:comment>
         <rdfs:comment>This is the root of the phenotypic abnormality subontology of the HPO.</rdfs:comment>
         <rdfs:label>Phenotypic abnormality</rdfs:label>
     </owl:Class>
@@ -577,19 +578,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UPHENO_0001001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <rdfs:comment xml:lang="en">Grounding axiom carried over from the previous module set (obi_module.owl, 2026-06), where the joint extraction had placed HP_0000118 under UPHENO_0001001 under PATO_0000001 quality. Asserted here so the HP bridge stubs stay under BFO_0000020 rather than becoming roots.</rdfs:comment>
-        <rdfs:label xml:lang="en">phenotype</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
 </rdf:RDF>
 
 

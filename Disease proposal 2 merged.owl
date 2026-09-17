@@ -27,6 +27,7 @@
         <dcterms:title xml:lang="en">Mid Layer Disease Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>MILD</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://bioportal.bioontology.org/ontologies/MILD/</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">IMPORT CLOSURE - foreign roots are accepted, not bridged. MILD and WONT assert axioms about their own classes only; no subsumption is authored here for a class another ontology owns. The import modules carry each external term with exactly the superclass path its source ontology states, so where a source does not place its root under BFO - DOID_4 disease, UO_0000000 unit, FMA_62955 anatomical entity - that root sits beside BFO_0000001 entity in the closure, by design (decided 2026-09-17).</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (1 of 4) - disease category. MILD models disease as a material continuant (MILD_120020) individuated by the continuity of its disorder lineage, not as a disposition. This is a deliberate departure from the OGMS pattern; see the editor note on MILD_120020 for the argument and the relatedMatch to OGMS_0000031.</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (2 of 4) - pathologicity is a declared primitive. What makes a disorder pathological is ASSERTED by criteria, never inferred. MILD adopts Hucklenbroich&apos;s criteria - threat to life, pain and suffering, loss of ability, loss of fertility - and does not reduce pathologicity to statistical rarity (Boorse) or to social disvalue (normativism). Species-comparative abnormality alone is explicitly not sufficient, because rare variation is not thereby pathological. Following Scheuermann et al., this term is left primitive on purpose rather than defined away, and the choice is recorded here rather than hidden. See MILD_120022.</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (3 of 4) - crispness is a representational convenience, not a metaphysical claim. MILD classes have crisp OWL extensions because OWL DL provides no graded membership. This must not be read as a commitment to sharp natural boundaries; Sadegh-Zadeh&apos;s argument that health and disease are graded is accepted. Gradedness is represented, but in the data layer rather than in class membership: MILD_120005 tendency carries partial and probabilistic realization, and MILD_120029 to MILD_120031 carry threshold specifications, threshold values and threshold crossing events. A borderline case is therefore modelled as a measured value near a stated threshold, never as partial membership in a disease class.</rdfs:comment>
@@ -28877,7 +28878,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     <!-- http://purl.obolibrary.org/obo/FMA_62955 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000115>Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FMA:62955</oboInOwl:id>
@@ -28902,12 +28902,10 @@ For example, A and B may be gene products and binding of B by A positively regul
     <!-- http://purl.obolibrary.org/obo/FMA_67165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_61775"/>
         <obo:IAO_0000115>Physical anatomical entity which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FMA:67165</oboInOwl:id>
-        <rdfs:comment xml:lang="en">Grounding axiom added by the module build: FMA &apos;Material anatomical entity&apos; is a BFO material entity. FMA itself does not import BFO.</rdfs:comment>
         <rdfs:label>Material anatomical entity</rdfs:label>
     </owl:Class>
     
@@ -30276,6 +30274,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasExactSynonym>Organ abnormality</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:id>HP:0000118</oboInOwl:id>
+        <rdfs:comment xml:lang="en">Collapsed from hp.owl (HP_0000118 subClassOf UPHENO_0001003) and upheno.owl (UPHENO_0001003 subClassOf UPHENO_0001001); the local hp.obo omits both. Stated by the owners, not by this build.</rdfs:comment>
         <rdfs:comment>This is the root of the phenotypic abnormality subontology of the HPO.</rdfs:comment>
         <rdfs:label>Phenotypic abnormality</rdfs:label>
     </owl:Class>
@@ -35607,8 +35606,9 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <obo:IAO_0000111>phenotype</obo:IAO_0000111>
         <obo:IAO_0000115>A phenotypic effect related to http://www.w3.org/2002/07/owl#Thing.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Grounding axiom carried over from the previous module set (obi_module.owl, 2026-06), where the joint extraction had placed HP_0000118 under UPHENO_0001001 under PATO_0000001 quality. Asserted here so the HP bridge stubs stay under BFO_0000020 rather than becoming roots.</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/upheno.owl"/>
         <rdfs:label>phenotype</rdfs:label>
         <rdfs:label xml:lang="en">phenotype</rdfs:label>
     </owl:Class>
@@ -35996,6 +35996,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A process that has as participant a material disease entity, that is immediately causally downstream of a disorder development process, and that has as its start boundary a threshold crossing event.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">course of the disease process</rdfs:label>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
     </owl:Class>
     
 
@@ -36520,6 +36521,39 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         <obo:IAO_0000115 xml:lang="en">A healthcare provider role that inheres in a person in virtue of that person being licensed to practise medicine.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Relocated from WONT_0000090 when the MILD/WONT import direction was reversed: a physician role is not wound-specific, is not used by any WONT class, and its only consumer is the MILD treatment-plan axiom. Reuse an OMRSE physician-role class here if an OMRSE module is later added.</rdfs:comment>
         <rdfs:label xml:lang="en">Physician role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120095 -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A quality of a pathological disorder that is the extent to which its tissue shows neoplastic growth that invades surrounding tissue or spreads to distant sites.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Relocated from WONT_0000489 on 2026-09-17: malignancy is a quality of a disorder in general, not of a wound. WONT defines Malignant wound through its wound causing malignant process and does not use this determinable.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">degree of malignancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120096 -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120096">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095"/>
+        <obo:IAO_0000115 xml:lang="en">A degree of malignancy that qualifies its bearer as benign: any neoplastic tissue present neither invades surrounding tissue nor spreads.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">benign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120097 -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120097">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095"/>
+        <obo:IAO_0000115 xml:lang="en">A degree of malignancy that qualifies its bearer as malignant: neoplastic tissue present invades surrounding tissue or spreads to distant sites.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">PATO_0002097 &apos;neoplastic, malignant&apos; is a disposition of a tumour; this quality is borne by the disorder. Bridged, not subsumed.</rdfs:comment>
+        <rdfs:label xml:lang="en">malignant</rdfs:label>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0002097"/>
     </owl:Class>
     
 

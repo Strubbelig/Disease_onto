@@ -112,7 +112,7 @@ STAR_SOURCES=(
   cob:"$IMP/cob.owl"
 )
 # Namespace buckets whose seed terms feed the joint STAR extraction.
-STAR_BUCKETS=(bfo ro iao obi ogms cob pato)
+STAR_BUCKETS=(bfo ro iao obi ogms cob pato upheno)   # upheno: obi.owl states UPHENO_0001001 ⊑ PATO_0000001
  
 # ── Step 1: Build a base TTL that only imports ground_truth ────────────────────
 echo "[1/5] Creating base (disease proposal with only ground_truth import)..."
@@ -283,8 +283,12 @@ if [[ -s "$TMP/termfile_hp.txt" ]]; then
     --lower-terms "$TMP/termfile_hp.txt" \
     --upper-term "http://purl.obolibrary.org/obo/HP_0000118" \
     --intermediates minimal --output "$TMP/extract_hp_path.owl" 2>/dev/null
-  # Grounding under BFO, carried over from the 2026-06 module set (it was in
-  # obi_module.owl then). Without it every HP stub is a root beside `entity`.
+  # HP_0000118 ⊑ UPHENO_0001001 is what the sources say, with one intermediate
+  # left out: hp.owl (2026-06-06) asserts HP_0000118 ⊑ UPHENO_0001003 and
+  # upheno.owl (2025-10-12) asserts UPHENO_0001003 ⊑ UPHENO_0001001. The local
+  # hp.obo carries neither, so the collapsed path is written here rather than
+  # extracted. Nothing is invented: both halves are quoted from their owners.
+  # (UPHENO_0001001 ⊑ PATO_0000001 comes through the joint STAR from obi.owl.)
   cat > "$TMP/hp_ground.owl" << 'OWLEOF'
 <?xml version="1.0"?>
 <rdf:RDF xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -294,13 +298,9 @@ if [[ -s "$TMP/termfile_hp.txt" ]]; then
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/hp_ground_tmp.owl"/>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
+        <rdfs:comment xml:lang="en">Collapsed from hp.owl (HP_0000118 subClassOf UPHENO_0001003) and upheno.owl (UPHENO_0001003 subClassOf UPHENO_0001001); the local hp.obo omits both. Stated by the owners, not by this build.</rdfs:comment>
     </owl:Class>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <rdfs:label xml:lang="en">phenotype</rdfs:label>
-        <rdfs:comment xml:lang="en">Grounding axiom carried over from the previous module set (obi_module.owl, 2026-06), where the joint extraction had placed HP_0000118 under UPHENO_0001001 under PATO_0000001 quality. Asserted here so the HP bridge stubs stay under BFO_0000020 rather than becoming roots.</rdfs:comment>
-    </owl:Class>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
 </rdf:RDF>
 OWLEOF
   $ROBOT merge --input "$TMP/extract_hp_path.owl" --input "$TMP/hp_ground.owl" \
@@ -320,35 +320,19 @@ if [[ -s "$TMP/termfile_uberon.txt" ]]; then
   echo "  extract_uberon (MIREOT to material entity): $(wc -l < "$TMP/extract_uberon.owl" | tr -d ' ') lines"
 fi
 
-# 3e3. FMA: the superclass path of every FMA term in use (one: FMA_7163 Skin),
-# MIREOT from the OBO-IRI edition of FMA up to `Anatomical entity`, then
-# grounded under BFO -- FMA does not import BFO, so without the two axioms
-# below `Anatomical entity` is a root beside `entity`.
+# 3e3. FMA: the superclass path of every FMA term in use (Skin, Anatomical
+# structure), MIREOT from the OBO-IRI edition of FMA up to `Anatomical
+# entity`. FMA does not import BFO, so `Anatomical entity` is a root beside
+# `entity` in the closure. That is accepted, not patched: we author axioms
+# about our own classes only, never about a class another ontology owns
+# (decided 2026-09-17; the two grounding axioms that used to be added here
+# were removed for that reason, and the MILD header says so).
 if [[ -s "$TMP/termfile_fma.txt" ]]; then
   $ROBOT extract --method MIREOT --input "$IMP/fma_obo.owl" \
     --lower-terms "$TMP/termfile_fma.txt" \
     --upper-term "http://purl.obolibrary.org/obo/FMA_62955" \
-    --intermediates all --output "$TMP/extract_fma_path.owl" 2>/dev/null
-  cat > "$TMP/fma_ground.owl" << 'OWLEOF'
-<?xml version="1.0"?>
-<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/fma_ground_tmp.owl"/>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67165">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:comment xml:lang="en">Grounding axiom added by the module build: FMA 'Material anatomical entity' is a BFO material entity. FMA itself does not import BFO.</rdfs:comment>
-    </owl:Class>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
-</rdf:RDF>
-OWLEOF
-  $ROBOT merge --input "$TMP/extract_fma_path.owl" --input "$TMP/fma_ground.owl" \
-    --output "$TMP/extract_fma.owl" 2>/dev/null
-  echo "  extract_fma (MIREOT + grounding): $(wc -l < "$TMP/extract_fma.owl" | tr -d ' ') lines"
+    --intermediates all --output "$TMP/extract_fma.owl" 2>/dev/null
+  echo "  extract_fma (MIREOT): $(wc -l < "$TMP/extract_fma.owl" | tr -d ' ') lines"
 fi
 
 # 3e. FIX 3(b): UO is the one term in use, as a label stub.
