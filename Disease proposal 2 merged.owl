@@ -27,11 +27,10 @@
         <dcterms:title xml:lang="en">Mid Layer Disease Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>MILD</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://bioportal.bioontology.org/ontologies/MILD/</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">IMPORT CLOSURE - foreign roots are accepted, not bridged. MILD and WONT assert axioms about their own classes only; no subsumption is authored here for a class another ontology owns. The import modules carry each external term with exactly the superclass path its source ontology states, so where a source does not place its root under BFO - DOID_4 disease, UO_0000000 unit, FMA_62955 anatomical entity - that root sits beside BFO_0000001 entity in the closure, by design (decided 2026-09-17).</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (1 of 4) - disease category. MILD models disease as a material continuant (MILD_120020) individuated by the continuity of its disorder lineage, not as a disposition. This is a deliberate departure from the OGMS pattern; see the editor note on MILD_120020 for the argument and the relatedMatch to OGMS_0000031.</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (2 of 4) - pathologicity is a declared primitive. What makes a disorder pathological is ASSERTED by criteria, never inferred. MILD adopts Hucklenbroich&apos;s criteria - threat to life, pain and suffering, loss of ability, loss of fertility - and does not reduce pathologicity to statistical rarity (Boorse) or to social disvalue (normativism). Species-comparative abnormality alone is explicitly not sufficient, because rare variation is not thereby pathological. Following Scheuermann et al., this term is left primitive on purpose rather than defined away, and the choice is recorded here rather than hidden. See MILD_120022.</rdfs:comment>
         <rdfs:comment xml:lang="en">MODEL COMMITMENT (3 of 4) - crispness is a representational convenience, not a metaphysical claim. MILD classes have crisp OWL extensions because OWL DL provides no graded membership. This must not be read as a commitment to sharp natural boundaries; Sadegh-Zadeh&apos;s argument that health and disease are graded is accepted. Gradedness is represented, but in the data layer rather than in class membership: MILD_120005 tendency carries partial and probabilistic realization, and MILD_120029 to MILD_120031 carry threshold specifications, threshold values and threshold crossing events. A borderline case is therefore modelled as a measured value near a stated threshold, never as partial membership in a disease class.</rdfs:comment>
-        <rdfs:comment xml:lang="en">MODEL COMMITMENT (4 of 4) - aetiology is not causal. What a disease causes cannot be reliably distinguished from what the disease is, so no causal relation is asserted between one disorder and another. What can be asserted is co-location: that two disorders occupy the same site in the same bearer over the same period, and that a diagnostic classification groups them. Where a condition raises the likelihood of a further disorder without necessitating it, that is represented in the predisposition layer - MILD_120023 disease predisposition, a MILD_120005 tendency, with the responsible abnormality attached by MILD_120094 has a material basis - and not by a causal axiom. Consequently disorders divide by whether their development process is self-sufficient or additionally requires an external injury process, rather than by what is said to have caused them. NOTE: the temporal half of co-location is documentation only. BFO 2020 places temporal relations in a separate temporal extension which this ontology does not import, so &apos;over the same period&apos; appears in definitions and annotations but is not axiomatised.</rdfs:comment>
+        <rdfs:comment xml:lang="en">MODEL COMMITMENT (4 of 4) - aetiology is not causal. What a disease causes cannot be reliably distinguished from what the disease is, so no causal relation is asserted between one disorder and another. What can be asserted is (a) that a diagnostic classification groups two disorders into one disease, and (b) a complication: a disorder that is the output of a process in another disease&apos;s course (MILD_120053) - the causal order is carried by the processes, where it belongs, never by a relation between the disorders. Co-location - two disorders occupying the same site in the same bearer over the same period - was the earlier reading of (b) and is retired (2026-09-17): it said only what (a) says, and its name promised a spatial adjacency the axiom never stated. Where a condition raises the likelihood of a further disorder without necessitating it, that is represented in the predisposition layer - MILD_120023 disease predisposition, a MILD_120005 tendency, with the responsible abnormality attached by MILD_120094 has a material basis - and not by a causal axiom. Consequently disorders divide by whether their development process is self-sufficient or additionally requires an external injury process, rather than by what is said to have caused them. NOTE: the temporal half of co-location is documentation only. BFO 2020 places temporal relations in a separate temporal extension which this ontology does not import, so &apos;over the same period&apos; appears in definitions and annotations but is not axiomatised.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -35996,7 +35995,6 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A process that has as participant a material disease entity, that is immediately causally downstream of a disorder development process, and that has as its start boundary a threshold crossing event.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">course of the disease process</rdfs:label>
-        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000063"/>
     </owl:Class>
     
 
@@ -36521,39 +36519,6 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         <obo:IAO_0000115 xml:lang="en">A healthcare provider role that inheres in a person in virtue of that person being licensed to practise medicine.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Relocated from WONT_0000090 when the MILD/WONT import direction was reversed: a physician role is not wound-specific, is not used by any WONT class, and its only consumer is the MILD treatment-plan axiom. Reuse an OMRSE physician-role class here if an OMRSE module is later added.</rdfs:comment>
         <rdfs:label xml:lang="en">Physician role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120095 -->
-
-    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of a pathological disorder that is the extent to which its tissue shows neoplastic growth that invades surrounding tissue or spreads to distant sites.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Relocated from WONT_0000489 on 2026-09-17: malignancy is a quality of a disorder in general, not of a wound. WONT defines Malignant wound through its wound causing malignant process and does not use this determinable.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">degree of malignancy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120096 -->
-
-    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120096">
-        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095"/>
-        <obo:IAO_0000115 xml:lang="en">A degree of malignancy that qualifies its bearer as benign: any neoplastic tissue present neither invades surrounding tissue nor spreads.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">benign</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120097 -->
-
-    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120097">
-        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120095"/>
-        <obo:IAO_0000115 xml:lang="en">A degree of malignancy that qualifies its bearer as malignant: neoplastic tissue present invades surrounding tissue or spreads to distant sites.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">PATO_0002097 &apos;neoplastic, malignant&apos; is a disposition of a tumour; this quality is borne by the disorder. Bridged, not subsumed.</rdfs:comment>
-        <rdfs:label xml:lang="en">malignant</rdfs:label>
-        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/PATO_0002097"/>
     </owl:Class>
     
 

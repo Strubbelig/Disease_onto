@@ -92,31 +92,6 @@
         <obo:IAO_0000232>creation date: 2009-06-23T11:39:44Z</obo:IAO_0000232>
         <rdfs:label>disorder</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
-        <obo:IAO_0000111>disease course</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">The totality of all processes through which a given disease instance is realized.</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2009-06-23T11:55:44Z</obo:IAO_0000232>
-        <obo:IAO_0000232>replace &apos;OBI:occurrence of disease&apos;, need to add logical definition
-The axioms of OBI occurence of disease:
-Equivalent classes:
-realizes some disease
-Superclasses:
-&apos;has part&apos; some &apos;pathologic process&apos;
-&apos;has participant&apos; some 
-    (organism
-     and (&apos;has role&apos; some &apos;host of immune response role&apos;))
-biological_process
-realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
-        <rdfs:label>disease course</rdfs:label>
-    </owl:Class>
 </rdf:RDF>
 
 
