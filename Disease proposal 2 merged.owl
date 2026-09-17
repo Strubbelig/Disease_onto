@@ -549,8 +549,15 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <obo:IAO_0000115>Has related synonym.</obo:IAO_0000115>
         <rdfs:label>has_related_synonym</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Has related synonym.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -10453,6 +10460,12 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231501"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>agr:IND608619992</owl:annotatedTarget>
+        <oboInOwl:source>agr</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231501"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>cas:7722-64-7</owl:annotatedTarget>
         <oboInOwl:source>cas</oboInOwl:source>
     </owl:Axiom>
@@ -10648,12 +10661,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231501"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>agr:IND608175554</owl:annotatedTarget>
-        <oboInOwl:source>agr</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231501"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>agr:IND608619992</owl:annotatedTarget>
         <oboInOwl:source>agr</oboInOwl:source>
     </owl:Axiom>
     
@@ -28293,6 +28300,37 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000115 xml:lang="en">A nervous system disease that affects the peripheral nervous system.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>DOID:13069</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCI:C119734</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C27587</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0031117</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C1335029</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">peripheral nerve disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">peripheral neuropathy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>DOID:574</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">peripheral nervous system disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_574"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A nervous system disease that affects the peripheral nervous system.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/w/index.php?title=Peripheral_neuropathy&amp;redirect=no</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_65 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_65">
@@ -28450,8 +28488,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <!-- http://purl.obolibrary.org/obo/DOID_8536 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_8536">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_934"/>
         <obo:IAO_0000115 xml:lang="en">A viral infectious disease that results_in infection located_in nerve fiber, has_material_basis_in Human herpesvirus 3 (Varicellovirus humanalpha3), which reactivates after appearing as chickenpox in childhood. The virus is transmitted_by direct contact with the rash, which can develop into chickenpox in newly-infected individuals. The infection has_symptom rash which is followed by blisters, has_symptom headache, has_symptom fever, has_symptom malaise, has_symptom itching, has_symptom burning pain, and has_symptom paresthesia.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:8554</oboInOwl:hasAlternativeId>
@@ -28523,6 +28560,36 @@ For example, A and B may be gene products and binding of B by A positively regul
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
         <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Herpes_simplex</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>url:https://www.aad.org/public/diseases/a-z/herpes-simplex-overview</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_863">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 xml:lang="en">A disease of anatomical entity that is located_in the central nervous system or located_in the peripheral nervous system.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD10CM:G98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:349.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C26835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2025_09_01:155262005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0027765</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:863</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_MGI_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">nervous system disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A disease of anatomical entity that is located_in the central nervous system or located_in the peripheral nervous system.</owl:annotatedTarget>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/ECO_0007638"/>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Nervous_system</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -36002,7 +36069,7 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
     <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120029 -->
 
     <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/MILD/MILD_120098"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -36519,6 +36586,17 @@ rdfs:subclass of Confirmed disease diagnostic result by not completely objective
         <obo:IAO_0000115 xml:lang="en">A healthcare provider role that inheres in a person in virtue of that person being licensed to practise medicine.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Relocated from WONT_0000090 when the MILD/WONT import direction was reversed: a physician role is not wound-specific, is not used by any WONT class, and its only consumer is the MILD treatment-plan axiom. Reuse an OMRSE physician-role class here if an OMRSE module is later added.</rdfs:comment>
         <rdfs:label xml:lang="en">Physician role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/MILD/MILD_120098 -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/MILD/MILD_120098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that has as part a threshold value and a comparison operator and that is about a quality, such that the quality&apos;s meeting the threshold is what the specification prescribes as decisive.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Generalises the disease threshold specification (MILD_120029), which is the special case about a phenotypic abnormality. Other specifications with the same shape - a wound healing criterion, an outcome criterion in a trial protocol - are about qualities that are not abnormalities, so they need a parent that does not say &apos;disease&apos;. Lives in MILD because WONT and any other domain ontology need it and MILD never imports them.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">threshold specification</rdfs:label>
     </owl:Class>
     
 

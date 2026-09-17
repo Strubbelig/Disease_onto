@@ -34,6 +34,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
@@ -48,6 +54,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This molecular entity is different than ChEBI&apos;s &apos;molecular entity&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">We would like to have cardinality restrictions on the logic, but there are some technical limitations.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">molecule</rdfs:label>
+    </owl:Class>
     
 
 

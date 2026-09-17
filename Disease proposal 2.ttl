@@ -300,6 +300,8 @@
 # 
 # https://bioportal.bioontology.org/ontologies/MILD/MILD_120093
 # 
+# https://bioportal.bioontology.org/ontologies/MILD/MILD_120098
+# 
 # 
 # 
 # #################################################################
@@ -828,10 +830,15 @@ _:genid52 a owl:Restriction;
   owl:onProperty :MILD_120084 .
 
 :MILD_120029 a owl:Class;
-  rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033>, _:genid53, _:genid54,
-    _:genid55;
+  rdfs:subClassOf :MILD_120098, _:genid53, _:genid54, _:genid55;
   <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that has as part a threshold value and a comparison_operator and that is about a phenotypic abnormality."@en;
   rdfs:label "disease threshold specification"@en .
+
+:MILD_120098 a owl:Class;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033>;
+  <http://purl.obolibrary.org/obo/IAO_0000115> "A directive information entity that has as part a threshold value and a comparison operator and that is about a quality, such that the quality's meeting the threshold is what the specification prescribes as decisive."@en;
+  <http://purl.obolibrary.org/obo/IAO_0000116> "Generalises the disease threshold specification (MILD_120029), which is the special case about a phenotypic abnormality. Other specifications with the same shape - a wound healing criterion, an outcome criterion in a trial protocol - are about qualities that are not abnormalities, so they need a parent that does not say 'disease'. Lives in MILD because WONT and any other domain ontology need it and MILD never imports them."@en;
+  rdfs:label "threshold specification"@en .
 
 _:genid53 a owl:Restriction;
   owl:someValuesFrom :MILD_120030;
