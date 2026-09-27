@@ -727,12 +727,12 @@ _:genid36 a owl:Restriction;
 :MILD_120022 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/OGMS_0000045>, _:genid37, _:genid38;
   owl:disjointWith :MILD_120023, :MILD_120024;
-  <http://purl.obolibrary.org/obo/IAO_0000115> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en;
+  <http://purl.obolibrary.org/obo/IAO_0000115> "a disorder is an abnormal presence or organization of material components — including the limiting case where the abnormal organization consists in a normally-present component being absent."@en;
   <http://purl.org/dc/elements/1.1/description> "Pathologicity is asserted - not inferred -  by primitives (e.g. threat to life, pain/suffering, loss of ability/fertility) as mentioned by Hucklenbroich et al."@en;
   rdfs:comment "A pathological disorder should not be identified with a merely voluntary, transient, and immediately reversible functional deviation. In substance use disorder cases, the candidate pathological disorder is the relatively stable neurobiological or neuropsychological organization that grounds impaired control, craving, tolerance, withdrawal tendency, or harmful recurrence, not a single act of substance use."@en,
     "ExO_0000079 is reused as a comparison anchor rather than as the MILD disease definition: pathological disorder may involve abnormal functioning, abnormal localization of normal functioning, or abnormal localization/organization of constituents relative to relevant members of the same species. Species-comparative abnormality is not sufficient by itself, because rare variation is not automatically pathological."@en;
   rdfs:label "pathological disorder"@en;
-  <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organisation of material components — including the limiting case where the abnormal organisation consists in a normally-present component being absent."@en .
+  <http://www.w3.org/2004/02/skos/core#definition> "a disorder is an abnormal presence or organization of material components — including the limiting case where the abnormal organization consists in a normally-present component being absent."@en .
 
 _:genid37 a owl:Restriction;
   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
@@ -809,11 +809,11 @@ _:genid49 a owl:Restriction;
   <http://purl.obolibrary.org/obo/IAO_0000112> """Trigger finger disease diagnostic result is specified output of some Disease diagnostic process
 rdfs:subclass of Confirmed disease diagnostic result by not completely objective criteria"""@en;
   dcterms:description "a disease conclusion arrived at solely after clinical test can be valid and confirmed but is still inherently subjective because of the subjectivity of clinical tests."@en;
-  rdfs:label "confirmed disease diagnostic result by not completely objective criteria"@en .
+  rdfs:label "confirmed disease diagnostic result by not completely objective criterion"@en .
 
 :MILD_120027 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0001909>, :MILD_120024;
-  rdfs:label "confirmed diseases diagnostic result by objective criteria"@en .
+  rdfs:label "confirmed diseases diagnostic result by objective criterion"@en .
 
 :MILD_120028 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015>, _:genid50, _:genid51,
@@ -1182,7 +1182,7 @@ _:genid98 a owl:Restriction;
 
 :MILD_120093 a owl:Class;
   rdfs:subClassOf <http://purl.obolibrary.org/obo/OMRSE_00000012>;
-  <http://purl.obolibrary.org/obo/IAO_0000115> "A healthcare provider role that inheres in a person in virtue of that person being licensed to practise medicine."@en;
+  <http://purl.obolibrary.org/obo/IAO_0000115> "A healthcare provider role that inheres in a person in virtue of that person being licensed to practice medicine."@en;
   rdfs:comment "Relocated from WONT_0000090 when the MILD/WONT import direction was reversed: a physician role is not wound-specific, is not used by any WONT class, and its only consumer is the MILD treatment-plan axiom. Reuse an OMRSE physician-role class here if an OMRSE module is later added."@en;
   rdfs:label "Physician role"@en .
 
