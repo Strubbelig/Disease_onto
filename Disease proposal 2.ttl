@@ -529,6 +529,14 @@ _:genid14 a rdf:List;
   rdf:first :MILD_120005;
   rdf:rest rdf:nil .
 
+:MILD_120101 a owl:ObjectProperty;
+  rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000053>;
+  rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000004>;
+  rdfs:range :MILD_120005;
+  <http://purl.obolibrary.org/obo/IAO_0000115> "b has tendency t =Def t is a tendency (MILD_120005) & t inheres in b"@en;
+  <http://purl.obolibrary.org/obo/IAO_0000116> "DESIGN RATIONALE (2026-10-03) - the bearer relation for MILD's tendency category, parallel to RO_0000091 'has disposition'. MILD makes disposition, role and tendency pairwise disjoint, while RO_0000091 has the range BFO_0000016 disposition; WONT bore 'wound infecting tendency' by RO_0000091 (Staphylococcus aureus, Escherichia coli, WONT_120019), which made those classes and MRSA infection unsatisfiable under the import closure (ELK and HermiT). Declared a subproperty of RO_0000053 'has characteristic', whose range specifically dependent continuant a tendency satisfies, and not of RO_0000091, whose range would reimpose disposition."@en;
+  rdfs:label "has tendency"@en .
+
 <http://purl.obolibrary.org/obo/OBI_0001937> a owl:DatatypeProperty .
 
 <http://purl.obolibrary.org/obo/BFO_0000002> owl:disjointWith <http://purl.obolibrary.org/obo/BFO_0000003> .

@@ -53,6 +53,14 @@
 #     go/chebi/dron leaf modules are NOT rebuilt unless --leaf-modules is
 #     given: go_module.owl carries hand-added property labels (commit 3a3859d)
 #     that a rebuild from go_import.owl would silently drop.
+#     2026-10-08: it also carries 43 GO classes the WONT addition reuses
+#     instead of minting twins (Cell Adhesion, Metabolism, ...; the list and
+#     the reading of each is Wound ontology/data/review/go_twins_2026-10-08.json),
+#     MIREOT-extracted from Import ontologies/go.owl with all intermediates and
+#     merged in, plus the exact synonym "deoxyribonucleic acid replication" on
+#     GO_0006260. A --leaf-modules rebuild must seed those 43 or they go back
+#     to being WONT twins. Backup before the merge:
+#     Wound ontology/data/backup/go_module_before_go_twins_2026-10-08.owl
 #
 #   Minor: term discovery now uses a full signature scan (subject/predicate/
 #   object union) instead of declared-entities-only, so external terms that
@@ -225,6 +233,20 @@ echo "[3/5] Joint STAR extraction (merged bfo+ro+iao+obi+ogms+cob + PATO-STAR; u
 for b in "${STAR_BUCKETS[@]}"; do
   [[ -s "$TMP/termfile_${b}.txt" ]] && cat "$TMP/termfile_${b}.txt" >> "$TMP/seed_core.txt"
 done
+# FIX 4 (2026-10-03): ALL of BFO core is seeded, not only the BFO terms WONT/MILD
+# happen to name. BFO is the top ontology: WONT, MILD and the modules become the
+# extraction schema and the class hierarchy, so every BFO class must be there
+# with BFO's own subsumption. Seeded by use only, the closure held 20 of the 36
+# classes and 19 of the 35 edges (no object, site, fiat object part, history,
+# relational quality ...). Curator: "every bfo class should be in there and
+# with correct hierarchy".
+BFO_CORE="$IMP/bfo-core2020.owl"
+n_bfo=$(grep -o 'owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_[0-9]*"' "$BFO_CORE" \
+  | sed 's/.*rdf:about="//; s/"$//' | sort -u | tee -a "$TMP/seed_core.txt" | wc -l | tr -d ' ')
+if [[ "$n_bfo" -lt 36 ]]; then
+  echo "ERROR: expected 36 BFO core classes in $BFO_CORE, found $n_bfo" >&2; exit 1
+fi
+echo "  BFO core seeded whole: $n_bfo classes"
 sort -u "$TMP/seed_core.txt" -o "$TMP/seed_core.txt"
 echo "  combined seed: $(wc -l < "$TMP/seed_core.txt" | tr -d ' ') terms"
  
