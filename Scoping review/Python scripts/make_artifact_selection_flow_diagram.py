@@ -94,6 +94,10 @@ def gather_numbers() -> dict:
                 or "unspecified"
             ).strip() or "unspecified"
             excl_reasons[reason] += 1
+    excl_basis = Counter(
+        (r.get("effective_decision_basis") or "unspecified").strip() or "unspecified"
+        for r in rows if _final_status(r) == "exclude"
+    )
 
     return {
         "charted_ontologies": charted_ontologies,
@@ -104,6 +108,7 @@ def gather_numbers() -> dict:
         "n_include": n_include,
         "n_exclude": n_exclude,
         "excl_reasons": excl_reasons,
+        "excl_basis": excl_basis,
     }
 
 
@@ -221,7 +226,9 @@ def build(nums: dict):
     mside_h = 2.20
     ym = 4.38
     box(ax, sx, ym, sw, mside_h,
-        f"Excluded after human assessment: {nums['n_exclude']}\n" + "\n".join(reason_lines),
+        f"Excluded: {nums['n_exclude']} (rule: {nums['excl_basis'].get('deterministic_scope_rule', 0)} · "
+        f"assessment: {nums['excl_basis'].get('manual_review', 0)} · "
+        f"final check: {nums['excl_basis'].get('user_publication_override', 0)})\n" + "\n".join(reason_lines),
         fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.6, align="left")
     arrow(ax, cx + bw / 2, y4, sx - sw / 2, ym + 0.35)
 

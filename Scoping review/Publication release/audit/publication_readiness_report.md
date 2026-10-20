@@ -1,11 +1,11 @@
 # Publication Readiness Report
 
-Generated: `2026-08-13T14:06:40-04:00`
+Generated: `2026-10-12T21:43:30-04:00`
 
-- Master rows: 276
-- Unique class IRIs: 276
-- Effective status: `{"exclude": 132, "include": 144}`
-- Evidence status: `{"fallback_with_evidence": 13, "insufficient_metadata": 6, "native_module": 257}`
+- Master rows: 278
+- Unique class IRIs: 278
+- Effective status: `{"exclude": 132, "include": 146}`
+- Evidence status: `{"fallback_with_evidence": 13, "insufficient_metadata": 6, "native_module": 259}`
 - Ambiguous decisions: 0
 - Citation assignments still unreviewed: 0
 - Approved citations with incomplete core metadata: 0

@@ -5,8 +5,8 @@ A realist, BFO/OGMS-based proposal for modelling disease as a **material entity*
 ## Contents
 
 ### Ontology
-- `Disease proposal 2.ttl` — current working ontology (own classes/axioms; imports the modules below).
-- `Disease proposal 2 merged.owl` — generated merged OWL with all imports resolved; rebuild with `build_disease_proposal.sh`.
+- `mild.ttl` — MILD, the current working ontology (until 2026-10-16 `Disease proposal 2.ttl`) (own classes/axioms; imports the modules below).
+- `mild_merged.owl` — generated merged OWL with all imports resolved; rebuild with `build_disease_proposal.sh`.
 - `Disease_proposal_2_inferred-3.owl` — inferred OWL produced from the HermiT/Colab coherence run.
 - `Disease proposal.ttl` — earlier version.
 - `Disease ontology modules/` — imported module extracts (BFO, OGMS, OBI, PATO, HPO, CHEBI, DOID, uPheno, …).
@@ -28,4 +28,4 @@ Full-text PDFs of cited papers are intentionally excluded (copyright); see `.git
 
 ## Status
 
-Current status: **reasoner-checked draft**. `Disease proposal 2 merged.owl` passes OWL 2 DL profile validation and was reported coherent by a HermiT/Colab run with 0 unsatisfiable classes; see `VALIDATION.md`. Since `Disease proposal 2.ttl` has been edited after the last generated artefacts, rebuild the merged/inferred files before sharing.
+Current status: **reasoner-checked draft**. `mild_merged.owl` passes OWL 2 DL profile validation and was reported coherent by a HermiT/Colab run with 0 unsatisfiable classes; see `VALIDATION.md`. Since `Disease proposal 2.ttl` has been edited after the last generated artefacts, rebuild the merged/inferred files before sharing.

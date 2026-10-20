@@ -29,7 +29,7 @@ MASTER = REVIEW_DIR / "Extraction Tables" / "disease_terms_review_enriched.csv"
 FIGURE_DIR = REVIEW_DIR / "Figures"
 FIGURE_DIR.mkdir(exist_ok=True)
 
-N_IN_SCOPE = 144
+N_IN_SCOPE = 146
 TEXT = "#20262e"
 MUTED = "#66717d"
 GRID = "#dde2e6"
@@ -202,7 +202,7 @@ def build() -> None:
     figure.text(
         0.5,
         0.925,
-        "Class-level assessment of 144 included ontology artifacts",
+        f"Class-level assessment of {N_IN_SCOPE} included ontology artifacts",
         ha="center",
         fontsize=9.5,
         color=MUTED,

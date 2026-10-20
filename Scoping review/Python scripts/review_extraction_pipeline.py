@@ -551,6 +551,39 @@ MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY = [
     if column not in {"class_iri", "term", "preferred_label", "source_ontology_ids", "quality_decision"}
 ]
 
+# Columns of the master table that describe the class's ontology, provenance
+# and routing. Exported as rev:* annotations so that the review ontology holds
+# the complete record (2026-10-14).
+ONTOLOGY_CONTEXT_REVIEW_COLUMNS = [
+    "ontology",
+    "mapping_count",
+    "source_records",
+    "ontology_title",
+    "ontology_description",
+    "ontology_domain",
+    "ontology_homepage",
+    "ontology_repository",
+    "ontology_license",
+    "ontology_status",
+    "ontology_metadata_source",
+    "ontology_metadata_retrieved_at",
+    "ontology_scope_category",
+    "ontology_exclusion_status",
+    "ontology_exclusion_rule",
+    "ontology_exclusion_reason",
+    "native_source_ontology_ids",
+    "dependent_source_ontology_ids",
+    "dependency_on_ontology_ids",
+    "source_appearance_summary",
+    "review_route",
+    "manual_screening_hint",
+    "quality_decision",
+]
+
+# Columns carried by the imported hierarchy modules (rdfs:label, IAO definition,
+# rdfs:comment, skos:altLabel, rdfs:subClassOf) or by the class IRI itself.
+MODULE_CARRIED_COLUMNS = {"class_iri", "definition", "comments", "synonyms", "parent_labels", "parent_iris"}
+
 CITATION_REVIEW_COLUMNS = [
     "modelling_citation_source_ontology_id",
     "modelling_citation_status",
@@ -4986,6 +5019,17 @@ class ReviewExtractionPipeline:
         label: str,
         include_hierarchy_module_imports: bool = False,
     ) -> None:
+        exported_columns = (
+            {"term", "preferred_label"} | set(EXTRACTION_REVIEW_COLUMNS) | set(MANUAL_REVIEW_COLUMNS_FOR_ONTOLOGY)
+            | set(PUBLICATION_REVIEW_COLUMNS) | set(CITATION_REVIEW_COLUMNS) | set(ONTOLOGY_CONTEXT_REVIEW_COLUMNS)
+            | MODULE_CARRIED_COLUMNS
+        )
+        unexported = sorted({column for row in rows for column in row} - exported_columns)
+        if unexported:
+            raise RuntimeError(
+                "These master-table columns would be missing from the review ontology; add them to an "
+                f"export column list and declare them in review_core.ttl: {unexported}"
+            )
         manual_by_iri = {row["class_iri"]: self._normalise_manual_row(row) for row in manual_rows if row.get("class_iri")}
         citations_by_source = self._load_modelling_citations(rows)
         citation_sources_by_iri = self._native_citation_sources_by_iri(rows)
@@ -5029,6 +5073,9 @@ class ReviewExtractionPipeline:
                 self._add_literal(triples, iri, REV + column, row.get(column, ""))
 
             for column in CITATION_REVIEW_COLUMNS:
+                self._add_literal(triples, iri, REV + column, row.get(column, ""))
+
+            for column in ONTOLOGY_CONTEXT_REVIEW_COLUMNS:
                 self._add_literal(triples, iri, REV + column, row.get(column, ""))
 
             if iri not in cited_iris:
