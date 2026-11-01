@@ -420,7 +420,8 @@ def rule_entity_quality_score(row: dict) -> str:
 
       3 — ontologically grounded (a real disease_model_category) AND
           parentage_quality == good AND definition_quality == good AND no
-          logical inconsistency. This is the strong, well-defined-entity case
+          logical inconsistency AND a stated pathology grounding AND a stance on
+          crisp vs graded. This is the strong, well-defined-entity case
           and mirrors Rule 10 in review_consistency_checks / the Violations tab.
       2 — grounded via an IFOMIS/BFO disposition parent (good parent, but the
           definition is not the near-certain OGMS-style 'good').
@@ -439,6 +440,8 @@ def rule_entity_quality_score(row: dict) -> str:
         and rule_parentage_quality(row).strip() == "good"
         and rule_definition_quality(row).strip() == "good"
         and not row.get("logical_inconsistency", "").strip()
+        and row.get("pathological_grounding", "").strip() in {"statistical", "evolutionary_function", "normative", "primitive_criteria"}
+        and row.get("crisp_vs_graded", "").strip() not in {"", "silent"}
     ):
         return "3"
     if has_ifomis_disposition_parent(row):

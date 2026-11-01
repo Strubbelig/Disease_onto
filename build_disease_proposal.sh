@@ -89,7 +89,7 @@ IMP="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/On
 IMP_WOND="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Wound ontology/src/ontology/imports"
 MODULE_DIR="$SCRIPT_DIR/Disease ontology modules"
 GT_OWL="https://bioportal.bioontology.org/ontologies/WONT"
-INPUT="$SCRIPT_DIR/mild_2026-10-20.ttl"   # curator, 2026-10-20: dated file
+INPUT="$SCRIPT_DIR/mild_2026-10-31b.ttl"   # curator, 2026-10-31: dcterms:modified 2026-10-31 ("yes set MILD's modified date"); reviewed at least once a year (header comment); 2026-10-30: pathologicity comments as in the thesis; imports the whole of RO and BFO; realized disease predisposition deleted; pathological is MILD_120102; one material disease entity, no threshold or causality; 2026-10-29: dated file (participates in from RO)
 OUTPUT="$SCRIPT_DIR/mild_merged.owl"
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT

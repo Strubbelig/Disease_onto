@@ -55,6 +55,72 @@ EXCLUSION_REASON_LABELS = {
 }
 
 
+# German version for the thesis (2026-10-30): same numbers, translated labels.
+# `python3 make_artifact_selection_flow_diagram.py --de` writes the *_de files.
+EXCLUSION_REASON_LABELS_DE = {
+    "replaced_by_better_native_disease_model_candidate": "Durch eine bessere eigene Klasse derselben Ontologie ersetzt",
+    "terminology_not_ontology": "Klinische Terminologie oder Thesaurus, keine Ontologie",
+    "out_of_scope": "Außerhalb des Geltungsbereichs",
+    "term_out_of_scope_not_disease_synonym": "Suchtreffer, der nicht Krankheit bezeichnet",
+    "value_set_or_collection": "Wertemenge oder Sammlung",
+    "duplicate_imported_term": "Doppelt importierte Klasse",
+    "demo_or_training_resource": "Demonstrations- oder Lehrressource",
+    "process_context_suppressed_when_disease_root_present": "Prozessklasse, zurückgestellt neben einer Krankheitsklasse",
+    "insufficient_metadata": "Unzureichende Metadaten",
+    "imported_or_reused_term_no_independent_analysis": "Importierte oder wiederverwendete Klasse ohne eigene Modellierung",
+    "webprotege_random_or_local_iri_unstable_provenance": "Instabile oder lokale WebProtégé-IRI",
+    "explicit_exact_match_to_canonical_disease_model": "Exakte Übereinstimmung mit der Wurzel von DOID, Mondo oder OGMS",
+    "defined_by_external_class_no_independent_analysis": "Über eine externe Klasse definiert, ohne eigene Modellierung",
+}
+
+TEXT = {
+    "en": {
+        "retrieval": "Registry and artifact retrieval\nBioPortal (primary) · OLS · OBO Foundry · targeted sources",
+        "routing": "Candidate normalization and routing\n(exact labels · scope · target refinement · provenance · reuse)",
+        "route_head": "Automated and deterministic routing",
+        "route_lines": [
+            "• out-of-scope and collection terms flagged",
+            "• weaker same-ontology targets replaced",
+            "• imported and exact-match reuse identified",
+            "• source appearances merged by exact class IRI",
+            "• excluded/reused appearances retained for audit",
+        ],
+        "unique": "Unique class records assembled after IRI de-duplication\n{n} class IRIs from {o} ontology identifiers",
+        "denominator": "Primary analytical denominator\n{n} unique class IRIs\nRegistry appearances are provenance, not independent observations",
+        "assessment": "Class-level eligibility assessment\n{d} decided · {p} awaiting decision",
+        "excluded": "Excluded: {x} (rule: {r} · assessment: {m} · final check: {f})",
+        "included": "Included in artifact analysis\n{i} classes",
+        "provenance": "Recorded class provenance (all {n} unique IRIs):\nnative: {a}   ·   imported/reused: {b}   ·   unresolved or not recorded: {c}",
+        "footnote": "Unit of analysis: unique class IRI. Source appearances may occur in both routing and exclusion logs because\n"
+                    "reused or excluded appearances remain in the audit trail; they are not added as independent observations.",
+        "reasons": EXCLUSION_REASON_LABELS,
+        "suffix": "",
+    },
+    "de": {
+        "retrieval": "Abruf aus Verzeichnissen und weiteren Quellen\nBioPortal (Hauptquelle) · OLS · OBO Foundry · gezielte Quellen",
+        "routing": "Normalisierung und Vorsortierung der Kandidaten\n(Bezeichnung · Geltungsbereich · Zielklasse · Herkunft · Import)",
+        "route_head": "Automatische, regelbasierte Vorsortierung",
+        "route_lines": [
+            "• Klassen außerhalb des Geltungsbereichs und Sammlungen markiert",
+            "• schwächere Klassen derselben Ontologie ersetzt",
+            "• Import und exakte Übereinstimmung als Wiederverwendung erkannt",
+            "• Vorkommen über die exakte Klassen-IRI zusammengeführt",
+            "• ausgeschlossene und wiederverwendete Vorkommen zur Nachprüfung behalten",
+        ],
+        "unique": "Eindeutige Klassen nach Zusammenführung gleicher IRIs\n{n} Klassen-IRIs aus {o} Ontologie-Identifikatoren",
+        "denominator": "Grundgesamtheit der Auswertung\n{n} eindeutige Klassen-IRIs\nVorkommen in Verzeichnissen gelten als Herkunft, nicht als eigene Beobachtungen",
+        "assessment": "Prüfung der Einschlusskriterien je Klasse\n{d} Klassen geprüft",
+        "excluded": "Ausgeschlossen: {x} (Regel: {r} · Bewertung: {m} · abschließende Prüfung: {f})",
+        "included": "In die Auswertung eingeschlossen\n{i} Klassen",
+        "provenance": "Erfasste Herkunft der Klassen (alle {n} eindeutigen IRIs):\neigene: {a}   ·   importiert oder wiederverwendet: {b}   ·   ungeklärt oder nicht erfasst: {c}",
+        "footnote": "Auswertungseinheit ist die eindeutige Klassen-IRI. Ein Vorkommen kann in der Vorsortierung und bei den Ausschlüssen erscheinen,\n"
+                    "weil wiederverwendete oder ausgeschlossene Vorkommen zur Nachprüfung erhalten bleiben; sie zählen nicht als eigene Beobachtungen.",
+        "reasons": EXCLUSION_REASON_LABELS_DE,
+        "suffix": "_de",
+    },
+}
+
+
 # --------------------------------------------------------------------------- #
 # Data loading
 # --------------------------------------------------------------------------- #
@@ -151,7 +217,8 @@ def arrow(ax, x1, y1, x2, y2):
 # --------------------------------------------------------------------------- #
 # Diagram
 # --------------------------------------------------------------------------- #
-def build(nums: dict):
+def build(nums: dict, lang: str = "en"):
+    L = TEXT[lang]
     fig, ax = plt.subplots(figsize=(14.0, 9.0))
     ax.set_xlim(0, 14)
     ax.set_ylim(0, 10)
@@ -165,78 +232,66 @@ def build(nums: dict):
     # 1) Identification
     y1 = 9.34
     box(ax, cx, y1, bw, 0.66,
-        "Registry and artifact retrieval\n"
-        "BioPortal (primary) · OLS · OBO Foundry · targeted sources",
+        L["retrieval"],
         fontsize=9.5, weight="bold")
 
     # 2) Automated screening
     y2 = 8.04
     box(ax, cx, y2, bw, 0.66,
-        "Candidate normalization and routing\n(exact labels · scope · target refinement · provenance · reuse)",
+        L["routing"],
         fontsize=9.5, weight="bold")
     arrow(ax, cx, y1 - 0.33, cx, y2 + 0.33)
 
     # Side box: routing rules. Appearance logs overlap because excluded/reused
     # appearances are deliberately retained as provenance, so they are not
     # presented as additive flow denominators.
-    route_lines = [
-        "• out-of-scope and collection terms flagged",
-        "• weaker same-ontology targets replaced",
-        "• imported and exact-match reuse identified",
-        "• source appearances merged by exact class IRI",
-        "• excluded/reused appearances retained for audit",
-    ]
+    route_lines = L["route_lines"]
     side_h = 1.04
     ys = y2
     box(ax, sx, ys, sw, side_h,
-        "Automated and deterministic routing\n" + "\n".join(route_lines),
+        L["route_head"] + "\n" + "\n".join(route_lines),
         fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.0, align="left")
     arrow(ax, cx + bw / 2, y2, sx - sw / 2, ys)
 
     # 3) Unique class records assembled
     y3 = 6.62
     box(ax, cx, y3, bw, 0.72,
-        f"Unique class records assembled after IRI de-duplication\n"
-        f"{nums['n_total_classes']} class IRIs from {nums['charted_ontologies']} ontology identifiers",
+        L["unique"].format(n=nums['n_total_classes'], o=nums['charted_ontologies']),
         fontsize=9.5, weight="bold")
     arrow(ax, cx, y2 - 0.33, cx, y3 + 0.36)
 
     # Side box: denominator note
     yb = 6.60
     box(ax, sx, yb, sw, 0.62,
-        "Primary analytical denominator\n"
-        f"{nums['n_total_classes']} unique class IRIs\n"
-        "Registry appearances are provenance, not independent observations",
+        L["denominator"].format(n=nums['n_total_classes']),
         fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.2, align="left")
     arrow(ax, cx + bw / 2, y3, sx - sw / 2, yb)
 
     # 4) Assessed for eligibility (manual)
     y4 = 5.18
     box(ax, cx, y4, bw, 0.66,
-        f"Class-level eligibility assessment\n"
-        f"{nums['n_adjudicated']} decided · {nums['n_pending']} awaiting decision",
+        L["assessment"].format(d=nums['n_adjudicated'], p=nums['n_pending']),
         fontsize=9.5, weight="bold")
     arrow(ax, cx, y3 - 0.36, cx, y4 + 0.33)
 
     # side box: manual exclusions with reasons
     reason_lines = [
-        f"• {EXCLUSION_REASON_LABELS.get(k, k)}: {v}"
+        f"• {L['reasons'].get(k, k)}: {v}"
         for k, v in nums["excl_reasons"].most_common()
     ]
     mside_h = 2.20
     ym = 4.38
     box(ax, sx, ym, sw, mside_h,
-        f"Excluded: {nums['n_exclude']} (rule: {nums['excl_basis'].get('deterministic_scope_rule', 0)} · "
-        f"assessment: {nums['excl_basis'].get('manual_review', 0)} · "
-        f"final check: {nums['excl_basis'].get('user_publication_override', 0)})\n" + "\n".join(reason_lines),
+        L["excluded"].format(x=nums['n_exclude'], r=nums['excl_basis'].get('deterministic_scope_rule', 0),
+                             m=nums['excl_basis'].get('manual_review', 0),
+                             f=nums['excl_basis'].get('user_publication_override', 0)) + "\n" + "\n".join(reason_lines),
         fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.6, align="left")
     arrow(ax, cx + bw / 2, y4, sx - sw / 2, ym + 0.35)
 
     # 5) Included
     y5 = 3.72
     box(ax, cx, y5, bw, 0.72,
-        f"Included in artifact analysis\n"
-        f"{nums['n_include']} classes",
+        L["included"].format(i=nums['n_include']),
         fill=INCL_FILL, edge=INCL_EDGE, fontsize=10.5, weight="bold")
     arrow(ax, cx, y4 - 0.33, cx, y5 + 0.36)
 
@@ -246,20 +301,68 @@ def build(nums: dict):
     xmid = 7.0
     span_w = 10.4
     box(ax, xmid, y6, span_w, 0.72,
-        f"Recorded class provenance (all {nums['n_total_classes']} unique IRIs):\n"
-        f"native: {pc.get('native', 0)}   ·   imported/reused: {pc.get('imported', 0)}   ·   "
-        f"unresolved or not recorded: {pc.get('unresolved', 0)}",
+        L["provenance"].format(n=nums['n_total_classes'], a=pc.get('native', 0), b=pc.get('imported', 0),
+                               c=pc.get('unresolved', 0)),
         fill="#f4f6f7", edge="#7f8c8d", fontsize=8.8)
 
     ax.text(xmid, 0.62,
-            "Unit of analysis: unique class IRI. Source appearances may occur in both routing and exclusion logs because\n"
-            "reused or excluded appearances remain in the audit trail; they are not added as independent observations.",
+            L["footnote"],
             ha="center", va="center", fontsize=7.8, color="#566573", style="italic",
             linespacing=1.08)
 
     fig.tight_layout()
-    png = FIG_DIR / "artifact_selection_flow_diagram.png"
-    svg = FIG_DIR / "artifact_selection_flow_diagram.svg"
+    png = FIG_DIR / f"artifact_selection_flow_diagram{L['suffix']}.png"
+    svg = FIG_DIR / f"artifact_selection_flow_diagram{L['suffix']}.svg"
+    fig.savefig(png, dpi=300, bbox_inches="tight", facecolor="white")
+    fig.savefig(svg, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return png, svg
+
+
+def build_de(nums: dict):
+    """German flow for the thesis (2026-10-30): the layout and colours of `build`,
+    with less in the side boxes.
+
+    The curator found the side boxes of `build` too detailed: the routing rules,
+    the denominator note (it repeats the main box), the eleven exclusion reasons
+    (they are in the text), the provenance band and the audit-trail note (neither
+    is a selection step). Same numbers as `build`.
+    """
+    L = TEXT["de"]
+    fig, ax = plt.subplots(figsize=(14.0, 6.6))
+    ax.set_xlim(0, 14)
+    ax.set_ylim(2.9, 10)
+    ax.axis("off")
+    cx, bw, sx, sw = 3.55, 5.35, 10.55, 5.75
+
+    y1, y2, y3, y4, y5 = 9.34, 8.04, 6.62, 5.18, 3.72
+    box(ax, cx, y1, bw, 0.66, L["retrieval"], fontsize=9.5, weight="bold")
+    box(ax, cx, y2, bw, 0.66, L["routing"], fontsize=9.5, weight="bold")
+    box(ax, cx, y3, bw, 0.72, L["unique"].format(n=nums['n_total_classes'], o=nums['charted_ontologies']),
+        fontsize=9.5, weight="bold")
+    box(ax, cx, y4, bw, 0.66, L["assessment"].format(d=nums['n_adjudicated'], p=nums['n_pending']),
+        fontsize=9.5, weight="bold")
+    box(ax, cx, y5, bw, 0.72, L["included"].format(i=nums['n_include']),
+        fill=INCL_FILL, edge=INCL_EDGE, fontsize=10.5, weight="bold")
+    for ya, yb in ((y1 - 0.33, y2 + 0.33), (y2 - 0.33, y3 + 0.36), (y3 - 0.36, y4 + 0.33), (y4 - 0.33, y5 + 0.36)):
+        arrow(ax, cx, ya, cx, yb)
+
+    box(ax, sx, y2, sw, 0.62,
+        "Regelbasierte Vorsortierung\nDuplikate, Importe und nachrangige Klassen derselben Ontologie markiert",
+        fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.6, align="left")
+    arrow(ax, cx + bw / 2, y2, sx - sw / 2, y2)
+
+    b = nums["excl_basis"]
+    box(ax, sx, y4, sw, 0.62,
+        f"Ausgeschlossen: {nums['n_exclude']}\n"
+        f"Regel: {b.get('deterministic_scope_rule', 0)} · Bewertung: {b.get('manual_review', 0)} · "
+        f"abschließende Prüfung: {b.get('user_publication_override', 0)}",
+        fill=SIDE_FILL, edge=SIDE_EDGE, fontsize=8.6, align="left")
+    arrow(ax, cx + bw / 2, y4, sx - sw / 2, y4)
+
+    fig.tight_layout()
+    png = FIG_DIR / "artifact_selection_flow_diagram_de.png"
+    svg = FIG_DIR / "artifact_selection_flow_diagram_de.svg"
     fig.savefig(png, dpi=300, bbox_inches="tight", facecolor="white")
     fig.savefig(svg, bbox_inches="tight", facecolor="white")
     plt.close(fig)
@@ -267,8 +370,9 @@ def build(nums: dict):
 
 
 def main() -> None:
+    import sys
     nums = gather_numbers()
-    png, svg = build(nums)
+    png, svg = build_de(nums) if "--de" in sys.argv[1:] else build(nums)
     print("Ontology-artifact selection flow generated from live assessment tables:")
     print(f"  ontology ids   : {nums['charted_ontologies']}")
     print(f"  charted classes: {nums['n_total_classes']} after IRI de-duplication")
