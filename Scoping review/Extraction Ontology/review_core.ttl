@@ -9,12 +9,12 @@
 <urn:uuid:8f96cf34-53c2-48d2-88c5-96d07704fcf7>
     rdf:type owl:Ontology ;
     rdfs:label "Disease Ontology Scoping Review — Core Annotation Properties"@en ;
-    dcterms:description "Declares the annotation properties used in the ontology-based manual review layer of the disease-ontology scoping review. These properties are asserted as rev:* annotations on reviewed OWL classes in disease_terms_review.ttl. Source-ontology appearances and dependency/reuse routes are reported in CSV tables rather than copied onto the reviewed class IRIs."@en ;
-    owl:versionIRI <urn:uuid:278d72a8-731f-4a54-899f-b93000670d55#version-2026-08-09-review-core> ;
+    dcterms:description "Declares the annotation properties used in the ontology-based manual review layer of the disease-ontology scoping review. These properties are asserted as rev:* annotations on reviewed OWL classes in disease_terms_review.ttl. Since 2026-10-14 every column of the master table is carried as a rev:* annotation on the reviewed class, including source-ontology appearances, ontology metadata and routing, so that the review ontology holds the complete record."@en ;
+    owl:versionIRI <urn:uuid:278d72a8-731f-4a54-899f-b93000670d55#version-2026-10-14-review-core> ;
     dcterms:issued "2026-08-09" ;
     dcterms:creator "Moritz Milewski" ;
     dcterms:license <https://opensource.org/license/mit/> ;
-    owl:versionInfo "2026-08-09" .
+    owl:versionInfo "2026-10-14" .
 
 # External annotation properties used by the release are declared locally so
 # that the generated import closure remains OWL 2 DL without network imports.
@@ -44,7 +44,14 @@ rev:term
 rev:discovery_tier
     rdf:type owl:AnnotationProperty ;
     rdfs:label "discovery tier"@en ;
-    iao:0000115 "Extraction tier by which the class was discovered. Primary exact-label hits use primary_exact_label; second-round sensitivity hits use secondary_compound_label_sensitivity; multilingual ontology-label hits use multilingual_label_sensitivity."@en .
+    iao:0000115 "Extraction tier by which the class was discovered. Primary exact-label hits use primary_exact_label; second-round sensitivity hits use secondary_compound_label_sensitivity; multilingual ontology-label hits use multilingual_label_sensitivity."@en ;
+    skos:scopeNote """Controlled values:
+  primary_exact_label — the class label matched a search term exactly in the primary registry search.
+  secondary_compound_label_sensitivity — found in the second-round sensitivity search for compound labels (e.g. 'Disease or disorder').
+  multilingual_label_sensitivity — found in the sensitivity search for non-English labels (e.g. 'maladie').
+  manual_target_refinement — the matched class was replaced by hand with a more specific class of the same ontology that carries its disease model.
+  manual_parent_replacement — a class the search terms did not match, seeded by hand as review target in place of the ontology's generic matched class (e.g. 'état pathologique' instead of 'syndrome').
+  manual_addition — a class added by hand from a source outside the registry searches."""@en .
 
 rev:preferred_label
     rdf:type owl:AnnotationProperty ;
@@ -344,49 +351,310 @@ rev:adjudication_decision
 #  Machine-readable provenance and publication decision fields
 #################################################################
 
-rev:source_databases rdf:type owl:AnnotationProperty .
-rev:retrieved_at_by_database rdf:type owl:AnnotationProperty .
-rev:ontology_versions rdf:type owl:AnnotationProperty .
-rev:source_ontology_ids rdf:type owl:AnnotationProperty .
-rev:source_urls rdf:type owl:AnnotationProperty .
-rev:exact_match_iris rdf:type owl:AnnotationProperty .
-rev:exact_match_canonical_targets rdf:type owl:AnnotationProperty .
-rev:exact_match_review_status rdf:type owl:AnnotationProperty .
-rev:defined_by_iris rdf:type owl:AnnotationProperty .
-rev:defined_by_external_targets rdf:type owl:AnnotationProperty .
-rev:defined_by_review_status rdf:type owl:AnnotationProperty .
-rev:conforms_to_iris rdf:type owl:AnnotationProperty .
-rev:definition_values_json rdf:type owl:AnnotationProperty .
-rev:comment_values_json rdf:type owl:AnnotationProperty .
-rev:synonym_values_json rdf:type owl:AnnotationProperty .
-rev:parent_iri_values_json rdf:type owl:AnnotationProperty .
-rev:parent_label_values_json rdf:type owl:AnnotationProperty .
-rev:hierarchy_evidence_status rdf:type owl:AnnotationProperty .
-rev:hierarchy_module_iri rdf:type owl:AnnotationProperty .
-rev:hierarchy_module_source rdf:type owl:AnnotationProperty .
-rev:hierarchy_evidence_detail rdf:type owl:AnnotationProperty .
-rev:effective_synthesis_status rdf:type owl:AnnotationProperty .
-rev:effective_synthesis_exclusion_reason rdf:type owl:AnnotationProperty .
-rev:effective_decision_basis rdf:type owl:AnnotationProperty .
-rev:effective_decision_rule rdf:type owl:AnnotationProperty .
-rev:publication_eligibility_override rdf:type owl:AnnotationProperty .
-rev:publication_review_comment_proposed rdf:type owl:AnnotationProperty .
-rev:publication_comment_status rdf:type owl:AnnotationProperty .
-rev:publication_ambiguity_flags rdf:type owl:AnnotationProperty .
-rev:publication_ambiguity_note rdf:type owl:AnnotationProperty .
-rev:no_grounded_model_subtype rdf:type owl:AnnotationProperty .
-rev:modelling_citation_status rdf:type owl:AnnotationProperty .
-rev:modelling_citation_confidence rdf:type owl:AnnotationProperty .
-rev:modelling_citation_publication_title rdf:type owl:AnnotationProperty .
-rev:modelling_citation_authors rdf:type owl:AnnotationProperty .
-rev:modelling_citation_year rdf:type owl:AnnotationProperty .
-rev:modelling_citation_venue rdf:type owl:AnnotationProperty .
-rev:modelling_citation_bibliographic_citation rdf:type owl:AnnotationProperty .
-rev:modelling_citation_lookup_source rdf:type owl:AnnotationProperty .
-rev:modelling_citation_source rdf:type owl:AnnotationProperty .
-rev:modelling_citation_approved rdf:type owl:AnnotationProperty .
-rev:modelling_citation_assignment_flag rdf:type owl:AnnotationProperty .
-rev:modelling_citation_assignment_flag_reason rdf:type owl:AnnotationProperty .
-rev:modelling_citation_assignment_checked_at rdf:type owl:AnnotationProperty .
-rev:modelling_citation_notes rdf:type owl:AnnotationProperty .
-rev:generation_software rdf:type owl:AnnotationProperty .
+rev:source_databases
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source databases"@en ;
+    iao:0000115 "Registries or sources in which the class was found: BioPortal, Ontology Lookup Service, OBO Foundry or targeted retrieval."@en ;
+    skos:scopeNote """Controlled values:
+  BioPortal — found through the BioPortal search API.
+  OLS — found through the EMBL-EBI Ontology Lookup Service.
+  OBO Foundry Direct — found in an ontology file downloaded directly from the OBO Foundry registry.
+  Manual GitHub source — retrieved by hand from the ontology's source repository.
+  Multi-valued: a class found in several sources carries every source, separated by semicolons."""@en .
+rev:retrieved_at_by_database
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "retrieval time by source"@en ;
+    iao:0000115 "Date and time of retrieval of the class, per source database."@en .
+rev:ontology_versions
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology versions"@en ;
+    iao:0000115 "Version identifiers of the source ontologies at the time of retrieval."@en .
+rev:source_ontology_ids
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source ontology IDs"@en ;
+    iao:0000115 "Identifiers of every ontology in which the class appeared, prefixed by the registry."@en .
+rev:source_urls
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source URLs"@en ;
+    iao:0000115 "URLs from which the class records were retrieved."@en .
+rev:exact_match_iris
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "exact-match IRIs"@en ;
+    iao:0000115 "IRIs declared as exact matches of the class in the source artifact."@en .
+rev:exact_match_canonical_targets
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "exact-match canonical targets"@en ;
+    iao:0000115 "Those exact-match targets of the class that are canonical disease root classes (DOID_4, MONDO_0000001, OGMS_0000031)."@en .
+rev:exact_match_review_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "exact-match routing status"@en ;
+    iao:0000115 "Outcome of the routing rule for classes declared an exact match of a canonical disease root; such classes are not analysed independently."@en .
+rev:defined_by_iris
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "rdfs:isDefinedBy IRIs"@en ;
+    iao:0000115 "IRIs stated as rdfs:isDefinedBy of the class in the source artifact."@en .
+rev:defined_by_external_targets
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "external rdfs:isDefinedBy targets"@en ;
+    iao:0000115 "Those rdfs:isDefinedBy targets of the class that belong to an ontology other than the class's native ontology."@en .
+rev:defined_by_review_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "rdfs:isDefinedBy routing status"@en ;
+    iao:0000115 "Outcome of the routing rule for classes defined by a class of another ontology; such classes are analysed at their defining ontology."@en .
+rev:conforms_to_iris
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "conforms-to IRIs"@en ;
+    iao:0000115 "IRIs the class states conformance to (dcterms:conformsTo) in the source artifact."@en .
+rev:definition_values_json
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "definition values (JSON)"@en ;
+    iao:0000115 "All definitions of the class as a JSON array, kept without loss for generating the ontology files."@en .
+rev:comment_values_json
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "comment values (JSON)"@en ;
+    iao:0000115 "All comments of the class as a JSON array, kept without loss for generating the ontology files."@en .
+rev:synonym_values_json
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "synonym values (JSON)"@en ;
+    iao:0000115 "All synonyms of the class as a JSON array, kept without loss for generating the ontology files."@en .
+rev:parent_iri_values_json
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "parent IRI values (JSON)"@en ;
+    iao:0000115 "All asserted superclass IRIs of the class as a JSON array."@en .
+rev:parent_label_values_json
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "parent label values (JSON)"@en ;
+    iao:0000115 "Labels of all asserted superclasses of the class as a JSON array."@en .
+rev:hierarchy_evidence_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "hierarchy evidence status"@en ;
+    iao:0000115 "Whether the superclass evidence of the class comes from a native hierarchy module, a fallback module with evidence, or is insufficient."@en .
+rev:hierarchy_module_iri
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "hierarchy module IRI"@en ;
+    iao:0000115 "IRI of the hierarchy module that carries the class's labels, definitions and superclasses."@en .
+rev:hierarchy_module_source
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "hierarchy module source"@en ;
+    iao:0000115 "Source artifact or service from which the hierarchy module was extracted."@en .
+rev:hierarchy_evidence_detail
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "hierarchy evidence detail"@en ;
+    iao:0000115 "How the superclass evidence of the class was obtained, or why it is incomplete."@en .
+rev:effective_synthesis_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "effective synthesis status"@en ;
+    iao:0000115 "Final decision whether the class enters the synthesis (include, exclude, needs_user_decision). Precedence: publication override, then manual exclusion, then deterministic rule, then manual inclusion."@en .
+rev:effective_synthesis_exclusion_reason
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "effective exclusion reason"@en ;
+    iao:0000115 "Reason for exclusion carried by the final synthesis decision."@en .
+rev:effective_decision_basis
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "effective decision basis"@en ;
+    iao:0000115 "Source of the final synthesis decision: manual review, a deterministic scope rule, or a publication override."@en .
+rev:effective_decision_rule
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "effective decision rule"@en ;
+    iao:0000115 "The field or rule that produced the final synthesis decision."@en .
+rev:publication_eligibility_override
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "publication eligibility override"@en ;
+    iao:0000115 "Final-check override of the synthesis decision (include or exclude); takes precedence over manual decisions and rules."@en .
+rev:publication_review_comment_proposed
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "proposed publication comment"@en ;
+    iao:0000115 "Edited version of the review comment proposed for publication."@en .
+rev:publication_comment_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "publication comment status"@en ;
+    iao:0000115 "Whether the proposed publication comment was accepted, edited or rejected."@en .
+rev:publication_ambiguity_flags
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "publication ambiguity flags"@en ;
+    iao:0000115 "Flags marking a decision that remained ambiguous at the final check."@en .
+rev:publication_ambiguity_note
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "publication ambiguity note"@en ;
+    iao:0000115 "Explanation of an ambiguity flagged at the final check."@en .
+rev:no_grounded_model_subtype
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "no-grounded-model subtype"@en ;
+    iao:0000115 "For classes without an identifiable grounded model, the kind of class encountered, e.g. a finding or phenotype route."@en ;
+    skos:scopeNote """Controlled values:
+  finding_or_phenotype_route — disease subsumed under a clinical finding, observation, sign/symptom or phenotype umbrella (non-decompositional classification).
+  information_model_wrapper — disease placed under a generic structural or data container (Concept, model item, patient record, schema class) to serve a data schema.
+  application_scoped_narrow — disease redefined for one narrow application (e.g. adherence factor, exposure outcome, protein annotation), not a general disease universal.
+  Only used when disease_model_category is no_grounded_model; blank otherwise."""@en .
+rev:modelling_citation_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation status"@en ;
+    iao:0000115 "Status of the modelling citation (e.g. found, not found, approved)."@en .
+rev:modelling_citation_confidence
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation confidence"@en ;
+    iao:0000115 "Confidence of the assignment of the modelling paper to the ontology."@en .
+rev:modelling_citation_publication_title
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation title"@en ;
+    iao:0000115 "Title of the selected ontology modelling paper."@en .
+rev:modelling_citation_authors
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation authors"@en ;
+    iao:0000115 "Authors of the selected ontology modelling paper."@en .
+rev:modelling_citation_year
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation year"@en ;
+    iao:0000115 "Publication year of the selected ontology modelling paper."@en .
+rev:modelling_citation_venue
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation venue"@en ;
+    iao:0000115 "Journal or proceedings of the selected ontology modelling paper."@en .
+rev:modelling_citation_bibliographic_citation
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation reference"@en ;
+    iao:0000115 "Full bibliographic reference of the selected ontology modelling paper."@en .
+rev:modelling_citation_lookup_source
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation lookup source"@en ;
+    iao:0000115 "Service or record used to look up the modelling paper."@en .
+rev:modelling_citation_source
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation source"@en ;
+    iao:0000115 "Record from which the modelling citation was taken."@en .
+rev:modelling_citation_approved
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation approved"@en ;
+    iao:0000115 "Whether the reviewer approved the paper assigned as the modelling citation of the class's ontology."@en .
+rev:modelling_citation_assignment_flag
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation flag"@en ;
+    iao:0000115 "Flag raised when the assignment of the modelling citation is doubtful."@en .
+rev:modelling_citation_assignment_flag_reason
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation flag reason"@en ;
+    iao:0000115 "Reason for the modelling citation flag."@en .
+rev:modelling_citation_assignment_checked_at
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation checked at"@en ;
+    iao:0000115 "Date and time at which the assignment of the modelling citation was last checked."@en .
+rev:modelling_citation_notes
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "modelling citation notes"@en ;
+    iao:0000115 "Free-text notes on the modelling citation."@en .
+rev:generation_software
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "generation software"@en ;
+    iao:0000115 "Software and version that generated the file or annotation."@en .
+
+# Columns of the master table declared 2026-10-14 so that the review
+# ontology carries every value of the table.
+rev:ontology
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "discovery ontology"@en ;
+    iao:0000115 "Identifier of the ontology under which the class was first retrieved."@en .
+
+rev:mapping_count
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "mapping count"@en ;
+    iao:0000115 "Number of mappings of the class reported by the registry."@en .
+
+rev:source_records
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source records"@en ;
+    iao:0000115 "JSON list of every retrieval record of the class: source, ontology, retrieval time, search term and search tier."@en .
+
+rev:ontology_title
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology title"@en ;
+    iao:0000115 "Title of the class's discovery ontology as given by the registry."@en .
+
+rev:ontology_description
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology description"@en ;
+    iao:0000115 "Description of the class's discovery ontology as given by the registry."@en .
+
+rev:ontology_domain
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology domain"@en ;
+    iao:0000115 "Domain of the class's discovery ontology as given by the registry."@en .
+
+rev:ontology_homepage
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology homepage"@en ;
+    iao:0000115 "Homepage of the class's discovery ontology."@en .
+
+rev:ontology_repository
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology repository"@en ;
+    iao:0000115 "Source repository of the class's discovery ontology."@en .
+
+rev:ontology_license
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology licence"@en ;
+    iao:0000115 "Licence of the class's discovery ontology."@en .
+
+rev:ontology_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology status"@en ;
+    iao:0000115 "Registry status of the class's discovery ontology (e.g. active, inactive, obsolete)."@en .
+
+rev:ontology_metadata_source
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology metadata source"@en ;
+    iao:0000115 "Registry or record from which the ontology metadata were taken."@en .
+
+rev:ontology_metadata_retrieved_at
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology metadata retrieved at"@en ;
+    iao:0000115 "Date and time at which the ontology metadata were retrieved."@en .
+
+rev:ontology_scope_category
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology scope category"@en ;
+    iao:0000115 "Whether the class's discovery ontology is a candidate ontology or terminology, or out of scope as a resource."@en .
+
+rev:ontology_exclusion_status
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology exclusion status"@en ;
+    iao:0000115 "Whether the class's discovery ontology passed the resource-level screening (candidate) or was excluded."@en .
+
+rev:ontology_exclusion_rule
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology exclusion rule"@en ;
+    iao:0000115 "Resource-level exclusion rule applied: E1 status not current, E2 demo, training or thesis resource, E3 generated local ontology, E4 value-set collection, E5 thesaurus."@en .
+
+rev:ontology_exclusion_reason
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "ontology exclusion reason"@en ;
+    iao:0000115 "Explanation of the resource-level exclusion rule."@en .
+
+rev:native_source_ontology_ids
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "native source ontology IDs"@en ;
+    iao:0000115 "Registry appearances in which the class is native to the ontology."@en .
+
+rev:dependent_source_ontology_ids
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "dependent source ontology IDs"@en ;
+    iao:0000115 "Registry appearances in which the class is imported or reused."@en .
+
+rev:dependency_on_ontology_ids
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "dependency on ontology IDs"@en ;
+    iao:0000115 "Ontologies on which the dependent appearances of the class depend."@en .
+
+rev:source_appearance_summary
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "source appearance summary"@en ;
+    iao:0000115 "Summary of the class's appearances across source ontologies (native, imported or reused, dependencies)."@en .
+
+rev:review_route
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "review route"@en ;
+    iao:0000115 "Route assigned to the class by the deterministic routing, e.g. native review, dependency without independent analysis, thesaurus."@en .
+
+rev:manual_screening_hint
+    rdf:type owl:AnnotationProperty ;
+    rdfs:label "manual screening hint"@en ;
+    iao:0000115 "Machine-generated hints shown to the reviewer during screening, e.g. a missing comment or an IRI namespace suggesting reuse."@en .

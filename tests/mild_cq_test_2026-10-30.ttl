@@ -1,0 +1,231 @@
+@prefix : <https://bioportal.bioontology.org/ontologies/MILD/tests/cq_2026-10-30#> .
+@prefix cq: <https://bioportal.bioontology.org/ontologies/MILD/tests/cq_2026-10-30#> .
+@prefix mild: <https://bioportal.bioontology.org/ontologies/MILD/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#################################################################
+# MILD competency-question test data (ABox), 2026-10-30
+#
+# Six competency questions from
+#   Moritz Milewskis disease onto/Worked_Examples_and_Competency_Questions.md
+# turned into named individuals that a reasoner can check.
+# Run with  tests/run_mild_cq_tests.py  (ELK by default, HermiT with --reasoner HermiT).
+#
+# Conventions
+#  * Only IRIs that exist in mild_2026-10-30g.ttl and its import closure are used.
+#  * A disorder is modelled as the current MILD defines it: a material entity
+#    (BFO_0000040) that has quality (RO_0000086) an individual of
+#    'pathological' (MILD_120102). 'material disease entity' (MILD_120020) is
+#    never asserted for a disorder; the reasoner has to infer it from the
+#    equivalence axiom of MILD_120020. Each disorder has its own quality
+#    individual: RO declares 'has characteristic' (the super-property of
+#    'has quality') inverse functional, so a shared quality would force two
+#    disorders to be one.
+#  * 'part of' and 'has part' are both asserted where the question needs both
+#    directions: ELK (OWL 2 EL) does not use inverse-property axioms.
+#  * owl:differentFrom is asserted for every pair the questions say must not
+#    collapse. ELK ignores it (with a warning); HermiT uses it, so under HermiT
+#    a forced identity shows up as an inconsistency.
+#################################################################
+
+<https://bioportal.bioontology.org/ontologies/MILD/tests/cq_2026-10-30> rdf:type owl:Ontology ;
+    owl:imports <https://bioportal.bioontology.org/ontologies/MILD> ;
+    rdfs:label "MILD competency-question test data 2026-10-30"@en ;
+    dcterms:created "2026-10-30"^^xsd:date ;
+    rdfs:comment "Named individuals for the six MILD competency questions. Imports MILD (the catalog of the runner maps the MILD IRI to the current dated file). Not part of MILD itself."@en .
+
+#################################################################
+# CQ1  Can a patient have a pathological disorder without a diagnosis?
+#################################################################
+
+cq:patient_1 rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:disorder_1 ;
+    rdfs:label "patient_1 (CQ1)" .
+
+cq:disorder_1 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_1 ;
+    obo:BFO_0000050 cq:patient_1 ;
+    rdfs:label "disorder_1 (CQ1)" ;
+    rdfs:comment "Asserted only as a material entity bearing a pathological quality; the reasoner must infer material disease entity. No diagnostic result is about it."@en .
+
+cq:pathological_1 rdf:type owl:NamedIndividual , mild:MILD_120102 ;
+    rdfs:label "pathological_1 (CQ1)" .
+
+#################################################################
+# CQ2  Can two diagnostic results group overlapping but
+#      non-identical disorder sets?
+#################################################################
+
+cq:patient_2 rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:disorder_2_1 , cq:disorder_2_2 , cq:disorder_2_3 , cq:disease_A2 , cq:disease_B2 ;
+    rdfs:label "patient_2 (CQ2)" .
+
+cq:disorder_2_1 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_2_1 ; obo:BFO_0000050 cq:patient_2 ;
+    rdfs:label "disorder_2_1 (CQ2)" .
+cq:disorder_2_2 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_2_2 ; obo:BFO_0000050 cq:patient_2 ;
+    rdfs:label "disorder_2_2 (CQ2)" .
+cq:disorder_2_3 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_2_3 ; obo:BFO_0000050 cq:patient_2 ;
+    rdfs:label "disorder_2_3 (CQ2)" .
+cq:pathological_2_1 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+cq:pathological_2_2 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+cq:pathological_2_3 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+
+# diagnosis_A groups {1,2}; diagnosis_B groups {2,3}: overlapping, not identical.
+cq:diagnosis_A rdf:type owl:NamedIndividual , mild:MILD_120024 ;
+    obo:IAO_0000136 cq:disorder_2_1 , cq:disorder_2_2 ;
+    owl:differentFrom cq:diagnosis_B ;
+    rdfs:label "diagnosis_A (CQ2)" .
+cq:diagnosis_B rdf:type owl:NamedIndividual , mild:MILD_120024 ;
+    obo:IAO_0000136 cq:disorder_2_2 , cq:disorder_2_3 ;
+    rdfs:label "diagnosis_B (CQ2)" .
+
+# The two material disease entities the results correspond to.
+cq:disease_A2 rdf:type owl:NamedIndividual , mild:MILD_120020 ;
+    obo:BFO_0000051 cq:disorder_2_1 , cq:disorder_2_2 ;
+    obo:BFO_0000050 cq:patient_2 ;
+    owl:differentFrom cq:disease_B2 ;
+    rdfs:label "disease_A2 (CQ2)" .
+cq:disease_B2 rdf:type owl:NamedIndividual , mild:MILD_120020 ;
+    obo:BFO_0000051 cq:disorder_2_2 , cq:disorder_2_3 ;
+    obo:BFO_0000050 cq:patient_2 ;
+    rdfs:label "disease_B2 (CQ2)" .
+
+#################################################################
+# CQ3  Can a predisposition exist without the target disorder
+#      already existing?
+#   patient_3: predisposition only, nothing realized.
+#   patient_3r: the same pattern, later realized (the "if realized" branch).
+#################################################################
+
+cq:patient_3 rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:variant_1 ;
+    rdfs:label "patient_3 (CQ3, unrealized)" .
+
+cq:variant_1 rdf:type owl:NamedIndividual , mild:MILD_120013 ;
+    obo:BFO_0000050 cq:patient_3 ;
+    rdfs:label "variant_1 (CQ3)" ;
+    rdfs:comment "A pathogenic genetic variant. In the current MILD this class is itself a material disease entity; it is not the target disorder."@en .
+
+cq:predisposition_1 rdf:type owl:NamedIndividual , mild:MILD_120008 ;
+    obo:BFO_0000197 cq:patient_3 ;
+    mild:MILD_120094 cq:variant_1 ;
+    rdfs:label "predisposition_1 (CQ3, unrealized)" ;
+    rdfs:comment "No realization is asserted and none may be forced by the axioms."@en .
+
+cq:patient_3r rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:variant_1r , cq:target_disorder_r ;
+    rdfs:label "patient_3r (CQ3, realized)" .
+cq:variant_1r rdf:type owl:NamedIndividual , mild:MILD_120013 ;
+    obo:BFO_0000050 cq:patient_3r ;
+    owl:differentFrom cq:target_disorder_r ;
+    rdfs:label "variant_1r (CQ3, realized)" .
+cq:predisposition_1r rdf:type owl:NamedIndividual , mild:MILD_120008 ;
+    obo:BFO_0000197 cq:patient_3r ;
+    mild:MILD_120094 cq:variant_1r ;
+    rdfs:label "predisposition_1r (CQ3, realized)" .
+cq:target_development_process_r rdf:type owl:NamedIndividual , mild:MILD_120012 ;
+    obo:BFO_0000055 cq:predisposition_1r ;
+    obo:RO_0002234 cq:target_disorder_r ;
+    rdfs:label "target_development_process_r (CQ3, realized)" .
+cq:target_disorder_r rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_3r ;
+    obo:BFO_0000050 cq:patient_3r ;
+    rdfs:label "target_disorder_r (CQ3, realized)" .
+cq:pathological_3r rdf:type owl:NamedIndividual , mild:MILD_120102 .
+
+#################################################################
+# CQ4  Can a disease persist while its material constituents change?
+#################################################################
+
+cq:patient_4 rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:disease_4 , cq:disorder_state_t1 , cq:disorder_state_t2 ;
+    rdfs:label "patient_4 (CQ4)" .
+
+cq:disease_4 rdf:type owl:NamedIndividual , mild:MILD_120020 ;
+    obo:BFO_0000051 cq:disorder_state_t1 , cq:disorder_state_t2 ;
+    obo:BFO_0000050 cq:patient_4 ;
+    rdfs:label "disease_4 (CQ4)" ;
+    rdfs:comment "One material disease entity with two successive material constituents."@en .
+
+cq:disorder_state_t1 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_4_t1 ;
+    obo:BFO_0000050 cq:disease_4 , cq:patient_4 ;
+    owl:differentFrom cq:disorder_state_t2 ;
+    rdfs:label "disorder_state_t1 (CQ4)" .
+cq:disorder_state_t2 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_4_t2 ;
+    obo:BFO_0000050 cq:disease_4 , cq:patient_4 ;
+    obo:RO_0001000 cq:disorder_state_t1 ;
+    rdfs:label "disorder_state_t2 (CQ4)" ;
+    rdfs:comment "derives from (RO_0001000) disorder_state_t1: the historical and causal continuity of the disorder lineage."@en .
+cq:pathological_4_t1 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+cq:pathological_4_t2 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+
+#################################################################
+# CQ5  Can a complication disorder be produced by disease A but
+#      grouped as disease B?
+#################################################################
+
+cq:patient_5 rdf:type owl:NamedIndividual , obo:NCBITaxon_9606 ;
+    obo:BFO_0000051 cq:disorder_A5 , cq:disease_A5 , cq:disorder_B5 , cq:disease_B5 ;
+    rdfs:label "patient_5 (CQ5)" .
+
+cq:disorder_A5 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_A5 ; obo:BFO_0000050 cq:patient_5 , cq:disease_A5 ;
+    rdfs:label "disorder_A5 (CQ5)" .
+cq:pathological_A5 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+
+cq:disease_A5 rdf:type owl:NamedIndividual , mild:MILD_120020 ;
+    obo:BFO_0000051 cq:disorder_A5 ;
+    obo:BFO_0000050 cq:patient_5 ;
+    owl:differentFrom cq:disease_B5 ;
+    rdfs:label "disease_A5 (CQ5)" .
+
+cq:course_A5 rdf:type owl:NamedIndividual , mild:MILD_120028 ;
+    obo:RO_0000057 cq:disease_A5 ;
+    obo:BFO_0000051 cq:complication_process_5 ;
+    rdfs:label "course_A5 (CQ5)" .
+
+cq:complication_process_5 rdf:type owl:NamedIndividual , mild:MILD_120053 ;
+    obo:BFO_0000050 cq:course_A5 ;
+    obo:RO_0000057 cq:disease_A5 ;
+    obo:RO_0002234 cq:disorder_B5 ;
+    rdfs:label "complication_process_5 (CQ5)" ;
+    rdfs:comment "A disorder creating disease course process: part of disease A's course, has output disorder_B5."@en .
+
+cq:disorder_B5 rdf:type owl:NamedIndividual , obo:BFO_0000040 ;
+    obo:RO_0000086 cq:pathological_B5 ;
+    obo:BFO_0000050 cq:patient_5 , cq:disease_B5 ;
+    rdfs:label "disorder_B5 (CQ5)" .
+cq:pathological_B5 rdf:type owl:NamedIndividual , mild:MILD_120102 .
+
+cq:disease_B5 rdf:type owl:NamedIndividual , mild:MILD_120020 ;
+    obo:BFO_0000051 cq:disorder_B5 ;
+    obo:BFO_0000050 cq:patient_5 ;
+    rdfs:label "disease_B5 (CQ5)" .
+
+cq:diagnosis_B5 rdf:type owl:NamedIndividual , mild:MILD_120024 ;
+    obo:IAO_0000136 cq:disorder_B5 , cq:disease_B5 ;
+    rdfs:label "diagnosis_B5 (CQ5)" .
+
+#################################################################
+# CQ6  Is a diagnostic category itself a disease?
+#   Uses diagnosis_A (CQ2) and diagnosis_B5 (CQ5) plus two more
+#   information entities. DOID categories are classes, so they are
+#   checked at class level by the runner.
+#################################################################
+
+cq:stage_result_6 rdf:type owl:NamedIndividual , mild:MILD_120054 ;
+    obo:IAO_0000136 cq:disease_A5 ;
+    rdfs:label "stage_result_6 (CQ6)" .
+
+cq:threshold_6 rdf:type owl:NamedIndividual , mild:MILD_120029 ;
+    rdfs:label "threshold_6 (CQ6)" .

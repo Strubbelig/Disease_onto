@@ -26,7 +26,9 @@ Rules checked
 9. excluded as out_of_scope -> disease_model_category == not_applicable.
 10. grounded (a real model category, not unclear_model / no_grounded_model /
     not_applicable) + parentage_quality == good + definition_quality == good
-    + no logical_inconsistency -> entity_quality_score == 3.
+    + no logical_inconsistency + a stance on all four coupled decisions
+    (pathology grounded, crisp vs graded not silent, continuant/occurrent and
+    reality/classification committed) -> entity_quality_score == 3.
     (Rule 4 yields to this: a disposition meeting these conditions scores 3, not 2.)
 11. 'menelas' in any text field / IRI -> disease_model_category == entity_as_kantian_state.
 12. 'biotop' in any text field / IRI -> disease_model_category == entity_as_biotop:condition.
@@ -74,14 +76,27 @@ def is_grounded(r: dict[str, str]) -> bool:
     return r.get("disease_model_category", "").strip() not in NOT_GROUNDED_CATEGORIES
 
 
+def takes_all_four_stances(r: dict[str, str]) -> bool:
+    """True when the class commits on all four coupled decisions (Moritz 2026-10-31:
+    a class silent on crisp vs graded or on what makes a condition pathological
+    cannot score 3)."""
+    return (
+        r.get("ontological_category", "").strip() in {"continuant", "occurrent", "mixed_continuant_occurrent_model"}
+        and r.get("pathological_grounding", "").strip() in {"statistical", "evolutionary_function", "normative", "primitive_criteria"}
+        and r.get("crisp_vs_graded", "").strip() not in {"", "silent"}
+        and r.get("reality_vs_classification", "").strip() not in {"", "unclear", "conflated"}
+    )
+
+
 def rule10_qualifies(r: dict[str, str]) -> bool:
-    """Grounded + good parent + good definition + no logical inconsistency ->
-    a strong, well-defined entity (score 3)."""
+    """Grounded + good parent + good definition + no logical inconsistency +
+    a stance on all four coupled decisions -> a strong, well-defined entity (score 3)."""
     return (
         is_grounded(r)
         and r.get("parentage_quality", "").strip() == "good"
         and r.get("definition_quality", "").strip() == "good"
         and r.get("logical_inconsistency", "").strip() == ""
+        and takes_all_four_stances(r)
     )
 
 
@@ -246,7 +261,7 @@ def main() -> int:
 
     # ---- Rule 10: grounded + good parent + good definition -> score 3 -------
     check_field(
-        "[Rule 10] grounded + good parent + good definition -> entity_quality_score == 3",
+        "[Rule 10] grounded + good parent + good definition + all four stances -> entity_quality_score == 3",
         rule10_qualifies,
         "entity_quality_score", "3", skip_excluded=True,
     )

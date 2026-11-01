@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # build_disease_proposal.sh  (revised)
 #
-# Builds modules for "Disease proposal 2.ttl" from local source ontologies,
+# Builds modules for MILD ("mild.ttl") from local source ontologies,
 # merges the proposal, and runs HermiT consistency checks.
 #
 # WHAT CHANGED vs. the original (two fixes, marked CHANGED/NEW below):
@@ -79,7 +79,7 @@
 #
 # Output:
 #   Disease ontology modules/        updated module .owl files
-#   Disease proposal 2 merged.owl    fully merged (modular) ontology
+#   mild_merged.owl                 fully merged (modular) ontology
  
 set -euo pipefail
  
@@ -89,8 +89,8 @@ IMP="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/On
 IMP_WOND="/Users/Strubbelig/Library/Mobile Documents/com~apple~CloudDocs/Forschung/Ontology/Wound ontology/src/ontology/imports"
 MODULE_DIR="$SCRIPT_DIR/Disease ontology modules"
 GT_OWL="https://bioportal.bioontology.org/ontologies/WONT"
-INPUT="$SCRIPT_DIR/Disease proposal 2.ttl"
-OUTPUT="$SCRIPT_DIR/Disease proposal 2 merged.owl"
+INPUT="$SCRIPT_DIR/mild_2026-10-31b.ttl"   # curator, 2026-10-31: dcterms:modified 2026-10-31 ("yes set MILD's modified date"); reviewed at least once a year (header comment); 2026-10-30: pathologicity comments as in the thesis; imports the whole of RO and BFO; realized disease predisposition deleted; pathological is MILD_120102; one material disease entity, no threshold or causality; 2026-10-29: dated file (participates in from RO)
+OUTPUT="$SCRIPT_DIR/mild_merged.owl"
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
  
@@ -178,7 +178,7 @@ SELECT DISTINCT ?term WHERE {
   FILTER(!STRSTARTS(STR(?term), "http://www.w3.org/"))
   FILTER(!STRSTARTS(STR(?term), "https://bioportal.bioontology.org/ontologies/MILD"))
   FILTER(!STRSTARTS(STR(?term), "https://bioportal.bioontology.org/ontologies/WONT"))
-  FILTER(!STRSTARTS(STR(?term), "http://purl.obolibrary.org/obo/wond"))
+  FILTER(!STRSTARTS(STR(?term), "https://bioportal.bioontology.org/ontologies/MILD/modules"))
 }
 EOF
  
@@ -317,7 +317,7 @@ if [[ -s "$TMP/termfile_hp.txt" ]]; then
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/hp_ground_tmp.owl"/>
+    <owl:Ontology rdf:about="https://bioportal.bioontology.org/ontologies/MILD/modules/hp_ground_tmp.owl"/>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0001001"/>
         <rdfs:comment xml:lang="en">Collapsed from hp.owl (HP_0000118 subClassOf UPHENO_0001003) and upheno.owl (UPHENO_0001003 subClassOf UPHENO_0001001); the local hp.obo omits both. Stated by the owners, not by this build.</rdfs:comment>
@@ -382,7 +382,7 @@ if [[ -s "$TMP/termfile_ncbi.txt" ]]; then
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/wond/modules/ncbitaxon_9606_tmp.owl"/>
+    <owl:Ontology rdf:about="https://bioportal.bioontology.org/ontologies/MILD/modules/ncbitaxon_9606_tmp.owl"/>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">The species Homo sapiens (human).</obo:IAO_0000115>
@@ -407,7 +407,7 @@ make_module() {  # merge inputs -> re-IRI -> strip versionIRI
   [[ ${#merge_args[@]} -eq 0 ]] && echo "  [skip] ${name}_module (no inputs)" && return 0
   $ROBOT merge "${merge_args[@]}" --output "$tmp_out" 2>/dev/null
   $ROBOT annotate --input "$tmp_out" \
-    --ontology-iri "http://purl.obolibrary.org/obo/wond/modules/${name}_module.owl" \
+    --ontology-iri "https://bioportal.bioontology.org/ontologies/MILD/modules/${name}_module.owl" \
     --output "$out" 2>/dev/null
   sed -i '' '/<owl:versionIRI/d' "$out"
   echo "  ${name}_module.owl: $(wc -l < "$out" | tr -d ' ') lines"
@@ -426,7 +426,7 @@ make_label_module() {
     --term-file "$termfile" --select "self annotations" \
     --output "$TMP/label_${name}.owl" 2>/dev/null
   $ROBOT annotate --input "$TMP/label_${name}.owl" \
-    --ontology-iri "http://purl.obolibrary.org/obo/wond/modules/${name}_module.owl" \
+    --ontology-iri "https://bioportal.bioontology.org/ontologies/MILD/modules/${name}_module.owl" \
     --output "$out" 2>/dev/null
   sed -i '' '/<owl:versionIRI/d' "$out"
   echo "  ${name}_module.owl: $(wc -l < "$out" | tr -d ' ') lines (labels; logic in obi_module)"
@@ -488,7 +488,7 @@ $ROBOT query --input "$TMP/closure_check.owl" \
 # intersect with the external terms the curated files actually use
 tail -n +2 "$TMP/unlabelled.csv" | tr -d '"' | sort -u > "$TMP/unlabelled.txt"
 tail -n +2 "$TMP/external_terms.csv" | tr -d '"' | grep 'purl.obolibrary.org/obo/' \
-  | grep -v '/obo/wond/' | sort -u > "$TMP/external_classes.txt"
+  | grep -v '/MILD/modules/' | sort -u > "$TMP/external_classes.txt"
 missing=$(comm -12 "$TMP/unlabelled.txt" "$TMP/external_classes.txt" || true)
 if [[ -n "$missing" ]]; then
   echo "ERROR: these external terms are used by WONT/MILD but have no label in the closure:" >&2
